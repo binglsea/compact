@@ -1,40 +1,12 @@
-\chapter{Preliminaries}
+\chapter{Preliminaries}  
 
-\section{Basic Notations}
-Let $\kappa, \lambda, \mu$ denote cardinal numbers and $\alpha, \beta, \gamma, \delta$ denote ordinal numbers. $\omega = \{0, 1, 2, \dots\}$ is the smallest infinite cardinal.
+\section{Basic	Covering	Properties}  
+We use the  usual terms and notations. 
+An ordinal is the set of all smaller ordinals, 
+and a cardinal is an Initial ordinal. 
+We use $\kappa, \mu$ for cardinals; $\lambda$
+a for infinite cardinal;  $\alpha, \beta, \gamma, \delta$ denote ordinal numbers. $\omega = \{0, 1, 2, \dots\}$ is the smallest infinite cardinal. 
+$|A|$ denotes the cardinality of a set $A$.
+The empty set $\phi$ is the unique set $B$ such that $|B| = 0$.
 
-\begin{definition}[Covering Properties]
-Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be a family of subsets of $X$.
-\begin{itemize}
-    \item $\mathcal{U}$ is \textbf{point-finite} (resp. \textbf{locally finite (LF)}) at $x \in X$ if $|\{\alpha \in \Delta : x \in U_\alpha\}| < \omega$ (resp. there is a neighborhood $G$ of $x$ intersecting only finitely many $U_\alpha$).
-    \item $\mathcal{U}$ is \textbf{star-finite} (resp. \textbf{star-countable}) if for each $\beta \in \Delta$, $|\{\alpha \in \Delta : U_\alpha \cap U_\beta \neq \emptyset\}| < \omega$ (resp. $\le \omega$).
-\end{itemize}
-\end{definition}
-
-\begin{definition}[Star Refinements and Normal Covers]
-Let $\mathcal{U}$ and $\mathcal{V}$ be covers of $X$.
-\begin{itemize}
-    \item $\mathcal{V}$ is a \textbf{star-refinement} of $\mathcal{U}$ if $\{\text{st}(V, \mathcal{V}) : V \in \mathcal{V}\}$ refines $\mathcal{U}$.
-    \item $\mathcal{V}$ is a \textbf{point-star refinement} of $\mathcal{U}$ if $\{\text{st}(x, \mathcal{V}) : x \in X\}$ refines $\mathcal{U}$.
-    \item An open cover $\mathcal{U}$ is \textbf{normal} if there exists a sequence $\{\mathcal{U}_n\}_{n<\omega}$ of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and $\mathcal{U}_{n+1}$ star-refines (or point-star refines) $\mathcal{U}_n$ for each $n$.
-\end{itemize}
-\end{definition}
-
-\section{Main Characterization Theorems}
-
-\begin{theorem}[Tukey--Morita Characterization of Normal Covers]
-For any open cover $\mathcal{U}$ of a space $X$, the following are equivalent:
-\begin{enumerate}
-    \item $\mathcal{U}$ is a normal cover.
-    \item $\mathcal{U}$ has a locally finite, discrete, functionally open refinement.
-    \item There exists a continuous partition of unity $\{\varphi_\alpha : \alpha \in \Delta\}$ on $X$ such that $\{\varphi_\alpha^{-1}((0, 1]) : \alpha \in \Delta\}$ refines $\mathcal{U}$.
-\end{enumerate}
-\end{theorem}
-
-\begin{theorem}[Michael--Morita--Stone Characterizations]
-\begin{itemize}
-    \item A $T_2$ space $X$ is paracompact iff it is $T_2$ fully normal (Stone [1948]).
-    \item $X$ is fully normal iff $X$ is normal and paracompact (Morita [1962]).
-\end{itemize}
-\end{theorem}
 
