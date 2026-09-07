@@ -1,15 +1,26 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[19] biber-darwin:342> INFO - === Mon Sep  7, 2026, 08:21:48
-[25] Biber.pm:421> INFO - Reading 'main.bcf'
-[54] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
-[58] Biber.pm:4487> INFO - Processing section 0
-[61] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
-[61] bibtex.pm:1713> INFO - LaTeX decoding ...
-[66] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[119] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[119] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[120] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[120] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[122] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[124] bbl.pm:779> INFO - Output to main.bbl
+[19] biber-darwin:342> INFO - === Mon Sep  7, 2026, 10:26:56
+[24] Biber.pm:421> INFO - Reading 'main.bcf'
+[52] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
+[56] Biber.pm:4487> INFO - Processing section 0
+[58] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
+[59] bibtex.pm:1713> INFO - LaTeX decoding ...
+[61] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[88] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[88] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[88] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[88] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[89] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[90] bbl.pm:779> INFO - Output to main.bbl
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'ZhongEr1' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'ZhongEr2' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'LivioM' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'LivioM2' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'FeiH1' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'FeiH2' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'FeiH3' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'HalmosP' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'derWaerden' (section 0)
+[90] Biber.pm:132> WARN - I didn't find a database entry for 'Natanco' (section 0)
+[90] Biber.pm:134> INFO - WARNINGS: 10

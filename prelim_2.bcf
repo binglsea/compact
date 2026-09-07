@@ -2954,13 +2954,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Alexandroff1924</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">HuaL</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">FeiH2</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">FeiH3</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">AM69</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">KelleyJ</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">JiangJi</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
@@ -2972,14 +2965,4 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="none/global//global/global/global"
-                type="entry"
-                sortingtemplatename="none"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global"
-                namehashtemplatename="global">
-  </bcf:datalist>
 </bcf:controlfile>

@@ -19,56 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Alexandroff1924}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=736c3002ab1c1213c02a192e45c5b13d}{%
-           family={Alexandroff},
-           familyi={A\bibinitperiod},
-           given={P.\bibnamedelimi S.},
-           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=736c3002ab1c1213c02a192e45c5b13d}{%
-           family={Alexandroff},
-           familyi={A\bibinitperiod},
-           given={P.\bibnamedelimi S.},
-           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{fullhash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{fullhashraw}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{bibnamehash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{authorbibnamehash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{authornamehash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{authorfullhash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{authorfullhashraw}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{nameabibnamehash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{nameanamehash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{nameafullhash}{736c3002ab1c1213c02a192e45c5b13d}
-      \strng{nameafullhashraw}{736c3002ab1c1213c02a192e45c5b13d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{C.R, Acad, Paris}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Sur les ensembles de la premiere classe at	les ensembles abstraits}
-      \field{type}{Journal Article}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{178}
-      \field{year}{1924}
-      \field{dateera}{ce}
-      \field{pages}{185\bibrangedash 187}
-      \range{pages}{3}
-      \keyw{Alexandroff1924}
-    \endentry
     \entry{HuaL}{book}{}{}
       \name{author}{1}{}{%
         {{hash=23939d649f05284eb9c05474adecd362}{%
@@ -98,8 +48,8 @@
       \strng{nameanamehash}{23939d649f05284eb9c05474adecd362}
       \strng{nameafullhash}{23939d649f05284eb9c05474adecd362}
       \strng{nameafullhashraw}{23939d649f05284eb9c05474adecd362}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -156,8 +106,8 @@
       \strng{nameanamehash}{53f7e5f3b032f9616499f7cab2ecb5dc}
       \strng{nameafullhash}{001822f39c4aa1f97169e4266b69d7dc}
       \strng{nameafullhashraw}{001822f39c4aa1f97169e4266b69d7dc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -206,8 +156,8 @@
       \strng{nameanamehash}{8ae40be16339d2db671a43647a6ad6e4}
       \strng{nameafullhash}{8ae40be16339d2db671a43647a6ad6e4}
       \strng{nameafullhashraw}{8ae40be16339d2db671a43647a6ad6e4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0387901256}
@@ -251,8 +201,8 @@
       \strng{nameanamehash}{f8f3198c7d102567eecbf5572009acdb}
       \strng{nameafullhash}{f8f3198c7d102567eecbf5572009acdb}
       \strng{nameafullhashraw}{f8f3198c7d102567eecbf5572009acdb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{7540812842}
@@ -271,13 +221,6 @@
   \missing{FeiH1}
   \missing{FeiH2}
   \missing{FeiH3}
-  \missing{HalmosP}
-  \missing{LivioM}
-  \missing{LivioM2}
-  \missing{Natanco}
-  \missing{ZhongEr1}
-  \missing{ZhongEr2}
-  \missing{derWaerden}
 \endrefsection
 \endinput
 

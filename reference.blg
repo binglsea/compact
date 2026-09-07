@@ -1,0 +1,19 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'reference.blg'
+[19] biber-darwin:342> INFO - === Mon Sep  7, 2026, 10:28:23
+[23] Biber.pm:421> INFO - Reading 'reference.bcf'
+[52] Biber.pm:1002> INFO - Found 7 citekeys in bib section 0
+[56] Biber.pm:4487> INFO - Processing section 0
+[58] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
+[59] bibtex.pm:1713> INFO - LaTeX decoding ...
+[61] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[85] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[85] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[85] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[85] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[86] bbl.pm:676> INFO - Writing 'reference.bbl' with encoding 'UTF-8'
+[87] bbl.pm:779> INFO - Output to reference.bbl
+[87] Biber.pm:132> WARN - I didn't find a database entry for 'FeiH1' (section 0)
+[87] Biber.pm:132> WARN - I didn't find a database entry for 'FeiH2' (section 0)
+[87] Biber.pm:132> WARN - I didn't find a database entry for 'FeiH3' (section 0)
+[87] Biber.pm:134> INFO - WARNINGS: 3
