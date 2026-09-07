@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,scheme=plain,openany]{ctexbook}
+\documentclass[12pt,heading=true,a4paper,scheme=plain,openany]{ctexbook}
 %ctexbook: accept Chinese characters, 
 %scheme=plain: Chapter 1, not 第一章
 %opeany: avoid possible empty pages for title page, table of contents, chapaters
@@ -8,6 +8,12 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{microtype}
 \usepackage{hyperref}
+
+\usepackage[backend=biber,style=gb7714-2015,gbpub=false,sorting=none]{biblatex}
+\addbibresource{ref.bib}
+
+\usepackage{imakeidx}
+\makeindex
 
 \title{\textbf{CHARACTERIZATION THEORY OF PARACOMPACT  SPACES AND BASIC COVERING PROPERTIES}}
 
@@ -49,11 +55,22 @@
 %\subfile{jiang6}
 
 %\chapter{jiang7}
-%\subfile{jiang7}
+%\subfile{jiang7}\part{title}
 
 %\chapter{jiang8}
 %\subfile{jiang8}
 
+%\section{A List}
+%\subfile{reference.tex}
+
+
+\printbibliography
+\begin{small}
+	\thispagestyle{empty}
+	\onecolumn
+	\addcontentsline{toc}{chapter}{\indexname}
+	\printindex
+\end{small}
 \end{document}
 
 
