@@ -9,40 +9,39 @@
 \label{sec:prelim_basic_prop}
 
 We use the  usual terms and notations\cite{Alexandroff1924}. 
-An \underline{ordinal}\index{ordinal, \S\ref{sec:prelim_basic_prop}} 
+An \uwave{ordinal}\index{ordinal, \S\ref{sec:prelim_basic_prop}} 
 is the set of all smaller ordinals, 
-and a \underline{cardinal}\index{cardinal, \S\ref{sec:prelim_basic_prop}} 
+and a \uwave{cardinal}\index{cardinal, \S\ref{sec:prelim_basic_prop}} 
  is an initial ordinal. 
 We use $\kappa, \mu$ for cardinals; $\lambda$
 a for infinite cardinal;  $\alpha, \beta, \gamma, \theta$ for ordinal numbers. $\omega = \{0, 1, 2, \dots\}$ is the smallest infinite cardinal. 
-$|A|$ denotes the \underline{cardinality}\index{cardinal, \S\ref{sec:prelim_basic_prop}} 
+$|A|$ denotes the \uwave{cardinality}\index{cardinal, \S\ref{sec:prelim_basic_prop}} 
  of a set $A$.
-The \underline{empty set}\index{empty set, \S\ref{sec:prelim_basic_prop}}  $\phi$ is the unique set $B$ such that $|B| = 0$.
+The \uwave{empty set}\index{empty set, \S\ref{sec:prelim_basic_prop}}  $\phi$ is the unique set $B$ such that $|B| = 0$.
 $\mathbb{R}$ denotes the  
-\underline{real line}\index{real line, \S\ref{sec:prelim_basic_prop}}
+\uwave{real line}\index{real line, \S\ref{sec:prelim_basic_prop}}
 $[0, 1]$ the   
-\underline{closed unit interval}\index{closed unit interval, \S\ref{sec:prelim_basic_prop}}  in $\mathbb{R}$.
+\uwave{closed unit interval}\index{closed unit interval, \S\ref{sec:prelim_basic_prop}}  in $\mathbb{R}$.
 
-For any sets $Z, Y, A\subset{Z}$, we denote 
+For any sets $Z, Y$, we denote 
 $\mathcal{P}(Z) = \{A : A \subset{Z}\}$; 
-$Y^X= \{f: f \text{ is a function from} X \text{ into } Y\}$. 
+$Y^X= \{f: f$  is a function from $X$  into $Y$\}. 
 If $f \in Y^X$, we write $f: X \to Y$.
 
-If $f: \mathbb{Z} \to Y$, $A \subset \Xi$ and $B \subset Y$, the $f(A): A \to Y$ defined by $f(A(x)) = f(\infty)$ for each $x \in A$; $f(A) = \{f(x): x \circ A\}$. $f^{-1}B = \mathcal{F}(B) = \{x \in \mathbb{Z} : f(x) \in B\}$.
+If $f: X \to Y$, $A \subset X$ and $B \subset Y$, then $f(A): A \to Y$
+ is defined by $f|_A(x)) = f(x)$ for each $x \in A$; 
+ $f[A] = \{f(x): x \in A\}$. $f^{-1}B = f^{-1}[B] = \{x \in X: f(x) \in B\}$.
 
-For a set $A$ and $n \to \infty$, let $[A]^{n} = \{ B \subset A: | B| = n \}$,
-
-$[A]^{< w} = \cup \{ [A]^{n} : n < w \}$. 
-
-Let $ w^o = \{ \phi \},$ for  $n = 1, \dots, w^{n} = $
-
-$= \{ f : f ; n \text{to} w \} = \{ ( k_{0}, t_{1}, \dots, t_{n-1} ) : \forall i < n \forall i \in w \} $ where
+For a set $A$ and $n < \omega$,
+let $[A]^{n} = \{ B \subset A: | B| = n \}$,
+$[A]^{< \omega} = \cup \{ [A]^{n} : n < \omega \}$. 
+Let $ \omega^0 = \{ \phi \}$. For  $n = 1, \dots, n$, let
+$\omega^n = \{ f : f ; n \to \omega \} = \{ ( k_{0}, k_{1}, \dots, k_{n-1} ) :  k_i \in\omega, i < n\} $.
+If $h < \omega$, let $\phi\oplus h = (h)$, 
+$(k_0, \cdots, k_{n-1})\oplus h = (k_0, \cdots, k_{n-1}, h)$.	
+Let $\omega^{<\omega} = \cup_{n<\omega}\omega^{n}$.
 	
-	$m_{i} = f(i).$ If $t < w$, let $\phi \oplus h = ( \overline{t_{1}} )$, $(k_{0}, \ldots, k_{n-1}) \oplus h =$
-	
-	$(\overline{k_{0}}, \cdots, k_{n-1}, \ldots).$ Let $w^{<w} = \cup w^{n}$.
-	
-	Let  $ U = \{U_2 : 2 \in \Delta\} $ be any family of subsets of  $ \mathbb{Z} $. Without loss of generality we may assume the indexing set  $ \Delta $ be any set of ordinals. We call
+Let  $\mathcal{U} = \{ \mathcal{U}_\alpha\in \Delta\} $ be any family of subsets of  $X$. Without loss of generality we may assume the indexing set  $ \Delta $ be any set of ordinals. We call
 	
 	
 	
