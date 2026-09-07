@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  7 SEP 2026 12:17
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  7 SEP 2026 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,10 +1350,10 @@ Package logreq Info: Writing requests to 'prelim.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26045 strings out of 468168
- 541924 string characters out of 5432815
- 1548243 words of memory out of 5000000
- 54452 multiletter control sequences out of 15000+600000
+ 26047 strings out of 468168
+ 541986 string characters out of 5432815
+ 1556243 words of memory out of 5000000
+ 54454 multiletter control sequences out of 15000+600000
  634610 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,5n,131p,1003b,1265s stack positions out of 10000i,1000n,20000p,200000b,200000s
