@@ -1,0 +1,13 @@
+# Ignore specific file extensions anywhere inside storage/
+storage/**/*.log
+storage/**/*.mp4
+storage/**/*.zip
+storage/**/*.pdf
+storage/**/*.aux
+storage/**/*.bbl
+storage/**/*.blg
+storage/**/*.ind
+storage/**/*.out
+storage/**/*.ind
+storage/**/*.xm
+storage/**/*.gz

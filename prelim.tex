@@ -14,70 +14,153 @@ is the set of all smaller ordinals,
 and a \uwave{cardinal}\index{cardinal, \S\ref{sec:prelim_basic_prop}} 
  is an initial ordinal. 
 We use $\kappa, \mu$ for cardinals; $\lambda$
-a for infinite cardinal;  $\alpha, \beta, \gamma, \theta$ for ordinal numbers. $\omega = \{0, 1, 2, \dots\}$ is the smallest infinite cardinal. 
+for an infinite cardinal;  $\alpha, \beta, \gamma, \theta$ for ordinal numbers. $\omega = \{0, 1, 2, \dots\}$ is the smallest infinite cardinal. 
 $|A|$ denotes the \uwave{cardinality}\index{cardinal, \S\ref{sec:prelim_basic_prop}} 
  of a set $A$.
-The \uwave{empty set}\index{empty set, \S\ref{sec:prelim_basic_prop}}  $\phi$ is the unique set $B$ such that $|B| = 0$.
+The \uwave{empty set}\index{empty set, \S\ref{sec:prelim_basic_prop}}  $\emptyset$ is the unique set $B$ such that $|B| = 0$.
 $\mathbb{R}$ denotes the  
-\uwave{real line}\index{real line, \S\ref{sec:prelim_basic_prop}}
-$[0, 1]$ the   
+\uwave{real line}\index{real line, \S\ref{sec:prelim_basic_prop}},
+and $[0, 1]$ is the   
 \uwave{closed unit interval}\index{closed unit interval, \S\ref{sec:prelim_basic_prop}}  in $\mathbb{R}$.
 
-For any sets $Z, Y$, we denote 
-$\mathcal{P}(Z) = \{A : A \subset{Z}\}$; 
+For any sets $X, Y$, we denote 
+$\mathcal{P}(X) = \{A : A \subset{X}\}$; 
 $Y^X= \{f: f$  is a function from $X$  into $Y$\}. 
 If $f \in Y^X$, we write $f: X \to Y$.
 
-If $f: X \to Y$, $A \subset X$ and $B \subset Y$, then $f(A): A \to Y$
+If $f: X \to Y$, $A \subset X$ and $B \subset Y$, then $f|_A: A \to Y$
  is defined by $f|_A(x)) = f(x)$ for each $x \in A$; 
  $f[A] = \{f(x): x \in A\}$. $f^{-1}B = f^{-1}[B] = \{x \in X: f(x) \in B\}$.
 
 For a set $A$ and $n < \omega$,
 let $[A]^{n} = \{ B \subset A: | B| = n \}$,
-$[A]^{< \omega} = \cup \{ [A]^{n} : n < \omega \}$. 
-Let $ \omega^0 = \{ \phi \}$. For  $n = 1, \dots, n$, let
-$\omega^n = \{ f : f ; n \to \omega \} = \{ ( k_{0}, k_{1}, \dots, k_{n-1} ) :  k_i \in\omega, i < n\} $.
-If $h < \omega$, let $\phi\oplus h = (h)$, 
+$[A]^{< \omega} = \bigcup \{ [A]^{n} : n < \omega \}$. 
+Let $ \omega^0 = \{ \emptyset \}$. For  $n = 1, \dots, n$, let
+$\omega^n = \{ f : f: n \to \omega \} = \{ ( k_{0}, k_{1}, \dots, k_{n-1} ) :  k_i \in\omega, i < n\} $.
+If $h < \omega$, let $\emptyset\oplus h = (h)$, 
 $(k_0, \cdots, k_{n-1})\oplus h = (k_0, \cdots, k_{n-1}, h)$.	
-Let $\omega^{<\omega} = \cup_{n<\omega}\omega^{n}$.
+Let $\omega^{<\omega} = \bigcup_{n<\omega}\omega^{n}$.
 	
-Let  $\mathcal{U} = \{ \mathcal{U}_\alpha\in \Delta\} $ be any family of subsets of  $X$. Without loss of generality we may assume the indexing set  $ \Delta $ be any set of ordinals. We call
-	
-	
-	cardinality $|a|$ the power of $\mathcal{U}$, A \underline{$\lambda$-family} is a family with power $\le \lambda$. $\mathcal{U}$ is a \underline{cover} of $X$ if $\bigcup \mathcal{U} = X$. A \underline{$\lambda$-cover} is a cover with power $\le \lambda$.
+Let  $\mathcal{U} = \{ U_\alpha\in \Delta\} $ be any family of subsets of  $X$. 
+Without loss of generality we may assume the indexing set  $ \Delta $ is an ordinal or a set of ordinals. We call
+cardinality $|\Delta|$ the 
+ \uwave{power}\index{power, \S\ref{sec:prelim_basic_prop}}
+of $\mathcal{U}$. A \uwave{$\lambda$-family} is a family with power $\le \lambda$. $\mathcal{U}$ is a \uwave{cover} of $X$ if $\bigcup \mathcal{U} = X$. A \uwave{$\lambda$-cover} is a cover with power $\le \lambda$.
 
-\vspace{0.5em}
 Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$, $A \subset X$, $x \in X$. We denote
+$$
+	\mathcal{U}|_A = \{U_\alpha \cap A : \alpha \in \Delta\}.$$
+$$
+	(\mathcal{U})_A = \{U_\alpha : \alpha \in \Delta, 
+	\ U_\alpha \cap A \neq \emptyset\}; \quad (\mathcal{U})_x = \{U_\alpha : \alpha \in \Delta, \ x \in U_\alpha\}.$$
+$$	
+   \text{st}(A, \mathcal{U}) = \bigcup (\mathcal{U})_A, 
+   \quad \text{st}(x, \mathcal{U}) = \bigcup (\mathcal{U})_x.$$
+$$
+   \text{ind}(\mathcal{U})_A = \{\alpha \in \Delta : 
+   U_\alpha \cap A \neq \emptyset\}, 
+  \text{ind}(\mathcal{U})_x = \{\alpha \in \Delta : x \in U_\alpha\}.$$
 
-\begin{equation*}
-	\mathcal{U} / A = \{U_\alpha \cap A : \alpha \in \Delta\}.
-\end{equation*}
+By a \uwave{space} \index{space, \S\ref{sec:prelim_basic_prop}} 
+we mean a topological space without any of the separation axioms $T_i$, $i=0,1,2$ at all.
 
-\begin{equation*}
-	(\mathcal{U})_A = \{U_\alpha : \alpha \in \Delta, \ U_\alpha \cap A \neq \emptyset\}; \quad (\mathcal{U})_x = \{U_\alpha : \alpha \in \Delta, \ x \in U_\alpha\},
-\end{equation*}
+Throughout the following, $X$ denotes a space. For $A \subset X$, $\overline{A}$ denotes the 
+\uwave{closure}\index{closure, \S\ref{sec:prelim_basic_prop}}  
+of $A$ and $A^\circ$ the 
+\uwave{interior}\index{interior, \S\ref{sec:prelim_basic_prop}} 
+ of $A$. For $x \in X$, let
+$$
+	\text{top}(x) = \{G : G \text{ is an open subset of } X 
+	\text{ with } x \in G\}.$$
+	
+A \uwave{normal}\index{normal, \S\ref{sec:prelim_basic_prop}} 
+or \uwave{regular}\index{regular, \S\ref{sec:prelim_basic_prop}} 
+space needs not be $T_1$.	
 
-\begin{equation*}
-	st(A, \mathcal{U}) = \bigcup (\mathcal{U})_A, \quad st(x, \mathcal{U}) = \bigcup (\mathcal{U})_x,
-\end{equation*}
+{\definition{}
+	(i) A family $\mathcal{U} = \{ U_\alpha\in \Delta\}$  is
+	\uwave{directed}\index{directed, \S\ref{sec:prelim_basic_prop}} 
+	if for every $\alpha, \beta \in \Delta$, 
+	$U_\alpha\cup U_\beta	\subset U_\gamma$ for some $\gamma\in\Delta$. 
+	
+	(ii) A family $\mathcal{U} = \{ U_\alpha: \alpha < \lambda\}$  is
+   \uwave{increasing}\index{increasing, \S\ref{sec:prelim_basic_prop}} 
+   if $U_\alpha\subset U_\beta$
+   whenever $\alpha < \beta <\lambda$, 
 
-\begin{equation*}
-	ind(\mathcal{U})_A = \{\alpha \in \Delta : U_\alpha \cap A \neq emptyset\}; quad ind(\mathcal{U})_x = \{\alpha \in \Delta : x \in U_\alpha\}
-\end{equation*}
+} %end of defintion
 
-\vspace{0.5em}
-By a \underline{space} we mean a topological space with no separation axioms $T_i$, $i=0,1,2$ at all.
 
-\vspace{0.5em}
-Throughout the following, $X$ denotes a space. For $A \subset X$, $\overline{A}$ denotes the \underline{closure} of $A$ and $A^\circ$ the \underline{interior} of $A$. For $x \in X$, let
-\begin{equation*}
-	top fn(x) = \{G : G \text{ is an open subset of } X \text{ with } x \in G\}.
-\end{equation*}
+	For any family $\mathcal{U} = \{ U_\alpha\in \Delta\}$, the family
+	$\mathcal{U}^F = \{U_S: S\in[\Delta]^{<\omega}\}$, 
+	where $U_S = \bigcup_{\alpha\in S}U_\alpha$, is directed, and 
+	$\mathcal{U}$ is directed iff for each $S\in [\Delta]^{<\omega}$
+	there is some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
 
 	
 	
-	
-	
-	
-	
+{\definition{}
+(i) $X$ is \uwave{$\lambda$-utraparacompact}
+ \index{$\lambda$-utraparacompact, 
+ 	\S\ref{sec:prelim_basic_prop}} 
+ 	 if every open $\lambda$-cover of $X$ has a discrete open refinement.
+
+(ii) $X$ is \uwave{$\lambda$-strongly paracompact}
+ \index{$\lambda$-strongly paracompact, 
+ \S\ref{sec:prelim_basic_prop}} 
+ 	 if every open $\lambda$-cover of $X$ has a star-finite open refinement.
+ 
+(iii) $X$ is \uwave{$\lambda$-fully normal}
+\index{$\lambda$-fully normal, 
+	\S\ref{sec:prelim_basic_prop}} 
+if every open $\lambda$-cover of $X$ is a normal cover.
+ 
+(iv) $X$ is \uwave{$\lambda$-paracompact}
+\index{$\lambda$-paracompact, 
+	\S\ref{sec:prelim_basic_prop}} 
+if every open $\lambda$-cover of $X$ has a locally finite refinement.
+
+(v) $X$ is \uwave{$\lambda$-metacompact}
+\index{$\lambda$-metacompact, 
+	\S\ref{sec:prelim_basic_prop}} 
+if every open $\lambda$-cover of $X$ has a point finite refinement.
+
+(vi) $X$ is \uwave{$\lambda$-subcompact}
+\index{$\lambda$-subcompact, 
+	\S\ref{sec:prelim_basic_prop}} 
+if every open $\lambda$-cover of $X$ has a 
+$\sigma$-discrete refinement.
+
+(vii) $X$ is \uwave{$\lambda-\theta$-subcompact}
+\index{$\lambda$-subcompact, 
+	\S\ref{sec:prelim_basic_prop}} 
+	or \uwave{$\lambda$-submetacompact}
+	\index{$\lambda$-submetacompact, 
+		\S\ref{sec:prelim_basic_prop}} 
+   if every open $\lambda$-cover of $X$ has a $\theta$-sequence
+  of open refinement.
+} %end of definition
+
+{\definition{}
+	 (i) $X$ is \uwave{$\lambda-\theta^*$-refinable}
+  \index{$\lambda-\theta^*$-refinable, 
+  	\S\ref{sec:prelim_basic_prop}} .
+  	
+	 (ii) $X$ is \uwave{$\lambda-\epsilon^*$-refinable}
+\index{$\lambda-\epsilon^*$-refinable, 
+	\S\ref{sec:prelim_basic_prop}} , if.
+ 
+	 (iii) $X$ is \uwave{$\lambda-\epsilon$-refinable}
+\index{$\lambda-\epsilon$-refinable, 
+	\S\ref{sec:prelim_basic_prop}}, if .
+} %end of definition
+
+
+We proved that a space is $\lambda$-paracompact iff it is
+$\lambda-\theta^*$-refinable 
+(Theorem 8.2.11), % TO_DO
+and Burke proved that a space is subparacompact iff it is 
+$\epsilon$-refinable 
+(Theorem 5.1.12). %TO_DO
+
 \end{document}
