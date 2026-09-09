@@ -1,6 +1,6 @@
 \contentsline {chapter}{\numberline {Chapter 1}Preliminaries}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Basic Covering Properties}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Induded Covers}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Inrerior-Preserving Families and Semi-Open Covers}{5}{section.1.3}%
-\contentsline {chapter}{\numberline {Chapter 2}jiang8}{6}{chapter.2}%
-\contentsline {chapter}{Index}{8}{chapter*.3}%
+\contentsline {section}{\numberline {1.2}Induded Covers}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Inrerior-Preserving Families and Semi-Open Covers}{6}{section.1.3}%
+\contentsline {chapter}{\numberline {Chapter 2}jiang8}{7}{chapter.2}%
+\contentsline {chapter}{Index}{9}{chapter*.3}%

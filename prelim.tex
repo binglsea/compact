@@ -97,8 +97,116 @@ space needs not be $T_1$.
 	$\mathcal{U}$ is directed iff for each $S\in [\Delta]^{<\omega}$
 	there is some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
 
+{\definition{} Let
+	$\mathcal{U} = \{ U_\alpha\in \Delta\}$ and 
+	$\mathcal{G} = \{ G_\beta\in \Gamma\}$
+	be families of subsets of $X$.
 	
+	(i) $\mathcal{G}$ 
+	   \uwave{refines}\index{refines, \S\ref{sec:prelim_basic_prop}} 
+	   $\mathcal{U}$ or $\mathcal{G}$ is a 
+	    \uwave{partial refinement}\index{partial refinement, \S\ref{sec:prelim_basic_prop}} 
+	    of $\mathcal{U}$ if for every $\beta\in \Gamma$
+	    there is some $\alpha\in \Delta$ such that 
+	    $G_\beta\subset U_\alpha$.
+  $\mathcal{G}$ is a 
+  \uwave{refinement}\index{refinement, \S\ref{sec:prelim_basic_prop}} 
+  of $\mathcal{U}$ if $\mathcal{G}$ is a partial refinement of 
+  $\mathcal{U}$ and $\bigcup\mathcal{G} = \bigcup\mathcal{U}$.
+
+	    Let $\Gamma = \Delta$. $\mathcal{U}$ is an 
+	    	    \uwave{expansion}\index{expansion, \S\ref{sec:prelim_basic_prop}} of $\mathcal{G}$
+	    	    if $G_\alpha \subset U_\alpha$ for all $\alpha\in \Delta$.
+	   $\mathcal{G}$ is an 
+	   \uwave{shrink}\index{shrink, \S\ref{sec:prelim_basic_prop}} of $\mathcal{U}$
+	   if $\overline{G_\alpha} \subset U_\alpha$ for all $\alpha\in \Delta$.
+	    
+	(ii) $\mathcal{G}$ is a 
+	\uwave{cushioned}\index{cushioned, \S\ref{sec:prelim_basic_prop}} 
+	in $\mathcal{U}$ or
+	$\mathcal{G}$ is a 
+	\uwave{partial cushioned refinement}\index{cushioned, \S\ref{sec:prelim_basic_prop}} 
+	of $\mathcal{U}$
+	if for every $\beta\in\Gamma$ there is $\delta(\beta)\in\Delta$ such that for any $B\subset\Gamma$, $\overline{\bigcup_{\beta\in B}G_\beta} \subset \bigcup_{\beta\in B}U_{\delta()\beta)}$. 
+	$\mathcal{G}$ is a 
+	\uwave{cushioned refinement}\index{cushioned refinement, \S\ref{sec:prelim_basic_prop}}
+	if $\mathcal{G}$ is a partial cushioned refinement
+	of $\mathcal{U}$ and $\bigcup\mathcal{G} = \bigcup\mathcal{U} $.
+} %end of defintion
+
+
+{\definition{} Let  $\mathcal{V}_n, n<\omega$,  
+	$\mathcal{U}=\{ U_\alpha: \alpha \in \Delta\}$ be covers of  $X$.
 	
+(i)  $ \mathcal{U}$ is  
+  \uwave{disjoint}\index{disjoint, \S\ref{sec:prelim_basic_prop}}
+    $($\uwave{point-finite}$)$\index{point-finite, \S\ref{sec:prelim_basic_prop}}
+     at  $ x \in X$ if $|\operatorname{ind}(\mathcal{U})_x|\leq 1$ 
+     $(|\operatorname{ind}(\mathcal{U})_x| < \infty)$.
+
+(ii) $\mathcal{U}$ is  
+  \uwave{discrete}\index{discrete, \S\ref{sec:prelim_basic_prop}}
+  $($\uwave{\text{locally finite}}\index{locally finite, \S\ref{sec:prelim_basic_prop}}$)$ at $x$ 
+  if there is some $G\in\operatorname{top}(x)$ such that
+  $|\operatorname{ind}(\mathcal{U})_G| \leq 1 $ 
+  $(|\operatorname{ind}(\mathcal{U})_G|  < \omega).$
+
+(iii) $\mathcal{U}$ is  
+ \uwave{disjoint} $($\uwave{point-finite},
+  \uwave{discrete}, \uwave{LF}$)$ in $X$
+  if $\mathcal{U}$ is  
+  disjoint $($point-finite, discrete, locally finite,$)$ at each $x\in X$.
+  Clearly, $\mathcal{U}$ is disjoint in  $X$ iff  
+  $(\alpha \neq \beta \rightarrow  
+  U_\alpha\bigcap U_\beta= \emptyset).$
+
+(iv)  $\mathcal{U}$  is 
+  \uwave{star-finite}\index{star-finite, \S\ref{sec:prelim_basic_prop}}
+   $($\uwave{star-countable}\index{star-countable, \S\ref{sec:prelim_basic_prop}}$)$ if
+   $\forall\beta\in\Delta, |\operatorname{ind}(
+    \mathcal{U})_{U_{\beta}}| < \omega$   $ (\le\omega)$.
+
+(v)  $\mathcal{U}$  is 
+\uwave{$\sigma$-disjoint}\index{$\sigma$-disjoint, \S\ref{sec:prelim_basic_prop}}
+$($\uwave{$\sigma$-locally finite}\index{$\sigma$-locally finite, \S\ref{sec:prelim_basic_prop}}, 
+\uwave{$\sigma$-star finite}\index{$\sigma$-star finite, \S\ref{sec:prelim_basic_prop}}, $\cdots)$ if
+$\mathcal{U} = \bigcup_{n < \omega}\mathcal{U}_n$,
+where each $\mathcal{U}_n$ is disjoint $($locally finite, star-finite, $\cdots)$.
+
+(vi)  $\{\mathcal{V}_n: n \in\omega\}$  is an 
+\uwave{$\epsilon$-sequence}\index{$\epsilon$-sequence, \S\ref{sec:prelim_basic_prop}}
+$($\uwave{$\theta$-sequence}\index{$\theta$-sequence, \S\ref{sec:prelim_basic_prop}}$)$
+if $\forall x \in X, \exists m = m(x) < \omega$ such that 
+$\mathcal{V}_m$ is disjoint $($point-finite$)$ at $x$.
+
+(vii)  $\{\mathcal{V}_n: n \in\omega\}$  is an 
+\uwave{$\epsilon^*$-sequence}\index{$\epsilon^*$-sequence, \S\ref{sec:prelim_basic_prop}}
+$($\uwave{$\theta^*$-sequence}\index{$\theta^*$-sequence, \S\ref{sec:prelim_basic_prop}}$)$
+if $\forall x \in X, \exists m  < \omega$ such that 
+$\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
+} %end of defintion
+
+{\lemma{}
+	A family $\mathcal{D}$ of subsets of $X$ is discrete and closed iff $\bigcup \mathcal{D}$ is closed in $X$ and $\mathcal{D}$ is discrete at each $x \in \bigcup \mathcal{D}$. \qedsymbol
+} %end of lemma
+
+{\lemma{}
+	Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be a cover of $X$. 
+	
+	 $($i$)$ If $\mathcal{U}$ has a locally finite open partial refinement $\mathcal{V}$ such that $\overline{\mathcal{V}}$ refines $\mathcal{U}$, then $\mathcal{U}$ has a LF 
+	 open partial refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that
+	  $\overline{H}_\alpha \subset U_\alpha$ for all $\alpha \in \Delta$, and 
+	  $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
+	  
+	 %\normalfont{
+	  This result is also true if we replace ``locally finite" by ``discrete" or replace ``open" by ``closed".
+	%}
+	
+	  $($ii$)$ If $\mathcal{U}$ has a partial cushioned $(\text{open})$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $\text{(open)}$ refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
+} % end of lemma
+
+{Proof.} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a LF open partial refinement $\mathcal{V}$ (such that $\mathcal{V}$ refines $\mathcal{U}$). For every $\alpha \in \Delta$...  
+
 {\definition{}
 (i) $X$ is \uwave{$\lambda$-utraparacompact}
  \index{$\lambda$-utraparacompact, 
