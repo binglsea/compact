@@ -193,7 +193,7 @@ $\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
 {\lemma{}
 	Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be a cover of $X$. 
 	
-	 $($i$)$ If $\mathcal{U}$ has a locally finite open partial refinement $\mathcal{V}$ such that $\overline{\mathcal{V}}$ refines $\mathcal{U}$, then $\mathcal{U}$ has a LF 
+	 $($i$)$ If $\mathcal{U}$ has a locally finite open partial refinement $\mathcal{V}$ such that $\overline{\mathcal{V}}$ refines $\mathcal{U}$, then $\mathcal{U}$ has a locally finite 
 	 open partial refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that
 	  $\overline{H}_\alpha \subset U_\alpha$ for all $\alpha \in \Delta$, and 
 	  $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
@@ -205,7 +205,47 @@ $\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
 	  $($ii$)$ If $\mathcal{U}$ has a partial cushioned $(\text{open})$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $\text{(open)}$ refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
 } % end of lemma
 
-{Proof.} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a LF open partial refinement $\mathcal{V}$ (such that $\mathcal{V}$ refines $\mathcal{U}$). For every $\alpha \in \Delta$...  
+{Proof of (i).} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
+$\overline{\mathcal{V}}$ refines $\mathcal{U}$). For every $V\in\mathcal{V}$, pick 
+a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
+$H_\alpha = \bigcup\{V\in\mathcal{V}: \delta(V) = \alpha\}$.   
+Then $\mathcal{H} = \{H_\aleph : \alpha \in \Delta\}$ is a desired 
+locally finite open partial refinement of $\mathcal{U}$.
+\qedsymbol
+
+{\definition{\textup{(Tukey[1940]\cite{Tukey})}}
+	Let $\mathcal{U}$ and $\mathcal{V}$ be covers of $X$.
+	
+	\textup{(i)} $\mathcal{V}$ is a 
+	\uwave{star-refinement}\index{star-refinement, \S\ref{sec:prelim_basic_prop}}
+	of $\mathcal{U}$ if 
+	$\{\operatorname{st}(V, \mathcal{V}) : V\in \mathcal{V}\}$ refines $\mathcal{U}$.
+$\mathcal{V}$ is a 
+\uwave{point-star refinement}\index{point- star refinement, \S\ref{sec:prelim_basic_prop}}
+of $\mathcal{U}$ if 
+$\{\operatorname{st}(x, \mathcal{V}) : x\in X\}$ refines $\mathcal{U}$.
+	
+	\textup{(ii)} An open cover $\mathcal{U}$ of $X$ is 
+		\uwave{normal}\index{normal, \S\ref{sec:prelim_basic_prop}} 
+	if there is a sequence $\{ \mathcal{U}_n: n\in\omega\}$ of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$ for each $n<\omega$.
+}%end of def
+
+{\lemma{}
+\textup{(i)} Let $\mathcal{U}, \mathcal{V}, \mathcal{W}$ be covers of $X$. If $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ point-star refines $\mathcal{U}$, then $\mathcal{W}$ star-refines $\mathcal{U}$.
+
+\textup{(ii)}  An open cover $\mathcal{U}$ is normal iff there is a sequence $\{\mathcal{U}_n: n\in\omega\}$ of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and  $\mathcal{U}_{n+1}$ point-star refines $\mathcal{U}_n$ for each $n<\omega$..
+
+\textup{(iii)}  If $\mathcal{U}$ is a normal cover of $X$, then there is a normal cover $\mathcal{U}_1$ of $X$ such that $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$.
+} %end of lemma
+
+Proof (i) Suppose $\mathcal{W}$ point-star-refines $\mathcal{V}$ and $\mathcal{V}$ point-star-refines $\mathcal{U}$. To show...
+
+that $\mathcal{W}$ star-refines $\mathcal{U}$, let $W \in \mathcal{W}$ and pick $a \in W$.
+Then $St(a, \mathcal{W}) \subset V$ for some $V \in \mathcal{V}$. For each $x \in W$ there is $V_x \in \mathcal{V}$ such that $St(x, \mathcal{W}) \subset V_x$. Then $a \in W \subset St(x, \mathcal{W}) \subset V_x$, and $V_x \subset St(a, \mathcal{V}) \subset U$ for some $U \in \mathcal{U}$. It follows that:
+$$St(W, \mathcal{W}) = \bigcup_{x \in W} St(x, \mathcal{W}) \subset \bigcup_{x \in W} V_x \subset U$$  
+Hence $\mathcal{W}$ star-refines $\mathcal{U}$.  (ii) follows from (i).  (iii) Suppose $\mathcal{U}$ is a normal cover of $X$ and $\{\mathcal{U}_n\}_{n<\omega}$ is a sequence of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and each $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$. For each $V \in \mathcal{U}_1$, there are $V_0 \in \mathcal{U}_0$ and $U \in \mathcal{U}$ such that $St(V, \mathcal{U}_1) \subset V_0 \subset U$. Since $\overline{V} \subset St(V, \mathcal{U}_1)$, $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$. Clearly, $\mathcal{U}_1$ is a normal cover of $X$.  
+
+
 
 {\definition{}
 (i) $X$ is \uwave{$\lambda$-utraparacompact}
