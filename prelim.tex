@@ -238,14 +238,26 @@ $\{\operatorname{st}(x, \mathcal{V}) : x\in X\}$ refines $\mathcal{U}$.
 \textup{(iii)}  If $\mathcal{U}$ is a normal cover of $X$, then there is a normal cover $\mathcal{U}_1$ of $X$ such that $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$.
 } %end of lemma
 
-Proof (i) Suppose $\mathcal{W}$ point-star-refines $\mathcal{V}$ and $\mathcal{V}$ point-star-refines $\mathcal{U}$. To show...
+Proof (i) Suppose $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ point-star-refines $\mathcal{U}$. To show
+that $\mathcal{W}$ star-refines $\mathcal{U}$, let $W \in \mathcal{W}$ and pick $x \in W$.
+Then $\operatorname{st}(x, \mathcal{V}) \subset U$ for some $U \in \mathcal{U}$. 
+For each $x \in W$ there is $V_x \in \mathcal{V}$ such that 
+$\operatorname{st}(x, \mathcal{W}) \subset V_x$. Then 
+$x \in W \subset \operatorname(x, \mathcal{W}) \subset V_x$, and 
+$V_x \subset \operatorname{st}(x, \mathcal{V}) \subset U$. It follows that:
+$$\operatorname{st}(W, \mathcal{W}) = \bigcup_{x \in W} 
+\operatorname{st}(x, \mathcal{W}) \subset \bigcup_{x \in W} V_x \subset U$$  
+Hence $\mathcal{W}$ star-refines $\mathcal{U}$.  
 
-that $\mathcal{W}$ star-refines $\mathcal{U}$, let $W \in \mathcal{W}$ and pick $a \in W$.
-Then $St(a, \mathcal{W}) \subset V$ for some $V \in \mathcal{V}$. For each $x \in W$ there is $V_x \in \mathcal{V}$ such that $St(x, \mathcal{W}) \subset V_x$. Then $a \in W \subset St(x, \mathcal{W}) \subset V_x$, and $V_x \subset St(a, \mathcal{V}) \subset U$ for some $U \in \mathcal{U}$. It follows that:
-$$St(W, \mathcal{W}) = \bigcup_{x \in W} St(x, \mathcal{W}) \subset \bigcup_{x \in W} V_x \subset U$$  
-Hence $\mathcal{W}$ star-refines $\mathcal{U}$.  (ii) follows from (i).  (iii) Suppose $\mathcal{U}$ is a normal cover of $X$ and $\{\mathcal{U}_n\}_{n<\omega}$ is a sequence of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and each $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$. For each $V \in \mathcal{U}_1$, there are $V_0 \in \mathcal{U}_0$ and $U \in \mathcal{U}$ such that $St(V, \mathcal{U}_1) \subset V_0 \subset U$. Since $\overline{V} \subset St(V, \mathcal{U}_1)$, $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$. Clearly, $\mathcal{U}_1$ is a normal cover of $X$.  
+(ii) follows from (i). 
 
-
+ (iii) Suppose $\mathcal{U}$ is a normal cover of $X$ and $\{\mathcal{U}_n, n\in\omega\}$ 
+ is a sequence of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and each $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$ for each $n <\omega$. For each $U \in \mathcal{U}_1$, there are 
+ $U_0 \in \mathcal{U}_0$ and $U \in \mathcal{U}$ such that 
+ $\operatorname{st}(U_1, \mathcal{U}_1) \subset U_0 \subset U$. 
+ Since $\overline{U_1} \subset \operatorname{st}(U_1, \mathcal{U}_1)$,
+ $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$. 
+ Clearly, $\mathcal{U}_1$ is a normal cover of $X$.  \qedsymbol
 
 {\definition{}
 (i) $X$ is \uwave{$\lambda$-utraparacompact}
@@ -279,7 +291,7 @@ if every open $\lambda$-cover of $X$ has a point finite refinement.
 if every open $\lambda$-cover of $X$ has a 
 $\sigma$-discrete refinement.
 
-(vii) $X$ is \uwave{$\lambda-\theta$-subcompact}
+(vii) $X$ is \uwave{$\lambda$-$\theta$-subcompact}
 \index{$\lambda$-subcompact, 
 	\S\ref{sec:prelim_basic_prop}} 
 	or \uwave{$\lambda$-submetacompact}
@@ -290,22 +302,22 @@ $\sigma$-discrete refinement.
 } %end of definition
 
 {\definition{}
-	 (i) $X$ is \uwave{$\lambda-\theta^*$-refinable}
-  \index{$\lambda-\theta^*$-refinable, 
+	 (i) $X$ is \uwave{$\lambda$-$\theta^*$-refinable}
+  \index{$\lambda$-$\theta^*$-refinable, 
   	\S\ref{sec:prelim_basic_prop}} .
   	
-	 (ii) $X$ is \uwave{$\lambda-\epsilon^*$-refinable}
-\index{$\lambda-\epsilon^*$-refinable, 
+	 (ii) $X$ is \uwave{$\lambda$-$\epsilon^*$-refinable}
+\index{$\lambda$-$\epsilon^*$-refinable, 
 	\S\ref{sec:prelim_basic_prop}} , if.
  
-	 (iii) $X$ is \uwave{$\lambda-\epsilon$-refinable}
-\index{$\lambda-\epsilon$-refinable, 
+	 (iii) $X$ is \uwave{$\lambda$-$\epsilon$-refinable}
+\index{$\lambda$-$\epsilon$-refinable, 
 	\S\ref{sec:prelim_basic_prop}}, if .
 } %end of definition
 
 
 We proved that a space is $\lambda$-paracompact iff it is
-$\lambda-\theta^*$-refinable 
+$\lambda$-$\theta^*$-refinable 
 (Theorem 8.2.11), % TO_DO
 and Burke proved that a space is subparacompact iff it is 
 $\epsilon$-refinable 
