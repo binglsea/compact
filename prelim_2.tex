@@ -24,7 +24,7 @@ $U_s = X - \bigcup_{\gamma \notin s} \overline{B_\gamma}\}$
 is a locally finite refinement of $\mathcal{B}^*$. Later, 
 we will see that
 $\mathcal{B}^*$ is an 
-interior-preserving (Definition \ref{1_3def}) directed open cover of $X$. 
+interior-preserving (Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
 
 {\definition{}
 Let $\mathcal{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
@@ -44,5 +44,20 @@ Let $\mathcal{B}$ be a LF family in $X$ and $\mathcal{B}^*$ be the induced cover
 %#### Proof
 
 We prove only one case; the other cases are...
+
+
+
+
+
+
+$\mathcal{G} = \bigcup_{n<\omega} \mathcal{G}_{n}$ where each $\mathcal{G}_{n}$ is a cushioned open refinement of $\mathcal{U}$.
+
+For each $n<\omega$, let $\mathcal{G}_{n} = \{G_{n,s} : s \in \Gamma\}$.
+
+For each $\gamma < \tau$, $\Gamma \in \eta^{<\omega}$, $\overline{\bigcup_{s\in\Gamma} G_{n,s}} \subset \bigcup_{s\in\Gamma} U_{s}$. For $n<\omega$, $d\in D$, let
+
+$$H_{n,d} = X \setminus \bigcup \{G_{n,s} : s\in \Gamma, d \notin s\}$$
+Then $G_{n,s} \subset H_{n,d}$ for each $s \in \Gamma$ and $n<\omega$. For each $n<\omega$, $\mathcal{H}_{n} = \{H_{n,d} : d \in D\}$ is an open expansion of $D$. To see that $(\mathcal{H}_{n})_{n<\omega}$ is a sequence, let $x \in X$. There is $m<\omega$ and $s_{0} \in \Gamma$ such that $x \in G_{m,s_{0}}$. Then $x \notin H_{m,d}$ for all $d \notin s_{0}$. Thus $(\mathcal{H}_{n})_{n<\omega}$ is a sequence.
+
 
 \end{document}
