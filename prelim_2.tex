@@ -5,11 +5,11 @@
     \label{sec:prelim_induced_covers}
 
 
-{\definition{}
+{\definition{}\label{ch2_1_lf_ind-cover}
 Let $\mathcal{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
 family of subsets of $X$. 
-Let $\mathcal{B}^* = \{U_s: s\in [\Delta]^{<\omega}  \text{ and} $
-$U_s = X - \bigcup_{\gamma \notin s} \overline{B_\gamma}\} $. 
+Let $\mathcal{B}^* = \{U_S: S\in [\Delta]^{<\omega}  \text{ and} $
+$U_S = X - \bigcup_{\gamma \notin S} \overline{B_\gamma}\} $. 
 Then $\mathcal{B}^*$ 
 is an open cover of $X$. We call $\mathcal{B}^*$ an 
 \uwave{induced cover}\index{induced cover, \S\ref{sec:prelim_induced_covers}} 
@@ -18,28 +18,40 @@ of $X$.
 
 Remark. 
 It is easy to see that 
-$\mathcal{A} = \{U_s\bigcap \cap_{\alpha\in s} \overline{B_\alpha}: 
+$\mathcal{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
 s\in [\Delta]^{<\omega}  \text{ and} $
-$U_s = X - \bigcup_{\gamma \notin s} \overline{B_\gamma}\}$ 
-is a locally finite refinement of $\mathcal{B}^*$. Later, 
-we will see that
-$\mathcal{B}^*$ is an 
-interior-preserving (Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
+$U_S = X - \bigcup_{\gamma \notin S} \overline{B_\gamma}\}$ 
+is a locally finite refinement of $\mathcal{B}^*$.
+We also see that
+$\mathcal{B}^*$ is an interior-preserving 
+(by a later Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
 
-{\definition{}
+{\definition{}\label{ch2_1_discrete_ind-cover}
 Let $\mathcal{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
-closed subsets of $X$. Let $\mathcal{U}_\alpha = X - \bigcup_{\gamma \neq \alpha} D_\gamma$ and let $\mathcal{B}^{*F} = \{\mathcal{V}_S : S \in \mathcal{F}\}$ where $\mathcal{V}_S = \bigcup_{\alpha \in S} \mathcal{U}_\alpha$. Then $\mathcal{B}^*$ and $\mathcal{B}^{*F}$ are open cover of $X$ clearly. $D_\alpha \subseteq \mathcal{U}_\alpha$ for each $\alpha$ and $X - \mathcal{V}_S = \bigcup_{\alpha \notin S} \mathcal{U}_\alpha$. $\mathcal{B}^*$ is an UP open cover and $\mathcal{B}^{*F}$ is an UP directed open cover of $X$. We call $\mathcal{B}^{*F}$ an **induced cover** of $\mathcal{B}$.
+closed subsets of $X$. 
+%Let $U_\alpha = X - \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\alpha$
+% for $\alpha\in\Delta$, 
+Let $\mathcal{D}^* = \{ U_\alpha: \alpha\in\Delta, U_\alpha = 
+X - \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\gamma\}$, 
+and
+$\mathcal{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup S \}$.
+Then $\mathcal{D}^*$ and $\mathcal{D}^{*F}$ are open $|\Delta|$-cover of $X$.
+clearly. $D_\alpha \subseteq \mathcal{U}_\alpha$ for each $\alpha$ 
+and $X - \mathcal{D}\subset \bigcap_{\alpha\in\Delta} \mathcal{U}_\alpha$. 
+$\mathcal{D}^*$ is an interior-preserving open cover and 
+$\mathcal{D}^{*F}$ is an initial-preserving directed open cover of $X$. We call $\mathcal{D}^{*F}$ an \uwave{induced cover} of $X$.
 }
 
+{\lemma{}
+Let $\mathcal{B}$ be a locally finite family of $X$ as in Definition \ref{ch2_1_lf_ind-cover},
+and $\mathcal{B}^*$ be the induced cover.
 
-Let $\mathcal{B}$ be a LF family in $X$ and $\mathcal{B}^*$ be the induced cover as in Definition 1.2.2.
-
-1. **(i)** If $\mathcal{B}^*$ has a cushioned open (co-cushioned) refinement, then $\mathcal{B}$ has a LF (point-finite) open expansion.
-
-
-2. **(ii)** If $\mathcal{B}^*$ has a $\sigma$-cushioned open ($\sigma$-co-cushioned) refinement, then $\mathcal{B}$ has a $\sigma$-LF sequence ($\sigma$-point-finite sequence) of open expansions.
+\textup{(i)} If $\mathcal{B}^*$ has a cushioned open (co-cushioned) refinement, then $\mathcal{B}$ has a LF (point-finite) open expansion.
 
 
+\textup{(ii)}  If $\mathcal{B}^*$ has a $\sigma$-cushioned open ($\sigma$-co-cushioned) refinement, then $\mathcal{B}$ has a $\sigma$-LF sequence ($\sigma$-point-finite sequence) of open expansions.
+
+}
 
 %#### Proof
 

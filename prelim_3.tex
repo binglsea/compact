@@ -6,7 +6,7 @@
 
 
 {\definition{}\label{def_prelim3_cp_ip}
-	 Let Let $\mathcal{U} = \{U_{\alpha} : \alpha \in A\}$ be a family of subsets of $X$.
+	 Let Let $\mathcal{U} = \{U_{\alpha} : \alpha \in\Delta\}$ be a family of subsets of $X$.
 
 \textup{(i) (Michael [1957]).}
 $\mathcal{U}$ is closure-preserving (simply denoted by CP) if for any $\Gamma \subset \Delta$,
@@ -15,11 +15,44 @@ $$\overline{\bigcup_{\alpha\in \Gamma} U_{\alpha}} = \bigcup_{\alpha\in \Gamma} 
 \textup{(ii) (Junnila [1979]).} 
 $\mathcal{U}$ is interior-preserving (simply denoted by IP) if for any $\Gamma \subset \Delta$,
 $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\in \Gamma} U_{\alpha}^{\circ}$$
+} %end of def
+
+{\lemma{}  For a family $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
+
+\textup{(i)} $\mathcal{U}$ is interior preserving.
 	
+\textup{(ii)} For each  $\Gamma \subset \Delta$, $\bigcap_{\alpha \in \Gamma} U_\alpha$ is open.
+	
+\textup{(iii)}  For each $x \in \bigcup\mathcal{U}$, $\bigcap(U)_x$ is open.
 
-}
+} %end of lemma
+
+{\theorem{} Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be an IP open family in $X$. For each $\beta \in B$, let $A_\beta \subset A$. Let
+
+$$\mathcal{U}' = \left\{ \bigcap_{\alpha \in A_\beta} U_\alpha : \beta \in B \right\}, \quad \mathcal{U}'' = \left\{ \bigcup_{\alpha \in A_\beta} U_\alpha : \beta \in B \right\}.$$
+
+Then the families $\mathcal{U}'$ and $\mathcal{U}''$ are IP open.
+} %end of teorem
 
 
+Proof. If $\mathcal{U}$ is IP open, then clearly $\mathcal{U}''$ is IP open. To see that $\mathcal{U}'$ is IP open, let $P \subset B$. It is easily verified that
+
+$$\bigcap_{\beta \in P} \left( \bigcup_{\alpha \in A_\beta} U_\alpha \right) = \bigcup \left\{ \bigcap_{\beta \in P} U_{f(\beta)} : f \in \prod_{\beta \in P} A_\beta \right\}.$$
+
+By Lemma 1.3.2, $\mathcal{U}'$ is IP open.
+\qedsymbol
+
+{\definition{} (Junnila [1979]). A cover $\mathcal{E}$ of $X$ is **semi-open** if for every $x \in X$, $x \in \left(\text{st}(x, \mathcal{E})\right)^\circ$.
+
+} %end of def
+
+**1.3.5. Lemma.** If $\mathcal{E}$ is a cover of $X$, then the following are equivalent.
+
+* **(i)** $\mathcal{E}$ is semi-open.
+* **(ii)** For each $A \subset X$, $\overline{A} \subset \text{st}(A, \mathcal{E})^\circ$.
+* **(iii)** For each $A \subset X$, $A \subset \text{st}(A, \mathcal{E})^\circ$.
+
+Clearly, every CP closed cover, as well as open covers, are semi-open.
 
 
 
