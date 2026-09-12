@@ -68,7 +68,10 @@ Throughout the following, $X$ denotes a space. For $A \subset X$, $\overline{A}$
 \uwave{closure}\index{closure, \S\ref{sec:prelim_basic_prop}}  
 of $A$ and $A^\circ$ the 
 \uwave{interior}\index{interior, \S\ref{sec:prelim_basic_prop}} 
- of $A$. For $x \in X$, let
+ of $A$. 
+ For any family $\mathcal{U}$ of subsets of space $X$, we use notation
+ $\overline{\mathcal{U}}$ for  $\{\overline{U}: U\in\mathcal{U}\}$.
+ For $x \in X$, let
 $$
 	\text{top}(x) = \{G : G \text{ is an open subset of } X 
 	\text{ with } x \in G\}.$$
@@ -202,7 +205,7 @@ $\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
 	  This result is also true if we replace ``locally finite" by ``discrete" or replace ``open" by ``closed".
 	%}
 	
-\textup{(ii)} If $\mathcal{U}$ has a partial cushioned $(\text{open})$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $\text{(open)}$ refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
+\textup{(ii)} If $\mathcal{U}$ has a partial cushioned $($open$)$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $($open$)$  refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
 } % end of lemma
 
 {Proof of (i).} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
