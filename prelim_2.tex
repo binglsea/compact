@@ -5,59 +5,94 @@
     \label{sec:prelim_induced_covers}
 
 
-{\definition{}\label{ch2_1_lf_ind-cover}
+{\definition{}\label{ch2_1_LF_ind-cover}
 Let $\mathcal{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
 family of subsets of $X$. 
 Let $\mathcal{B}^* = \{U_S: S\in [\Delta]^{<\omega}  \text{ and} $
-$U_S = X - \bigcup_{\gamma \notin S} \overline{B_\gamma}\} $. 
+$U_S = X - \bigcup_{\gamma \in\Delta - S} \overline{B_\gamma}\} $. 
 Then $\mathcal{B}^*$ 
 is an open cover of $X$. We call $\mathcal{B}^*$ an 
 \uwave{induced cover}\index{induced cover, \S\ref{sec:prelim_induced_covers}} 
 of $X$.
+
+%问： 1. $\mathcal{B}$ 不必是$X$的覆盖吗？似乎不必。
+
+%2. 按我的理解，$\emptyset\in  [\Delta]^{<\omega}$, 事实上 $\emptyset\in  [A]^{<\omega}$,
+%对吧？所以 $X\in \mathcal{B}^* $?
 }%end of definition
 
 Remark. 
 It is easy to see that 
 $\mathcal{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
-s\in [\Delta]^{<\omega}  \text{ and} $
-$U_S = X - \bigcup_{\gamma \notin S} \overline{B_\gamma}\}$ 
+S\in [\Delta]^{<\omega}  \text{ and} $
+$U_S = X - \bigcup_{\gamma \in\Delta-S} \overline{B_\gamma}\}$ 
 is a locally finite refinement of $\mathcal{B}^*$.
 We also see that
 $\mathcal{B}^*$ is an interior-preserving 
-(by a later Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
+(see Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
 
 {\definition{}\label{ch2_1_discrete_ind-cover}
 Let $\mathcal{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
-closed subsets of $X$. 
-%Let $U_\alpha = X - \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\alpha$
-% for $\alpha\in\Delta$, 
-Let $\mathcal{D}^* = \{ U_\alpha: \alpha\in\Delta, U_\alpha = 
-X - \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\gamma\}$, 
+closed subsets of $X$.
+For $\alpha\in\Delta$, we use notation 
+$U_\alpha = X - \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\alpha$,
+then $D_\alpha \subseteq U_\alpha$.
+Let $\mathcal{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
 $\mathcal{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup S \}$.
 Then $\mathcal{D}^*$ and $\mathcal{D}^{*F}$ are open $|\Delta|$-cover of $X$.
-clearly. $D_\alpha \subseteq \mathcal{U}_\alpha$ for each $\alpha$ 
-and $X - \mathcal{D}\subset \bigcap_{\alpha\in\Delta} \mathcal{U}_\alpha$. 
+We call $\mathcal{D}^*$ an \uwave{induced cover} of $X$.
+} %end of def
+
+Remark. Clearly, $X - \bigcup\mathcal{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
+= \bigcap\mathcal{D}^*$.  By Defintion \ref*{def_prelim3_cp_ip},
 $\mathcal{D}^*$ is an interior-preserving open cover and 
-$\mathcal{D}^{*F}$ is an initial-preserving directed open cover of $X$. We call $\mathcal{D}^{*F}$ an \uwave{induced cover} of $X$.
-}
+$\mathcal{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
 
 {\lemma{}
-Let $\mathcal{B}$ be a locally finite family of $X$ as in Definition \ref{ch2_1_lf_ind-cover},
-and $\mathcal{B}^*$ be the induced cover.
+Let $\mathcal{B}$ be a locally finite family of $X$, 
+and $\mathcal{B}^*$ be the induced cover as in Definition \ref*{ch2_1_LF_ind-cover}.
 
-\textup{(i)} If $\mathcal{B}^*$ has a cushioned open (co-cushioned) refinement, then $\mathcal{B}$ has a LF (point-finite) open expansion.
+\textup{(i)} If $\mathcal{B}^*$ has a cushioned open $($cushioned$)$ refinement, then $\mathcal{B}$ has a locally finite $($point-finite$)$ open expansion.
 
+\textup{(ii)}  If $\mathcal{B}^*$ has a $\sigma$-cushioned open $(\sigma$-cushioned$)$ refinement, then $\mathcal{B}$ has a $\sigma^*$-sequence $(\sigma$-sequence$)$ of open expansions.
+} %end of lemma
 
-\textup{(ii)}  If $\mathcal{B}^*$ has a $\sigma$-cushioned open ($\sigma$-co-cushioned) refinement, then $\mathcal{B}$ has a $\sigma$-LF sequence ($\sigma$-point-finite sequence) of open expansions.
+Proof.
+We prove only one case, another case is
+similar. Let $\mathcal{B} = \{B_\alpha : \alpha \in \Delta\}$. Suppose
+the induced cover $\mathcal{B}^*$ as in Definition \ref*{ch2_1_LF_ind-cover}
+has a cushioned open refinement
+$\mathcal{G} = \{G_S: S\in [D^*]^{<\omega}\}$ such that for any
+$\Gamma\subset[\Delta]^{<\omega}$,
+$\overline{\bigcup_{s\in\Gamma}G_s}\subset\bigcup_{s\in\Gamma}U_s$.
+For $\alpha\in\Delta$, let
+$$H_\alpha = X - \overline{\bigcup\{G_S: S\in [\Delta]^{<\omega}, \alpha\notin S}\}.$$
+Then $B_\alpha\subset H_\alpha$ for each $\alpha\in\Delta$.
+To see $\mathcal{H}=\{H_\alpha: \alpha\in\Delta\}$
+is locally finite, let $x \in X$. There exists $S_0 \in [\alpha]^{<\omega}$ such that 
+$x \in R_{S_0}$.
+Then $\operatorname{ind}(\mathcal{H})_{G_{S_0}}  \subset S_0$ Thus 
+$\mathcal{H}$ is a locally open expansion
+of $\mathcal{B}$. \qedsymbol
 
+{\lemma{} 
+Let $D = \{D_\alpha : \alpha \in A\}$ be a discrete family
+of closed subsets of $X$ and $D^*$ the induced cover.
+
+\textup{(i)}  If $D$ has a cushioned open (cushioned) refinement, then $D$ has a discrete (disjoint) open expansion.
+
+\textup{(ii)}  If $D$ has a cushioned open (cushioned) refinement, then $D$ has a $\sigma$-sequence of open expansions.
+
+\textup{(iii)}  If $D^{*F}$ has a cushioned open (cushioned) refinement, then $D$ has a LF (point-finite) open expansion.
+
+\textup{(iv)}  If $D^{*F}$ has a $\sigma$-cushioned open (cushioned) refinement, then $D$ has a ($\sigma$-)sequence of open expansions.
 }
 
-%#### Proof
 
-We prove only one case; the other cases are...
+**Proof.** We prove only one case. Suppose $D = \{D_\alpha : \alpha \in A\}$
 
-
+$S \in [\alpha]^{<\omega}$ where $V_S = \bigcup_{\alpha \in S} V_\alpha$ and $D_\alpha$ has a
 
 
 
