@@ -80,31 +80,34 @@ of $\mathcal{B}$. \qedsymbol
 Let $D = \{D_\alpha : \alpha \in A\}$ be a discrete family
 of closed subsets of $X$ and $D^*$ the induced cover.
 
-\textup{(i)}  If $D$ has a cushioned open (cushioned) refinement, then $D$ has a discrete (disjoint) open expansion.
+\textup{(i)}  If $D$ has a cushioned open $($cushioned$)$ refinement, then $D$ has a discrete $($disjoint$)$ open expansion.
 
-\textup{(ii)}  If $D$ has a cushioned open (cushioned) refinement, then $D$ has a $\sigma$-sequence of open expansions.
+\textup{(ii)}  If $D$ has a  $\sigma$-cushioned open 
+$(\sigma$-cushioned$)$ 
+ refinement, then $D$ has a $\epsilon^*$-sequence $(\epsilon$-sequence$)$ 
+ of open expansions.
 
-\textup{(iii)}  If $D^{*F}$ has a cushioned open (cushioned) refinement, then $D$ has a LF (point-finite) open expansion.
+\textup{(iii)}  If $D^{*F}$ has a $\sigma$-cushioned open (cushioned) refinement, then $D$ 
+has a locally finite (point-finite) open expansion.
 
-\textup{(iv)}  If $D^{*F}$ has a $\sigma$-cushioned open (cushioned) refinement, then $D$ has a ($\sigma$-)sequence of open expansions.
-}
+\textup{(iv)}  If $D^{*F}$ has a $\sigma$-cushioned open $(\sigma$-cushioned$)$ 
+refinement, then $D$ has a $\theta$-sequence $(\theta$-sequence$)$ of open expansions.
+}%end of lemma
 
-
-**Proof.** We prove only one case. Suppose $D = \{D_\alpha : \alpha \in A\}$
-
-$S \in [\alpha]^{<\omega}$ where $V_S = \bigcup_{\alpha \in S} V_\alpha$ and $D_\alpha$ has a
-
-
-
-
-$\mathcal{G} = \bigcup_{n<\omega} \mathcal{G}_{n}$ where each $\mathcal{G}_{n}$ is a cushioned open refinement of $\mathcal{U}$.
-
-For each $n<\omega$, let $\mathcal{G}_{n} = \{G_{n,s} : s \in \Gamma\}$.
-
-For each $\gamma < \tau$, $\Gamma \in \eta^{<\omega}$, $\overline{\bigcup_{s\in\Gamma} G_{n,s}} \subset \bigcup_{s\in\Gamma} U_{s}$. For $n<\omega$, $d\in D$, let
-
-$$H_{n,d} = X \setminus \bigcup \{G_{n,s} : s\in \Gamma, d \notin s\}$$
-Then $G_{n,s} \subset H_{n,d}$ for each $s \in \Gamma$ and $n<\omega$. For each $n<\omega$, $\mathcal{H}_{n} = \{H_{n,d} : d \in D\}$ is an open expansion of $D$. To see that $(\mathcal{H}_{n})_{n<\omega}$ is a sequence, let $x \in X$. There is $m<\omega$ and $s_{0} \in \Gamma$ such that $x \in G_{m,s_{0}}$. Then $x \notin H_{m,d}$ for all $d \notin s_{0}$. Thus $(\mathcal{H}_{n})_{n<\omega}$ is a sequence.
-
+Proof. We prove only one case. Suppose $\mathcal{D}^{*F}$  has a
+$\sigma$-cushioned open refinement
+$\mathcal{G} = \bigcup_{n<\omega} \mathcal{G}_{n}$, where 
+$\mathcal{G}_{n} = \{G_{n, S}: S\in [\Delta]^{<\omega}\}$ 
+such that for each $n<\omega$ and each $\Gamma\subset [\Delta]^{<\omega}$,  
+$\overline{\bigcup_{s\in\Gamma} G_{n,S}} \subset \bigcup_{S\in\Gamma} U_S$. For $n<\omega$, $\alpha\in \Delta$, let
+$$H_{n,\alpha} = X \setminus \bigcup \{G_{n,S} : 
+S\in [\Delta]^{<\omega}, \alpha\in\Delta\setminus S\}$$
+Then $D_\alpha \subset H_{n,\alpha}$ for each $\alpha \in \Delta$ and $n<\omega$. 
+For each $n<\omega$, $\mathcal{H}_{n} = \{H_{n,\alpha} : \alpha \in \Delta\}$ is an open expansion of $\mathcal{D}$. 
+To see that $\{\mathcal{H}_n: n<\omega\}$ is a $\theta^*$-sequence, let $x \in X$. 
+There exist $m<\omega$ and $S_0 \in \Gamma$ such that $x \in G_{m, S_0}$. 
+Then $\operatorname{ind} (\mathcal{H})_{G_{m,S_0}}\subset S_0$. 
+Thus $\{\mathcal{H}_n: n<\omega\}$ is a $\theta^*$-sequence.
+\qedsymbol
 
 \end{document}
