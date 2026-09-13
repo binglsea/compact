@@ -9,7 +9,7 @@
 Let $\mathcal{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
 family of subsets of $X$. 
 Let $\mathcal{B}^* = \{U_S: S\in [\Delta]^{<\omega}  \text{ and} $
-$U_S = X - \bigcup_{\gamma \in\Delta - S} \overline{B_\gamma}\} $. 
+$U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\} $. 
 Then $\mathcal{B}^*$ 
 is an open cover of $X$. We call $\mathcal{B}^*$ an 
 \uwave{induced cover}\index{induced cover, \S\ref{sec:prelim_induced_covers}} 
@@ -25,7 +25,7 @@ Remark.
 It is easy to see that 
 $\mathcal{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
 S\in [\Delta]^{<\omega}  \text{ and} $
-$U_S = X - \bigcup_{\gamma \in\Delta-S} \overline{B_\gamma}\}$ 
+$U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\}$ 
 is a locally finite refinement of $\mathcal{B}^*$.
 We also see that
 $\mathcal{B}^*$ is an interior-preserving 
@@ -35,7 +35,7 @@ $\mathcal{B}^*$ is an interior-preserving
 Let $\mathcal{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
 closed subsets of $X$.
 For $\alpha\in\Delta$, we use notation 
-$U_\alpha = X - \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\alpha$,
+$U_\alpha = X \setminus \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\alpha$,
 then $D_\alpha \subseteq U_\alpha$.
 Let $\mathcal{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
@@ -44,7 +44,7 @@ Then $\mathcal{D}^*$ and $\mathcal{D}^{*F}$ are open $|\Delta|$-cover of $X$.
 We call $\mathcal{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
 
-Remark. Clearly, $X - \bigcup\mathcal{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
+Remark. Clearly, $X \setminus \bigcup\mathcal{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
 = \bigcap\mathcal{D}^*$.  By Defintion \ref*{def_prelim3_cp_ip},
 $\mathcal{D}^*$ is an interior-preserving open cover and 
 $\mathcal{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
@@ -67,7 +67,7 @@ $\mathcal{G} = \{G_S: S\in [D^*]^{<\omega}\}$ such that for any
 $\Gamma\subset[\Delta]^{<\omega}$,
 $\overline{\bigcup_{s\in\Gamma}G_s}\subset\bigcup_{s\in\Gamma}U_s$.
 For $\alpha\in\Delta$, let
-$$H_\alpha = X - \overline{\bigcup\{G_S: S\in [\Delta]^{<\omega}, \alpha\notin S}\}.$$
+$$H_\alpha = X \setminus \overline{\bigcup\{G_S: S\in [\Delta]^{<\omega}, \alpha\notin S}\}.$$
 Then $B_\alpha\subset H_\alpha$ for each $\alpha\in\Delta$.
 To see $\mathcal{H}=\{H_\alpha: \alpha\in\Delta\}$
 is locally finite, let $x \in X$. There exists $S_0 \in [\alpha]^{<\omega}$ such that 
