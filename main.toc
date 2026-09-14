@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{11}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Works of Junnila}{11}{section.4.1}%
 \contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{12}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Works of J.-G. Jiang (I)}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{12}{section.5.1}%
 \contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{13}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{13}{section.6.1}%
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{14}{chapter.7}%
