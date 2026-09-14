@@ -9,11 +9,15 @@
 	 Let Let $\mathcal{U} = \{U_{\alpha} : \alpha \in\Delta\}$ be a family of subsets of $X$.
 
 \textup{(i) (Michael [1957]\cite{Michael1957})}
-$\mathcal{U}$ is closure-preserving (simply denoted by CP) if for any $\Gamma \subset \Delta$,
+$\mathcal{U}$ is 
+\uwave{closure-preserving}\index{closure-preserving, \S\ref{sec:prelim_more_covers}} 
+(simply denoted by CP) if for any $\Gamma \subset \Delta$,
 $$\overline{\bigcup_{\alpha\in \Gamma} U_{\alpha}} = \bigcup_{\alpha\in \Gamma} \overline{U_{\alpha}}$$
 
 \textup{(ii) (Junnila [1979a]\cite{Junnila1979a})} 
-$\mathcal{U}$ is interior-preserving (simply denoted by IP) if for any $\Gamma \subset \Delta$,
+$\mathcal{U}$ is 
+\uwave{interior-preserving}\index{interior-preserving, \S\ref{sec:prelim_more_covers}} 
+ (simply denoted by IP) if for any $\Gamma \subset \Delta$,
 $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\in \Gamma} U_{\alpha}^{\circ}$$
 } %end of def
 
@@ -43,7 +47,10 @@ $$\bigcap_{\beta \in P} \left( \bigcup_{\alpha \in A_\beta} U_\alpha \right) = \
 By Lemma \ref{lemma_prelim3_ip_equiv}, $\mathcal{U}'$ is interior-preserving open.
 \qedsymbol
 
-{\definition{} (\textup{Junnila [1979b]\cite{Junnila1979b})} A cover $\mathcal{E}$ of $X$ is **semi-open** if for every $x \in X$, $x \in \left(\text{st}(x, \mathcal{E})\right)^\circ$.
+{\definition{} (\textup{Junnila [1979b]\cite{Junnila1979b})} 
+	A cover $\mathcal{E}$ of $X$ is 
+\uwave{semi-open}\index{semi-open, \S\ref{sec:prelim_more_covers}} 
+if for every $x \in X$, $x \in  \operatorname{st}(x, \mathcal{E})^\circ$.
 
 } %end of def
 
@@ -51,22 +58,24 @@ By Lemma \ref{lemma_prelim3_ip_equiv}, $\mathcal{U}'$ is interior-preserving ope
 
 \textup{(i)}  $\mathcal{E}$ is semi-open.
 
-\textup{(ii)} For each $A \subset X$, $\overline{A} \subset \text{st}(A, \mathcal{E})^\circ$.
+\textup{(ii)} For each $A \subset X$, 
+$\overline{A} \subset \operatorname{st}(A, \mathcal{E})$.
 
-\textup{(iii} For each $A \subset X$, $A \subset \text{st}(A, \mathcal{E})^\circ$.
+\textup{(iii} For each $A \subset X$, $A \subset  \operatorname{st}(A, \mathcal{E})^\circ$.
 }
 
+\vspace{8pt}
+Clearly, every closure-preserving closed cover, as well as open covers, are semi-open.
 
-Clearly, every CP closed cover, as well as open covers, are semi-open.
 
-Based on the provided document snippet, here is the extracted text:
-
----
-
-{\definition{} A subset $A$ of $X$ is functionally open, or a cozero set if $A = f^{-1}(0, 1] = \{x \in X : f(x) > 0\}$ for some continuous function $f : X \rightarrow [0, 1]$.
-
-A family $\mathcal{U}$ is functionally open if every member of it is functionally open.
-}
+{\definition{} A subset $A$ of $X$ is 
+\uwave{functionally open}\index{functionally open, \S\ref{sec:prelim_more_covers}} 
+or a cozero set 
+\uwave{cozero set}\index{cozero set, \S\ref{sec:prelim_more_covers}} 
+if $A = f^{-1}(0, 1] = \{x \in X : f(x) > 0\}$ for some continuous function 
+$f : X \rightarrow [0, 1]$.
+A family of subsets of $X$ is functionally open if every member of it is functionally open.
+}%end of def
 
 
 {\definition{} Let $\Phi = \{\varphi_\alpha : \alpha \in \Delta\}$ be a family of continuous functions from $X$ into $[0, 1]$ such that the family 

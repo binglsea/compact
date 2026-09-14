@@ -6,5 +6,14 @@
 \contentsline {section}{\numberline {2.1}Normal Covers}{9}{section.2.1}%
 \contentsline {chapter}{\numberline {Chapter 3}Works of Mack, Worrell, Liu and Smith}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Works of Mack, Worrell}{10}{section.3.1}%
-\contentsline {chapter}{\numberline {Chapter 4}jiang8}{11}{chapter.4}%
-\contentsline {chapter}{Index}{13}{chapter*.3}%
+\contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Works of Junnila}{11}{section.4.1}%
+\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Works of J.-G. Jiang (I)}{12}{section.5.1}%
+\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{13}{section.6.1}%
+\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{14}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Works of J.-G. Jiang (III)}{14}{section.7.1}%
+\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{15}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{15}{section.8.1}%
+\contentsline {chapter}{Index}{17}{chapter*.3}%
