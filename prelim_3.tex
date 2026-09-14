@@ -17,7 +17,8 @@ $\mathcal{U}$ is interior-preserving (simply denoted by IP) if for any $\Gamma \
 $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\in \Gamma} U_{\alpha}^{\circ}$$
 } %end of def
 
-{\lemma{}  For a family $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
+{\lemma{}  \label{lemma_prelim3_ip_equiv}
+For a family $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
 
 \textup{(i)} $\mathcal{U}$ is interior-preserving.
 	
@@ -31,7 +32,6 @@ $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\i
  open family in $X$. For each $\beta \in B$, let $\Delta_\beta \subset \Delta$. Let
 
 $$\mathcal{U}' = \left\{ \bigcap_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}, \quad \mathcal{U}'' = \left\{ \bigcup_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}.$$
-
 Then the families $\mathcal{U}'$ and $\mathcal{U}''$ are interior-preserving open.
 } %end of teorem
 
@@ -40,18 +40,22 @@ Proof. If $\mathcal{U}$ is IP open, then clearly $\mathcal{U}''$ is IP open. To 
 
 $$\bigcap_{\beta \in P} \left( \bigcup_{\alpha \in A_\beta} U_\alpha \right) = \bigcup \left\{ \bigcap_{\beta \in P} U_{f(\beta)} : f \in \prod_{\beta \in P} A_\beta \right\}.$$
 
-By Lemma 1.3.2, $\mathcal{U}'$ is interior-preserving open.
+By Lemma \ref{lemma_prelim3_ip_equiv}, $\mathcal{U}'$ is interior-preserving open.
 \qedsymbol
 
 {\definition{} (\textup{Junnila [1979b]\cite{Junnila1979b})} A cover $\mathcal{E}$ of $X$ is **semi-open** if for every $x \in X$, $x \in \left(\text{st}(x, \mathcal{E})\right)^\circ$.
 
 } %end of def
 
-**1.3.5. Lemma.** If $\mathcal{E}$ is a cover of $X$, then the following are equivalent.
+{\definition{}  If $\mathcal{E}$ is a cover of $X$, then the following are equivalent.
 
-* **(i)** $\mathcal{E}$ is semi-open.
-* **(ii)** For each $A \subset X$, $\overline{A} \subset \text{st}(A, \mathcal{E})^\circ$.
-* **(iii)** For each $A \subset X$, $A \subset \text{st}(A, \mathcal{E})^\circ$.
+\textup{(i)}  $\mathcal{E}$ is semi-open.
+
+\textup{(ii)} For each $A \subset X$, $\overline{A} \subset \text{st}(A, \mathcal{E})^\circ$.
+
+\textup{(iii} For each $A \subset X$, $A \subset \text{st}(A, \mathcal{E})^\circ$.
+}
+
 
 Clearly, every CP closed cover, as well as open covers, are semi-open.
 
@@ -59,24 +63,45 @@ Based on the provided document snippet, here is the extracted text:
 
 ---
 
-**1.3.6. Definition.** A subset $A$ of $X$ is functionally open, or a cozero set if $A = f^{-1}(0, 1] = \{x \in X : f(x) > 0\}$ for some continuous function $f : X \rightarrow [0, 1]$.
+{\definition{} A subset $A$ of $X$ is functionally open, or a cozero set if $A = f^{-1}(0, 1] = \{x \in X : f(x) > 0\}$ for some continuous function $f : X \rightarrow [0, 1]$.
 
 A family $\mathcal{U}$ is functionally open if every member of it is functionally open.
+}
 
-**1.3.7. Definition.** Let $\Phi = \{\varphi_\alpha : \alpha \in \Delta\}$ be a family of continuous functions from $X$ into $[0, 1]$ such that the family $\{\varphi_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ is point finite. For $x \in X$, let $\Delta(x) = \{\alpha \in \Delta : x \in \overline{\varphi_\alpha^{-1}(0, 1]}\}$.
 
-(i) Define $\varphi : X \rightarrow \mathbb{R}$ by $\varphi = \sum_{\alpha \in \Delta} \varphi_\alpha$.
+{\definition{} Let $\Phi = \{\varphi_\alpha : \alpha \in \Delta\}$ be a family of continuous functions from $X$ into $[0, 1]$ such that the family 
+$\{\varphi_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ is point finite. 
+For $x \in X$, let $\Delta(x) = \{\alpha \in \Delta : x \in\varphi_\alpha^{-1}(0, 1]\}$.
 
-$\varphi(x) = \sum_{\alpha \in \Delta} \varphi_\alpha(x) = \begin{cases} 0, & \text{if } \Delta(x) = \emptyset, \\ \varphi_{\alpha_1}(x) + \dots + \varphi_{\alpha_n}(x), & \text{if } \Delta(x) = \{\alpha_1, \dots, \alpha_n\}. \end{cases}$
+\textup{(i)} Define $\varphi : X \rightarrow \mathbb{R}$ by 
+%$\varphi = \sum_{\alpha \in \Delta} \varphi_\alpha$.
 
-(ii) A family $\Phi$ is a partition of unity on $X$ if for each $x \in X$, $\sum_{\alpha \in \Delta} \varphi_\alpha(x) = 1$.
+$$\varphi(x) = \sum_{\alpha \in \Delta} \varphi_\alpha(x) = 
+\begin{cases} 0, 
+	& \text{if } \Delta(x) = \emptyset, 
+	\\ \varphi_{\alpha_1}(x) + \dots + \varphi_{\alpha_n}(x), 
+	& \text{if } \Delta(x) = \{\alpha_1, \dots, \alpha_n\}. 
+\end{cases}$$
 
-**1.3.8. Lemma.**
-(i) If $\mathcal{V}$ is a LF family of functionally open subsets of $X$, then $\bigcup \mathcal{V}$ is functionally open.
-(ii) If $\mathcal{V}$ is a LF functionally open cover of $X$, then there is a partition of unity $\{\varphi_\alpha\}$ on $X$ such that ...
+\textup{(ii)} A family $\Phi$ is a 
+\uwave{partition of unity}\index{partition of unity, \S\ref{sec:prelim_more_covers}} 
+ on $X$ if for each $x \in X$, $\sum_{\alpha \in \Delta} \varphi_\alpha(x) = 1$.
+}
 
-**Proof.** Let $\mathcal{V} = \{f_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ be a LF family of functionally open subsets of $X$ where each $f_\alpha : X \rightarrow [0, 1]$ is continuous.
 
-(1) For each $x \in X$, $\Delta(x) = \{\alpha \in \Delta : x \in f_\alpha^{-1}(0, 1]\}$ is finite.
+{\lemma{}
+\textup{(i)} If $\mathcal{V}$ is a locally finite family of functionally open subsets of $X$, 
+then $\bigcup \mathcal{V}$ is functionally open.
+
+\textup{(ii)}  If $\mathcal{V}$ is a locally finte functionally open cover of $X$, 
+then there is a partition of unity $\{\varphi_\alpha: \alpha\in\Delta\}$ on $X$ 
+such that $\mathcal{V} = \{\varphi_\alpha^{-1}(0, 1]:  \alpha\in\Delta\}$.
+}
+
+Proof. 
+ Let $\mathcal{V} = \{f_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ be a locally finite
+ family of functionally open subsets of $X$ where each $f_\alpha : X \rightarrow [0, 1]$ is continuous.
+
+(i) For each $x \in X$, $\Delta(x) = \{\alpha \in \Delta : x \in f_\alpha^{-1}(0, 1]\}$ is finite.
 
 \end{document}
