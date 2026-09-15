@@ -11,13 +11,13 @@
 \textup{(i) (Michael [1957]\cite{Michael1957})}
 $\mathcal{U}$ is 
 \uwave{closure-preserving}\index{closure-preserving, \S\ref{sec:prelim_more_covers}} 
-(simply denoted by CP) if for any $\Gamma \subset \Delta$,
+if for any $\Gamma \subset \Delta$,
 $$\overline{\bigcup_{\alpha\in \Gamma} U_{\alpha}} = \bigcup_{\alpha\in \Gamma} \overline{U_{\alpha}}$$
 
 \textup{(ii) (Junnila [1979a]\cite{Junnila1979a})} 
 $\mathcal{U}$ is 
 \uwave{interior-preserving}\index{interior-preserving, \S\ref{sec:prelim_more_covers}} 
- (simply denoted by IP) if for any $\Gamma \subset \Delta$,
+ if for any $\Gamma \subset \Delta$,
 $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\in \Gamma} U_{\alpha}^{\circ}$$
 } %end of def
 
@@ -28,7 +28,7 @@ For a family $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X
 	
 \textup{(ii)} For each  $\Gamma \subset \Delta$, $\bigcap_{\alpha \in \Gamma} U_\alpha$ is open.
 	
-\textup{(iii)}  For each $x \in \bigcup\mathcal{U}$, $\bigcap(U)_x$ is open.
+\textup{(iii)}  For each $x \in \bigcup\mathcal{U}$, $\bigcap(\mathcal{U})_x$ is open.
 \qedsymbol
 } %end of lemma
 
@@ -112,5 +112,16 @@ Proof.
  family of functionally open subsets of $X$ where each $f_\alpha : X \rightarrow [0, 1]$ is continuous.
 
 (i) For each $x \in X$, $\Delta(x) = \{\alpha \in \Delta : x \in f_\alpha^{-1}(0, 1]\}$ is finite.
+Define a continuous function $f : X \rightarrow [0, 1]$ by
+$f(x) = \max \{ f_\alpha : x \in \Delta \}$ for $x\in X$.
+Then $\bigcup \mathcal{V} = f^{-1}(0, 1]$ is functionally open.
 
+(ii) If $\mathcal{V}$ covers $X$, then 
+$g = \sum_{\alpha\in\Delta}f_\alpha : X \rightarrow \mathbb{R}$ 
+is a continuous function such that $g(x) > 0$ for all $x\in X$. 
+For each $\alpha \in \Delta$, define a continuous function 
+$\varphi_\alpha : X \rightarrow [0, 1]$ by $\varphi_\alpha(x) = f_\alpha(x) /g(x)$. 
+Then $\sum_{\alpha\in\Delta}\varphi_\alpha(\alpha) = 1$ for each $x \in X$,
+and  $\varphi_\alpha^{-1}(0, 1] = f_\alpha^{-1}(0, 1]$.
+Therefore, $\{\varphi_\alpha\}$ is a partition of unity on $X$.
 \end{document}
