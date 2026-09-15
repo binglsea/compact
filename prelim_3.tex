@@ -40,10 +40,11 @@ Then the families $\mathcal{U}'$ and $\mathcal{U}''$ are interior-preserving ope
 } %end of teorem
 
 \vspace{10pt}
-Proof. If $\mathcal{U}$ is IP open, then clearly $\mathcal{U}''$ is IP open. To see that $\mathcal{U}'$ is IP open, let $P \subset B$. It is easily verified that
+Proof. If $\mathcal{U}$ is interior-preserving open, then clearly $\mathcal{U}''$ is 
+interior-preserving open. To see that $\mathcal{U}'$ is interior-preserving open, let $D \subset B$. It is easily verified that
 
-$$\bigcap_{\beta \in P} \left( \bigcup_{\alpha \in A_\beta} U_\alpha \right) = \bigcup \left\{ \bigcap_{\beta \in P} U_{f(\beta)} : f \in \prod_{\beta \in P} A_\beta \right\}.$$
-
+$$\bigcap_{\beta \in D} \left( \bigcup_{\alpha \in \Delta_\beta} U_\alpha \right) 
+= \bigcup \left\{ \bigcap_{\beta \in D} U_{f(\beta)} : f \in \prod_{\beta \in D} \Delta_\beta \right\}.$$
 By Lemma \ref{lemma_prelim3_ip_equiv}, $\mathcal{U}'$ is interior-preserving open.
 \qedsymbol
 
@@ -54,7 +55,7 @@ if for every $x \in X$, $x \in  \operatorname{st}(x, \mathcal{E})^\circ$.
 
 } %end of def
 
-{\definition{}  If $\mathcal{E}$ is a cover of $X$, then the following are equivalent.
+{\lemma{}  If $\mathcal{E}$ is a cover of $X$, then the following are equivalent.
 
 \textup{(i)}  $\mathcal{E}$ is semi-open.
 
@@ -62,6 +63,7 @@ if for every $x \in X$, $x \in  \operatorname{st}(x, \mathcal{E})^\circ$.
 $\overline{A} \subset \operatorname{st}(A, \mathcal{E})$.
 
 \textup{(iii} For each $A \subset X$, $A \subset  \operatorname{st}(A, \mathcal{E})^\circ$.
+\qedsymbol
 }
 
 \vspace{8pt}
@@ -70,7 +72,7 @@ Clearly, every closure-preserving closed cover, as well as open covers, are semi
 
 {\definition{} A subset $A$ of $X$ is 
 \uwave{functionally open}\index{functionally open, \S\ref{sec:prelim_more_covers}} 
-or a cozero set 
+or a 
 \uwave{cozero set}\index{cozero set, \S\ref{sec:prelim_more_covers}} 
 if $A = f^{-1}(0, 1] = \{x \in X : f(x) > 0\}$ for some continuous function 
 $f : X \rightarrow [0, 1]$.
@@ -107,6 +109,7 @@ then there is a partition of unity $\{\varphi_\alpha: \alpha\in\Delta\}$ on $X$
 such that $\mathcal{V} = \{\varphi_\alpha^{-1}(0, 1]:  \alpha\in\Delta\}$.
 }
 
+\vspace{8pt}
 Proof. 
  Let $\mathcal{V} = \{f_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ be a locally finite
  family of functionally open subsets of $X$ where each $f_\alpha : X \rightarrow [0, 1]$ is continuous.

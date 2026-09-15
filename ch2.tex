@@ -28,8 +28,51 @@ Tukey [1940]\cite{Tukey} proved that every metric space is fully normal.
 Proof. Let $(X, \rho)$ be a pseudo-metric space. Let $\mathcal{U}$ be an open cover of $X$. For each $x \in X$, let $x \in U_x$ for some $U_x \in \mathcal{U}$. 
 Assume an integer $m(x)\ge 1$ such that
 
-$$B_\rho\left(x, \frac{3}{m(x)}\right) \subset U_x.$$
+(i) $B_\rho\left(x, \frac{3}{m(x)}\right) \subset U_x.$
 
-Let $\mathcal{V} = \{B_\rho\left(x, \frac{1}{m(x)}\right) : x \in X\}$. We will show that $\mathcal{V}$ is an open point-star refinement of $\mathcal{U}$, so $X$ is fully normal. Let $y \in X$. There is $n \in X$ such that... Let $k = \min\{m(x) : \dots\}$
+Let $\mathcal{V} = \{B_\rho\left(x, \frac{1}{m(x)}\right) : x \in X\}$. We will show that $\mathcal{V}$ is an open point-star refinement of $\mathcal{U}$, so $X$ is fully normal. Let $x \in X$. There exits $u \in X$ such that
+$x\in B_\rho\left(u, \frac{1}{m(u)}\right)$.
+Let 
+$$k = \min\{m(u) : u\in X, x\in B_\rho\left(u, \frac{1}{m(u)}\right)\}.$$
+Let $u_0\in X$ such that $k = m(u_0)$, hence we have
 
+(ii) $x\in B_\rho\left(u_o, \frac{1}{m(u_0)}\right)$.
+
+It suffices to show taht 
+
+(iii) 
+
+
+
+
+
+Let $u_0 \in X$ such that $k = m(u_0)$, hence we have
+
+$$(2) \quad x \in B_\rho\left(u_0, \frac{1}{m(u_0)}\right)$$
+
+It suffices to show that
+
+$$(3) \quad \mathrm{St}(x, \mathcal{V}) \subset U_{u_0}$$
+
+By (1), it suffices to show
+
+$$(4) \quad \mathrm{St}(x, \mathcal{V}) \subset B_\rho\left(u_0, \frac{3}{m(u_0)}\right).$$
+
+For if $y \in \mathrm{St}(x, \mathcal{V})$, then there is $B_\rho\left(z, \frac{1}{m(z)}\right) \in \mathcal{V}$ such that $y, x \in B_\rho\left(z, \frac{1}{m(z)}\right)$.
+
+Since $m(z) \ge k = m(u_0)$, we have
+
+$$\rho(y, u_0) \le \rho(y, z) + \rho(z, x) + \rho(x, u_0) < \frac{3}{m(u_0)}.$$
+
+Thus (4) holds. $\square$
+
+**2.1.3. Theorem (Dowker-Morita).** A countable functionally open cover of $X$ has a countable star-finite functionally open refinement.
+
+*Proof.* Let $\mathcal{U} = \{U_n : n \ge 1\}$ be a functionally open cover of $X$, where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. Define $f : X \to [0, 1]$ by
+
+$$f(x) = \sum_{n=1}^{\infty} f_n(x) / 2^n,$$
+
+a continuous function.
+
+For $n \ge 1$, let $G_n = f^{-1}\left(\frac{1}{2^n}, 1\right]$ and $F_n = f^{-1}\left[\frac{1}{2^n}, 1\right]$.
 \end{document}
