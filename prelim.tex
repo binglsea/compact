@@ -208,13 +208,13 @@ $\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
 \textup{(ii)} If $\mathcal{U}$ has a partial cushioned $($open$)$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $($open$)$  refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
 } % end of lemma
 
-{Proof of (i).} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
+\begin{proof} Only for (i) Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
 $\overline{\mathcal{V}}$ refines $\mathcal{U}$). For every $V\in\mathcal{V}$, pick 
 a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
 $H_\alpha = \bigcup\{V\in\mathcal{V}: \delta(V) = \alpha\}$.   
 Then $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ is a desired 
 locally finite open partial refinement of $\mathcal{U}$.
-\qedsymbol
+\end{proof} 
 
 {\definition{\textup{(Tukey[1940]\cite{Tukey})}}
 	Let $\mathcal{U}$ and $\mathcal{V}$ be covers of $X$.
@@ -241,7 +241,9 @@ $\{\operatorname{st}(x, \mathcal{V}) : x\in X\}$ refines $\mathcal{U}$.
 \textup{(iii)}  If $\mathcal{U}$ is a normal cover of $X$, then there is a normal cover $\mathcal{U}_0$ of $X$ such that $\overline{\mathcal{U}_0}$ refines $\mathcal{U}$.
 } %end of lemma
 
-Proof (i) Suppose $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ point-star-refines $\mathcal{U}$. To show
+\begin{proof} 
+(i) Suppose $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ 
+point-star-refines $\mathcal{U}$. To show
 that $\mathcal{W}$ star-refines $\mathcal{U}$, let $W \in \mathcal{W}$ and pick $a \in W$.
 Then $\operatorname{st}(a, \mathcal{V}) \subset U$ for some $U \in \mathcal{U}$. 
 For each $x \in W$ there is $V_x \in \mathcal{V}$ such that 
@@ -261,8 +263,9 @@ Hence $\mathcal{W}$ star-refines $\mathcal{U}$.
  $\operatorname{st}(U_1, \mathcal{U}_1) \subset U_0 \subset U$. 
  Since $\overline{U_1} \subset \operatorname{st}(U_1, \mathcal{U}_1)$,
  $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$. 
- Clearly, $\mathcal{U}_1$ is a normal cover of $X$.  \qedsymbol
-
+ Clearly, $\mathcal{U}_1$ is a normal cover of $X$. 
+ \end{proof} 
+ 	
 {\definition{}
 \textup{(i)}  $X$ is \uwave{$\lambda$-ultra paracompact}
  \index{$\lambda$-ultra paracompact, 
