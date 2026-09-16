@@ -73,9 +73,31 @@ Thus (4) holds.
 \vspace{8pt}
 Proof. Let $\mathcal{U} = \{U_n : n \ge 1\}$ be a functionally open cover of $X$, where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. Define $f : X \to [0, 1]$ by
 
-$$f(x) = \sum_{n=1}^{\infty} f_n(x) / 2^n,$$
+$$f(x) = \sum_{n=1}^{\infty} f_n(x) / 2^n, x\in X$$
 
 a continuous function.
 
 For $n \ge 1$, let $G_n = f^{-1}\left(\frac{1}{2^n}, 1\right]$ and $F_n = f^{-1}\left[\frac{1}{2^n}, 1\right]$.
+
+Here is the transcription of the manuscript excerpt from `jiang20.pdf`:
+
+---
+
+It is easy to check that $A_{n+1} \subset \bigcap_{k=1}^{n} U_k$ for each $n \ge 1$.
+
+For $k \ge 1, 1 \le j \le k$, let
+
+$$W_{n,k} = U_k \cap (G_{n+1} - F_{n-1}), \quad F_{-1} = \phi.$$
+
+$W = \bigcup_{k=1}^{\infty} W_{n,k}$. To see that $W$ covers $X$, let $x \in X$. Since $\{G_n\}$ covers $X$, let $m$ be the smallest integer such that $x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k \le m} U_k$, there is $k \le m$ such that $x \in U_k \cap (G_{m+1} - F_{m-1}) = W_{m,k}$.
+
+Hence $W$ is a countable functionally open refinement of $\mathcal{U}$.
+
+To see that $W$ is star-finite, fix $k \ge 1$, $1 \le j \le k$. For any $m \ge 1$, $1 \le i \le m$, if $m \ge k + 2$, then $W_{k,j} \subset G_{k+1} \subset F_{k+1} \subset F_{m-1}$. Then $W_{k,j} \cap W_{m,i} = \emptyset$.
+
+Hence if $W_{m,i} \cap W_{k,j} \neq \emptyset$, then $m < k+2$.
+
+It follows that $\mathrm{St}(W_{k,j}, W) \subset \{W_{m,i} : m < k+2, 1 \le i \le m\}$, so $W$ is star-finite.
+
+$$\square$$
 \end{document}
