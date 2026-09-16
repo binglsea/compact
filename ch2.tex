@@ -35,11 +35,11 @@ an integer $m(x)\ge 1$ such that $x \in U_x$ and
 Let $\mathcal{V}$ be the sets of smaller balls $B_\rho(x, \frac{1}{m(x)})$
 for all  $x \in X$ and its chosen $m(x)$ satisfying Condition (1).
 Then $\mathcal{V}$ is an open refinement of $\mathcal{U}$. 
-We will show that it is an open point-star refinement of $\mathcal{U}$, 
-so $X$ is fully normal. 
+We will show that it is also a point-star refinement of $\mathcal{U}$, 
+so that $X$ is fully normal. 
 Let $x \in X$, then there exits at least one $u \in X$ such that
-$x\in B_\rho\left(u, \frac{1}{m(u)}\right)\in\mathcal{V}$, 
-since $\mathcal{V}$ is a cover of $X$.
+$x\in B_\rho\left(u, \frac{1}{m(u)}\right)\in\mathcal{V}$
+since $\mathcal{V}$ covers $X$.
 So, we are able to define
 $$k(x) = \min\{m(u) : u\in X, x\in B_\rho\left(u, \frac{1}{m(u)}\right)\}.$$
 and pick $u_x\in X$ such that $k(x) = m(u_x)$. Now, we have
@@ -61,9 +61,9 @@ By (1), it suffices to show
 
 For if $y \in \mathrm{st}(x, \mathcal{V})$, then exits $t\in X$ 
 such that $y, x \in B_\rho\left(t, \frac{1}{m(t)}\right)$.
-Since $m(u_0) \ge k(x) = m(t)$, we have
+Since $m(u_x)=k(x) \le m(t)$, we have
 
-$$\rho(y, u_0) \le \rho(y, t) + \rho(t, x) + \rho(x, u_0) < \frac{3}{m(u_0)}.$$
+$$\rho(y, u_x) \le \rho(y, t) + \rho(t, x) + \rho(x, u_x) < \frac{3}{m(u_x)}.$$
 Thus (4) holds. 
 \qedsymbol
 
