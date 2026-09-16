@@ -25,40 +25,44 @@ Tukey [1940]\cite{Tukey} proved that every metric space is fully normal.
 }
 
 \vspace{10pt}
-Proof. Let $(X, \rho)$ be a pseudo-metric space. Let $\mathcal{U}$ be an open cover of $X$. For each $x \in X$, let $x \in U_x$ for some $U_x \in \mathcal{U}$. 
-Assume an integer $m(x)\ge 1$ such that
+Proof. Let $(X, \rho)$ be a pseudo-metric space. Let $\mathcal{U}$ be an open cover of $X$. For each $x \in X$, pick some $U_x \in \mathcal{U}$ and 
+an integer $m(x)\ge 1$ such that $x \in U_x$ and
 
-(i) $B_\rho\left(x, \frac{3}{m(x)}\right) \subset U_x.$
+\begin{equation}
+	\mathclap{B_\rho\left(x, \frac{3}{m(x)}\right) \subset U_x\in \mathcal{U}.} \tag*{(1)}
+\end{equation}
 
-Let $\mathcal{V} = \{B_\rho\left(x, \frac{1}{m(x)}\right) : x \in X\}$. We will show that $\mathcal{V}$ is an open point-star refinement of $\mathcal{U}$, so $X$ is fully normal. Let $x \in X$. There exits $u \in X$ such that
-$x\in B_\rho\left(u, \frac{1}{m(u)}\right)$.
-Let 
-$$k = \min\{m(u) : u\in X, x\in B_\rho\left(u, \frac{1}{m(u)}\right)\}.$$
-Let $u_0\in X$ such that $k = m(u_0)$, hence we have
+Define $\mathcal{V} = \{B_\rho\left(x, \frac{1}{m(x)}\right) : x \in X, 
+B_\rho(x, \frac{1}{m(x)})$ is the ball chosen for the above Condition (1)\}, 
+then $\mathcal{V}$ is an open refinement of $\mathcal{U}$. 
+We will show that it is an open point-star refinement of $\mathcal{U}$, 
+so $X$ is fully normal. 
+Let $x \in X$, then there exits at least one $u \in X$ such that
+$x\in B_\rho\left(u, \frac{1}{m(u)}\right)\in\mathcal{V}$, 
+since $\mathcal{V}$ is a cover of $X$.
+So, we are able to define
+$$k(x) = \min\{m(u) : u\in X, x\in B_\rho\left(u, \frac{1}{m(u)}\right)\}.$$
+and a pick a $u_0\in X$ such that $k(x) = m(u_0)$. Now, we have
 
-(ii) $x\in B_\rho\left(u_o, \frac{1}{m(u_0)}\right)$.
+%(2) $x\in B_\rho\left(u_0, \frac{1}{m(u_0)}\right)\in \mathcal{V}$.
+\begin{equation}
+	\mathclap{x\in B_\rho\left(u_0, \frac{1}{m(u_0)}\right)\in \mathcal{V}.} \tag*{(2)}
+\end{equation}
 
-It suffices to show taht 
+It suffices to show that 
 
-(iii) 
-
-
-
-
-
-Let $u_0 \in X$ such that $k = m(u_0)$, hence we have
-
-$$(2) \quad x \in B_\rho\left(u_0, \frac{1}{m(u_0)}\right)$$
-
-It suffices to show that
-
-$$(3) \quad \mathrm{St}(x, \mathcal{V}) \subset U_{u_0}$$
+%(3) $( \mathrm{st}(x, \mathcal{V}) \subset U_{u_0}$.
+\begin{equation}
+	\mathclap{\mathrm{st}(x, \mathcal{V}) \subset U_{u_0}.} \tag*{(3)}
+\end{equation}
 
 By (1), it suffices to show
+\begin{equation}
+	\mathclap{\mathrm{st}(x, \mathcal{V}) \subset B_\rho(u_0, \frac{3}{m(u_0)}).} \tag*{(4)}
+\end{equation}
 
-$$(4) \quad \mathrm{St}(x, \mathcal{V}) \subset B_\rho\left(u_0, \frac{3}{m(u_0)}\right).$$
-
-For if $y \in \mathrm{St}(x, \mathcal{V})$, then there is $B_\rho\left(z, \frac{1}{m(z)}\right) \in \mathcal{V}$ such that $y, x \in B_\rho\left(z, \frac{1}{m(z)}\right)$.
+For if $y \in \mathrm{st}(x, \mathcal{V})$, then there
+ is $B_\rho\left(z, \frac{1}{m(z)}\right) \in \mathcal{V}$ such that $y, x \in B_\rho\left(z, \frac{1}{m(z)}\right)$.
 
 Since $m(z) \ge k = m(u_0)$, we have
 
@@ -66,7 +70,8 @@ $$\rho(y, u_0) \le \rho(y, z) + \rho(z, x) + \rho(x, u_0) < \frac{3}{m(u_0)}.$$
 
 Thus (4) holds. $\square$
 
-**2.1.3. Theorem (Dowker-Morita).** A countable functionally open cover of $X$ has a countable star-finite functionally open refinement.
+{\theorem{} Dowker-Morita) A countable functionally open cover of $X$ has a countable star-finite functionally open refinement.
+}
 
 *Proof.* Let $\mathcal{U} = \{U_n : n \ge 1\}$ be a functionally open cover of $X$, where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. Define $f : X \to [0, 1]$ by
 
