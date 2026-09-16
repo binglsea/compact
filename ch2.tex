@@ -24,8 +24,8 @@ Tukey [1940]\cite{Tukey} proved that every metric space is fully normal.
 {\theorem. Every pseudo-metric space is fully normal.
 }
 
-\vspace{10pt}
-Proof. Let $(X, \rho)$ be a pseudo-metric space. Let $\mathcal{U}$ be an open cover of $X$. For each $x \in X$, pick some $U_x \in \mathcal{U}$ and 
+\begin{proof}
+Let $(X, \rho)$ be a pseudo-metric space. Let $\mathcal{U}$ be an open cover of $X$. For each $x \in X$, pick some $U_x \in \mathcal{U}$ and 
 an integer $m(x)\ge 1$ such that $x \in U_x$ and
 
 \begin{equation}
@@ -65,54 +65,51 @@ Since $m(u_x)=k(x) \le m(t)$, we have
 
 $$\rho(y, u_x) \le \rho(y, t) + \rho(t, x) + \rho(x, u_x) < \frac{3}{m(u_x)}.$$
 Thus (4) holds. 
-\qedsymbol
+\end{proof}
 
 {\theorem{} \textup{(Dowker-Morita)} A countable functionally open cover of $X$ has a countable star-finite functionally open refinement.
 }
 
-\vspace{8pt}
-Proof. Let $\mathcal{U} = \{U_n : n \ge 1\}$ be a functionally open cover of $X$, where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. Define $f : X \to [0, 1]$ by
+\begin{proof} 
+Let $\mathcal{U} = \{U_n : n \ge 1\}$ be a functionally open cover of $X$, 
+where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. Define $f : X \to [0, 1]$ by
 $$f(x) = \sum_{n=1}^{\infty} f_n(x) / 2^n, x\in X.$$
 
 For $n \ge 1$, let $G_n = f^{-1}\left(\frac{1}{2^n}, 1\right]$ and $F_n = f^{-1}\left[\frac{1}{2^n}, 1\right]$.
 It is easy to check that $G_{n+1} \subset \bigcap_{k=1}^{n} U_k$ for each $n \ge 1$.
 For $n1 \le k \le n$, let
 $W_{n,k} = U_k \bigcap (G_{n+1} \setminus F_{n-1}), \quad F_0 = \emptyset.$
-
-$W = \bigcup_{k=1}^{\infty} W_{n,k}$. To see that $W$ covers $X$, let $x \in X$. Since $\{G_n\}$ covers $X$, let $m$ be the smallest integer such that $x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k \le m} U_k$, there is $k \le m$ such that $x \in U_k \cap (G_{m+1} - F_{m-1}) = W_{m,k}$.
-
+$\mathcal{W} = \{W_{n,k}: n\ge 1, 1\le k \le n\}$. 
+To see that $\mathcal{W}$ covers $X$, let $x \in X$. 
+Since $\{G_n\}$ covers $X$, $f(x) > 0$. Let $m$ be the smallest integer such that 
+$x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k \le m} U_k$, 
+there exists $k \le m$ such that 
+$x \in U_k \bigcap (G_{m+1} \setminus F_{m-1}) = W_{m,k}$.
 Hence $W$ is a countable functionally open refinement of $\mathcal{U}$.
-
-To see that $W$ is star-finite, fix $k \ge 1$, $1 \le j \le k$. For any $m \ge 1$, $1 \le i \le m$, if $m \ge k + 2$, then $W_{k,j} \subset G_{k+1} \subset F_{k+1} \subset F_{m-1}$. Then $W_{k,j} \cap W_{m,i} = \emptyset$.
+To see that $W$ is star-finite, fix $k \ge 1$, $1 \le j \le k$. 
+For any $m \ge 1$, $1 \le i \le m$, if $m \ge k + 2$, 
+then $W_{k,j} \subset G_{k+1} \subset F_{k+1} \subset F_{m-1}$. 
+Then $W_{k,j} \cap W_{m,i} = \emptyset$.
 
 Hence if $W_{m,i} \cap W_{k,j} \neq \emptyset$, then $m < k+2$.
 
 It follows that $\mathrm{St}(W_{k,j}, W) \subset \{W_{m,i} : m < k+2, 1 \le i \le m\}$, so $W$ is star-finite.
-\qedsymbol
+\end{proof}
 
-Here is the transcription of the manuscript page from `jiang21.pdf`:
+{\theorem{} \textup{(Frink [1937]}. Suppose $f: X^2 \to [0, \infty)$ which satisfies
 
----
+\textup{(a)} $f(x,x)=0$, and $f(x,y)=f(y,x)$,
 
-**2.1.4. Theorem.** (Frink (1937)). Suppose $f: X^2 \to [0, \infty)$ which satisfies
-
-1. $f(x,x)=0$, and $f(x,y)=f(y,x)$,
-
-
-2. for any $r > 0$, if $f(x,y) < r$ and $f(y,z) < r$, then $f(x,z) < 2r$,
-
-
-
+\textup{(b)} for any $r > 0$, if $f(x,y) < r$ and $f(y,z) < r$, then $f(x,z) < 2r$,
 for any $x, y, z \in X$. Then there is a pseudo-metric $\rho$ on $X$ such that for any $x, y \in X$,
 
-1. $\rho(x,y) \le f(x,y)$,
+\textup{(i)}  $\rho(x,y) \le f(x,y)$,
 
+\textup{(ii)} 2. $f(x,y) \le 4\rho(x,y)$.
+}
 
-2. $f(x,y) \le 4\rho(x,y)$.
-
-
-
-*Proof.* For $x, y \in X$, let $g_0(x,y,s) = f(x,y)$. For $s = (a_1) \in X^1$, let $g_1(x,y,s) = f(x,a_1) + f(a_1,y)$. For $n \ge 2$, $s = (a_1, \ldots, a_n) \in X^n$, let
+\begin{proof} 
+	 For $x, y \in X$, let $g_0(x,y,s) = f(x,y)$. For $s = (a_1) \in X^1$, let $g_1(x,y,s) = f(x,a_1) + f(a_1,y)$. For $n \ge 2$, $s = (a_1, \ldots, a_n) \in X^n$, let
 
 $$g_n(x,y,s) = f(x,a_1) + \sum_{i=1}^{n-1} f(a_i, a_{i+1}) + f(a_n,y).$$
 
@@ -129,9 +126,7 @@ We have
 $$f(x,y) \le h_n(x,y,s).$$
 
 If we have proved the claim, then $f(x,y) \le 4g_n(x,y,s)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
-
-\qedsymbol
-
+\end{proof}
 
 
 \end{document}
