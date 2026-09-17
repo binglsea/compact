@@ -131,21 +131,16 @@ $f(x,y) \le h_n(x,y,s).$
 
 If we have proved the claim, then $f(x,y) \le 4g_n(x,y,s)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
 
-Here is the transcribed text from the image.
+(1) For any $x, y, a \in S$ we have either $f(x, y) \le 2 f(x, a)$ or $f(x, y) \le 2 f(x, a)$.
 
-*(Note: The uploaded image is oriented upside down. Below is the transcription in its correct, upright orientation.)*
+\textsc{Proof of (1)}. There are two cases.
 
----
+Case 1. If $f(x, a) \le f(a, y)$, then for any $r > 0$, $f(x, a) \le f(a, y) < f(a, y) + r$. 
+By hypothesis (b), $f(x, y) < 2 f(a, y) + r$, so $f(x, y) \le 2 f(a, y)$.
 
-**Cl2.** For any $x, y, a \in S$ we have either $f(x, y) \le 2 f(x, a)$ or $f(x, y) \le 2 f(x, a)$.
+Case 2. If $f(a, y) < f(x, a)$, then by (b) we have $f(x, y) \le 2 f(x, a)$.
 
-*Proof.* There are two cases.
-
-*Case 1.* If $f(x, a) \le f(a, y)$, then for any $r > 0$, $f(x, a) \le f(a, y) < f(a, y) + r$. By hypothesis (b), $f(x, y) < 2 f(a, y) + r$, so $f(x, y) \le 2 f(a, y)$.
-
-*Case 2.* If $f(a, y) < f(x, a)$, then by (b) we have $f(x, y) \le 2 f(x, a)$.
-
-*Proof of claim.* We use induction. Of course, we have $f(x, y) = f(x, y, \phi)$. Let $m \ge 1$, and assume that for all $d < m$, $S \in S_{d}$, $f(x, y) \le f_{d}(x, y, S)$. Let us show that
+\textsc{Proof of Claim}. We use induction. Of course, we have $f(x, y) = f(x, y, \phi)$. Let $m \ge 1$, and assume that for all $d < m$, $S \in S_{d}$, $f(x, y) \le f_{d}(x, y, S)$. Let us show that
 
 (2) $f(x, y) \le f_{m}(x, y, S)$ for $x, y \in S$, $S \in S_{m}$, $S = (a_{1}, \dots, a_{m})$.
 
