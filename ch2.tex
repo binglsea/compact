@@ -72,30 +72,32 @@ Thus (4) holds.
 
 \begin{proof} 
 Let $\mathcal{U} = \{U_n : n \ge 1\}$ be a functionally open cover of $X$, 
-where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. Define $f : X \to [0, 1]$ by
+where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 1]$. 
+Define a continous function $f : X \to [0, 1]$ by
 $$f(x) = \sum_{n=1}^{\infty} f_n(x) / 2^n, x\in X.$$
 For $n \ge 1$, let $G_n = f^{-1}\left(\frac{1}{2^n}, 1\right]$, 
 $F_n = f^{-1}\left[\frac{1}{2^n}, 1\right]$, and set $F_0 = \emptyset$.
 It is easy to check that $G_{n+1} \subset \bigcup_{k=1}^{n} U_k$ for each $n \ge 1$.
 Let
-$$\mathcal{W} = \{W_{n,k}: 1\le k \le n, W_{n,k} = U_k \bigcap (G_{n+1} \setminus F_{n-1})\}.$$
+$$\mathcal{W} = \{W_{n,k}: W_{n,k} = U_k \bigcap (G_{n+1} \setminus F_{n-1})
+ \text{ for } 
+1\le k \le n<\omega\}.$$
 To see that $\mathcal{W}$ covers $X$, let $x \in X$. 
 Since $\{G_n\}$ covers $X$, $f(x) > 0$. Let $m$ be the smallest integer such that 
 $x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k \le m} U_k$, 
 there exists $k \le m$ such that 
 $x \in U_k \bigcap (G_{m+1} \setminus F_{m-1}) = W_{m,k}$.
-Hence $W$ is a countable functionally open refinement of $\mathcal{U}$.
-To see that $W$ is star-finite, fix $k \ge 1$, $1 \le j \le k$. 
-For any $m \ge 1$, $1 \le i \le m$, if $m \ge k + 2$, 
+Hence $\mathcal{W}$ is a countable functionally open refinement of $\mathcal{U}$.
+To see that $\mathcal{W}$ is star-finite, fix $(k, j)$, $1 \le j \le k$. 
+For any $(m. i)$, $1 \le i \le m$, if $m > k + 2$, 
 then $W_{k,j} \subset G_{k+1} \subset F_{k+1} \subset F_{m-1}$. 
-Then $W_{k,j} \cap W_{m,i} = \emptyset$.
-
-Hence if $W_{m,i} \cap W_{k,j} \neq \emptyset$, then $m < k+2$.
-
-It follows that $\mathrm{St}(W_{k,j}, W) \subset \{W_{m,i} : m < k+2, 1 \le i \le m\}$, so $W$ is star-finite.
+Then $W_{k,j} \bigcap W_{m,i} \subset F_{m-1}\bigcap(X\setminus F_{m-1})= \emptyset$.
+Hence if $W_{m,j} \bigcap W_{k,i} \neq \emptyset$, then $m < k+2$.
+It follows that $(\mathcal{W})_{W_{k,j}}\subset \{W_{m,i} : m < k+2, 1 \le i \le m\}$, 
+so $\mathcal{W}$ is star-finite.
 \end{proof}
 
-{\theorem{} \textup{(Frink [1937])}. Suppose $f: X^2 \to [0, \infty)$ which satisfies
+{\theorem{} \textup{(Frink [1937]\cite{Frink})}. Suppose $f: X^2 \to [0, \infty)$ which satisfies
 
 \textup{(a)} $f(x,x)=0$, and $f(x,y)=f(y,x)$,
 
