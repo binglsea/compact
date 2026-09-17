@@ -76,7 +76,7 @@ where each $U_n = f_n^{-1}(0, 1]$ for some continuous function $f_n : X \to [0, 
 $$f(x) = \sum_{n=1}^{\infty} f_n(x) / 2^n, x\in X.$$
 
 For $n \ge 1$, let $G_n = f^{-1}\left(\frac{1}{2^n}, 1\right]$ and $F_n = f^{-1}\left[\frac{1}{2^n}, 1\right]$.
-It is easy to check that $G_{n+1} \subset \bigcap_{k=1}^{n} U_k$ for each $n \ge 1$.
+It is easy to check that $G_{n+1} \subset \bigcup_{k=1}^{n} U_k$ for each $n \ge 1$.
 For $1 \le k \le n$, let
 $W_{n,k} = U_k \bigcap (G_{n+1} \setminus F_{n-1}), \quad F_0 = \emptyset.$
 $\mathcal{W} = \{W_{n,k}: n\ge 1, 1\le k \le n\}$. 
@@ -109,8 +109,9 @@ for any $x, y, z \in X$. Then there is a pseudo-metric $\rho$ on $X$ such that f
 }
 
 \begin{proof} 
-	 For $x, y \in X$, let $g_0(x,y,s) = f(x,y)$. For $s = (a_1) \in X^1$, let $g_1(x,y,s) = f(x,a_1) + f(a_1,y)$. For $n \ge 2$, $s = (a_1, \ldots, a_n) \in X^n$, let
-
+For $x, y \in X$, let $g_0(x,y,s) = f(x,y)$. 
+For $s = (a_1) \in X^1$, let $g_1(x,y,s) = f(x,a_1) + f(a_1,y)$. 
+For $n \ge 2$, $s = (a_1, \ldots, a_n) \in X^n$, let
 $$g_n(x,y,s) = f(x,a_1) + \sum_{i=1}^{n-1} f(a_i, a_{i+1}) + f(a_n,y).$$
 
 $\rho(x,y) = \inf \{ g_n(x,y,s) : s \in X^n, n \ge 0 \}$.
