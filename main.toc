@@ -5,18 +5,18 @@
 \contentsline {chapter}{\numberline {Chapter 2}Works of Tukey, Morita and Michael}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Normal Covers}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Paracompactness with Separation Axioms}{12}{section.2.2}%
-\contentsline {chapter}{\numberline {Chapter 3}Works of Mack, Worrell, Liu and Smith}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Works of Mack, Worrell}{13}{section.3.1}%
-\contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Works of Junnila}{14}{section.4.1}%
-\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{15}{section.5.1}%
-\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{16}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{16}{section.6.1}%
-\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{17}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Works of J.-G. Jiang (III)}{17}{section.7.1}%
-\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{18}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{18}{section.8.1}%
-\contentsline {section}{References}{18}{lemma.8.1.1}%
-\contentsline {chapter}{Bibliography}{19}{chapter*.7}%
-\contentsline {chapter}{Index}{21}{chapter*.7}%
+\contentsline {chapter}{\numberline {Chapter 3}Works of Mack, Worrell, Liu and Smith}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Works of Mack, Worrell}{14}{section.3.1}%
+\contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Works of Junnila}{16}{section.4.1}%
+\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{17}{section.5.1}%
+\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{18}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{18}{section.6.1}%
+\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Works of J.-G. Jiang (III)}{19}{section.7.1}%
+\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{20}{section.8.1}%
+\contentsline {section}{References}{20}{lemma.8.1.1}%
+\contentsline {chapter}{Bibliography}{21}{chapter*.7}%
+\contentsline {chapter}{Index}{23}{chapter*.7}%
