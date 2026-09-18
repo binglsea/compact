@@ -184,4 +184,84 @@ This completes the induction and the Claim.
 \end{proof}
 
 
+
+**2.1.5. Theorem.** (Tukey (1940)). Suppose there is a sequence $(\mathcal{U}_n)$ of open covers of a space $X$ such that $\mathcal{U}_{n+1}$ is a point star refinement of $\mathcal{U}_n$ for each $n \ge 1$. Then there is a pseudo-metric $\rho$ on $X$ such that for each $x \in X, n \in \omega$:
+
+(1) $\operatorname{st}(x, \mathcal{U}_n) \subset B_\rho(x, \frac{1}{2^n})$ and $\tau_\rho \subset \tau$
+
+(2) $B_\rho(x, \frac{1}{2^{n+2}}) \subset \operatorname{st}(x, \mathcal{U}_n)$
+
+**Proof.** Let $(\mathcal{U}_n)$ be as in the hypothesis. Define $f: X \times X \to [0, 1]$ by:
+
+$$f(x, y) =  \begin{cases}  1, & \text{if } y \notin \bigcup_{n < \omega} \operatorname{st}(x, \mathcal{U}_n), \\  0, & \text{if } y \in \bigcap_{n < \omega} \operatorname{st}(x, \mathcal{U}_n), \\  \frac{1}{2^n}, & \text{if } y \in \operatorname{st}(x, \mathcal{U}_n) - \operatorname{st}(x, \mathcal{U}_{n+1}), n \ge 1.  \end{cases}$$
+
+Clearly, $f$ satisfies the condition (a) of Theorem 2.1.5.
+
+To show the condition (b). First, it is easy to see that
+
+(1) for $x, y \in X, n \in \omega$
+
+$$y \in \operatorname{st}(x, \mathcal{U}_n) \iff f(x, y) < \frac{1}{2^n}.$$
+
+Suppose $x, y, z \in X, r > 0$ such that $f(x, y) < r$ and $f(y, z) < r$. To show $f(x, z) < 2r$.
+
+* **Case 1.** Suppose $r = \frac{1}{2}$. If for each $n \in \omega, z \in \operatorname{st}(x, \mathcal{U}_n)$, then $f(x, z) = 0 < 2r$. Otherwise there is a least $k \ge 1$ such that $z \in \operatorname{st}(x, \mathcal{U}_{k-1}) - \operatorname{st}(x, \mathcal{U}_k)$. Then $f(x, z) = \frac{1}{2^k} \le \frac{1}{2} < 2r$.
+
+
+* **Case 2.** Suppose $r < \frac{1}{2}$. Let $k = \min\{n \in \omega : \frac{1}{2^n} < r\}$.
+
+
+
+** Page 24
+Here is the transcribed text from the provided document:
+
+---
+
+Then $\frac{1}{2^k} < r < \frac{1}{2^{k-1}}$, so $k > 1$. Either $f(x, y) = 0 < \frac{1}{2^{k-1}}$ or $f(x, y) = \frac{1}{2^m} < r$, so $m \ge k$. Hence $f(x, y) \le \frac{1}{2^k} < \frac{1}{2^{k-1}}$.
+
+We also have $f(y, z) < \frac{1}{2^{k-1}}$. It follows from (1) that $y \in \operatorname{st}(x, \mathcal{U}_{k-1})$ and $z \in \operatorname{st}(y, \mathcal{U}_{k-1})$. There are $V_1, V_2 \in \mathcal{U}_{k-1}$ such that $x, y \in V_1$ and $y, z \in V_2$. Since $y \in V_1 \cap V_2$ and $\mathcal{U}_{k-1}$ is a point star refinement of $\mathcal{U}_{k-2}$, $V_1 \cup V_2 \subset U$ for some $U \in \mathcal{U}_{k-2}$. Then $z \in \operatorname{st}(x, \mathcal{U}_{k-2})$. By (1), $f(x, z) < \frac{1}{2^{k-2}} = 4 \cdot \frac{1}{2^k} < 2r$.
+
+Hence condition (b) holds.
+
+By Theorem 2.1.4, there is a pseudo-metric $\rho$ on $X$ such that for each $x, y \in X$:
+
+* (c) $\rho(x, y) \le f(x, y)$
+
+* (d) $f(x, y) \le 4\rho(x, y)$
+
+
+It follows from (c), (d), and (1) that:
+
+(1) $\operatorname{st}(x, \mathcal{U}_n) \subset B_\rho(x, \frac{1}{2^n})$ and $\tau_\rho \subset \tau$
+
+(2) $B_\rho(x, \frac{1}{2^{n+2}}) \subset \operatorname{st}(x, \mathcal{U}_n)$
+
+---
+
+**2.1.6. Theorem.** (Tukey (1940), Morita (1962, 1964)). For any open cover $\mathcal{U}$ of a space $X$, the following are equivalent:
+
+* (i) $\mathcal{U}$ is a normal cover.
+
+
+* (ii) $\mathcal{U}$ has a locally finite (LF) functionally open refinement which is also discrete.
+
+
+* (iii) $\mathcal{U}$ has an LF functionally open refinement.
+
+
+* (iv) $\mathcal{U}$ has a $\sigma$-LF functionally open refinement.
+
+
+* (v) There is a partition of unity $\{f_\alpha : \alpha \in A\}$ on $X$ such that $\{f_\alpha^{-1}((0, 1]) : \alpha \in A\}$ refines $\mathcal{U}$.
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
