@@ -128,14 +128,20 @@ It is easily verified that $\rho$ is a pseudo-metric on $X$ and $\rho(x,y) \le f
 	n \ge 2, s = (a_1, \ldots, a_n) \in X^n.
 \end{gather}
 
-\textsc{Claim.} For any $x, y \in X$, $n \in\omega$ and $s \in X^n$,
-$f(x,y) \le h_n(x,y,s).$
+\textsc{Claim.}  As usual, we assume that $X^0 = \{\emptyset\}$. Then
+\begin{gather}
+f(x,y) \le h_n(x,y,s), \textup{ for any } x, y \in X, n \in\omega \textup{ and } s \in X^n.
+\label{gather:ch2_1_claim}
+\end{gather}
 
-If we have proved the claim, then $f(x,y) \le 4g_n(x,y,s)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
+If we have proved Claim \eqref{gather:ch2_1_claim}, then $f(x,y) \le 4g_n(x,y,s)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
 
-(1) For any $x, y, a \in X$ we have either $f(x, y) \le 2 f(a, y)$ or $f(x, y) \le 2 f(x, a)$.
+For any $x, y, a \in X$ we have 
+\begin{gather}
+	f(x, y) \le 2 f(a, y) \textup{ or } f(x, y) \le 2 f(x, a)  \label{eq:2.1.ineq}
+\end{gather}
 
-\textsc{Proof of (1)}. There are two cases.
+The proof of \eqref{eq:2.1.ineq} has two cases.
 
 Case 1. If $f(x, a) \le f(a, y)$, then for any $r > f(a, y)$, $f(x, a) \le f(a, y) <  r$. 
 By hypothesis (b), $f(x, y) < 2 r$. So, $f(x, y) \le 2 f(a, y)$ as  $r \rightarrow f(a, y)$ above.
@@ -143,29 +149,38 @@ By hypothesis (b), $f(x, y) < 2 r$. So, $f(x, y) \le 2 f(a, y)$ as  $r \rightarr
 Case 2. If $f(a, y) < f(x, a)$, then by (b) we have $f(x, y) < 2 r$ for any $r > f(x, a)$.
 Again, it results that $f(x, y) \le f(x, a)$ as  $r \rightarrow f(x, a)$ above.
 
-\textsc{Proof of Claim}. We use induction. Of course, we have $f(x, y) = f(x, y, \phi)$. Let $m \ge 1$, and assume that for all $d < m$, $S \in S_{d}$, $f(x, y) \le f_{d}(x, y, S)$. Let us show that
+\textsc{Proof of Claim \eqref{gather:ch2_1_claim}}. We use induction. For $n=0$, we have $f(x, y) = h_0(x, y, \phi)$. 
+Let $m \ge 1$, and assume that for all $i < m$, 
+$s\in X^i$, $f(x, y) \le h_i(x, y, s)$. Let us show Claim \eqref{gather:ch2_1_claim}
+for $n\ge1$.
 
-(2) $f(x, y) \le f_{m}(x, y, S)$ for $x, y \in S$, $S \in S_{m}$, $S = (a_{1}, \dots, a_{m})$.
+%(2) $f(x, y) \le h_{m}(x, y, s)$ for $x, y \in X$, $s = (a_{1}, \dots, a_{m})\in X^m$.
 
-By (1), either $f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, S) \le f_{m}(x, y, S)$, we are finished, or $f(x, y) \le 2 f(x, a_{m})$. Let
+In Case 1 of \eqref{eq:2.1.ineq}, 
+$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$, we are finished.
 
-$k = \min \{i \le m : f(x, y) \le 2 f(x, a_{i})\}$.
+Now, we turn to Case 2 of  \eqref{eq:2.1.ineq}: $f(x, y) \le 2 f(x, a_{m})$. 
+Let 
+$$k = \min \{i \le m : f(x, y) \le 2 f(x, a_{i})\}.$$
+Then $1 \le k \le m$, $f(x, y) \le 2 f(x, a_{k})$. If $k = 1$, then 
+$$f(x, y) \le 2 f(x, a_{1}) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s),$$
+we are finished. 
+So we assume $k \ge 2$. By the definition of $k$ and \eqref{eq:2.1.ineq}, 
+$f(x, y) \le 2 f(a_{k-1}, y)$. It follows that
 
-Then $1 \le k \le m$, $f(x, y) \le 2 f(x, a_{k})$. If $k = 1$, then $f(x, y) \le 2 f(x, a_{1}) \le 2 g_{m}(x, y, S) \le f_{m}(x, y, S)$, we are finished. So we assume $k \ge 2$. By the definition of $k$ and (1), $f(x, y) \le 2 f(a_{k-1}, y)$. It follows that
-
-$f(x, y) \le f(x, a_{k}) + f(a_{k-1}, y)$.
-
-Let $S_{1} = (a_{1}, \dots, a_{k-1})$, $S_{2} = (a_{k}, \dots, a_{m})$, and $S = (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, by the induction hypothesis, we have
-
-$f(x, a_{k}) \le f_{k-1}(x, a_{k}, S_{1})$, $f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, S_{2})$.
-
-Then $f(x, y) \le f_{k-1}(x, a_{k}, S_{1}) + f_{m-k+1}(a_{k-1}, y, S_{2})$
-
-$= 2 f(x, a_{1}) + 4 \sum_{i=1}^{k-2} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y)$
-
-$= f_{m}(x, y, S)$.
-
-This completes the induction and the claim.
+$$f(x, y) \le f(x, a_{k}) + f(a_{k-1}, y).$$
+Let $s_{1} = (a_{1}, \dots, a_{k-1})$, $s_{2} = (a_{k}, \dots, a_{m})$, and $s = (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, by the induction hypothesis, we have
+$$f(x, a_{k}) \le f_{k-1}(x, a_{k}, s_{1}), \quad
+f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, s_{2}).$$
+Then 
+\begin{equation*}
+	\begin{aligned}
+f(x, y)    &\le f_{k-1}(x, a_{k}, s_{1}) + f_{m-k+1}(a_{k-1}, y, s_{2}) \\
+              &= 2 f(x, a_{1}) + 4 \sum_{i=1}^{k-2} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y) \\
+	          &= h_{m}(x, y, s)
+	 \end{aligned}
+\end{equation*}
+This completes the induction and the Claim.
 \end{proof}
 
 
