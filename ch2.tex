@@ -185,12 +185,15 @@ This completes the induction and the Claim.
 
 
 
-**2.1.5. Theorem.** (Tukey (1940)). Suppose there is a sequence $(\mathcal{U}_n)$ of open covers of a space $X$ such that $\mathcal{U}_{n+1}$ is a point star refinement of $\mathcal{U}_n$ for each $n \ge 1$. Then there is a pseudo-metric $\rho$ on $X$ such that for each $x \in X, n \in \omega$:
+{\theorem{}(Tukey (1940)). Suppose there is a sequence $(\mathcal{U}_n)$ of open covers of a space $X$ such that $\mathcal{U}_{n+1}$ is a point star refinement of $\mathcal{U}_n$ for each $n \ge 1$. Then there is a pseudo-metric $\rho$ on $X$ such that for each $x \in X, n \in \omega$:
 
 (1) $\operatorname{st}(x, \mathcal{U}_n) \subset B_\rho(x, \frac{1}{2^n})$ and $\tau_\rho \subset \tau$
 
 (2) $B_\rho(x, \frac{1}{2^{n+2}}) \subset \operatorname{st}(x, \mathcal{U}_n)$
 
+}
+
+\begin{proof}
 **Proof.** Let $(\mathcal{U}_n)$ be as in the hypothesis. Define $f: X \times X \to [0, 1]$ by:
 
 $$f(x, y) =  \begin{cases}  1, & \text{if } y \notin \bigcup_{n < \omega} \operatorname{st}(x, \mathcal{U}_n), \\  0, & \text{if } y \in \bigcap_{n < \omega} \operatorname{st}(x, \mathcal{U}_n), \\  \frac{1}{2^n}, & \text{if } y \in \operatorname{st}(x, \mathcal{U}_n) - \operatorname{st}(x, \mathcal{U}_{n+1}), n \ge 1.  \end{cases}$$
@@ -209,7 +212,7 @@ Suppose $x, y, z \in X, r > 0$ such that $f(x, y) < r$ and $f(y, z) < r$. To sho
 
 
 * **Case 2.** Suppose $r < \frac{1}{2}$. Let $k = \min\{n \in \omega : \frac{1}{2^n} < r\}$.
-
+\end{proof}
 
 
 ** Page 24
