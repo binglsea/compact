@@ -211,28 +211,28 @@ Clearly, $f$ satisfies the condition (a) of Theorem \ref{th:ch2_1_Frink}.
 To show the condition (b), first, it is easy to see that
 for $x, y \in X, n \in \omega$
 \begin{gather}
-	y \in \operatorname{st}(x, \mathcal{U}_n) \iff f(x, y) < \frac{1}{2^n}.
+	y \in \operatorname{st}(x, \mathcal{U}_n) \iff f(x, y) < \frac{1}{2^n}. \label{eq:ch2_1_tukey}
 \end{gather}
 %$$y \in \operatorname{st}(x, \mathcal{U}_n) \iff f(x, y) < \frac{1}{2^n}.$$
 
 Suppose $x, y, z \in X, r > 0$ such that $f(x, y) < r$ and $f(y, z) < r$. We show $f(x, z) < 2r$ in
 two cases.
 
-Case 1. Suppose $r \ge \frac{1}{2}$. If for each $n \in \omega, z \in \operatorname{st}(x, \mathcal{U}_n)$, then $f(x, z) = 0 < 2r$. Otherwise there is a least $k \ge 1$ such that $z \in \operatorname{st}(x, \mathcal{U}_{k-1}) - \operatorname{st}(x, \mathcal{U}_k)$. Then $f(x, z) = \frac{1}{2^k} \le \frac{1}{2} < 2r$.
+Case 1. Suppose $r \ge 1/2$. If $z \in \operatorname{st}(x, \mathcal{U}_n)$ 
+for each $n \in \omega$,, then $f(x, z) = 0 < 2r$. Otherwise there is a least $k \ge 1$ such that $z \in \operatorname{st}(x, \mathcal{U}_{k-1}) - \operatorname{st}(x, \mathcal{U}_k)$. Then $f(x, z) = 1/{2^k} \le 1/2 < 2r$.
 
-
-* **Case 2.** Suppose $r < \frac{1}{2}$. Let $k = \min\{n \in \omega : \frac{1}{2^n} < r\}$.
-\end{proof}
-
-
-** Page 24
-Here is the transcribed text from the provided document:
-
----
-
-Then $\frac{1}{2^k} < r < \frac{1}{2^{k-1}}$, so $k > 1$. Either $f(x, y) = 0 < \frac{1}{2^{k-1}}$ or $f(x, y) = \frac{1}{2^m} < r$, so $m \ge k$. Hence $f(x, y) \le \frac{1}{2^k} < \frac{1}{2^{k-1}}$.
-
-We also have $f(y, z) < \frac{1}{2^{k-1}}$. It follows from (1) that $y \in \operatorname{st}(x, \mathcal{U}_{k-1})$ and $z \in \operatorname{st}(y, \mathcal{U}_{k-1})$. There are $V_1, V_2 \in \mathcal{U}_{k-1}$ such that $x, y \in V_1$ and $y, z \in V_2$. Since $y \in V_1 \cap V_2$ and $\mathcal{U}_{k-1}$ is a point star refinement of $\mathcal{U}_{k-2}$, $V_1 \cup V_2 \subset U$ for some $U \in \mathcal{U}_{k-2}$. Then $z \in \operatorname{st}(x, \mathcal{U}_{k-2})$. By (1), $f(x, z) < \frac{1}{2^{k-2}} = 4 \cdot \frac{1}{2^k} < 2r$.
+Case 2. Suppose $r <1/2$. Let $k = \min\{n \in \omega : 1/{2^n} < r\}$.
+Then $1/{2^k} < r < 1/2$, so $k > 1$. Either $f(x, y) = 0 < 1/{2^{k-1}}$ or 
+$f(x, y) = 1/{2^m} < r$, so $k \le m$. Hence $f(x, y) \le 1/{2^m} < 1/2^{k-1}$.
+We also have $f(y, z) < 1/{2^{k-1}}$. 
+It follows from \eqref{eq:ch2_1_tukey} that $y \in \operatorname{st}(x, \mathcal{U}_{k-1})$ 
+and $z \in \operatorname{st}(y, \mathcal{U}_{k-1})$. 
+There are $V_1, V_2 \in \mathcal{U}_{k-1}$ such that $x, y \in V_1$ 
+and $y, z \in V_2$. Since $y \in V_1 \cap V_2$ 
+and $\mathcal{U}_{k-1}$ is a point star refinement of $\mathcal{U}_{k-2}$, 
+$V_1 \cup V_2 \subset U$ for some $U \in \mathcal{U}_{k-2}$. 
+Then $z \in \operatorname{st}(x, \mathcal{U}_{k-2})$. 
+By (1), $f(x, z) < \frac{1}{2^{k-2}} = 4 \cdot \frac{1}{2^k} < 2r$.
 
 Hence condition (b) holds.
 
@@ -249,7 +249,7 @@ It follows from (c), (d), and (1) that:
 
 (2) $B_\rho(x, \frac{1}{2^{n+2}}) \subset \operatorname{st}(x, \mathcal{U}_n)$
 
----
+\end{proof}
 
 {\theorem{} \textup{(Tukey [1940]\cite{Tukey}, 
 		Morita [1962, 1964]\cite{Morita1962}\cite{Morita1964})}. 
