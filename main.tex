@@ -10,15 +10,16 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{microtype}
-\usepackage{hyperref}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+%\usepackage{hyperref}
 \usepackage{mathtools}
 
 \usepackage[backend=biber,style=numeric,sorting=nyt]{biblatex}
-%\usepackage[backend=biber,style=gb7714-2015,gbpub=false,sorting=nyt]{biblatex}
 \addbibresource{ref.bib}
 
 \usepackage{imakeidx}
 \makeindex
+%\newcommand{\entrysec}[2]{\quad\textsf{[#1]}\hfill~#2}
 
 \title{\textbf{CHARACTERIZATION THEORY OF PARACOMPACT  SPACES AND BASIC COVERING PROPERTIES}}
 
@@ -73,6 +74,7 @@
 
 \begin{small}
 	\thispagestyle{empty}
+	%\newcommand{\indexdotfill}{\dotfill~}
 	\onecolumn
 	\addcontentsline{toc}{chapter}{\indexname}
 	\printindex
