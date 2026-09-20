@@ -64,7 +64,9 @@ $$\rho(y, u_x) \le \rho(y, t) + \rho(t, x) + \rho(x, u_x) < \frac{3}{m(u_x)}.$$
 Thus (4) holds. 
 \end{proof}
 
-{\theorem{} \textup{(Dowker-Morita)} A countable functionally open cover of $X$ has a countable star-finite functionally open refinement.
+{\theorem{} \label{th:ch2_1_3_dowker}
+\textup{(Dowker-Morita)} A countable functionally open cover of $X$ 
+has a countable star-finite functionally open refinement.
 }
 
 \begin{proof} 
@@ -179,7 +181,6 @@ f(x, y)    &\le f_{k-1}(x, a_{k}, s_{1}) + f_{m-k+1}(a_{k-1}, y, s_{2}) \\
 \end{equation*}
 This completes the induction and the Claim.
 \end{proof}
-
 
 
 {\theorem{}\label{th:ch2_1_5_tukey}
@@ -297,10 +298,15 @@ Clear.
 
 (iv) $\Rightarrow$ (iii). 
 Assume (iv). Let $\mathcal{U} = \{U_\alpha: \alpha \in \Delta\}$ be an open cover of $X$. 
-Let $\mathcal{V} = \bigcup_{n < \omega} \mathcal{V}_n$ be a refinement of $\mathcal{U}$ where each $\mathcal{V}_n = \{V_{n,\alpha}\}_{\alpha \in \Delta}$ is LF functionally open with $V_{n,\alpha} \subset U_\alpha$.
+Let $\mathcal{V} = \bigcup_{n < \omega} \mathcal{V}_n$ be 
+a refinement of $\mathcal{U}$ where each $\mathcal{V}_n = \{V_{n,\alpha}: \alpha \in \Delta\}$
+ is locally finite functionally open with $V_{n,\alpha} \subset U_\alpha$.
 
 
-By Lemma 1.3.8 and Theorem 2.1.3 there is a countable star-finite functionally open cover $\mathcal{W}_0 = \{W_n\}_{n < \omega}$ such that $\mathcal{W}_0$ refines $\mathcal{V}_n$ for each $n$.
+By Lemma \ref{lemma:prelim_3_8} and Theorem \ref{th:ch2_1_3_dowker} 
+there is a countable star-finite functionally open cover 
+$\mathcal{W}_0 = \{W_n\}_{n < \omega}$ such that $\mathcal{W}_0$ 
+refines $\mathcal{V}_n$ for each $n$.
 
 Let
 
@@ -395,5 +401,4 @@ $\sigma$-discrete $(\sigma$-disjoint$)$ open refinement.
 }
 
 
-\subfile{ch2_2}
 \end{document}
