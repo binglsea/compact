@@ -39,24 +39,34 @@ See Corollary 5.2.9. % TO_DO
 }
 
 \begin{proof}
-$(\Leftarrow)$ Suppose that $X$ is normal and $\aleph$-paracompact and that $\mathcal{U} = \{U_\alpha : \alpha \in A\}$ be an open cover of $X$ ($\vert{}A\vert{} \le \aleph$). Then $\mathcal{U}$ has a LF open cover $\mathcal{V} = \{V_\alpha : \alpha \in A\}$ such that $V_\alpha \subset U_\alpha$ for each $\alpha \in A$. By Engelking [1977], Theorem 1.5.18, there is an open cover $\mathcal{W} = \{W_\alpha : \alpha \in A\}$ of $X$ such that $\overline{W}_\alpha \subset V_\alpha$ for each $\alpha \in A$. For each $\alpha \in A$, there is a functionally open set $H_\alpha$ such that $\overline{W}_\alpha \subset H_\alpha \subset V_\alpha$. Then $\mathcal{H} = \{H_\alpha : \alpha \in A\}$ is a LF functionally open refinement of $\mathcal{U}$. By Theorem 2.1.6, $X$ is $\aleph$-fully normal, so $X$ is $\aleph$-fully normal.
+($\Rightarrow$) By \ref{coro:2_1_8}.
+	
+$(\Leftarrow)$ Suppose that $X$ is normal and $\lambda$-paracompact and 
+that $\mathcal{U} = \{U_\alpha : \alpha < \lambda\}$ be an open cover of $X$.
+Then $X$ has a locally finite open cover $\mathcal{V} = \{V_\alpha : \alpha < \lambda\}$ 
+such that $V_\alpha \subset U_\alpha$ for each $\alpha < \lambda$. 
+By Engelking [1977]\textsuperscript{\cite{Engelking}} and Theorem 1.5.18, % TO_DO
+there is an open cover $\mathcal{W} = \{W_\alpha : \alpha \in A\}$ of $X$ such that $\overline{W}_\alpha \subset V_\alpha$ for each $\alpha \in A$. For each $\alpha \in A$, there is a functionally open set $H_\alpha$ such that $\overline{W}_\alpha \subset H_\alpha \subset V_\alpha$. Then $\mathcal{H} = \{H_\alpha : \alpha \in A\}$ is a LF functionally open refinement of $\mathcal{U}$. By Theorem 2.1.6, $X$ is $\aleph$-fully normal, so $X$ is $\aleph$-fully normal.
 \end{proof}
 
-**2.2.4. Theorem (Stone [1948]).** $X$ is $T_2$-paracompact iff $X$ is $T_1$-fully normal.
+{\theorem{} \textup{(Stone [1948]\cite{Stone})}   
+	$X$ is $T_2$paracompact iff $X$ is $T_1$ fully normal.
+}
 
-**2.2.5 Theorem (Morita [1962a]).** For any $\aleph$, the following are equivalent:
+{\theorem{}  \textup{(Morita [1962]\cite{Morita1962})}   
+For any $X$, the following are equivalent:
 
-1. $X$ is $\aleph$-fully normal,
+ \textup{(i)} $X$ is $\lambda$-fully normal,
+
+ \textup{(ii)} Every open $\lambda$-cover of $X$ has a locally finite closed refinement,
+
+ \textup{(iii)}  Every open $\lambda$-cover of $X$ has a closure-preserving closed refinement.
+}
 
 
-2. Every open $\aleph$-cover of $X$ has a LF closed refinement,
-
-
-3. Every open $\aleph$-cover of $X$ has a CP closed refinement.
-
-
-
-*Proof.* See Corollary 2.2.10.
+\begin{proof}
+	See Corollary 9.2.10.   % TO_DO
+\end{proof} 
 
 
 
