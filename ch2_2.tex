@@ -39,14 +39,20 @@ See Corollary 5.2.9. % TO_DO
 }
 
 \begin{proof}
-($\Rightarrow$) By \ref{coro:2_1_8}.
+($\Rightarrow$) By Corollary \ref{cor:2_1_8}.
 	
-$(\Leftarrow)$ Suppose that $X$ is normal and $\lambda$-paracompact and 
+$(\Leftarrow)$ Suppose that $X$ is normal and $\lambda$-paracompact, and 
 that $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ be an open cover of $X$.
 Then $X$ has a locally finite open cover $\mathscr{V} = \{V_\alpha : \alpha < \lambda\}$ 
 such that $V_\alpha \subset U_\alpha$ for each $\alpha < \lambda$. 
-By Engelking [1977]\textsuperscript{\cite{Engelking}} and Theorem 1.5.18, % TO_DO
-there is an open cover $\mathscr{W} = \{W_\alpha : \alpha \in A\}$ of $X$ such that $\overline{W}_\alpha \subset V_\alpha$ for each $\alpha \in A$. For each $\alpha \in A$, there is a functionally open set $H_\alpha$ such that $\overline{W}_\alpha \subset H_\alpha \subset V_\alpha$. Then $\mathscr{H} = \{H_\alpha : \alpha \in A\}$ is a LF functionally open refinement of $\mathscr{U}$. By Theorem 2.1.6, $X$ is $\aleph$-fully normal, so $X$ is $\aleph$-fully normal.
+By Theorem 1.5.18 of Engelking [1977]\textsuperscript{\cite{Engelking}}, 
+there exists an open cover $\mathscr{G} = \{G_\alpha : \alpha \in \lambda\}$ of $X$ 
+such that $\overline{G}_\alpha \subset V_\alpha$ for each $\alpha \in \lambda$. 
+For each $\alpha \in \lambda$, there is a functionally open set $H_\alpha$ such that $\overline{G}_\alpha \subset H_\alpha \subset \overline{H_\alpha}\subset V_\alpha$. 
+Then $\mathscr{H} = \{H_\alpha : \alpha \in \lambda\}$ is a localy finite
+ functionally open refinement of $\mathscr{U}$. 
+ By Theorem \ref{th:2_1_6}, 
+ $X$ is  normal, so $X$ is $\lambda$-fully normal.
 \end{proof}
 
 {\theorem{} \textup{(Stone [1948]\textsuperscript{\cite{Stone})}}
