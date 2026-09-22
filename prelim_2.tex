@@ -6,75 +6,75 @@
 
 
 {\definition{}\label{ch2_1_LF_ind-cover}
-Let $\mathcal{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
+Let $\mathscr{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
 family of subsets of $X$. 
-Let $\mathcal{B}^* = \{U_S: S\in [\Delta]^{<\omega}  \text{ and} $
+Let $\mathscr{B}^* = \{U_S: S\in [\Delta]^{<\omega}  \text{ and} $
 $U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\} $. 
-Then $\mathcal{B}^*$ 
-is an open cover of $X$. We call $\mathcal{B}^*$ an 
+Then $\mathscr{B}^*$ 
+is an open cover of $X$. We call $\mathscr{B}^*$ an 
 \uwave{induced cover}\index{induced cover| \S\ref{sec:prelim_induced_covers}\hfill} 
 of $X$.
 
-%问： 1. $\mathcal{B}$ 不必是$X$的覆盖吗？似乎不必。
+%问： 1. $\mathscr{B}$ 不必是$X$的覆盖吗？似乎不必。
 
 %2. 按我的理解，$\emptyset\in  [\Delta]^{<\omega}$, 事实上 $\emptyset\in  [A]^{<\omega}$,
-%对吧？所以 $X\in \mathcal{B}^* $?
+%对吧？所以 $X\in \mathscr{B}^* $?
 }%end of definition
 
 Remark. 
 It is easy to see that 
-$\mathcal{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
+$\mathscr{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
 S\in [\Delta]^{<\omega}  \text{ and} $
 $U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\}$ 
-is a locally finite refinement of $\mathcal{B}^*$.
+is a locally finite refinement of $\mathscr{B}^*$.
 We also see that
-$\mathcal{B}^*$ is an interior-preserving 
+$\mathscr{B}^*$ is an interior-preserving 
 (see Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
 
 {\definition{}\label{ch2_1_discrete_ind-cover}
-Let $\mathcal{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
+Let $\mathscr{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
 closed subsets of $X$.
 For $\alpha\in\Delta$, we use notation 
 $U_\alpha = X \setminus \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\alpha$,
 then $D_\alpha \subseteq U_\alpha$.
-Let $\mathcal{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
+Let $\mathscr{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
-$\mathcal{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup S \}$.
-Then $\mathcal{D}^*$ and $\mathcal{D}^{*F}$ are open $|\Delta|$-cover of $X$.
-We call $\mathcal{D}^*$ an \uwave{induced cover} of $X$.
+$\mathscr{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup S \}$.
+Then $\mathscr{D}^*$ and $\mathscr{D}^{*F}$ are open $|\Delta|$-cover of $X$.
+We call $\mathscr{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
 
-Remark. Clearly, $X \setminus \bigcup\mathcal{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
-= \bigcap\mathcal{D}^*$.  By Defintion \ref*{def_prelim3_cp_ip},
-$\mathcal{D}^*$ is an interior-preserving open cover and 
-$\mathcal{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
+Remark. Clearly, $X \setminus \bigcup\mathscr{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
+= \bigcap\mathscr{D}^*$.  By Defintion \ref*{def_prelim3_cp_ip},
+$\mathscr{D}^*$ is an interior-preserving open cover and 
+$\mathscr{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
 
 {\lemma{}
-Let $\mathcal{B}$ be a locally finite family of $X$, 
-and $\mathcal{B}^*$ be the induced cover as in Definition \ref*{ch2_1_LF_ind-cover}.
+Let $\mathscr{B}$ be a locally finite family of $X$, 
+and $\mathscr{B}^*$ be the induced cover as in Definition \ref*{ch2_1_LF_ind-cover}.
 
-\textup{(i)} If $\mathcal{B}^*$ has a cushioned open $($cushioned$)$ refinement, then $\mathcal{B}$ has a locally finite $($point-finite$)$ open expansion.
+\textup{(i)} If $\mathscr{B}^*$ has a cushioned open $($cushioned$)$ refinement, then $\mathscr{B}$ has a locally finite $($point-finite$)$ open expansion.
 
-\textup{(ii)}  If $\mathcal{B}^*$ has a $\sigma$-cushioned open $(\sigma$-cushioned$)$ refinement, then $\mathcal{B}$ has a $\sigma^*$-sequence $(\sigma$-sequence$)$ of open expansions.
+\textup{(ii)}  If $\mathscr{B}^*$ has a $\sigma$-cushioned open $(\sigma$-cushioned$)$ refinement, then $\mathscr{B}$ has a $\sigma^*$-sequence $(\sigma$-sequence$)$ of open expansions.
 } %end of lemma
 
 \begin{proof} 
 We prove only one case, another case is
-similar. Let $\mathcal{B} = \{B_\alpha : \alpha \in \Delta\}$. Suppose
-the induced cover $\mathcal{B}^*$ as in Definition \ref*{ch2_1_LF_ind-cover}
+similar. Let $\mathscr{B} = \{B_\alpha : \alpha \in \Delta\}$. Suppose
+the induced cover $\mathscr{B}^*$ as in Definition \ref*{ch2_1_LF_ind-cover}
 has a cushioned open refinement
-$\mathcal{G} = \{G_S: S\in [D^*]^{<\omega}\}$ such that for any
+$\mathscr{G} = \{G_S: S\in [D^*]^{<\omega}\}$ such that for any
 $\Gamma\subset[\Delta]^{<\omega}$,
 $\overline{\bigcup_{s\in\Gamma}G_s}\subset\bigcup_{s\in\Gamma}U_s$.
 For $\alpha\in\Delta$, let
 $$H_\alpha = X \setminus \overline{\bigcup\{G_S: S\in [\Delta]^{<\omega}, \alpha\notin S}\}.$$
 Then $B_\alpha\subset H_\alpha$ for each $\alpha\in\Delta$.
-To see $\mathcal{H}=\{H_\alpha: \alpha\in\Delta\}$
+To see $\mathscr{H}=\{H_\alpha: \alpha\in\Delta\}$
 is locally finite, let $x \in X$. There exists $S_0 \in [\alpha]^{<\omega}$ such that 
 $x \in R_{S_0}$.
-Then $\operatorname{ind}(\mathcal{H})_{G_{S_0}}  \subset S_0$ Thus 
-$\mathcal{H}$ is a locally open expansion
-of $\mathcal{B}$.
+Then $\operatorname{ind}(\mathscr{H})_{G_{S_0}}  \subset S_0$ Thus 
+$\mathscr{H}$ is a locally open expansion
+of $\mathscr{B}$.
 \end{proof} 
 
 {\lemma{} 
@@ -96,20 +96,20 @@ refinement, then $D$ has a $\theta$-sequence $(\theta$-sequence$)$ of open expan
 }%end of lemma
 
 \begin{proof} 
-We prove only one case. Suppose $\mathcal{D}^{*F}$  has a
+We prove only one case. Suppose $\mathscr{D}^{*F}$  has a
 $\sigma$-cushioned open refinement
-$\mathcal{G} = \bigcup_{n<\omega} \mathcal{G}_{n}$, where 
-$\mathcal{G}_{n} = \{G_{n, S}: S\in [\Delta]^{<\omega}\}$ 
+$\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_{n}$, where 
+$\mathscr{G}_{n} = \{G_{n, S}: S\in [\Delta]^{<\omega}\}$ 
 such that for each $n<\omega$ and each $\Gamma\subset [\Delta]^{<\omega}$,  
 $\overline{\bigcup_{s\in\Gamma} G_{n,S}} \subset \bigcup_{S\in\Gamma} U_S$. For $n<\omega$, $\alpha\in \Delta$, let
 $$H_{n,\alpha} = X \setminus \bigcup \{G_{n,S} : 
 S\in [\Delta]^{<\omega}, \alpha\in\Delta\setminus S\}$$
 Then $D_\alpha \subset H_{n,\alpha}$ for each $\alpha \in \Delta$ and $n<\omega$. 
-For each $n<\omega$, $\mathcal{H}_{n} = \{H_{n,\alpha} : \alpha \in \Delta\}$ is an open expansion of $\mathcal{D}$. 
-To see that $\{\mathcal{H}_n: n<\omega\}$ is a $\theta^*$-sequence, let $x \in X$. 
+For each $n<\omega$, $\mathscr{H}_{n} = \{H_{n,\alpha} : \alpha \in \Delta\}$ is an open expansion of $\mathscr{D}$. 
+To see that $\{\mathscr{H}_n: n<\omega\}$ is a $\theta^*$-sequence, let $x \in X$. 
 There exist $m<\omega$ and $S_0 \in \Gamma$ such that $x \in G_{m, S_0}$. 
-Then $\operatorname{ind} (\mathcal{H})_{G_{m,S_0}}\subset S_0$. 
-Thus $\{\mathcal{H}_n: n<\omega\}$ is a $\theta^*$-sequence.
+Then $\operatorname{ind} (\mathscr{H})_{G_{m,S_0}}\subset S_0$. 
+Thus $\{\mathscr{H}_n: n<\omega\}$ is a $\theta^*$-sequence.
 \end{proof} 
 
 \end{document}

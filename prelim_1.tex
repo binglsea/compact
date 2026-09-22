@@ -20,7 +20,7 @@ and $[0, 1]$ is the
 \uwave{closed unit interval}\index{closed unit interval| \S\ref{sec:prelim_basic_prop}\hfill}  in $\mathbb{R}$.
 
 For any sets $X, Y$, we denote 
-$\mathcal{P}(X) = \{A : A \subset{X}\}$; 
+$\mathscr{P}(X) = \{A : A \subset{X}\}$; 
 $Y^X= \{f: f$  is a function from $X$  into $Y$\}. 
 If $f \in Y^X$, we write $f: X \to Y$.
 
@@ -37,25 +37,25 @@ If $h < \omega$, let $\emptyset\oplus h = (h)$,
 $(k_0, \cdots, k_{n-1})\oplus h = (k_0, \cdots, k_{n-1}, h)$.	
 Let $\omega^{<\omega} = \bigcup_{n<\omega}\omega^{n}$.
 	
-Let  $\mathcal{U} = \{ U_\alpha\in \Delta\} $ be any family of subsets of  $X$. 
+Let  $\mathscr{U} = \{ U_\alpha\in \Delta\} $ be any family of subsets of  $X$. 
 Without loss of generality we may assume the indexing set  $ \Delta $ is an ordinal or a set of ordinals. We call
 cardinality $|\Delta|$ the 
  \uwave{power}\index{power| \S\ref{sec:prelim_basic_prop}\hfill}
-of $\mathcal{U}$. A \uwave{$\lambda$-family} is a family with power $\le \lambda$. $\mathcal{U}$ is a \uwave{cover} of $X$ if $\bigcup \mathcal{U} = X$. A \uwave{$\lambda$-cover} is a cover with power $\le \lambda$.
+of $\mathscr{U}$. A \uwave{$\lambda$-family} is a family with power $\le \lambda$. $\mathscr{U}$ is a \uwave{cover} of $X$ if $\bigcup \mathscr{U} = X$. A \uwave{$\lambda$-cover} is a cover with power $\le \lambda$.
 
-Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$, $A \subset X$, $x \in X$. We denote
+Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$, $A \subset X$, $x \in X$. We denote
 $$
-	\mathcal{U}|_A = \{U_\alpha \cap A : \alpha \in \Delta\}.$$
+	\mathscr{U}|_A = \{U_\alpha \cap A : \alpha \in \Delta\}.$$
 $$
-	(\mathcal{U})_A = \{U_\alpha : \alpha \in \Delta, 
-	\ U_\alpha \cap A \neq \emptyset\}; \quad (\mathcal{U})_x = \{U_\alpha : \alpha \in \Delta, \ x \in U_\alpha\}.$$
+	(\mathscr{U})_A = \{U_\alpha : \alpha \in \Delta, 
+	\ U_\alpha \cap A \neq \emptyset\}; \quad (\mathscr{U})_x = \{U_\alpha : \alpha \in \Delta, \ x \in U_\alpha\}.$$
 $$	
-   \text{st}(A, \mathcal{U}) = \bigcup (\mathcal{U})_A, 
-   \quad \text{st}(x, \mathcal{U}) = \bigcup (\mathcal{U})_x.$$
+   \text{st}(A, \mathscr{U}) = \bigcup (\mathscr{U})_A, 
+   \quad \text{st}(x, \mathscr{U}) = \bigcup (\mathscr{U})_x.$$
 $$
-   \text{ind}(\mathcal{U})_A = \{\alpha \in \Delta : 
+   \text{ind}(\mathscr{U})_A = \{\alpha \in \Delta : 
    U_\alpha \cap A \neq \emptyset\}, \quad 
-  \text{ind}(\mathcal{U})_x = \{\alpha \in \Delta : x \in U_\alpha\}.$$
+  \text{ind}(\mathscr{U})_x = \{\alpha \in \Delta : x \in U_\alpha\}.$$
 
 By a \uwave{space} \index{space| \S\ref{sec:prelim_basic_prop}\hfill} 
 we mean a topological space without any of the separation axioms $T_i$, $i=0,1,2$ at all.
@@ -65,8 +65,8 @@ Throughout the following, $X$ denotes a space. For $A \subset X$, $\overline{A}$
 of $A$ and $A^\circ$ the 
 \uwave{interior}\index{interior| \S\ref{sec:prelim_basic_prop}\hfill} 
  of $A$. 
- For any family $\mathcal{U}$ of subsets of space $X$, we use notation
- $\overline{\mathcal{U}}$ for  $\{\overline{U}: U\in\mathcal{U}\}$.
+ For any family $\mathscr{U}$ of subsets of space $X$, we use notation
+ $\overline{\mathscr{U}}$ for  $\{\overline{U}: U\in\mathscr{U}\}$.
  For $x \in X$, let
 $$
 	\text{top}(x) = \{G : G \text{ is an open subset of } X 
@@ -77,12 +77,12 @@ or \uwave{regular}\index{regular| \S\ref{sec:prelim_basic_prop}\hfill}
 space needs not be $T_1$.	
 
 {\definition{}
-\textup{(i)} A family $\mathcal{U} = \{ U_\alpha: \alpha\in \Delta\}$  is
+\textup{(i)} A family $\mathscr{U} = \{ U_\alpha: \alpha\in \Delta\}$  is
 	\uwave{directed}\index{directed| \S\ref{sec:prelim_basic_prop}\hfill} 
 	if for every $\alpha, \beta \in \Delta$, 
 	$U_\alpha\cup U_\beta	\subset U_\gamma$ for some $\gamma\in\Delta$. 
 	
-\textup{(ii)} A family $\mathcal{U} = \{ U_\alpha: \alpha < \lambda\}$  is
+\textup{(ii)} A family $\mathscr{U} = \{ U_\alpha: \alpha < \lambda\}$  is
    \uwave{increasing}\index{increasing| \S\ref{sec:prelim_basic_prop}\hfill} 
    if $U_\alpha\subset U_\beta$
    whenever $\alpha < \beta <\lambda$, 
@@ -90,184 +90,184 @@ space needs not be $T_1$.
 } %end of defintion
 
 
-For any family $\mathcal{U} = \{ U_\alpha: \alpha\in \Delta\}$, the family
-	$\mathcal{U}^F = \{U_S: S\in[\Delta]^{<\omega}, 
+For any family $\mathscr{U} = \{ U_\alpha: \alpha\in \Delta\}$, the family
+	$\mathscr{U}^F = \{U_S: S\in[\Delta]^{<\omega}, 
 	U_S = \bigcup_{\alpha\in S}U_\alpha\}$ is directed, and 
-	$\mathcal{U}$ is directed iff for each $S\in [\Delta]^{<\omega}$
+	$\mathscr{U}$ is directed iff for each $S\in [\Delta]^{<\omega}$
 	there is some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
 
 {\definition{} Let
-	$\mathcal{U} = \{ U_\alpha: \alpha\in \Delta\}$ and 
-	$\mathcal{G} = \{ G_\beta: \beta\in \Gamma\}$
+	$\mathscr{U} = \{ U_\alpha: \alpha\in \Delta\}$ and 
+	$\mathscr{G} = \{ G_\beta: \beta\in \Gamma\}$
 	be families of subsets of $X$.
 	
-\textup{(i)} $\mathcal{G}$ 
+\textup{(i)} $\mathscr{G}$ 
 	   \uwave{refines}\index{refines| \S\ref{sec:prelim_basic_prop}\hfill} 
-	   $\mathcal{U}$ or $\mathcal{G}$ is a 
+	   $\mathscr{U}$ or $\mathscr{G}$ is a 
 	    \uwave{partial refinement}\index{partial refinement| \S\ref{sec:prelim_basic_prop}\hfill} 
-	    of $\mathcal{U}$ if for every $\beta\in \Gamma$
+	    of $\mathscr{U}$ if for every $\beta\in \Gamma$
 	    there is some $\alpha\in \Delta$ such that 
 	    $G_\beta\subset U_\alpha$.
-  $\mathcal{G}$ is a 
+  $\mathscr{G}$ is a 
   \uwave{refinement}\index{refinement| \S\ref{sec:prelim_basic_prop}\hfill} 
-  of $\mathcal{U}$ if $\mathcal{G}$ is a partial refinement of 
-  $\mathcal{U}$ and $\bigcup\mathcal{G} = \bigcup\mathcal{U}$.
+  of $\mathscr{U}$ if $\mathscr{G}$ is a partial refinement of 
+  $\mathscr{U}$ and $\bigcup\mathscr{G} = \bigcup\mathscr{U}$.
 
-	    Let $\Gamma = \Delta$. $\mathcal{U}$ is an 
+	    Let $\Gamma = \Delta$. $\mathscr{U}$ is an 
 	    	    \uwave{expansion}\index{expansion| \S\ref{sec:prelim_basic_prop}\hfill} 
-	    	    of $\mathcal{G}$
+	    	    of $\mathscr{G}$
 	    	    if $G_\alpha \subset U_\alpha$ for all $\alpha\in \Delta$.
-	   $\mathcal{G}$ is a 
-	   \uwave{shrink}\index{shrink| \S\ref{sec:prelim_basic_prop}\hfill} of $\mathcal{U}$
+	   $\mathscr{G}$ is a 
+	   \uwave{shrink}\index{shrink| \S\ref{sec:prelim_basic_prop}\hfill} of $\mathscr{U}$
 	   if $\overline{G_\alpha} \subset U_\alpha$ for all $\alpha\in \Delta$.
 	    
-\textup{(ii)} $\mathcal{G}$ is a 
+\textup{(ii)} $\mathscr{G}$ is a 
 	\uwave{cushioned}\index{cushioned| \S\ref{sec:prelim_basic_prop}\hfill} 
-	in $\mathcal{U}$ or
-	$\mathcal{G}$ is a 
+	in $\mathscr{U}$ or
+	$\mathscr{G}$ is a 
 	\uwave{partial cushioned refinement}\index{cushioned| \S\ref{sec:prelim_basic_prop}\hfill} 
-	of $\mathcal{U}$
+	of $\mathscr{U}$
 	if for every $\beta\in\Gamma$ there is $\delta(\beta)\in\Delta$ such that for any $B\subset\Gamma$, $\overline{\bigcup_{\beta\in B}G_\beta} \subset \bigcup_{\beta\in B}U_{\delta(\beta)}$. 
-	$\mathcal{G}$ is a 
+	$\mathscr{G}$ is a 
 	\uwave{cushioned refinement}\index{cushioned refinement| \S\ref{sec:prelim_basic_prop}\hfill}
-	if $\mathcal{G}$ is a partial cushioned refinement
-	of $\mathcal{U}$ and $\bigcup\mathcal{G} = \bigcup\mathcal{U} $.
+	if $\mathscr{G}$ is a partial cushioned refinement
+	of $\mathscr{U}$ and $\bigcup\mathscr{G} = \bigcup\mathscr{U} $.
 } %end of defintion
 
 
-{\definition{} Let  $\mathcal{V}_n, n<\omega$,  
-	$\mathcal{U}=\{ U_\alpha: \alpha \in \Delta\}$ be covers of  $X$.
+{\definition{} Let  $\mathscr{V}_n, n<\omega$,  
+	$\mathscr{U}=\{ U_\alpha: \alpha \in \Delta\}$ be covers of  $X$.
 	
-\textup{(i)}  $ \mathcal{U}$ is  
+\textup{(i)}  $ \mathscr{U}$ is  
   \uwave{disjoint}\index{disjoint at $x$| \S\ref{sec:prelim_basic_prop}\hfill}
     $($\uwave{point-finite}$)$\index{point-finite at $x$| \S\ref{sec:prelim_basic_prop}\hfill}
-    \uwave{at  $x$} $\in X$ if $|\operatorname{ind}(\mathcal{U})_x|\leq 1$ 
-     $(|\operatorname{ind}(\mathcal{U})_x| < \infty)$.
+    \uwave{at  $x$} $\in X$ if $|\operatorname{ind}(\mathscr{U})_x|\leq 1$ 
+     $(|\operatorname{ind}(\mathscr{U})_x| < \infty)$.
 
-\textup{(ii)} $\mathcal{U}$ is  
+\textup{(ii)} $\mathscr{U}$ is  
   \uwave{discrete}\index{discrete at $x$| \S\ref{sec:prelim_basic_prop}\hfill}
   $($\uwave{\text{locally finite}}\index{locally finite at $x$| \S\ref{sec:prelim_basic_prop}\hfill}$)$ 
   \uwave{at $x$} $\in X$
   if there is some $G\in\operatorname{top}(x)$ such that
-  $|\operatorname{ind}(\mathcal{U})_G| \leq 1 $ 
-  $(|\operatorname{ind}(\mathcal{U})_G|  < \omega).$
+  $|\operatorname{ind}(\mathscr{U})_G| \leq 1 $ 
+  $(|\operatorname{ind}(\mathscr{U})_G|  < \omega).$
 
-\textup{(iii)} $\mathcal{U}$ is  
+\textup{(iii)} $\mathscr{U}$ is  
  \uwave{disjoint}\index{disjoint| \S\ref{sec:prelim_basic_prop}\hfill}
  $($\uwave{point-finite}\index{point-finite| \S\ref{sec:prelim_basic_prop}\hfill},
   \uwave{discrete}\index{discrete| \S\ref{sec:prelim_basic_prop}\hfill}, 
   \uwave{locally finite}\index{locally finite| \S\ref{sec:prelim_basic_prop}\hfill}$)$ in $X$
-  if $\mathcal{U}$ is  
+  if $\mathscr{U}$ is  
   disjoint $($point-finite, discrete, locally finite,$)$ at each $x\in X$.
-  Clearly, $\mathcal{U}$ is disjoint in  $X$ iff  
+  Clearly, $\mathscr{U}$ is disjoint in  $X$ iff  
   $(\alpha \neq \beta \rightarrow  
   U_\alpha\bigcap U_\beta= \emptyset).$
 
-\textup{(iv)}  $\mathcal{U}$  is 
+\textup{(iv)}  $\mathscr{U}$  is 
   \uwave{star-finite}\index{star-finite| \S\ref{sec:prelim_basic_prop}\hfill}
    $($\uwave{star-countable}\index{star-countable| \S\ref{sec:prelim_basic_prop}\hfill}$)$ if
    $\forall\beta\in\Delta, |\operatorname{ind}(
-    \mathcal{U})_{U_{\beta}}| < \omega$   
-    $(|\operatorname{ind}(\mathcal{U})_{U_{\beta}}| \le\omega)$.
+    \mathscr{U})_{U_{\beta}}| < \omega$   
+    $(|\operatorname{ind}(\mathscr{U})_{U_{\beta}}| \le\omega)$.
 
-\textup{(v)}  $\mathcal{U}$  is 
+\textup{(v)}  $\mathscr{U}$  is 
 \uwave{$\sigma$-disjoint}\index{$\sigma$-disjoint| \S\ref{sec:prelim_basic_prop}\hfill}
 $($\uwave{$\sigma$-locally finite}\index{$\sigma$-locally finite| \S\ref{sec:prelim_basic_prop}\hfill}, 
 \uwave{$\sigma$-star finite}\index{$\sigma$-star finite| \S\ref{sec:prelim_basic_prop}\hfill}, $\cdots)$ if
-$\mathcal{U} = \bigcup_{n < \omega}\mathcal{U}_n$,
-where each $\mathcal{U}_n$ is disjoint $($locally finite, star-finite, $\cdots)$.
+$\mathscr{U} = \bigcup_{n < \omega}\mathscr{U}_n$,
+where each $\mathscr{U}_n$ is disjoint $($locally finite, star-finite, $\cdots)$.
 
-\textup{(vi)}  $\{\mathcal{V}_n: n \in\omega\}$  is an 
+\textup{(vi)}  $\{\mathscr{V}_n: n \in\omega\}$  is an 
 \uwave{$\epsilon$-sequence}\index{$\epsilon$-sequence| \S\ref{sec:prelim_basic_prop}\hfill}
 $($\uwave{$\theta$-sequence}\index{$\theta$-sequence| \S\ref{sec:prelim_basic_prop}\hfill}$)$
 if $\forall x \in X, \exists m = m(x) < \omega$ such that 
-$\mathcal{V}_m$ is disjoint $($point-finite$)$ at $x$.
+$\mathscr{V}_m$ is disjoint $($point-finite$)$ at $x$.
 
-\textup{(vii)}  $\{\mathcal{V}_n: n \in\omega\}$  is an 
+\textup{(vii)}  $\{\mathscr{V}_n: n \in\omega\}$  is an 
 \uwave{$\epsilon^*$-sequence}\index{$\epsilon^*$-sequence| \S\ref{sec:prelim_basic_prop}\hfill}
 $($\uwave{$\theta^*$-sequence}\index{$\theta^*$-sequence| \S\ref{sec:prelim_basic_prop}\hfill}$)$
 if $\forall x \in X, \exists m = m(x)  < \omega$ such that 
-$\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
+$\mathscr{V}_m$ is discrete $($locally finite$)$ at $x$.
 } %end of defintion
 
 {\lemma{}
-	A family $\mathcal{D}$ of subsets of $X$ is discrete and closed iff $\bigcup \mathcal{D}$ is closed in $X$ and $\mathcal{D}$ is discrete at each $x \in \bigcup \mathcal{D}$. 
+	A family $\mathscr{D}$ of subsets of $X$ is discrete and closed iff $\bigcup \mathscr{D}$ is closed in $X$ and $\mathscr{D}$ is discrete at each $x \in \bigcup \mathscr{D}$. 
 	\hfill \qedsymbol
 } %end of lemma
 
 {\lemma{}
-	Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be a cover of $X$. 
+	Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ be a cover of $X$. 
 	
-\textup{(i)} If $\mathcal{U}$ has a locally finite open partial refinement $\mathcal{V}$ 
-$($such that $\overline{\mathcal{V}}$ refines $\mathcal{U})$, 
-then $\mathcal{U}$ has a locally finite 
-	 open partial refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that
+\textup{(i)} If $\mathscr{U}$ has a locally finite open partial refinement $\mathscr{V}$ 
+$($such that $\overline{\mathscr{V}}$ refines $\mathscr{U})$, 
+then $\mathscr{U}$ has a locally finite 
+	 open partial refinement $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ such that
 	  $H_\alpha \subset U_\alpha$ $(\overline{H}_\alpha \subset U_\alpha)$ 
 	  for all $\alpha \in \Delta$, and 
-	  $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
+	  $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
 	  
 This result is also true if we replace ``locally finite" by ``discrete" 
 or replace ``open" by ``closed".
 
-\textup{(ii)} If $\mathcal{U}$ has a partial cushioned $($open$)$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $($open$)$  refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
+\textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($open$)$ refinement $\mathscr{V}$, then $\mathscr{U}$ has a partial cushioned $($open$)$  refinement $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
 } % end of lemma
 
-\begin{proof} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
-$\overline{\mathcal{V}}$ refines $\mathcal{U}$). For every $V\in\mathcal{V}$, pick 
+\begin{proof} Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
+$\overline{\mathscr{V}}$ refines $\mathscr{U}$). For every $V\in\mathscr{V}$, pick 
 a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
-$H_\alpha = \bigcup\{V\in\mathcal{V}: \delta(V) = \alpha\}$.   
-Then $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ is a desired 
-locally finite open partial refinement of $\mathcal{U}$.
+$H_\alpha = \bigcup\{V\in\mathscr{V}: \delta(V) = \alpha\}$.   
+Then $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ is a desired 
+locally finite open partial refinement of $\mathscr{U}$.
 \end{proof} 
 
 {\definition{\textup{(Tukey[1940]\cite{Tukey})}}
-	Let $\mathcal{U}$ and $\mathcal{V}$ be covers of $X$.
+	Let $\mathscr{U}$ and $\mathscr{V}$ be covers of $X$.
 	
-	\textup{(i)} $\mathcal{V}$ is a 
+	\textup{(i)} $\mathscr{V}$ is a 
 	\uwave{star-refinement}\index{star-refinement| \S\ref{sec:prelim_basic_prop}\hfill}
-	of $\mathcal{U}$ if 
-	$\{\operatorname{st}(V, \mathcal{V}) : V\in \mathcal{V}\}$ refines $\mathcal{U}$.
-$\mathcal{V}$ is a 
+	of $\mathscr{U}$ if 
+	$\{\operatorname{st}(V, \mathscr{V}) : V\in \mathscr{V}\}$ refines $\mathscr{U}$.
+$\mathscr{V}$ is a 
 \uwave{point-star refinement}\index{point-star refinement| \S\ref{sec:prelim_basic_prop}\hfill}
-of $\mathcal{U}$ if 
-$\{\operatorname{st}(x, \mathcal{V}) : x\in X\}$ refines $\mathcal{U}$.
+of $\mathscr{U}$ if 
+$\{\operatorname{st}(x, \mathscr{V}) : x\in X\}$ refines $\mathscr{U}$.
 	
-	\textup{(ii)} An open cover $\mathcal{U}$ of $X$ is 
+	\textup{(ii)} An open cover $\mathscr{U}$ of $X$ is 
 		\uwave{normal}\index{normal (cover)| \S\ref{sec:prelim_basic_prop}\hfill} 
-	if there is a sequence $\{ \mathcal{U}_n: n\in\omega\}$ of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$ for each $n<\omega$.
+	if there is a sequence $\{ \mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and $\mathscr{U}_{n+1}$ star-refines $\mathscr{U}_n$ for each $n<\omega$.
 }%end of def
 
 {\lemma{\label{lemma:1_1_7}}
-\textup{(i)} Let $\mathcal{U}, \mathcal{V}, \mathcal{W}$ be covers of $X$. If $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ point-star refines $\mathcal{U}$, then $\mathcal{W}$ star-refines $\mathcal{U}$.
+\textup{(i)} Let $\mathscr{U}, \mathscr{V}, \mathscr{W}$ be covers of $X$. If $\mathscr{W}$ point-star refines $\mathscr{V}$ and $\mathscr{V}$ point-star refines $\mathscr{U}$, then $\mathscr{W}$ star-refines $\mathscr{U}$.
 
-\textup{(ii)}  An open cover $\mathcal{U}$ is normal iff there is a sequence $\{\mathcal{U}_n: n\in\omega\}$ of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and  $\mathcal{U}_{n+1}$ point-star refines $\mathcal{U}_n$ for each $n<\omega$..
+\textup{(ii)}  An open cover $\mathscr{U}$ is normal iff there is a sequence $\{\mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and  $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ for each $n<\omega$..
 
-\textup{(iii)}  If $\mathcal{U}$ is a normal cover of $X$, then there is a normal cover $\mathcal{U}_0$ of $X$ such that $\overline{\mathcal{U}_0}$ refines $\mathcal{U}$.
+\textup{(iii)}  If $\mathscr{U}$ is a normal cover of $X$, then there is a normal cover $\mathscr{U}_0$ of $X$ such that $\overline{\mathscr{U}_0}$ refines $\mathscr{U}$.
 } %end of lemma
 
 \begin{proof} 
-(i) Suppose $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ 
-point-star refines $\mathcal{U}$. To show
-that $\mathcal{W}$ star-refines $\mathcal{U}$, let $W \in \mathcal{W}$ and pick $a \in W$.
-Then $\operatorname{st}(a, \mathcal{V}) \subset U$ for some $U \in \mathcal{U}$. 
-For each $x \in W$ there is $V_x \in \mathcal{V}$ such that 
-$\operatorname{st}(x, \mathcal{W}) \subset V_x$. Then 
-$a \in W \subset \operatorname{st}(x, \mathcal{W}) \subset V_x$, and 
-$V_x \subset \operatorname{st}(a, \mathcal{V}) \subset U$. It follows that:
-$$\operatorname{st}(W, \mathcal{W}) = \bigcup_{x \in W} 
-\operatorname{st}(x, \mathcal{W}) \subset \bigcup_{x \in W} V_x 
-\subset\operatorname{st}(a, \mathcal{V}) \subset U.$$  
-Hence $\mathcal{W}$ star-refines $\mathcal{U}$.  
+(i) Suppose $\mathscr{W}$ point-star refines $\mathscr{V}$ and $\mathscr{V}$ 
+point-star refines $\mathscr{U}$. To show
+that $\mathscr{W}$ star-refines $\mathscr{U}$, let $W \in \mathscr{W}$ and pick $a \in W$.
+Then $\operatorname{st}(a, \mathscr{V}) \subset U$ for some $U \in \mathscr{U}$. 
+For each $x \in W$ there is $V_x \in \mathscr{V}$ such that 
+$\operatorname{st}(x, \mathscr{W}) \subset V_x$. Then 
+$a \in W \subset \operatorname{st}(x, \mathscr{W}) \subset V_x$, and 
+$V_x \subset \operatorname{st}(a, \mathscr{V}) \subset U$. It follows that:
+$$\operatorname{st}(W, \mathscr{W}) = \bigcup_{x \in W} 
+\operatorname{st}(x, \mathscr{W}) \subset \bigcup_{x \in W} V_x 
+\subset\operatorname{st}(a, \mathscr{V}) \subset U.$$  
+Hence $\mathscr{W}$ star-refines $\mathscr{U}$.  
 
 (ii) follows from (i). 
 
- (iii) Suppose $\mathcal{U}$ is a normal cover of $X$ and $\{\mathcal{U}_n, n\in\omega\}$ 
- is a sequence of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and each $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$ for each $n <\omega$. For each $U_1 \in \mathcal{U}_1$, there are 
- $U_0 \in \mathcal{U}_0$ and $U \in \mathcal{U}$ such that 
- $\operatorname{st}(U_1, \mathcal{U}_1) \subset U_0 \subset U$. 
- Since $\overline{U_1} \subset \operatorname{st}(U_1, \mathcal{U}_1)$,
- $\overline{\mathcal{U}_1}$ refines $\mathcal{U}$. 
- Clearly, $\mathcal{U}_1$ is a normal cover of $X$. 
+ (iii) Suppose $\mathscr{U}$ is a normal cover of $X$ and $\{\mathscr{U}_n, n\in\omega\}$ 
+ is a sequence of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and each $\mathscr{U}_{n+1}$ star-refines $\mathscr{U}_n$ for each $n <\omega$. For each $U_1 \in \mathscr{U}_1$, there are 
+ $U_0 \in \mathscr{U}_0$ and $U \in \mathscr{U}$ such that 
+ $\operatorname{st}(U_1, \mathscr{U}_1) \subset U_0 \subset U$. 
+ Since $\overline{U_1} \subset \operatorname{st}(U_1, \mathscr{U}_1)$,
+ $\overline{\mathscr{U}_1}$ refines $\mathscr{U}$. 
+ Clearly, $\mathscr{U}_1$ is a normal cover of $X$. 
  \end{proof} 
  	
 {\definition{}

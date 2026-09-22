@@ -4,63 +4,63 @@
 \label{sec:prelim_more_covers}
 
 {\definition{}\label{def_prelim3_cp_ip}
-	 Let Let $\mathcal{U} = \{U_{\alpha} : \alpha \in\Delta\}$ be a family of subsets of $X$.
+	 Let Let $\mathscr{U} = \{U_{\alpha} : \alpha \in\Delta\}$ be a family of subsets of $X$.
 
 \textup{(i) (Michael [1957]\textsuperscript{\cite{Michael1957}})}
-$\mathcal{U}$ is 
+$\mathscr{U}$ is 
 \uwave{closure-preserving}\index{closure-preserving| \S\ref{sec:prelim_more_covers}\hfill} 
 if for any $\Gamma \subset \Delta$,
 $$\overline{\bigcup_{\alpha\in \Gamma} U_{\alpha}} = \bigcup_{\alpha\in \Gamma} \overline{U_{\alpha}}$$
 
 \textup{(ii) (Junnila [1979a]\textsuperscript{\cite{Junnila1979a}})} 
-$\mathcal{U}$ is 
+$\mathscr{U}$ is 
 \uwave{interior-preserving}\index{interior-preserving| \S\ref{sec:prelim_more_covers}\hfill} 
  if for any $\Gamma \subset \Delta$,
 $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\in \Gamma} U_{\alpha}^{\circ}$$
 } %end of def
 
 {\lemma{}  \label{lemma_prelim3_ip_equiv}
-For a family $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
+For a family $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
 
-\textup{(i)} $\mathcal{U}$ is interior-preserving.
+\textup{(i)} $\mathscr{U}$ is interior-preserving.
 	
 \textup{(ii)} For each  $\Gamma \subset \Delta$, $\bigcap_{\alpha \in \Gamma} U_\alpha$ is open.
 	
-\textup{(iii)}  For each $x \in \bigcup\mathcal{U}$, $\bigcap(\mathcal{U})_x$ is open.
+\textup{(iii)}  For each $x \in \bigcup\mathscr{U}$, $\bigcap(\mathscr{U})_x$ is open.
 \hfill \qedsymbol
 } %end of lemma
 
-{\theorem{} Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be an interior-preserving
+{\theorem{} Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ be an interior-preserving
  open family in $X$. For each $\beta \in B$, let $\Delta_\beta \subset \Delta$. Let
 
-$$\mathcal{U}' = \left\{ \bigcap_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}, \quad \mathcal{U}'' = \left\{ \bigcup_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}.$$
-Then the families $\mathcal{U}'$ and $\mathcal{U}''$ are interior-preserving open.
+$$\mathscr{U}' = \left\{ \bigcap_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}, \quad \mathscr{U}'' = \left\{ \bigcup_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}.$$
+Then the families $\mathscr{U}'$ and $\mathscr{U}''$ are interior-preserving open.
 } %end of teorem
 
 \begin{proof} 
-If $\mathcal{U}$ is interior-preserving open, then clearly $\mathcal{U}''$ is 
-interior-preserving open. To see that $\mathcal{U}'$ is interior-preserving open, let $D \subset B$. It is easily verified that
+If $\mathscr{U}$ is interior-preserving open, then clearly $\mathscr{U}''$ is 
+interior-preserving open. To see that $\mathscr{U}'$ is interior-preserving open, let $D \subset B$. It is easily verified that
 
 $$\bigcap_{\beta \in D} \left( \bigcup_{\alpha \in \Delta_\beta} U_\alpha \right) 
 = \bigcup \left\{ \bigcap_{\beta \in D} U_{f(\beta)} : f \in \prod_{\beta \in D} \Delta_\beta \right\}.$$
-By Lemma \ref{lemma_prelim3_ip_equiv}, $\mathcal{U}'$ is interior-preserving open.
+By Lemma \ref{lemma_prelim3_ip_equiv}, $\mathscr{U}'$ is interior-preserving open.
 \end{proof} 
 
 {\definition{} (\textup{Junnila [1979b]\textsuperscript{\cite{Junnila1979b}})} 
-	A cover $\mathcal{E}$ of $X$ is 
+	A cover $\mathscr{E}$ of $X$ is 
 \uwave{semi-open}\index{semi-open| \S\ref{sec:prelim_more_covers}\hfill} 
-if for every $x \in X$, $x \in  \operatorname{st}(x, \mathcal{E})^\circ$.
+if for every $x \in X$, $x \in  \operatorname{st}(x, \mathscr{E})^\circ$.
 
 } %end of def
 
-{\lemma{}  If $\mathcal{E}$ is a cover of $X$, then the following are equivalent.
+{\lemma{}  If $\mathscr{E}$ is a cover of $X$, then the following are equivalent.
 
-\textup{(i)}  $\mathcal{E}$ is semi-open.
+\textup{(i)}  $\mathscr{E}$ is semi-open.
 
 \textup{(ii)} For each $A \subset X$, 
-$\overline{A} \subset \operatorname{st}(A, \mathcal{E})$.
+$\overline{A} \subset \operatorname{st}(A, \mathscr{E})$.
 
-\textup{(iii} For each $A \subset X$, $A \subset  \operatorname{st}(A, \mathcal{E})^\circ$.
+\textup{(iii} For each $A \subset X$, $A \subset  \operatorname{st}(A, \mathscr{E})^\circ$.
 \hfill \qedsymbol
 }
 
@@ -99,24 +99,24 @@ $$\varphi(x) = \sum_{\alpha \in \Delta} \varphi_\alpha(x) =
 
 
 {\lemma{}\label{lemma:1_3_8}
-\textup{(i)} If $\mathcal{V}$ is a locally finite family of functionally open subsets of $X$, 
-then $\bigcup \mathcal{V}$ is functionally open.
+\textup{(i)} If $\mathscr{V}$ is a locally finite family of functionally open subsets of $X$, 
+then $\bigcup \mathscr{V}$ is functionally open.
 
-\textup{(ii)}  If $\mathcal{V}$ is a locally finte functionally open cover of $X$, 
+\textup{(ii)}  If $\mathscr{V}$ is a locally finte functionally open cover of $X$, 
 then there is a partition of unity $\{\varphi_\alpha: \alpha\in\Delta\}$ on $X$ 
-such that $\mathcal{V} = \{\varphi_\alpha^{-1}(0, 1]:  \alpha\in\Delta\}$.
+such that $\mathscr{V} = \{\varphi_\alpha^{-1}(0, 1]:  \alpha\in\Delta\}$.
 }
 
 \begin{proof} 
- Let $\mathcal{V} = \{f_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ be a locally finite
+ Let $\mathscr{V} = \{f_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ be a locally finite
  family of functionally open subsets of $X$ where each $f_\alpha : X \rightarrow [0, 1]$ is continuous.
 
 (i) For each $x \in X$, $\Delta(x) = \{\alpha \in \Delta : x \in f_\alpha^{-1}(0, 1]\}$ is finite.
 Define a continuous function $f : X \rightarrow [0, 1]$ by
 $f(x) = \max \{ f_\alpha : x \in \Delta \}$ for $x\in X$.
-Then $\bigcup \mathcal{V} = f^{-1}(0, 1]$ is functionally open.
+Then $\bigcup \mathscr{V} = f^{-1}(0, 1]$ is functionally open.
 
-(ii) If $\mathcal{V}$ covers $X$, then 
+(ii) If $\mathscr{V}$ covers $X$, then 
 $g = \sum_{\alpha\in\Delta}f_\alpha : X \rightarrow \mathbb{R}$ 
 is a continuous function such that $g(x) > 0$ for all $x\in X$. 
 For each $\alpha \in \Delta$, define a continuous function 
