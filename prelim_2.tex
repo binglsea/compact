@@ -5,11 +5,11 @@
     \label{sec:prelim_induced_covers}
 
 
-{\definition{}\label{ch2_1_LF_ind-cover}  %def 1.2.1
+{\definition{}\label{def:1_2_1} 
 Let $\mathscr{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
 family of subsets of $X$. 
-Let $\mathscr{B}^* = \{U_S: S\in [\Delta]^{<\omega}  \text{ and} $
-$U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\} $. 
+Let $\mathscr{B}^* = \{U_S: S\in [\Delta]^{<\omega},
+U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\} $. 
 Then $\mathscr{B}^*$ 
 is an open cover of $X$. We call $\mathscr{B}^*$ an 
 \uwave{induced cover}\index{induced cover| \S\ref{sec:prelim_induced_covers}\hfill} 
@@ -20,18 +20,18 @@ of $X$.
 %2. 按我的理解，$\emptyset\in  [\Delta]^{<\omega}$, 事实上 $\emptyset\in  [A]^{<\omega}$,
 %对吧？所以 $X\in \mathscr{B}^* $?
 }%end of definition
-
+\vspace{8pt}
 Remark. 
 It is easy to see that 
 $\mathscr{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
-S\in [\Delta]^{<\omega}  \text{ and} $
-$U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\}$ 
+S\in [\Delta]^{<\omega},
+U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\}$ 
 is a locally finite refinement of $\mathscr{B}^*$.
 We also see that
 $\mathscr{B}^*$ is an interior-preserving 
 (see Definition \ref*{def_prelim3_cp_ip}) directed open cover of $X$. 
 
-{\definition{}\label{ch2_1_discrete_ind-cover}   %def1.2.2
+{\definition{}\label{def:1_2_2}
 Let $\mathscr{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
 closed subsets of $X$.
 For $\alpha\in\Delta$, we use notation 
@@ -39,19 +39,19 @@ $U_\alpha = X \setminus \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\gamma$,
 then $D_\alpha \subseteq U_\alpha$.
 Let $\mathscr{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
-$\mathscr{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup S \}$.
+$\mathscr{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup_{\alpha \in S}U_\alpha \}$.
 Then $\mathscr{D}^*$ and $\mathscr{D}^{*F}$ are open $|\Delta|$-cover of $X$.
 We call $\mathscr{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
 
 Remark. Clearly, $X \setminus \bigcup\mathscr{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
-= \bigcap\mathscr{D}^*$.  By Defintion \ref*{def_prelim3_cp_ip},
+= \bigcap\mathscr{D}^*$.  By Defintion \ref*{def:1_3_1},
 $\mathscr{D}^*$ is an interior-preserving open cover and 
 $\mathscr{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
 
 {\lemma{}
 Let $\mathscr{B}$ be a locally finite family of $X$, 
-and $\mathscr{B}^*$ be the induced cover as in Definition \ref*{ch2_1_LF_ind-cover}.
+and $\mathscr{B}^*$ be the induced cover as in Definition \ref*{def:1_2_1}.
 
 \textup{(i)} If $\mathscr{B}^*$ has a cushioned open $($cushioned$)$ refinement, then $\mathscr{B}$ has a locally finite $($point-finite$)$ open expansion.
 
@@ -61,7 +61,7 @@ and $\mathscr{B}^*$ be the induced cover as in Definition \ref*{ch2_1_LF_ind-cov
 \begin{proof} 
 We prove only one case, another case is
 similar. Let $\mathscr{B} = \{B_\alpha : \alpha \in \Delta\}$. Suppose
-the induced cover $\mathscr{B}^*$ as in Definition \ref*{ch2_1_LF_ind-cover}
+the induced cover $\mathscr{B}^*$ as in Definition \ref*{def:1_2_1}
 has a cushioned open refinement
 $\mathscr{G} = \{G_S: S\in [D^*]^{<\omega}\}$ such that for any
 $\Gamma\subset[\Delta]^{<\omega}$,
