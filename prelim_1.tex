@@ -167,7 +167,8 @@ For any family $\mathcal{U} = \{ U_\alpha: \alpha\in \Delta\}$, the family
   \uwave{star-finite}\index{star-finite| \S\ref{sec:prelim_basic_prop}\hfill}
    $($\uwave{star-countable}\index{star-countable| \S\ref{sec:prelim_basic_prop}\hfill}$)$ if
    $\forall\beta\in\Delta, |\operatorname{ind}(
-    \mathcal{U})_{U_{\beta}}| < \omega$   $ (\le\omega)$.
+    \mathcal{U})_{U_{\beta}}| < \omega$   
+    $(|\operatorname{ind}(\mathcal{U})_{U_{\beta}}| \le\omega)$.
 
 \textup{(v)}  $\mathcal{U}$  is 
 \uwave{$\sigma$-disjoint}\index{$\sigma$-disjoint| \S\ref{sec:prelim_basic_prop}\hfill}
@@ -198,10 +199,11 @@ $\mathcal{V}_m$ is discrete $($locally finite$)$ at $x$.
 	Let $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ be a cover of $X$. 
 	
 \textup{(i)} If $\mathcal{U}$ has a locally finite open partial refinement $\mathcal{V}$ 
-such that $\overline{\mathcal{V}}$ refines $\mathcal{U}$, 
+$($such that $\overline{\mathcal{V}}$ refines $\mathcal{U})$, 
 then $\mathcal{U}$ has a locally finite 
 	 open partial refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that
-	  $\overline{H}_\alpha \subset U_\alpha$ for all $\alpha \in \Delta$, and 
+	  $H_\alpha \subset U_\alpha$ $(\overline{H}_\alpha \subset U_\alpha)$ 
+	  for all $\alpha \in \Delta$, and 
 	  $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
 	  
 This result is also true if we replace ``locally finite" by ``discrete" 
@@ -210,7 +212,7 @@ or replace ``open" by ``closed".
 \textup{(ii)} If $\mathcal{U}$ has a partial cushioned $($open$)$ refinement $\mathcal{V}$, then $\mathcal{U}$ has a partial cushioned $($open$)$  refinement $\mathcal{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathcal{H} = \bigcup \mathcal{V}$.  
 } % end of lemma
 
-\begin{proof} Only for (i) Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
+\begin{proof} Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathcal{V}$ (such that 
 $\overline{\mathcal{V}}$ refines $\mathcal{U}$). For every $V\in\mathcal{V}$, pick 
 a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
 $H_\alpha = \bigcup\{V\in\mathcal{V}: \delta(V) = \alpha\}$.   
@@ -231,7 +233,7 @@ of $\mathcal{U}$ if
 $\{\operatorname{st}(x, \mathcal{V}) : x\in X\}$ refines $\mathcal{U}$.
 	
 	\textup{(ii)} An open cover $\mathcal{U}$ of $X$ is 
-		\uwave{normal}\index{normal| \S\ref{sec:prelim_basic_prop}\hfill} 
+		\uwave{normal}\index{normal (cover)| \S\ref{sec:prelim_basic_prop}\hfill} 
 	if there is a sequence $\{ \mathcal{U}_n: n\in\omega\}$ of open covers such that $\mathcal{U}_0$ refines $\mathcal{U}$ and $\mathcal{U}_{n+1}$ star-refines $\mathcal{U}_n$ for each $n<\omega$.
 }%end of def
 
@@ -245,16 +247,16 @@ $\{\operatorname{st}(x, \mathcal{V}) : x\in X\}$ refines $\mathcal{U}$.
 
 \begin{proof} 
 (i) Suppose $\mathcal{W}$ point-star refines $\mathcal{V}$ and $\mathcal{V}$ 
-point-star-refines $\mathcal{U}$. To show
+point-star refines $\mathcal{U}$. To show
 that $\mathcal{W}$ star-refines $\mathcal{U}$, let $W \in \mathcal{W}$ and pick $a \in W$.
 Then $\operatorname{st}(a, \mathcal{V}) \subset U$ for some $U \in \mathcal{U}$. 
 For each $x \in W$ there is $V_x \in \mathcal{V}$ such that 
 $\operatorname{st}(x, \mathcal{W}) \subset V_x$. Then 
-$a \in W \subset \operatorname(x, \mathcal{W}) \subset V_x$, and 
+$a \in W \subset \operatorname{st}(x, \mathcal{W}) \subset V_x$, and 
 $V_x \subset \operatorname{st}(a, \mathcal{V}) \subset U$. It follows that:
 $$\operatorname{st}(W, \mathcal{W}) = \bigcup_{x \in W} 
 \operatorname{st}(x, \mathcal{W}) \subset \bigcup_{x \in W} V_x 
-\subset\operatorname{st}(a, \mathcal{V} \subset U$$  
+\subset\operatorname{st}(a, \mathcal{V}) \subset U.$$  
 Hence $\mathcal{W}$ star-refines $\mathcal{U}$.  
 
 (ii) follows from (i). 
@@ -277,26 +279,31 @@ Hence $\mathcal{W}$ star-refines $\mathcal{U}$.
 \textup{(ii)} $X$ is \uwave{$\lambda$-strongly paracompact}
  \index{$\lambda$-strongly paracompact| 
  \S\ref{sec:prelim_basic_prop}\hfill} 
+ \textup{(Dowker [1947]\textsuperscript{\cite{Dowker}})}
  	 if every open $\lambda$-cover of $X$ has a star-finite open refinement.
  
 \textup{(iii)} $X$ is \uwave{$\lambda$-fully normal}
 \index{$\lambda$-fully normal| 
 	\S\ref{sec:prelim_basic_prop}\hfill} 
+ \textup{(Tueky [1940]\textsuperscript{\cite{Tukey}})}
 if every open $\lambda$-cover of $X$ is a normal cover.
  
 \textup{(iv)} $X$ is \uwave{$\lambda$-paracompact}
 \index{$\lambda$-paracompact| 
 	\S\ref{sec:prelim_basic_prop}\hfill} 
+ \textup{(Dieudonne [1940]\textsuperscript{\cite{Dieudonne}})}
 if every open $\lambda$-cover of $X$ has a locally finite open refinement.
 
 \textup{(v)} $X$ is \uwave{$\lambda$-metacompact}
 \index{$\lambda$-metacompact| 
 	\S\ref{sec:prelim_basic_prop}\hfill} 
+\textup{(Arens and Dugundji [1950]\textsuperscript{\cite{ArensDugundji}})}
 if every open $\lambda$-cover of $X$ has a point finite open refinement.
 
 \textup{(vi)} $X$ is \uwave{$\lambda$-subcompact}
 \index{$\lambda$-subcompact| 
 	\S\ref{sec:prelim_basic_prop}\hfill} 
+\textup{(Burke [1969]\textsuperscript{\cite{Burke}})}
 if every open $\lambda$-cover of $X$ has a 
 $\sigma$-discrete closed refinement.
 
@@ -306,7 +313,7 @@ $\sigma$-discrete closed refinement.
 	or \uwave{$\lambda$-submetacompact}
 	\index{$\lambda$-submetacompact| 
 		\S\ref{sec:prelim_basic_prop}\hfill} 
-\textup{(Worrel and Wicke [1965])\cite{WorrellWicke}}
+\textup{(Worrel and Wicke [1965]\textsuperscript{\cite{WorrellWicke}})}
    if every open $\lambda$-cover of $X$ has a $\theta$-sequence
   of open refinement.
 } %end of definition
@@ -315,7 +322,7 @@ $\sigma$-discrete closed refinement.
 \textup{(i)} $X$ is \uwave{$\lambda$-$\theta^*$-refinable} 
   \index{$\lambda$-$\theta^*$-refinable| 
   	\S\ref{sec:prelim_basic_prop}\hfill} 
-  	\textup{(Smith [1976]\cite{Smith1976})} if every open $\lambda$-cover of 
+  	\textup{(Smith [1976]\textsuperscript{\cite{Smith1976}})} if every open $\lambda$-cover of 
   	$X$ has a  $\theta^*$-sequence of open refinement.
   	
 \textup{(ii)}  $X$ is \uwave{$\lambda$-$\epsilon^*$-refinable}
@@ -332,9 +339,9 @@ $\sigma$-discrete closed refinement.
 } %end of definition
 
 \vspace{8pt}
-\textsc{Remark.} In each of the above definition with $\lambda$, 
-we simply drop $\lambda$ if it applies for all 
-cardinals $\lambda$.
+\textsc{Remark.} In each of the above definitions mentioning $\lambda$, 
+$\lambda$ is dropped if it applies for all 
+cardinals.
 
 We proved that a space is $\lambda$-paracompact iff it is
 $\lambda$-$\theta^*$-refinable 
