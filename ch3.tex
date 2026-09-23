@@ -7,7 +7,8 @@
 
 \section{Works of Mack, Worrell}\label{ch3_mack_worrell}
 
-{\lemma{} If every directed $($increasing$)$ open $\lambda$-cover of $X$ has a locally finite 
+{\lemma{} \label{le:3_1_1} 
+	If every directed $($increasing$)$ open $\lambda$-cover of $X$ has a locally finite 
 	open refinement, then every directed $($increasing$)$ open $\lambda$-cover has a 
 	locally open shrink.
 }
@@ -23,36 +24,42 @@ Since $\mathscr{U}$ is directed (increasing), $\mathscr{W}$ is also
 directed (increasing). Let $\mathscr{V} = \{V_\alpha : \alpha < \lambda\}$ be  a locally finite open refinement of $\mathscr{W}$ such that $V_\alpha \subset W_\alpha$. Then $\mathscr{V}$ is a locally finite open shrink of $\mathscr{U}$. 
 \end{proof} 
 
-{\theorem{} \textup{(Mack [1967]\textsuperscript{\cite{Mack}})} For any $X$, the following are equivalent:
+{\theorem{} \label{lth:3_1_2} 
+	\textup{(Mack [1967]\textsuperscript{\cite{Mack}})} For any $X$, the following are equivalent:
 
-\textup{(i)} $X$ is $\sigma$-paracompact.
+\textup{(i)} $X$ is $\lambda$-paracompact.
 
-\textup{(ii)} Every directed open $\sigma$-cover of $X$ has a  locally finite open refinement.
+\textup{(ii)} Every directed open $\lambda$-cover of $X$ has a  locally finite open refinement.
 
-\textup{(iii)} Every increasing open $\sigma$-cover of $X$ has a  locally finite open refinement.
+\textup{(iii)} Every increasing open $\lambda$-cover of $X$ has a  locally finite open refinement.
 
-\textup{(iv)}  Every increasing open $\sigma$-cover has a LF open shrink.
+\textup{(iv)}  Every increasing open $\lambda$-cover has a locally finite open shrink.
 
-\textup{(v)}  Every increasing open $\sigma$-cover has a $\sigma$-LF open refinement $\mathscr{V}$ such that $\overline{\mathscr{V}}$ refines $\mathscr{U}$.
+\textup{(v)}  Every increasing open $\lambda$-cover $\mathscr{U}$
+has a $\sigma$-locally finite open refinement $\mathscr{V}$ such that 
+$\overline{\mathscr{V}}$ refines $\mathscr{U}$.
 }
 
 \begin{proof}
 It is clear that (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii) and (iv) $\Rightarrow$ (v).
 
-(iii) $\Rightarrow$ (iv). Lemma 3.1.1.
+(iii) $\Rightarrow$ (iv). Lemma \ref{le:1_2_3}.
 
-(v) $\Rightarrow$ (i). From Theorem 8.2.18. % TO_DO
+(v) $\Rightarrow$ (i). From Theorem \ref{th:8_2_18}. % TO_DO 8.2.18
 \end{proof} 
 
-**3.1.3. Theorem.** For any $X$ the following are equivalent:
+{\theorem{}  \label{th:3_1_3} 
+For any $X$ the following are equivalent:
 
-(i) $X$ is $\sigma$-paracompact.
+(i) $X$ is $\lambda$-paracompact.
 
-(ii) Every directed open $\sigma$-cover has a LF open shrink.
+(ii) Every directed open $\lambda$-cover has a locally finite open shrink.
 
-(iii) Every directed open $\sigma$-cover has a LF closed refinement.
+(iii) Every directed open $\lambda$-cover has a locally finite closed refinement.
+}
 
-*Proof.* (i) $\Rightarrow$ (ii). Lemma 3.1.1.
+\begin{proof}
+	 (i) $\Rightarrow$ (ii). Lemma \ref{le:3_1_1}.
 
 (ii) $\Rightarrow$ (iii). Clear.
 
@@ -61,14 +68,17 @@ It is clear that (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii) and (iv) $\Rightarro
 $$G_\alpha = X \setminus \bigcup \{C_s : s \in [\lambda]^{<\omega}, C_s \cap F_\alpha = \phi\}$$
 
 Then $F_\alpha \subset G_\alpha \subset U_\alpha$ for each $\alpha < \lambda$. It is easy to see that $\mathscr{G} = \{G_\alpha : \alpha < \lambda\}$ is a LF open refinement of $\mathscr{U}$, so $X$ is $\sigma$-paracompact. $\square$
+\end{proof}
 
-Here is the transcribed text from the image:
+{\lemma{} \label{le:3_1_4}
+An open cover $\mathscr{U}$ of $X$ has a $\sigma$-sequence of open refinements iff 
+there exists a countable closed cover $F_n$ of $X$ such that 
+for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement 
+in the subspace $F_n$.
+}
 
----
-
-**3.1.4. Lemma.** An open cover $\mathscr{U}$ of $X$ has a $\sigma$-sequence of open refinements iff there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement in the subspace $F_n$.
-
-*Proof.* ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\sigma$-sequence $\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let
+\begin{proof}
+	 ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence $\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let
 
 
 $$F_{m,n} = \{x \in X : \vert{}\{n \in \omega : x \in \bigcup \mathscr{V}_n\}\vert{} \le m\}, \quad F_{m,-1} = \emptyset.$$
@@ -81,11 +91,10 @@ Then $\{F_{m,n}\}$ is a closed cover of $X$ such that for each $m, n < \omega$, 
 $$\mathscr{G}_n = \{V_{n,\alpha}' : \alpha \in \lambda\} \cup \{X \setminus \bigcup \{F_m : m \le n, \alpha \in \lambda\}\}.$$
 
 Then $\{\mathscr{G}_n : n \in \omega\}$ is a $\sigma$-sequence of open refinements of $\mathscr{U}$. $\square$
+\end{proof}
 
----
-
-**3.1.5. Theorem.** $X$ is $\sigma$-submetacompact iff for every open $\sigma$-cover $\mathscr{U}$ of $X$ there is a countable closed cover $\{F_n\}$ of $X$ such that for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement in the subspace $F_n$.
-
+{\theorem{} $X$ is $\sigma$-submetacompact iff for every open $\sigma$-cover $\mathscr{U}$ of $X$ there is a countable closed cover $\{F_n\}$ of $X$ such that for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement in the subspace $F_n$.
+}
 
 
 \subfile{ch3_2}
