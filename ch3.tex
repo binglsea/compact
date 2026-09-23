@@ -43,9 +43,9 @@ $\overline{\mathscr{V}}$ refines $\mathscr{U}$.
 \begin{proof}
 It is clear that (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii) and (iv) $\Rightarrow$ (v).
 
-(iii) $\Rightarrow$ (iv). Lemma \ref{le:1_2_3}.
+(iii) $\Rightarrow$ (iv). Lemma \ref{le:3_1_1}.
 
-(v) $\Rightarrow$ (i). From Theorem \ref{th:8_2_18}. % TO_DO 8.2.18
+(v) $\Rightarrow$ (i). From Theorem \ref{th:8_2_18}8.2.18. % TO_DO 8.2.18
 \end{proof} 
 
 {\theorem{}  \label{th:3_1_3} 
@@ -63,22 +63,35 @@ For any $X$ the following are equivalent:
 
 (ii) $\Rightarrow$ (iii). Clear.
 
-(iii) $\Rightarrow$ (i). Assume (iii) and let $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ be a directed open $\sigma$-cover of $X$. Let $\mathscr{F} = \{F_\alpha : \alpha < \lambda\}$ be a LF closed refinement of $\mathscr{U}$ with $F_\alpha \subset U_\alpha$. For $s \in [\lambda]^{<\omega}$, let $V_s = X \setminus \bigcup_{\alpha \notin s} F_\alpha$. Then $\mathscr{V} = \{V_s : s \in [\lambda]^{<\omega}\}$ is a directed open $\sigma$-cover of $X$. Let $\mathscr{C} = \{C_s : s \in [\lambda]^{<\omega}\}$ be a LF closed refinement of $\mathscr{V}$ with $C_s \subset V_s$ for each $s \in [\lambda]^{<\omega}$. For $\alpha < \lambda$, let
+(iii) $\Rightarrow$ (i). Assume (iii) and let $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ 
+be a directed open cover of $X$. Let 
+$\mathscr{F} = \{F_\alpha : \alpha < \lambda\}$ be a locally finite closed refinement of 
+$\mathscr{U}$ with $F_\alpha \subset U_\alpha$. 
+For $S \in [\lambda]^{<\omega}$, let $V_S = X \setminus \bigcup_{\gamma \notin S} F_\gamma$. 
+Then $\mathscr{V} = \{V_S : S \in [\lambda]^{<\omega}\}$ is a directed open 
+$\lambda$-cover of $X$. Let $\mathscr{C} = \{C_S : S \in [\lambda]^{<\omega}\}$ 
+be a locally finite closed refinement of $\mathscr{V}$ with $C_S \subset V_S$ 
+for each $S \in [\lambda]^{<\omega}$. For $\alpha < \lambda$, let
 
-$$G_\alpha = X \setminus \bigcup \{C_s : s \in [\lambda]^{<\omega}, C_s \cap F_\alpha = \phi\}$$
+$$G_\alpha = X \setminus \bigcup \{C_S : S \in [\lambda]^{<\omega}, 
+C_S \cap F_\alpha = \emptyset\}.$$
 
-Then $F_\alpha \subset G_\alpha \subset U_\alpha$ for each $\alpha < \lambda$. It is easy to see that $\mathscr{G} = \{G_\alpha : \alpha < \lambda\}$ is a LF open refinement of $\mathscr{U}$, so $X$ is $\sigma$-paracompact. $\square$
+Then $F_\alpha \subset G_\alpha \subset U_\alpha$ for each $\alpha < \lambda$. 
+It is easy to see that $\mathscr{W} = \{G_\alpha \cap U_\alpha : \alpha < \lambda\}$ 
+is a locally finite open refinement of $\mathscr{U}$, so $X$ is 
+$\lambda$-paracompact.
 \end{proof}
 
 {\lemma{} \label{le:3_1_4}
-An open cover $\mathscr{U}$ of $X$ has a $\sigma$-sequence of open refinements iff 
+An open cover $\mathscr{U}$ of $X$ has a $\theta$-sequence of open refinements iff 
 there exists a countable closed cover $F_n$ of $X$ such that 
 for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement 
 in the subspace $F_n$.
 }
 
 \begin{proof}
-	 ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence $\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let
+($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence 
+$\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let
 
 
 $$F_{m,n} = \{x \in X : \vert{}\{n \in \omega : x \in \bigcup \mathscr{V}_n\}\vert{} \le m\}, \quad F_{m,-1} = \emptyset.$$
@@ -98,4 +111,5 @@ Then $\{\mathscr{G}_n : n \in \omega\}$ is a $\sigma$-sequence of open refinemen
 
 
 \subfile{ch3_2}
+\subfile{ch3_3}
 \end{document}
