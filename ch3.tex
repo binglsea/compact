@@ -51,15 +51,15 @@ It is clear that (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii) and (iv) $\Rightarro
 {\theorem{}  \label{th:3_1_3} 
 For any $X$ the following are equivalent:
 
-(i) $X$ is $\lambda$-paracompact.
+\textup{(i)} $X$ is $\lambda$-paracompact.
 
-(ii) Every directed open $\lambda$-cover has a locally finite open shrink.
+\textup{(ii)} Every directed open $\lambda$-cover has a locally finite open shrink.
 
-(iii) Every directed open $\lambda$-cover has a locally finite closed refinement.
+\textup{(iii)} Every directed open $\lambda$-cover has a locally finite closed refinement.
 }
 
 \begin{proof}
-	 (i) $\Rightarrow$ (ii). Lemma \ref{le:3_1_1}.
+(i) $\Rightarrow$ (ii). Lemma \ref{le:3_1_1}.
 
 (ii) $\Rightarrow$ (iii). Clear.
 
@@ -100,10 +100,10 @@ Then $\{F_{m,n}\}$ is a closed cover of $X$ such that for each $m, n < \omega$,
 $\mathscr{U} \vert{}_{F_{m,n}}$ has a point-finite open refinement 
 $\mathscr{V}_m \vert{} F_{m,n}$ in subspace $F_{m,n}$.
 
-($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ is an 
+($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ is an 
 open cover of $X$ and $\{F_n : n \in \omega\}$ is a countable closed cover of $X$ 
 such that for each $n \in \omega$, $\mathscr{U} \vert{}_{F_n}$ has a point-finite 
-open refinement $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}$ in the subspace 
+open refinement $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta\}$ in the subspace 
 $F_n$ with $V_{n,\alpha} \subset U_\alpha\cap F_n$. 
 Let $V_{n,\alpha} = V_{n,\alpha}' \cap F_n$ for some open subset $V_{n,\alpha}'$ of $X$. 
 For $n \in \omega$, let
@@ -113,25 +113,25 @@ Then $\{\mathscr{G}_n : n \in \omega\}$ is a $\theta$-sequence of open refinemen
 of $\mathscr{U}$.
 \end{proof}
 
-{\theorem{} $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
+{\theorem{} \label{th:3_1_5}
+$X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
  $\mathscr{U}$ of $X$ there exists a countable closed cover $\{F_n\}$ of $X$ 
  such that for each $n \in \omega$, $\mathscr{U} \vert{}_{ F_n}$ has a point-finite 
  open refinement in the subspace $F_n$.\hfill\qedsymbol
 }
 
-The image is oriented upside down. Rotating the text right-side up yields the transcription for page 29:
+{\definition{} \label{def:3_1_6}
+Let $\mathcal{U} = \{ U_\alpha : \alpha \in A \}$ and $\mathcal{V}$ be covers of $X$.
 
----
+\textup{(i)} $\mathcal{V}$ is a **point-wise (local) $W$-refinement** of $\mathcal{U}$ at $x \in X$ if there is $s \in [A]^\omega$ (and $\exists \, e \in \text{top}(x)$) such that $(\mathcal{V})_x$ (and $\mathcal{V}$ refines $\{U_\alpha : \alpha \in s\}$, or is a point-wise (local) $W$-refinement of $\mathcal{U}$ as if $\mathcal{V}_x$ is a point-wise (local) $W$-refinement of $\mathcal{U}$ at each $x \in X$.
 
-**3.1.6. Definition.** Let $\mathcal{U} = \{ U_\alpha : \alpha \in A \}$ and $\mathcal{V}$ be covers of $X$.
+\textup{(ii)} A sequence $\{\mathcal{U}_n\}$ of covers of $X$ is a **point-wise $W$-refining sequence** for $\mathcal{U}$ if $\forall x \in X \; \exists \, m < \omega$ such that $\mathcal{U}_m$ is a point-wise $W$-refinement of $\mathcal{U}$ at $x$.
+}
 
-(i) $\mathcal{V}$ is a **point-wise (local) $W$-refinement** of $\mathcal{U}$ at $x \in X$ if there is $s \in [A]^\omega$ (and $\exists \, e \in \text{top}(x)$) such that $(\mathcal{V})_x$ (and $\mathcal{V}$ refines $\{U_\alpha : \alpha \in s\}$, or is a point-wise (local) $W$-refinement of $\mathcal{U}$ as if $\mathcal{V}_x$ is a point-wise (local) $W$-refinement of $\mathcal{U}$ at each $x \in X$.
 
-(ii) A sequence $\{\mathcal{U}_n\}$ of covers of $X$ is a **point-wise $W$-refining sequence** for $\mathcal{U}$ if $\forall x \in X \; \exists \, m < \omega$ such that $\mathcal{U}_m$ is a point-wise $W$-refinement of $\mathcal{U}$ at $x$.
-
----
-
-**3.1.7. Theorem.** (Worrell 1967) $X$ is **submetacompact** iff every open cover of $X$ has a point-wise $W$-refining sequence of open covers of $X$.
+{\theorem{} \label{th:3_1_7} \textup{(Worrell [1967]\textsc{\cite{Worrell1967}})} 
+$X$ is submetacompact iff every open cover of $X$ has a point-wise $W$-refining sequence of open covers of $X$.
+}
 
 *Proof.* See Corollary 5.1.3. $\square$
 
