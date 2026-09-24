@@ -76,7 +76,7 @@ for each $S \in [\lambda]^{<\omega}$. For $\alpha < \lambda$, let
 $$G_\alpha = X \setminus \bigcup \{C_S : S \in [\lambda]^{<\omega}, 
 C_S \cap F_\alpha = \emptyset\}.$$
 
-Then $F_\alpha \subset G_\alpha \subset U_\alpha$ for each $\alpha < \lambda$. 
+Then $F_\alpha \subset G_\alpha$ for each $\alpha < \lambda$. 
 It is easy to see that $\mathscr{W} = \{G_\alpha \cap U_\alpha : \alpha < \lambda\}$ 
 is a locally finite open refinement of $\mathscr{U}$, so $X$ is 
 $\lambda$-paracompact.
@@ -91,23 +91,93 @@ in the subspace $F_n$.
 
 \begin{proof}
 ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence 
-$\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let
+$\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta_n\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let 
+\begin{gather*}
+	F_{m, 0} = \emptyset \\
+	F_{m,n} = \{x \in X: \vert{}\operatorname{ind}(\mathscr{V}_m)_x\vert{} \le n\}, n\ge 1.
+\end{gather*}
+Then $\{F_{m,n}\}$ is a closed cover of $X$ such that for each $m, n < \omega$, 
+$\mathscr{U} \vert{}_{F_{m,n}}$ has a point-finite open refinement 
+$\mathscr{V}_m \vert{} F_{m,n}$ in subspace $F_{m,n}$.
 
-
-$$F_{m,n} = \{x \in X : \vert{}\{n \in \omega : x \in \bigcup \mathscr{V}_n\}\vert{} \le m\}, \quad F_{m,-1} = \emptyset.$$
-
-Then $\{F_{m,n}\}$ is a closed cover of $X$ such that for each $m, n < \omega$, $\mathscr{U} \vert{} F_{m,n}$ has a point-finite open refinement $\mathscr{V}_n \vert{} F_{m,n}$ in subspace $F_{m,n}$.
-
-($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ is an open cover of $X$ and $\{F_n : n \in \omega\}$ is a countable closed cover of $X$ such that for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}$ in the subspace $F_n$ with $V_{n,\alpha} \subset U_\alpha$. Let $V_{n,\alpha} = V_{n,\alpha}' \cap F_n$ for some open subset $V_{n,\alpha}'$ of $X$. For $n \in \omega$, let
-
-
-$$\mathscr{G}_n = \{V_{n,\alpha}' : \alpha \in \lambda\} \cup \{X \setminus \bigcup \{F_m : m \le n, \alpha \in \lambda\}\}.$$
-
-Then $\{\mathscr{G}_n : n \in \omega\}$ is a $\sigma$-sequence of open refinements of $\mathscr{U}$. $\square$
+($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ is an 
+open cover of $X$ and $\{F_n : n \in \omega\}$ is a countable closed cover of $X$ 
+such that for each $n \in \omega$, $\mathscr{U} \vert{}_{F_n}$ has a point-finite 
+open refinement $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \lambda\}$ in the subspace 
+$F_n$ with $V_{n,\alpha} \subset U_\alpha\cap F_n$. 
+Let $V_{n,\alpha} = V_{n,\alpha}' \cap F_n$ for some open subset $V_{n,\alpha}'$ of $X$. 
+For $n \in \omega$, let
+$$\mathscr{G}_n = \{V_{n,\alpha}'\cap U_\alpha: \alpha \in \Delta\} \cup 
+\{(V_{m,\alpha}'\setminus F_n)\cap U_\alpha: m\ne n, \alpha\in\Delta\}.$$
+Then $\{\mathscr{G}_n : n \in \omega\}$ is a $\theta$-sequence of open refinements 
+of $\mathscr{U}$.
 \end{proof}
 
-{\theorem{} $X$ is $\sigma$-submetacompact iff for every open $\sigma$-cover $\mathscr{U}$ of $X$ there is a countable closed cover $\{F_n\}$ of $X$ such that for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement in the subspace $F_n$.
+{\theorem{} $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
+ $\mathscr{U}$ of $X$ there exists a countable closed cover $\{F_n\}$ of $X$ 
+ such that for each $n \in \omega$, $\mathscr{U} \vert{}_{ F_n}$ has a point-finite 
+ open refinement in the subspace $F_n$.\hfill\qedsymbol
 }
+
+The image is oriented upside down. Rotating the text right-side up yields the transcription for page 29:
+
+---
+
+**3.1.6. Definition.** Let $\mathcal{U} = \{ U_\alpha : \alpha \in A \}$ and $\mathcal{V}$ be covers of $X$.
+
+(i) $\mathcal{V}$ is a **point-wise (local) $W$-refinement** of $\mathcal{U}$ at $x \in X$ if there is $s \in [A]^\omega$ (and $\exists \, e \in \text{top}(x)$) such that $(\mathcal{V})_x$ (and $\mathcal{V}$ refines $\{U_\alpha : \alpha \in s\}$, or is a point-wise (local) $W$-refinement of $\mathcal{U}$ as if $\mathcal{V}_x$ is a point-wise (local) $W$-refinement of $\mathcal{U}$ at each $x \in X$.
+
+(ii) A sequence $\{\mathcal{U}_n\}$ of covers of $X$ is a **point-wise $W$-refining sequence** for $\mathcal{U}$ if $\forall x \in X \; \exists \, m < \omega$ such that $\mathcal{U}_m$ is a point-wise $W$-refinement of $\mathcal{U}$ at $x$.
+
+---
+
+**3.1.7. Theorem.** (Worrell 1967) $X$ is **submetacompact** iff every open cover of $X$ has a point-wise $W$-refining sequence of open covers of $X$.
+
+*Proof.* See Corollary 5.1.3. $\square$
+
+---
+
+**3.1.8. Theorem.** (Worrell 1966a) $X$ is **metacompact** iff every open cover of $X$ has an open point-wise $W$-refinement.
+
+*Proof.* See Theorem 5.2.2. $\square$
+
+---
+
+**3.1.9. Theorem.** (Worrell 1968b) $X$ is **paracompact** iff every open cover of $X$ has an open local-$W$-refinement.
+
+*Proof.* See Corollary 8.2.15. $\square$
+
+Here is the complete transcript of the handwritten mathematics notes from page 30:
+
+---
+
+ 3.1.10. Theorem. (Sconyers 1970)
+
+$X$ is $\mathfrak{m}$-metacompact iff every increasing open $\mathfrak{m}$-cover of $X$ has a point-finite open refinement.
+
+**Proof.** The necessity is clear. We prove the sufficiency.
+
+Suppose every increasing open $\mathfrak{m}$-cover of $X$ has a point-finite open refinement. For each $\kappa \le \mathfrak{m}$ denote by $P_\kappa$ the proposition "every open $\kappa$-cover of $X$ has a point-finite open refinement." We use induction to show that $P_\kappa$ holds for each $\kappa \le \mathfrak{m}$.
+
+If $\kappa$ is finite, $P_\kappa$ clearly holds.
+
+Let $\kappa \le \mathfrak{m}$ such that $P_\mu$ holds for each $\mu < \kappa$. To show $P_\kappa$ holds, let $\mathcal{U} = \{U_\alpha : \alpha < \kappa\}$ be an open cover of $X$.
+
+$\mathcal{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is an increasing open $\kappa$-cover of $X$.
+
+Let $\mathcal{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open refinement of $\mathcal{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. For $\alpha < \kappa$, let
+
+$$\mathcal{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \cup \{ \bigcup_{\gamma > \alpha} W_\gamma \}$$
+
+Then $\mathcal{G}_\alpha$ is an open cover of $W_\alpha$ with power $< \kappa$. By induction assumption, $\mathcal{G}_\alpha$ has a point-finite open refinement $\mathcal{H}_\alpha$. Let $\mathcal{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ and $R_\alpha \subset \bigcup_{\gamma > \alpha} W_\gamma$.
+
+Let
+
+$$\mathcal{V} = \{ H_\gamma : \gamma < \alpha, \alpha < \kappa \}$$
+
+Then $\mathcal{V}$ is a point-finite open refinement of $\mathcal{U}$. So $P_\kappa$ holds.
+
+This completes the induction. Thus $P_\kappa$ holds, so $X$ is $\mathfrak{m}$-metacompact. $\square$
 
 
 \subfile{ch3_2}
