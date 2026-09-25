@@ -127,9 +127,17 @@ Let $\mathscr{U} = \{ U_\alpha : \alpha \in\Delta \}$ and $\mathscr{V}$ be cover
 \uwave{point-wise $($local$)$ $W$-refinement}
 \index{point-wise $W$-refinement| \S\ref{sec:ch3_1}\hfill}
 \index{local $W$-refinement| \S\ref{sec:ch3_1}\hfill}
-of $\mathscr{U}$ at $x \in X$ if there is $s \in [\Delta]^\omega$ $($and $\exists \, e \in \text{top}(x)$) such that $(\mathscr{V})_x$ (and $\mathscr{V}$ refines $\{U_\alpha : \alpha \in s\}$, or is a point-wise (local) $W$-refinement of $\mathscr{U}$ as if $\mathscr{V}_x$ is a point-wise (local) $W$-refinement of $\mathscr{U}$ at each $x \in X$.
+of $\mathscr{U}$ at $x \in X$ if there exists $S \in [\Delta]^{<\omega}$ 
+$($and $\exists \, G\in \operatorname{top}(x) )$ such that $(\mathscr{V})_x$ 
+$($and $(\mathscr{V})_G )$ refines $\{U_\alpha : \alpha \in S\}$.
+ $\mathscr{V}$ is a point-wise $($local$)$ $W$-refinement of $\mathscr{U}$  if $\mathscr{V}$ is a point-wise $($local$)$ $W$-refinement of $\mathscr{U}$ at each $x \in X$.
 
-\textup{(ii)} A sequence $\{\mathscr{U}_n\}$ of covers of $X$ is a **point-wise $W$-refining sequence** for $\mathscr{U}$ if $\forall x \in X \; \exists \, m < \omega$ such that $\mathscr{U}_m$ is a point-wise $W$-refinement of $\mathscr{U}$ at $x$.
+\textup{(ii)} A sequence $\{\mathscr{V}_n: n\in \omega\}$ of covers of $X$ is a 
+\textup{(i)} $\mathscr{V}$ is a 
+\uwave{point-wise $W$-refining sequence}
+\index{point-wise $W$-refining sequence| \S\ref{sec:ch3_1}\hfill} 
+for $\mathscr{U}$ if $\forall x \in X \; \exists \, m < \omega$, $\mathscr{V}_m$ is 
+a point-wise $W$-refinement of $\mathscr{U}$ at $x$.
 }
 
 
@@ -137,9 +145,11 @@ of $\mathscr{U}$ at $x \in X$ if there is $s \in [\Delta]^\omega$ $($and $\exist
 $X$ is submetacompact iff every open cover of $X$ has a point-wise $W$-refining sequence of open covers of $X$.
 }
 
-*Proof.* See Corollary 5.1.3. $\square$
+\begin{proof}
+ See Corollary \ref{th:5_1_3}5.1.3.
+\end{proof}
 
----
+
 
 **3.1.8. Theorem.** (Worrell 1966a) $X$ is **metacompact** iff every open cover of $X$ has an open point-wise $W$-refinement.
 
