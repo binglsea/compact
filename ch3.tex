@@ -152,7 +152,7 @@ $X$ is submetacompact iff every open cover of $X$ has a point-wise $W$-refining 
 
 {\theorem{} \label{th:3-1-8} 
 \textup{(Worrell [1966a]\textsuperscript{\cite{Worrell1966}})}
-	$X$ is metacompact iff every open cover of $X$ has an open point-wise $W$-refinement.
+$X$ is metacompact iff every open cover of $X$ has an open point-wise $W$-refinement.
 }
 
 \begin{proof}
@@ -160,41 +160,45 @@ $X$ is submetacompact iff every open cover of $X$ has a point-wise $W$-refining 
 \end{proof}
 
 
-**3.1.9. Theorem.** (Worrell 1968b) $X$ is **paracompact** iff every open cover of $X$ has an open local-$W$-refinement.
+{\theorem{} \label{th:3-1-9}
+\textup{(Worrell [1968b]\textsuperscript{\cite{Worrell1968}})} 
+$X$ is paracompact iff every open cover of $X$ has an open local $W$-refinement.
+}
 
-*Proof.* See Corollary 8.2.15. $\square$
+\begin{proof}
+See Corollary 8.2.15\ref{th:8-2-5}. % TO_DO
+\end{proof}
 
-Here is the complete transcript of the handwritten mathematics notes from page 30:
 
----
+{\theorem{} \label{th:3-1-10} 
+\textup{(Sconyers [1970]\textsuperscript{\cite{Sconyers}})} 
+$X$ is $\lambda$-metacompact iff every increasing open $\lambda$-cover of $X$ has a point-finite open refinement.
+}
 
- 3.1.10. Theorem. (Sconyers 1970)
-
-$X$ is $\mathfrak{m}$-metacompact iff every increasing open $\mathfrak{m}$-cover of $X$ has a point-finite open refinement.
-
-**Proof.** The necessity is clear. We prove the sufficiency.
-
-Suppose every increasing open $\mathfrak{m}$-cover of $X$ has a point-finite open refinement. For each $\kappa \le \mathfrak{m}$ denote by $P_\kappa$ the proposition "every open $\kappa$-cover of $X$ has a point-finite open refinement." We use induction to show that $P_\kappa$ holds for each $\kappa \le \mathfrak{m}$.
-
+\begin{proof} The necessity is clear. We prove the sufficiency.
+Suppose every increasing open $\lambda$-cover of $X$ has a point-finite 
+open refinement. For each $\kappa \le \lambda$, denote by $P_\kappa$ the 
+proposition "every open $\kappa$-cover of $X$ has a point-finite open refinement." 
+We use induction to show that $P_\kappa$ holds for each $\kappa \le \lambda$.
 If $\kappa$ is finite, $P_\kappa$ clearly holds.
-
-Let $\kappa \le \mathfrak{m}$ such that $P_\mu$ holds for each $\mu < \kappa$. To show $P_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ be an open cover of $X$.
-
-$\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is an increasing open $\kappa$-cover of $X$.
-
-Let $\mathscr{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open refinement of $\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. For $\alpha < \kappa$, let
-
-$$\mathscr{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \cup \{ \bigcup_{\gamma > \alpha} W_\gamma \}$$
-
-Then $\mathscr{G}_\alpha$ is an open cover of $W_\alpha$ with power $< \kappa$. By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open refinement $\mathscr{H}_\alpha$. Let $\mathscr{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ and $R_\alpha \subset \bigcup_{\gamma > \alpha} W_\gamma$.
-
+Let $\kappa \le \lambda$ such that $P_\mu$ holds for each $\mu < \kappa$. 
+To show $P_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ 
+be an open cover of $X$.
+$\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is 
+an increasing open $\lambda$-cover of $X$.
+Let $\mathscr{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open refinement of 
+$\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
+For $\alpha < \kappa$, let
+$$\mathscr{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \bigcup \{ \cup_{\gamma > \alpha} W_\gamma \}$$
+Then $\mathscr{G}_\alpha$ is an open cover of $X$ with power $< \kappa$. 
+By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open refinement $\mathscr{H}_\alpha$. Let 
+$\mathscr{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ 
+such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ 
+and $R_\alpha \subset \bigcup_{\gamma > \alpha} W_\gamma$.
 Let
-
 $$\mathscr{V} = \{ H_\gamma : \gamma < \alpha, \alpha < \kappa \}$$
-
 Then $\mathscr{V}$ is a point-finite open refinement of $\mathscr{U}$. So $P_\kappa$ holds.
-
-This completes the induction. Thus $P_\kappa$ holds, so $X$ is $\mathfrak{m}$-metacompact. $\square$
+This completes the induction. Thus $P_\kappa$ holds, so $X$ is $\lambda$-metacompact. \end{proof}
 
 
 \subfile{ch3_2}
