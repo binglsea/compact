@@ -5,7 +5,7 @@
 \chapter{Works of Mack, Worrell, Liu and Smith} 
 	\label{ch3}
 
-\section{Works of Mack, Worrell}\label{ch3_mack_worrell}
+\section{Works of Mack, Worrell}\label{sec:ch3_1}
 
 {\lemma{} \label{le:3_1_1} 
 	If every directed $($increasing$)$ open $\lambda$-cover of $X$ has a locally finite 
@@ -121,15 +121,19 @@ $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
 }
 
 {\definition{} \label{def:3_1_6}
-Let $\mathcal{U} = \{ U_\alpha : \alpha \in A \}$ and $\mathcal{V}$ be covers of $X$.
+Let $\mathscr{U} = \{ U_\alpha : \alpha \in\Delta \}$ and $\mathscr{V}$ be covers of $X$.
 
-\textup{(i)} $\mathcal{V}$ is a **point-wise (local) $W$-refinement** of $\mathcal{U}$ at $x \in X$ if there is $s \in [A]^\omega$ (and $\exists \, e \in \text{top}(x)$) such that $(\mathcal{V})_x$ (and $\mathcal{V}$ refines $\{U_\alpha : \alpha \in s\}$, or is a point-wise (local) $W$-refinement of $\mathcal{U}$ as if $\mathcal{V}_x$ is a point-wise (local) $W$-refinement of $\mathcal{U}$ at each $x \in X$.
+\textup{(i)} $\mathscr{V}$ is a 
+\uwave{point-wise $($local$)$ $W$-refinement}
+\index{point-wise $W$-refinement| \S\ref{sec:ch3_1}\hfill}
+\index{local $W$-refinement| \S\ref{sec:ch3_1}\hfill}
+of $\mathscr{U}$ at $x \in X$ if there is $s \in [\Delta]^\omega$ $($and $\exists \, e \in \text{top}(x)$) such that $(\mathscr{V})_x$ (and $\mathscr{V}$ refines $\{U_\alpha : \alpha \in s\}$, or is a point-wise (local) $W$-refinement of $\mathscr{U}$ as if $\mathscr{V}_x$ is a point-wise (local) $W$-refinement of $\mathscr{U}$ at each $x \in X$.
 
-\textup{(ii)} A sequence $\{\mathcal{U}_n\}$ of covers of $X$ is a **point-wise $W$-refining sequence** for $\mathcal{U}$ if $\forall x \in X \; \exists \, m < \omega$ such that $\mathcal{U}_m$ is a point-wise $W$-refinement of $\mathcal{U}$ at $x$.
+\textup{(ii)} A sequence $\{\mathscr{U}_n\}$ of covers of $X$ is a **point-wise $W$-refining sequence** for $\mathscr{U}$ if $\forall x \in X \; \exists \, m < \omega$ such that $\mathscr{U}_m$ is a point-wise $W$-refinement of $\mathscr{U}$ at $x$.
 }
 
 
-{\theorem{} \label{th:3_1_7} \textup{(Worrell [1967]\textsc{\cite{Worrell1967}})} 
+{\theorem{} \label{th:3_1_7} \textup{(Worrell [1967]\textsuperscript{\cite{Worrell1967}})} 
 $X$ is submetacompact iff every open cover of $X$ has a point-wise $W$-refining sequence of open covers of $X$.
 }
 
@@ -161,21 +165,21 @@ Suppose every increasing open $\mathfrak{m}$-cover of $X$ has a point-finite ope
 
 If $\kappa$ is finite, $P_\kappa$ clearly holds.
 
-Let $\kappa \le \mathfrak{m}$ such that $P_\mu$ holds for each $\mu < \kappa$. To show $P_\kappa$ holds, let $\mathcal{U} = \{U_\alpha : \alpha < \kappa\}$ be an open cover of $X$.
+Let $\kappa \le \mathfrak{m}$ such that $P_\mu$ holds for each $\mu < \kappa$. To show $P_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ be an open cover of $X$.
 
-$\mathcal{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is an increasing open $\kappa$-cover of $X$.
+$\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is an increasing open $\kappa$-cover of $X$.
 
-Let $\mathcal{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open refinement of $\mathcal{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. For $\alpha < \kappa$, let
+Let $\mathscr{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open refinement of $\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. For $\alpha < \kappa$, let
 
-$$\mathcal{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \cup \{ \bigcup_{\gamma > \alpha} W_\gamma \}$$
+$$\mathscr{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \cup \{ \bigcup_{\gamma > \alpha} W_\gamma \}$$
 
-Then $\mathcal{G}_\alpha$ is an open cover of $W_\alpha$ with power $< \kappa$. By induction assumption, $\mathcal{G}_\alpha$ has a point-finite open refinement $\mathcal{H}_\alpha$. Let $\mathcal{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ and $R_\alpha \subset \bigcup_{\gamma > \alpha} W_\gamma$.
+Then $\mathscr{G}_\alpha$ is an open cover of $W_\alpha$ with power $< \kappa$. By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open refinement $\mathscr{H}_\alpha$. Let $\mathscr{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ and $R_\alpha \subset \bigcup_{\gamma > \alpha} W_\gamma$.
 
 Let
 
-$$\mathcal{V} = \{ H_\gamma : \gamma < \alpha, \alpha < \kappa \}$$
+$$\mathscr{V} = \{ H_\gamma : \gamma < \alpha, \alpha < \kappa \}$$
 
-Then $\mathcal{V}$ is a point-finite open refinement of $\mathcal{U}$. So $P_\kappa$ holds.
+Then $\mathscr{V}$ is a point-finite open refinement of $\mathscr{U}$. So $P_\kappa$ holds.
 
 This completes the induction. Thus $P_\kappa$ holds, so $X$ is $\mathfrak{m}$-metacompact. $\square$
 
