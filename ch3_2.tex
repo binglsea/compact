@@ -2,25 +2,29 @@
 %subfile : ch3_2.tex
 \begin{document}
 	\section{Generalization of Submetacompactness}  
-	\label{sec:3_2}
+	\label{sec:3-2}
 
 
-{\definition{} 
+{\definition{} \label{def:3-2-1}
 	\textup{(Smith [1975]\textsuperscript{\cite{Smith1975}})} 
-An open cover $\mathscr{U}$ of [X] is a weak $\overline{\theta}$-cover if $\mathscr{U}$ has an open refinement $\mathscr{G} = \bigcup_{n \in \omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n, \alpha} : \alpha \in \Gamma_n\}$ such that:
+An open cover $\mathscr{U}$ of $X$ is a weak $\overline{\theta}$-cover 
+if $\mathscr{U}$ has an open refinement $\mathscr{G} = \bigcup_{n \in \omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n, \alpha} : \alpha \in \Gamma_n\}$ such that:
 
 \textup{(i)}
-For each $x \in X]$, there exists $m \in \omega$ such that $0 < \vert{}\{G \in \mathscr{G}_m : x \in G\}\vert{} < \omega$).
+For each $x \in X$, there exists $m \in \omega$ such that 
+$0 < |\operatorname{ind}(\mathscr{G}_m)_x| < \omega$.
 
 \textup{(ii)}
-$\mathscr{G}^* = \{\bigcup \mathscr{G}_n : n \in \omega\}$ is a point-finite open cover of [X].
+$\mathscr{G}^* = \{\bigcup \mathscr{G}_n : n \in \omega\}$ is a point-finite open cover of $X$.
+
+\noindent The family $\mathscr{G}$ is called a 
+\uwave{weak $\overline{\theta}$-refinement}
+\index{weak $\overline{\theta}$-refinement| \S\ref{sec:3-2}}
+of $\mathscr{U}$. [X] is weakly $\overline{\theta}$-refinable if every open cover is a weak $\overline{\theta}$-cover.
 }
 
-The family $\mathscr{G}$ is called a weak $\overline{\theta}$-refinement of $\mathscr{U}$. [X] is weakly $\overline{\theta}$-refinable if every open cover is a weak $\overline{\theta}$-cover.
 
-
-
-{\definition{}
+{\definition{} \label{def:3-2-2}
 	 An open cover $\mathscr{U}$ of [X] is a $D_\omega$-cover if $\mathscr{U}$ has a refinement $\mathscr{V} = \bigcup_{n \in \omega} \mathscr{V}_n$ where each $\mathscr{V}_n$ is a family of [sets] relatively discrete and closed in the subspace $[X \setminus (\dots)]$, and for any $x \in X$...
 
 The family $\mathscr{V}$ is called a $D_\omega$-refinement of $\mathscr{U}$.
