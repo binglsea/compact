@@ -53,29 +53,28 @@ if every open $\lambda$-cover of $X$ is a $D\omega$-cover.
 }
 
 {\definition{}  \label{def:3-2-3}
-\textup{(Smith [1980]\textsuperscript{\cite{Smith1980}})} 
-Let $\omega^2 = \omega\cdot\omega$ be an ordinal product, $\xi\in\{\omega, \omega^2\}$. 
-The properties $\mathcal{P}$ will be discrete $\mathcal{D}$, locally finite $\mathcal{LF}$
-and closed $\mathcal{C}$.
-
-\textup{(i)} An open cover $\mathscr{U}$ of $X$ is a 
-\uwave{$B(\mathcal{P}, \xi)$-cover}
-\index{$B(P, \xi)$-cover| \S\ref{sec:3-2}\hfill}
-if $\mathscr{U}$ has a refinement $\mathscr{E} = \bigcup_{\beta < \xi} \mathscr{E}_\beta$, which satisfies
-
-\textup{(a)} $(\bigcup\mathcal{E}_\beta) \bigcap (\bigcup\mathcal{E}_{\beta'}) = \emptyset$ 
+	\textup{(Smith [1980]\textsuperscript{\cite{Smith1980}})} 
+	Let $\omega^2 = \omega\cdot\omega$ be an ordinal product, $\xi\in\{\omega, \omega^2\}$. 
+	The properties $\mathcal{P}$ will be discrete $\mathcal{D}$, locally finite $\mathcal{LF}$
+	and closed $\mathcal{C}$.
+	
+	\textup{(i)} An open cover $\mathscr{U}$ of $X$ is a 
+	\uwave{$B(\mathcal{P}, \xi)$-cover}
+	\index{$B(P, \xi)$-cover| \S\ref{sec:3-2}\hfill}
+	if $\mathscr{U}$ has a refinement $\mathscr{E} = \bigcup_{\beta < \xi} \mathscr{E}_\beta$, which satisfies
+	
+	\textup{(a)} $(\bigcup\mathcal{E}_\beta) \bigcap (\bigcup\mathcal{E}_{\beta'}) = \emptyset$ 
 if $\beta \ne \beta'$;
 
 \textup{(b)} for each $\beta < \xi$, $\mathcal{E}_\beta$ is a relatively $\mathcal{P}$ family 
 of closed subsets of the subspace 
 $X\setminus \bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$;
 
-\textup{(c)} for each $\beta < \xi$, $\bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$ 
+	\textup{(c)} for each $\beta < \xi$, $\bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$ 
 is closed in $X$.
 
-For the case $\mathcal{P} = \mathcal{C}$, we require $\mathscr{E}_\beta$ to be a 
-one-to-one partial refinement of $\mathcscr{U}$.
-
+\noindent For the case $\mathcal{P} = \mathcal{C}$, we require $\mathscr{E}_\beta$ to be a 
+one-to-one partial refinement of $\mathscr{U}$.
 The family $\mathcal{E}$ is called a 
 \uwave{$B(\mathcal{P}, \xi)$-refinement}
 \index{$B(\mathcal{P}, \xi)$-refinement| \S\ref{sec:3-2}\hfill}
@@ -87,6 +86,7 @@ of $\mathcal{U}$.
 if every open $\lambda$-cover of $X$ is a $B(\mathcal{P}, \xi)$-cover.
 }
 
+
 It is easy to see that $X$ is $\lambda$-strictly quasi-paracompact iff $X$ is $\lambda$-$B(\mathcal{P}, \xi)$-refinable.
 
 {\lemma{} \label{lem:3-2-4} 
@@ -94,7 +94,9 @@ It is easy to see that $X$ is $\lambda$-strictly quasi-paracompact iff $X$ is $\
 A point-finite open cover of $X$ is a $D\omega$-cover.
 }
 
-**Proof.** Suppose $\mathcal{U} = \{ U_\alpha : \alpha \in A \}$ is a point-finite open cover of $X$. For $n < \omega$, let
+\begin{proof}
+
+Suppose $\mathcal{U} = \{ U_\alpha : \alpha \in A \}$ is a point-finite open cover of $X$. For $n < \omega$, let
 
 $$D_n = \{ x \in X : \text{ord}(x, \mathcal{U}) \le n \}, \quad D_0 = \Phi$$
 
@@ -117,22 +119,33 @@ To see (1), let $G = Y - \bigcup(\mathcal{F}_n\vert{}_Y)$. Suppose $\text{ord}(x
 Since $x \in G$, $j > n$. Then $Y - D_n$ is a neighborhood of $x$ in $Y$ such that $Y - D_n \subset G$. Hence $G$ is open in $Y$.
 
 To see (2), let $x \in \bigcup(\mathcal{F}_n\vert{}_Y)$. Suppose $s_0 \in [A]^n$ such that $x \in F(s_0, n)$. Then $W = Y \cap \bigcap_{\alpha \in s_0} U_\alpha$ is a neighborhood of $x$ in $Y$. For each $s \in [A]^n \setminus \{s_0\}$, $W \cap F(s, n) = \Phi$. So $\mathcal{F}_n\vert{}_Y$ is discrete at $x$. $\square$
-
----
+\end{proof}
 
 {\theorem{}  \label{th:3-2-5}
-	(Zhu 1984, Long 1986a)
-
-A $\mathfrak{m}$-submetacompact space is $\mathfrak{m}$-strictly quasi-paracompact.
+\textup{(Zhu [1984]\textsuperscript{\cite{Liu}},
+Long [1986]\textsuperscript{\cite{Long}})} 
+A $\lambda$-submetacompact space is $\lambda$-strictly quasi-paracompact.
 }
 
-**Proof.** Assume $X$ is $\mathfrak{m}$-submetacompact and let $\mathcal{U} = \{ U_\alpha : \alpha < \kappa \}$ be an open cover of $X$. By Lemma 3.2.1, there is a countable closed cover $\{ F_n \}$ of $X$ such that each $\mathcal{U}\vert{}_{F_n}$ has a point-finite open refinement $\mathcal{U}_n$ in $F_n$. By Lemma 3.2.4, let $\mathcal{E}_n = \bigcup_{k<\omega} \mathcal{E}_{n,k}$ be a $D\omega$-refinement of $\mathcal{U}_n$ in $F_n$. For each $n, k$, $\mathcal{E}_{n,k}$ is a discrete closed family in $F_n - \bigcup_{i<k}(\bigcup \mathcal{E}_{n,i})$. Then each $\mathcal{E}_{n,k}$ is a discrete closed family in $X - \bigcup_{i<k}(\bigcup \mathcal{E}_{n,i})$.
+\begin{proof}
+Assume $X$ is $\mathfrak{m}$-submetacompact and let 
+$\mathcal{U} = \{ U_\alpha : \alpha < \kappa \}$ be an open cover of $X$. By Lemma 3.2.1, 
+there is a countable closed cover $\{ F_n \}$ of $X$ such that each $\mathcal{U}\vert{}_{F_n}$ has a point-finite open refinement 
+$\mathcal{U}_n$ in $F_n$. By Lemma 3.2.4, let 
+$\mathcal{E}_n = \bigcup_{k<\omega} \mathcal{E}_{n,k}$ be a 
+$D\omega$-refinement of $\mathcal{U}_n$ in $F_n$. For each $n, k$, 
+$\mathcal{E}_{n,k}$ is a discrete closed family in 
+$F_n - \bigcup_{i<k}(\bigcup \mathcal{E}_{n,i})$. Then each 
+$\mathcal{E}_{n,k}$ is a discrete closed family in 
+$X - \bigcup_{i<k}(\bigcup \mathcal{E}_{n,i})$.
 
-Let $\varphi$ be a one-to-one function from $\omega \times \omega$ onto $\omega$ defined by $\varphi(n, k) = \frac{1}{2}[(n+k)^2 + 3n + k]$. Define $\mathcal{F}_m = \mathcal{E}_{n,k}$ if $m = \varphi(n, k)$. Then $\mathcal{F} = \bigcup_{m<\omega} \mathcal{F}_m$ is a $D\omega$-refinement of $\mathcal{U}$. $\square$
+Let $\varphi$ be a one-to-one function from $\omega \times \omega$ 
+onto $\omega$ defined by $\varphi(n, k) = \frac{1}{2}[(n+k)^2 + 3n + k]$. 
+Define $\mathcal{F}_m = \mathcal{E}_{n,k}$ if $m = \varphi(n, k)$. 
+Then $\mathcal{F} = \bigcup_{m<\omega} \mathcal{F}_m$ is a 
+$D\omega$-refinement of $\mathcal{U}$.
+\end{proof}
 
-Here is the complete transcription of the handwritten notes from page 34 (marked as 33/34 at the bottom):
-
----
 
 {\theorem{}  \label{th:3-2-6}(Smith 1980)
 
