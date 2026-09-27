@@ -34,8 +34,8 @@ if every open $\lambda$-cover is a weak $\overline{\theta}$-cover.
 An open cover $\mathscr{U}$ of $X$ is a $D\omega$-cover if $\mathscr{U}$ 
 has a refinement $\mathscr{F} = \bigcup_{n \in \omega} \mathscr{F}_n$ where each 
 $\mathscr{F}_n$ is a family of relatively discrete and closed in the subspace 
-$X \setminus\bigcup_{i< m}(\cup \mathscr{F_i})$, and for any $m\ne n$,
-$(\cup\mathscr{F}_m)\bigcap(\cup\mathscr{F}_n) = \emptyset$.
+$X \setminus\bigcup_{i< n}(\cup \mathscr{F_i})$, and 
+$(\cup\mathscr{F}_m)\bigcap(\cup\mathscr{F}_n) = \emptyset$ for any $m\ne n$.
 The family $\mathscr{F}$ is called a 
 \uwave{$D\omega$-refinement}
 \index{$D\omega$-refinement| \S\ref{sec:3-2}\hfill}
@@ -55,34 +55,39 @@ if every open $\lambda$-cover of $X$ is a $D\omega$-cover.
 {\definition{}  \label{def:3-2-3}
 \textup{(Smith [1980]\textsuperscript{\cite{Smith1980}})} 
 Let $\omega^2 = \omega\cdot\omega$ be an ordinal product, $\xi\in\{\omega, \omega^2\}$. 
-The properties P will be discrete \textup{(D)}, locally finite and closed \textup{(C)},.
+The properties $\mathcal{P}$ will be discrete $\mathcal{D}$, locally finite $\mathcal{LF}$
+and closed $\mathcal{C}$.
 
-\textup{(i)} An open cover $\mathscr{U}$ of$X$ is a 
-\uwave{$B(P, \xi)$-cover}
+\textup{(i)} An open cover $\mathscr{U}$ of $X$ is a 
+\uwave{$B(\mathcal{P}, \xi)$-cover}
 \index{$B(P, \xi)$-cover| \S\ref{sec:3-2}\hfill}
 if $\mathscr{U}$ has a refinement $\mathscr{E} = \bigcup_{\beta < \xi} \mathscr{E}_\beta$, which satisfies
 
+\textup{(a)} $(\bigcup\mathcal{E}_\beta) \bigcap (\bigcup\mathcal{E}_{\beta'}) = \emptyset$ 
+if $\beta \ne \beta'$;
+
+\textup{(b)} for each $\beta < \xi$, $\mathcal{E}_\beta$ is a relatively $\mathcal{P}$ family 
+of closed subsets of the subspace 
+$X\setminus \bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$;
+
+\textup{(c)} for each $\beta < \xi$, $\bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$ 
+is closed in $X$.
+
+For the case $\mathcal{P} = \mathcal{C}$, we require $\mathscr{E}_\beta$ to be a 
+one-to-one partial refinement of $\mathcscr{U}$.
+
+The family $\mathcal{E}$ is called a 
+\uwave{$B(\mathcal{P}, \xi)$-refinement}
+\index{$B(\mathcal{P}, \xi)$-refinement| \S\ref{sec:3-2}\hfill}
+of $\mathcal{U}$.
+
+\textup{(ii)} $X$ is 
+\uwave{$\lambda$-$B(\mathcal{P}, \xi)$-refinable}
+\index{$\lambda$-$B(\mathcal{P}, \xi)$-refinable| \S\ref{sec:3-2}\hfill}
+if every open $\lambda$-cover of $X$ is a $B(\mathcal{P}, \xi)$-cover.
 }
 
-Here is the transcription of the handwritten notes from page 33:
-
----
-
-(a). $(\bigcup\mathcal{E}_\beta) \cap (\bigcup\mathcal{E}_{\beta'}) = \Phi \quad \forall \beta \ne \beta'$;
-
-(b) for each $\beta < \xi$, $\mathcal{E}_\beta$ is a relatively LF family of closed subsets of the subspace $X - \bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$;
-
-(c). for each $\beta < \xi$, $\bigcup_{\mu<\beta}(\bigcup\mathcal{E}_\mu)$ is closed in $X$.
-
-For the case $\mathcal{P} = \mathcal{C}$, we require $\mathcal{E}$ to be a one-to-one partial refinement of $\mathcal{U}$.
-
-The family $\mathcal{E}$ is called a $B(\mathcal{P}, \xi)$-refinement of $\mathcal{U}$.
-
-(ii) $X$ is $\mathfrak{m}$-$B(\mathcal{P}, \xi)$-refinable if every open $\mathfrak{m}$-cover of $X$ has a $B(\mathcal{P}, \xi)$-refinement.
-
-It is easy to see that $X$ is $\mathfrak{m}$-strictly quasi-paracompact iff $X$ is $\mathfrak{m}$-$B(\mathcal{D}, \omega)$-refinable.
-
----
+It is easy to see that $X$ is $\lambda$-strictly quasi-paracompact iff $X$ is $\lambda$-$B(\mathcal{P}, \xi)$-refinable.
 
 {\lemma{} \label{lem:3-2-4} 
 \textup{(Liu [1977]\textsuperscript{\cite{Liu}})} 
@@ -101,9 +106,7 @@ $$\mathcal{F}_n = \{ F(s, n) : s \in [A]^n \}$$
 
 We show that $\mathcal{F} = \bigcup_{n<\omega}\mathcal{F}_n$ is a $D\omega$-refinement of $\mathcal{U}$. Let $n < \omega$, $Y = X - \bigcup_{i<n}(\bigcup\mathcal{F}_i)$. To show that $\mathcal{F}_n\vert{}_Y$ is a discrete closed family in $Y$. By Lemma 1.1.4, we need only to show that
 
-Here is the complete transcription of the handwritten notes from page 34 (marked as 33 at the bottom):
 
----
 
 $\mathcal{F}_n\vert{}_Y$ is closed in $Y$, and
 
