@@ -164,52 +164,12 @@ $\lambda$-weakly $\bar{\theta}$-refinable.
 Suppose $\mathscr{U} = [U_\alpha : \alpha < \lambda]$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
 Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets of $X \setminus \bigcup_{i<n}(\cup \mathscr{F}_i$
 with $F_{n, \alpha}\subset U_\alpha$. Define
-	
-
-\end{proof}
-
-Every λ-DW-refinable space is
-λ-weakly \(\bar{\sigma}\)-refinable.
-
-**Proof.** Suppose \(U=\{V_\alpha:\alpha<\lambda\}\) be an open cover of a λ-DW-refinable space \(X\). Let
-
+$$G_{n,\alpha}=\left(U_\alpha\setminus\bigcup_{\gamma\ne\alpha}F_{n,\gamma}\right)
+\cap\left(X\setminus\bigcup_{i<n}(\cup \mathscr{F}_i)\right)
 $$
-\mathcal G=\bigcup_{n<\omega}\mathcal G_n
-$$
-
-be a DW-refinement of \(U\), where each
-
-$$
-\mathcal G_n=\{F_{n,\alpha}:\alpha<\lambda\}
-$$
-
-is a discrete family of closed subsets of \(X-\bigcup_{\alpha<n}U_\alpha\), with
-
-$$
-F_{n,\alpha}\subset U_\alpha.
-$$
-
-Define
-
-$$
-G_{n,\alpha}
-=
-\left(U_\alpha-\bigcup_{\beta\ne\alpha}F_{n,\beta}\right)
-\cap
-\left(X-\bigcup_{k<n}\bigcup_\beta F_{k,\beta}\right)
-$$
-
-for new \(\alpha\), and let
-
-$$
-\mathcal G_n=\{G_{n,\alpha}:\alpha<\lambda\}.
-$$
-
-Then
-
-$$
-F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha.
-$$
+\noindent for $n <\lambda$, and let
+$\mathscr G_n=\{G_{n,\alpha}:\alpha<\lambda\}$.
+Then $F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha$.
 
 **(1)** \(\mathcal G=\bigcup_{n<\omega}\mathcal G_n\) is an open refinement of \(U\).
 
@@ -251,6 +211,7 @@ $$
 
 **(2)** \(\forall x\in X\ \exists m<\omega\quad
 0<|\operatorname{ind}(\mathcal G_m)_x|<\omega.\)
+\end{proof}
 
 **Proof.** Let \(x\in X\). There are \(m<\omega\) and \(\beta<\lambda\) such that
 
