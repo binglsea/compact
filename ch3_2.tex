@@ -55,8 +55,8 @@ if every open $\lambda$-cover of $X$ is a $D\omega$-cover.
 {\definition{}  \label{def:3-2-3}
 \textup{(Smith [1980]\textsuperscript{\cite{Smith1980}})} 
 Let $\omega^2 = \omega\cdot\omega$ be an ordinal product, $\xi\in\{\omega, \omega^2\}$. 
-The properties $\mathcal{P}$ will be discrete $(\mathcal{D})$, locally finite 
-and closed $(\mathcal{C})$.
+The properties $\mathcal{P}$ will be discrete $(\mathcal{D})$, locally finite $(\mathcal{LC})$
+or closed $(\mathcal{C})$.
 	
 \textup{(i)} An open cover $\mathscr{U}$ of $X$ is a 
 \uwave{$B(\mathcal{P}, \xi)$-cover}
@@ -102,10 +102,10 @@ $$D_n = \{ x \in X: |\operatorname{ind}(\mathscr{U})_x| \le n \},  \textup{ when
 \noindent Then $D_n$ is closed. Let $F(\emptyset, 0) = \emptyset$. 
 For $n \ge 1$ and $S \in [\Delta]^n$, let
 $$F(S, n) = D_n\bigcap(\cap_{\alpha \in S} U_\alpha), \quad
-\mathscr{F}_n \{F(s, n) : s \in [\Delta]^n\}$$
+\mathscr{F}_n= \{F(S, n) : S \in [\Delta]^n\}$$
 
 \noindent We show that $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ is a $D\omega$-refinement of $\mathscr{U}$. Let $n < \omega$, 
-$Y = X \setminus \bigcup_{i<n}(\bigcup\mathscr{F}_i)$. To show that $\mathscr{F}_n\vert{}_Y$ is a discrete closed family in $Y$. 
+$Y = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that $\mathscr{F}_n\vert{}_Y$ is a discrete closed family in $Y$. 
 By Lemma \ref{lem:1-1-4}, we need only to show that
 
 \textup{(1)} 
@@ -117,13 +117,13 @@ $x \in \bigcup\mathscr{F}_n\vert{}_Y$.
 To see (1), let $x\in G = Y \setminus \bigcup(\mathscr{F}_n\vert{}_Y)$. 
 Suppose $|\operatorname{ind}(\mathscr{U})_x| = j$. Then $x \in D_j$. 
 Pick $S \in [A]^j$ such that 
-$x \in D_j\bigcap \cap_{\alpha \in S} U_\alpha = F(S, j) \subset \bigcup \mathscr{F}_j$.
+$x \in D_j\bigcap (\cap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
 Since $x \in G$, $j > n$. Then $Y \setminus D_n$ is a neighborhood of $x$ in $Y$ 
 such that $Y \setminus D_n \subset G$. Hence $G$ is open in $Y$.
 
 To see (2), let $x \in \bigcup(\mathscr{F}_n\vert{}_Y)$. Suppose $S_0 \in [\Delta]^n$ 
-such that $x \in F(S_0, n)$. Then $W = Y \cap \bigcap_{\alpha \in s_0} U_\alpha$ is a neighborhood of $x$ in $Y$. 
-For each $S \in [\Delta]^n \setminus \{s_0\}$, $W \cap F(S n) = \emptyset$. 
+such that $x \in F(S_0, n)$. Then $W = Y \bigcap (\cap_{\alpha \in s_0} U_\alpha)$ is a neighborhood of $x$ in $Y$. 
+For each $S \in [\Delta]^n \setminus \{S_0\}$, $W \cap F(S, n) = \emptyset$. 
 So, $\mathscr{F}_n\vert{}_Y$ is discrete at $x$.
 \end{proof}
 
@@ -134,20 +134,21 @@ A $\lambda$-submetacompact space is $\lambda$-strictly quasi-paracompact.
 }
 
 \begin{proof}
-Assume $X$ is $\mathfrak{m}$-submetacompact and let 
-$\mathscr{U} = \{ U_\alpha : \alpha < \kappa \}$ be an open cover of $X$. By Lemma 3.2.1, 
-there is a countable closed cover $\{ F_n \}$ of $X$ such that each $\mathscr{U}\vert{}_{F_n}$ has a point-finite open refinement 
+Assume $X$ is $\lambda$-submetacompact and let 
+$\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}$ be an open cover of $X$. 
+By Lemma \ref{lem:3-1-4}, 
+there exists a countable closed cover $\{ F_n \}$ of $X$ such that each $\mathscr{U}\vert{}_{F_n}$ has a point-finite open refinement 
 $\mathscr{U}_n$ in $F_n$. By Lemma 3.2.4, let 
 $\mathscr{E}_n = \bigcup_{k<\omega} \mathscr{E}_{n,k}$ be a 
 $D\omega$-refinement of $\mathscr{U}_n$ in $F_n$. For each $n, k$, 
 $\mathscr{E}_{n,k}$ is a discrete closed family in 
-$F_n - \bigcup_{i<k}(\bigcup \mathscr{E}_{n,i})$. Then each 
+$F_n \setminus\bigcup_{i<k}(\cup \mathscr{E}_{n,i})$. Then each 
 $\mathscr{E}_{n,k}$ is a discrete closed family in 
-$X - \bigcup_{i<k}(\bigcup \mathscr{E}_{n,i})$.
+$X \setminus \bigcup_{i<k}(\cup \mathscr{E}_{n,i})$.
 
 Let $\varphi$ be a one-to-one function from $\omega \times \omega$ 
 onto $\omega$ defined by $\varphi(n, k) = \frac{1}{2}[(n+k)^2 + 3n + k]$. 
-Define $\mathscr{F}_m = \mathscr{E}_{n,k}$ if $m = \varphi(n, k)$. 
+Define $\mathscr{F}_m = \mathscr{E}_{n,k}$ iff $m = \varphi(n, k)$. 
 Then $\mathscr{F} = \bigcup_{m<\omega} \mathscr{F}_m$ is a 
 $D\omega$-refinement of $\mathscr{U}$.
 \end{proof}
@@ -155,17 +156,147 @@ $D\omega$-refinement of $\mathscr{U}$.
 
 {\theorem{}  \label{th:3-2-6}
 \textup{(Smith [1980]\textsuperscript{\cite{Smith1980}})} 
-Every $\mathfrak{m}$-$D\omega$-refinable space is $\mathfrak{m}$-weakly $\bar{\theta}$-refinable.
+Every $\lambda$-$D\omega$-refinable space is 
+$\lambda$-weakly $\bar{\theta}$-refinable.
 }
 
 \begin{proof}
+Suppose $\mathscr{U} = [U_\alpha : \alpha < \lambda]$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
+Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets of $X \setminus \bigcup_{i<n}(\cup \mathscr{F}_i$
+with $F_{n, \alpha}\subset U_\alpha$. Define
 	
-Suppose $\mathscr{U} = [U_\alpha : \alpha < \lambda]$ be an open cover of a $\mathfrak{m}$-$D\omega$-refinable space $X$. 
-Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, where each $\mathscr{F}_n = \{F_{n,\alpha} : \alpha < \lambda\}$ is a discrete family of closed subsets of $X - \bigcup_{i m}$. (3) holds.
-	
-It follows from (1)–(3) that $\mathscr{G}$ is a weakly 
-$\bar{\theta}$-refinement of $\mathscr{U}$. $\square$
 
 \end{proof}
+
+Every λ-DW-refinable space is
+λ-weakly \(\bar{\sigma}\)-refinable.
+
+**Proof.** Suppose \(U=\{V_\alpha:\alpha<\lambda\}\) be an open cover of a λ-DW-refinable space \(X\). Let
+
+$$
+\mathcal G=\bigcup_{n<\omega}\mathcal G_n
+$$
+
+be a DW-refinement of \(U\), where each
+
+$$
+\mathcal G_n=\{F_{n,\alpha}:\alpha<\lambda\}
+$$
+
+is a discrete family of closed subsets of \(X-\bigcup_{\alpha<n}U_\alpha\), with
+
+$$
+F_{n,\alpha}\subset U_\alpha.
+$$
+
+Define
+
+$$
+G_{n,\alpha}
+=
+\left(U_\alpha-\bigcup_{\beta\ne\alpha}F_{n,\beta}\right)
+\cap
+\left(X-\bigcup_{k<n}\bigcup_\beta F_{k,\beta}\right)
+$$
+
+for new \(\alpha\), and let
+
+$$
+\mathcal G_n=\{G_{n,\alpha}:\alpha<\lambda\}.
+$$
+
+Then
+
+$$
+F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha.
+$$
+
+**(1)** \(\mathcal G=\bigcup_{n<\omega}\mathcal G_n\) is an open refinement of \(U\).
+
+**Proof.** Let \(n<\omega,\ \alpha<\lambda\), and let
+
+$$
+C=X-\bigcup\mathcal G_n.
+$$
+
+Since \(\mathcal F_n=\{F_{n,\alpha}\}\) is a discrete closed family in \(X-C\),
+
+$$
+\bigcup_{\alpha\ne ?}F_{n,\alpha}=K\cap(X-C)
+$$
+
+for some closed set \(K\) in \(X\). Thus
+
+$$
+G_{n,\alpha}
+=
+U_\alpha-\bigcup_{\beta\ne\alpha}F_{n,\beta}\cup C
+=
+U_\alpha-K\cup C
+$$
+
+is an open set in \(X\).
+
+For each \(x\in X\), there is \(m<\omega\) such that
+
+$$
+x\in\bigcup\mathcal G_m.
+$$
+
+Then
+
+$$
+x\in\bigcup G_m\subset\bigcup G.
+$$
+
+**(2)** \(\forall x\in X\ \exists m<\omega\quad
+0<|\operatorname{ind}(\mathcal G_m)_x|<\omega.\)
+
+**Proof.** Let \(x\in X\). There are \(m<\omega\) and \(\beta<\lambda\) such that
+
+$$
+x\in F_{m,\beta}.
+$$
+
+Then
+
+$$
+x\in G_{m,\beta}
+$$
+
+and
+
+$$
+\operatorname{ind}(\mathcal G_m)_x\subset\{\beta\}.
+$$
+
+(2) holds.
+
+**(3)**
+
+$$
+\left\{\bigcup\mathcal G_n:n<\omega\right\}
+$$
+
+is point-finite.
+
+**Proof.** If \(x\in X\), then
+
+$$
+x\in\bigcup G_m
+$$
+
+for some \(m<\omega\). For \(k>m\),
+
+$$
+x\notin\bigcup\mathcal G_k.
+$$
+
+Hence \(x\) belongs to only finitely many of the unions. (3) holds.
+
+It follows from (1)–(3) that \(\mathcal G\) is a weakly \(\bar{\sigma}\)-refinement of \(U\).
+
+---
+
 
 \end{document}
