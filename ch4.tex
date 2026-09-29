@@ -56,5 +56,26 @@ cover $\mathscr{U}$, then $\{\mathscr{V}_n\}$ is a point-star $\dot{F}$-refining
 sequence for $\mathscr{U}$ by semi-open covers of $X$.
 \end{proof}
 
+Proof Continuation (Junnila Theorem / Submetacompact Spaces)
+
+... sequence for $\mathcal{U}$ by semi-open covers of $X$.
+
+$(\Leftarrow)$ Suppose that every open $\kappa$-cover has a point-star $F$-refining sequence by semi-open covers, and that $\mathcal{U}_0 = \{U_\alpha \mid \alpha < \lambda\}$ be an open cover of $X$. We use induction on $n \in \omega$ to define open covers $\mathcal{U}(t) = \{U(t, \beta) \mid \beta < \lambda \cdot 2\}$ of $X$ and $Z_{s \oplus k} \subset X$ for $t \in \omega^n \subset \omega^{<\omega}$; such that:
+
+(1) For each $\alpha < \lambda$, $V(t, \alpha) \subset U_\alpha$.
+
+Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ for each $\alpha < \lambda$. Let $\mathcal{U}(\emptyset) = \{V(\emptyset, \beta) \mid \beta < \lambda \cdot 2\}$. Suppose that the open covers $\mathcal{U}(s)$, $s \in \omega^n$, have been defined, and that we have defined $\mathcal{U}(s) = \{V(s, \beta) \mid \beta < \lambda \cdot 2\}$ for each $s \in \omega^n$.
+
+For each $s \in \omega^n$, $\mathcal{U}(s)$ has a point-star $F$-refining sequence $\{\mathcal{Z}_{s \oplus k}\}_{k < \omega}$ by semi-open covers of $X$. We now define, for all $s \in \omega^n$, $k < \omega$, and $\alpha < \lambda$:
+
+(2) $V(s \oplus k, \alpha) = V(s, \alpha) \cup \left( U_\alpha \cap \text{St}\left( X \setminus \bigcup_{\beta < \alpha} V(s, \beta), \mathcal{Z}_{s \oplus k} \right)^\circ \right)$,
+
+(3) $V(s \oplus k, \lambda + \alpha) = U_\alpha \cap \left( \bigcup_{\beta > \lambda + \alpha} V(s, \beta) \right) \cap \text{St}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), \mathcal{Z}_{s \oplus k} \right)^\circ$.
+
+Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ for some $s \in \omega^{n-1}$ and $k < \omega$, the above formulas define the families $\mathcal{U}(t) = \{V(t, \beta) \mid \beta < \lambda \cdot 2\}$ for $t \in \omega^n$. To complete the induction, it remains to verify that the families $\mathcal{U}(t)$, $t \in \omega^n$, are open covers of $X$.
+
+It is easily seen that these families consist of open subsets. To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
+
+Since $\mathcal{U}_0$ covers $X$, let $\beta_0 = \min \{ \alpha < \lambda \mid x \in U_\alpha \}$...
 
 \end{document}
