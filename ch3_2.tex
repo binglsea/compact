@@ -109,14 +109,14 @@ $Y = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that $\mathscr{F}_n\
 By Lemma \ref{lem:1-1-4}, we need only to show that
 
 \textup{(1)} 
-$\bigcup\mathscr{F}_n\vert{}_Y$ is closed in $Y$, and
+$\bigcup(\mathscr{F}_n\vert{}_Y)$ is closed in $Y$, and
 
 \textup{(2)}  $\mathscr{F}_n\vert{}_Y$ is discrete at each 
-$x \in \bigcup\mathscr{F}_n\vert{}_Y$.
+$x \in \bigcup(\mathscr{F}_n\vert{}_Y)$.
 
 To see (1), let $x\in G = Y \setminus \bigcup(\mathscr{F}_n\vert{}_Y)$. 
-Suppose $|\operatorname{ind}(\mathscr{U})_x| = j$. Then $x \in D_j$. 
-Pick $S \in [A]^j$ such that 
+Suppose $|\operatorname{ind}(\mathscr{U})_x| = j>0$. Then $x \in D_j$. 
+Pick $S \in [\Delta]^j$ such that 
 $x \in D_j\bigcap (\cap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
 Since $x \in G$, $j > n$. Then $Y \setminus D_n$ is a neighborhood of $x$ in $Y$ 
 such that $Y \setminus D_n \subset G$. Hence $G$ is open in $Y$.
