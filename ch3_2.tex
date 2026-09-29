@@ -175,36 +175,21 @@ Then $F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha$.
 of $\mathscr{U}$.
 
 \noindent\textsc{Proof of (1)} Let $n<\omega,\ \alpha<\lambda$, and let
-$C=\bigcup_{i<n}(\mathscr{F}_i)$.
+$C=\bigcup_{i<n}(\cup\mathscr{F}_i)$.
 Since \(\mathscr F_n\setminus\{F_{n,\alpha}\}\) is a discrete closed family in $X\setminus C$,
 $\bigcup_{\gamma\ne\alpha}F_{n,\gamma}=K\cap(X\setminus C)$
 for some closed set $K$ in $X$. Thus
+$$G_{n,\alpha}=U_\alpha\setminus((\cup_{\beta\ne\alpha}F_{n,\beta})\cup C)
+=U_\alpha\setminus (K\cup C)$$
+\noindent is an open set in $X$.
+For each $x\in X$, there is $m<\omega$ such that
+$x\in\bigcup\mathscr{F}_m$.
+Then $x\in \subset\bigcup \mathscr{G}_m\subset\mathscr{G}$.
+(1) holds.
 
-$$
-G_{n,\alpha}
-=
-U_\alpha-\bigcup_{\beta\ne\alpha}F_{n,\beta}\cup C
-=
-U_\alpha-K\cup C
-$$
-
-is an open set in \(X\).
-
-For each \(x\in X\), there is \(m<\omega\) such that
-
-$$
-x\in\bigcup\mathcal G_m.
-$$
-
-Then
-
-$$
-x\in\bigcup G_m\subset\bigcup G.
-$$
-
-**(2)** \(\forall x\in X\ \exists m<\omega\quad
+(2) \(\forall x\in X\ \exists m<\omega\quad
 0<|\operatorname{ind}(\mathcal G_m)_x|<\omega.\)
-\end{proof}
+
 
 **Proof.** Let \(x\in X\). There are \(m<\omega\) and \(\beta<\lambda\) such that
 
@@ -225,7 +210,7 @@ $$
 $$
 
 (2) holds.
-
+\end{proof}
 **(3)**
 
 $$
