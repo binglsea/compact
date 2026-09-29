@@ -184,35 +184,17 @@ $$G_{n,\alpha}=U_\alpha\setminus((\cup_{\beta\ne\alpha}F_{n,\beta})\cup C)
 \noindent is an open set in $X$.
 For each $x\in X$, there is $m<\omega$ such that
 $x\in\bigcup\mathscr{F}_m$.
-Then $x\in \subset\bigcup \mathscr{G}_m\subset\mathscr{G}$.
+Then $x\in \bigcup \mathscr{G}_m\subset\bigcup\mathscr{G}$.
 (1) holds.
 
-(2) \(\forall x\in X\ \exists m<\omega\quad
-0<|\operatorname{ind}(\mathcal G_m)_x|<\omega.\)
+(2) \(\forall x\in X\ \exists m<\omega,\quad
+0<|\operatorname{ind}(\mathscr G_m)_x|<\omega.\)
 
+\noindent\textsc{Proof of (2)}  Let \(x\in X\). There are \(m<\omega\) and \(\beta<\lambda\) such that $x\in F_{m, \beta}$. Then
+$x\in G_{m,\beta}$ and $\operatorname{ind}(\mathscr G_m)_x\subset\{\beta\}$. (2) holds.
 
-**Proof.** Let \(x\in X\). There are \(m<\omega\) and \(\beta<\lambda\) such that
-
-$$
-x\in F_{m,\beta}.
-$$
-
-Then
-
-$$
-x\in G_{m,\beta}
-$$
-
-and
-
-$$
-\operatorname{ind}(\mathcal G_m)_x\subset\{\beta\}.
-$$
-
-(2) holds.
-\end{proof}
 **(3)**
-
+\end{proof}
 $$
 \left\{\bigcup\mathcal G_n:n<\omega\right\}
 $$
