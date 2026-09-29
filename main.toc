@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {3.2}Generalization of Submetacompactness}{18}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Expandable spaces}{20}{section.3.3}%
 \contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Works of Junnila}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Submetacompact and Subparacompact Spaces}{21}{section.4.1}%
 \contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{22}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{22}{section.5.1}%
 \contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{23}{chapter.6}%

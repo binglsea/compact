@@ -2,16 +2,29 @@
 \begin{document}
 
 	
-\chapter{Works of H. J. K. Junnila} 
-	\label{ch4}
+\chapter{Works of H. J. K. Junnila} \label{ch4}
 
-\section{Works of Junnila}
+\section{Submetacompact and Subparacompact Spaces} \label{sec:4-1}
 
-{\lemma{} if
+{\definition{} \label{def:4-4-1}
 
+Let $\mathcal{U}$ and $\mathcal{V}$ be covers of $X$.
+
+**(i)** $\mathcal{V}$ is a **point-star (local-star) refinement** of $\mathcal{U}$ at $x \in X$ if there is $U \in \mathcal{U}$ (and $V \in \text{Top}(x)$) such that $\text{St}(x, \mathcal{V}) \subset U$ (or $\text{St}(V, \mathcal{V}) \subset U$).
+
+**(ii)** $\mathcal{V}$ is a **point-star $F$-refinement** of $\mathcal{U}$ at $x$ if there is $F \in \mathcal{V}^{<\omega}$ such that $x \in \bigcap_{Q \in F} U_\alpha$ and $\text{St}(x, \mathcal{V}) \subset \bigcup F$.
+
+**(iii)** $\mathcal{V}$ is a **point-star (local-star, point-star $F$) refinement** of $\mathcal{U}$ if $\mathcal{V}$ is a point-star (local-star, point-star $F$) refinement of $\mathcal{U}$ at all $x \in X$.
+
+**(iv)** A sequence $(\mathcal{V}_n)_{n \in \omega}$ of covers of $X$ is a **point-star (local-star, point-star $F$) refining sequence** for $\mathcal{U}$ if for each $x \in X$ there is $n \in \omega$ such that $\mathcal{V}_n$ is a point-star (local-star, point-star $F$) refinement of $\mathcal{U}$ at $x$.
 }
 
 
+
+{\theorem{} \label{th:4-1-2} (Junnila, 1978)**
+
+$X$ is $\theta$-submetacompact if and only if for every open $\theta$-cover of $X$, there is a point-star $F$-refining sequence for $\mathcal{U}$ by semi-open covers of $X$.
+}
 
 
 \end{document}

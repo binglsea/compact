@@ -167,7 +167,7 @@ with $F_{n, \alpha}\subset U_\alpha$. Define
 $$G_{n,\alpha}=\left(U_\alpha\setminus\bigcup_{\gamma\ne\alpha}F_{n,\gamma}\right)
 \cap\left(X\setminus\bigcup_{i<n}(\cup \mathscr{F}_i)\right)
 $$
-\noindent for $n <\lambda$, and let
+\noindent for $n <\omega$ and $\alpha< \lambda$, and let
 $\mathscr G_n=\{G_{n,\alpha}:\alpha<\lambda\}$.
 Then $F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha$.
 
@@ -179,24 +179,24 @@ $C=\bigcup_{i<n}(\cup\mathscr{F}_i)$.
 Since \(\mathscr F_n\setminus\{F_{n,\alpha}\}\) is a discrete closed family in $X\setminus C$,
 $\bigcup_{\gamma\ne\alpha}F_{n,\gamma}=K\cap(X\setminus C)$
 for some closed set $K$ in $X$. Thus
-$$G_{n,\alpha}=U_\alpha\setminus((\cup_{\beta\ne\alpha}F_{n,\beta})\cup C)
+$$G_{n,\alpha}=U_\alpha\setminus((\cup_{\gamma\ne\alpha}F_{n,\gamma})\cup C)
 =U_\alpha\setminus (K\cup C)$$
 \noindent is an open set in $X$.
-For each $x\in X$, there is $m<\omega$ such that
+For each $x\in X$, there exists $m<\omega$ such that
 $x\in\bigcup\mathscr{F}_m$.
 Then $x\in \bigcup \mathscr{G}_m\subset\bigcup\mathscr{G}$.
 (1) holds.
 
-(2) \(\forall x\in X\ \exists m<\omega,\quad
-0<|\operatorname{ind}(\mathscr G_m)_x|<\omega.\)
+(2) $\forall x\in X\ \exists m<\omega$ such that 
+$0<|\operatorname{ind}(\mathscr G_m)_x|<\omega$.
 
-\noindent\textsc{Proof of (2)}  Let \(x\in X\). There are \(m<\omega\) and \(\beta<\lambda\) such that $x\in F_{m, \beta}$. Then
+\noindent\textsc{Proof of (2)}  Let \(x\in X\). There exist $m<\omega$ and $\beta<\lambda$ such that $x\in F_{m, \beta}$. Then
 $x\in G_{m,\beta}$ and $\operatorname{ind}(\mathscr G_m)_x\subset\{\beta\}$. (2) holds.
 
 (3) $\{\bigcup\mathscr G_n: n<\omega\}$ is point-finite.
 
 \noindent\textsc{Proof of (3)}   If $x\in X$, then $x\in\bigcup\mathscr F_m$ for some 
-$m<\omega$. $\forall k>m, x\in\bigcup_{i<k}(\cup\mathscr F_i$,
+$m<\omega$. $\forall k>m, x\in\bigcup_{i<k}(\cup\mathscr F_i)$,
 hence $x\notin \bigcup\mathscr{G}_k$, (3) holds.
 
 It follows from (1)–(3) that \(\mathscr G\) is a weakly \(\bar{\sigma}\)-refinement of 
