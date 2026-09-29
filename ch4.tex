@@ -6,24 +6,43 @@
 
 \section{Submetacompact and Subparacompact Spaces} \label{sec:4-1}
 
-{\definition{} \label{def:4-4-1}
+{\definition{} \label{def:4-1-1}
+Let $\mathscr{U}=\{U_\alpha: \alpha\in\Delta\}$ and $\mathscr{V}$ be covers of $X$. 
+\uwave{Point-star refinement} has been defined in Defition \ref{def:1-1-6}. We have more:
 
-Let $\mathcal{U}$ and $\mathcal{V}$ be covers of $X$.
+\textup{(i)} $\mathscr{V}$ is a 
+\uwave{point-star}
+%\index{point-star refinement| \S\ref{sec:4-1}\hfill}
+$($\uwave{local-star}\index{local-star refinement| \S\ref{def:4-1-1}\hfill}$)$ 
+\uwave{refinement} of $\mathscr{U}$ 
+at $x \in X$ if there exists $\alpha\in\Delta$ $($and $G \in\operatorname{top}(x))$
+such that $\operatorname{st}(x, \mathscr{V}) \subset U_\alpha$
+$(\operatorname{st}(G, \mathscr{V}) \subset U_\alpha)$. 
 
-**(i)** $\mathcal{V}$ is a **point-star (local-star) refinement** of $\mathcal{U}$ at $x \in X$ if there is $U \in \mathcal{U}$ (and $V \in \text{Top}(x)$) such that $\text{St}(x, \mathcal{V}) \subset U$ (or $\text{St}(V, \mathcal{V}) \subset U$).
+\textup{(ii)} $\mathscr{V}$ is a 
+\uwave{point-star $\dot{F}$-refinement}
+\index{point-star $\dot{F}$-refinement| \S\ref{def:4-1-1}\hfill}
+of $\mathscr{U}$ at $x$ if there exists 
+$F \in [\Delta]^{<\omega}$ such that $x \in \bigcap_{\alpha \in F} U_\alpha$ 
+and $\operatorname{st}(x, \mathscr{V}) \subset \bigcup_{\alpha\in F}U_\alpha$.
 
-**(ii)** $\mathcal{V}$ is a **point-star $F$-refinement** of $\mathcal{U}$ at $x$ if there is $F \in \mathcal{V}^{<\omega}$ such that $x \in \bigcap_{Q \in F} U_\alpha$ and $\text{St}(x, \mathcal{V}) \subset \bigcup F$.
+\textup{(iii)} $\mathscr{V}$ is a 
+\uwave{point-star} $($(\uwave{local-star}, 
+\uwave{point-star $\dot{F}$}$)$ \uwave{refinement}  of $\mathscr{U}$ if $\mathscr{V}$ is a point-star (local-star, point-star $F$) refinement
+of $\mathscr{U}$ at all $x \in X$.
 
-**(iii)** $\mathcal{V}$ is a **point-star (local-star, point-star $F$) refinement** of $\mathcal{U}$ if $\mathcal{V}$ is a point-star (local-star, point-star $F$) refinement of $\mathcal{U}$ at all $x \in X$.
-
-**(iv)** A sequence $(\mathcal{V}_n)_{n \in \omega}$ of covers of $X$ is a **point-star (local-star, point-star $F$) refining sequence** for $\mathcal{U}$ if for each $x \in X$ there is $n \in \omega$ such that $\mathcal{V}_n$ is a point-star (local-star, point-star $F$) refinement of $\mathcal{U}$ at $x$.
+\textup{(iv)} A sequence $\{\mathscr{V}_n: n \in \omega\}$ of covers of $X$ is a 
+\uwave{point-star} $($(\uwave{local-star}, 
+\uwave{point-star $\dot{F}$}$)$ \uwave{refining sequence} 
+\index{point-star refining sequence| \S\ref{def:4-1-1}\hfill}
+point-star (local-star, point-star $F$) refining sequence for $\mathscr{U}$ if for each $x \in X$ there is $n \in \omega$ such that $\mathscr{V}_n$ is a point-star (local-star, point-star $F$) refinement of $\mathscr{U}$ at $x$.
 }
 
 
 
-{\theorem{} \label{th:4-1-2} (Junnila, 1978)**
+{\theorem{} \label{th:4-1-2} (Junnila, 1978)
 
-$X$ is $\theta$-submetacompact if and only if for every open $\theta$-cover of $X$, there is a point-star $F$-refining sequence for $\mathcal{U}$ by semi-open covers of $X$.
+$X$ is $\theta$-submetacompact if and only if for every open $\theta$-cover of $X$, there is a point-star $F$-refining sequence for $\mathscr{U}$ by semi-open covers of $X$.
 }
 
 \begin{proof}
