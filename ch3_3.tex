@@ -105,9 +105,49 @@ $B_n = U_n \setminus \bigcup_{k < n} U_k$ for $n \ge 1$.
  so $X$ is countably paracompact.
 \end{proof}
 
-Based on the extracted text from `jiang42.pdf`, here is the mathematical content transcribed into LaTeX:
 
 ---
+
+3.3.3. Theorem
+
+For any space $X$, the following are equivalent:
+
+(i) $X$ is countably metacompact.
+
+(ii) Every countable increasing open cover of $X$ has a cushioned refinement.
+
+(iii) Every countable increasing open cover of $X$ has a closed shrinking.
+
+(iv) $X$ is countably almost expandable.
+
+Proof. Use an analogous proof as Theorem 3.3.2.
+
+---
+
+ 3.3.4. Theorem (Smith, 1978)
+
+$X$ is expandable if and only if $X$ is $\aleph_0$-expandable and countably paracompact.
+
+Proof. $(\Rightarrow)$ Clear.
+
+$(\Leftarrow)$ Suppose $X$ is $\aleph_0$-expandable and $\mathcal{F} = \{F_\alpha \mid \alpha < \lambda\}$ is a LF family of closed subsets of $X$. Let $\{\mathcal{B}_n\}_{n < \omega}$ be a $\sigma$-sequence where each $\mathcal{B}_n = \{G_{n,\alpha} \mid \alpha < \lambda\}$ such that $F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ for each $n, \alpha$.
+
+For $n < \omega$, let
+
+$$U_n = \{x \in X \mid \exists H \in \text{Top}(x) \text{ s.t. } \vert{}\text{index}(\mathcal{B}_n)_H\vert{} < \omega\}$$
+
+Then $\{U_n\}_{n < \omega}$ is an increasing open cover of $X$. By Theorem 4.1.9, $X$ is countably paracompact. There is a LF open cover $\{V_n\}_{n < \omega}$ of $X$ such that $\overline{V_n} \subset U_n$. For $\alpha < \lambda$, let $W_\alpha = \bigcup_{n < \omega} (V_n \cap G_{n,\alpha})$.
+
+Then $\mathcal{W} = \{W_\alpha \mid \alpha < \lambda\}$ is an open expansion of $\mathcal{F}$. To show that $\mathcal{W}$ is LF, let $x \in X$.
+
+Then $C = \{n < \omega \mid x \in \overline{V_n}\}$ is finite. Let $R = X \setminus \bigcup_{n \notin C} \overline{V_n}$. Then $R \in \text{Top}(x)$. For each $n \in C$, $\overline{V_n} \subset U_n$, so there is $H_n \in \text{Top}(x)$ such that $\vert{}\text{index}(\mathcal{B}_n)_{H_n}\vert{} < \omega$. Then
+
+$$H = R \cap \bigcap_{n \in C} H_n \in \text{Top}(x)$$
+
+It is easy to check that $\text{index}(\mathcal{W})_H \subset \bigcup_{n \in C} \text{index}(\mathcal{B}_n)_{H_n}$. Thus $\vert{}\text{index}(\mathcal{W})_H\vert{}$ is finite, so $\mathcal{W}$ is a LF open expansion of $\mathcal{F}$.
+
+
+
 
  3.3.5. Lemma
 
