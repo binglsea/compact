@@ -9,16 +9,16 @@
 \contentsline {section}{\numberline {3.1}Works of Mack, Worrell}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Generalization of Submetacompactness}{18}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Expandable spaces}{20}{section.3.3}%
-\contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Submetacompact and Subparacompact Spaces}{22}{section.4.1}%
-\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{24}{section.5.1}%
-\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{25}{section.6.1}%
-\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{26}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Works of J.-G. Jiang (III)}{26}{section.7.1}%
-\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{27}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{27}{section.8.1}%
-\contentsline {section}{References}{27}{lemma.8.1.1}%
-\contentsline {chapter}{Bibliography}{28}{chapter*.7}%
-\contentsline {chapter}{Index}{31}{chapter*.7}%
+\contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Submetacompact and Subparacompact Spaces}{23}{section.4.1}%
+\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{25}{section.5.1}%
+\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{26}{section.6.1}%
+\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Works of J.-G. Jiang (III)}{27}{section.7.1}%
+\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{28}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{28}{section.8.1}%
+\contentsline {section}{References}{28}{lemma.8.1.1}%
+\contentsline {chapter}{Bibliography}{29}{chapter*.7}%
+\contentsline {chapter}{Index}{32}{chapter*.7}%
