@@ -1,5 +1,5 @@
 \documentclass[ch3.tex]{subfiles}
-%subfile : ch3_3.tex
+%subfile: ch3_3.tex
 \begin{document}
 \section{Expandable spaces} \label{sec:3-3}
 
@@ -61,30 +61,49 @@ For any $X$, the following are equivalent:
 
 \textup{(iii)} Every countable increasing open cover of $X$ has an open shrink.
 
-\textup{(iv)}$X$ is countably expandable.
+\textup{(iv)} $X$ is countably expandable.
 }
 
 
-Proof
+\begin{proof}
+(i) $\Rightarrow$ (ii). Let $\mathscr{U} = \{U_n: n < \omega\}$ be an increasing 
+open cover of a countably paracompact $X$. 
+Let $\mathscr{V}$ be a locally finite  open refinement of $\mathscr{U}$. 
+For $n < \omega$, let
+$$G_n = \{x \in X: \exists \, W \in \operatorname{top}(x), \:
+\operatorname{st}(W, \mathscr{V}) \subset U_n\}.$$
 
-(i) $\Rightarrow$ (ii). Let $\mathscr{U} = \{U_n \mid n < \omega\}$ be an increasing open cover of a countably paracompact $X$. Let $\mathscr{V}$ be a locally finite (LF) open refinement of $\mathscr{U}$. For $n < \omega$, let
+\noindent Then $\mathscr{G} = \{G_n: n < \omega\}$ is a cushioned 
+open refinement of $\mathscr{U}$.
 
-$$G_n = \{x \in X \mid \exists V \in \text{Top}(x) \text{ s.t. } \dots\}$$
+(ii) $\Rightarrow$ (iii). Let $\mathscr{U} = \{U_n: n < \omega\}$ be 
+an increasing open cover of $X$. By (ii), 
+let $\mathscr{V} = \bigcup_{k < \omega} \mathscr{V}_k$ be an 
+open refinement of $\mathscr{U}$, where each 
+$\mathscr{V}_k = \{V_{k,n}: n < \omega\}$ such that for each 
+$\Gamma \subset \omega$, 
+$\bigcup_{n \in \Gamma} V_{k,n} \subset \bigcup_{n \in \Gamma} U_n, \forall k < \omega$. For $n < \omega$, let $W_n = \bigcup_{i=0}^n \bigcup_{j=0}^n V_{i,j}$. 
+Then $\{W_n: n < \omega\}$ is an open shrink of $\mathscr{U}$.
 
+(iii) $\Rightarrow$ (iv). Let $\mathscr{F} = \{F_n: n < \omega\}$ be a locally finite closed family. For $n < \omega$, let
+$U_n = X \setminus \bigcup_{k > n} F_k$.
+Then $\mathscr{U} = \{U_n: n < \omega\}$ is an increasing open cover of $X$. 
+By (iii), there exists an open cover $\{H_n: n < \omega\}$ of $X$ such that 
+$\overline{H}_n \subset U_n$. Let $G_0 = X$, 
+$G_n = X\setminus \bigcup_{k<n}\bar{H}_k$ for $n\ge 1$.
+Then $\{G_n: n < \omega\}$ is a locally finite  open expansion of $\mathscr{F}$. 
+Thus $X$ is countably expandable.
 
-Then $\{G_n \mid n < \omega\}$ is a cushioned open refinement of $\mathscr{U}$.
-
-(ii) $\Rightarrow$ (iii). Let $\mathscr{U} = \{U_n \mid n < \omega\}$ be an increasing open cover of $X$. By (ii), let $\mathscr{V} = \bigcup_{k < \omega} \mathscr{V}_k$ be an open refinement of $\mathscr{U}$, where each $\mathscr{V}_k = \{V_{k,n} \mid n < \omega\}$ such that for each $N \subset \omega$, $\bigcup_{n \in N} V_{k,n} \subset \bigcup_{n \in N} U_n$ ($k < \omega$). For $n < \omega$, let $W_n = \bigcap_{i=0}^n \bigcap_{j=0}^n V_{i,j}$. Then $\{W_n \mid n < \omega\}$ is an open shrinking of $\mathscr{U}$.
-
-(iii) $\Rightarrow$ (iv). Let $\mathscr{F} = \{F_n \mid n < \omega\}$ be a locally finite (LF) closed family. For $n < \omega$, let
-
-$$U_n = X \setminus \bigcup_{k \ge n} F_k$$
-
-
-Then $\mathscr{U} = \{U_n \mid n < \omega\}$ is an increasing open cover of $X$. By (iii), there is an open cover $\{H_n \mid n < \omega\}$ of $X$ such that $\overline{H}_n \subset U_n$. Let $G_0 = X$, $G_n = \dots$ is a LF open expansion of $\mathscr{F}$. Thus $X$ is countably expandable.
-
-(iv) $\Rightarrow$ (i). Let $\mathscr{U} = \{U_n \mid n < \omega\}$ be an open cover of a countably expandable space $X$. Let $B_0 = U_0$, $B_n = U_n \setminus \bigcup_{k < n} U_k$ ($n \ge 1$). Then $\mathscr{B} = \{B_n \mid n < \omega\}$ is a LF cover of $X$ with $B_n \subset U_n$. Suppose $\{G_n \mid n < \omega\}$ is a LF open expansion of $\mathscr{B}$ with $B_n \subset G_n \subset U_n$ for each $n$. Then $\mathscr{V}$ is a LF open refinement of $\mathscr{U}$, so $X$ is countably paracompact.
-
+(iv) $\Rightarrow$ (i). Let $\mathscr{U} = \{U_n: n < \omega\}$ be an open cover 
+of a countably expandable space $X$. Let $B_0 = U_0$, 
+$B_n = U_n \setminus \bigcup_{k < n} U_k$ for $n \ge 1$.
+ Then $\mathscr{B} = \{B_n: n < \omega\}$ is a locally finite cover of $X$ with 
+ $B_n \subset U_n$. Suppose $\mathscr{V}=\{\mathscr{V}_n: n < \omega\}$ 
+ is a locally finite open expansion of $\mathscr{B}$ with 
+ $B_n \subset V_n \subset U_n$ for each $n$. 
+ Then $\mathscr{V}$ is a locally finite open refinement of $\mathscr{U}$, 
+ so $X$ is countably paracompact.
+\end{proof}
 
 
 \end{document}
