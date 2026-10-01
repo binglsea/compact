@@ -4,7 +4,7 @@
 \section{Expandable spaces} \label{sec:3-3}
 
 
-{\definition{} \label{def:3-3-1}
+{\definition{ \label{def:3-3-1}}
 \textup{(i)} $X$ is 
 \uwave{$\lambda$-expandable}\index{$\lambda$-expandable| \S\ref{def:3-3-1}\hfill} 
 \textup{(Krajewski [1971]\textsuperscript{\cite{Krajewski}})} $($resp. 
@@ -120,16 +120,15 @@ For any space $X$, the following are equivalent:
 Use an analogous proof as Theorem \ref{th:3-3-2}.
 \end{proof}
 
----
-
-{\theorem{\label{th:3-3-4}} (Smith, 1978)
-
-$X$ is expandable if and only if $X$ is $\aleph_0$-expandable and countably paracompact.
+{\theorem{\label{th:3-3-4}} \textup{(Smith [1976]\textsuperscript{\cite{Smith1976}})}
+$X$ is $\lambda$-expandable if and only if $X$ is 
+$\lambda$-$\theta^*$-expandable and countably paracompact.
 }
 
-Proof. $(\Rightarrow)$ Clear.
+\begin{proof} $(\Rightarrow)$ Clear.
 
-%$(\Leftarrow)$ Suppose $X$ is $\aleph_0$-expandable and $\mathcal{F} = \{F_\alpha \mid \alpha < \lambda\}$ is a LF family of closed subsets of $X$. Let $\{\mathcal{B}_n\}_{n < \omega}$ be a $\sigma$-sequence where each $\mathcal{B}_n = \{G_{n,\alpha} \mid \alpha < \lambda\}$ such that $F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ for each $n, \alpha$.
+$(\Leftarrow).$ Suppose $X$ is $\aleph_0$-expandable and 
+$\mathcal{F} = \{F_\alpha \mid \alpha < \lambda\}$ is a LF family of closed subsets of $X$. Let $\{\mathcal{B}_n\}_{n < \omega}$ be a $\sigma$-sequence where each $\mathcal{B}_n = \{G_{n,\alpha} \mid \alpha < \lambda\}$ such that $F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ for each $n, \alpha$.
 
 For $n < \omega$, let
 
@@ -144,21 +143,17 @@ Then $C = \{n < \omega \mid x \in \overline{V_n}\}$ is finite. Let $R = X \setmi
 $$H = R \cap \bigcap_{n \in C} H_n \in \text{Top}(x)$$
 
 It is easy to check that $\text{index}(\mathcal{W})_H \subset \bigcup_{n \in C} \text{index}(\mathcal{B}_n)_{H_n}$. Thus $\vert{}\text{index}(\mathcal{W})_H\vert{}$ is finite, so $\mathcal{W}$ is a LF open expansion of $\mathcal{F}$.
+\end{proof}
 
-
-
-
- 3.3.5. Lemma
-
+ {\lemma{\label{lem:3-3-5}}
 If $\mathcal{V} = \{V_\alpha \mid \alpha \in \Delta\}$ is an open cover of $X$ and let $\tilde{V}_\alpha = V_\alpha \setminus \bigcup_{\gamma \ne \alpha} V_\gamma$ for each $\alpha \in \Delta$, then $\tilde{\mathcal{V}} = \{\tilde{V}_\alpha \mid \alpha \in \Delta\}$ is a discrete closed partial refinement of $\mathcal{V}$.
+}
 
----
-
-3.3.6. Lemma
-
+ {\lemma{\label{lem:3-3-6}}
 If $X$ is $\kappa$-discretely subexpandable, then for every open $\kappa$-cover of $X$ there is a $\sigma$-discrete closed partial refinement $\mathcal{P}$ and a $G_\delta$-set $A$ in $X$ such that $\bigcup \tilde{\mathcal{V}} \subset A \subset \bigcup \mathcal{P}$.
+}
 
-Proof. Suppose $\mathcal{V} = \{V_\alpha \mid \alpha < \lambda\}$ be an open cover of a $\kappa$-discretely subexpandable space $X$. By Lemma 4.2.7, $\tilde{\mathcal{V}} = \{\tilde{V}_\alpha \mid \alpha < \lambda\}$ is a discrete closed family with $\tilde{V}_\alpha \subset V_\alpha$. There is a $\sigma$-sequence $\{\mathcal{G}_n = \{G_{\alpha,n}\}\}_{n < \omega}$ of open expansions of $\tilde{\mathcal{V}}$ such that $\tilde{V}_\alpha \subset G_{\alpha,n} \subset V_\alpha$ for each $\alpha, n$.
+\begin{proof} Suppose $\mathcal{V} = \{V_\alpha \mid \alpha < \lambda\}$ be an open cover of a $\kappa$-discretely subexpandable space $X$. By Lemma 4.2.7, $\tilde{\mathcal{V}} = \{\tilde{V}_\alpha \mid \alpha < \lambda\}$ is a discrete closed family with $\tilde{V}_\alpha \subset V_\alpha$. There is a $\sigma$-sequence $\{\mathcal{G}_n = \{G_{\alpha,n}\}\}_{n < \omega}$ of open expansions of $\tilde{\mathcal{V}}$ such that $\tilde{V}_\alpha \subset G_{\alpha,n} \subset V_\alpha$ for each $\alpha, n$.
 
 For each $n < \omega$, $\{\bigcup \tilde{\mathcal{V}}, X \setminus \bigcup \mathcal{G}_n\}$ is a discrete closed family in $X$. There is a $\sigma$-sequence $\{\mathcal{Q}_k = \{Q_{n,k}, W_{n,k}\}\}_{k < \omega}$ of open expansions such that $\bigcup \tilde{\mathcal{V}} \subset Q_{n,k}$ and $X \setminus \bigcup \mathcal{G}_n \subset W_{n,k}$.
 
@@ -168,14 +163,6 @@ For each $x \in X$, there is $k < \omega$ such that $x$ is contained in at most 
 
 For $n, k < \omega$, let $\mathcal{G}_{n,k} = \mathcal{G}_n \cup \{W_{n,k} \cap V_\alpha \mid \alpha < \lambda\}$. Then each $\mathcal{G}_{n,k}$ is an open refinement of $\mathcal{V}$. By Lemma 4.2.7, $\mathcal{P} = \bigcup_{n,k < \omega} \tilde{\mathcal{B}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathcal{V}$. Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by (1), $\bigcup \tilde{\mathcal{V}} \subset A$.
 
-
-
-Based on the extracted text from `jiang43.pdf`, here is the mathematical content transcribed into LaTeX:
-
----
-
- Proof Continuation (Lemma 3.3.6)
-
 To show that $\vert{}\text{index}(\mathcal{G}_{m,k})_x\vert{} \le 1$.
 
 Since $A \subset \bigcup \mathcal{P}$, let $x \in A$. There is $m < \omega$ such that $x \in \bigcup \mathcal{G}_{m,k}$ for some $k < \omega$, so there is $\alpha_0 < \lambda$ with $x \in G_{\alpha_0, m}$. Since $x \in A \subset Q_m$, by (1) $x \notin W_{m,k}$ for some $k < \omega$, so $\vert{}\text{index}(\mathcal{G}_m)_x\vert{} \le 1$. It follows that
@@ -183,8 +170,8 @@ Since $A \subset \bigcup \mathcal{P}$, let $x \in A$. There is $m < \omega$ such
 $$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap V_\alpha) = \tilde{G}_{\alpha_0, m} \in \tilde{\mathcal{G}}_{m,k} \subset \mathcal{P}[cite: 6]$$
 
 Thus $A \subset \bigcup \mathcal{P}$.
+\end{proof} 
 
----
 
  3.3.7. Theorem (Chaber, 1979)
 
@@ -206,8 +193,6 @@ $$\mathcal{V}_k = \{ \dots \}[cite: 6]$$
 
 %For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset G_k$, so $x \in \dots$ for some $k < \omega$; if $x \notin F_n$, then $\vert{}\text{index}(\mathcal{U})_x\vert{} > n\(, so\)\vert{}\text{index}(\mathcal{U})_x\vert{} \ge n+1\([cite: 6]. Hence\)\mathcal{V}_k$ is an open refinement of $\mathcal{U}$ with $\vert{}\mathcal{V}_k\vert{} \le \lambda$.
 
-
-Based on the extracted text from `jiang44.pdf`, here is the mathematical content transcribed into LaTeX:
 
 ---
 
