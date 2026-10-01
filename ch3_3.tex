@@ -81,7 +81,7 @@ let $\mathscr{V} = \bigcup_{k < \omega} \mathscr{V}_k$ be an
 open refinement of $\mathscr{U}$, where each 
 $\mathscr{V}_k = \{V_{k,n}: n < \omega\}$ such that for each 
 $\Gamma \subset \omega$, 
-$\bigcup_{n \in \Gamma} V_{k,n} \subset \bigcup_{n \in \Gamma} U_n, \forall k < \omega$. For $n < \omega$, let $W_n = \bigcup_{i=0}^n \bigcup_{j=0}^n V_{i,j}$. 
+$\overline{\bigcup_{n \in \Gamma} V_{k,n}} \subset \bigcup_{n \in \Gamma} U_n, \forall \, k < \omega$. For $n < \omega$, let $W_n = \bigcup_{i=0}^n \bigcup_{j=0}^n V_{i,j}$. 
 Then $\{W_n: n < \omega\}$ is an open shrink of $\mathscr{U}$.
 
 (iii) $\Rightarrow$ (iv). Let $\mathscr{F} = \{F_n: n < \omega\}$ be a locally finite closed family. For $n < \omega$, let
@@ -89,7 +89,7 @@ $U_n = X \setminus \bigcup_{k > n} F_k$.
 Then $\mathscr{U} = \{U_n: n < \omega\}$ is an increasing open cover of $X$. 
 By (iii), there exists an open cover $\{H_n: n < \omega\}$ of $X$ such that 
 $\overline{H}_n \subset U_n$. Let $G_0 = X$, 
-$G_n = X\setminus \bigcup_{k<n}\bar{H}_k$ for $n\ge 1$.
+$G_n = X\setminus \bigcup_{k<n}\overline{H_k}$ for $n\ge 1$.
 Then $\{G_n: n < \omega\}$ is a locally finite  open expansion of $\mathscr{F}$. 
 Thus $X$ is countably expandable.
 
@@ -111,7 +111,7 @@ For any space $X$, the following are equivalent:
 
 \textup{(ii)}  Every countable increasing open cover of $X$ has a cushioned refinement.
 
-\textup{(iii)}  Every countable increasing open cover of $X$ has a closed shrinking.
+\textup{(iii)}  Every countable increasing open cover of $X$ has a closed shrink.
 
 \textup{(iv)} $X$ is countably almost expandable.
 }
