@@ -125,20 +125,24 @@ $X$ is $\lambda$-expandable if and only if $X$ is
 $\lambda$-$\theta^*$-expandable and countably paracompact.
 }
 
-\begin{proof} $(\Rightarrow)$ Clear.
-
-$(\Leftarrow).$ Suppose $X$ is $\aleph_0$-expandable and 
-$\mathscr{F} = \{F_\alpha \mid \alpha < \lambda\}$ is a LF family of closed subsets of $X$. Let $\{\mathscr{B}_n\}_{n < \omega}$ be a $\sigma$-sequence where each $\mathscr{B}_n = \{G_{n,\alpha} \mid \alpha < \lambda\}$ such that $F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ for each $n, \alpha$.
-
+\begin{proof} $(\Rightarrow)$ Clear. We show $(\Leftarrow).$ 
+Suppose $X$ is $\lambda$-$\theta^*$-expandable and 
+$\mathscr{F} = \{F_\alpha:  \alpha < \lambda\}$ is a locally finite family of 
+closed subsets of $X$. Let $\{\mathscr{G}_n: n < \omega\}$ be a 
+$\theta^*$-sequence where each 
+$\mathscr{G}_n = \{G_{n,\alpha}: \alpha < \lambda\}$ such that 
+$F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ 
+for each $n, \alpha$.
 For $n < \omega$, let
-
-$$U_n = \{x \in X \mid \exists H \in \text{Top}(x) \text{ s.t. } \vert{}\text{index}(\mathscr{B}_n)_H\vert{} < \omega\}$$
-
-Then $\{U_n\}_{n < \omega}$ is an increasing open cover of $X$. By Theorem 4.1.9, $X$ is countably paracompact. There is a LF open cover $\{V_n\}_{n < \omega}$ of $X$ such that $\overline{V_n} \subset U_n$. For $\alpha < \lambda$, let $W_\alpha = \bigcup_{n < \omega} (V_n \cap G_{n,\alpha})$.
-
-Then $\mathscr{W} = \{W_\alpha \mid \alpha < \lambda\}$ is an open expansion of $\mathscr{F}$. To show that $\mathscr{W}$ is LF, let $x \in X$.
-
-Then $C = \{n < \omega \mid x \in \overline{V_n}\}$ is finite. Let $R = X \setminus \bigcup_{n \notin C} \overline{V_n}$. Then $R \in \text{Top}(x)$. For each $n \in C$, $\overline{V_n} \subset U_n$, so there is $H_n \in \text{Top}(x)$ such that $\vert{}\text{index}(\mathscr{B}_n)_{H_n}\vert{} < \omega$. Then
+$$U_n = \{x \in X: \exists \, H \in \operatorname{top}(x) \text{ such that } \vert{}\text{ind}(\mathscr{G}_n)_H\vert{} < \omega\}$$
+\noindent Then $\{U_n: n < \omega\}$ is an increasing open cover of $X$. 
+By Theorem \ref{th:4-1-9}, $X$ is countably paracompact. 
+There exists a locally finite open cover $\{V_n: n < \omega\}$ of $X$ 
+such that $\overline{V_n} \subset U_n$. 
+For $\alpha < \lambda$, let $G_\alpha = \bigcup_{n < \omega} (V_n \cap G_{n,\alpha})$.
+Then $\mathscr{G} = \{G_\alpha: \alpha < \lambda\}$ is an open expansion of $\mathscr{F}$. To show that $\mathscr{G}$ is locally finite, let $x \in X$.
+Then $C = \{n < \omega: x \in \overline{V_n}\}$ is finite. 
+Let $R = X \setminus \bigcup_{n \notin C} \overline{V_n}$. Then $R \in \text{Top}(x)$. For each $n \in C$, $\overline{V_n} \subset U_n$, so there is $H_n \in \text{Top}(x)$ such that $\vert{}\text{index}(\mathscr{B}_n)_{H_n}\vert{} < \omega$. Then
 
 $$H = R \cap \bigcap_{n \in C} H_n \in \text{Top}(x)$$
 
@@ -146,14 +150,14 @@ It is easy to check that $\text{index}(\mathscr{W})_H \subset \bigcup_{n \in C} 
 \end{proof}
 
  {\lemma{\label{lem:3-3-5}}
-If $\mathscr{V} = \{V_\alpha \mid \alpha \in \Delta\}$ is an open cover of $X$ and let $\tilde{V}_\alpha = V_\alpha \setminus \bigcup_{\gamma \ne \alpha} V_\gamma$ for each $\alpha \in \Delta$, then $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha \mid \alpha \in \Delta\}$ is a discrete closed partial refinement of $\mathscr{V}$. \hfill\qedsymbol
+If $\mathscr{V} = \{V_\alpha:  \alpha \in \Delta\}$ is an open cover of $X$ and let $\tilde{V}_\alpha = V_\alpha \setminus \bigcup_{\gamma \ne \alpha} V_\gamma$ for each $\alpha \in \Delta$, then $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha:  \alpha \in \Delta\}$ is a discrete closed partial refinement of $\mathscr{V}$. \hfill\qedsymbol
 }
 
  {\lemma{\label{lem:3-3-6}}
 If $X$ is $\kappa$-discretely subexpandable, then for every open $\kappa$-cover of $X$ there is a $\sigma$-discrete closed partial refinement $\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that $\bigcup \tilde{\mathscr{V}} \subset A \subset \bigcup \mathscr{P}$.
 }
 
-\begin{proof} Suppose $\mathscr{V} = \{V_\alpha \mid \alpha < \lambda\}$ be an open cover of a $\kappa$-discretely subexpandable space $X$. By Lemma 4.2.7, $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha \mid \alpha < \lambda\}$ is a discrete closed family with $\tilde{V}_\alpha \subset V_\alpha$. There is a $\sigma$-sequence $\{\mathscr{G}_n = \{G_{\alpha,n}\}\}_{n < \omega}$ of open expansions of $\tilde{\mathscr{V}}$ such that $\tilde{V}_\alpha \subset G_{\alpha,n} \subset V_\alpha$ for each $\alpha, n$.
+\begin{proof} Suppose $\mathscr{V} = \{V_\alpha:  \alpha < \lambda\}$ be an open cover of a $\kappa$-discretely subexpandable space $X$. By Lemma 4.2.7, $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha:  \alpha < \lambda\}$ is a discrete closed family with $\tilde{V}_\alpha \subset V_\alpha$. There is a $\sigma$-sequence $\{\mathscr{G}_n = \{G_{\alpha,n}\}\}_{n < \omega}$ of open expansions of $\tilde{\mathscr{V}}$ such that $\tilde{V}_\alpha \subset G_{\alpha,n} \subset V_\alpha$ for each $\alpha, n$.
 
 For each $n < \omega$, $\{\bigcup \tilde{\mathscr{V}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There is a $\sigma$-sequence $\{\mathscr{Q}_k = \{Q_{n,k}, W_{n,k}\}\}_{k < \omega}$ of open expansions such that $\bigcup \tilde{\mathscr{V}} \subset Q_{n,k}$ and $X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}$.
 
@@ -161,7 +165,7 @@ For each $x \in X$, there is $k < \omega$ such that $x$ is contained in at most 
 
 (1) For each $n < \omega$, $\bigcup \tilde{\mathscr{V}} \subset Q_n$, $X \setminus \bigcup \mathscr{G}_n \subset W_n$, and $Q_n \cap W_n = \emptyset$.
 
-For $n, k < \omega$, let $\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap V_\alpha \mid \alpha < \lambda\}$. Then each $\mathscr{G}_{n,k}$ is an open refinement of $\mathscr{V}$. By Lemma 4.2.7, $\mathscr{P} = \bigcup_{n,k < \omega} \tilde{\mathscr{B}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{V}$. Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by (1), $\bigcup \tilde{\mathscr{V}} \subset A$.
+For $n, k < \omega$, let $\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap V_\alpha:  \alpha < \lambda\}$. Then each $\mathscr{G}_{n,k}$ is an open refinement of $\mathscr{V}$. By Lemma 4.2.7, $\mathscr{P} = \bigcup_{n,k < \omega} \tilde{\mathscr{B}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{V}$. Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by (1), $\bigcup \tilde{\mathscr{V}} \subset A$.
 
 To show that $\vert{}\text{index}(\mathscr{G}_{m,k})_x\vert{} \le 1$.
 
@@ -177,9 +181,9 @@ Thus $A \subset \bigcup \mathscr{P}$.
 In a $\kappa$-discretely subexpandable space, every point-finite open $\kappa$-cover has a $\sigma$-discrete closed refinement.
 }
 
-Proof. Suppose $\mathscr{U} = \{U_\alpha \mid \alpha < \lambda\}$ be a point-finite open cover of a $\kappa$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
+Proof. Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be a point-finite open cover of a $\kappa$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
 
-$$F_n = \{x \in X \mid \vert{}\text{index}(\mathscr{U})_x\vert{} \le n\}, \quad n \ge 1[cite: 6]$$
+$$F_n = \{x \in X:  \vert{}\text{index}(\mathscr{U})_x\vert{} \le n\}, \quad n \ge 1[cite: 6]$$
 
 Then $\{F_n\}_{n < \omega}$ is a closed cover of $X$. We have the following:
 
