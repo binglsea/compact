@@ -13,6 +13,7 @@
 \contentsline {section}{\numberline {4.1}Submetacompact and Subparacompact Spaces}{23}{section.4.1}%
 \contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Normal covers and $D\omega ^2$-refinable spaces}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{25}{section.5.2}%
 \contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{26}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Works of Mack, Worrell}{26}{section.6.1}%
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{27}{chapter.7}%

@@ -146,7 +146,7 @@ It is easy to check that $\text{index}(\mathscr{W})_H \subset \bigcup_{n \in C} 
 \end{proof}
 
  {\lemma{\label{lem:3-3-5}}
-If $\mathscr{V} = \{V_\alpha \mid \alpha \in \Delta\}$ is an open cover of $X$ and let $\tilde{V}_\alpha = V_\alpha \setminus \bigcup_{\gamma \ne \alpha} V_\gamma$ for each $\alpha \in \Delta$, then $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha \mid \alpha \in \Delta\}$ is a discrete closed partial refinement of $\mathscr{V}$.
+If $\mathscr{V} = \{V_\alpha \mid \alpha \in \Delta\}$ is an open cover of $X$ and let $\tilde{V}_\alpha = V_\alpha \setminus \bigcup_{\gamma \ne \alpha} V_\gamma$ for each $\alpha \in \Delta$, then $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha \mid \alpha \in \Delta\}$ is a discrete closed partial refinement of $\mathscr{V}$. \hfill\qedsymbol
 }
 
  {\lemma{\label{lem:3-3-6}}
@@ -173,9 +173,9 @@ Thus $A \subset \bigcup \mathscr{P}$.
 \end{proof} 
 
 
- 3.3.7. Theorem (Chaber, 1979)
-
+{\theorem{\label{th:3-3-7}}  \textup{(Chaber [1979]\textsuperscript{\cite{Chaber}})}
 In a $\kappa$-discretely subexpandable space, every point-finite open $\kappa$-cover has a $\sigma$-discrete closed refinement.
+}
 
 Proof. Suppose $\mathscr{U} = \{U_\alpha \mid \alpha < \lambda\}$ be a point-finite open cover of a $\kappa$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
 
@@ -191,7 +191,13 @@ $$F_n \subset A_n \subset \bigcup \mathscr{P}_n[cite: 6]$$
 
 $$\mathscr{V}_k = \{ \dots \}[cite: 6]$$
 
-%For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset G_k$, so $x \in \dots$ for some $k < \omega$; if $x \notin F_n$, then $\vert{}\text{index}(\mathscr{U})_x\vert{} > n\(, so\)\vert{}\text{index}(\mathscr{U})_x\vert{} \ge n+1\([cite: 6]. Hence\)\mathscr{V}_k$ is an open refinement of $\mathscr{U}$ with $\vert{}\mathscr{V}_k\vert{} \le \lambda$.
+For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset G_k$, 
+so $x \in \dots$ for some $k < \omega$; if $x \notin F_n$, 
+then $\vert{}\text{index}(\mathscr{U})_x\vert{} > n$,
+so $\vert{}\text{index}(\mathscr{U})_x\vert{} \ge n+1$ 
+
+[cite: 6]. Hence $\mathscr{V}_k$ 
+is an open refinement of $\mathscr{U}$ with $\vert{}\mathscr{V}_k\vert{} \le \lambda$.
 
 
 ---
@@ -218,6 +224,6 @@ $$F_{n+1} \subset (F_{n+1} \setminus G_k) \cup G_k \subset \bigcup \tilde{\maths
 
 so $F_{n+1} \subset A_{n+1}$. To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, let $x \in A_{n+1}$. If $x \in A_n$, then $x \in \bigcup \mathscr{P}_n \subset \bigcup \mathscr{P}_{n+1}$. Assume $x \notin A_n$, then $x \notin G_k$ for some $k < \omega$. Since $x \in A_{n+1} \subset B_k \cup G_k$, $x \in B_k \subset \bigcup \mathscr{E}_k \subset \bigcup \mathscr{P}_{n+1}$. Hence $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$. This completes the proof of the induction.
 
-Since $\bigcup_{n < \omega} F_n = X$, by the claim, the family $\mathscr{P} = \bigcup_{n < \omega} \mathscr{P}_n$ is a $\sigma$-discrete closed refinement of $\mathscr{U}$. $\blacksquare$
+Since $\bigcup_{n < \omega} F_n = X$, by the claim, the family $\mathscr{P} = \bigcup_{n < \omega} \mathscr{P}_n$ is a $\sigma$-discrete closed refinement of $\mathscr{U}$. 
 
 \end{document}
