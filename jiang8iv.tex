@@ -33,22 +33,47 @@ $\varepsilon^*$-expandable.
 \begin{proof}
 $(\Rightarrow)$ is clear.
 We prove $(\Leftarrow)$. 
-Suppose that $X$ is $\lambda$-discretely expandable and 
+Suppose that $X$ is $\lambda$-discretely $\varepsilon^*$-expandable and 
 let $\mathscr{D} = \{D_\alpha : \alpha < \lambda\}$ be a 
 discrete closed family in $X$. Let $\{\mathscr{V}_n : n \in \omega\}$ be a 
-$\sigma$-sequence of open expansions of $\mathscr{D}$, where each $\mathscr{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ with 
+$\varepsilon^*$-sequence of open expansions of $\mathscr{D}$, where each $\mathscr{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ with 
 $D_\alpha \subset V_{n,\alpha}$ for each 
-$n, \alpha$. For $n \in \omega$, let 
-$H_n = \{x \in X : \vert{}\{ \alpha < \lambda : x \in V_{n,\alpha} \}\vert{} = 1\}$. 
+$n, \alpha$. For $n <\omega$, let 
+$H_n = \{x \in X : \vert{}\operatorname{ind}(\mathscr{V}_n)_x\vert{} \le 1\}$. 
 Clearly, each $H_n$ is closed in $X$. 
-For each $n \in \omega$, $\mathscr{V}_n\vert{}_{H_n}$ 
+For each $n < \omega$, $\mathscr{V}_n\vert{}_{H_n}$ 
 is a point-finite open family in the subspace $H_n$. 
-It follows that the family $\{V_{n,\alpha} \cap H_n : \alpha < \lambda\}$ 
+It follows that the family 
+$\{H_n \bigcap(\bigcup_{\gamma \ne \alpha}V_{n,\gamma}) : \alpha < \lambda\}$ 
 is an interior-preserving open family in $H_n$. 
-For $n \in \omega, \alpha < \lambda$, let...
+For $n \in \omega, \alpha < \lambda$, 
 
+$$B_{n,\alpha} = H_n \setminus \bigcup_{n \to \alpha} V_{n,\alpha}$$
 
+Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is a cover, and $\mathscr{B}_n = \{B_{n,\alpha} \mid \alpha < \lambda\}$ is a CP closed family in $X$.
+
+Proof. Let $x \in X$. There is $m < \omega$ and $W \in \text{Top}(x)$ such that $\vert{}\text{index}(\dots)\vert{} < \omega$. Let $\alpha_0$ be such that $x \in B_{m,\alpha_0}^\circ$. Thus this holds.
+
+For $n < \omega$, let
+
+$$V_{n,\alpha} = U_{n,\alpha} \setminus \bigcup_{i \ge n} \bigcup \{B_{i,\gamma}^\circ : \gamma < \alpha, B_{i,\gamma} \cap D_\alpha = \emptyset\}$$
+
+and $V_\alpha = \bigcup_{n < \omega} V_{n,\alpha}$. We show that $\mathscr{V} = \{V_\alpha \mid \alpha < \lambda\}$ is a disjoint open expansion of $\mathscr{D}$.
+
+(2) $D_\alpha \subset V_\alpha$ for all $\alpha < \lambda$.
+
+*Proof.* Let $x \in D_\alpha$. For some $m < \omega$, $x \in U_{m,\alpha}^\circ$. For each $i \le m$ and $\gamma < \alpha$, if $B_{i,\gamma} \cap D_\alpha = \emptyset$, then $x \notin B_{i,\gamma}^\circ$. Hence $x \in V_{m,\alpha} \subset V_\alpha$.
+
+(3) If $n < \omega$ and $\gamma < \alpha$, then
+
+$$B_{n,\gamma} \cap D_\alpha \subset \left( \overline{V_{n,\gamma}} \setminus \bigcup_{\mu \neq \gamma} V_{n,\mu} \right) \cap V_{n,\alpha} = \emptyset$$
+
+(4) If $\alpha \neq \beta$, then $V_\alpha \cap V_\beta = \emptyset$.
+
+*Proof.* If not, then $V_{m,\alpha} \cap V_{m,\beta} \neq \emptyset$ for some $m < \omega$. Suppose $x \in V_{m,\alpha} \cap V_{m,\beta}$. Since $x \in V_{m,\alpha}$, there is $\gamma < \alpha$ such that $x \in B_{m,\gamma}^\circ$ and $D_\alpha \cap B_{m,\gamma} \neq \emptyset$. It follows from (3) that $x \in V_\beta$, a contradiction. On the other hand, since $B_{m,\alpha} \cap D_\beta = \emptyset$, hence (4) holds.
 \end{proof}
+
+
 
 
 \end{document}
