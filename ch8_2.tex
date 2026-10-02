@@ -5,22 +5,28 @@
 \section{Fully Normal Spaces} \label{sec:8.2}
 
 
-
-8.2.1. Theorem
-
+{\theorem{\label{th:8.2.1}}
 For any space $X$, the following are equivalent:
 
-(i) $X$ is fully normal.
+\textup{(i)} $X$ is  $\lambda$-fully normal.
 
-(ii) $X$ is shrinkable and $\aleph_0$-screenable.
+\textup{(ii)} $X$ is $\lambda$-shrinkable and $\lambda$-screenable.
 
-(iii) $X$ is countably shrinkable and every open $\kappa$-cover of $X$ has a $\sigma$-star-finite open refinement.
+\textup{(iii)} $X$ is countably shrinkable and every open $\lambda$-cover of $X$ has a $\sigma$-star-finite open refinement.
+}
 
-Proof. $(\text{i}) \Rightarrow (\text{ii})$ By Corollary 2.1.8.
+\begin{proof}
+(i)  $\Rightarrow$  (ii). By Corollary \ref{cor:2.1.8}.
 
-$(\text{ii}) \Rightarrow (\text{iii})$ Clear.
+(ii) $\Rightarrow$ (iii). Clear. 
 
-$(\text{iii}) \Rightarrow (\text{i})$ Assume (iii). Then $X$ is normal. By Theorem 2.2.3, let us show that $X$ is paracompact. Suppose $\mathcal{U}$ be an open $\kappa$-cover of $X$. By (iii), $\mathcal{U}$ has an open refinement $\mathcal{W} = \bigcup_{n < \omega} \mathcal{W}_n$, where each $\mathcal{W}_n = \{V_{n,\alpha} \mid \alpha \in \Delta_n\}$ is star-finite...
-
+(iii) $\Rightarrow$ (i). Assume (iii). Then $X$ is normal. 
+By Theorem 2.2.3, let us show that $X$ is paracompact. 
+Suppose $\mathcal{U}$ be an open $\kappa$-cover of $X$. By (iii), 
+$\mathcal{U}$ has an open refinement 
+$\mathcal{W} = \bigcup_{n < \omega} \mathcal{W}_n$, 
+where each $\mathcal{W}_n = \{V_{n,\alpha} \mid \alpha \in \Delta_n\}$ 
+is star-finite...
+\end{proof} 
 
 \end{document}
