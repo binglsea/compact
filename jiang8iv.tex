@@ -85,6 +85,61 @@ $$B_{n,\gamma} \cap D_\alpha \subset \left( \overline{V_{n,\gamma}} \setminus \b
 \end{proof}
 
 
+Based on `jiang111.pdf`, here is the mathematical transcription into LaTeX:
 
+---
+
+8.1.4. Lemma
+
+If a cover $\mathcal{U}$ of $X$ has a $\sigma$-cushioned open refinement, then $\mathcal{U}$ has a cushioned open refinement.
+
+Proof. Suppose that the cover $\mathcal{U} = \{U_\alpha \mid \alpha \in \Lambda\}$ has an open refinement $\mathcal{W} = \bigcup_{n < \omega} \mathcal{W}_n$ where each $\mathcal{W}_n = \{V_{n,\alpha} \mid \alpha \in \Lambda\}$ such that for every $n < \omega$ and $\Gamma \subset \Lambda$, $\overline{\bigcup_{\alpha \in \Gamma} V_{n,\alpha}} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$. For $n < \omega$, let $A_n = \bigcup \mathcal{W}_n$, $H_0 = A_0$, and $H_n = A_n \setminus \bigcup_{i < n} A_i$ for $n \ge 1$. Then $\{H_n \mid n < \omega\}$ is a LF cover of $X$. For $\alpha \in \Lambda$, let $B_\alpha = \bigcup_{n < \omega} (H_n \cap V_{n,\alpha})$. Then $\mathcal{B} = \{B_\alpha \mid \alpha \in \Lambda\}$ is a cushioned refinement of $\mathcal{U}$.
+
+---
+
+ 8.1.5. Theorem
+
+For any space $X$, the following are equivalent:
+
+(i) $X$ is $\kappa$-collectionwise normal.
+
+(ii) Every $D_\omega \kappa$-cover of $X$ is a normal cover.
+
+(iii) Every $D_\omega \kappa$-cover of $X$ has a star refinement.
+
+(iv) Every $D_\omega \kappa$-cover of $X$ has a CP closed refinement.
+
+(v) Every CP $D_\omega \kappa$-cover of $X$ has a cushioned refinement.
+
+Proof. $(\text{i}) \Rightarrow (\text{ii})$ Suppose that $X$ is $\kappa$-collectionwise normal and that $\mathcal{U}$ be a $D_\omega \kappa$-cover of $X$. Let us show that $\mathcal{U}$ is normal.
+
+Let $\mathcal{P} = \bigcup_{m,n < \omega} \mathcal{P}_{m,n}$ be a refinement of $\mathcal{U}$, where each $\mathcal{P}_{m,n} = \{D_{m,n,\alpha} \mid \alpha < \kappa\}$ is a discrete closed family of subsets of $X$ with $D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \kappa$. We have $\dots$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(i) $\Rightarrow$ (ii) Assume (i) holds and let $\mathcal{U} = \{U_\alpha \mid \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathcal{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathcal{U}$ by semi-open covers. For $n < \omega$, let
+
+$$A_n = \{x \in X \mid \mathcal{V}_n \text{ is a local-star refinement of } \mathcal{U} \text{ at } x\}$$
+
+Then $\mathcal{V}_n$ is a local-star refinement of $\mathcal{U}$ at each point of $A_n$. By Lemma 8.2.4, there is an open family $\mathcal{W}_n$ which is cushioned in $\mathcal{U}$ and covers $A_n$.
+
+Since $\bigcup_{n < \omega} A_n = X$, $\mathcal{W} = \bigcup_{n < \omega} \mathcal{W}_n$ is a $\sigma$-cushioned open refinement of $\mathcal{U}$. By Theorem 8.1.7, this holds.
+
+\subfile{ch8_2}
 
 \end{document}
