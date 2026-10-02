@@ -19,7 +19,7 @@
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{27}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{27}{section.7.1}%
 \contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{28}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{28}{section.8.1}%
-\contentsline {section}{References}{28}{lemma.8.1.1}%
+\contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{28}{section.8.1}%
+\contentsline {section}{References}{28}{section.8.1}%
 \contentsline {chapter}{Bibliography}{29}{chapter*.7}%
 \contentsline {chapter}{Index}{32}{chapter*.7}%

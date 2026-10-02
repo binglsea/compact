@@ -10,15 +10,15 @@
 
 7.1.1. Lemma. If $X$ is $\lambda$-almost expandable ($\kappa$-expandable), then every $A(\lambda)$-open cover of $X$ has a point-finite (LF) open refinement.
 
-Proof. Suppose $X$ is $\lambda$-almost expandable ($\kappa$-expandable) and let $\mathcal{V} = \{V_\alpha : \alpha < \lambda\}$ be an $A(\lambda)$-open cover of $X$. Let $\mathcal{A}_{m,n}$ be a refinement of $\mathcal{V}$ such that each $\mathcal{A}_{m,n} = \{A_{m,n,\alpha} : \alpha \in \lambda\}$ is a LF family of subsets of $X$, with $A_{m,n,\alpha} \subset V_\alpha$ for each $\alpha \in \lambda$. We establish the following
+Proof. Suppose $X$ is $\lambda$-almost expandable ($\kappa$-expandable) and let $\mathcal{V} = \{V_\alpha : \alpha < \lambda\}$ be an $A(\lambda)$-open cover of $X$. Let $\mathcal{A}_{m,n}$ be a refinement of $\mathcal{V}$ such that each $\mathcal{A}_{m,n} = \{A_{m,n,\alpha} : \alpha \in \lambda\}$ is a locally finite family of subsets of $X$, with $A_{m,n,\alpha} \subset V_\alpha$ for each $\alpha \in \lambda$. We establish the following
 
 Claim. For each $m, n \in \omega$, there is a point-finite (LF) family $\mathcal{U}_{m,n} = \{U_{m,n,\alpha} : \alpha \in \lambda\}$ of open sets in $X$ such that $U_{m,n,\alpha} \subset V_\alpha$ for each $\alpha$ and
 
 $$\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathcal{U}_{p,q}\right) \subset \bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathcal{A}_{p,q}\right)$$
 
-Proof. We prove this by induction on $\langle m,n \rangle \in \omega \times \omega$. Suppose $\mathcal{U}_{0,0} = \{\emptyset : \alpha \in \lambda\}$ and let $\mathcal{U}_{0,0} = \{\emptyset\}$. Let $m, n \in \omega$ and assume that the point-finite (LF) open families $\mathcal{U}_{p,q} = \{U_{p,q,\alpha} : \alpha \in \lambda\}$ have been constructed such that the conditions above are satisfied for all $\langle p,q \rangle < \langle m,n \rangle$. Let $L = \bigcup \{ \bigcup \mathcal{U}_{p,q} : \langle p,q \rangle < \langle m,n \rangle \}$. By the inductive hypothesis we have $\bigcup_{\langle p,q \rangle < \langle m,n \rangle} \left(\bigcup \mathcal{U}_{p,q}\right) \subset L$. The family $\mathcal{A}_{m,n}$ ($\alpha < \lambda$) is LF in $X$, so it has a point-finite (LF)...
+Proof. We prove this by induction on $\langle m,n \rangle \in \omega \times \omega$. Suppose $\mathcal{U}_{0,0} = \{\emptyset : \alpha \in \lambda\}$ and let $\mathcal{U}_{0,0} = \{\emptyset\}$. Let $m, n \in \omega$ and assume that the point-finite (LF) open families $\mathcal{U}_{p,q} = \{U_{p,q,\alpha} : \alpha \in \lambda\}$ have been constructed such that the conditions above are satisfied for all $\langle p,q \rangle < \langle m,n \rangle$. Let $L = \bigcup \{ \bigcup \mathcal{U}_{p,q} : \langle p,q \rangle < \langle m,n \rangle \}$. By the inductive hypothesis we have $\bigcup_{\langle p,q \rangle < \langle m,n \rangle} \left(\bigcup \mathcal{U}_{p,q}\right) \subset L$. The family $\mathcal{A}_{m,n}$ ($\alpha < \lambda$) is locally finite in $X$, so it has a point-finite (LF)...
 
----
+
 
 (Note: "LF" stands for locally finite, and "CLF" likely stands for closure-preserving locally finite / countably locally finite).
 
