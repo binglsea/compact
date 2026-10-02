@@ -35,7 +35,7 @@ $(\Rightarrow)$ is clear.
 We prove $(\Leftarrow)$. 
 Suppose that $X$ is $\lambda$-discretely $\varepsilon^*$-expandable and 
 let $\mathscr{D} = \{D_\alpha : \alpha < \lambda\}$ be a 
-discrete closed family in $X$. Let $\{\mathscr{V}_n : n \in \omega\}$ be a 
+discrete closed family in $X$. Let $\{\mathscr{V}_n : n \in \omega\}$ be an
 $\varepsilon^*$-sequence of open expansions of $\mathscr{D}$, where each $\mathscr{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ with 
 $D_\alpha \subset V_{n,\alpha}$ for each 
 $n, \alpha$. For $n <\omega$, let 
@@ -48,15 +48,26 @@ $\{H_n \bigcap(\bigcup_{\gamma \ne \alpha}V_{n,\gamma}) : \alpha < \lambda\}$
 is an interior-preserving open family in $H_n$. 
 For $n \in \omega, \alpha < \lambda$, 
 
-$$B_{n,\alpha} = H_n \setminus \bigcup_{n \to \alpha} V_{n,\alpha}$$
+$$B_{n,\alpha} = H_n \setminus \bigcup_{\alpha\ne\gamma} V_{n,\gamma} 
+\textit{ and } \mathscr{B}_n = \{B_{n,\alpha}: \alpha < \lambda\}.$$
 
-Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is a cover, and $\mathscr{B}_n = \{B_{n,\alpha} \mid \alpha < \lambda\}$ is a CP closed family in $X$.
+\noindent Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is 
+a closure-preserving closed family in $X$. We have
 
-Proof. Let $x \in X$. There is $m < \omega$ and $W \in \text{Top}(x)$ such that $\vert{}\text{index}(\dots)\vert{} < \omega$. Let $\alpha_0$ be such that $x \in B_{m,\alpha_0}^\circ$. Thus this holds.
+(1) $\bigcup \mathscr{B}^\circ = X$.
+
+\noindent\textsc{Proof of (1)}. Let $x \in X$. There exists $m < \omega$ and 
+$W \in \operatorname{top}(x)$ such that 
+$|\operatorname{ind}(\mathscr{V}_m)_W|\le 1$. 
+Let $\alpha_0<\lambda$ be such that 
+$\operatorname{ind}(\mathscr{V}_m)_W\subset \{\alpha_0\}$. 
+Then $W\subset B_{n,\alpha_0} $, so $x\in B_{m, \alpha_0}^\circ$. Thus (1) holds.
 
 For $n < \omega$, let
 
-$$V_{n,\alpha} = U_{n,\alpha} \setminus \bigcup_{i \ge n} \bigcup \{B_{i,\gamma}^\circ : \gamma < \alpha, B_{i,\gamma} \cap D_\alpha = \emptyset\}$$
+$$U_{n,\alpha} = \operatorname{st}(D_\alpha, \mathscr{B}_n^\circ)
+\setminus \bigcup_{i \ge n} 
+\overline{\bigcup \{B_{i,\gamma}^\circ : \gamma < \alpha, B_{i,\gamma} \cap D_\alpha = \emptyset\}}$$
 
 and $V_\alpha = \bigcup_{n < \omega} V_{n,\alpha}$. We show that $\mathscr{V} = \{V_\alpha \mid \alpha < \lambda\}$ is a disjoint open expansion of $\mathscr{D}$.
 
