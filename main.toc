@@ -17,7 +17,7 @@
 \contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{26}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Submetacompact and $\lambda $-expandable Spaces}{26}{section.6.1}%
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Works of J.-G. Jiang (III)}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{27}{section.7.1}%
 \contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{28}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Works of J.-G. Jiang (IV)}{28}{section.8.1}%
 \contentsline {section}{References}{28}{lemma.8.1.1}%
