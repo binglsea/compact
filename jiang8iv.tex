@@ -30,10 +30,24 @@ $X$ is $\lambda$-collectionwise normal iff $X$ is $\lambda$-discretely
 $\epsilon^*$-expandable.
 }
 
-Proof. $\Rightarrow$ clear.
+\begin{proof}
+$(\Rightarrow)$ is clear.
+We prove $(\Leftarrow)$. 
+Suppose that $X$ is $\lambda$-discretely expandable and 
+let $\mathcal{D} = \{D_\alpha : \alpha < \lambda\}$ be a 
+discrete closed family in $X$. Let $\{\mathcal{V}_n : n \in \omega\}$ be a 
+$\sigma$-sequence of open expansions of $\mathcal{D}$, where each $\mathcal{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ with 
+$D_\alpha \subset V_{n,\alpha}$ for each 
+$n, \alpha$. For $n \in \omega$, let 
+$H_n = \{x \in X : \vert{}\{ \alpha < \lambda : x \in V_{n,\alpha} \}\vert{} = 1\}$. 
+Clearly, each $H_n$ is closed in $X$. 
+For each $n \in \omega$, $\mathcal{V}_n\vert{}_{H_n}$ 
+is a point-finite open family in the subspace $H_n$. 
+It follows that the family $\{V_{n,\alpha} \cap H_n : \alpha < \lambda\}$ 
+is an interior-preserving open family in $H_n$. 
+For $n \in \omega, \alpha < \lambda$, let...
 
-$\Leftarrow$) Suppose that $X$ is $\lambda$-discretely expandable and let $\mathcal{D} = \{D_\alpha : \alpha < \lambda\}$ be a discrete closed family in $X$. Let $\{\mathcal{V}_n : n \in \omega\}$ be a $\sigma$-sequence of open expansions of $\mathcal{D}$, where each $\mathcal{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ with $D_\alpha \subset V_{n,\alpha}$ for each $n, \alpha$. For $n \in \omega$, let $H_n = \{x \in X : \vert{}\{ \alpha < \lambda : x \in V_{n,\alpha} \}\vert{} = 1\}$. Clearly, each $H_n$ is closed in $X$. For each $n \in \omega$, $\mathcal{V}_n\vert{}_{H_n}$ is a point-finite open family in the subspace $H_n$. It follows that the family $\{V_{n,\alpha} \cap H_n : \alpha < \lambda\}$ is an LP open family in $H_n$. For $n \in \omega, \alpha < \lambda$, let...
-
+\end{proof}
 
 
 \end{document}
