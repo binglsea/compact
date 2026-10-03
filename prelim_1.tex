@@ -212,6 +212,11 @@ or replace ``open" by ``closed".
 \textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($open$)$ refinement $\mathscr{V}$, then $\mathscr{U}$ has a partial cushioned $($open$)$  refinement $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
 } % end of lemma
 
+In the above cases, we call  $\mathscr{H} $ as a 
+\uwave{precise refinement}
+\index{precise refinement| \S\ref{lem:1.1.5}\hfill}
+of $\mathscr{V}$.
+
 \begin{proof} Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
 $\overline{\mathscr{V}}$ refines $\mathscr{U}$). For every $V\in\mathscr{V}$, pick 
 a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
@@ -221,7 +226,7 @@ locally finite open partial refinement of $\mathscr{U}$.
 \end{proof} 
 
 {\definition{} \label{def:1.1.6}
-\textup{(Tukey[1940]\cite{Tukey})}
+\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}
 Let $\mathscr{U}$ and $\mathscr{V}$ be covers of $X$.
 	
 	\textup{(i)} $\mathscr{V}$ is a 
@@ -243,7 +248,7 @@ $\{\operatorname{st}(x, \mathscr{V}) : x\in X\}$ refines $\mathscr{U}$.
 
 \textup{(ii)}  An open cover $\mathscr{U}$ is normal iff there is a sequence $\{\mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and  $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ for each $n<\omega$..
 
-\textup{(iii)}  If $\mathscr{U}$ is a normal cover of $X$, then there is a normal cover $\mathscr{U}_0$ of $X$ such that $\overline{\mathscr{U}_0}$ refines $\mathscr{U}$.
+\textup{(iii)}  If $\mathscr{U}$ is a normal cover of $X$, then there is a normal cover $\mathscr{U}_1$ of $X$ such that $\overline{\mathscr{U}_1}$ refines $\mathscr{U}$.
 } %end of lemma
 
 \begin{proof} 
@@ -280,31 +285,31 @@ Hence $\mathscr{W}$ star-refines $\mathscr{U}$.
 \textup{(ii)} $X$ is \uwave{$\lambda$-strongly paracompact}
  \index{$\lambda$-strongly paracompact| 
  \S\ref{def:1.1.8}\hfill} 
- \textup{(Dowker [1947]\textsuperscript{\cite{Dowker}})}
+ \textup{([Dowker 1947]\textsuperscript{\cite{Dowker}})}
  	 if every open $\lambda$-cover of $X$ has a star-finite open refinement.
  
 \textup{(iii)} $X$ is \uwave{$\lambda$-fully normal}
 \index{$\lambda$-fully normal| 
 	\S\ref{def:1.1.8}\hfill} 
- \textup{(Tueky [1940]\textsuperscript{\cite{Tukey}})}
+ \textup{([Tueky 1940]\textsuperscript{\cite{Tukey}})}
 if every open $\lambda$-cover of $X$ is a normal cover.
  
 \textup{(iv)} $X$ is \uwave{$\lambda$-paracompact}
 \index{$\lambda$-paracompact| 
 	\S\ref{def:1.1.8}\hfill} 
- \textup{(Dieudonne [1940]\textsuperscript{\cite{Dieudonne}})}
+ \textup{([Dieudonne 1940]\textsuperscript{\cite{Dieudonne}})}
 if every open $\lambda$-cover of $X$ has a locally finite open refinement.
 
 \textup{(v)} $X$ is \uwave{$\lambda$-metacompact}
 \index{$\lambda$-metacompact| 
 	\S\ref{def:1.1.8}\hfill} 
-\textup{(Arens and Dugundji [1950]\textsuperscript{\cite{ArensDugundji}})}
+\textup{([Arens and Dugundji 1950]\textsuperscript{\cite{ArensDugundji}})}
 if every open $\lambda$-cover of $X$ has a point-finite open refinement.
 
 \textup{(vi)} $X$ is \uwave{$\lambda$-subcompact}
 \index{$\lambda$-subcompact| 
 	\S\ref{def:1.1.8}\hfill} 
-\textup{(Burke [1969]\textsuperscript{\cite{Burke}})}
+\textup{([Burke 1969]\textsuperscript{\cite{Burke}})}
 if every open $\lambda$-cover of $X$ has a 
 $\sigma$-discrete closed refinement.
 
@@ -314,29 +319,29 @@ $\sigma$-discrete closed refinement.
 	or \uwave{$\lambda$-submetacompact}
 	\index{$\lambda$-submetacompact| 
 		\S\ref{def:1.1.8}\hfill} 
-\textup{(Worrel and Wicke [1965]\textsuperscript{\cite{WorrellWicke}})}
+\textup{([Worrel and Wicke 1965]\textsuperscript{\cite{WorrellWicke}})}
    if every open $\lambda$-cover of $X$ has a $\theta$-sequence
-  of open refinement.
+  of open refinements.
 } %end of definition
 
 {\definition{} \label{def:1.1.9}
 \textup{(i)} $X$ is \uwave{$\lambda$-$\theta^*$-refinable} 
   \index{$\lambda$-$\theta^*$-refinable| 
   	\S\ref{def:1.1.9}\hfill} 
-  	\textup{(Smith [1976]\textsuperscript{\cite{Smith1976}})} if every open $\lambda$-cover of 
-  	$X$ has a  $\theta^*$-sequence of open refinement.
+  	\textup{([Smith 1976]\textsuperscript{\cite{Smith1976}})} if every open $\lambda$-cover of 
+  	$X$ has a  $\theta^*$-sequence of open refinements.
   	
 \textup{(ii)}  $X$ is \uwave{$\lambda$-$\varepsilon^*$-refinable}
 \index{$\lambda$-$\varepsilon^*$-refinable| 
 	\S\ref{def:1.1.9}\hfill}
-	\textup{(Jiang)}, if every open $\lambda$-cover of 
-	$X$ has an  $\varepsilon^*$-sequence of open refinement.
+	\textup{([Jiang])}, if every open $\lambda$-cover of 
+	$X$ has an  $\varepsilon^*$-sequence of open refinements.
  
 \textup{(iii)}  $X$ is \uwave{$\lambda$-$\varepsilon$-refinable}
 \index{$\lambda$-$\varepsilon$-refinable| 
-	\S\ref{def:1.1.9}\hfill} \textup{(Jiang)},
+	\S\ref{def:1.1.9}\hfill} \textup{([Jiang])},
 	if every open $\lambda$-cover of 
-	$X$ has an  $\varepsilon$-sequence of open refinement..
+	$X$ has an  $\varepsilon$-sequence of open refinements.
 } %end of definition
 
 \vspace{8pt}
@@ -344,10 +349,10 @@ $\sigma$-discrete closed refinement.
 $\lambda$ is dropped if it applies for all 
 cardinals.
 
-We proved that a space is $\lambda$-paracompact iff it is
+We will prove that a space is $\lambda$-paracompact iff it is
 $\lambda$-$\theta^*$-refinable 
 (Theorem 8.2.11), % TO_DO
-and is $\lambda$-fully normal iff it is $\lambda$-refinable 
+and is $\lambda$-fully normal iff it is $\lambda$-$\varepsilon^*$-refinable 
 (Theorem 9.2.11). % TO_DO
 Burke proved that a space is subparacompact iff it is 
 $\varepsilon$-refinable 
