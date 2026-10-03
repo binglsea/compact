@@ -66,11 +66,11 @@ of open expansions.
 \begin{proof} 
 We prove only one case, other cases are
 similar. Let $\mathscr{B} = \{B_\alpha : \alpha \in \Delta\}$. Suppose
-the induced cover $\mathscr{B}^*$ as in Definition \ref{def:1.2.1}
+the induced cover $\mathscr{B}^*$ %as in Definition \ref{def:1.2.1}
 has a cushioned open refinement
 $\mathscr{G} = \{G_S: S\in [D^*]^{<\omega}\}$ such that for any
 $\Gamma\subset[\Delta]^{<\omega}$,
-$\overline{\bigcup_{S\in\Gamma}G_S}\subset\bigcup_{s\in\Gamma}U_S$.
+$\overline{\bigcup_{S\in\Gamma}G_S}\subset\bigcup_{S\in\Gamma}U_S$.
 For $\alpha\in\Delta$, let
 $$H_\alpha = X \setminus \overline{\bigcup\{G_S: S\in [\Delta]^{<\omega}, \alpha\notin S}\}.$$
 Then $B_\alpha\subset H_\alpha$ for each $\alpha\in\Delta$.
@@ -83,7 +83,7 @@ of $\mathscr{B}$.
 \end{proof} 
 
 {\lemma{} \label{lem:1.2.4}
-Let $\mathscr{D} = \{D_\alpha : \alpha \in A\}$ be a discrete family
+Let $\mathscr{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family
 of closed subsets of $X$ and $\mathscr{D}^*$ the induced cover.
 
 \textup{(i)}  If $\mathscr{D}^*$ has a cushioned open $($cushioned$)$ refinement, 
@@ -95,12 +95,12 @@ $(\sigma$-cushioned$)$
  $(\varepsilon$-sequence$)$ 
  of open expansions.
 
-\textup{(iii)}  If $D^{*F}$ has a $\sigma$-cushioned open (cushioned) refinement, then $D$ 
+\textup{(iii)}  If $D^{*F}$ has a $\sigma$-cushioned open $($cushioned$)$ refinement, then $D$ 
 has a locally finite (point-finite) open expansion.
 
 \textup{(iv)}  If $\mathscr{D}^{*F}$ has a $\sigma$-cushioned open 
 $(\sigma$-cushioned$)$ 
-refinement, then $\mathscr{D}$ has a $\theta$-sequence 
+refinement, then $\mathscr{D}$ has a $\theta^*$-sequence 
 $(\theta$-sequence$)$ of open expansions.
 }%end of lemma
 
@@ -112,7 +112,7 @@ $\mathscr{G}_{n} = \{G_{n, S}: S\in [\Delta]^{<\omega}\}$
 such that for each $n<\omega$ and each $\Gamma\subset [\Delta]^{<\omega}$,  
 $\overline{\bigcup_{s\in\Gamma} G_{n,S}} \subset \bigcup_{S\in\Gamma} U_S$. For $n<\omega$, $\alpha\in \Delta$, let
 $$H_{n,\alpha} = X \setminus \bigcup \{G_{n,S} : 
-S\in [\Delta]^{<\omega}, \alpha\in\Delta\setminus S\}$$
+S\in [\Delta]^{<\omega}, \alpha\notin S\}$$
 Then $D_\alpha \subset H_{n,\alpha}$ for each $\alpha \in \Delta$ and $n<\omega$. 
 For each $n<\omega$, $\mathscr{H}_{n} = \{H_{n,\alpha} : \alpha \in \Delta\}$ 
 is an open expansion of $\mathscr{D}$. 
