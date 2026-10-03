@@ -26,7 +26,7 @@ of $X$.
 It is easy to see that 
 $\mathscr{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
 U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}
-\textit{ where} S\in [\Delta]^{<\omega}\}$ 
+\textit{ where } S\in [\Delta]^{<\omega}\}$ 
 is a locally finite refinement of $\mathscr{B}^*$.
 We also see that
 $\mathscr{B}^*$ is an interior-preserving 
@@ -36,11 +36,12 @@ $\mathscr{B}^*$ is an interior-preserving
 Let $\mathscr{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
 closed subsets of $X$.
 For $\alpha\in\Delta$, we use notation 
-$U_\alpha = X \setminus \bigcup_{\gamma\in\Delta, \gamma\not=\alpha}D_\gamma$,
+$U_\alpha = X \setminus \bigcup_{\gamma\in\Delta\setminus\{\alpha\}}D_\gamma$,
 then $D_\alpha \subseteq U_\alpha$.
 Let $\mathscr{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
-$\mathscr{D}^{*F} = \{U_S: S\in [D^*]^{<\omega}, U_S = \bigcup_{\alpha \in S}U_\alpha \}$.
+$\mathscr{D}^{*F} = \{U_S: U_S = \bigcup_{\alpha \in S}U_\alpha
+\textit{ where } S\in [D^*]^{<\omega}\}$.
 Then $\mathscr{D}^*$ and $\mathscr{D}^{*F}$ are open $|\Delta|$-cover of $X$.
 We call $\mathscr{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
@@ -58,7 +59,8 @@ and $\mathscr{B}^*$ be the induced cover as in Definition \ref*{def:1.2.1}.
 
 \textup{(i)} If $\mathscr{B}^*$ has a cushioned open $($cushioned$)$ refinement, then $\mathscr{B}$ has a locally finite $($point-finite$)$ open expansion.
 
-\textup{(ii)}  If $\mathscr{B}^*$ has a $\sigma$-cushioned open $(\sigma$-cushioned$)$ refinement, then $\mathscr{B}$ has a $\sigma^*$-sequence $(\sigma$-sequence$)$ of open expansions.
+\textup{(ii)}  If $\mathscr{B}^*$ has a $\sigma$-cushioned open $(\sigma$-cushioned$)$ refinement, then $\mathscr{B}$ has a $\theta^*$-sequence $(\theta$-sequence$)$ 
+of open expansions.
 } %end of lemma
 
 \begin{proof} 
