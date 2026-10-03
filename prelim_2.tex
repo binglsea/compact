@@ -8,8 +8,9 @@
 {\definition{}\label{def:1.2.1} 
 Let $\mathscr{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
 family of subsets of $X$. 
-Let $\mathscr{B}^* = \{U_S: S\in [\Delta]^{<\omega},
-U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\} $. 
+Let $\mathscr{B}^* = \{U_S: 
+U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}
+\textit{ where } S\in [\Delta]^{<\omega}\}$. 
 Then $\mathscr{B}^*$ 
 is an open cover of $X$. We call $\mathscr{B}^*$ an 
 \uwave{induced cover}\index{induced cover| \S\ref{def:1.2.1}\hfill} 
@@ -21,15 +22,15 @@ of $X$.
 %对吧？所以 $X\in \mathscr{B}^* $?
 }%end of definition
 \vspace{8pt}
-Remark. 
+\noindent\textsc{Remark}. 
 It is easy to see that 
 $\mathscr{A} = \{U_S\bigcap \cap_{\alpha\in S} \overline{B_\alpha}: 
-S\in [\Delta]^{<\omega},
-U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}\}$ 
+U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}
+\textit{ where} S\in [\Delta]^{<\omega}\}$ 
 is a locally finite refinement of $\mathscr{B}^*$.
 We also see that
 $\mathscr{B}^*$ is an interior-preserving 
-(see Definition \ref{def:1.3.1}) directed open cover of $X$. 
+(see the later Definition \ref{def:1.3.1}) directed open cover of $X$. 
 
 {\definition{}\label{def:1.2.2}
 Let $\mathscr{D} = \{D_\alpha : \alpha \in \Delta\}$ be a discrete family of 
@@ -44,10 +45,12 @@ Then $\mathscr{D}^*$ and $\mathscr{D}^{*F}$ are open $|\Delta|$-cover of $X$.
 We call $\mathscr{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
 
-Remark. Clearly, $X \setminus \bigcup\mathscr{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
-= \bigcap\mathscr{D}^*$.  By Defintion \ref{def:1.3.1},
-$\mathscr{D}^*$ is an interior-preserving open cover and 
-$\mathscr{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
+\vspace{10pt}
+\noindent\textsc{Remark}. 
+Clearly, $X \setminus \bigcup\mathscr{D}\subset \bigcap_{\alpha\in\Delta}U_\alpha 
+= \bigcap\mathscr{D}^*$.
+$\mathscr{D}^*$ is an interior-preserving open cover (see Defintion \ref{def:1.3.1}) 
+and $\mathscr{D}^{*F}$ is an interior-preserving directed open cover of $X$. 
 
 {\lemma{} \label{lem:1.2.3}
 Let $\mathscr{B}$ be a locally finite family of $X$, 
