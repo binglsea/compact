@@ -1,0 +1,322 @@
+\documentclass[jiang8iv.tex]{subfiles}
+%subfile : ch8_3.tex
+\begin{document}
+	
+\section{Strongly Paracompact and Ultraparacompact Spaces} \label{sec:8.3}
+
+
+{\theorem{\label{th:8.3.1}} 
+For any \(\kappa\) the following are equivalent:
+
+\textup{(i)} \(X\) is \(\kappa\)-strongly paracompact.
+
+\textup{(ii)} Every open \(\kappa\)-cover of \(X\) has a star-finite open refinement.
+
+\textup{(iii)}  Every open \(\kappa\)-cover of \(X\) has a star-finite closed refinement.
+
+\textup{(iv)} Every open \(\kappa\)-cover of \(X\) has a star-finite refinement.
+}
+
+\begin{proof}
+(i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iv) Clear.
+
+(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). There is a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there is an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
+
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). There is a star-finite closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). For each \(F\in\mathscr{F}\), let \(V_F=X\setminus\bigcup\{F'\in\mathscr{F}\mid F'\cap F=\emptyset\}\). Then \(V_F\) is an open set containing \(F\). Let \(W_F=V_F\cap U_F\). Then \(\mathscr{W}=\{W_F\mid F\in\mathscr{F}\}\) is a star-finite open refinement of \(\mathscr{U}\).
+
+(iv) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). There is a star-finite refinement \(\mathscr{A}\) of \(\mathscr{U}\). For each \(x\in X\), let \(N_x\) be an open neighborhood of \(x\) intersecting only finitely many members of \(\mathscr{A}\). Then \(\mathscr{N}=\{N_x\mid x\in X\}\) has a star-finite refinement \(\mathscr{B}\). Then \(\{\overline{B}\mid B\in\mathscr{B}\}\) is a star-finite closed refinement of \(\mathscr{U}\). 
+
+\end{proof} 
+
+{\theorem{\label{th:8.3.2}} 
+ For any \(\kappa\) the following are equivalent:
+
+(i) \(X\) is \(\kappa\)-ultraparacompact.
+
+(ii) \(X\) is countably paracompact and every open \(\kappa\)-cover of \(X\) has a disjoint open refinement.
+
+(iii) Every open \(\kappa\)-cover of \(X\) has a disjoint closed refinement.
+}
+
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(ii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). There is a disjoint open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(\mathscr{V}\) is disjoint, \(\mathscr{V}\) is a partition of \(X\) by open sets, so members of \(\mathscr{V}\) are also closed. Thus, \(\mathscr{V}\) is a disjoint open refinement.
+
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). There is a disjoint closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). Since \(\mathscr{F}\) is a disjoint closed cover of \(X\), each \(F\in\mathscr{F}\) is also open. Thus, \(\mathscr{F}\) is a disjoint open refinement of \(\mathscr{U}\). \(\square\)
+
+8.3.3. Theorem. For any \(\kappa\) the following are equivalent:
+(i) \(X\) is \(\kappa\)-ultraparacompact.
+(ii) Every open \(\kappa\)-cover of \(X\) has a star-countable open refinement.
+(iii) Every open \(\kappa\)-cover of \(X\) has a star-countable closed refinement.
+
+Proof. (i) \(\Rightarrow\) (ii) Clear.
+(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). There is a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is ultraparacompact, \(X\) is zero-dimensional. For each \(V\in\mathscr{V}\), \(V\) can be partitioned into clopen sets. Thus, there is a star-countable closed refinement of \(\mathscr{U}\).
+
+(iii) \(\Rightarrow\) (i) Similar to the proof of 8.3.1. \(\square\)
+
+Yes. I reconstructed the **visible page** into clean LaTeX, preserving the notation and organization of the handwritten original. The last proof is cut off at the bottom of the page, so I have not invented the missing portion. 
+
+```latex
+Let $\mathscr{E}$ be a family of subsets of $X$ and $n\geq 1$.
+A $n$-sequence
+\[
+c_1,c_2,\ldots,c_n
+\]
+in $\mathscr{E}$ is a $n$-link from $c_1$ to $c_n$ if, for each
+$1\leq i\leq n-1$,
+\[
+c_i\cap c_{i+1}\ne\varnothing.
+\]
+
+Let $A,B\in\mathscr{E}$.  A link in $\mathscr{E}$ from $A$ to $B$
+is a $n$-link from $c_1$ to $c_n$ for some $n\geq1$ such that
+\[
+c_1=A\quad\text{and}\quad c_n=B.
+\]
+
+$\mathscr{E}$ is \emph{connected} if for every $A,B\in\mathscr{E}$
+there is a link in $\mathscr{E}$ from $A$ to $B$.
+
+For any family $\mathscr{E}$, $D\in\mathscr{E}$, and $n\geq1$, let
+\[
+P_n(D)
+=
+\{A\in\mathscr{E}:\text{ there is a $n$-link in $\mathscr{E}$
+	from $A$ to $D$}\}.
+\]
+
+\bigskip
+
+\textbf{8.3.3. Lemma.}
+{\lemma{\label{lem:8.3.3}} 
+Let $\mathscr{E}$ be a family in $X$.
+
+\begin{enumerate}
+	\item[(i)]
+	If $\mathscr{E}$ is connected, then for any $D\in\mathscr{E}$,
+	\[
+	\mathscr{E}=\bigcup_{n\geq1}P_n(D),
+	\]
+	and for every $n\geq1$,
+	\[
+	P_{n+1}(D)
+	=
+	\bigcup_{\substack{C\in\mathscr{E}\\
+			C\cap P_n(D)\ne\varnothing}} C.
+	\]
+	
+	\item[(ii)]
+	If $\mathscr{E}$ is connected and star-countable, then
+	$\mathscr{E}$ is countable.
+\end{enumerate}
+
+}
+
+\textbf{Proof.}
+(i) By a routine operation.
+
+(ii) Suppose $\mathscr{E}$ is connected and star-countable. Then for
+each $E\in\mathscr{E}$, $(CE)_{\mathscr{E}}$ is countable.
+If $D\in\mathscr{E}$, then
+\[
+P_1(D)=\{D\},\qquad P_2(D)=(CE)_{D}
+\]
+are countable. If $P_n(D)$ is countable, then by (i),
+\[
+P_{n+1}(D)
+=
+\bigcup_{C\in P_n(D)}(CE)_{C}
+\]
+is countable. Thus each $P_n(D)$ is countable, so
+\[
+\mathscr{E}=\bigcup_{n\geq1}P_n(D)
+\]
+is countable. \qed
+
+\bigskip
+
+{\lemma{\label{lem:8.3.4}} 
+
+Any family $\mathscr{B}$ of subsets of $X$ can be expressed as
+\[
+\mathscr{B}=\bigcup_{\alpha\in A}\mathscr{E}_{\alpha}
+\]
+such that
+\[
+\left(\bigcup\mathscr{E}_{\alpha}\right)
+\cap
+\left(\bigcup\mathscr{E}_{\beta}\right)
+=\varnothing
+\qquad\text{whenever }\alpha\ne\beta.
+\]
+
+If $\mathscr{B}$ is star-countable, then each
+$\mathscr{E}_{\alpha}$ is countable.
+
+}
+
+
+\textbf{Proof.}
+Let $\mathscr{B}$ be a family in $X$. Let
+```
+
+```latex
+Let \(\mathscr{A}\) be a family of subsets of \(X\) and \(n\ge 1\). A sequence \(A_1,\dots,A_n\) in \(\mathscr{A}\) is a \(n\)-chain from \(A_1\) to \(A_n\) in \(\mathscr{A}\) if \(A_i\cap A_{i+1}\neq\emptyset\) for each \(i=1,\dots,n-1\). For \(A,B\in\mathscr{A}\), \(A\) and \(B\) are chain-connected in \(\mathscr{A}\) if there is a chain from \(A\) to \(B\) in \(\mathscr{A}\). We define a relation \(\sim\) on \(\mathscr{A}\) by \(A\sim B\) if and only if \(A\) and \(B\) are chain-connected in \(\mathscr{A}\). It is easy to show that \(\sim\) is an equivalence relation on \(\mathscr{A}\). For each \(A\in\mathscr{A}\), let \(\mathscr{A}(A)\) denote the equivalence class containing \(A\), and let \(C(A,\mathscr{A})=\bigcup\mathscr{A}(A)\). Then \(\{C(A,\mathscr{A})\mid A\in\mathscr{A}\}\) forms a partition of \(\bigcup\mathscr{A}\).
+
+8.3.4. Lemma. Let \(\mathscr{U}\) be a star-countable open cover of \(X\). Then \(\{C(U,\mathscr{U})\mid U\in\mathscr{U}\}\) is a disjoint open cover of \(X\) such that each \(C(U,\mathscr{U})\) is a open-closed set in \(X\) and \(C(U,\mathscr{U})\) is covered by a countable subcollection of \(\mathscr{U}\).
+
+Proof. It is clear that \(\{C(U,\mathscr{U})\mid U\in\mathscr{U}\}\) is a disjoint open cover of \(X\). Since \(X\setminus C(U,\mathscr{U})=\bigcup\{C(V,\mathscr{U})\mid V\in\mathscr{U}, C(V,\mathscr{U})\cap C(U,\mathscr{U})=\emptyset\}\) is open, \(C(U,\mathscr{U})\) is closed. For \(U\in\mathscr{U}\), let \(K_0(U)=\{U\}\), \(K_n(U)=\{V\in\mathscr{U}\mid V\cap(\bigcup K_{n-1}(U))\neq\emptyset\}\) for \(n\ge 1\). Since \(\mathscr{U}\) is star-countable, \(K_n(U)\) is countable for each \(n\in\omega\). Thus, \(\mathscr{U}(U)=\bigcup_{n\in\omega}K_n(U)\) is a countable subcollection of \(\mathscr{U}\). It is easy to see that \(C(U,\mathscr{U})=\bigcup\mathscr{U}(U)\). \(\square\)
+
+
+{\theorem{\label{th:8.3.5}} 
+(Tsuda [1982]). For any \(\kappa\) the following are equivalent:
+(i) \(X\) is \(\kappa\)-strongly paracompact.
+(ii) \(X\) is \(\kappa\)-strongly submetacompact and every open \(\kappa\)-cover of \(X\) has a star-countable open refinement.
+}
+
+```
+```latex
+\(\hat{\mathscr{B}}=\{\mathscr{C}\subset\mathscr{B}\mid\mathscr{C}\text{ is a chain-connected subfamily of }\mathscr{B}\}\). Then for every chain \(\mathscr{A}\subset\hat{\mathscr{B}}\), \(\bigcup\mathscr{A}\in\hat{\mathscr{B}}\).
+By Zorn's Lemma, \(\hat{\mathscr{B}}\) has a maximal element \(\mathscr{M}_0\). Let \(V_0=\bigcup\mathscr{M}_0\). Then \(V_0\) is an open-closed subset of \(X\) and \(\mathscr{M}_0\) is a star-countable cover of \(V_0\). By Lemma 8.3.4, \(V_0\) is Lindelöf. Since \(X\) is \(\kappa\)-strongly submetacompact, \(V_0\) is strongly submetacompact. Thus \(V_0\) has a star-finite open refinement. It follows that \(X\) is \(\kappa\)-strongly paracompact. \(\square\)
+
+8.3.6. Theorem. For any \(\kappa\) the following are equivalent:
+(i) \(X\) is \(\kappa\)-ultraparacompact.
+(ii) \(X\) is zero-dimensional and \(\kappa\)-strongly paracompact.
+(iii) Every open \(\kappa\)-cover of \(X\) has a star-countable open refinement by clopen sets.
+
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(ii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). Since \(X\) is \(\kappa\)-strongly paracompact, \(\mathscr{U}\) has a star-finite open refinement \(\mathscr{V}\). Since \(X\) is zero-dimensional, each \(V\in\mathscr{V}\) can be partitioned into clopen sets refinement. Thus \(\mathscr{U}\) has a star-finite clopen refinement \(\mathscr{W}\). For each \(W\in\mathscr{W}\), let \(C(W,\mathscr{W})=\bigcup\mathscr{W}(W)\). Then \(\{C(W,\mathscr{W})\mid W\in\mathscr{W}\}\) is a disjoint clopen cover of \(X\). Since \(\mathscr{W}(W)\) is a star-finite clopen cover of \(C(W,\mathscr{W})\), \(C(W,\mathscr{W})\) is ultraparacompact. Thus \(X\) is \(\kappa\)-ultraparacompact.
+(iii) \(\Rightarrow\) (i) Similar to (ii) \(\Rightarrow\) (i). \(\square\)
+
+8.3.7. Corollary. (Ellis [1968]). A space \(X\) is ultraparacompact if and only if \(X\) is zero-dimensional and paracompact. \(\square\)
+
+123
+
+```
+
+```latex
+Proof. Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). Then, as in the lemma, let \(\mathscr{U}_\beta=\{U_{\alpha,\beta}\mid \alpha\in\Delta_\beta\}\).
+By Theorem 8.3.6, each \(U_{\alpha,\beta}\) is ultraparacompact. Since \(\mathscr{U}_\beta\) is a disjoint open cover of \(X\), \(X\) is \(\kappa\)-ultraparacompact. \(\square\)
+
+8.3.8. Theorem. For any space \(X\), the following are equivalent:
+(i) \(X\) is ultraparacompact.
+(ii) Every open cover of \(X\) has a star-countable clopen refinement.
+(iii) Every open cover of \(X\) has a star-finite clopen refinement.
+
+Proof. Follows from Theorem 8.3.6. \(\square\)
+
+8.3.9. Corollary. (Coban [1970]). Every paracompact zero-dimensional space is ultraparacompact. \(\square\)
+
+8.3.10. Theorem. For any space \(X\), the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) \(X\) is paracompact and every open cover of \(X\) has a star-countable open refinement.
+(iii) \(X\) is star-finite paracompact.
+
+Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.3.5.
+(ii) \(\Rightarrow\) (iii) By Lemma 8.3.4.
+(iii) \(\Rightarrow\) (i) Clear. \(\square\)
+
+8.3.11. Corollary. (Begle [1949]). Every Lindelöf space is strongly paracompact. \(\square\)
+
+124
+
+```
+
+```latex
+cover \(\mathscr{B}=\bigcup_{n\in\omega}\mathscr{B}_n\) of \(X\) such that \(\mathscr{B}\) and \(\overline{\mathscr{B}}\) are star-finite, \(\mathscr{B}_n\) is a functionally open \(\overline{*}\)-
+
+8.3.12. Theorem. For any \(\kappa\) the following are equivalent:
+(i) \(X\) is \(\kappa\)-strongly paracompact.
+(ii) Every open \(\kappa\)-cover of \(X\) has a star-finite open refinement.
+(iii) Every open \(\kappa\)-cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that each \(V\in\mathscr{V}\) is strongly paracompact.
+
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\kappa\)-cover of \(X\). By (iii), there is a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\) such that each \(V\in\mathscr{V}\) is strongly paracompact. By Lemma 8.3.4, \(\{C(V,\mathscr{V})\mid V\in\mathscr{V}\}\) is a disjoint open cover of \(X\) and each \(C(V,\mathscr{V})\) is covered by a countable subcollection \(\mathscr{V}_V\) of \(\mathscr{V}\). Since each member of \(\mathscr{V}_V\) is strongly paracompact, \(C(V,\mathscr{V})\) is strongly paracompact. Thus \(X\) is \(\kappa\)-strongly paracompact. \(\square\)
+
+8.3.13. Theorem. (Sun [1992]). For any space \(X\) the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) \(X\) is submetacompact and every open cover of \(X\) has a star-countable open refinement.
+(iii) \(X\) is metacompact and every open cover of \(X\) has a star-countable open refinement.
+
+Proof. (i) \(\Rightarrow\) (iii) and (iii) \(\Rightarrow\) (ii) Clear.
+(ii) \(\Rightarrow\) (i) By Theorem 8.3.5. \(\square\)
+
+
+8.3.14. Theorem. For any \(\kappa\) the following are equivalent:
+(i) \(X\) is normal \(\kappa\)-strongly paracompact.
+(ii) Every open \(\kappa\)-cover of \(X\) has a star-finite open refinement.
+(iii) Every open \(\kappa\)-cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that \(\overline{\mathscr{V}}\) is star-countable.
+
+Proof. (i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iii) Clear.
+(iii) \(\Rightarrow\) (i) Similar to the proof of Theorem 8.3.12. \(\square\)
+
+8.3.15. Theorem. For any space \(X\) the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) \(X\) is paracompact and every open cover has a star-countable open refinement.
+(iii) Every open cover of \(X\) has a star-finite open refinement.
+
+Proof. Follows from Theorem 8.3.12 and Theorem 8.3.14. \(\square\)
+
+8.3.16. Theorem. For any \(\kappa\) the following are equivalent:
+(i) \(X\) is \(\kappa\)-strongly paracompact.
+(ii) \(X\) is \(\kappa\)-strongly submetacompact and every open \(\kappa\)-cover of \(X\) has a star-countable open refinement.
+
+Proof. Follows from Theorem 8.3.5. \(\square\)
+
+8.3.17. Theorem. (Ponomarev [1962]). For any space \(X\) the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) Every open cover of \(X\) has a star-finite open refinement.
+(iii) Every open cover of \(X\) has a star-countable open refinement. \(\square\)
+
+126
+
+```
+```latex
+be a cover of \(X\), star-countable and CP closed refinement of \(\mathscr{U}\). Let \(\mathscr{B}=\bigcup_{\beta\in\Delta}\mathscr{B}_\beta\)
+
+8.3.18. Theorem. For any space \(X\) the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) \(X\) is paracompact and every open cover of \(X\) has a star-countable open refinement.
+(iii) Every open cover of \(X\) has a star-countable open refinement.
+
+Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.3.10.
+(ii) \(\Rightarrow\) (iii) Clear.
+(iii) \(\Rightarrow\) (i) By Theorem 8.3.17. \(\square\)
+
+8.3.19. Theorem. For any space \(X\) the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) Every open cover of \(X\) has a star-finite open refinement.
+(iii) Every open cover of \(X\) has a star-countable open refinement.
+
+Proof. Follows from Theorem 8.3.17. \(\square\)
+
+8.3.20. Theorem. (Isbell [1964]). Every metric space is strongly paracompact if and only if it has a star-countable open cover. \(\square\)
+
+127
+
+```
+```latex
+(i) \(\Rightarrow\) (iii) Clear. Assume (iii). For every \(\alpha\) and every open \(\kappa\)-cover \(\mathscr{U}\) of \(X\), since \(X\) is regular, there is an open
+
+8.3.21. Theorem. For any space \(X\) the following are equivalent:
+(i) \(X\) is strongly paracompact.
+(ii) \(X\) is submetacompact and every open cover of \(X\) has a star-countable open refinement.
+(iii) Every open cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that each \(V\in\mathscr{V}\) is strongly paracompact.
+
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(ii) \(\Rightarrow\) (i) By Theorem 8.3.13.
+(iii) \(\Rightarrow\) (i) By Theorem 8.3.12. \(\square\)
+
+8.3.22. Corollary. (Burke [1984]). Every star-countable open cover of a strongly paracompact space has a star-finite open refinement. \(\square\)
+
+8.3.23. Theorem. For any space \(X\) the following are equivalent:
+(i) \(X\) is ultraparacompact.
+(ii) \(X\) is zero-dimensional and strongly paracompact.
+(iii) Every open cover of \(X\) has a star-countable open refinement by clopen sets.
+
+Proof. Follows from Theorem 8.3.6. \(\square\)
+
+8.3.24. Corollary. (De Groot [1956]). A space \(X\) is ultraparacompact if and only if \(X\) is zero-dimensional and paracompact. \(\square\)
+
+
+
+\end{document}

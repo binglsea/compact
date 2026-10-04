@@ -21,5 +21,6 @@
 \contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{28}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{28}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Fully Normal Spaces}{29}{section.8.2}%
-\contentsline {chapter}{Bibliography}{32}{chapter*.7}%
-\contentsline {chapter}{Index}{35}{chapter*.7}%
+\contentsline {section}{\numberline {8.3}Strongly Paracompact and Ultraparacompact Spaces}{31}{section.8.3}%
+\contentsline {chapter}{Bibliography}{36}{chapter*.7}%
+\contentsline {chapter}{Index}{39}{chapter*.7}%
