@@ -87,13 +87,13 @@ $$\mathscr{W} = \{W_{n,k}: W_{n,k} = U_k \bigcap (G_{n+1} \setminus F_{n-1})
  \text{ for } 
 1\le k \le n<\omega\}.$$
 To see that $\mathscr{W}$ covers $X$, let $x \in X$. 
-Since $\{G_n\}$ covers $X$, $f(x) > 0$. Let $m$ be the smallest integer such that 
+Since $\mathscr{U}$ covers $X$, $f(x) > 0$. Let $m$ be the smallest integer such that 
 $x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k \le m} U_k$, 
 there exists $k \le m$ such that 
 $x \in U_k \bigcap (G_{m+1} \setminus F_{m-1}) = W_{m,k}$.
 Hence $\mathscr{W}$ is a countable functionally open refinement of $\mathscr{U}$.
 To see that $\mathscr{W}$ is star-finite, fix $(k, j)$, $1 \le j \le k$. 
-For any $(m. i)$, $1 \le i \le m$, if $m > k + 2$, 
+For any $(m, i)$ stisfying $1 \le i \le m$, if $m \ge k + 2$, 
 then $W_{k,j} \subset G_{k+1} \subset F_{k+1} \subset F_{m-1}$. 
 Then $W_{k,j} \bigcap W_{m,i} \subset F_{m-1}\bigcap(X\setminus F_{m-1})= \emptyset$.
 Hence if $W_{m,j} \bigcap W_{k,i} \neq \emptyset$, then $m < k+2$.
