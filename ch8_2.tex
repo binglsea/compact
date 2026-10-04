@@ -32,25 +32,27 @@ open cover $\{S_n: n\in\omega\}$ such that
 $\overline{S_n}\subset\mathscr{V}_n$
 for each \(n < \omega\).
 By Corollary \ref{cor:5.2.5},  % TO_DO
-\(X\) is countably paracompact. There is
+\(X\) is countably paracompact. There exists
 a locally finite open cover \(\mathscr{W}=\{W_n: n<\omega\}\) of \(X\) such that 
 \(W_n\subset S_n\)
 for each \(n\in\omega\). Then \(\overline{W_n}\subset\bigcup\mathscr{V}_n\). 
 We have
 
-(1) \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\) is locally finite open
+(1) \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\) is locally finite and open
 for each \(n < \omega\).
 
 \noindent\textsc{Proof of (1).}
 Let \(n<\omega\), \(x\in X\). If \(x\notin\bigcup{\mathscr{V}}_n\), 
 then \(X\setminus\overline{W_n}\) is a
-neighborhood of \(x\) which has nonempty intersection with no member
+neighborhood of \(x\) which 
+%has nonempty intersection with no member
+is disjoint with any member
 of \(\mathscr{G}_n\). If \(x\in\mathscr{V}_{n,\beta}\) for some \(\beta\in\Delta_n\),
 then \(\{\alpha\in\Delta_n: V_{n,\beta}\cap V_{n,\alpha}\neq\emptyset\}\) is finite. Then the set
 \(\{\alpha\in\Delta_n: V_{n,\beta}\cap (W_n\cap V_{n,\alpha})\neq\emptyset\}\) is finite, 
-so \(\mathscr{G}_n\) is ocally finite and (1) holds.
+so \(\mathscr{G}_n\) is locally finite and (1) holds.
 
-Let \(\mathscr{H}_n=\{H_n: n<\omega\}\) be a locally finite open cover of \(X\) such that
+Let \(\mathscr{H}=\{H_n: n<\omega\}\) be a locally finite open cover of \(X\) such that
 \(H_n\subset\bigcup \mathscr{G}_n\) for each \(n<\omega\). 
 Let \(\mathscr{R}=\{H_n\cap W_n\cap V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\}\).
 
@@ -61,35 +63,40 @@ that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{H}\) is
 there exists \(G_0\in\operatorname{top}(x)\) such
 that \(D=\{n<\omega: G_0\cap H_n \ne \emptyset\}\) is finite. By (1), 
 for each \(n\in D\)
-there is \(G_n\in\operatorname{top}(x)\) such that 
+there exists \(G_n\in\operatorname{top}(x)\) such that 
 \(C_n=\{\alpha\in\Delta_n: G_n\cap(W_n\cap V_{n,\alpha})\neq\emptyset\}\)
-is finite. Let \(G=R_0\cap\bigcap_{n\in D_0}G_n\) and let 
-$C=\{(n,,\alpha): n<\omega,\alpha\in\Delta_n, G\cap (W_n\cap V_{n,\alpha})\neq\emptyset\}.$
-is finite. Then \(C\subset\bigcup_{n\in D_0}(\{n\}\times\Gamma_n\times C_n)\), 
+is finite. Let \(G=G_0\bigcap(\cap_{n\in D}G_n)\) and let 
+
+$$C=\{(n,\alpha): n<\omega,\alpha\in\Delta_n, G\cap H_n \cap W_n\cap V_{n,\alpha} \neq\emptyset\}.$$
+
+\noindent Then $C\subset \bigcup_{n\in D}(\{n\}\times C_n)$, 
 so \(C\) is finite and (2) holds.
 \end{proof} 
 
 
 \begin{corollary} \label{cor:8.2.2}
 \textup{([Nagami 1955]\textsuperscript{\cite{Nagami}})}
-Every screenable, normal, countably paracompact space is paracompact.
+Every screenable, normal, countably paracompact space is paracompact. \hfill\qedsymbol
 \end{corollary}
 
 
-8.2.3. Theorem. For any \(\lambda\) the following
-are equivalent:
+{\theorem{\label{th:8.2.3}}
+For any \(\lambda\) the following are equivalent:
 (i) \(X\) is \(\lambda\)-fully normal.
 (ii) \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-\(\mathscr{D}_\omega\)-refinable.
 (iii) \(X\) is normal, \(\lambda\)-expandable and \(\lambda\)-\(\mathscr{D}_\omega\)-refinable.
+}
 
-Proof. By Theorem 8.1.7. \(\square\)
+\begin{proof}
+By Theorem \ref{th:8.1.7}.
+\end{proof}
 
 8.2.4. Corollary. For any \(\lambda\) the following are
 equivalent:
-(i) \(X\) is \(\lambda\)-fully normal.
-(ii) \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-subparacompact.
-(iii) \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-metacompact.
-(iv) \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-submetacompact.
+\textup{(i)}  \(X\) is \(\lambda\)-fully normal.
+\textup{(ii)}  \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-subparacompact.
+\textup{(iii)} \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-metacompact.
+\textup{(iv)}  \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-submetacompact.
 
 Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.2.3 and ...
 (ii) \(\Rightarrow\) (iii) By Theorem 8.2.3.
