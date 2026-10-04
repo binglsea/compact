@@ -25,37 +25,42 @@ By Theorem \ref{th:2.2.3} let us show that $X$ is paracompact.
 Suppose $\mathscr{U}$ is an open $\lambda$-cover of $X$. By (iii), 
 $\mathscr{U}$ has an open refinement 
 $\mathscr{V} = \bigcup_{n < \omega} \mathscr{V}_n$, 
-where each $\mathscr{V}_n = \{V_{n,\alpha} \mid \alpha \in \Delta_n\}$ 
+where each $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta_n\}$ 
 is star-finite.
 Since \(\mathscr{V}\) is countably shrinkable, there exists an
 open cover $\{S_n: n\in\omega\}$ such that 
 $\overline{S_n}\subset\mathscr{V}_n$
-for each \(n\in\omega\).
+for each \(n < \omega\).
 By Corollary \ref{cor:5.2.5},  % TO_DO
 \(X\) is countably paracompact. There is
-alocally finite open cover \(\mathscr{W}=\bigcup_{n\in\omega}\mathscr{W}_n\) of \(X\) such that \(\overline{\mathscr{W}}_n\subset\bigcup\mathscr{V}_n\)
-for each \(n\in\omega\). Then \(\overline{\mathscr{W}}_n\subset\bigcup\mathscr{V}_n\). We have
-\(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}\mid\alpha\in\Delta_n\}\) islocally finite open
-cover for each \(n\in\omega\).
+a locally finite open cover \(\mathscr{W}=\{W_n: n<\omega\}\) of \(X\) such that 
+\(W_n\subset S_n\)
+for each \(n\in\omega\). Then \(\overline{W_n}\subset\bigcup\mathscr{V}_n\). 
+We have
 
-Proof.
-Let \(n<\omega\), \(x\in X\). If \(x\notin\overline{\mathscr{W}}_n\), then \(X\setminus\overline{\mathscr{W}}_n\) is a
+(1) \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\) is locally finite open
+cover for each \(n < \omega\).
+
+\noindent\textsc{Proof of (1).}
+Let \(n<\omega\), \(x\in X\). If \(x\notin\bigcup{\mathscr{V}}_n\), 
+then \(X\setminus\overline{W_n}\) is a
 neighborhood of \(x\) which has nonempty intersection with no member
 of \(\mathscr{G}_n\). If \(x\in\mathscr{V}_{n,\beta}\) for some \(\beta\in\Delta_n\),
-then \(\{\alpha\in\Delta_n\mid V_{n,\beta}\cap V_{n,\alpha}\neq\emptyset\}\) is finite. Then the set
-\(\{\alpha\in\Delta_n\mid (V_{n,\beta}\cap W_n)\cap(V_{n,\alpha}\cap W_n)\neq\emptyset\}\) is finite, so \(\mathscr{G}_n\) islocally finite and (1)
-holds.
+then \(\{\alpha\in\Delta_n: V_{n,\beta}\cap V_{n,\alpha}\neq\emptyset\}\) is finite. Then the set
+\(\{\alpha\in\Delta_n: V_{n,\beta}\cap (W_n\cap(V_{n,\alpha}\cap W_n)\neq\emptyset\}\) is finite, 
+so \(\mathscr{G}_n\) isl ocally finite and (1)holds.
 
-Let \(\mathscr{R}_n=\{R_{n,\gamma}\mid\gamma\in\Gamma_n\}\) be alocally finite open cover of \(X\) such that
-\(\overline{\mathscr{R}}_n\prec\mathscr{G}_n\) for each \(n\in\omega\). Let \(\mathscr{R}=\bigcup_{n\in\omega}\{R_{n,\gamma}\cap W_n\cap V_{n,\alpha}\mid\gamma\in\Gamma_n,\alpha\in\Delta_n\}\).
+Let \(\mathscr{H}_n=\{H_n: n<\omega\}\) be a locally finite open cover of \(X\) such that
+\(H_n\subset\bigcup \mathscr{G}_n\) for each \(n\in\omega\). 
+Let \(\mathscr{R}=\{H_n\cap W_n\cap V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\}\).
 
-(2) \(\mathscr{R}\) is alocally finite open refinement of \(\mathscr{U}\). Thus, \(X\) is paracompact.
+(2) \(\mathscr{R}\) is a locally finite open refinement of \(\mathscr{U}\). Thus, \(X\) is paracompact.
 
 Proof. It is clear that \(\mathscr{R}\) is an open refinement of \(\mathscr{U}\). To show
 that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{W}\) is locally finite, there is \(D_0\in[\omega]^{<\omega}\) such
-that \(D_0=\{n\in\omega\mid x\in\overline{\mathscr{W}}_n\}\) is finite. By (1), for each \(n\in D_0\)
-there is \(G_n\in\mathscr{N}(x)\) such that \(C_n=\{\alpha\in\Delta_n\mid G_n\cap(W_n\cap V_{n,\alpha})\neq\emptyset\}\)
-is finite. Let \(G=R_0\cap\bigcap_{n\in D_0}G_n\) and let \(C=\{(n,\gamma,\alpha)\mid n\in\omega, \gamma\in\Gamma_n, \alpha\in\Delta_n, G\cap(R_{n,\gamma}\cap W_n\cap V_{n,\alpha})\neq\emptyset\}\).
+that \(D_0=\{n\in\omega: x\in\overline{\mathscr{W}}_n\}\) is finite. By (1), for each \(n\in D_0\)
+there is \(G_n\in\mathscr{N}(x)\) such that \(C_n=\{\alpha\in\Delta_n: G_n\cap(W_n\cap V_{n,\alpha})\neq\emptyset\}\)
+is finite. Let \(G=R_0\cap\bigcap_{n\in D_0}G_n\) and let \(C=\{(n,\gamma,\alpha): n\in\omega, \gamma\in\Gamma_n, \alpha\in\Delta_n, G\cap(R_{n,\gamma}\cap W_n\cap V_{n,\alpha})\neq\emptyset\}\).
 Then \(C\subset\bigcup_{n\in D_0}(\{n\}\times\Gamma_n\times C_n)\), so \(C\) is finite and (2) holds.
 \end{proof} 
 
@@ -107,11 +112,11 @@ Proof. (i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iii) \(\Rightarrow\) (iv) Clear
 
 8.2.7. Theorem. For any \(\lambda\), the following are equivalent:
 (i) \(X\) is \(\lambda\)-fully normal.
-(ii) Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has alocally finite and functionally discrete open refinement \(\mathscr{V}\) such that \(\mathscr{V}^*\) refines \(\mathscr{U}\).
+(ii) Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a locally finite and functionally discrete open refinement \(\mathscr{V}\) such that \(\mathscr{V}^*\) refines \(\mathscr{U}\).
 (iii) Every open \(\lambda\)-cover of \(X\) has a cushioned open refinement.
-(iv) Every open \(\lambda\)-cover has a CP closed refinement.
+(iv) Every open \(\lambda\)-cover has a closure-preserving closed refinement.
 (v) Every open \(\lambda\)-cover has a cushioned refinement.
-(vi) Everylocally finite open \(\lambda\)-cover has a CP closed refinement.
+(vi) Every locally finite open \(\lambda\)-cover has a closure-preserving closed refinement.
 
 Proof. It is clear that (i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iii) \(\Rightarrow\) (v), (iii) \(\Rightarrow\) (iv) \(\Rightarrow\) (vi), and (v) \(\Rightarrow\) (vi)[cite: 3]. To see that (vi) \(\Rightarrow\) (i) and (v) \(\Rightarrow\) (i)[cite: 3].
 Assume (v) or (vi)[cite: 3]. By Theorem 8.1.5, \(X\) is \(\lambda\)-collectionwise
@@ -125,7 +130,7 @@ normal. By Theorem 4.1.11, \(X\) is \(\lambda\)-subparacompact[cite: 4]. By Coro
 (ii) Every open \(\lambda\)-cover has a \(\sigma\)-discrete closed refinement \(\mathscr{F}\) such that \(\mathscr{F}\) covers \(X\)[cite: 4].
 (iii) Every open \(\lambda\)-cover has a \(\sigma\)-locally finite closed refinement \(\mathscr{F}\) such that \(\mathscr{F}\) covers \(X\)[cite: 4].
 (iv) (Jiang [1992]). Every open \(\lambda\)-cover has a \(\sigma\)-cushioned open refinement[cite: 4].
-(v) Everylocally finite open \(\lambda\)-cover has a \(\sigma\)-CP closed refinement \(\mathscr{F}\) such that \(\mathscr{F}\) covers \(X\)[cite: 4].
+(v) Every locally finite open \(\lambda\)-cover has a \(\sigma\)-closure-preserving closed refinement \(\mathscr{F}\) such that \(\mathscr{F}\) covers \(X\)[cite: 4].
 
 Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.2.7[cite: 4].
 (ii) \(\Rightarrow\) (iii), (iv) \(\Rightarrow\) (v) and (iii) \(\Rightarrow\) (v) Clear[cite: 4].
@@ -141,7 +146,7 @@ Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.2.7[cite: 4].
 ```latex
 (ii) Every open cover has a \(\sigma\)-discrete open refinement.
 (iii) Every open cover has a \(\sigma\)-locally finite open refinement.
-(iv) Every open cover has a \(\sigma\)-CP open refinement.
+(iv) Every open cover has a \(\sigma\)-closure-preserving open refinement.
 
 (b) (Michael [1957]). For any \(T_1\) space \(X\), the following are equivalent:
 (i) \(X\) is \(T_2\) paracompact.
@@ -151,12 +156,12 @@ Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.2.7[cite: 4].
 8.2.10. Corollary. (Morita [ ]). For any \(\lambda\) the following are equivalent:
 (i) \(X\) is \(\lambda\)-fully normal.
 (ii) Every open \(\lambda\)-cover has alocally finite closed refinement.
-(iii) Every open \(\lambda\)-cover has a CP closed refinement.
+(iii) Every open \(\lambda\)-cover has a closure-preserving closed refinement.
 
 8.2.11. Theorem. For any \(\lambda\) the following are equivalent:
 (i) \(X\) is \(\lambda\)-fully normal.
 (ii) (Jiang [1992]). \(X\) is \(\lambda\)-\(\mathscr{D}_\omega\)-refinable.
-(iii) Everylocally finite open \(\lambda\)-cover of \(X\) has an \(\overline{*}\)-sequence oflocally finite open covers of \(X\).
+(iii) Every locally finite open \(\lambda\)-cover of \(X\) has an \(\overline{*}\)-sequence of locally finite open covers of \(X\).
 (iv) Everylocally finite open \(\lambda\)-cover of \(X\) has a local-star refining sequence bylocally finite open covers.
 (v) Every open \(\lambda\)-cover of \(X\) has a local-star refining sequence by semi-open covers.
 
