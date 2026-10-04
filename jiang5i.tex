@@ -7,7 +7,7 @@
 \section{Normal Covers and $D\omega^2$-refinable Spaces}
 \label{sec:5-1}
 
-{\theorem{\label{th:5-1-1}}
+{\theorem{\label{th:5.1.1}}
 For any open cover $\mathscr{U}$ of $X$, the following are equivalent.
 	
 \textup{(i)}  $\mathscr{U}$ is a normal cover.
@@ -23,10 +23,56 @@ $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ such that each $\bigcup \mathsc
 
 $(2) \Rightarrow (3)$. Trivial.
 
-$(3) \Rightarrow (1)$. Suppose $\mathscr{U}$ is an open cover of $X$ and $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is a functionally open refinement of $\mathscr{U}$ such that each $\mathscr{V}_n$ is star-finite and $\bigcup \mathscr{V}_n$ is functionally open. By Theorem 2.1.3, $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ has a star-finite functionally open refinement $\mathscr{W}$. Since $X$ is UP, $\mathscr{W}$ is a normal cover of $X$. Let $\mathscr{O}$ ...
+$(3) \Rightarrow (1)$. Suppose $\mathscr{U}$ is an open cover of $X$ and 
+$\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is a functionally open refinement 
+of $\mathscr{U}$ such that each 
+$\mathscr{V}_n=\{V_{n,\alpha}: \alpha\in\Delta_n\}$ is star-finite and 
+$\bigcup \mathscr{V}_n$ is functionally open. By Theorem \ref{th:2.1.3}, 
+$\mathscr{V}' = \bigcup_{n<\omega} \mathscr{V}_n$ has a star-finite 
+functionally open refinement $\mathscr{L}$. Since $L$ is locally finite, 
+$\mathscr{V}'$ is a normal cover of $X$. Let $\mathscr{W}$ 
+be a normal cover of \(X\) such that 
+\(\overline{\mathscr{W}}\) refines \(\mathscr{V}'\). 
+By Lemma \ref{lem:1.1.5}, 
+there exists a locally finite functionally open cover
+\(\mathscr{H}=\bigcup_{n\in\omega}\mathscr{H}_n\) such that \(\overline{H_n}\subset\cup\mathscr{V}_n\) for each \(n<\omega\).
+For each \(n<\omega\), let \(\mathscr{G}_n=\{H_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\) 
+where each set \(H_\cap V_{n,\alpha}\) is
+functionally open. To see that \(\mathscr{G}_n\) is locally finite, let \(x\in X\). If
+\(x\notin\cup \mathscr{V}_n\), then 
+\(X\setminus\overline{H}_n\in\operatorname{top}(x)\) 
+which intersects no member of \(\mathscr{G}_n\). 
+If \(x\in V_{n,\beta}\) for some \(\beta\in\Delta_n\), then the set
+\(\{\alpha\in\Delta_n: V_{n,\beta}\cap (H_n\cap V_{n,\alpha})\neq\emptyset\}\) 
+is finite because \(\mathscr{V}_n\) is
+star-finite. Hence each \(\mathscr{G}_n\) is locally finite. 
+By Theorem \ref{th:2.1.3}, % TO_DO
+there is a countable locally finite functionally open cover 
+\(\mathscr{S}=\{S_n: n<\omega\}\)
+such that \(\S_n\subset\bigcup\mathscr{G}_n \forall \, n\). 
+Let
+$$\mathscr{R}=\{S_n\cap H_n\cap V_{n,\alpha}:  \alpha\in\Delta_n, n < \omega\}.$$
 
-
+\noindent Then \(\mathscr{R}\) is a functionally open refinement of \(\mathscr{U}\). To see
+that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{S}\) is locally finite, \(\exists G_0\in\mathscr{T}(X)\) such
+that \(D_0=\{n\in\omega\mid G_0\cap\mathscr{S}_n\neq\emptyset\}\) is finite. For each \(i\le k\), \(\mathscr{S}_{n_i}\)
+is locally finite, so \(\exists G_i\in\mathscr{T}(X)\) such that the set
+\(D_i=\{\alpha\in\Delta_{n_i}\mid G_i\cap H_{n_i}\cap V_{n_i,\alpha}\neq\emptyset\}\)
+is finite. Let \(G=\bigcap_{i=0}^k G_i\), and
+let \(C=\{(n,\gamma,\alpha)\mid G\cap(S_{n,\gamma}\cap H_n\cap V_{n,\alpha})\neq\emptyset\}\).
+It is easily seen that \(C\subset\bigcup_{i=1}^k (D_i\times\{n_i\})\). Thus \(C\) is finite,
+so \(\mathscr{R}\) is locally finite. By Theorem 2.1.6, \(\mathscr{U}\) is a normal cover.
 \end{proof}
+
+{\theorem{\label{th:5.1.2}}
+ For any open cover \(\mathscr{U}\) of \(X\) the following
+are equivalent:
+
+(i) \(\mathscr{U}\) is a normal cover.
+
+}
+
+
 
 
 
