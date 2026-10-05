@@ -119,12 +119,18 @@ Then there is a pseudo-metric $\rho$ on $X$ such that for any $x, y \in X$,
 For $x, y\in X$, let
 \begin{gather}
 	g_0(x,y,\emptyset) = f(x,y), \\
-	g_1(x,y,s) = f(x,a_1) + f(a_1,y), \text{ for } s = (a_1) \in X^1\\
-	g_n(x,y,s) = f(x,a_1) + \sum_{i=1}^{n-1} f(a_i, a_{i+1}) + f(a_n,y), \text{ for } 
-	   n \ge 2, s = (a_1, \ldots, a_n) \in X^n, \\
+	g_1(x,y,s) = f(x,a_1) + f(a_1,y), \text{ for } s = (a_1) \in X^1
+\end{gather}
+\begin{equation}
+	\begin{aligned}
+	g_n(x,y,s) =  f(x,a_1) + &\sum_{i=1}^{n-1} f(a_i, a_{i+1}) + f(a_n,y) \\
+                                           & \text{ for }  n \ge 2, s = (a_1, \ldots, a_n) \in X^n,
+	\end{aligned}
+\end{equation}
+\begin{gather}
 	\rho(x,y) = \inf \{ g_n(x,y,s) : s \in X^n, n \ge 0 \}.
 \end{gather}
-It is easily verified that $\rho$ is a pseudo-metric on $X$ and $\rho(x,y) \le f(x,y)$. It remains to show (ii). For $x, y \in X$, let 
+It is easy to verify that $\rho$ is a pseudo-metric on $X$ and $\rho(x,y) \le f(x,y)$. It remains to show (ii). For $x, y \in X$, let 
 \begin{gather}
 	h_0(x,y,\emptyset) = f(x,y), \\
     h_1(x,y,s) = 2f(x,a_1) +2f(a_1,y), \text{ for } s = (a_1) \in X^1\\

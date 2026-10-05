@@ -1,16 +1,19 @@
 \documentclass[jisng5i.tex]{subfiles}
-%subfile: cjiang5i_2.tex
+%subfile: ch_2.tex
 \begin{document}
 
 \section{Shrinkable and Normal Spaces} \label{sec:5-2}
 
-5.2.1. Definition. Let $\mathscr{A}$ and $\mathscr{B}$ be covers of $X$.
+{\definition{\label{def:5.2.1}}
+Let $\mathscr{A}$ and $\mathscr{B}$ be covers of $X$.
 
 $\mathscr{B}$ is a shrinkable of $\mathscr{A}$ if $B_\alpha \subset A_\alpha$ for each $\alpha$.
 
 $X$ is $\lambda$-shrinkable if every open cover of $X$ has an open shrink.
+}
 
-5.2.2. Lemma. (i) A countably shrinkable space is normal and countable paracompact.
+{\lemma{\label{lem:5.2.2}}
+ (i) A countably shrinkable space is normal and countable paracompact.
 
 (ii) For any $X$ the following are equivalent.
 
@@ -19,6 +22,7 @@ $X$ is $\lambda$-shrinkable if every open cover of $X$ has an open shrink.
 (b) Every open $\lambda$-cover of $X$ has a closed shrink.
 
 (c) Every open $\lambda$-cover of $X$ has a functionally open shrink.
+}
 
 *Proof.* (i) Suppose $X$ is countably shrinkable. Then $X$ is normal. By Theorem 3.3.2 $X$ is countably paracompact.
 
@@ -28,6 +32,125 @@ $X$ is $\lambda$-shrinkable if every open cover of $X$ has an open shrink.
 
 Assume (b). It is easy to show that $X$ is normal. Let $\mathscr{A} = \{A_\alpha\}_{\alpha \in \Lambda}$ be an open cover of $X$, and let $\{F_\alpha\}_{\alpha \in \Lambda}$ be a closed cover of $X$ such that $F_\alpha \subset A_\alpha$ for each $\alpha \in \Lambda$. Let $H_\alpha$ be a functionally open set such that $F_\alpha \subset H_\alpha \subset A_\alpha$. Then $\mathscr{H} = \{H_\alpha\}_{\alpha \in \Lambda}$ be a functionally open shrink of $\mathscr{A}$.
 
-65
+Here is the transcribed LaTeX content from the document page:
+
+```latex
+\subsubsection*{5.2.3. Definition.}
+\(X\) is \dots\ An open cover \(\mathcal{U} = \{ U_\alpha : \alpha \in \Delta \}\) is a \(\sigma\)-Caz cover if \(\mathcal{U}\) has a refinement \(\mathcal{V} = \bigcup_{m,n<\omega} \mathcal{F}_{m,n}\) where each \(\mathcal{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha \in \Delta \}\) is a family of closed subsets of the subspace \dots\ and \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha \in \Delta\).
+
+The family \(\mathcal{V}\) is called a \(\sigma\)-Caz refinement of \(\mathcal{U}\).
+
+\(X\) is \(\sigma\)-Caz refinable if every open \(\kappa\)-cover of \(X\) is a \(\sigma\)-Caz cover.
+
+(1) An open cover \(\mathcal{U}\) is a \dots\ cover if \(\mathcal{U}\) has a \dots\ refinement \(\mathcal{V} = \bigcup_{m,n<\omega} \mathcal{F}_{m,n}\) such that each \(F_{m,n} \dots\) is a closed subset of \dots
+
+\subsubsection*{5.2.4. Theorem.}
+\(X\) is $1$-shrinkable iff \(X\) is normal and \(\sigma\)-Caz refinable.
+
+\begin{proof}
+	\((\Rightarrow)\) Suppose \(X\) is $1$-shrinkable, then \(X\) is normal. Let \(\mathcal{U} = \{ U_\alpha : \alpha \in \Delta \}\) be an open cover of \(X\) and \(\mathcal{F}\) be a closed shrink of \(\mathcal{U}\). Let \dots
+	
+	For each \((m, n < \omega)\), let \(\mathcal{F}_{m,n} = \dots\) Then \(\bigcup_{m,n<\omega} \mathcal{F}_{m,n}\) is a \(\sigma\)-Caz refinement of \(\mathcal{U}\), so \(X\) is \(\sigma\)-Caz refinable.
+	
+	\((\Leftarrow)\) Suppose \(X\) is normal and \(\sigma\)-Caz refinable. We first establish the following:
+	
+	\textbf{Claim 1.} For any open \(\kappa\)-cover \(\mathcal{U} = \dots\) of \(X\), there is a sequence \(\{ \mathcal{U}_{m,n} \}_{m,n<\omega}\) of \(\sigma\)-families of open \dots
+\end{proof}
+
+```latex
+subsets of \dots\ where each \(\mathcal{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \kappa \}\) such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \kappa\) and \(\mathcal{V} = \bigcup_{m,n<\omega} \mathcal{V}_{m,n}\) covers \(X\).[cite: 2]
+
+\begin{proof}
+	We use induction on the well-ordered set \(\omega \times \omega\) (\(<\))[cite: 2]. Let \(\mathcal{U} = \{ U_\alpha : \alpha < \kappa \}\) be an open \(\kappa\)-cover of \(X\) and let \(\mathcal{F} = \bigcup_{m,n<\omega} \mathcal{F}_{m,n}\) be a \(\sigma\)-Caz refinement of \(\mathcal{U}\), where each \(\mathcal{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha < \kappa \}\) is a family of closed subsets of the subspace \(X \setminus \bigcup_{\langle p,q \rangle < \langle m,n \rangle} U^{\langle p,q \rangle}\) with \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \kappa\)[cite: 2].
+	
+	Let \(\mathcal{F}_{0,0} = \{\emptyset\}\) and let \(\mathcal{V}_{0,0} = \{\emptyset\}\)[cite: 2]. Let \(\langle m,n \rangle \in \omega \times \omega\)[cite: 2]. Assume that the families \(\mathcal{V}_{p,q} = \{ V_{p,q,\alpha} : \alpha < \kappa \}\) of open sets which satisfy the conditions[cite: 2]:
+	\begin{enumerate}
+		\item[(1)] \(\overline{V_{p,q,\alpha}} \subset U_\alpha\) for all \(\alpha < \kappa\)[cite: 2].
+		\item[(2)] \(\bigcup_{\langle i,j \rangle \le \langle p,q \rangle} (\bigcup \mathcal{F}_{i,j}) \subset \bigcup_{\langle i,j \rangle \le \langle p,q \rangle} (\bigcup \mathcal{V}_{i,j})\)[cite: 2]
+	\end{enumerate}
+	have been constructed for all \(\langle p,q \rangle < \langle m,n \rangle\)[cite: 2]. Then we have
+	\[
+	\bigcup_{\langle p,q \rangle < \langle m,n \rangle} (\bigcup \mathcal{F}_{p,q}) \subset \bigcup_{\langle p,q \rangle < \langle m,n \rangle} U^{\langle p,q \rangle}. \text{[cite: 2]}
+	\]
+	
+	Let \(L = \bigcup_{\langle p,q \rangle < \langle m,n \rangle} (\bigcup \mathcal{V}_{p,q})\)[cite: 2]. Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there is an open set \(V_{m,n,\alpha}\) of \(X\) such that[cite: 2]
+	\[
+	F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha. \text{[cite: 2]}
+	\]
+	Let \(\mathcal{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \kappa \}\)[cite: 2]. Then
+	\[
+	\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} (\bigcup \mathcal{F}_{p,q}) \subset \bigcup_{\langle p,q \rangle \le \langle m,n \rangle} (\bigcup \mathcal{V}_{p,q}). \text{[cite: 2]}
+	\]
+	Hence the open families \(\mathcal{V}_{m,n}\) satisfy the conditions (1) and (2)[cite: 2]. By (2), \(\mathcal{V}\) covers \(X\)[cite: 2]. Claim 1 is true[cite: 2].
+	
+	\textbf{Claim 2.} \(X\) is countably paracompact[cite: 2].
+\end{proof}
+
+```
+
+```latex
+
+	an open refinement \(\mathcal{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.[cite: 4]
+	
+	\begin{proof}
+		Let \(A\) and \(B\) be disjoint closed sets in \(X\).[cite: 4] Then the open cover \(\{ X \setminus A, X \setminus B \}\) has an open refinement \(\mathcal{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).[cite: 4]
+		
+		For each \(k < \omega\), let 
+		\[
+		W_{2k} = V_{k,0}, \quad W_{2k+1} = V_{k,1}. \text{[cite: 4]}
+		\]
+		Then \(\mathcal{W} = \{ W_n : n < \omega \}\) is an open cover of \(X\).[cite: 4] For \(n < \omega\), let \(B_n = W_n \setminus \dots\)[cite: 4] Then \(\mathcal{B} = \{ B_n : n < \omega \}\) is a LF refinement of \(\mathcal{W}\).[cite: 4]
+		
+		Let 
+		\[
+		F = \overline{\bigcup_{k<\omega} B_{2k}}, \quad K = \overline{\bigcup_{k<\omega} B_{2k+1}}. \text{[cite: 4]}
+		\]
+		Then
+	\end{proof}
+	
+	```
+```latex
+Then \(F\) and \(K\) are closed sets such that \(A \subset X \setminus F\), \(B \subset X \setminus K\), and \((X \setminus F) \cap (X \setminus K) = \emptyset\)[cite: 5]. Thus \(X\) is normal[cite: 5].
+
+{5.2.7. Theorem.}
+For any space \(X\), the following are equivalent[cite: 5]:
+\begin{enumerate}
+	\item[(i)] \(X\) is \(\kappa\)-shrinkable[cite: 5].
+	\item[(ii)] Every open \(\kappa\)-cover \(\mathcal{U}\) of \(X\) has a functionally open refinement \(\mathcal{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \kappa \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\)[cite: 5].
+	\item[(iii)] Every open \(\kappa\)-cover \(\mathcal{U}\) of \(X\) has an open refinement \(\mathcal{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \kappa \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\)[cite: 5].
+	\item[(iv)] \(X\) is normal and every open \(\kappa\)-cover \(\mathcal{U}\) of \(X\) has a closed refinement \(\mathcal{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \kappa \}\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n, \alpha\)[cite: 5].
+	\end{enumerate}
+		
+		\begin{proof}
+			(i) \(\Rightarrow\) (ii). By Lemma 5.2.2[cite: 5].
+			
+			(ii) \(\Rightarrow\) (iii). Clear[cite: 5].
+			
+			(iii) \(\Rightarrow\) (iv). By Lemma 5.2.6[cite: 5].
+			
+			(iv) \(\Rightarrow\) (i).
+			
+			Assume (iv)[cite: 5]. By Theorem 5.2.4, it suffices to prove that \(X\) is \(\sigma\)-Caz refinable[cite: 5]. Let \(\mathcal{U} = \{ U_\alpha : \alpha < \kappa \}\) be an open cover of \(X\)[cite: 5]. Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \kappa \}\) be a closed cover of \(X\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \kappa\)[cite: 5].
+			
+			For \(n < \omega\), let \(\mathcal{B}_n = \{ B_{n,\alpha} : \alpha < \kappa \}\)[cite: 5].
+			
+			\textbf{Claim.} For each \(m < \omega\), there is a family \(\mathcal{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \kappa \}\) such that[cite: 5]
+			\begin{enumerate}
+				\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \kappa\)[cite: 5],
+				\item[(2)] \(\mathcal{F}_{m,0}\) is a family of closed subsets of \(X\), and[cite: 5]
+				\item[(3)] \(\bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathcal{B}_i)\)[cite: 5].
+				\end{enumerate}
+				\end{proof}
+				
+				```
+
+
+
+
+
+
+{\corollary{\label{cor:5.2.9}}
+For
+}
 
 \end{document}
