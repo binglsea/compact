@@ -133,43 +133,52 @@ For $x, y\in X$, let
 It is easy to verify that $\rho$ is a pseudo-metric on $X$ and $\rho(x,y) \le f(x,y)$. It remains to show (ii). For $x, y \in X$, let 
 \begin{gather}
 	h_0(x,y,\emptyset) = f(x,y), \\
-    h_1(x,y,s) = 2f(x,a_1) +2f(a_1,y), \text{ for } s = (a_1) \in X^1\\
-	h_n(x,y,s) = 2f(x,a_1) + 4\sum_{i=1}^{n-1} f(a_i, a_{i+1}) + 2f(a_n,y), \text{ for } 
-	n \ge 2, s = (a_1, \ldots, a_n) \in X^n.
+    h_1(x,y,s) = 2f(x,a_1) +2f(a_1,y), \text{ for } s = (a_1) \in X^1
 \end{gather}
+\begin{equation}
+	\begin{aligned}
+      h_n(x,y,s) = 2f(x,a_1) + & 4 \sum_{i=1}^{n-1} f(a_i, a_{i+1}) + 2f(a_n,y) \\
+                       & \text{ for }  n \ge 2, s = (a_1, \ldots, a_n) \in X^n. 
+	\end{aligned}
+\end{equation}	
 
-\textsc{Claim.}  As usual, we assume that $X^0 = \{\emptyset\}$. Then
+\textsc{Claim.}  For any $x, y \in X, n \in\omega$, and $s \in X^n$,
 \begin{gather}
-f(x,y) \le h_n(x,y,s), \textup{ for any } x, y \in X, n \in\omega \textup{ and } s \in X^n.
-\label{gather:2.1.claim}
+f(x,y) \le h_n(x,y,s) 
+\label{gather:2.1.4.claim}
 \end{gather}
 
-If we have proved Claim \eqref{gather:2.1.claim}, then $f(x,y) \le 4g_n(x,y,s)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
+\noindent If we have proved \eqref{gather:2.1.4.claim} of the Claim, then $f(x,y) \le 4g_n(x,y,s)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
 
 For any $x, y, a \in X$ we have 
 \begin{gather}
-	f(x, y) \le 2 f(a, y) \quad \textup{or}\quad f(x, y) \le 2 f(x, a)  \label{eq:2.1.ineq}
+	f(x, y) \le 2 f(a, y) \quad \textup{ or }\quad f(x, y) \le 2 f(x, a)  \label{eq:2.1.ineq}
 \end{gather}
 
-The proof of \eqref{eq:2.1.ineq} has two cases.
+\noindent\textsc{Proof of \eqref{eq:2.1.ineq}} has two cases.
 
-Case 1. If $f(x, a) \le f(a, y)$, then for any $r > f(a, y)$, $f(x, a) \le f(a, y) <  r$. 
-By hypothesis (b), $f(x, y) < 2 r$. So, $f(x, y) \le 2 f(a, y)$ as  $r \rightarrow f(a, y)$ above.
+Case 1. If $f(x, a) \le f(a, y)$, then for any $r >0$, $f(x, a) \le f(a, y) <   f(a, y) + r$. 
+By hypothesis (b), $f(x, y) < 2 f(a, y)+2r$. So, $f(x, y) \le 2 f(a, y)$ (as  $r \rightarrow 0)$).
 
 Case 2. If $f(a, y) < f(x, a)$, then by (b) we have $f(x, y) < 2 r$ for any $r > f(x, a)$.
-Again, it results that $f(x, y) \le f(x, a)$ as  $r \rightarrow f(x, a)$ above.
+It results that $f(x, y) \le 2f(x, a)$ as  $r \rightarrow f(x, a)$ above.
 
-\textsc{Proof of Claim \eqref{gather:2.1.claim}}. We use induction. For $n=0$, we have $f(x, y) = h_0(x, y, \phi)$. 
+\vspace{8pt}
+\noindent\textsc{Proof of Claim \eqref{gather:2.1.4.claim}}. We use induction. For $n=0$, 
+we have $f(x, y) = h_0(x, y, \phi)$. 
 Let $m \ge 1$, and assume that for all $i < m$, 
-$s\in X^i$, $f(x, y) \le h_i(x, y, s)$. Let us show Claim \eqref{gather:2.1.claim}
-for $n\ge1$.
+$s\in X^i$, $f(x, y) \le h_i(x, y, s)$. Let us show that %Claim \eqref{gather:2.1.4.claim} for $n\ge1$.
+For $x, y \in X$, $s = (a_{1}, \dots, a_{m})\in X^m$.
+\begin{gather}
+	f(x, y) \le h_{m}(x, y, s)
+\end{gather}
 
-%(2) $f(x, y) \le h_{m}(x, y, s)$ for $x, y \in X$, $s = (a_{1}, \dots, a_{m})\in X^m$.
+Either the first or the second of \eqref{eq:2.1.ineq} holds. 
 
-In Case 1 of \eqref{eq:2.1.ineq}, 
-$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$, we are finished.
+If the first inequality holds, we have
+$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$. we are finished.
 
-Now, we turn to Case 2 of  \eqref{eq:2.1.ineq}: $f(x, y) \le 2 f(x, a_{m})$. 
+If the second inequality of  \eqref{eq:2.1.ineq} holds, then $f(x, y) \le 2 f(x, a_{m})$. 
 Let 
 $$k = \min \{i \le m : f(x, y) \le 2 f(x, a_{i})\}.$$
 Then $1 \le k \le m$, $f(x, y) \le 2 f(x, a_{k})$. If $k = 1$, then 
@@ -190,7 +199,7 @@ f(x, y)    &\le f_{k-1}(x, a_{k}, s_{1}) + f_{m-k+1}(a_{k-1}, y, s_{2}) \\
 	          &= h_{m}(x, y, s)
 	 \end{aligned}
 \end{equation*}
-This completes the induction and the Claim.
+This completes the induction and the Claim \eqref{gather:2.1.4.claim}.
 \end{proof}
 
 
