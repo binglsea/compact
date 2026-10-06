@@ -176,14 +176,14 @@ For $x, y \in X$, $s = (a_{1}, \dots, a_{m})\in X^m$.
 Either the first or the second of \eqref{eq:2.1.ineq} holds. 
 
 If the first inequality holds, we have
-$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$. We are done.
+$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$. We are finished.
 
 If the second inequality of  \eqref{eq:2.1.ineq} holds, then $f(x, y) \le 2 f(x, a_{m})$. 
 Let 
 $$k = \min \{i \le m : f(x, y) \le 2 f(x, a_{i})\}.$$
 Then $1 \le k \le m$, $f(x, y) \le 2 f(x, a_{k})$. If $k = 1$, then 
 $$f(x, y) \le 2 f(x, a_{1}) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s),$$
-We are done. 
+We are finished. 
 So we assume $k \ge 2$. By the definition of $k$ and \eqref{eq:2.1.ineq}, 
 $f(x, y) \le 2 f(a_{k-1}, y)$. It follows that
 
@@ -313,7 +313,7 @@ every member of $\mathscr{V}$ is functionally open.
 Since $\tau_\rho \subset \tau$, $\mathscr{V}$ is a locally finite 
 and $\sigma$-discrete functionally open refinement of $\mathscr{U}$ in $(X, \tau)$.
 
-(ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv)
+(ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv).
 Clear.
 
 (iv) $\Rightarrow$ (iii). 
@@ -363,26 +363,30 @@ Let $M = \{f(x): x \in X\}$. Then $M \subset Y$.
 Suppose $\Gamma = \{\alpha_1, \dots, \alpha_m\}$. For each $i \le m$, there 
 exists $U_i\in\operatorname{top}(x_0)$ of $x_0$ such that if $x \in U_i$, 
 then $\vert{}\varphi_{\alpha_i}(x) - \varphi_{\alpha_i}(x_0)\vert{} < \epsilon / 2m$. 
-Let $V = \bigcap_{i=1}^m V_i$. Then for each $x \in V$:
+Let $U = \bigcap_{i=1}^m U_i$. Then for each $x \in U$:
 \begin{gather}
 	\sum_{\alpha \in \Gamma} \vert{}\varphi_\alpha(x) - \varphi_\alpha(x_0)\vert{} < \epsilon / 2
 \end{gather}
 By \eqref{2.1.6_sum0}, we have:
+\begin{gather}
+	\sum_{\alpha \in\Delta\setminus \Gamma} \varphi_\alpha(x) + \sum_{\alpha \in \Gamma} \varphi_\alpha(x_0) = \sum_{\alpha \in \Delta} \varphi_\alpha(x) = 1 = \sum_{\alpha \in \Gamma} \varphi_\alpha(x_0).  \label{2.1.6-15}
+\end{gather}
 
+\noindent By \eqref{2.1.6-15}, we have:
+\begin{gather}
+\sum_{\alpha \in\Delta\setminus  \Gamma} \varphi_\alpha(x) = \sum_{\alpha \in \Gamma} (\varphi_\alpha(x_0) - \varphi_\alpha(x)) < \epsilon / 2.
+\end{gather}
+\noindent Then we have for each $x \in U$,
 
-$$\sum_{\alpha \notin \Gamma} \varphi_\alpha(x) + \sum_{\alpha \in \Gamma} \varphi_\alpha(x_0) = \sum_{\alpha \in \Delta} \varphi_\alpha(x) = 1 = \sum_{\alpha \in \Gamma} \varphi_\alpha(x_0).$$
+\begin{equation}
+	\begin{aligned}
+d(f(x), f(x_0)) &=\sum_{\alpha \in \Delta} \vert{}f(x)(\alpha) - f(x_0)(\alpha)\vert{} \\
+&= \sum_{\alpha \in \Gamma} \vert{}\varphi_\alpha(x) - \varphi_\alpha(x_0)\vert{} + 
+   \sum_{\alpha \in \Delta\setminus \Gamma} \vert{}\varphi_\alpha(x) - \varphi_\alpha(x_0)\vert{} < \epsilon.
+\end{aligned}
+\end{equation}
 
-By (2), we have:
-3. $\sum_{\alpha \notin \Gamma} \varphi_\alpha(x) = \sum_{\alpha \in \Gamma} (\varphi_\alpha(x_0) - \varphi_\alpha(x)) < \epsilon / 2$.
-
-Then we have for each $x \in V$ ...
-
-
-$$d(f(x), f(x_0)) = \sum_{\alpha \in \Delta} \vert{}f(x)(\alpha) - f(x_0)(\alpha)\vert{}$$
-
-$$= \sum_{\alpha \in \Gamma} \vert{}\varphi_\alpha(x) - \varphi_\alpha(x_0)\vert{} + \sum_{\alpha \notin \Gamma} \vert{}\varphi_\alpha(x) - \varphi_\alpha(x_0)\vert{} < \epsilon.$$
-
-This completes the proof of the claim.
+\noindent This completes the proof of the claim.
 
 For $\alpha \in \Delta$, let $H_\alpha = \{u \in M : u(\alpha) > 0\}$. Then:
 (4) For each $\alpha \in \Delta$, $f^{-1}(H_\alpha) = g_\alpha^{-1}(0, 1] \subset U_\alpha$.
