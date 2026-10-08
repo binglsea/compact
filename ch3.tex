@@ -60,7 +60,7 @@ For any $X$ the following are equivalent:
 }
 
 \begin{proof}
-(i) $\Rightarrow$ (ii). Lemma \ref{lem:3.1.1}.
+(i) $\Rightarrow$ (ii). By Lemma \ref{lem:3.1.1}.
 
 (ii) $\Rightarrow$ (iii). Clear.
 
@@ -75,10 +75,10 @@ $\lambda$-cover of $X$. Let $\mathscr{C} = \{C_S : S \in [\lambda]^{<\omega}\}$
 be a locally finite closed refinement of $\mathscr{V}$ with $C_S \subset V_S$ 
 for each $S \in [\lambda]^{<\omega}$. For $\alpha < \lambda$, let
 
-$$G_\alpha = X \setminus \bigcup \{C_S : S \in [\lambda]^{<\omega}, 
+$$G_\alpha = X \setminus \bigcup \{C_S : S \in [\lambda]^{<\omega} \textit{ and }
 C_S \cap F_\alpha = \emptyset\}.$$
 
-Then $F_\alpha \subset G_\alpha$ for each $\alpha < \lambda$. 
+\noindent Then $F_\alpha \subset G_\alpha$ for each $\alpha < \lambda$. 
 It is easy to see that $\mathscr{W} = \{G_\alpha \cap U_\alpha : \alpha < \lambda\}$ 
 is a locally finite open refinement of $\mathscr{U}$, so $X$ is 
 $\lambda$-paracompact.
@@ -86,8 +86,8 @@ $\lambda$-paracompact.
 
 {\lemma{} \label{lem:3.1.4}
 An open cover $\mathscr{U}$ of $X$ has a $\theta$-sequence of open refinements iff 
-there exists a countable closed cover $F_n$ of $X$ such that 
-for each $n \in \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement 
+there exists a countable closed cover $\{F_n: n <\omega\}$ of $X$ such that 
+for each $n < \omega$, $\mathscr{U} \vert{} F_n$ has a point-finite open refinement 
 in the subspace $F_n$.
 }
 
