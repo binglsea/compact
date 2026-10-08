@@ -93,32 +93,32 @@ in the subspace $F_n$.
 
 \begin{proof}
 ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence 
-$\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta_n\}\}_{n \in \omega}$ of open refinements. For $m, n < \omega$, let 
+$\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta_n\}\}_{n < \omega}$ of open refinements. For $m, n < \omega$, let 
 \begin{gather*}
-	F_{m, 0} = \emptyset \\
-	F_{m,n} = \{x \in X: \vert{}\operatorname{ind}(\mathscr{V}_m)_x\vert{} \le n\}, n\ge 1.
+	F_{m, 0} = \emptyset, \\
+	F_{m,n} = \{x \in X: \vert{}\operatorname{ind}(\mathscr{V}_m)_x\vert{} \le n\} \textit{ for } n\ge 1.
 \end{gather*}
-Then $\{F_{m,n}\}$ is a closed cover of $X$ such that for each $m, n < \omega$, 
+Then $\{F_{m,n}: n, m < \omega\}$ is a closed cover of $X$ such that for each $m, n < \omega$, 
 $\mathscr{U} \vert{}_{F_{m,n}}$ has a point-finite open refinement 
 $\mathscr{V}_m \vert{} F_{m,n}$ in subspace $F_{m,n}$.
 
-($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ is an 
-open cover of $X$ and $\{F_n : n \in \omega\}$ is a countable closed cover of $X$ 
-such that for each $n \in \omega$, $\mathscr{U} \vert{}_{F_n}$ has a point-finite 
+($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha < \Delta\}$ is an 
+open cover of $X$ and $\{F_n : n < \omega\}$ is a countable closed cover of $X$ 
+such that for each $n < \omega$, $\mathscr{U} \vert{}_{F_n}$ has a point-finite 
 open refinement $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta\}$ in the subspace 
 $F_n$ with $V_{n,\alpha} \subset U_\alpha\cap F_n$. 
 Let $V_{n,\alpha} = V_{n,\alpha}' \cap F_n$ for some open subset $V_{n,\alpha}'$ of $X$. 
-For $n \in \omega$, let
+For $n < \omega$, let
 $$\mathscr{G}_n = \{V_{n,\alpha}'\cap U_\alpha: \alpha \in \Delta\} \cup 
 \{(V_{m,\alpha}'\setminus F_n)\cap U_\alpha: m\ne n, \alpha\in\Delta\}.$$
-Then $\{\mathscr{G}_n : n \in \omega\}$ is a $\theta$-sequence of open refinements 
+Then $\{\mathscr{G}_n : n < \omega\}$ is a $\theta$-sequence of open refinements 
 of $\mathscr{U}$.
 \end{proof}
 
 {\theorem{} \label{th:3.1.5}
 $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
  $\mathscr{U}$ of $X$ there exists a countable closed cover $\{F_n\}$ of $X$ 
- such that for each $n \in \omega$, $\mathscr{U} \vert{}_{ F_n}$ has a point-finite 
+ such that for each $n < \omega$, $\mathscr{U} \vert{}_{ F_n}$ has a point-finite 
  open refinement in the subspace $F_n$.\hfill\qedsymbol
 }
 
