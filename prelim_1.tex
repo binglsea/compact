@@ -113,13 +113,17 @@ there is some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
   of $\mathscr{U}$ if $\mathscr{G}$ is a partial refinement of 
   $\mathscr{U}$ and $\bigcup\mathscr{G} = \bigcup\mathscr{U}$.
 
-	    Let $\Gamma = \Delta$. $\mathscr{U}$ is an 
-	    	    \uwave{expansion}\index{expansion| \S\ref{def:1.1.2}\hfill} 
-	    	    of $\mathscr{G}$
-	    	    if $G_\alpha \subset U_\alpha$ for all $\alpha\in \Delta$.
-	   $\mathscr{G}$ is a 
-	   \uwave{shrink}\index{shrink| \S\ref{def:1.1.2}\hfill} of $\mathscr{U}$
-	   if $\overline{G_\alpha} \subset U_\alpha$ for all $\alpha\in \Delta$.
+Let $\Gamma = \Delta$, and $G_\alpha \subset U_\alpha$ for all $\alpha\in \Delta$.
+$\mathscr{U}$ is an 
+\uwave{expansion}\index{expansion| \S\ref{def:1.1.2}\hfill} 
+of $\mathscr{G}$.
+If $\mathscr{G}$ is a  refinement of $\mathscr{U}$, we call $\mathscr{G}$ a
+ \uwave{precise refinement}\index{precise refinement| \S\ref{def:1.1.2}\hfill} 
+of $\mathscr{U}$.
+Further, a refinement $\mathscr{G}$ is a 
+\uwave{shrink}\index{shrink| \S\ref{def:1.1.2}\hfill} 
+of $\mathscr{U}$
+if $\overline{G_\alpha} \subset U_\alpha$ for all $\alpha\in \Delta$.
 	    
 \textup{(ii)} $\mathscr{G}$ is a 
 	\uwave{cushioned}\index{cushioned| \S\ref{def:1.1.2}\hfill} 
@@ -210,12 +214,10 @@ This result is also true if we replace ``locally finite" by ``discrete"
 or replace ``open" by ``closed".
 
 \textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($open$)$ refinement $\mathscr{V}$, then $\mathscr{U}$ has a partial cushioned $($open$)$  refinement $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
-} % end of lemma
 
-In the above cases, we call  $\mathscr{H} $ as a 
-\uwave{precise refinement}
-\index{precise refinement| \S\ref{lem:1.1.5}\hfill}
-of $\mathscr{V}$.
+\textup{(iii)} If $\mathscr{U}$ has a point-finite refinement $\mathscr{V}$, then we may assume that
+$\mathscr{V}$ is a precise refinment of $\mathscr{U}$.
+} % end of lemma
 
 \begin{proof} Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
 $\overline{\mathscr{V}}$ refines $\mathscr{U}$). For every $V\in\mathscr{V}$, pick 

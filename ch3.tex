@@ -188,15 +188,18 @@ To show $\mathcal{P}_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \ka
 be an open cover of $X$.
 $\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is 
 an increasing open $\lambda$-cover of $X$.
-Let $\mathscr{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open refinement of 
+Let $\mathscr{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open 
+(precise, by (iii) of Lemma \ref{lem:1.1.5}) refinement of 
 $\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
 For $\alpha < \kappa$, let
-$$\mathscr{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \bigcup \{ \cup_{\gamma > \alpha} W_\gamma \}$$
+$$\mathscr{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \bigcup \{ \cup_{\gamma \ge \alpha} W_\gamma \}$$
 Then $\mathscr{G}_\alpha$ is an open cover of $X$ with power $< \kappa$. 
-By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open refinement $\mathscr{H}_\alpha$. Let 
+By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open 
+refinement $\mathscr{H}_\alpha$, say, precise refinement. 
+So, we can let 
 $\mathscr{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ 
 such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ 
-and $R_\alpha \subset \bigcup_{\gamma > \alpha} W_\gamma$.
+and $R_\alpha \subset \bigcup_{\gamma \ge \alpha} W_\gamma$.
 Let
 $$\mathscr{H} = \{W_\alpha\cap H_\gamma : \gamma <\alpha, \alpha<  \kappa \}.$$
 Then $\mathscr{H}$ is a point-finite open refinement of $\mathscr{U}$. So $\mathcal{P}_\kappa$ holds.
