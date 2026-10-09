@@ -144,7 +144,7 @@ such that $\overline{V_n} \subset U_n$.
 For $\alpha < \lambda$, let $G_\alpha = \bigcup_{n < \omega} (V_n \cap G_{n,\alpha})$.
 Then $\mathscr{G} = \{G_\alpha: \alpha < \lambda\}$ is an open expansion of $\mathscr{F}$. To show that $\mathscr{G}$ is locally finite, let $x \in X$.
 Then $C = \{n < \omega: x \in \overline{V_n}\}$ is finite. 
-Let $R = X \setminus \bigcup_{n \notin C} \overline{V_n}$. 
+Let $R = X \setminus \bigcup_{n \in\omega\setminus C} \overline{V_n}$. 
 Then $R \in \operatorname{top}(x)$. For each $n \in C$, 
 $x\in\overline{V_n} \subset U_n$, so there exists $H_n \in \operatorname{top}(x)$ 
 such that $\vert{}\operatorname{ind}(\mathscr{G}_n)_{H_n}\vert{} < \omega$. Then
@@ -156,7 +156,10 @@ so $\mathscr{G}$ is a locally finite open expansion of $\mathscr{F}$.
 \end{proof}
 
  {\lemma{\label{lem:3.3.5}}
-If $\mathscr{V} = \{V_\alpha:  \alpha \in \Delta\}$ is an open cover of $X$ and let $\tilde{V}_\alpha = V_\alpha \setminus \bigcup_{\gamma \ne \alpha} V_\gamma$ for each $\alpha \in \Delta$, then $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha:  \alpha \in \Delta\}$ is a discrete closed partial refinement of $\mathscr{V}$. \hfill\qedsymbol
+If $\mathscr{U} = \{U_\alpha:  \alpha \in \Delta\}$ is an open cover of $X$ and let 
+$\tilde{U}_\alpha = U_\alpha \setminus \bigcup_{\gamma\in\Delta\setminus\{\alpha\}} U_\gamma$ 
+for each $\alpha \in \Delta$, then $\tilde{\mathscr{U}} = \{\tilde{U}_\alpha:  \alpha \in \Delta\}$ 
+is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
 }
 
  {\lemma{\label{lem:3.3.6}}
