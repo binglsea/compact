@@ -164,18 +164,20 @@ is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
 
  {\lemma{\label{lem:3.3.6}}
 If $X$ is $\lambda$-discretely subexpandable, then for every open 
-$\lambda$-cover of $X$ there exists a $\sigma$-discrete closed partial refinement 
-$\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that $\bigcup \tilde{\mathscr{V}} \subset A \subset \bigcup \mathscr{P}$.
+$\lambda$-cover $\mathscr{U}$ of $X$ there exists a $\sigma$-discrete closed partial refinement 
+$\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that 
+$\bigcup \tilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P}$,
+where $\tilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
 }
 
-\begin{proof} Suppose $\mathscr{V} = \{V_\alpha:  \alpha < \lambda\}$ be an 
+\begin{proof} Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be an 
 open cover of a $\lambda$-discretely subexpandable space $X$. 
-By Lemma 4.2.7, $\tilde{\mathscr{V}} = \{\tilde{V}_\alpha:  \alpha < \lambda\}$ 
-is a discrete closed family with $\tilde{V}_\alpha \subset V_\alpha$. 
-There is a $\sigma$-sequence 
+By the previous Lemma \ref{lem:3.3.5}, $\tilde{\mathscr{U}} = \{\tilde{U}_\alpha:  \alpha < \lambda\}$ 
+is a discrete closed family with $\tilde{U}_\alpha \subset U_\alpha$. 
+There is a $\varepsilon$-sequence 
 $\{\mathscr{G}_n = \{G_{\alpha,n}\}\}_{n < \omega}$ 
-of open expansions of $\tilde{\mathscr{V}}$ such that 
-$\tilde{V}_\alpha \subset G_{\alpha,n} \subset V_\alpha$ for each $\alpha, n$.
+of open expansions of $\tilde{\mathscr{U}}$ such that 
+$\tilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $\alpha, n$.
 
 For each $n < \omega$, $\{\bigcup \tilde{\mathscr{V}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There is a $\sigma$-sequence $\{\mathscr{Q}_k = \{Q_{n,k}, W_{n,k}\}\}_{k < \omega}$ of open expansions such that $\bigcup \tilde{\mathscr{V}} \subset Q_{n,k}$ and $X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}$.
 
@@ -196,10 +198,10 @@ Thus $A \subset \bigcup \mathscr{P}$.
 
 
 {\theorem{\label{th:3.3.7}}  \textup{([Chaber 1979]\textsuperscript{\cite{Chaber}})}
-In a $\kappa$-discretely subexpandable space, every point-finite open $\kappa$-cover has a $\sigma$-discrete closed refinement.
+In a $\lambda$-discretely subexpandable space, every point-finite open $\lambda$-cover has a $\sigma$-discrete closed refinement.
 }
 
-Proof. Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be a point-finite open cover of a $\kappa$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
+Proof. Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be a point-finite open cover of a $\lambda$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
 
 $$F_n = \{x \in X:  \vert{}\text{index}(\mathscr{U})_x\vert{} \le n\}, \quad n \ge 1[cite: 6]$$
 
