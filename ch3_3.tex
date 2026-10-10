@@ -220,16 +220,14 @@ In a $\lambda$-discretely subexpandable space, every point-finite open $\lambda$
 }
 
 Proof. Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be a point-finite open cover of a $\lambda$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
+$$F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\}, \textit{ for } \ge 1$$
+\noindent Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
 
-$$F_n = \{x \in X:  \vert{}\text{index}(\mathscr{U})_x\vert{} \le n\}, \quad n \ge 1$$
+\textsc{Claim.} For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{F}_n$ and a $G_\delta$-set $A_n \subset X$ such that
 
-Then $\{F_n\}_{n < \omega}$ is a closed cover of $X$. We have the following:
+$$F_n \subset A_n \subset \bigcup \mathscr{F}_n[cite: 6]$$
 
-Claim. For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that
-
-$$F_n \subset A_n \subset \bigcup \mathscr{P}_n[cite: 6]$$
-
-*Proof of Claim.* We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
+*Proof of Claim.* We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{F}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{F}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{F}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
 For $k < \omega$, let
 
 $$\mathscr{G}_k = \{ \dots \}$$
@@ -251,7 +249,7 @@ By Lemma \ref{lem:4.2.7}, we have:
 
 (1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{E}_k$ of $\mathscr{V}_k$ and a $G_\delta$-set $B_k$ such that $\bigcup \tilde{\mathscr{V}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
 
-Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us see that:
+Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{F}_{n+1} = \mathscr{F}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{F}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us see that:
 
 (2) For each $k < \omega$, $F_{n+1} \setminus G_k \subset \bigcup \tilde{\mathscr{V}}_k$.
 
@@ -265,8 +263,8 @@ By (2), for each $k < \omega$,
 
 $$F_{n+1} \subset (F_{n+1} \setminus G_k) \cup G_k \subset \bigcup \tilde{\mathscr{V}}_k \cup G_k \subset B_k \cup G_k[cite: 7]$$
 
-so $F_{n+1} \subset A_{n+1}$. To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, let $x \in A_{n+1}$. If $x \in A_n$, then $x \in \bigcup \mathscr{P}_n \subset \bigcup \mathscr{P}_{n+1}$. Assume $x \notin A_n$, then $x \notin G_k$ for some $k < \omega$. Since $x \in A_{n+1} \subset B_k \cup G_k$, $x \in B_k \subset \bigcup \mathscr{E}_k \subset \bigcup \mathscr{P}_{n+1}$. Hence $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$. This completes the proof of the induction.
+so $F_{n+1} \subset A_{n+1}$. To show that $A_{n+1} \subset \bigcup \mathscr{F}_{n+1}$, let $x \in A_{n+1}$. If $x \in A_n$, then $x \in \bigcup \mathscr{F}_n \subset \bigcup \mathscr{F}_{n+1}$. Assume $x \notin A_n$, then $x \notin G_k$ for some $k < \omega$. Since $x \in A_{n+1} \subset B_k \cup G_k$, $x \in B_k \subset \bigcup \mathscr{E}_k \subset \bigcup \mathscr{F}_{n+1}$. Hence $A_{n+1} \subset \bigcup \mathscr{F}_{n+1}$. This completes the proof of the induction.
 
-Since $\bigcup_{n < \omega} F_n = X$, by the claim, the family $\mathscr{P} = \bigcup_{n < \omega} \mathscr{P}_n$ is a $\sigma$-discrete closed refinement of $\mathscr{U}$. 
+Since $\bigcup_{n < \omega} F_n = X$, by the claim, the family $\mathscr{F} = \bigcup_{n < \omega} \mathscr{F}_n$ is a $\sigma$-discrete closed refinement of $\mathscr{U}$. 
 
 \end{document}
