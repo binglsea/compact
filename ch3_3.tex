@@ -210,7 +210,7 @@ Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
 
-$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \tilde{G}_{\alpha_0, m} \in \tilde{\mathscr{G}}_{m,k} \subset \mathscr{P}[cite: 6]$$
+$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \tilde{G}_{\alpha_0, m} \in \tilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
 
 \noindent Thus $A \subset \bigcup \mathscr{P}$.
 \end{proof} 
@@ -226,25 +226,20 @@ $$F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\}, \te
 
 \textsc{Claim.} For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that
 
-$$F_n \subset A_n \subset \bigcup \mathscr{P}_n[cite: 6]$$
+$$F_n \subset A_n \subset \bigcup \mathscr{P}_n.$$
 
-*Proof of Claim.* We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
+\noindent \textsc{Proof of Claim}. We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
 For $k < \omega$, let
+$$\mathscr{G}_k = \{ \cap_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
+\bigcup \{Q_k\cap U_\alpha: \alpha < \lambda\}.$$
 
-$$\mathscr{G}_k = \{ \dots \}$$
-
-For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset G_k$, 
-so $x \in \dots$ for some $k < \omega$; if $x \notin F_n$, 
-then $\vert{}\text{index}(\mathscr{U})_x\vert{} > n$,
-so $\vert{}\text{index}(\mathscr{U})_x\vert{} \ge n+1$ 
-
-[cite: 6]. Hence $\mathscr{V}_k$ 
-is an open refinement of $\mathscr{U}$ with $\vert{}\mathscr{V}_k\vert{} \le \lambda$.
-
-
----
-
- Proof Continuation (Theorem 3.3.7 / Chaber)
+\noindent For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
+so $x \in Q_k\cap U_\alpha$ for some $\alpha < \omega$; if $x \notin F_n$, 
+then $|\text{ind}(\mathscr{U})_x| > n$,
+so $x\in \cap_{\alpha\in S} U_\alpha$ for some 
+$S\in [\lambda]^{n+1}$. Hence
+$\mathscr{G}_k$ is an open refinement of $\mathscr{U}$ with  
+$!\mathscr{G}_k| \le \lambda$.
 
 By Lemma \ref{lem:4.2.7}, we have:
 
