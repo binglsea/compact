@@ -233,7 +233,7 @@ $$F_n \subset A_n \subset \bigcup \mathscr{P}_n.$$
 
 \noindent \textsc{Proof of Claim}. We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} Q_k$, where each $Q_k$ is open. 
 For $k < \omega$, let
-$$\mathscr{G}_k = \{ \cap_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
+$$\mathscr{G}_k = \{ \bigcap_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
 \bigcup \{Q_k\cap U_\alpha: \alpha < \lambda\}.$$
 
 \noindent For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
@@ -245,22 +245,26 @@ $\mathscr{G}_k$ is an open refinement of $\mathscr{U}$ with
 $|\mathscr{G}_k| \le \lambda$.
 By Lemma \ref{lem:3.3.6}, we have:
 
-(1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{E}_k$ of $\mathscr{G}_k$ and a $G_\delta$-set $B_k$ such that 
+(1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement 
+$\mathscr{E}_k$ of $\mathscr{G}_k$ and a $G_\delta$-set $B_k$ such that 
 $\bigcup \widetilde{\mathscr{G}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
 
-Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us show that:
+Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup Q_k)$ and 
+$\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. 
+Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a 
+$\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us show that:
 \begin{gather}
 F_{n+1} \setminus Q_k \subset \widetilde{\mathscr{G}}_k \textit{ for each }  k < \omega \label{formula3.3.7.1}
 \end{gather}
 
-Suppose $x \in F_{n+1} \setminus G_k$. Then 
+\noindent Suppose $x \in F_{n+1} \setminus Q_k$. Then 
 $\vert{}\text{ind}(\mathscr{U})_x\vert{} \le n+1$. 
 Since $x \in \cup \mathscr{G}_k$ and $x \notin Q_k$, there exists $S_0 \subset [\lambda]^{n+1}$,  
 $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
 \begin{gather}
 x \in \bigcap_{\alpha \in S_0} U_\alpha 
 \setminus \bigcup \left\{ \bigcap_{\alpha \in S} U_\alpha : S\neq S_0 \right\} 
-\setminus \bigcup_{\alpha \in \lambda} (G_k \cap U_\alpha) 
+\setminus \bigcup_{\alpha \in \lambda} (Q_k \cap U_\alpha) 
 = \widetilde{\bigcap_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{formula3.3.7.2}
 \end{gather}
 \noindent So \eqref{formula3.3.7.1} holds.
@@ -268,12 +272,12 @@ x \in \bigcap_{\alpha \in S_0} U_\alpha
 By \eqref{formula3.3.7.1}, for each $k < \omega$,
 
 $$F_{n+1} \subset (F_{n+1} \setminus Q_k) \cup Q_k \subset
-(\cup \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup G_k.$$
+(\cup \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup Q_k.$$
 \noindent So $F_{n+1} \subset A_{n+1}$. 
 To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, 
 let $x \in A_{n+1}$. If $x \in A_n$, then 
 $x \in \bigcup \mathscr{P}_n \subset \bigcup \mathscr{P}_{n+1}$. 
-Assume $x \notin A_n$, then $x \notin G_k$ for some $k < \omega$. 
+Assume $x \notin A_n$, then $x \notin Q_k$ for some $k < \omega$. 
 Since $x \in A_{n+1} \subset B_k \cup Q_k$, 
 $x \in B_k \subset \bigcup \mathscr{E}_k \subset \bigcup \mathscr{P}_{n+1}$. 
 Hence $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$. 
