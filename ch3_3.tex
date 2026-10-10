@@ -159,8 +159,8 @@ so $\mathscr{G}$ is a locally finite open expansion of $\mathscr{F}$.
 
  {\lemma{\label{lem:3.3.5}}
 If $\mathscr{U} = \{U_\alpha:  \alpha \in \Delta\}$ is an open cover of $X$ and let 
-$\tilde{U}_\alpha = U_\alpha \setminus \bigcup_{\gamma\in\Delta\setminus\{\alpha\}} U_\gamma$ 
-for each $\alpha \in \Delta$, then $\tilde{\mathscr{U}} = \{\tilde{U}_\alpha:  \alpha \in \Delta\}$ 
+$\widetilde{U}_\alpha = U_\alpha \setminus \bigcup_{\gamma\in\Delta\setminus\{\alpha\}} U_\gamma$ 
+for each $\alpha \in \Delta$, then $\widetilde{\mathscr{U}} = \{\widetilde{U}_\alpha:  \alpha \in \Delta\}$ 
 is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
 }
 
@@ -168,22 +168,22 @@ is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
 If $X$ is $\lambda$-discretely subexpandable, then for every open 
 $\lambda$-cover $\mathscr{U}$ of $X$ there exists a $\sigma$-discrete closed partial refinement 
 $\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that 
-$\bigcup \tilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P}$,
-where $\tilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
+$\bigcup \widetilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P}$,
+where $\widetilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
 }
 
 \begin{proof} Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be an 
 open cover of a $\lambda$-discretely subexpandable space $X$. 
-By the previous Lemma \ref{lem:3.3.5}, $\tilde{\mathscr{U}} = \{\tilde{U}_\alpha:  \alpha < \lambda\}$ 
-is a discrete closed family with $\tilde{U}_\alpha \subset U_\alpha$. 
+By the previous Lemma \ref{lem:3.3.5}, $\widetilde{\mathscr{U}} = \{\widetilde{U}_\alpha:  \alpha < \lambda\}$ 
+is a discrete closed family with $\widetilde{U}_\alpha \subset U_\alpha$. 
 There exists an $\varepsilon$-sequence 
 $\{\mathscr{G}_n = \{G_{\alpha,n}\}: n < \omega\}$ 
-of open expansions of $\tilde{\mathscr{U}}$ such that 
-$\tilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $\alpha, n$.
-For each $n < \omega$, $\{\bigcup \tilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There exists a $\varepsilon$-sequence 
+of open expansions of $\widetilde{\mathscr{U}}$ such that 
+$\widetilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $\alpha, n$.
+For each $n < \omega$, $\{\bigcup \widetilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There exists a $\varepsilon$-sequence 
 $\{\mathscr{L}_k = \{Q_{n,k}, W_{n,k}\}: k < \omega\}$ of open expansions such that 
 
-$$\bigcup \tilde{\mathscr{U}} \subset Q_{n,k} \textit{ and }
+$$\bigcup \widetilde{\mathscr{U}} \subset Q_{n,k} \textit{ and }
 X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}.$$
 
 \noindent For each $x \in X$, there exists $h < \omega$ such that $x$ is contained in 
@@ -191,7 +191,7 @@ at most one member of $\{Q_{n, h}, W_{n, h}\}$.
 Let $Q_n = \bigcap_{k < \omega} Q_{n,k}$, $W_n = \bigcap_{k < \omega} W_{n,k}$. We have:
 
 \begin{gather}
-\bigcup \tilde{\mathscr{U}} \subset Q_n, \;
+\bigcup \widetilde{\mathscr{U}} \subset Q_n, \;
 X \setminus \bigcup \mathscr{G}_n \subset W_n \; \textit{ and } \;
 Q_n \cap W_n = \emptyset \;
  \textit{ for } n < \omega.        \label{eq3.3.6.1}
@@ -201,9 +201,9 @@ Q_n \cap W_n = \emptyset \;
 $$\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap U_\alpha:  \alpha < \lambda\}.$$ 
 
 \noindent Then each $\mathscr{G}_{n,k}$ is an open refinement of $\mathscr{U}$. 
-By Lemma \ref{lem:3.3.5}, $\mathscr{P} = \bigcup_{n,k < \omega} \tilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
+By Lemma \ref{lem:3.3.5}, $\mathscr{P} = \bigcup_{n,k < \omega} \widetilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
 Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by (1), 
-$\bigcup \tilde{\mathscr{U}} \subset A$.
+$\bigcup \widetilde{\mathscr{U}} \subset A$.
 
 To show that $A\subset \bigcup\mathscr{P}$, let $x \in A$. 
 There exists $m < \omega$ such that $|\operatorname{ind}(\mathscr{G}_m)_x| \le 1$.
@@ -211,7 +211,7 @@ Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
 
-$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \tilde{G}_{\alpha_0, m} \in \tilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
+$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \widetilde{G}_{\alpha_0, m} \in \widetilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
 
 \noindent Thus $A \subset \bigcup \mathscr{P}$.
 \end{proof} 
@@ -231,26 +231,26 @@ $$F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\}, \te
 
 $$F_n \subset A_n \subset \bigcup \mathscr{P}_n.$$
 
-\noindent \textsc{Proof of Claim}. We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
+\noindent \textsc{Proof of Claim}. We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} Q_k$, where each $Q_k$ is open. 
 For $k < \omega$, let
 $$\mathscr{G}_k = \{ \cap_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
 \bigcup \{Q_k\cap U_\alpha: \alpha < \lambda\}.$$
 
 \noindent For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
-so $x \in Q_k\cap U_\alpha$ for some $\alpha < \omega$; if $x \notin F_n$, 
+so $x \in Q_k\cap U_\alpha$ for some $\alpha < \lambda$; if $x \notin F_n$, 
 then $|\text{ind}(\mathscr{U})_x| > n$,
-so $x\in \cap_{\alpha\in S} U_\alpha$ for some 
+so $x\in \bigcap_{\alpha\in S} U_\alpha$ for some 
 $S\in [\lambda]^{n+1}$. Hence
 $\mathscr{G}_k$ is an open refinement of $\mathscr{U}$ with  
 $|\mathscr{G}_k| \le \lambda$.
 By Lemma \ref{lem:3.3.6}, we have:
 
 (1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{E}_k$ of $\mathscr{G}_k$ and a $G_\delta$-set $B_k$ such that 
-$\bigcup \tilde{\mathscr{G}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
+$\bigcup \widetilde{\mathscr{G}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
 
 Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us show that:
 \begin{gather}
-F_{n+1} \setminus Q_k \subset \tilde{\mathscr{G}}_k \textit{ for each }  k < \omega \label{formula3.3.7.1}
+F_{n+1} \setminus Q_k \subset \widetilde{\mathscr{G}}_k \textit{ for each }  k < \omega \label{formula3.3.7.1}
 \end{gather}
 
 Suppose $x \in F_{n+1} \setminus G_k$. Then 
@@ -268,7 +268,7 @@ x \in \bigcap_{\alpha \in S_0} U_\alpha
 By \eqref{formula3.3.7.1}, for each $k < \omega$,
 
 $$F_{n+1} \subset (F_{n+1} \setminus Q_k) \cup Q_k \subset
-(\cup \tilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup G_k.$$
+(\cup \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup G_k.$$
 \noindent So $F_{n+1} \subset A_{n+1}$. 
 To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, 
 let $x \in A_{n+1}$. If $x \in A_n$, then 
