@@ -120,7 +120,8 @@ For any space $X$, the following are equivalent:
 Use an analogous proof as Theorem \ref{th:3.3.2}.
 \end{proof}
 
-{\theorem{\label{th:3.3.4}} \textup{([Smith 1976]\textsuperscript{\cite{Smith1976}})}
+{\theorem{\label{th:3.3.4}} 
+\textup{([Smith 1976]\textsuperscript{\cite{Smith1976}})}
 $X$ is $\lambda$-expandable if and only if $X$ is 
 $\lambda$-$\theta^*$-expandable.
 }
@@ -165,8 +166,8 @@ is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
  {\lemma{\label{lem:3.3.6}}
 If $X$ is $\lambda$-discretely subexpandable, then for every open 
 $\lambda$-cover $\mathscr{U}$ of $X$ there exists a $\sigma$-discrete closed partial refinement 
-$\mathscr{F}$ and a $G_\delta$-set $A$ in $X$ such that 
-$\bigcup \tilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{F}$,
+$\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that 
+$\bigcup \tilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P}$,
 where $\tilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
 }
 
@@ -199,11 +200,11 @@ Q_n \cap W_n = \emptyset \;
 $$\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap U_\alpha:  \alpha < \lambda\}.$$ 
 
 \noindent Then each $\mathscr{G}_{n,k}$ is an open refinement of $\mathscr{U}$. 
-By Lemma \ref{lem:3.3.5}, $\mathscr{F} = \bigcup_{n,k < \omega} \tilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
+By Lemma \ref{lem:3.3.5}, $\mathscr{P} = \bigcup_{n,k < \omega} \tilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
 Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by (1), 
 $\bigcup \tilde{\mathscr{U}} \subset A$.
 
-To show that $A\subset \bigcup\mathscr{F}$, let $x \in A$. 
+To show that $A\subset \bigcup\mathscr{P}$, let $x \in A$. 
 There exists $m < \omega$ such that $|\operatorname{ind}(\mathscr{G}_m)_x| \le 1$.
 Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some $h < \omega$. 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
@@ -211,7 +212,7 @@ $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
 
 $$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \tilde{G}_{\alpha_0, m} \in \tilde{\mathscr{G}}_{m,k} \subset \mathscr{P}[cite: 6]$$
 
-\noindent Thus $A \subset \bigcup \mathscr{F}$.
+\noindent Thus $A \subset \bigcup \mathscr{P}$.
 \end{proof} 
 
 
@@ -223,11 +224,11 @@ Proof. Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be a point-finite
 $$F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\}, \textit{ for } \ge 1$$
 \noindent Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
 
-\textsc{Claim.} For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{F}_n$ and a $G_\delta$-set $A_n \subset X$ such that
+\textsc{Claim.} For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that
 
-$$F_n \subset A_n \subset \bigcup \mathscr{F}_n[cite: 6]$$
+$$F_n \subset A_n \subset \bigcup \mathscr{P}_n[cite: 6]$$
 
-*Proof of Claim.* We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{F}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{F}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{F}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
+*Proof of Claim.* We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} G_k$, where each $G_k$ is open. 
 For $k < \omega$, let
 
 $$\mathscr{G}_k = \{ \dots \}$$
@@ -249,7 +250,7 @@ By Lemma \ref{lem:4.2.7}, we have:
 
 (1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{E}_k$ of $\mathscr{V}_k$ and a $G_\delta$-set $B_k$ such that $\bigcup \tilde{\mathscr{V}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
 
-Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{F}_{n+1} = \mathscr{F}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{F}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us see that:
+Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us see that:
 
 (2) For each $k < \omega$, $F_{n+1} \setminus G_k \subset \bigcup \tilde{\mathscr{V}}_k$.
 
@@ -263,8 +264,8 @@ By (2), for each $k < \omega$,
 
 $$F_{n+1} \subset (F_{n+1} \setminus G_k) \cup G_k \subset \bigcup \tilde{\mathscr{V}}_k \cup G_k \subset B_k \cup G_k[cite: 7]$$
 
-so $F_{n+1} \subset A_{n+1}$. To show that $A_{n+1} \subset \bigcup \mathscr{F}_{n+1}$, let $x \in A_{n+1}$. If $x \in A_n$, then $x \in \bigcup \mathscr{F}_n \subset \bigcup \mathscr{F}_{n+1}$. Assume $x \notin A_n$, then $x \notin G_k$ for some $k < \omega$. Since $x \in A_{n+1} \subset B_k \cup G_k$, $x \in B_k \subset \bigcup \mathscr{E}_k \subset \bigcup \mathscr{F}_{n+1}$. Hence $A_{n+1} \subset \bigcup \mathscr{F}_{n+1}$. This completes the proof of the induction.
+so $F_{n+1} \subset A_{n+1}$. To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, let $x \in A_{n+1}$. If $x \in A_n$, then $x \in \bigcup \mathscr{P}_n \subset \bigcup \mathscr{P}_{n+1}$. Assume $x \notin A_n$, then $x \notin G_k$ for some $k < \omega$. Since $x \in A_{n+1} \subset B_k \cup G_k$, $x \in B_k \subset \bigcup \mathscr{E}_k \subset \bigcup \mathscr{P}_{n+1}$. Hence $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$. This completes the proof of the induction.
 
-Since $\bigcup_{n < \omega} F_n = X$, by the claim, the family $\mathscr{F} = \bigcup_{n < \omega} \mathscr{F}_n$ is a $\sigma$-discrete closed refinement of $\mathscr{U}$. 
+Since $\bigcup_{n < \omega} F_n = X$, by the claim, the family $\mathscr{P} = \bigcup_{n < \omega} \mathscr{P}_n$ is a $\sigma$-discrete closed refinement of $\mathscr{U}$. 
 
 \end{document}
