@@ -57,14 +57,14 @@ cover $\mathscr{U}$, then $\{\mathscr{V}_n: n < \omega\}$ is a point-star $\dot{
 sequence for $\mathscr{U}$ by semi-open covers of $X$.
 
 $(\Leftarrow)$. Suppose that every open $\lambda$-cover has a point-star $F$-refining 
-sequence by semi-open covers, and that $\mathscr{U}_0 = \{U_\alpha \mid \alpha < \lambda\}$ 
+sequence by semi-open covers, and that $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
 be an open cover of $X$. We use induction on $n \in \omega$ to define open covers 
-$\mathscr{U}(t) = \{U(t, \beta) \mid \beta < \lambda \cdot 2\}$ of $X$ and 
+$\mathscr{U}(t) = \{U(t, \beta): \beta < \lambda \cdot 2\}$ of $X$ and 
 $Z_{s \oplus k} \subset X$ for $t \in \omega^n \subset \omega^{<\omega}$; such that:
 
 (1) For each $\alpha < \lambda$, $V(t, \alpha) \subset U_\alpha$.
 
-Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ for each $\alpha < \lambda$. Let $\mathscr{U}(\emptyset) = \{V(\emptyset, \beta) \mid \beta < \lambda \cdot 2\}$. Suppose that the open covers $\mathscr{U}(s)$, $s \in \omega^n$, have been defined, and that we have defined $\mathscr{U}(s) = \{V(s, \beta) \mid \beta < \lambda \cdot 2\}$ for each $s \in \omega^n$.
+Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ for each $\alpha < \lambda$. Let $\mathscr{U}(\emptyset) = \{V(\emptyset, \beta): \beta < \lambda \cdot 2\}$. Suppose that the open covers $\mathscr{U}(s)$, $s \in \omega^n$, have been defined, and that we have defined $\mathscr{U}(s) = \{V(s, \beta): \beta < \lambda \cdot 2\}$ for each $s \in \omega^n$.
 
 For each $s \in \omega^n$, $\mathscr{U}(s)$ has a point-star $F$-refining sequence $\{\mathscr{Z}_{s \oplus k}\}_{k < \omega}$ by semi-open covers of $X$. We now define, for all $s \in \omega^n$, $k < \omega$, and $\alpha < \lambda$:
 
@@ -72,11 +72,11 @@ For each $s \in \omega^n$, $\mathscr{U}(s)$ has a point-star $F$-refining sequen
 
 (3) $V(s \oplus k, \lambda + \alpha) = U_\alpha \cap \left( \bigcup_{\beta > \lambda + \alpha} V(s, \beta) \right) \cap \text{St}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), \mathscr{Z}_{s \oplus k} \right)^\circ$.
 
-Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ for some $s \in \omega^{n-1}$ and $k < \omega$, the above formulas define the families $\mathscr{U}(t) = \{V(t, \beta) \mid \beta < \lambda \cdot 2\}$ for $t \in \omega^n$. To complete the induction, it remains to verify that the families $\mathscr{U}(t)$, $t \in \omega^n$, are open covers of $X$.
+Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ for some $s \in \omega^{n-1}$ and $k < \omega$, the above formulas define the families $\mathscr{U}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ for $t \in \omega^n$. To complete the induction, it remains to verify that the families $\mathscr{U}(t)$, $t \in \omega^n$, are open covers of $X$.
 
 It is easily seen that these families consist of open subsets. To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
 
-Since $\mathscr{U}_0$ covers $X$, let $\beta_0 = \min \{ \alpha < \lambda \mid x \in U_\alpha \}$...
+Since $\mathscr{U}_0$ covers $X$, let $\beta_0 = \min \{ \alpha < \lambda: x \in U_\alpha \}$...
 
 
 
