@@ -20,7 +20,7 @@ For any \(\lambda\) the following are equivalent:
 \begin{proof}
 (i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iv) Clear.
 
-(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There is a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there is an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
+(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There is a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there exists an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
 
 (iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There is a star-finite closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). For each \(F\in\mathscr{F}\), let \(V_F=X\setminus\bigcup\{F'\in\mathscr{F}\mid F'\cap F=\emptyset\}\). Then \(V_F\) is an open set containing \(F\). Let \(W_F=V_F\cap U_F\). Then \(\mathscr{W}=\{W_F\mid F\in\mathscr{F}\}\) is a star-finite open refinement of \(\mathscr{U}\).
 
@@ -49,7 +49,7 @@ Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
 (iii) Every open \(\lambda\)-cover of \(X\) has a star-countable closed refinement.
 
 Proof. (i) \(\Rightarrow\) (ii) Clear.
-(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There is a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is ultraparacompact, \(X\) is zero-dimensional. For each \(V\in\mathscr{V}\), \(V\) can be partitioned into clopen sets. Thus, there is a star-countable closed refinement of \(\mathscr{U}\).
+(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There is a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is ultraparacompact, \(X\) is zero-dimensional. For each \(V\in\mathscr{V}\), \(V\) can be partitioned into clopen sets. Thus, there exists a star-countable closed refinement of \(\mathscr{U}\).
 
 (iii) \(\Rightarrow\) (i) Similar to the proof of 8.3.1. \(\square\)
 
@@ -74,13 +74,13 @@ c_1=A\quad\text{and}\quad c_n=B.
 \]
 
 $\mathscr{E}$ is \emph{connected} if for every $A,B\in\mathscr{E}$
-there is a link in $\mathscr{E}$ from $A$ to $B$.
+there exists a link in $\mathscr{E}$ from $A$ to $B$.
 
 For any family $\mathscr{E}$, $D\in\mathscr{E}$, and $n\geq1$, let
 \[
 P_n(D)
 =
-\{A\in\mathscr{E}:\text{ there is a $n$-link in $\mathscr{E}$
+\{A\in\mathscr{E}:\text{ there exists a $n$-link in $\mathscr{E}$
 	from $A$ to $D$}\}.
 \]
 
@@ -160,7 +160,7 @@ Let $\mathscr{B}$ be a family in $X$. Let
 ```
 
 ```latex
-Let \(\mathscr{A}\) be a family of subsets of \(X\) and \(n\ge 1\). A sequence \(A_1,\dots,A_n\) in \(\mathscr{A}\) is a \(n\)-chain from \(A_1\) to \(A_n\) in \(\mathscr{A}\) if \(A_i\cap A_{i+1}\neq\emptyset\) for each \(i=1,\dots,n-1\). For \(A,B\in\mathscr{A}\), \(A\) and \(B\) are chain-connected in \(\mathscr{A}\) if there is a chain from \(A\) to \(B\) in \(\mathscr{A}\). We define a relation \(\sim\) on \(\mathscr{A}\) by \(A\sim B\) if and only if \(A\) and \(B\) are chain-connected in \(\mathscr{A}\). It is easy to show that \(\sim\) is an equivalence relation on \(\mathscr{A}\). For each \(A\in\mathscr{A}\), let \(\mathscr{A}(A)\) denote the equivalence class containing \(A\), and let \(C(A,\mathscr{A})=\bigcup\mathscr{A}(A)\). Then \(\{C(A,\mathscr{A})\mid A\in\mathscr{A}\}\) forms a partition of \(\bigcup\mathscr{A}\).
+Let \(\mathscr{A}\) be a family of subsets of \(X\) and \(n\ge 1\). A sequence \(A_1,\dots,A_n\) in \(\mathscr{A}\) is a \(n\)-chain from \(A_1\) to \(A_n\) in \(\mathscr{A}\) if \(A_i\cap A_{i+1}\neq\emptyset\) for each \(i=1,\dots,n-1\). For \(A,B\in\mathscr{A}\), \(A\) and \(B\) are chain-connected in \(\mathscr{A}\) if there exists a chain from \(A\) to \(B\) in \(\mathscr{A}\). We define a relation \(\sim\) on \(\mathscr{A}\) by \(A\sim B\) if and only if \(A\) and \(B\) are chain-connected in \(\mathscr{A}\). It is easy to show that \(\sim\) is an equivalence relation on \(\mathscr{A}\). For each \(A\in\mathscr{A}\), let \(\mathscr{A}(A)\) denote the equivalence class containing \(A\), and let \(C(A,\mathscr{A})=\bigcup\mathscr{A}(A)\). Then \(\{C(A,\mathscr{A})\mid A\in\mathscr{A}\}\) forms a partition of \(\bigcup\mathscr{A}\).
 
 8.3.4. Lemma. Let \(\mathscr{U}\) be a star-countable open cover of \(X\). Then \(\{C(U,\mathscr{U})\mid U\in\mathscr{U}\}\) is a disjoint open cover of \(X\) such that each \(C(U,\mathscr{U})\) is a open-closed set in \(X\) and \(C(U,\mathscr{U})\) is covered by a countable subcollection of \(\mathscr{U}\).
 
@@ -230,7 +230,7 @@ cover \(\mathscr{B}=\bigcup_{n\in\omega}\mathscr{B}_n\) of \(X\) such that \(\ma
 (iii) Every open \(\lambda\)-cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that each \(V\in\mathscr{V}\) is strongly paracompact.
 
 Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
-(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). By (iii), there is a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\) such that each \(V\in\mathscr{V}\) is strongly paracompact. By Lemma 8.3.4, \(\{C(V,\mathscr{V})\mid V\in\mathscr{V}\}\) is a disjoint open cover of \(X\) and each \(C(V,\mathscr{V})\) is covered by a countable subcollection \(\mathscr{V}_V\) of \(\mathscr{V}\). Since each member of \(\mathscr{V}_V\) is strongly paracompact, \(C(V,\mathscr{V})\) is strongly paracompact. Thus \(X\) is \(\lambda\)-strongly paracompact. \(\square\)
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). By (iii), there exists a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\) such that each \(V\in\mathscr{V}\) is strongly paracompact. By Lemma 8.3.4, \(\{C(V,\mathscr{V})\mid V\in\mathscr{V}\}\) is a disjoint open cover of \(X\) and each \(C(V,\mathscr{V})\) is covered by a countable subcollection \(\mathscr{V}_V\) of \(\mathscr{V}\). Since each member of \(\mathscr{V}_V\) is strongly paracompact, \(C(V,\mathscr{V})\) is strongly paracompact. Thus \(X\) is \(\lambda\)-strongly paracompact. \(\square\)
 
 8.3.13. Theorem. ([Sun 1992]). For any space \(X\) the following are equivalent:
 (i) \(X\) is strongly paracompact.
@@ -289,7 +289,7 @@ Proof. Follows from Theorem 8.3.17. \(\square\)
 8.3.20. Theorem. ([Isbell 1964]). Every metric space is strongly paracompact if and only if it has a star-countable open cover. \(\square\)
 
 
-(i) \(\Rightarrow\) (iii) Clear. Assume (iii). For every \(\alpha\) and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\), since \(X\) is regular, there is an open
+(i) \(\Rightarrow\) (iii) Clear. Assume (iii). For every \(\alpha\) and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\), since \(X\) is regular, there exists an open
 
 8.3.21. Theorem. For any space \(X\) the following are equivalent:
 (i) \(X\) is strongly paracompact.

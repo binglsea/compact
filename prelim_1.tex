@@ -94,7 +94,7 @@ $\mathscr{U}^F = \{U_S: U_S = \bigcup_{\alpha\in S}U_\alpha
 	\textit{ where } S\in[\Delta]^{<\omega}\}$ 
 is directed, and 
 $\mathscr{U}$ is directed iff for each $S\in [\Delta]^{<\omega}$
-there is some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
+there exists some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
 
 {\definition{} \label{def:1.1.2} Let
 	$\mathscr{U} = \{ U_\alpha: \alpha\in \Delta\}$ and 
@@ -106,7 +106,7 @@ there is some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
 	   $\mathscr{U}$ or $\mathscr{G}$ is a 
 	    \uwave{partial refinement}\index{partial refinement| \S\ref{def:1.1.2}\hfill} 
 	    of $\mathscr{U}$ if for every $\beta\in \Gamma$
-	    there is some $\alpha\in \Delta$ such that 
+	    there exists some $\alpha\in \Delta$ such that 
 	    $G_\beta\subset U_\alpha$.
   $\mathscr{G}$ is a 
   \uwave{refinement}\index{refinement| \S\ref{def:1.1.2}\hfill} 
@@ -131,7 +131,7 @@ if $\overline{G_\alpha} \subset U_\alpha$ for all $\alpha\in \Delta$.
 	$\mathscr{G}$ is a 
 	\uwave{partial cushioned refinement}\index{cushioned| \S\ref{def:1.1.2}\hfill} 
 	of $\mathscr{U}$
-	if for every $\beta\in\Gamma$ there is $\delta(\beta)\in\Delta$ such that for any $B\subset\Gamma$, $\overline{\bigcup_{\beta\in B}G_\beta} \subset \bigcup_{\beta\in B}U_{\delta(\beta)}$. 
+	if for every $\beta\in\Gamma$ there exists $\delta(\beta)\in\Delta$ such that for any $B\subset\Gamma$, $\overline{\bigcup_{\beta\in B}G_\beta} \subset \bigcup_{\beta\in B}U_{\delta(\beta)}$. 
 	$\mathscr{G}$ is a 
 	\uwave{cushioned refinement}\index{cushioned refinement| \S\ref{def:1.1.2}\hfill}
 	if $\mathscr{G}$ is a partial cushioned refinement
@@ -152,7 +152,7 @@ if $\overline{G_\alpha} \subset U_\alpha$ for all $\alpha\in \Delta$.
   \uwave{discrete}\index{discrete at $x$| \S\ref{def:1.1.3}\hfill}
   $($\uwave{\text{locally finite}}\index{locally finite at $x$| \S\ref{def:1.1.3}\hfill}$)$ 
   \uwave{at $x$} $\in X$
-  if there is some $G\in\operatorname{top}(x)$ such that
+  if there exists some $G\in\operatorname{top}(x)$ such that
   $|\operatorname{ind}(\mathscr{U})_G| \leq 1 $ 
   $(|\operatorname{ind}(\mathscr{U})_G|  < \omega).$
 
@@ -242,15 +242,15 @@ $\{\operatorname{st}(x, \mathscr{V}) : x\in X\}$ refines $\mathscr{U}$.
 	
 	\textup{(ii)} An open cover $\mathscr{U}$ of $X$ is 
 		\uwave{normal}\index{normal (cover)| \S\ref{def:1.1.6}\hfill} 
-	if there is a sequence $\{ \mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and $\mathscr{U}_{n+1}$ star-refines $\mathscr{U}_n$ for each $n<\omega$.
+	if there exists a sequence $\{ \mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and $\mathscr{U}_{n+1}$ star-refines $\mathscr{U}_n$ for each $n<\omega$.
 }%end of def
 
 {\lemma{\label{lem:1.1.7}}
 \textup{(i)} Let $\mathscr{U}, \mathscr{V}, \mathscr{W}$ be covers of $X$. If $\mathscr{W}$ point-star refines $\mathscr{V}$ and $\mathscr{V}$ point-star refines $\mathscr{U}$, then $\mathscr{W}$ star-refines $\mathscr{U}$.
 
-\textup{(ii)}  An open cover $\mathscr{U}$ is normal iff there is a sequence $\{\mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and  $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ for each $n<\omega$..
+\textup{(ii)}  An open cover $\mathscr{U}$ is normal iff there exists a sequence $\{\mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and  $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ for each $n<\omega$..
 
-\textup{(iii)}  If $\mathscr{U}$ is a normal cover of $X$, then there is a normal cover $\mathscr{U}_1$ of $X$ such that $\overline{\mathscr{U}_1}$ refines $\mathscr{U}$.
+\textup{(iii)}  If $\mathscr{U}$ is a normal cover of $X$, then there exists a normal cover $\mathscr{U}_1$ of $X$ such that $\overline{\mathscr{U}_1}$ refines $\mathscr{U}$.
 } %end of lemma
 
 \begin{proof} 
@@ -258,7 +258,7 @@ $\{\operatorname{st}(x, \mathscr{V}) : x\in X\}$ refines $\mathscr{U}$.
 point-star refines $\mathscr{U}$. To show
 that $\mathscr{W}$ star-refines $\mathscr{U}$, let $W \in \mathscr{W}$ and pick $a \in W$.
 Then $\operatorname{st}(a, \mathscr{V}) \subset U$ for some $U \in \mathscr{U}$. 
-For each $x \in W$ there is $V_x \in \mathscr{V}$ such that 
+For each $x \in W$ there exists $V_x \in \mathscr{V}$ such that 
 $\operatorname{st}(x, \mathscr{W}) \subset V_x$. Then 
 $a \in W \subset \operatorname{st}(x, \mathscr{W}) \subset V_x$, and 
 $V_x \subset \operatorname{st}(a, \mathscr{V}) \subset U$. It follows that:

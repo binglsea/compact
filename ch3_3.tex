@@ -178,10 +178,13 @@ There is a $\varepsilon$-sequence
 $\{\mathscr{G}_n = \{G_{\alpha,n}\}: n < \omega\}$ 
 of open expansions of $\tilde{\mathscr{U}}$ such that 
 $\tilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $\alpha, n$.
+For each $n < \omega$, $\{\bigcup \tilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There is a $\varepsilon$-sequence 
+$\{\mathscr{L}_k = \{Q_{n,k}, W_{n,k}\}: k < \omega\}$ of open expansions such that 
 
-For each $n < \omega$, $\{\bigcup \tilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There is a $\sigma$-sequence $\{\mathscr{Q}_k = \{Q_{n,k}, W_{n,k}\}\}_{k < \omega}$ of open expansions such that $\bigcup \tilde{\mathscr{U}} \subset Q_{n,k}$ and $X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}$.
+$$\bigcup \tilde{\mathscr{U}} \subset Q_{n,k} \textit{ and }
+X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}.$$
 
-For each $x \in X$, there is $k < \omega$ such that $x$ is contained in at most one member of $\{Q_{n,k}, W_{n,k}\}$. Let $Q_n = \bigcup_{k < \omega} Q_{n,k}$, $W_n = \bigcup_{k < \omega} W_{n,k}$. We have:
+For each $x \in X$, there exists $k < \omega$ such that $x$ is contained in at most one member of $\{Q_{n,k}, W_{n,k}\}$. Let $Q_n = \bigcup_{k < \omega} Q_{n,k}$, $W_n = \bigcup_{k < \omega} W_{n,k}$. We have:
 
 (1) For each $n < \omega$, $\bigcup \tilde{\mathscr{U}} \subset Q_n$, $X \setminus \bigcup \mathscr{G}_n \subset W_n$, and $Q_n \cap W_n = \emptyset$.
 
@@ -189,7 +192,7 @@ For $n, k < \omega$, let $\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap 
 
 To show that $\vert{}\text{index}(\mathscr{G}_{m,k})_x\vert{} \le 1$.
 
-Since $A \subset \bigcup \mathscr{P}$, let $x \in A$. There is $m < \omega$ such that $x \in \bigcup \mathscr{G}_{m,k}$ for some $k < \omega$, so there is $\alpha_0 < \lambda$ with $x \in G_{\alpha_0, m}$. Since $x \in A \subset Q_m$, by (1) $x \notin W_{m,k}$ for some $k < \omega$, so $\vert{}\text{index}(\mathscr{G}_m)_x\vert{} \le 1$. It follows that
+Since $A \subset \bigcup \mathscr{P}$, let $x \in A$. There is $m < \omega$ such that $x \in \bigcup \mathscr{G}_{m,k}$ for some $k < \omega$, so there exists $\alpha_0 < \lambda$ with $x \in G_{\alpha_0, m}$. Since $x \in A \subset Q_m$, by (1) $x \notin W_{m,k}$ for some $k < \omega$, so $\vert{}\text{index}(\mathscr{G}_m)_x\vert{} \le 1$. It follows that
 
 $$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \tilde{G}_{\alpha_0, m} \in \tilde{\mathscr{G}}_{m,k} \subset \mathscr{P}[cite: 6]$$
 
@@ -207,7 +210,7 @@ $$F_n = \{x \in X:  \vert{}\text{index}(\mathscr{U})_x\vert{} \le n\}, \quad n \
 
 Then $\{F_n\}_{n < \omega}$ is a closed cover of $X$. We have the following:
 
-Claim. For each $n < \omega$, there is a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that
+Claim. For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that
 
 $$F_n \subset A_n \subset \bigcup \mathscr{P}_n[cite: 6]$$
 
@@ -231,13 +234,13 @@ is an open refinement of $\mathscr{U}$ with $\vert{}\mathscr{V}_k\vert{} \le \la
 
 By Lemma \ref{lem:4.2.7}, we have:
 
-(1) For each $k < \omega$, there is a $\sigma$-discrete closed partial refinement $\mathscr{E}_k$ of $\mathscr{V}_k$ and a $G_\delta$-set $B_k$ such that $\bigcup \tilde{\mathscr{V}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
+(1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{E}_k$ of $\mathscr{V}_k$ and a $G_\delta$-set $B_k$ such that $\bigcup \tilde{\mathscr{V}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
 
 Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup G_k)$ and $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us see that:
 
 (2) For each $k < \omega$, $F_{n+1} \setminus G_k \subset \bigcup \tilde{\mathscr{V}}_k$.
 
-*Proof of (2).* Suppose $x \in F_{n+1} \setminus G_k$. Then $\vert{}\text{index}(\mathscr{U})_x\vert{} \le n+1$. Since $x \in F_{n+1}$ and $x \notin G_k$, there is $S_0 \subset \lambda$ with $\vert{}S_0\vert{} = n+1$ such that $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
+*Proof of (2).* Suppose $x \in F_{n+1} \setminus G_k$. Then $\vert{}\text{index}(\mathscr{U})_x\vert{} \le n+1$. Since $x \in F_{n+1}$ and $x \notin G_k$, there exists $S_0 \subset \lambda$ with $\vert{}S_0\vert{} = n+1$ such that $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
 
 $$x \in \bigcap_{\alpha \in S_0} U_\alpha \setminus \bigcup \left\{ \bigcap_{\alpha \in S} U_\alpha : S \neq S_0 \right\} \setminus \bigcup_{\alpha \in \lambda} (G_k \cap U_\alpha) = \tilde{\bigcap_{\alpha \in S_0} U_\alpha} \in \tilde{\mathscr{V}}_k[cite: 7]$$
 
