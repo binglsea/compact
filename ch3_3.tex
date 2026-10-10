@@ -188,7 +188,12 @@ X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}.$$
 at most one member of $\{Q_{n, h}, W_{n, h}\}$. 
 Let $Q_n = \bigcap_{k < \omega} Q_{n,k}$, $W_n = \bigcap_{k < \omega} W_{n,k}$. We have:
 
-(1) For each $n < \omega$, $\bigcup \tilde{\mathscr{U}} \subset Q_n$, $X \setminus \bigcup \mathscr{G}_n \subset W_n$, and $Q_n \cap W_n = \emptyset$.
+\begin{gather}
+\bigcup \tilde{\mathscr{U}} \subset Q_n, \;
+X \setminus \bigcup \mathscr{G}_n \subset W_n \; \textit{ and } \;
+Q_n \cap W_n = \emptyset \;
+ \textit{ for } n < \omega.        \label{eq3.3.6.1}
+\end{gather}
 
 \noindent For $n, k < \omega$, let 
 $$\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap U_\alpha:  \alpha < \lambda\}.$$ 
@@ -200,7 +205,7 @@ $\bigcup \tilde{\mathscr{U}} \subset A$.
 
 To show that $A\subset \bigcup\mathscr{F}$, let $x \in A$. 
 There exists $m < \omega$ such that $|\operatorname{ind}(\mathscr{G}_m)_x| \le 1$.
-Since $x \in A \subset Q_m$, by (1), $x \notin W_{m, h}$ for some $h < \omega$. 
+Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some $h < \omega$. 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
 
