@@ -1,4 +1,5 @@
 \documentclass[main.tex]{subfiles}
+%subfile: ch4.tex
 \begin{document}
 
 	
@@ -51,16 +52,15 @@ by semi-open covers of $X$.
 }
 
 \begin{proof}
-$(\Rightarrow)$ If $\{\mathscr{V}_n\}$ is a $\theta$-sequence of open refinement of a 
-cover $\mathscr{U}$, then $\{\mathscr{V}_n\}$ is a point-star $\dot{F}$-refining
+$(\Rightarrow)$. If $\{\mathscr{V}_n: n < \omega\}$ is a $\theta$-sequence of open refinement of a 
+cover $\mathscr{U}$, then $\{\mathscr{V}_n: n < \omega\}$ is a point-star $\dot{F}$-refining
 sequence for $\mathscr{U}$ by semi-open covers of $X$.
-\end{proof}
 
-Proof Continuation (Junnila Theorem / Submetacompact Spaces)
-
-... sequence for $\mathscr{U}$ by semi-open covers of $X$.
-
-$(\Leftarrow)$ Suppose that every open $\kappa$-cover has a point-star $F$-refining sequence by semi-open covers, and that $\mathscr{U}_0 = \{U_\alpha \mid \alpha < \lambda\}$ be an open cover of $X$. We use induction on $n \in \omega$ to define open covers $\mathscr{U}(t) = \{U(t, \beta) \mid \beta < \lambda \cdot 2\}$ of $X$ and $Z_{s \oplus k} \subset X$ for $t \in \omega^n \subset \omega^{<\omega}$; such that:
+$(\Leftarrow)$. Suppose that every open $\lambda$-cover has a point-star $F$-refining 
+sequence by semi-open covers, and that $\mathscr{U}_0 = \{U_\alpha \mid \alpha < \lambda\}$ 
+be an open cover of $X$. We use induction on $n \in \omega$ to define open covers 
+$\mathscr{U}(t) = \{U(t, \beta) \mid \beta < \lambda \cdot 2\}$ of $X$ and 
+$Z_{s \oplus k} \subset X$ for $t \in \omega^n \subset \omega^{<\omega}$; such that:
 
 (1) For each $\alpha < \lambda$, $V(t, \alpha) \subset U_\alpha$.
 
@@ -77,5 +77,10 @@ Since every element $t \in \omega^n$ can be uniquely represented in the form $s 
 It is easily seen that these families consist of open subsets. To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
 
 Since $\mathscr{U}_0$ covers $X$, let $\beta_0 = \min \{ \alpha < \lambda \mid x \in U_\alpha \}$...
+
+
+
+
+\end{proof}
 
 \end{document}
