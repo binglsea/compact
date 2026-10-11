@@ -42,8 +42,6 @@ for $\mathscr{U}$ if for
 each $x \in X$ there exists $n < \omega$ such that $\mathscr{V}_n$ is a point-star $($local-star, point-star $\dot{F})$ refinement of $\mathscr{U}$ at $x$.
 }
 
-
-
 {\theorem{} \label{th:4.1.2} 
 \textup{([Junnila 1978]\textsuperscript{\cite{Junnila1978}})}
 $X$ is $\lambda$-submetacompact if and only if for every open $\lambda$-cover of $X$, 
@@ -56,21 +54,30 @@ $(\Rightarrow)$. If $\{\mathscr{V}_n: n < \omega\}$ is a $\theta$-sequence of op
 cover $\mathscr{U}$, then $\{\mathscr{V}_n: n < \omega\}$ is a point-star $\dot{F}$-refining
 sequence for $\mathscr{U}$ by semi-open covers of $X$.
 
-$(\Leftarrow)$. Suppose that every open $\lambda$-cover has a point-star $F$-refining 
+$(\Leftarrow)$. Suppose that every open $\lambda$-cover has a point-star $\dot{F}$-refining 
 sequence by semi-open covers, and that $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
 be an open cover of $X$. We use induction on $n \in \omega$ to define open covers 
-$\mathscr{U}(t) = \{U(t, \beta): \beta < \lambda \cdot 2\}$ of $X$ and 
-$Z_{s \oplus k} \subset X$ for $t \in \omega^n \subset \omega^{<\omega}$; such that:
+$\mathscr{V}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ of $X$ for 
+$t \in \omega^n \subset \omega^{<\omega}$ such that:
 
-(1) For each $\alpha < \lambda$, $V(t, \alpha) \subset U_\alpha$.
+(1) For each $\alpha < \lambda$, $V(t, \alpha) \subset U_\alpha$ and $V(t, \lambda+\alpha) \subset U_\alpha.$
 
-Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ for each $\alpha < \lambda$. Let $\mathscr{U}(\emptyset) = \{V(\emptyset, \beta): \beta < \lambda \cdot 2\}$. Suppose that the open covers $\mathscr{U}(s)$, $s \in \omega^n$, have been defined, and that we have defined $\mathscr{U}(s) = \{V(s, \beta): \beta < \lambda \cdot 2\}$ for each $s \in \omega^n$.
+Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ 
+for each $\alpha < \lambda$. 
+Let $\mathscr{V}(\emptyset) = \{V(\emptyset, \beta): \beta < \lambda \cdot 2\}$. 
+Suppose that $n < \omega$ and that we have defined the open covers 
+$\mathscr{V}(S) = \{V(S, \beta): \beta < \lambda \cdot 2\}$ for each $S \in \omega^{n-1}$.
+For each $S \in \omega^{n-1}$, $\mathscr{V}(S)$ has a point-star $\dot{F}$-refining sequence $\{\mathscr{L}_{S \oplus k}\}_{k < \omega}$ by semi-open covers of $X$. 
+We now define, for all $S \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda$:
 
-For each $s \in \omega^n$, $\mathscr{U}(s)$ has a point-star $F$-refining sequence $\{\mathscr{Z}_{s \oplus k}\}_{k < \omega}$ by semi-open covers of $X$. We now define, for all $s \in \omega^n$, $k < \omega$, and $\alpha < \lambda$:
+(2) $V(S \oplus k, \alpha) = V(S, \alpha) \cup \left( U_\alpha \cap 
+\text{st}\left( X \setminus \bigcup_{\beta \ne\lambda+ \alpha} V(S, \beta), 
+\mathscr{L}_{S \oplus k} \right)^\circ \right)$,
 
-(2) $V(s \oplus k, \alpha) = V(s, \alpha) \cup \left( U_\alpha \cap \text{St}\left( X \setminus \bigcup_{\beta < \alpha} V(s, \beta), \mathscr{Z}_{s \oplus k} \right)^\circ \right)$,
-
-(3) $V(s \oplus k, \lambda + \alpha) = U_\alpha \cap \left( \bigcup_{\beta > \lambda + \alpha} V(s, \beta) \right) \cap \text{St}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), \mathscr{Z}_{s \oplus k} \right)^\circ$.
+(3) $V(S \oplus k, \lambda + \alpha) = U_\alpha \cap 
+\left( \bigcup_{\beta > \lambda + \alpha} V(S, \beta) \right) 
+\cap \text{st}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(S, \beta), 
+\mathscr{L}_{s \oplus k} \right)^\circ$.
 
 Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ for some $s \in \omega^{n-1}$ and $k < \omega$, the above formulas define the families $\mathscr{U}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ for $t \in \omega^n$. To complete the induction, it remains to verify that the families $\mathscr{U}(t)$, $t \in \omega^n$, are open covers of $X$.
 
