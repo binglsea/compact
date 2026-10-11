@@ -120,15 +120,20 @@ Since $\omega^{<\omega}$ is countable, tocomplete the proof, it suffices to show
 \begin{equation}
 	\{\mathscr{V}(t): t \in \omega^{<\omega}\} \text{ is a } \theta\text{-sequence.}  \label{eq:4.2.2.5}
 \end{equation}
-\textit{Proof.} Let $x \in X$. There is a sequence $(s_n)$ such that $s_{n+1} = s_n \frown \alpha_n$ where $s_n \in \omega^n$, $s_0 = \emptyset \in \omega^0$, and such that $\mathscr{U}_{s_{n+1}}$ is a point-star $\sigma$-refinement of[cite: 2]
-
-For each $n < \omega$, let $A_n$ be a finite subset of $\omega$ such that $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and[cite: 2]
+\noindent Let $x \in X$. There is a sequence $\{s_n\}$ such that 
+$s_0 = \emptyset\in \omega^0, s_1 = s_0\oplus k, 
+\cdots, s_{n+1} = s_n \oplus k$ where $s_n \in \omega^n, k < \omega$, 
+and such that $\mathscr{L}_{s_{n+1}}$ is a point-star $\dot{F}$-refinement of
+$\mathscr{V}(s_n)$ at $x$ for each $n < \omega$.
+For each $n < \omega$, let $A_n$ be a finite subset of $\lambda\cdot 2$ such that 
+$x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and
 \begin{equation}
-	\operatorname{st}(x, \mathscr{U}_{s_{n+1}}) \subset \bigcup_{\beta \in A_n} V(s_n, \beta).
+	\operatorname{st}(x, \mathscr{L}_{s_{n+1}}) \subset \bigcup_{\beta \in A_n} V(s_n, \beta),
+\forall \, n < \omega.   \label{eq:4.2.2.6}
 \end{equation}
-Let $\beta_n = \max A_n$ and $\beta_m = \max\{\beta_n : n < \omega\}$. We have[cite: 2]
+\noindent Let $\beta_n = \max A_n$ and $\beta_m = \min\{\beta_n : n < \omega\}$. We have
 \begin{equation}
-	\text{If } \beta \ge \lambda \text{ and } \beta > \beta_m, \text{ then } x \notin V(s_{m+1}, \beta).
+\text{If } \beta \ge \lambda, \text{ then } x \notin V(s_{m+1}, \beta). \label{eq:4.2.2.7}
 \end{equation}
 \textit{Proof.} (a) If $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall n \in A_m$, $\beta \in \beta_m < \beta$, and by (6)[cite: 2]
 \[ \operatorname{st}(x, \mathscr{U}_{s_{m+1}}) \subset \bigcup_{\gamma < \beta} V(s_m, \gamma). \text{ Thus: } x \notin \operatorname{st}\left(x - \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{U}_{s_{m+1}}\right). \]
