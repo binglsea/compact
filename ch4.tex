@@ -160,13 +160,22 @@ this contradiction, showsthat part (b) is true.
 Then \eqref{eq:4.2.2.7} follows from (a) and (b). We say that
 
 \begin{equation}
-	\mathscr{V}(s_{m+1}) \text{ is point-finite at } x.
+	\mathscr{V}(s_{m+1}) \text{ is point-finite at } x. \label{eq:4.2.2.8}
 \end{equation}
-\noindent Ifthis is true, then \eqref{eq:4.2.2.5} is true and we complete the proof. Now, we prove this.
-Let $C = \{\alpha < \lambda : x \in V(s_{m+1}, \alpha)\}$ and noting that each $B_n = \bigcup_{\beta \in A_n}$ is finite, it suffices to show that $C \subset \bigcup_{n=1}^{m} B_n$. By tracing elements and neighborhoods, this completes the proof.
+\noindent If this is true, then \eqref{eq:4.2.2.5} is true and we complete the proof. 
+
+Now, we prove \eqref{eq:4.2.2.8}.
+Let $C= \operatorname{ind}(\mathscr{V}(s_{m+1}))_x$. By \eqref{eq:4.2.2.7}, $C = \{\alpha < \lambda : x \in V(s_{m+1}, \alpha)\}$.For $n\le m$, let $B_n = \{\alpha < \lambda: \lambda + \alpha\in A_n\}$. Since each
+$B_n $ is finite, it suffices to show that $C \subset \bigcup_{n=1}^{m} B_n$. 
+Let $\alpha \in C$. Since $x\notin \emptyset = V(s_0, \alpha)$, there exists $p$ such that 
+$0 \le p \le m$ and $x \in \mathscr{V}({s_{p+1}}, \alpha)\setminus  \mathscr{V}{s_{p}}, \alpha)$.
+By \eqref{eq:4.2.2.2}, 
+$x \in \operatorname{st}(X \setminus \bigcup_{\beta \ne \lambda + \alpha}\mathscr{V}(s_p, \beta),
+	 \mathscr{L}_{s_{p+1}})$.
+Let 
 
 
-{\corollary{} \label{cor:4.1.2} 
+{\corollary{} \label{cor:4.1.3} 
 For any space $X$, the following are equivalent:
 
 \textup{(i)} $X$ is $\lambda$-submetacompact.
