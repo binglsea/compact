@@ -44,7 +44,7 @@ each $x \in X$ there exists $n < \omega$ such that $\mathscr{V}_n$ is a point-st
 
 {\theorem{} \label{th:4.1.2} 
 \textup{([Junnila 1978]\textsuperscript{\cite{Junnila1978}})}
-$X$ is $\lambda$-submetacompact if and only if for every open $\lambda$-cover of $X$, 
+$X$ is $\lambda$-submetacompact if and only if for every open $\lambda$-cover $\mathscr{U}$ of $X$, 
 there exists a point-star $\dot{F}$-refining sequence for $\mathscr{U}$ 
 by semi-open covers of $X$.
 }
@@ -56,16 +56,16 @@ sequence for $\mathscr{U}$ by semi-open covers of $X$.
 
 $(\Leftarrow)$. Suppose that every open $\lambda$-cover has a point-star $\dot{F}$-refining 
 sequence by semi-open covers, and that $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
-be an open cover of $X$. We use induction on $n \in \omega$ to define open covers 
+be an open cover of $X$. We use induction on $n < \omega$ to define open covers 
 $\mathscr{V}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ of $X$ for 
 $t \in \omega^n \subset \omega^{<\omega}$ such that:
  
 \begin{equation}
 V(t, \alpha) \subset U_\alpha \textup{ and } V(t, \lambda+\alpha) \subset U_\alpha 
-\textup{ for each } \alpha < \lambda.
+\textup{ for each } \alpha < \lambda.      \label{eq:4.2.2.1}
 \end{equation}
 
-Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ 
+\noindent Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ 
 for each $\alpha < \lambda$. 
 Let $\mathscr{V}(\emptyset) = \{V(\emptyset, \beta): \beta < \lambda \cdot 2\}$. 
 Suppose that $n < \omega$ and that we have defined the open covers 
@@ -76,11 +76,11 @@ We now define, for all $s \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda
 \begin{gather}
 V(s \oplus k, \alpha) = V(s, \alpha) \bigcup \left( U_\alpha \bigcap 
 \text{st}\left( X \setminus \bigcup_{\beta \ne\lambda+ \alpha} V(s, \beta), 
-\mathscr{L}_{s \oplus k} \right)^\circ \right), \\
+\mathscr{L}_{s \oplus k} \right)^\circ \right),      \label{eq:4.2.2.2} \\
 V(s \oplus k, \lambda + \alpha) = U_\alpha \bigcap 
 \left( \bigcup_{\beta > \lambda + \alpha} V(s, \beta) \right) 
 \bigcap \text{st}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), 
-\mathscr{L}_{s \oplus k} \right)^\circ.
+\mathscr{L}_{s \oplus k} \right)^\circ.   \label{eq:4.2.2.3}
 \end{gather}
 Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ 
 for some $s\in \omega^{n-1}$ and $k < \omega$, 
@@ -94,23 +94,31 @@ $\beta_0 = \min \{ \alpha < \lambda \cdot 2: x \in \mathscr{V}(s, \beta) \}.$
 We have
 \begin{equation}
 x \in V(s, \beta_0)  \textup{ and }
-x \notin \bigcup_{\beta < \beta_{0}} V(s, \beta).
+x \notin \bigcup_{\beta < \beta_{0}} V(s, \beta).   \label{eq:4.2.2.4}
 \end{equation}
 If $\beta_0 < \lambda$, then $V(s, \beta_0)\subset V(t, \beta_0)$. 
 So $x \in V(t, \beta_0)$.
 Assume that $\beta_{0} \ge \lambda$, then $\beta_{0} = \lambda + \alpha_{0}$ 
 for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \beta_0) \subset U_\alpha.$
 \begin{enumerate}
-	\item[(a)] If $x \notin \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta)$, then by (4) and[cite: 2]
-	\[ x \in U_{\alpha_{0}} \cap \operatorname{st}\left(x - \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), \mathscr{U}_{\mathrm{sofh}}\right)^{\circ} \subset V(s, \alpha_{0}) \]
-	\item[(b)] If $\bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta)$, then by (4) and[cite: 2]
-	\[ x \in U_{\alpha_{0}} \cap \left(\bigcup_{\beta < \lambda + \alpha_{0}} U(s, \beta)\right) \cap \operatorname{st}\left(x - \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), \mathscr{U}_{\mathrm{sofh}}\right)^{\circ} \subset V(s, \beta_{0}). \]
+\item[(a)] If $x \notin \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
+	then by \eqref{eq:4.2.2.4} and \eqref{eq:4.2.2.2}
+	\[ x \in U_{\alpha_{0}} \cap \operatorname{st}\left(x \setminus 
+	\bigcup_{\beta \ne \lambda + \alpha_{0}} V(s, \beta), 
+	\mathscr{L}_{s \oplus k}\right)^{\circ} 
+	\subset V(t, \alpha_{0}) \]
+\item[(b)] If $x \in \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
+	then by \eqref{eq:4.2.2.4} and \eqref{eq:4.2.2.3}
+	\[ x \in U_{\alpha_{0}} \cap \left(\bigcup_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
+	\cap \operatorname{st}\left(X- \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
+	\subset V(t, \alpha_{0}) \]
 \end{enumerate}
-Thus $\mathscr{U}$ covers $X$.[cite: 2]
-By[cite: 2] we have now open refinements $\omega^{<\omega}$ defined[cite: 2]
-Since $\omega^{<\omega}$ is countable we complete the proof, it suffices to show that[cite: 2]
+Thus $\mathscr{V}(t)$ covers $X$. 
+By  \eqref{eq:4.2.2.1}, we have now defined the open refinements 
+$\mathscr{V}(t)$ for $t \in \omega^{<\omega}$.
+Since $\omega^{<\omega}$ is countable, tocomplete the proof, it suffices to show that
 \begin{equation}
-	\{\omega^{<\omega}\} \text{ is a } \sigma\text{-sequence.}
+	\{\mathscr{V}(t): t \in \omega^{<\omega}\} \text{ is a } \theta\text{-sequence.}  \label{eq:4.2.2.5}
 \end{equation}
 \textit{Proof.} Let $x \in X$. There is a sequence $(s_n)$ such that $s_{n+1} = s_n \frown \alpha_n$ where $s_n \in \omega^n$, $s_0 = \emptyset \in \omega^0$, and such that $\mathscr{U}_{s_{n+1}}$ is a point-star $\sigma$-refinement of[cite: 2]
 
