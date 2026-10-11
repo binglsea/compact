@@ -79,11 +79,15 @@ We now define, for all $s \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda
 \bigcap \text{st}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), 
 \mathscr{L}_{s \oplus k} \right)^\circ$.
 
-Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ for some $s\in \omega^{n-1}$ and $k < \omega$, the above formulas define the families $\mathscr{U}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ for $t \in \omega^n$. To complete the induction, it remains to verify that the families $\mathscr{U}(t)$, $t \in \omega^n$, are open covers of $X$.
-
-It is easily seen that these families consist of open subsets. To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
-
-Since $\mathscr{U}_0$ covers $X$, let $\beta_0 = \min \{ \alpha < \lambda: x \in U_\alpha \}$...
+Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ 
+for some $s\in \omega^{n-1}$ and $k < \omega$, 
+the above formulas define the families $\mathscr{V}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ 
+for $t \in \omega^n$. To complete the induction, it remains to verify that the families 
+$\mathscr{V}(t)$, $t \in \omega^n$, are open covers of $X$.
+It is easy to see that these families consist of open subsets. 
+To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
+Since $\mathscr{V}(s)$ covers $X$, let 
+$$\beta_0 = \min \{ \alpha < \lambda \cdot 2: x \in \mathscr{V}(s, \beta) \},$$
 
 
 
