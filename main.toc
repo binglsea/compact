@@ -12,16 +12,16 @@
 \contentsline {chapter}{\numberline {Chapter 4}Works of H. J. K. Junnila}{24}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Submetacompact and Subparacompact Spaces}{24}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Paracompact and Metacompact Spaces}{26}{section.4.2}%
-\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Normal Covers and $D\omega ^2$-refinable Spaces}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{28}{section.5.2}%
-\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Submetacompact and $\lambda $-expandable Spaces}{31}{section.6.1}%
-\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{32}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{32}{section.7.1}%
-\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{33}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{33}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Fully Normal Spaces}{34}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Strongly Paracompact and Ultraparacompact Spaces}{36}{section.8.3}%
-\contentsline {chapter}{Bibliography}{41}{chapter*.9}%
-\contentsline {chapter}{Index}{44}{chapter*.9}%
+\contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Normal Covers and $D\omega ^2$-refinable Spaces}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{29}{section.5.2}%
+\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Submetacompact and $\lambda $-expandable Spaces}{32}{section.6.1}%
+\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{33}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{33}{section.7.1}%
+\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{34}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{34}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Fully Normal Spaces}{35}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Strongly Paracompact and Ultraparacompact Spaces}{37}{section.8.3}%
+\contentsline {chapter}{Bibliography}{42}{chapter*.9}%
+\contentsline {chapter}{Index}{45}{chapter*.9}%
