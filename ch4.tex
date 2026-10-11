@@ -59,8 +59,11 @@ sequence by semi-open covers, and that $\mathscr{U} = \{U_\alpha: \alpha < \lamb
 be an open cover of $X$. We use induction on $n \in \omega$ to define open covers 
 $\mathscr{V}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ of $X$ for 
 $t \in \omega^n \subset \omega^{<\omega}$ such that:
-
-(1) For each $\alpha < \lambda$, $V(t, \alpha) \subset U_\alpha$ and $V(t, \lambda+\alpha) \subset U_\alpha.$
+ 
+\begin{equation}
+V(t, \alpha) \subset U_\alpha \textup{ and } V(t, \lambda+\alpha) \subset U_\alpha 
+\textup{ for each } \alpha < \lambda.
+\end{equation}
 
 Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ 
 for each $\alpha < \lambda$. 
@@ -70,15 +73,15 @@ $\mathscr{V}(s) = \{V(s, \beta): \beta < \lambda \cdot 2\}$ for each $s \in \ome
 For each $s \in \omega^{n-1}$, $\mathscr{V}(s)$ has a point-star $\dot{F}$-refining sequence $\{\mathscr{L}_{s \oplus k}\}_{k < \omega}$ by semi-open covers of $X$. 
 We now define, for all $s \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda$:
 
-(2) $V(s \oplus k, \alpha) = V(s, \alpha) \bigcup \left( U_\alpha \bigcap 
+\begin{gather}
+V(s \oplus k, \alpha) = V(s, \alpha) \bigcup \left( U_\alpha \bigcap 
 \text{st}\left( X \setminus \bigcup_{\beta \ne\lambda+ \alpha} V(s, \beta), 
-\mathscr{L}_{s \oplus k} \right)^\circ \right)$,
-
-(3) $V(s \oplus k, \lambda + \alpha) = U_\alpha \bigcap 
+\mathscr{L}_{s \oplus k} \right)^\circ \right), \\
+V(s \oplus k, \lambda + \alpha) = U_\alpha \bigcap 
 \left( \bigcup_{\beta > \lambda + \alpha} V(s, \beta) \right) 
 \bigcap \text{st}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), 
-\mathscr{L}_{s \oplus k} \right)^\circ$.
-
+\mathscr{L}_{s \oplus k} \right)^\circ.
+\end{gather}
 Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ 
 for some $s\in \omega^{n-1}$ and $k < \omega$, 
 the above formulas define the families $\mathscr{V}(t) = \{V(t, \beta): \beta < \lambda \cdot 2\}$ 
@@ -87,9 +90,71 @@ $\mathscr{V}(t)$, $t \in \omega^n$, are open covers of $X$.
 It is easy to see that these families consist of open subsets. 
 To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
 Since $\mathscr{V}(s)$ covers $X$, let 
-$$\beta_0 = \min \{ \alpha < \lambda \cdot 2: x \in \mathscr{V}(s, \beta) \},$$
+$\beta_0 = \min \{ \alpha < \lambda \cdot 2: x \in \mathscr{V}(s, \beta) \}.$
+We have
+\begin{equation}
+x \in V(s, \beta_0)  \textup{ and }
+x \notin \bigcup_{\beta < \beta_{0}} V(s, \beta).
+\end{equation}
+If $\beta_0 < \lambda$, then $V(s, \beta_0)\subset V(t, \beta_0)$. 
+So $x \in V(t, \beta_0)$.
+Assume that $\beta_{0} \ge \lambda$, then $\beta_{0} = \lambda + \alpha_{0}$ 
+for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \beta_0) \subset U_\alpha.$
+\begin{enumerate}
+	\item[(a)] If $x \notin \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta)$, then by (4) and[cite: 2]
+	\[ x \in U_{\alpha_{0}} \cap \operatorname{st}\left(x - \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), \mathscr{U}_{\mathrm{sofh}}\right)^{\circ} \subset V(s, \alpha_{0}) \]
+	\item[(b)] If $\bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta)$, then by (4) and[cite: 2]
+	\[ x \in U_{\alpha_{0}} \cap \left(\bigcup_{\beta < \lambda + \alpha_{0}} U(s, \beta)\right) \cap \operatorname{st}\left(x - \bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), \mathscr{U}_{\mathrm{sofh}}\right)^{\circ} \subset V(s, \beta_{0}). \]
+\end{enumerate}
+Thus $\mathscr{U}$ covers $X$.[cite: 2]
+By[cite: 2] we have now open refinements $\omega^{<\omega}$ defined[cite: 2]
+Since $\omega^{<\omega}$ is countable we complete the proof, it suffices to show that[cite: 2]
+\begin{equation}
+	\{\omega^{<\omega}\} \text{ is a } \sigma\text{-sequence.}
+\end{equation}
+\textit{Proof.} Let $x \in X$. There is a sequence $(s_n)$ such that $s_{n+1} = s_n \frown \alpha_n$ where $s_n \in \omega^n$, $s_0 = \emptyset \in \omega^0$, and such that $\mathscr{U}_{s_{n+1}}$ is a point-star $\sigma$-refinement of[cite: 2]
+
+For each $n < \omega$, let $A_n$ be a finite subset of $\omega$ such that $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and[cite: 2]
+\begin{equation}
+	\operatorname{st}(x, \mathscr{U}_{s_{n+1}}) \subset \bigcup_{\beta \in A_n} V(s_n, \beta).
+\end{equation}
+Let $\beta_n = \max A_n$ and $\beta_m = \max\{\beta_n : n < \omega\}$. We have[cite: 2]
+\begin{equation}
+	\text{If } \beta \ge \lambda \text{ and } \beta > \beta_m, \text{ then } x \notin V(s_{m+1}, \beta).
+\end{equation}
+\textit{Proof.} (a) If $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall n \in A_m$, $\beta \in \beta_m < \beta$, and by (6)[cite: 2]
+\[ \operatorname{st}(x, \mathscr{U}_{s_{m+1}}) \subset \bigcup_{\gamma < \beta} V(s_m, \gamma). \text{ Thus: } x \notin \operatorname{st}\left(x - \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{U}_{s_{m+1}}\right). \]
+It follows from (3) that $V(s_{m+1}, \beta)$ is true[cite: 2].
+
+```
 
 
+
+
+
+
+
+
+
+
+
+
+
+Based on the provided text from the PDF, here is the extracted information and proof excerpt:
+
+* **Proof of the $\sigma$-Sequence:** To complete the proof, it suffices to show that $\{\omega^{<\omega}\}$ is a $\sigma$-sequence.
+
+
+* **Construction:** For any $x \in X$, there exists a sequence of elements $s_n$ such that $s_{n+1} = s_n \frown \alpha_n$, where $s_0 = \phi \in \omega^0$ and $\chi_{s_{n+1}}$ is a point-star $\sigma$-refinement.
+
+
+* **Finite Subsets:** For each $n < \omega$, $A_n$ is a finite subset of $\omega$ such that $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$.
+
+
+* **Inductive Relation:** $st(x, \chi_{s_{n+1}}) \subset \bigcup_{\beta \in A_n} V(s_n, \beta)$.
+
+
+* **Bounding Lemma:** Letting $\beta_n = \max A_n$ and $\beta_m = \max\{\beta_n : n < \omega\}$, if $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
 
 
 \end{proof}
