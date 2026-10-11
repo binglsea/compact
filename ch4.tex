@@ -135,8 +135,14 @@ $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and
 \begin{equation}
 \text{If } \beta \ge \lambda, \text{ then } x \notin V(s_{m+1}, \beta). \label{eq:4.2.2.7}
 \end{equation}
-\textit{Proof.} (a) If $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall n \in A_m$, $\beta \in \beta_m < \beta$, and by (6)[cite: 2]
-\[ \operatorname{st}(x, \mathscr{U}_{s_{m+1}}) \subset \bigcup_{\gamma < \beta} V(s_m, \gamma). \text{ Thus: } x \notin \operatorname{st}\left(x - \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{U}_{s_{m+1}}\right). \]
+
+\noindent We proceed with two parts.
+
+(a) If $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
+
+\noindent The assumption of (a) implies that $\gamma \le \beta_m < \beta \forall \, \gamma\in A_m$. 
+Then by \eqref{eq:4.2.2.6}, 
+\[ \operatorname{st}(x, \mathscr{L}_{s_{m+1}}) \subset \bigcup_{\gamma < \beta} V(s_m, \gamma). \text{ Thus: } x \notin \operatorname{st}\left(x - \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{U}_{s_{m+1}}\right). \]
 It follows from (3) that $V(s_{m+1}, \beta)$ is true[cite: 2].
 
 ```
