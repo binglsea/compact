@@ -147,12 +147,35 @@ Thus: $x \notin \operatorname{st}
 \left(X - \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{L}_{s_{m+1}}\right)$.
 It follows from \eqref{eq:4.2.2.3} that $x\notin V(s_{m+1}, \beta)$, (a) is true.
 
+(b) $\beta_m < \lambda$.
+
+\noindent For if $\beta_m \ge \lambda$, 
+$\beta > \beta_m \ge \lambda$ for all $\beta > \beta_{m+2}$
+since $\beta_{m+2} \ge \beta_m$.
+So by (a), $x\notin V(s_{m+1}, \beta)$. 
+Hence $x\notin \bigcup_{\beta> \beta+2}V(s_{m+1}, \beta)$.
+Since $\beta_{m+2} \ge \lambda$, by \eqref{eq:4.2.2.3},
+$x\notin V(s_{m+2}, \beta_{m+2})$. But $\beta_{m+2} \in A_{m+2}$,
+this contradiction, showsthat part (b) is true.
+Then \eqref{eq:4.2.2.7} follows from (a) and (b). We need to show
+
+\begin{equation}
+	\mathscr{V}(s_{m+1}) \text{ is point-finite at } x.
+\end{equation}
+\noindent Hence, if this is true, then \eqref{eq:4.2.2.5} is true and we complete the proof. Now, we prove this.
+Let $C = \{\alpha < \lambda : x \in V(s_{m+1}, \alpha)\}$ and noting that each $B_n = \bigcup_{\beta \in A_n}$ is finite, it suffices to show that $C \subset \bigcup_{n=1}^{m} B_n$. By tracing elements and neighborhoods, this completes the proof.
 
 
-```
+{\corollary{} \label{cor:4.1.2} 
+For any space $X$, the following are equivalent:
 
+\textup{(i)} $X$ is $\lambda$-submetacompact.
 
+\textup{(ii)}  Eveery open $\lambda$-cover of $X$ has a $\theta$-sequence of  open reinements.
 
+\textup{(iii) ([Worrell and Wicke 1965]\textsuperscript{\cite{WorrellWicke}})} Every open $\lambda$-cover of $X$ has 
+a pointwise $W$-refining sequence by open covers.
+}
 
 
 
