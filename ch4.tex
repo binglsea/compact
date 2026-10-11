@@ -172,9 +172,15 @@ $0 \le p \le m$ and $x \in \mathscr{V}({s_{p+1}}, \alpha)\setminus  \mathscr{V}{
 By \eqref{eq:4.2.2.2}, 
 $x \in \operatorname{st}(X \setminus \bigcup_{\beta \ne \lambda + \alpha}\mathscr{V}(s_p, \beta),
 	 \mathscr{L}_{s_{p+1}})$.
-Let $y \in \operatorname{st}(x, \mathscr{L}_{s_{p+1}})\subset \bigcup_{\beta\in A_p}\mathscr{V}(s_p, \beta)$
+Let $y \in \operatorname{st}(x, \mathscr{L}_{s_{p+1}})\subset 
+\bigcup_{\beta\ne \lambda + \alpha}\mathscr{V}(s_p, \beta)$
 be such that $x \in \operatorname{st}(y, \mathscr{L}_{s_{p+1}})$. Then
- $y \in \operatorname{st}(x, \mathscr{L}_{s_{p+1}})\subset$
+ $y \in \operatorname{st}(x, \mathscr{L}_{s_{p+1}})\subset\bigcup_{\beta\in A_p}\mathscr{V}(s_p, \beta)$.
+ Suppose $y \in V(s_p, \gamma)$ for some $\gamma\in A_p$.
+ Then $\lambda + \alpha= \gamma \ in A_p$, so $\alpha \in B_p$.
+We have show that $C \subset \bigcup_{n=1}^{m} B_n$, and hence 
+$\mathscr{V}(s_{m+1})$ is point-finite at $x$.
+\end{proof}
 
 {\corollary{} \label{cor:4.1.3} 
 For any space $X$, the following are equivalent:
@@ -184,7 +190,7 @@ For any space $X$, the following are equivalent:
 \textup{(ii)}  Eveery open $\lambda$-cover of $X$ has a $\theta$-sequence of  open reinements.
 
 \textup{(iii) ([Worrell and Wicke 1965]\textsuperscript{\cite{WorrellWicke}})} Every open $\lambda$-cover of $X$ has 
-a pointwise $W$-refining sequence by open covers.
+a pointwise $W$-refining sequence by open covers. \hfill\qedsymbol
 }
 
 
@@ -213,7 +219,7 @@ Based on the provided text from the PDF, here is the extracted information and p
 * **Bounding Lemma:** Letting $\beta_n = \max A_n$ and $\beta_m = \max\{\beta_n : n < \omega\}$, if $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
 
 
-\end{proof}
+
 
 
 
