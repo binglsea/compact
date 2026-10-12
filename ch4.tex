@@ -344,10 +344,40 @@ $\mathscr{U}$,
 (iii) $\Rightarrow$ (iv). Assume (iii) and let $\mathscr{U}$ be an interior-preserving 
 $\lambda$-cover of $X$. By (iii), $\mathscr{U}^F$ has a $\sigma$-closure-preserving closed
 refinement $\mathscr{P} = \bigcup_{n<\omega}\mathscr{P}_n$. For  $n<\omega, x\in X$, let
-$$V_n(x)= \cap (\mathscr{U})_x \setminus \cup\{P\in\mathscr{P}_n: x\notin P\}.$$
+$$V_n(x)= \cap (\mathscr{U})_x \setminus \bigcup\{P\in\mathscr{P}_n: x\notin P\}.$$
+\noindent $x\in V_n(x)$ and each $\mathscr{V}_n = \{V_n(x): x \in X\}$ is an 
+interior-preserving open cover of $X$. To see that 
+$\{\mathscr{V}_n\}$ is a pointwise W-refining sequence for $\mathscr{U}$, let $x \in X$.
+There exists $m \in \omega$ and $P \in \mathscr{P}_m$ such that $x\in P$. 
+Let $S_p\in [\Delta]^{<\omega}$ such that $P \subset \bigcup_{\alpha \in S_p} U_\alpha$. 
+We have 
 
+(1) $\mathscr{V}_m$ refines $\mathscr{U}' = \{U_\alpha : \alpha \in S_p\}$.
 
+\textsc{Proof}. Suppose $y \in (V_m)_x$, then $x \in V_m(y)\cap P$.
+There exists a $\alpha \in S_p$ such that $y \in U_\alpha$ (since $x \in P$, $y \in P$).
+Then $V_m(y) \subset U_\alpha$, so (1) holds. Thus $\{\mathscr{V}_n\}$ is 
+a pointwise W-refining sequence for $\mathscr{U}$.
+
+(v) $\Rightarrow$ (i). Assume (v). By Lemma \ref{lem:4.1.4}, every interior-preserving 
+open $\lambda$-cover of $X$ has a $\theta$-sequence of open refinements. 
+Suppose $\mathscr{U}$ is an increasing open $\lambda$-cover of $X$, then 
+$\mathscr{U}$ is interior-preserving open, 
+hence $\mathscr{U}$ has a $\theta$-sequence. By Theorem \ref{th:5.1.5}, $X$ is $\lambda$-submetacompact.
 \end{proof}
+
+{\corollary{} \label{cor:4.1.8}
+Every $\lambda$-subparacompact space is $\lambda$-metacompact. \hfill\qedsymbol
+}
+
+{\theorem{} \label{th:4.1.9}
+Let $\mathscr{U}$ be an open cover of $X$.
+
+(i) If $\mathscr{U}$ has a $\sigma$-cushioned refinement, then $\mathscr{U}$ has a point-star 
+refining sequence of semi-open covers of $X$.
+
+}
+
 
 \subfile{ch4_2.tex}
 \end{document}
