@@ -373,11 +373,37 @@ Every $\lambda$-subparacompact space is $\lambda$-metacompact. \hfill\qedsymbol
 {\theorem{} \label{th:4.1.9}
 Let $\mathscr{U}$ be an open cover of $X$.
 
-(i) If $\mathscr{U}$ has a $\sigma$-cushioned refinement, then $\mathscr{U}$ has a point-star 
+\textup{(i)} If $\mathscr{U}$ has a $\sigma$-cushioned refinement, then $\mathscr{U}$ has a point-star 
 refining sequence of semi-open covers of $X$.
 
+\textup{(ii-a)} If $\mathscr{U}$ has a semi-open point star $($local star$)$ refinement, then $\mathscr{U}$ has a cushioned $($cushioned open$)$ refinement.
+
+\textup{(ii-b)}  If $\mathscr{U}$ has a point-star $($local star$)$ refining sequence of semi-open covers of $X$, then $\mathscr{U}$ has a $\sigma$-cushioned $(\sigma$-cushioned open$)$ refinement.
 }
 
+\begin{proof}
+(i) Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ be an open cover of $X$ and let 
+$\mathscr{P} = \bigcup_{n < \omega} \mathscr{P}_n$ be a $\sigma$-cushioned refinement 
+of $\mathscr{U}$ where each $\mathscr{P}_n = \{P(n, \alpha) : \alpha \in \Delta\}$ 
+such that for every $n < \omega$ and $\Gamma \subset \Delta$, 
+$\overline{\bigcup_{\alpha \in \Gamma} P(n, \alpha)} \subset \bigcup_{\alpha \in \Gamma} U(\alpha)$.
+For each $n < \omega$ and $x \in \bigcup \mathscr{P}_n$, pick $\delta(n, x) \in \Delta$ 
+such that $x\in P(n, \delta(n, x))\subset U(\delta(n, x))$. Let
+
+\[ V_n(x) = \begin{cases} V(\delta(n, x)), & \text{if } x \in \bigcup \mathscr{P}_n, \\ 
+	X, & \text{if } x \in X - \bigcup \mathscr{P}_n.
+\end{cases} \]
+
+(1) For $n < \omega$ and $B \subset X$,
+\[ \overline{B} \subset \bigcup \{V_n(x) : x \in B\} \][cite: 11]
+
+For if there is $y \in \overline{B} - \bigcup \mathscr{P}_n$, then $\dots$ If $B \subset \bigcup \mathscr{P}_n$, then
+\[ B \subset \bigcup_{x \in B} P(n, \delta(n, x)) \subset \bigcup \{U(\delta(n, x)) : x \in B\} \][cite: 11]
+
+For $n < \omega$ and $\alpha \in \Gamma$, let $\dots$[cite: 11]
+Each $\mathscr{E}_n$ is a semi-open cover of $X$[cite: 11]. If $\dots$ there is $m < \omega$ such that $x \in U_m$[cite: 11].
+
+\end{proof} 
 
 \subfile{ch4_2.tex}
 \end{document}
