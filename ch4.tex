@@ -406,10 +406,6 @@ Each $\mathscr{E}_n$ is a semi-open cover of $X$[cite: 11]. If $\dots$ there is 
 
 \end{proof} 
 
-
-
-Based on the provided document (`jiang55.pdf`), here is the extracted text and mathematical transcription:
-
 * $\operatorname{st}(x, \mathscr{E}_n) = \bigcup \dots$ Hence $\{\mathscr{E}_n\}$ is a point-star refining sequence for $\dots$.
 
 
@@ -489,7 +485,15 @@ For any space $X$, the following are equivalent:
 Let $\mathscr{D} = \bigcup_{n < \omega} \mathscr{D}_n$ be a refinement of $\mathscr{U}$,
 where each $\mathscr{D}_n = \{D_{n,\alpha}: \alpha < \lambda\}$ is a discrete closed family in $X$ 
 with $D_{n,\alpha}\subset U_\alpha$.
-For $n < \omega, \alpha < \kappa$, let $G_{n,\alpha} = V_\alpha - \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$[cite: 14]. Then $D_{n,\alpha} \subset G_{n,\alpha}$ and each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha < \kappa\}$ is an open refinement of $\mathscr{U}$[cite: 14]. To see that $\mathscr{G}$ is $\theta$-refinable, there is $m < \omega$ and $\dots$ such that $\operatorname{ind}(\mathscr{G}_m) \dots$[cite: 14].
+For $n < \omega, \alpha < \lambda$, let 
+$G_{n,\alpha} = U_\alpha - \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$. 
+Then $D_{n,\alpha} \subset G_{n,\alpha}$ and each 
+$\mathscr{G}_n = \{G_{n,\alpha} : \alpha < \lambda\}$ is an open refinement of 
+$\mathscr{U}$. To see that $\mathscr{G}$ is $\theta$-refinable, there exists 
+$m < \omega$ and $\alpha_0 < \lambda$ such that $x\in D_{m,\alpha_0}$. Then
+$\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. 
+So $\{\mathscr{G}_n: n < \omega\}$ is an $\varepsilon$-sequence and $X$ is 
+$\lambda$-$\varepsilon$refinable.
 
 (iv)$\implies$(i). By Theorem \ref{th:4.1.11}.
 \end{proof} 
