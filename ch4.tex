@@ -257,7 +257,7 @@ $\{\mathscr{W}_l(m, \alpha_i): l < \omega\}$ is a pointwise W-refining sequence 
 $\mathscr{U}(m, \alpha_i)$, 
 there exists $l_i < \omega$ and a finite set $D_i \subset \alpha_i$ such that:
 
-(3) $(W_{l_i}'(m, \alpha_i))_x$ refines $\{U_\gamma : \gamma \in D_i\} \cup
+(3) $(W_{l_i}(m, \alpha_i))_x$ refines $\{U_\gamma : \gamma \in D_i\} \cup
 \{\bigcup_{\gamma > \alpha_i}V(m, \gamma)\}$.
 
 \noindent Let $\mathscr{U}' = \{U_\gamma : \gamma \in \bigcup_{i=1}^{p} D_i\}$ and 
@@ -269,8 +269,9 @@ $r = \max\{p,  l_1, \dots, l_p\}$.
 Hence there exists $y \in F_{m,r}$ such that $H= H(m, r, y)$.
 Since $x\in V(m, \delta(y, m))$, there exists $j \le p$ such that $\delta(y, m) = \alpha_j$.
 Also, $x\in\bigcap_{l=0}^r W_l(m, y)\subset W_{l_j}(m, y)$. It follows from (3) and (1), there exists
-$\gamma \in D_j$ such that $W_{l_j}(m, y) \subset U_\alpha$,
-$H \subset U_{\alpha} \in \mathscr{U}'$, thus (4) holds. This completes the proof that $\mathcal{P}_\kappa$ holds.
+$\gamma \in D_j$ such that $W_{l_j}(m, y) \subset U_\gamma$,
+$H \subset U_{\gamma} \in \mathscr{U}'$, thus (4) holds. This completes the proof that 
+$\mathcal{P}_\kappa$ holds.
 \end{proof}
 
 {\lemma{} \label{lem:4.1.6}
@@ -285,13 +286,18 @@ open covers of $X$, then $\mathscr{U}$ has a $\sigma$-closure-preserving closed
 refinement $\mathscr{F}$ (with $\bigcup \mathscr{F}^\circ = X$).
 }
 
-* **Proof of Lemma 4.1.6 (i):** Suppose $\mathscr{U} = \{V_\alpha : \alpha \in \Gamma\}$ has a point (local) star refining sequence of interior-preseving open covers of $X$. For each $n < \omega, \alpha \in \Gamma$, let $F_{n,\alpha} = \{x \in X : \operatorname{st}(x, \mathscr{U}_n) \subset V_\alpha\}$. Then $F_{n,\alpha}$ is closed for all $\alpha \in \Gamma$.
+\begin{proof}  
+(ii). Suppose $\mathscr{U} = \{V_\alpha : \alpha \in \Delta\}$ has a point (local) star refining 
+sequence $\{\mathscr{V}_n: n < \omega\}$ of interior-preseving open covers of $X$. 
+For each $n < \omega, \alpha \in \Delta$, let 
+$F_{n,\alpha} = \{x \in X : \operatorname{st}(x, \mathscr{V}_n) \subset V_\alpha\}$. Then $F_{n,\alpha}$ is closed for all $\alpha \in \Gamma$.
 
 
 * To see that each $\mathscr{F}_n = \{F_{n,\alpha} : \alpha \in \Gamma\}$ is ep closed, let elements satisfy the required intersection and containment properties.
 
 
 * $\mathscr{V}$ is a $\sigma$-ep closed refinement of $\mathscr{U}$ since $\bigcup_{n<\omega} \mathscr{V}_n = X$, and for any $x \in X$, there is $m$ and $G \in \mathscr{U}_m$ such that $\operatorname{st}(x, \mathscr{U}_m) \subset V_\alpha$ for some $\alpha$, ensuring $x \in F_{m,\alpha}$ and $\bigcup \mathscr{V} = X$.
+\end{proof}
 
 {\theorem{} \label{th:4.1.7}
 For any space $X$, the following statements are equivalent:
