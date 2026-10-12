@@ -50,7 +50,7 @@ by semi-open covers of $X$.
 }
 
 \begin{proof}
-$(\Rightarrow)$. If $\{\mathscr{V}_n: n < \omega\}$ is a $\theta$-sequence of open refinement of a 
+$(\implies)$. If $\{\mathscr{V}_n: n < \omega\}$ is a $\theta$-sequence of open refinement of a 
 cover $\mathscr{U}$, then $\{\mathscr{V}_n: n < \omega\}$ is a point-star $\dot{F}$-refining
 sequence for $\mathscr{U}$ by semi-open covers of $X$.
 
@@ -214,7 +214,7 @@ $\theta$-sequence of open refinements.
 \begin{proof} 
 ($\Leftarrow$). Clear.
 
-($\Rightarrow$). Assume that every increasing open $\lambda$-cover has a 
+($\implies$). Assume that every increasing open $\lambda$-cover has a 
 $\theta$-sequence of open refinements. 
 Let $\lambda \ge \omega$. For each $\kappa < \lambda$, denote by $\mathcal{P}_k$ 
 the proposition: "every open $\kappa$-cover of $X$ has a pointwise $W$-refining 
@@ -327,7 +327,7 @@ refining sequence of interior-preseving open covers of $X$.
 }
 
 \begin{proof} 
-(i) $\Rightarrow$ (ii)). Let $\mathscr{U}$ be a directed open $\lambda$-cover of $X$.
+(i) $\implies$ (ii)). Let $\mathscr{U}$ be a directed open $\lambda$-cover of $X$.
 By (i) and Theorem \ref{th:3.1.5}, there is a countable closed cover $\{F_n: n < \omega\}$ of $X$ 
 such that each $\mathscr{U}|_{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in $F_n$.
 Then each $\mathscr{V}_n$ is an interior-preseving open point-star refinement in $\mathscr{U}_{F_n}$
@@ -337,11 +337,11 @@ $\mathscr{P}_n$ in the closed subspace $F_n$.
 Then $\bigcup_{n <\omega}\mathscr{P}_n$ is a $\sigma$-closure-preserving closed refinement of 
 $\mathscr{U}$,
 
-(ii) $\Rightarrow$ (iii) and (iv) $\Rightarrow$ (v) $\Rightarrow$  (vi). Clear.
+(ii) $\implies$ (iii) and (iv) $\implies$ (v) $\implies$  (vi). Clear.
 
-(vi) $\Rightarrow$  (iii). By Lemma \ref{lem:4.1.6}.
+(vi) $\implies$  (iii). By Lemma \ref{lem:4.1.6}.
 
-(iii) $\Rightarrow$ (iv). Assume (iii) and let $\mathscr{U}$ be an interior-preserving 
+(iii) $\implies$ (iv). Assume (iii) and let $\mathscr{U}$ be an interior-preserving 
 $\lambda$-cover of $X$. By (iii), $\mathscr{U}^F$ has a $\sigma$-closure-preserving closed
 refinement $\mathscr{P} = \bigcup_{n<\omega}\mathscr{P}_n$. For  $n<\omega, x\in X$, let
 $$V_n(x)= \cap (\mathscr{U})_x \setminus \bigcup\{P\in\mathscr{P}_n: x\notin P\}.$$
@@ -359,7 +359,7 @@ There exists a $\alpha \in S_p$ such that $y \in U_\alpha$ (since $x \in P$, $y 
 Then $V_m(y) \subset U_\alpha$, so (1) holds. Thus $\{\mathscr{V}_n\}$ is 
 a pointwise W-refining sequence for $\mathscr{U}$.
 
-(v) $\Rightarrow$ (i). Assume (v). By Lemma \ref{lem:4.1.4}, every interior-preserving 
+(v) $\implies$ (i). Assume (v). By Lemma \ref{lem:4.1.4}, every interior-preserving 
 open $\lambda$-cover of $X$ has a $\theta$-sequence of open refinements. 
 Suppose $\mathscr{U}$ is an increasing open $\lambda$-cover of $X$, then 
 $\mathscr{U}$ is interior-preserving open, 
@@ -421,30 +421,31 @@ Based on the provided document (`jiang55.pdf`), here is the extracted text and m
 
 * **(ii)** If $\mathscr{U}$ has a semi-open local star refinement $\mathscr{V}$, for $\alpha \in \Gamma$, let $V_\alpha = \dots$, then $\mathscr{V}$ is a cushioned open refinement of $\mathscr{U}$.
 
+{\theorem{} \label{th:4.1.10}
+\textup{([Chaber 1979]\textsuperscript{\cite{Chaber}})} 
+$X$ is $\lambda$-subparacompact iff $X$ is 
+$\lambda$-submetacompact and discretely subexpandable. \hfill\qedsymbol
+}
 
-* **4.1.10. Theorem (Chaber [1979]):** $X$ is $\theta$-subparacompact iff $X$ is $\sigma$-submetacompact and discretely subexpandable.
+{\theorem{} \label{th:4.1.11}
+\textup{([Junnila 1978]\textsuperscript{\cite{Junnila1978}})} 
+For any space $X$, the following are equivalent:
 
+\textup{(i)}  $X$ is $\lambda$-subparacompact.
 
-* **4.1.11. Theorem (Junnila [1978]):** For any space $X$, the following are equivalent:
+\textup{(ii)}  Every open $\lambda$-cover of $X$ has a $\sigma$-cushioned refinement.
 
+\textup{(iii)}  Every open $\lambda$-cover of $X$ has a point-star refining sequence of 
+semi-open covers of $X$.
 
-* **(i)** $X$ is $\sigma$-subparacompact.
+\textup{(iv)}  Every interior-preserving open $\lambda$-cover of $X$ has a 
+$\sigma$-closure-preserving closed refinement.
+}
 
+\begin{proof}
+(i) $\implies$ (ii) and (i) $\implies$ (iv) are clear. 
 
-* **(ii)** Every open $\sigma$-cover of $X$ has a $\sigma$-cushioned refinement.
-
-
-* **(iii)** Every open $\sigma$-cover of $X$ has a point-star refining sequence of semi-open covers of $X$.
-
-
-* **(iv)** Every IP open $\sigma$-cover of $X$ has a $\sigma$-closed refinement.
-
-
-
-
-* **Proof:** (i) $\implies$ (ii) and (i) $\implies$ (iv) are clear. (ii) $\implies$ (iii) follows by Theorem 4.1.9.
-
-
+(ii) $\implies$ (iii) follows by Theorem \ref{th:4.1.9}.
 
  (i) Suppose $\mathscr{U}$ is an open cover of $X$.
 
@@ -453,6 +454,37 @@ Based on the provided document (`jiang55.pdf`), here is the extracted text and m
 
 
 * For new elements, let $G_{n, \alpha} = V_\alpha - \bigcup_{\gamma \neq \alpha} D_{n, \gamma}$. Then $D_{n, \alpha} \subset G_{n, \alpha}$ and each $\mathscr{G}_n = \{G_{n, \alpha} : \alpha < \kappa\}$ is an open refinement of $\mathscr{U}$.
+\end{proof} 
+
+
+Based on the provided document (`jiang56.pdf`), here is the extracted text and mathematical content:
+
+* **Proof of (iii) or (iv) $\implies$ (i):** Assume (iii) or (iv) is true. We have:
+
+
+* (1) $X$ is $\sigma$-submetacompact. If (iii) holds, then by Theorem 4.1.2, $X$ is $\sigma$-submetacompact. If (iv) holds, then by Theorem 4.1.7, $X$ is $\sigma$-submetacompact.
+
+
+* (2) $X$ is discretely subexpandable. Let $\mathscr{F}$ be a discrete $\kappa$-family of closed subsets of $X$. The induced cover $\mathscr{U}$ is an IP open $\sigma$-cover of $X$. By (iv), $\mathscr{U}$ has a $\sigma$-cushioned refinement; or by (iii) and Theorem 4.1.9, $\mathscr{U}$ also has a $\sigma$-cushioned refinement. By Lemma 1.2.4, $\mathscr{U}$ has a $\sigma$-sequence of open expansions, so $X$ is discretely subexpandable.
+
+
+* It follows from (1), (2), and Theorem 4.1.10 that $X$ is $\sigma$-subparacompact.
+
+{\theorem{} \label{th:4.1.12}
+\textup{([Burke 1969]\textsuperscript{\cite{Burke}})} 
+For any space $X$, the following are equivalent:
+
+\textup{(i)} $X$ is $\lambda$-subparacompact.
+
+\textup{(ii)} Every open $\lambda$-cover of $X$ has a $\sigma$-locally finite closed refinement.
+
+\textup{(iii)} Every open $\lambda$-cover of $X$ has a $\sigma$-closure-preserving closed refinement.
+
+\textup{(iv)} $X$ is $\lambda$-$\varepsilon$-refinable.
+}
+
+* *Proof:* $(i) \implies (ii) \implies (iii)$ are clear. $(iii) \implies (i)$ follows by Theorem 4.1.11.
+
 
 \subfile{ch4_2.tex}
 \end{document}
