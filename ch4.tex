@@ -250,7 +250,7 @@ $$\mathscr{H}_{n,h} = \{H(n, h, y) : y \in F_{n,h}\} \cup \{X \setminus F_{n,h}\
 \noindent Then $\mathscr{U}_{n,h}$ are open covers of $X$.
 We have
 
-(2) $\{\mathscr{H}_{n,h}\}_{n,h < \omega}$ is a pointwise W-refining sequence for $\mathscr{U}$, so $\mathcal{P}_\kappa$ holds.
+(2) $\{\mathscr{H}_{n,h}: n,h < \omega\}$ is a pointwise W-refining sequence for $\mathscr{U}$, so $\mathcal{P}_\kappa$ holds.
 
 \textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that $\text{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
 $\{\mathscr{W}_l(m, \alpha_i): l < \omega\}$ is a pointwise W-refining sequence for 
@@ -277,26 +277,32 @@ $\mathcal{P}_\kappa$ holds.
 {\lemma{} \label{lem:4.1.6}
 Let $\mathscr{U}$ be an open cover of $X$.
 
-\textup{(i)} If $\mathscr{U}$ has an interior-preseving open point (local)-star refinement, 
+\textup{(i)} If $\mathscr{U}$ has an interior-preseving open point $($local$)$-star refinement, 
 then $\mathscr{U}$ has a closure-preserving closed refinement 
-$\mathscr{F}$ (with $\bigcup \mathscr{F}^\circ = X$).
+$\mathscr{F}$ $($with $\bigcup \mathscr{F}^\circ = X)$.
 
-\textup{(ii)} If $\mathscr{U}$ has a point (local) star refining sequence of interior-preseving 
+\textup{(ii)} If $\mathscr{U}$ has a point $($local$)$ star refining sequence of interior-preseving 
 open covers of $X$, then $\mathscr{U}$ has a $\sigma$-closure-preserving closed 
 refinement $\mathscr{F}$ (with $\bigcup \mathscr{F}^\circ = X$).
 }
 
 \begin{proof}  
-(ii). Suppose $\mathscr{U} = \{V_\alpha : \alpha \in \Delta\}$ has a point (local) star refining 
+(ii). Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ has a point (local) star refining 
 sequence $\{\mathscr{V}_n: n < \omega\}$ of interior-preseving open covers of $X$. 
 For each $n < \omega, \alpha \in \Delta$, let 
-$F_{n,\alpha} = \{x \in X : \operatorname{st}(x, \mathscr{V}_n) \subset V_\alpha\}$. Then $F_{n,\alpha}$ is closed for all $\alpha \in \Gamma$.
-
-
-* To see that each $\mathscr{F}_n = \{F_{n,\alpha} : \alpha \in \Gamma\}$ is ep closed, let elements satisfy the required intersection and containment properties.
-
-
-* $\mathscr{V}$ is a $\sigma$-ep closed refinement of $\mathscr{U}$ since $\bigcup_{n<\omega} \mathscr{V}_n = X$, and for any $x \in X$, there is $m$ and $G \in \mathscr{U}_m$ such that $\operatorname{st}(x, \mathscr{U}_m) \subset V_\alpha$ for some $\alpha$, ensuring $x \in F_{m,\alpha}$ and $\bigcup \mathscr{V} = X$.
+$F_{n,\alpha} = \{x \in X : \operatorname{st}(x, \mathscr{V}_n) \subset U_\alpha\}$. 
+Then $F_{n,\alpha}\subset U_\alpha$ for all $\alpha \in \Delta$.
+To see that each $\mathscr{F}_n = \{F_{n,\alpha} : \alpha \in \Delta\}$ is closure-preserving
+ closed, let $\Gamma\subset\Delta$ and $x\in \overline{\bigcup_{\alpha\in\Gamma}F_{n, \alpha}}$.
+Then there exists $\alpha_0\in\Gamma$ such that there exists 
+$y\in F_{n,\alpha_0}\cap(\bigcap(\mathscr{V}_n)_x)$. It follows
+that $\operatorname{st}(x, \mathscr{V}_n)\subset \operatorname{st}(y, \mathscr{V}_n)\subset U_{\alpha_0}$,
+so $\overline{\bigcup_{\alpha\in\Gamma}F_{n, \alpha}} = \bigcup_{\alpha\in \Gamma}U_\alpha$.
+ $\bigcup_{n < \omega}\mathscr{F}_n = \mathscr{F}$ is a $\sigma$-closure-preserving 
+ closed refinement of $\mathscr{U}$.
+ (If  for  $x \in X$, there exists $m$ and $G \in \operatorname{top}(x)$ such that 
+ $\operatorname{st}(x, \mathscr{V}_m) \subset U_\alpha$ for some $\alpha\in\Delta$. 
+ Then $G\subset F_{m,\alpha}$, so $x\in F_{m, \alpha}^\circ$ and $\bigcup \mathscr{F}^\circ = X$).
 \end{proof}
 
 {\theorem{} \label{th:4.1.7}
