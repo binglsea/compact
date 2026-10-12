@@ -234,7 +234,47 @@ $$\mathscr{U}(n, \alpha) = \{U_\gamma : \gamma \le \alpha\} \cup
 
 \end{proof}
 
+Based on the provided document (`jiang50.pdf`), here is the extracted text and mathematical transcription:
 
+* Then each $\mathcal{U}(n, \alpha)$ is an open cover of $X$ with power less than $\kappa$.
+
+
+* By the induction hypothesis, each has a pointwise W-refining sequence $\{W_l(n, \alpha)\}_{l < \omega}$ by open covers of $X$.
+
+
+* For $n, h < \omega$, let $F_{n,0} = \emptyset$ and $F_{n,h} = \dots$. Then each $F_{n,h}$ is closed.
+
+
+* For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\text{ind}(\mathscr{U}_n)_y)$.
+
+
+* For each $l = 0, 1, \dots, h$, let $W_l(n, y)$ be a member of $\mathscr{W}_l(n, \delta(y, n))$ containing $y$.
+
+
+* Let $H(n, h, y) = \overline{V}(n, \delta(y, n)) \cap \bigcap_{l=0}^{h} W_l(n, y)$. Then $H(n, h, y)$ are open sets containing $y$.
+
+
+* Let $\mathscr{U}_{n,h} = \{H(n, h, y) : y \in F_{n,h}\} \cup \{X - F_{n,h}\}$. Then $\mathscr{U}_{n,h}$ are open covers of $X$.
+
+
+* **(2)** $\{\mathscr{U}_{n,h}\}_{n,h < \omega}$ is a pointwise W-refining sequence for $\mathscr{U}$, so $P_\kappa$ holds.
+
+
+* *Proof:* Let $x \in X$. There is some $m$ such that $\text{ind}(\mathscr{U}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since $\dots$ is a pointwise W-refining sequence for $\mathscr{U}(m, \alpha_i)$, there is $l_i$ and a finite set $D_i \subset \alpha_i$ such that:
+
+
+* **(3)** $(W_{l_i}'(m, \alpha_i))_x$ refines $\{V_\nu : \nu \in D_i\}$.
+
+
+
+
+* Let $\mathscr{U}' = \{V_\nu : \nu \in \bigcup_{i=1}^{p} D_i\}$ and $r = \max\{l_1, \dots, l_p\}$.
+
+
+* **(4)** $(\mathscr{U}_{m,r})_x$ refines $\mathscr{U}'$, so (2) holds.
+
+
+* *Proof:* Let $H \in (\mathscr{U}_{m,r})_x$, then $F_{m,r}$.
 
 
 
@@ -256,9 +296,72 @@ Based on the provided text from the PDF, here is the extracted information and p
 
 * **Bounding Lemma:** Letting $\beta_n = \max A_n$ and $\beta_m = \max\{\beta_n : n < \omega\}$, if $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
 
+Based on the provided document (`jiang51.pdf`), here is the extracted text and mathematical content:
+
+* **Proof Conclusion:** $H \subset U_{\alpha'} \in \mathscr{U}'$, thus (4) holds. This completes the proof that $P_\kappa$ holds.
+
+
+* **4.1.6. Lemma:** Let $\mathscr{U}$ be an open cover of $X$.
+
+
+* **(i)** If $\mathscr{U}$ has an IP open point (local)-star refinement, then $\mathscr{U}$ has a $\sigma$-ep closed refinement $\mathscr{V}$ (with $\bigcup \mathscr{V} = X$).
+
+
+* **(ii)** If $\mathscr{U}$ has a point (local) star refining sequence of IP open covers of $X$, then $\mathscr{U}$ has a $\sigma$-ep closed refinement $\mathscr{V}$ (with $\bigcup \mathscr{V} = X$).
 
 
 
+
+* **Proof of Lemma 4.1.6 (i):** Suppose $\mathscr{U} = \{V_\alpha : \alpha \in \Gamma\}$ has a point (local) star refining sequence of IP open covers of $X$. For each $n < \omega, \alpha \in \Gamma$, let $F_{n,\alpha} = \{x \in X : \operatorname{st}(x, \mathscr{U}_n) \subset V_\alpha\}$. Then $F_{n,\alpha}$ is closed for all $\alpha \in \Gamma$.
+
+
+* To see that each $\mathscr{F}_n = \{F_{n,\alpha} : \alpha \in \Gamma\}$ is ep closed, let elements satisfy the required intersection and containment properties.
+
+
+* $\mathscr{V}$ is a $\sigma$-ep closed refinement of $\mathscr{U}$ since $\bigcup_{n<\omega} \mathscr{V}_n = X$, and for any $x \in X$, there is $m$ and $G \in \mathscr{U}_m$ such that $\operatorname{st}(x, \mathscr{U}_m) \subset V_\alpha$ for some $\alpha$, ensuring $x \in F_{m,\alpha}$ and $\bigcup \mathscr{V} = X$.
+
+Based on the provided document (`jiang52.pdf`), here is the extracted text and mathematical content:
+
+* **4.1.7. Theorem:** For any space $X$, the following statements are equivalent:
+
+
+* (i) $X$ is $\sigma$-submetacompact.
+
+
+* (ii) Every directed open $\sigma$-cover of $X$ has a $\sigma$-cp closed refinement.
+
+
+* (iii) Every IP directed open $\sigma$-cover of $X$ has a $\sigma$-cp closed refinement.
+
+
+* (iv) Every IP open $\sigma$-cover of $X$ has a pointwise $W$-refining sequence of IP open covers of $X$.
+
+
+* (v) Every IP open $\sigma$-cover of $X$ has a point-star $\sigma$-refining sequence of IP open covers of $X$.
+
+
+* (vi) Every IP directed open $\sigma$-cover of $X$ has a point-star refining sequence of IP open covers of $X$.
+
+
+
+
+* **Proof Overview (i) $\implies$ (ii):**
+* Let $\mathscr{U}$ be a directed open $\sigma$-cover of $X$.
+
+
+* By (i) and Theorem 3.1.5, there is a countable closed cover $\{F_n\}$ of $X$ such that each subspace has a point-finite open refinement $\mathscr{V}_n$ in $F_n$.
+
+
+* Each $\mathscr{V}_n$ is an IP open point-star refinement in $F_n$.
+
+
+* By Lemma 4.1.6, each has a cp closed refinement in the closed subspace $F_n$, providing a $\sigma$-cp closed refinement of $\mathscr{U}$.
+
+
+
+
+* **Additional Proof Connections:**
+* Relationships and implications between (iii), (iv), and subsequent conditions are established using prior lemmas and definitions.
 
 
 \subfile{ch4_2.tex}
