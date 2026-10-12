@@ -211,20 +211,26 @@ $X$ is $\lambda$-submetacompact iff every increasing open $\lambda$-cover has a
 $\theta$-sequence of open refinements.
 }
 
-* **4.1.5. Theorem:** $X$ is $\sigma$-submetacompact iff every increasing open $\sigma$-cover has a $\sigma$-sequence of open refinements.
-
-
 \begin{proof} 
-($\Leftarrow$):* Clear.
+($\Leftarrow$). Clear.
 
 
-* Assume that every increasing open $\sigma$-cover has a $\sigma$-sequence of open refinements. Let $\mathcal{U} = \mathscr{W}$. For each $k$, denote by $P_k$ the proposition: "every open $\kappa$-cover of $X$ has a pointwise $W$-refining sequence by open covers of $X$". By corollary 5.1.3, $X$ is $\sigma$-submetacompact iff $P_\kappa$. We use transfinite induction to show that $P_\kappa$ holds for each $\kappa$. For $\kappa$ is finite, $P_\kappa$ is trivially true.
-
-
-* Let... such that $P_\mu$ holds for each $\mu < \kappa$.
-
-
-* To show $P_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ be an open $\kappa$-cover of $X$. The family $\mathscr{U}$ is an increasing open $\sigma$-cover of $X$. It has a $\sigma$-sequence of open refinements. We may assume that each $\mathscr{U}_n = \{V(n, \alpha) : \alpha < \kappa\}$ such that $V(n, \alpha) \subset \bigcup_{\gamma \le \alpha} U_\gamma$. For now, $U(n, \alpha) = \{V_\gamma : \gamma \in \alpha\} \cup \{\bigcup_{\gamma > \alpha} V(n, \gamma)\}$.
+($\Rightarrow$). Assume that every increasing open $\lambda$-cover has a 
+$\theta$-sequence of open refinements. 
+Let $\mathcal{U} = \mathscr{W}$. For each $\kappa < \lambda$, denote by $\mathcal{P}_k$ 
+the proposition: "every open $\kappa$-cover of $X$ has a pointwise $W$-refining 
+sequence by open covers of $X$". By Corollary \ref{th:5.1.3}, $X$ is $\kappa$-submetacompact iff $\mathcal{P}_\kappa$. We use transfinite induction to show that $\mathcal{P}_\kappa$ holds for 
+each $\kappa < \lambda$. If $\kappa$ is finite, $\mathcal{P}_\kappa$ is trivially true.
+Let $\kappa \le \lambda$ such that $\mathcal{P}_\mu$ holds for each $\mu < \kappa$.
+To show $\mathcal{P}_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ be an open 
+cover of $X$. The family $\mathscr{U}^*=\{\bigcup_{\gamma\le\alpha}U_\gamma: \alpha < \kappa\}$ 
+is an increasing open $\kappa$-cover of $X$. 
+It has a $\theta$-sequence $\{\mathscr{V}_n: n < \omega\}$ of open refinements. 
+We may assume that each $\mathscr{V}_n = \{V(n, \alpha) : \alpha < \kappa\}$ 
+such that $V(n, \alpha) \subset \bigcup_{\gamma \le \alpha} U_\gamma$ for all $\alpha < \kappa$. 
+For $n < \omega, \alpha < \kappa$, let
+$$\mathscr{U}(n, \alpha) = \{U_\gamma : \gamma \le \alpha\} \cup 
+\{\bigcup_{\gamma > \alpha} V(n, \gamma)\}.$$
 
 \end{proof}
 
