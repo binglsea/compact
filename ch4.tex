@@ -301,44 +301,53 @@ so $\overline{\bigcup_{\alpha\in\Gamma}F_{n, \alpha}} = \bigcup_{\alpha\in \Gamm
  $\bigcup_{n < \omega}\mathscr{F}_n = \mathscr{F}$ is a $\sigma$-closure-preserving 
  closed refinement of $\mathscr{U}$.
  (If  for  $x \in X$, there exists $m$ and $G \in \operatorname{top}(x)$ such that 
- $\operatorname{st}(x, \mathscr{V}_m) \subset U_\alpha$ for some $\alpha\in\Delta$. 
- Then $G\subset F_{m,\alpha}$, so $x\in F_{m, \alpha}^\circ$ and $\bigcup \mathscr{F}^\circ = X$).
+ $\operatorname{st}(x, \mathscr{V}_m) \subset U_\alpha$ for some $\alpha\in\Delta$, 
+ then $G\subset F_{m,\alpha}$. So $x\in F_{m, \alpha}^\circ$ and $\bigcup \mathscr{F}^\circ = X$).
 \end{proof}
 
 {\theorem{} \label{th:4.1.7}
 For any space $X$, the following statements are equivalent:
 
-\textup{(i)}  $X$ is $\sigma$-submetacompact.
+\textup{(i)}  $X$ is $\lambda$-submetacompact.
 
-\textup{(ii)}  Every directed open $\sigma$-cover of $X$ has a $\sigma$-cp closed refinement.
+\textup{(ii)}  Every directed open $\lambda$-cover of $X$ has a $\sigma$-closure-preserving 
+closed refinement.
 
-\textup{(iii)}  Every interior-preseving directed open $\sigma$-cover of $X$ has a $\sigma$-cp closed refinement.
+\textup{(iii)}  Every interior-preseving directed open $\lambda$-cover of $X$ has a $\sigma$-closure-preserving
+closed refinement.
 
-\textup{(iv)} Every interior-preseving open $\sigma$-cover of $X$ has a pointwise $W$-refining sequence of interior-preseving open covers of $X$.
+\textup{(iv)} Every interior-preseving open $\lambda$-cover of $X$ has a 
+pointwise $W$-refining sequence of interior-preseving open covers of $X$.
 
-\textup{v)}  Every interior-preseving open $\sigma$-cover of $X$ has a point-star $\sigma$-refining sequence of interior-preseving open covers of $X$.
+\textup{(v)}  Every interior-preseving open $\lambda$-cover of $X$ has a point-star 
+$\dot{F}$-refining sequence of interior-preseving open covers of $X$.
 
-\textup{(vi)}  Every interior-preseving directed open $\sigma$-cover of $X$ has a point-star refining sequence of interior-preseving open covers of $X$.
+\textup{(vi)}  Every interior-preseving directed open $\lambda$-cover of $X$ has a point-star 
+refining sequence of interior-preseving open covers of $X$.
 }
 
 \begin{proof} 
- Let $\mathscr{U}$ be a directed open $\sigma$-cover of $X$.
+(i) $\Rightarrow$ (ii)). Let $\mathscr{U}$ be a directed open $\lambda$-cover of $X$.
+By (i) and Theorem \ref{th:3.1.5}, there is a countable closed cover $\{F_n: n < \omega\}$ of $X$ 
+such that each $\mathscr{U}|_{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in $F_n$.
+Then each $\mathscr{V}_n$ is an interior-preseving open point-star refinement in $\mathscr{U}_{F_n}$
+in $F_n$.
+Lemma \ref{lem:4.1.6}, each $\mathscr{U}_{F_n}$ has a closure-preserving closed refinement 
+$\mathscr{P}_n$ in the closed subspace $F_n$.
+Then $\bigcup_{n <\omega}\mathscr{P}_n$ is a $\sigma$-closure-preserving closed refinement of 
+$\mathscr{U}$,
+
+(ii) $\Rightarrow$ (iii) and (iv) $\Rightarrow$ (v) $\Rightarrow$  (vi). Clear.
+
+(vi) $\Rightarrow$  (iii). By Lemma \ref{lem:4.1.6}.
+
+(iii) $\Rightarrow$ (iv). Assume (iii) and let $\mathscr{U}$ be an interior-preserving 
+$\lambda$-cover of $X$. By (iii), $\mathscr{U}^F$ has a $\sigma$-closure-preserving closed
+refinement $\mathscr{P} = \bigcup_{n<\omega}\mathscr{P}_n$. For  $n<\omega, x\in X$, let
+$$V_n(x)= \cap (\mathscr{U})_x \setminus \cup\{P\in\mathscr{P}_n: x\notin P\}.$$
 
 
-* By (i) and Theorem 3.1.5, there is a countable closed cover $\{F_n\}$ of $X$ such that each subspace has a point-finite open refinement $\mathscr{V}_n$ in $F_n$.
-
-
-* Each $\mathscr{V}_n$ is an interior-preseving open point-star refinement in $F_n$.
-
-
-* By Lemma 4.1.6, each has a cp closed refinement in the closed subspace $F_n$, providing a $\sigma$-cp closed refinement of $\mathscr{U}$.
-
-
-
-
-* **Additional Proof Connections:**
-* Relationships and implications between (iii), (iv), and subsequent conditions are established using prior lemmas and definitions.
-\end{proof}{proof} 
+\end{proof}
 
 \subfile{ch4_2.tex}
 \end{document}
