@@ -236,71 +236,53 @@ $\{\mathscr{W}_l(n, \alpha): l < \omega\}$ by open covers of $X$.
 For $n, h < \omega$, let $F_{n,0} = \emptyset$ and 
 $$F_{n,h} = \{x \in X: |\operatorname{ind}(\mathscr{V}_n)_x| \le h\} \text{ for } h \ge 1.$$
 Then each $F_{n,h}$ is closed.
+ For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\text{ind}(\mathscr{V}_n)_y)$.
+We have 
 
+(1) $y \in V(n, \delta(y, n))$ and $y\notin \bigcup_{\gamma > \delta(y, n)} V(n, \gamma).$
 
-* For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\text{ind}(\mathscr{U}_n)_y)$.
+\noindent For each $l = 0, 1, \dots, h$, let $W_l(n, y)$ be a member of $\mathscr{W}_l(n, \delta(y, n))$ containing $y$.
+Let 
+$$H(n, h, y) = V(n, \delta(y, n)) \cap \bigcap_{l=0}^{h} W_l(n, y).$$ 
+\noindent Then $H(n, h, y)$ are open sets containing $y$.
+Let 
+$$\mathscr{H}_{n,h} = \{H(n, h, y) : y \in F_{n,h}\} \cup \{X \setminus F_{n,h}\}.$$
+\noindent Then $\mathscr{U}_{n,h}$ are open covers of $X$.
+We have
 
+(2) $\{\mathscr{H}_{n,h}\}_{n,h < \omega}$ is a pointwise W-refining sequence for $\mathscr{U}$, so $\mathcal{P}_\kappa$ holds.
 
-* For each $l = 0, 1, \dots, h$, let $W_l(n, y)$ be a member of $\mathscr{W}_l(n, \delta(y, n))$ containing $y$.
+\textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that $\text{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
+$\{\mathscr{W}_l(m, \alpha_i): l < \omega\}$ is a pointwise W-refining sequence for 
+$\mathscr{U}(m, \alpha_i)$, 
+there exists $l_i < \omega$ and a finite set $D_i \subset \alpha_i$ such that:
 
+(3) $(W_{l_i}'(m, \alpha_i))_x$ refines $\{U_\gamma : \gamma \in D_i\} \cup
+\{\bigcup_{\gamma > \alpha_i}V(m, \gamma)\}$.
 
-* Let $H(n, h, y) = \overline{V}(n, \delta(y, n)) \cap \bigcap_{l=0}^{h} W_l(n, y)$. Then $H(n, h, y)$ are open sets containing $y$.
+\noindent Let $\mathscr{U}' = \{U_\gamma : \gamma \in \bigcup_{i=1}^{p} D_i\}$ and 
+$r = \max\{p,  l_1, \dots, l_p\}$.
 
+(4) $(\mathscr{H}_{m,r})_x$ refines $\mathscr{U}'$, so (2) holds.
 
-* Let $\mathscr{U}_{n,h} = \{H(n, h, y) : y \in F_{n,h}\} \cup \{X - F_{n,h}\}$. Then $\mathscr{U}_{n,h}$ are open covers of $X$.
-
-
-* **(2)** $\{\mathscr{U}_{n,h}\}_{n,h < \omega}$ is a pointwise W-refining sequence for $\mathscr{U}$, so $P_\kappa$ holds.
-
-
-* *Proof:* Let $x \in X$. There is some $m$ such that $\text{ind}(\mathscr{U}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since $\dots$ is a pointwise W-refining sequence for $\mathscr{U}(m, \alpha_i)$, there is $l_i$ and a finite set $D_i \subset \alpha_i$ such that:
-
-
-* **(3)** $(W_{l_i}'(m, \alpha_i))_x$ refines $\{V_\nu : \nu \in D_i\}$.
-
-
-
-
-* Let $\mathscr{U}' = \{V_\nu : \nu \in \bigcup_{i=1}^{p} D_i\}$ and $r = \max\{l_1, \dots, l_p\}$.
-
-
-* **(4)** $(\mathscr{U}_{m,r})_x$ refines $\mathscr{U}'$, so (2) holds.
-
-
-* *Proof:* Let $H \in (\mathscr{U}_{m,r})_x$, then $F_{m,r}$.
-
-
-
-
-
-Based on the provided text from the PDF, here is the extracted information and proof excerpt:
-
-* **Proof of the $\sigma$-Sequence:** To complete the proof, it suffices to show that $\{\omega^{<\omega}\}$ is a $\sigma$-sequence.
-
-
-* **Construction:** For any $x \in X$, there exists a sequence of elements $s_n$ such that $s_{n+1} = s_n \frown \alpha_n$, where $s_0 = \phi \in \omega^0$ and $\chi_{s_{n+1}}$ is a point-star $\sigma$-refinement.
-
-
-* **Finite Subsets:** For each $n < \omega$, $A_n$ is a finite subset of $\omega$ such that $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$.
-
-
-* **Inductive Relation:** $st(x, \chi_{s_{n+1}}) \subset \bigcup_{\beta \in A_n} V(s_n, \beta)$.
-
-
-* **Bounding Lemma:** Letting $\beta_n = \max A_n$ and $\beta_m = \max\{\beta_n : n < \omega\}$, if $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
-
-Based on the provided document (`jiang51.pdf`), here is the extracted text and mathematical content:
-
-* **Proof Conclusion:** $H \subset U_{\alpha'} \in \mathscr{U}'$, thus (4) holds. This completes the proof that $P_\kappa$ holds.
-
+\textsc{Proof.} Let $H \in (\mathscr{H}_{m,r})_x$, then $x\in H\cap F_{m,r}$.
+Hence there exists $y \in F_{m,r}$ such that $H= H(m, r, y)$.
+Since $x\in V(m, \delta(y, m))$, there exists $j \le p$ such that $\delta(y, m) = \alpha_j$.
+Also, $x\in\bigcap_{l=0}^r W_l(m, y)\subset W_{l_j}(m, y)$. It follows from (3) and (1), there exists
+$\gamma \in D_j$ such that $W_{l_j}(m, y) \subset U_\alpha$,
+$H \subset U_{\alpha} \in \mathscr{U}'$, thus (4) holds. This completes the proof that $\mathcal{P}_\kappa$ holds.
 \end{proof}
 
 {\lemma{} \label{lem:4.1.6}
 Let $\mathscr{U}$ be an open cover of $X$.
 
-\textup{(i)} If $\mathscr{U}$ has an interior-preseving open point (local)-star refinement, then $\mathscr{U}$ has a $\sigma$-ep closed refinement $\mathscr{V}$ (with $\bigcup \mathscr{V} = X$).
+\textup{(i)} If $\mathscr{U}$ has an interior-preseving open point (local)-star refinement, 
+then $\mathscr{U}$ has a closure-preserving closed refinement 
+$\mathscr{F}$ (with $\bigcup \mathscr{F}^\circ = X$).
 
-\textup{(ii)} If $\mathscr{U}$ has a point (local) star refining sequence of interior-preseving open covers of $X$, then $\mathscr{U}$ has a $\sigma$-ep closed refinement $\mathscr{V}$ (with $\bigcup \mathscr{V} = X$).
+\textup{(ii)} If $\mathscr{U}$ has a point (local) star refining sequence of interior-preseving 
+open covers of $X$, then $\mathscr{U}$ has a $\sigma$-closure-preserving closed 
+refinement $\mathscr{F}$ (with $\bigcup \mathscr{F}^\circ = X$).
 }
 
 * **Proof of Lemma 4.1.6 (i):** Suppose $\mathscr{U} = \{V_\alpha : \alpha \in \Gamma\}$ has a point (local) star refining sequence of interior-preseving open covers of $X$. For each $n < \omega, \alpha \in \Gamma$, let $F_{n,\alpha} = \{x \in X : \operatorname{st}(x, \mathscr{U}_n) \subset V_\alpha\}$. Then $F_{n,\alpha}$ is closed for all $\alpha \in \Gamma$.
