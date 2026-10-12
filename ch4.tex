@@ -456,9 +456,6 @@ $\sigma$-closure-preserving closed refinement.
 * For new elements, let $G_{n, \alpha} = V_\alpha - \bigcup_{\gamma \neq \alpha} D_{n, \gamma}$. Then $D_{n, \alpha} \subset G_{n, \alpha}$ and each $\mathscr{G}_n = \{G_{n, \alpha} : \alpha < \kappa\}$ is an open refinement of $\mathscr{U}$.
 \end{proof} 
 
-
-Based on the provided document (`jiang56.pdf`), here is the extracted text and mathematical content:
-
 * **Proof of (iii) or (iv) $\implies$ (i):** Assume (iii) or (iv) is true. We have:
 
 
@@ -483,7 +480,20 @@ For any space $X$, the following are equivalent:
 \textup{(iv)} $X$ is $\lambda$-$\varepsilon$-refinable.
 }
 
-* *Proof:* $(i) \implies (ii) \implies (iii)$ are clear. $(iii) \implies (i)$ follows by Theorem 4.1.11.
+\begin{proof}
+(i)$\implies$(ii)$\implies$(iii). Clear. 
+
+(iii)$\implies$(i). By Theorem \ref{th:4.1.11}.
+
+(i)$\implies$(iv).  Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ is an open cover of $X$.
+Let $\mathscr{D} = \bigcup_{n < \omega} \mathscr{D}_n$ be a refinement of $\mathscr{U}$,
+where each $\mathscr{D}_n = \{D_{n,\alpha}: \alpha < \lambda\}$ is a discrete closed family in $X$ 
+with $D_{n,\alpha}\subset U_\alpha$.
+For $n < \omega, \alpha < \kappa$, let $G_{n,\alpha} = V_\alpha - \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$[cite: 14]. Then $D_{n,\alpha} \subset G_{n,\alpha}$ and each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha < \kappa\}$ is an open refinement of $\mathscr{U}$[cite: 14]. To see that $\mathscr{G}$ is $\theta$-refinable, there is $m < \omega$ and $\dots$ such that $\operatorname{ind}(\mathscr{G}_m) \dots$[cite: 14].
+
+(iv)$\implies$(i). By Theorem \ref{th:4.1.11}.
+\end{proof} 
+
 
 
 \subfile{ch4_2.tex}
