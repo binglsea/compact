@@ -18,13 +18,13 @@ For any \(\lambda\) the following are equivalent:
 }
 
 \begin{proof}
-(i) \(\implies\) (ii) \(\implies\) (iv) Clear.
+(i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iv) Clear.
 
-(ii) \(\implies\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there exists an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
+(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there exists an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
 
-(iii) \(\implies\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). For each \(F\in\mathscr{F}\), let \(V_F=X\setminus\bigcup\{F'\in\mathscr{F}\mid F'\cap F=\emptyset\}\). Then \(V_F\) is an open set containing \(F\). Let \(W_F=V_F\cap U_F\). Then \(\mathscr{W}=\{W_F\mid F\in\mathscr{F}\}\) is a star-finite open refinement of \(\mathscr{U}\).
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). For each \(F\in\mathscr{F}\), let \(V_F=X\setminus\bigcup\{F'\in\mathscr{F}\mid F'\cap F=\emptyset\}\). Then \(V_F\) is an open set containing \(F\). Let \(W_F=V_F\cap U_F\). Then \(\mathscr{W}=\{W_F\mid F\in\mathscr{F}\}\) is a star-finite open refinement of \(\mathscr{U}\).
 
-(iv) \(\implies\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite refinement \(\mathscr{A}\) of \(\mathscr{U}\). For each \(x\in X\), let \(N_x\) be an open neighborhood of \(x\) intersecting only finitely many members of \(\mathscr{A}\). Then \(\mathscr{N}=\{N_x\mid x\in X\}\) has a star-finite refinement \(\mathscr{B}\). Then \(\{\overline{B}\mid B\in\mathscr{B}\}\) is a star-finite closed refinement of \(\mathscr{U}\). 
+(iv) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite refinement \(\mathscr{A}\) of \(\mathscr{U}\). For each \(x\in X\), let \(N_x\) be an open neighborhood of \(x\) intersecting only finitely many members of \(\mathscr{A}\). Then \(\mathscr{N}=\{N_x\mid x\in X\}\) has a star-finite refinement \(\mathscr{B}\). Then \(\{\overline{B}\mid B\in\mathscr{B}\}\) is a star-finite closed refinement of \(\mathscr{U}\). 
 
 \end{proof} 
 
@@ -38,20 +38,20 @@ For any \(\lambda\) the following are equivalent:
 (iii) Every open \(\lambda\)-cover of \(X\) has a disjoint closed refinement.
 }
 
-Proof. (i) \(\implies\) (ii) and (i) \(\implies\) (iii) Clear.
-(ii) \(\implies\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a disjoint open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(\mathscr{V}\) is disjoint, \(\mathscr{V}\) is a partition of \(X\) by open sets, so members of \(\mathscr{V}\) are also closed. Thus, \(\mathscr{V}\) is a disjoint open refinement.
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(ii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a disjoint open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(\mathscr{V}\) is disjoint, \(\mathscr{V}\) is a partition of \(X\) by open sets, so members of \(\mathscr{V}\) are also closed. Thus, \(\mathscr{V}\) is a disjoint open refinement.
 
-(iii) \(\implies\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a disjoint closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). Since \(\mathscr{F}\) is a disjoint closed cover of \(X\), each \(F\in\mathscr{F}\) is also open. Thus, \(\mathscr{F}\) is a disjoint open refinement of \(\mathscr{U}\). \(\square\)
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a disjoint closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). Since \(\mathscr{F}\) is a disjoint closed cover of \(X\), each \(F\in\mathscr{F}\) is also open. Thus, \(\mathscr{F}\) is a disjoint open refinement of \(\mathscr{U}\). \(\square\)
 
 8.3.3. Theorem. For any \(\lambda\) the following are equivalent:
 (i) \(X\) is \(\lambda\)-ultraparacompact.
 (ii) Every open \(\lambda\)-cover of \(X\) has a star-countable open refinement.
 (iii) Every open \(\lambda\)-cover of \(X\) has a star-countable closed refinement.
 
-Proof. (i) \(\implies\) (ii) Clear.
-(ii) \(\implies\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is ultraparacompact, \(X\) is zero-dimensional. For each \(V\in\mathscr{V}\), \(V\) can be partitioned into clopen sets. Thus, there exists a star-countable closed refinement of \(\mathscr{U}\).
+Proof. (i) \(\Rightarrow\) (ii) Clear.
+(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is ultraparacompact, \(X\) is zero-dimensional. For each \(V\in\mathscr{V}\), \(V\) can be partitioned into clopen sets. Thus, there exists a star-countable closed refinement of \(\mathscr{U}\).
 
-(iii) \(\implies\) (i) Similar to the proof of 8.3.1. \(\square\)
+(iii) \(\Rightarrow\) (i) Similar to the proof of 8.3.1. \(\square\)
 
 Yes. I reconstructed the **visible page** into clean LaTeX, preserving the notation and organization of the handwritten original. The last proof is cut off at the bottom of the page, so I have not invented the missing portion. 
 
@@ -183,9 +183,9 @@ By Zorn's Lemma, \(\hat{\mathscr{B}}\) has a maximal element \(\mathscr{M}_0\). 
 (ii) \(X\) is zero-dimensional and \(\lambda\)-strongly paracompact.
 (iii) Every open \(\lambda\)-cover of \(X\) has a star-countable open refinement by clopen sets.
 
-Proof. (i) \(\implies\) (ii) and (i) \(\implies\) (iii) Clear.
-(ii) \(\implies\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). Since \(X\) is \(\lambda\)-strongly paracompact, \(\mathscr{U}\) has a star-finite open refinement \(\mathscr{V}\). Since \(X\) is zero-dimensional, each \(V\in\mathscr{V}\) can be partitioned into clopen sets refinement. Thus \(\mathscr{U}\) has a star-finite clopen refinement \(\mathscr{W}\). For each \(W\in\mathscr{W}\), let \(C(W,\mathscr{W})=\bigcup\mathscr{W}(W)\). Then \(\{C(W,\mathscr{W})\mid W\in\mathscr{W}\}\) is a disjoint clopen cover of \(X\). Since \(\mathscr{W}(W)\) is a star-finite clopen cover of \(C(W,\mathscr{W})\), \(C(W,\mathscr{W})\) is ultraparacompact. Thus \(X\) is \(\lambda\)-ultraparacompact.
-(iii) \(\implies\) (i) Similar to (ii) \(\implies\) (i). \(\square\)
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(ii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). Since \(X\) is \(\lambda\)-strongly paracompact, \(\mathscr{U}\) has a star-finite open refinement \(\mathscr{V}\). Since \(X\) is zero-dimensional, each \(V\in\mathscr{V}\) can be partitioned into clopen sets refinement. Thus \(\mathscr{U}\) has a star-finite clopen refinement \(\mathscr{W}\). For each \(W\in\mathscr{W}\), let \(C(W,\mathscr{W})=\bigcup\mathscr{W}(W)\). Then \(\{C(W,\mathscr{W})\mid W\in\mathscr{W}\}\) is a disjoint clopen cover of \(X\). Since \(\mathscr{W}(W)\) is a star-finite clopen cover of \(C(W,\mathscr{W})\), \(C(W,\mathscr{W})\) is ultraparacompact. Thus \(X\) is \(\lambda\)-ultraparacompact.
+(iii) \(\Rightarrow\) (i) Similar to (ii) \(\Rightarrow\) (i). \(\square\)
 
 8.3.7. Corollary. ([Ellis 1968]). A space \(X\) is ultraparacompact if and only if \(X\) is zero-dimensional and paracompact. \(\square\)
 
@@ -211,9 +211,9 @@ Proof. Follows from Theorem 8.3.6. \(\square\)
 (ii) \(X\) is paracompact and every open cover of \(X\) has a star-countable open refinement.
 (iii) \(X\) is star-finite paracompact.
 
-Proof. (i) \(\implies\) (ii) By Theorem 8.3.5.
-(ii) \(\implies\) (iii) By Lemma 8.3.4.
-(iii) \(\implies\) (i) Clear. \(\square\)
+Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.3.5.
+(ii) \(\Rightarrow\) (iii) By Lemma 8.3.4.
+(iii) \(\Rightarrow\) (i) Clear. \(\square\)
 
 8.3.11. Corollary. ([Begle 1949]). Every Lindelöf space is strongly paracompact. \(\square\)
 
@@ -229,16 +229,16 @@ cover \(\mathscr{B}=\bigcup_{n\in\omega}\mathscr{B}_n\) of \(X\) such that \(\ma
 (ii) Every open \(\lambda\)-cover of \(X\) has a star-finite open refinement.
 (iii) Every open \(\lambda\)-cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that each \(V\in\mathscr{V}\) is strongly paracompact.
 
-Proof. (i) \(\implies\) (ii) and (i) \(\implies\) (iii) Clear.
-(iii) \(\implies\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). By (iii), there exists a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\) such that each \(V\in\mathscr{V}\) is strongly paracompact. By Lemma 8.3.4, \(\{C(V,\mathscr{V})\mid V\in\mathscr{V}\}\) is a disjoint open cover of \(X\) and each \(C(V,\mathscr{V})\) is covered by a countable subcollection \(\mathscr{V}_V\) of \(\mathscr{V}\). Since each member of \(\mathscr{V}_V\) is strongly paracompact, \(C(V,\mathscr{V})\) is strongly paracompact. Thus \(X\) is \(\lambda\)-strongly paracompact. \(\square\)
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). By (iii), there exists a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\) such that each \(V\in\mathscr{V}\) is strongly paracompact. By Lemma 8.3.4, \(\{C(V,\mathscr{V})\mid V\in\mathscr{V}\}\) is a disjoint open cover of \(X\) and each \(C(V,\mathscr{V})\) is covered by a countable subcollection \(\mathscr{V}_V\) of \(\mathscr{V}\). Since each member of \(\mathscr{V}_V\) is strongly paracompact, \(C(V,\mathscr{V})\) is strongly paracompact. Thus \(X\) is \(\lambda\)-strongly paracompact. \(\square\)
 
 8.3.13. Theorem. ([Sun 1992]). For any space \(X\) the following are equivalent:
 (i) \(X\) is strongly paracompact.
 (ii) \(X\) is submetacompact and every open cover of \(X\) has a star-countable open refinement.
 (iii) \(X\) is metacompact and every open cover of \(X\) has a star-countable open refinement.
 
-Proof. (i) \(\implies\) (iii) and (iii) \(\implies\) (ii) Clear.
-(ii) \(\implies\) (i) By Theorem 8.3.5. \(\square\)
+Proof. (i) \(\Rightarrow\) (iii) and (iii) \(\Rightarrow\) (ii) Clear.
+(ii) \(\Rightarrow\) (i) By Theorem 8.3.5. \(\square\)
 
 
 8.3.14. Theorem. For any \(\lambda\) the following are equivalent:
@@ -246,8 +246,8 @@ Proof. (i) \(\implies\) (iii) and (iii) \(\implies\) (ii) Clear.
 (ii) Every open \(\lambda\)-cover of \(X\) has a star-finite open refinement.
 (iii) Every open \(\lambda\)-cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that \(\overline{\mathscr{V}}\) is star-countable.
 
-Proof. (i) \(\implies\) (ii) \(\implies\) (iii) Clear.
-(iii) \(\implies\) (i) Similar to the proof of Theorem 8.3.12. \(\square\)
+Proof. (i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iii) Clear.
+(iii) \(\Rightarrow\) (i) Similar to the proof of Theorem 8.3.12. \(\square\)
 
 8.3.15. Theorem. For any space \(X\) the following are equivalent:
 (i) \(X\) is strongly paracompact.
@@ -275,9 +275,9 @@ be a cover of \(X\), star-countable and CP closed refinement of \(\mathscr{U}\).
 (ii) \(X\) is paracompact and every open cover of \(X\) has a star-countable open refinement.
 (iii) Every open cover of \(X\) has a star-countable open refinement.
 
-Proof. (i) \(\implies\) (ii) By Theorem 8.3.10.
-(ii) \(\implies\) (iii) Clear.
-(iii) \(\implies\) (i) By Theorem 8.3.17. \(\square\)
+Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.3.10.
+(ii) \(\Rightarrow\) (iii) Clear.
+(iii) \(\Rightarrow\) (i) By Theorem 8.3.17. \(\square\)
 
 8.3.19. Theorem. For any space \(X\) the following are equivalent:
 (i) \(X\) is strongly paracompact.
@@ -289,16 +289,16 @@ Proof. Follows from Theorem 8.3.17. \(\square\)
 8.3.20. Theorem. ([Isbell 1964]). Every metric space is strongly paracompact if and only if it has a star-countable open cover. \(\square\)
 
 
-(i) \(\implies\) (iii) Clear. Assume (iii). For every \(\alpha\) and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\), since \(X\) is regular, there exists an open
+(i) \(\Rightarrow\) (iii) Clear. Assume (iii). For every \(\alpha\) and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\), since \(X\) is regular, there exists an open
 
 8.3.21. Theorem. For any space \(X\) the following are equivalent:
 (i) \(X\) is strongly paracompact.
 (ii) \(X\) is submetacompact and every open cover of \(X\) has a star-countable open refinement.
 (iii) Every open cover of \(X\) has a star-countable open refinement \(\mathscr{V}\) such that each \(V\in\mathscr{V}\) is strongly paracompact.
 
-Proof. (i) \(\implies\) (ii) and (i) \(\implies\) (iii) Clear.
-(ii) \(\implies\) (i) By Theorem 8.3.13.
-(iii) \(\implies\) (i) By Theorem 8.3.12. \(\square\)
+Proof. (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iii) Clear.
+(ii) \(\Rightarrow\) (i) By Theorem 8.3.13.
+(iii) \(\Rightarrow\) (i) By Theorem 8.3.12. \(\square\)
 
 8.3.22. Corollary. ([Burke 1984]). Every star-countable open cover of a strongly paracompact space has a star-finite open refinement. \(\square\)
 
