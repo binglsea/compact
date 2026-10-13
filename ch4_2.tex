@@ -137,53 +137,60 @@ so $\mathscr{F}$ is locally finite.
 
 
 {\theorem{} \label{th:4.2.6}
-$X$ is $\sigma$-paracompact iff every increasing
-$\alpha$-cover of $X$ has
+$X$ is $\lambda$-paracompact iff every increasing
+$\lambda$-cover of $X$ has
 a locally finite semi-open refinement.
 }
 
 \begin{proof}
-($\implies$) clear.
-($\impliedby$) Assume that every increasing open $\alpha$-cover of $X$ has
+($\Rightarrow$) clear.
+($\Leftarrow$) Assume that every increasing open $\lambda$-cover of $X$ has
 a locally finite semi-open refinement. For every cardinal $\kappa$,
+denote  the proposition by 
 
+$\mathcal{Q}_\kappa$: ``every directed open
+$\kappa$-cover of $X$ has a locally finite closed refinement." 
 
-denote by $Q_\kappa$ the proposition: "every directed open
-$\kappa$-cover
-transfinite
-of $X$ has a locally finite closed refinement." We use
-induction
-to
-show that $Q_\kappa$ holds for each $\kappa$.
-Clearly, $Q_\kappa$
-is
-trivially true for $\kappa$ finite. Let
-$\omega \le \kappa \le \lambda$ such that $Q_\mu$ holds for each $\mu < \kappa$. To show
-that $Q_\kappa$ holds, let
-$\mathscr{U} = \{\mathscr{U}_\alpha : \alpha < \kappa\}$ be a directed open
-$\alpha$-cover of $X$. $\mathscr{U}^* = \{\bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa\}$ is an increasing open
-$\alpha$-cover of $X$. Then $\mathscr{U}^*$ has
+\noindent We use transfinite induction to show that $\mathcal{Q}_\kappa$ holds for each $\kappa$.
+Clearly, $\mathcal{Q}_\kappa$ is trivially true for $\kappa$ finite. Let
+$\omega \le \kappa \le \lambda$ such that $\mathcal{Q}_\mu$ holds for each $\mu < \kappa$. To show
+that $\mathcal{Q}_\kappa$ holds, let
+$\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ be a directed open
+cover of $X$. 
+$\mathscr{U}^* = \{\bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa\}$ is an increasing open
+$\lambda$-cover of $X$. Then $\mathscr{U}^*$ has
 a locally finite semi-open refinement
 $\mathscr{P} = \{P_\alpha : \alpha < \kappa\}$ such that
-$P_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. By Lemma 4.2.5,
-$\mathscr{P}^{*\mathscr{F}} = \{\bigcup_{\alpha \in S} P_\alpha : S \in [\kappa]^{<\omega}\}$ has
-a locally finite closed refinement $\mathscr{K} = \{K_S : S \in [\kappa]^{<\omega}\}$ such that
-$K_S \subset \bigcup_{\alpha \in S} P_\alpha$. For $S \in [\kappa]^{<\omega}$, let
-$\delta(S) = \max S$. Then $K_S \subset \bigcup_{\gamma < \delta(S)} U_\gamma$. For $S \in [\kappa]^{<\omega}$ let
-$\mathscr{W}_S = \{U_\gamma : \gamma < \delta(S)\} \cup \{X - K_S\}$
-or
-$\mathscr{W}_S = \{U_t : t \in [\delta(S)]^{<\omega}\} \cup \{U_t \cup (X - K_S) : t \in [\delta(S)]^{<\omega}\}$.
-$\mathscr{W}_S$ is an
-open cover of $X$ so $\mathscr{W}_S^\mathscr{F}$ is a directed open
-$\alpha$-cover where $\mu = |[\delta(S)]^{<\omega}| = |\delta(S)| < \kappa$. By the induction
-assumption, $\mathscr{W}_S^\mathscr{F}$ has a locally finite closed refinement $\mathscr{C}_S$. Let
-$\mathscr{D}_S = \{C \cap K_S : C \in \mathscr{C}_S\}$
+$P_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. By Lemma \ref{lem:4.2.5},
+$\mathscr{P}^{*F} = \{\bigcup_{\alpha \in S} P_\alpha : S \in [\kappa]^{<\omega}\}$ has
+a locally finite closed refinement $\mathscr{K} = \{K_S : S \in [\kappa]^{<\omega}\}$ 
 such that
-$C_t \in \mathscr{C}_S$ and $C'_v = U_\psi \cup (X - K_S)$. Let
-$\mathscr{D} = \bigcup \{D_S : S \in [\kappa]^{<\omega}\}$.
-Since $\mathscr{K}$ and each $\mathscr{C}_S$ are locally finite, it is easy to see that $\mathscr{D}$ is
+$K_S \subset \bigcup_{\alpha \in S} P_\alpha$. For $S \in [\kappa]^{<\omega}$, let
+$\delta(S) = \max \{\alpha < \kappa: \alpha\in S\}$. Then 
+$K_S \subset \bigcup_{\gamma < \delta(S)} U_\gamma$. 
+For $S \in [\kappa]^{<\omega}$ let
+$$\mathscr{W}_S = \{U_\gamma : \gamma < \delta(S)\} \cup \{X\setminus K_S\}.$$ 
+\noindent Then
+$$\mathscr{W}_S^F = \{U_t : t \in [\delta(S)]^{<\omega}\} \cup \{U_t \cup (X \setminus K_S) : 
+t \in [\delta(S)]^{<\omega}\}$$.
+\noindent $\mathscr{W}_S$ is an
+open cover of $X$ so $\mathscr{W}_S^{*F}$ is a directed open
+$\mu$-cover where $\mu = |[\delta(S)]^{<\omega}| = |\delta(S)| < \kappa$. 
+By the induction
+assumption, $\mathscr{W}_S^{*F}$ has a locally finite closed refinement $\mathscr{C}_S$. 
+Let
+$$\mathscr{D}_S = \{C \cap K_S : C \in \mathscr{C}_S\}$$
+such that
+$C_t \in U_t$ and ${C'}_t= U_t\cup (X \setminus K_S)$. Let
+\begin{gather*}
+\mathscr{D} _S=\{C_t\cap K_S: t\in [\delta(S)]^{<\omega}\} \cup
+  \{C'_t\cap K_S: t\in [\delta(S)]^{<\omega}\}, \\
+\mathscr{D} = \bigcup \{D_S : S \in [\kappa]^{<\omega}\}.
+\end{gather*}
+\noindent Since $\mathscr{K}$ and each 
+$\mathscr{C}_S$ are locally finite, it is easy to see that $\mathscr{D}$ is
 a locally finite closed refinement of $\mathscr{U}$. This completes the proof that
-$Q_\kappa$ holds. By Theorem 3.1.3 $X$ is $\sigma$-paracompact.
+$Q_\kappa$ holds. By Theorem \ref{th:3.1.3},  $X$ is $\lambda$-paracompact.
 \end{proof}
 
 
