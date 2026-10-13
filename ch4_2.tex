@@ -125,7 +125,7 @@ and $x \in F_S$. Hence
 $\mathscr{F} = \{F_S : S \in [\Delta]^{<\omega}\}$ is a closed
 cover of $X$. If $S \in [\Delta]^{<\omega}$,
 then $F_S \subset \bigcup_{\alpha \in S} P_\alpha$. 
-So, $\mathscr{F}$ is a refinement of $\mathscr{P}^{*F}$. To see that
+So, $\mathscr{F}$ is a refinement of $\mathscr{P}^{F}$. To see that
 $\mathscr{F}$ is locally finite, let $x \in X$. Then 
 $S(x) = \text{ind}(\overline{\mathscr{P}})_x \in [\Delta]^{<\omega}$ and
 $W = X \setminus \overline{\bigcup \{P_\gamma : \gamma \notin S(x)\}}
@@ -144,6 +144,7 @@ a locally finite semi-open refinement.
 
 \begin{proof}
 ($\Rightarrow$) clear.
+
 ($\Leftarrow$) Assume that every increasing open $\lambda$-cover of $X$ has
 a locally finite semi-open refinement. For every cardinal $\kappa$,
 denote  the proposition by 
@@ -162,7 +163,7 @@ $\lambda$-cover of $X$. Then $\mathscr{U}^*$ has
 a locally finite semi-open refinement
 $\mathscr{P} = \{P_\alpha : \alpha < \kappa\}$ such that
 $P_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. By Lemma \ref{lem:4.2.5},
-$\mathscr{P}^{*F} = \{\bigcup_{\alpha \in S} P_\alpha : S \in [\kappa]^{<\omega}\}$ has
+$\mathscr{P}^{F} = \{\bigcup_{\alpha \in S} P_\alpha : S \in [\kappa]^{<\omega}\}$ has
 a locally finite closed refinement $\mathscr{K} = \{K_S : S \in [\kappa]^{<\omega}\}$ 
 such that
 $K_S \subset \bigcup_{\alpha \in S} P_\alpha$. For $S \in [\kappa]^{<\omega}$, let
@@ -172,12 +173,12 @@ For $S \in [\kappa]^{<\omega}$ let
 $$\mathscr{W}_S = \{U_\gamma : \gamma < \delta(S)\} \cup \{X\setminus K_S\}.$$ 
 \noindent Then
 $$\mathscr{W}_S^F = \{U_t : t \in [\delta(S)]^{<\omega}\} \cup \{U_t \cup (X \setminus K_S) : 
-t \in [\delta(S)]^{<\omega}\}$$.
+t \in [\delta(S)]^{<\omega}\}.$$
 \noindent $\mathscr{W}_S$ is an
-open cover of $X$ so $\mathscr{W}_S^{*F}$ is a directed open
+open cover of $X$, so $\mathscr{W}_S^{F}$ is a directed open
 $\mu$-cover where $\mu = |[\delta(S)]^{<\omega}| = |\delta(S)| < \kappa$. 
 By the induction
-assumption, $\mathscr{W}_S^{*F}$ has a locally finite closed refinement $\mathscr{C}_S$. 
+assumption, $\mathscr{W}_S^{F}$ has a locally finite closed refinement $\mathscr{C}_S$. 
 Let
 $$\mathscr{D}_S = \{C \cap K_S : C \in \mathscr{C}_S\}$$
 such that
