@@ -91,9 +91,11 @@ a $\sigma$-closure-preserving  closed refinement $\mathscr{F}$ such that $\maths
 $\lambda$-cover of $X$. Let $\mathscr{V}$ be a locally finite open refinement of $\mathscr{U}$. Then
 $\mathscr{V}$ is an interior-preserving open local-star refinement of $\mathscr{U}$.
 
-(i)$\implies$(iii) and (iv)$\implies$(v). Clear.
+(ii)$\implies$(iii) and (iv)$\implies$(v). Clear.
 
-(ii)$\implies$(iv) and (iii)$\implies$(v) By Theorem \ref{th:4.1.6}.
+(ii)$\implies$(iv) and (iii)$\implies$(v) By Lemma \ref{lem:4.1.6}.
+
+
 
 (...) $\implies$ (v).
 Assume (v). By Theorem ..., $X$ is $\sigma$-submeta-
@@ -110,12 +112,14 @@ expansions. Thus $X$ is $\sigma$-expandable. By Theorem
 3.3.4 $X$ is $\sigma$-paracompact.
 \end{proof}
 
-
-4.2.5. Lemma. If $\mathscr{P}$ is a $\sigma$-locally finite semi-open
+{\lemma{} \label{lem:4.2.5}
+If $\mathscr{P}$ is a $\sigma$-locally finite semi-open
 cover of $X$, then $\mathscr{P}^{*\mathscr{F}}$ has
 a locally finite closed refinement.
+}
 
-Proof. Let $\mathscr{P} = \bigcup_{n} \mathscr{P}_n$. For $S \in [\mathscr{P}]^{<\omega}$, let
+\begin{proof}
+Let $\mathscr{P} = \bigcup_{n} \mathscr{P}_n$. For $S \in [\mathscr{P}]^{<\omega}$, let
 $F_S = (\overline{\bigcap_{\alpha \in S} P_\alpha}) \setminus (\overline{X \setminus \bigcup_{\alpha \in S} P_\alpha})$.
 For each $x \in X$, find $\alpha$ and $x \in P_\alpha$.
 $\mathscr{F} = \{F_S : S \in [\mathscr{P}]^{<\omega}\}$ is a closed
@@ -125,12 +129,17 @@ $\mathscr{F}$ is locally finite, let $x \in X$. Then $S(x) = \text{ind}(\mathscr
 $W = X \setminus \overline{\bigcup \{P_\gamma : \gamma \notin S(x)\}}$ is an open neighborhood of $x$. It is easy to see that
 $\text{ind}(\mathscr{F})_W \subset \{S : S \subset S(x)\}$. It follows that $\text{ind}(\mathscr{F})_W$ is finite,
 so $\mathscr{F}$ is locally finite.
+\end{proof}
 
-4.2.6. Theorem. $X$ is $\sigma$-paracompact iff every increasing
+
+{\theorem{} \label{th:4.2.6}
+$X$ is $\sigma$-paracompact iff every increasing
 $\alpha$-cover of $X$ has
 a locally finite semi-open refinement.
+}
 
-Proof. ($\implies$) clear.
+\begin{proof}
+($\implies$) clear.
 ($\impliedby$) Assume that every increasing open $\alpha$-cover of $X$ has
 a locally finite semi-open refinement. For every cardinal $\kappa$,
 
@@ -171,7 +180,7 @@ $\mathscr{D} = \bigcup \{D_S : S \in [\kappa]^{<\omega}\}$.
 Since $\mathscr{K}$ and each $\mathscr{C}_S$ are locally finite, it is easy to see that $\mathscr{D}$ is
 a locally finite closed refinement of $\mathscr{U}$. This completes the proof that
 $Q_\kappa$ holds. By Theorem 3.1.3 $X$ is $\sigma$-paracompact.
-
+\end{proof}
 
 
 \end{document}
