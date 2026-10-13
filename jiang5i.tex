@@ -38,7 +38,7 @@ there exists a locally finite functionally open cover
 \(\mathscr{H}=\{H_n: n < \omega\) such that 
 \(\overline{H_n}\subset\cup\mathscr{V}_n\) for each \(n<\omega\).
 For each \(n<\omega\), let \(\mathscr{G}_n=\{H_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\) 
-where each set \(H_\cap V_{n,\alpha}\) is
+where each set \(H_n\cap V_{n,\alpha}\) is
 functionally open. To see that \(\mathscr{G}_n\) is locally finite, let \(x\in X\). If
 \(x\notin\cup \mathscr{V}_n\), then 
 \(X\setminus\overline{H}_n\in\operatorname{top}(x)\) 
@@ -50,20 +50,23 @@ star-finite. Hence each \(\mathscr{G}_n\) is locally finite.
 By Theorem \ref{th:2.1.3}, 
 there exists a countable locally finite functionally open cover 
 \(\mathscr{S}=\{S_n: n<\omega\}\)
-such that \(\S_n\subset\bigcup\mathscr{G}_n \forall \, n\). 
+such that \(S_n\subset\bigcup\mathscr{G}_n \forall \, n\). 
 Let
 $$\mathscr{R}=\{S_n\cap H_n\cap V_{n,\alpha}:  \alpha\in\Delta_n, n < \omega\}.$$
 
 \noindent Then \(\mathscr{R}\) is a functionally open refinement of \(\mathscr{U}\). To see
 that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{S}\) is locally finite, 
-\(\exists G_0\in\mathscr{T}(X)\) such
-that \(D_0=\{n\in\omega\mid G_0\cap\mathscr{S}_n\neq\emptyset\}\) is finite. For each \(i\le k\), \(\mathscr{S}_{n_i}\)
-is locally finite, so \(\exists G_i\in\mathscr{T}(X)\) such that the set
-\(D_i=\{\alpha\in\Delta_{n_i}\mid G_i\cap H_{n_i}\cap V_{n_i,\alpha}\neq\emptyset\}\)
-is finite. Let \(G=\bigcap_{i=0}^k G_i\), and
-let \(C=\{(n,\gamma,\alpha)\mid G\cap(S_{n,\gamma}\cap H_n\cap V_{n,\alpha})\neq\emptyset\}\).
-It is easily seen that \(C\subset\bigcup_{i=1}^k (D_i\times\{n_i\})\). Thus \(C\) is finite,
-so \(\mathscr{R}\) is locally finite. By Theorem 2.1.6, \(\mathscr{U}\) is a normal cover.
+\(\exists \, G_0\in\operatorname{top}(x)\) such that 
+$\operatorname{ind}(\mathscr{S})_{G_0} = \{n_1, \cdots, n_k\}$
+ is finite. For each \(i\le k\), \(\mathscr{S}_{n_i}\)
+is locally finite, so \(\exists G_i\in\operatorname{top}(x)\) such that the set
+$$D_i=\{\alpha\in\Delta_{n_i}: G_i\cap H_{n_i}\cap V_{n_i,\alpha}\neq\emptyset\}$$
+
+\noindent is finite. Let \(G=\bigcap_{i=0}^k G_i\), and let
+\[C=\{(\alpha, n):  \alpha\in \Delta_n, n < \omega,  
+G\cap(S_{n}\cap H_n\cap V_{n,\alpha})\neq\emptyset\}.\]
+\noindent It is easy to see that \(C\subset\bigcup_{i=1}^k (D_i\times\{n_i\})\). Thus \(C\) is finite,
+so \(\mathscr{R}\) is locally finite. By Theorem \ref{th:2.1.6}, \(\mathscr{U}\) is a normal cover.
 \end{proof}
 
 {\theorem{\label{th:5.1.2}}
