@@ -6,7 +6,7 @@
 
 {\theorem{} \label{th:4.2.1}
 \textup{([Boone 1973]\textsuperscript{\cite{Boone}})}
-$X$ is $\theta$-metacompact iff $X$ is $\sigma$-submetacompact and $\sigma$-discretely almost expandable.
+$X$ is $\lambda$-metacompact iff $X$ is $\lambda$-submetacompact and $\lambda$-discretely almost expandable.
 }
 
 \begin{proof}
@@ -25,7 +25,7 @@ open  point-star refinement.
 \textup{(iii)} Every interior-preserving directed open $\lambda$-cover of $X$ has an interior-preserving
 open  point-star refinement.
 
-\textup{(iv)} Every  directed open $\lambda$-cover of $X$ has an closure-preserving refinement.
+\textup{(iv)} Every  directed open $\lambda$-cover of $X$ has an closure-preserving closed refinement.
 
 \textup{(v)}  Every interior-preserving  directed open $\lambda$-cover of $X$ has a closure-preserving
 closed refinement.
@@ -37,7 +37,7 @@ closed refinement.
 (i)$\implies$(ii). Assume (i) and let $\mathscr{U}$ be a directed open
 $\lambda$-cover of $X$. Let $\mathscr{V}$ be a point-finite open refinement of
 $\mathscr{U}$. Then $\mathscr{V}$ is an
-interior-preserving open point-star refinement of $X$.
+interior-preserving open point-star refinement of $\mathscr{U}$.
 
 (ii)$\implies$(iii), (iv)$\implies$(v) and (i)$\implies$(iv). Clear.
 
@@ -45,15 +45,15 @@ interior-preserving open point-star refinement of $X$.
 
 (v)  (vi)$\implies$(i). Assume (v) (vi). By Theorem \ref{th:4.1.7}, \ref{th:4.1.2},
 $X$ is $\lambda$-submetacompact. By Theorem \ref{th:4.2.1},
-we need only to show that $X$ is $\sigma$-discretely almost expandable. To this end, let 
-$\mathscr{D}$ be a discrete family of closed subsets of $X$ and let 
+we need only to show that $X$ is $\lambda$-discretely almost expandable. To this end, let 
+$\mathscr{D}$ be a discrete $\lambda$-family of closed subsets of $X$ and
 $\mathscr{D}^*$ be the induced cover. Then $\mathscr{D}^{*F}$ is
 an interior-preserving directed open cover of $X$. By (v),
 $\mathscr{D}^{*F}$ has a cushioned refinement; or by (vi) $\mathscr{D}^{*F}$ has a
 semi-open point-star $\dot{F}$ refinement $\mathscr{L}$. 
 Then $\mathscr{L}$ is also a point-star refinement of $\mathscr{D}^{*F}$. 
 By Theorem \ref{th:4.1.9}, $\mathscr{D}^{*F}$ has a cushioned refinement. 
-By Lemma \ref{lem:1.2.4}, $mathscr{D}$ has
+By Lemma \ref{lem:1.2.4}, $\mathscr{D}$ has
 point-finite open expansion. Hence $X$ is $\lambda$-discretely almost expandable.
 \end{proof} 
 
@@ -71,20 +71,25 @@ and $\lambda$-expandable.
 {\theorem{} \label{th:4.2.4}
 \textup{([Junmila 1979a]\textsuperscript{\cite{Junnila1979a}})}
 For any $X$ the following are equivalent.
-(i) $X$ is paracompact,
-(ii) Every directed open $\alpha$-cover of $X$ has an IP open
+\textup{(i)} $X$ is $\lambda$-paracompact.
+
+\textup{(ii)}  Every directed open $\lambda$-cover of $X$ has an interior-preserving open
 local-star refinement.
-(iii) Every IP directed open $\alpha$-cover of $X$ has a local-
-star refining sequence of IP open covers of $X$.
-(iv) Every directed open $\alpha$-cover of $X$ has
+
+\textup{(iii)} Every interior-preserving directed open $\lambda$-cover of $X$ has a local-star 
+refining sequence of interior-preserving open covers of $X$.
+
+\textup{(iv)} Every directed open $\alpha$-cover of $X$ has
 a refinement $\mathscr{V}$ such that $\mathscr{V}$ covers $X$.
-(v) Every IP directed open $\alpha$-cover of $X$ has
+
+\textup{(v)} Every interior-preserving directed open $\alpha$-cover of $X$ has
 a CP closed refinement $\mathscr{V}$ such that $\mathscr{V}$ covers $X$.
 }
 
-Proof. (i) $\implies$ (ii). Assume (i) and let $\mathscr{U}$ be a directed open
+\begin{proof}
+(i) $\implies$ (ii). Assume (i) and let $\mathscr{U}$ be a directed open
 $\alpha$-cover of $X$. Let $\mathscr{V}$ be a LF open refinement of $\mathscr{U}$. Then
-$\mathscr{V}$ is an IP open local-star refinement of $\mathscr{U}$.
+$\mathscr{V}$ is an interior-preserving open local-star refinement of $\mathscr{U}$.
 (i) $\implies$ (iii) and (iv) are clear.
 (ii) $\implies$ (iv) and ... By Lemma 4.1.6.
 (...) $\implies$ (v).
@@ -92,15 +97,16 @@ Assume (v). By Theorem ..., $X$ is $\sigma$-submeta-
 compact. By Theorem 4.2.3, we need only to show that
 $X$ is $\sigma$-expandable. Let $\mathscr{B}$ be a LF family of subsets.
 
-```latex
 of $X$. The induced
 cover
-$\mathcal{B}^{*\mathcal{F}}$ is an IP directed open
+$\mathcal{B}^{*\mathcal{F}}$ is an interior-preserving directed open
 $\alpha$-cover of $X$. By (...) $\mathcal{B}^{*\mathcal{F}}$ has
 a $\sigma$-cushioned open refine-
 ment. By Lemma 1.2.3, $\mathcal{B}$ has a $\sigma$-sequence of open
 expansions. Thus $X$ is $\sigma$-expandable. By Theorem
 3.3.4 $X$ is $\sigma$-paracompact.
+\end{proof}
+
 
 4.2.5. Lemma. If $\mathcal{P}$ is a $\sigma$-LF semi-open
 cover of $X$, then $\mathcal{P}^{*\mathcal{F}}$ has
