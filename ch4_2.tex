@@ -105,7 +105,7 @@ of $X$. The induced cover
 $\mathscr{B}^{*}$ is an interior-preserving directed open
 $\lambda$-cover of $X$. By (v), $\mathscr{B}^*$ has a $\sigma$-cushioned open 
 refinement. By Lemma \ref{lem:1.2.3}, $\mathscr{B}$ has a $\theta^*$-sequence 
-of openvexpansions. Thus $X$ is $\lambda$-$\theta^*$-expandable. By 
+of open expansions. Thus $X$ is $\lambda$-$\theta^*$-expandable. By 
 Theorem \ref{th:3.3.4}, $X$ is $\lambda$-expandable.
 \end{proof}
 
@@ -116,15 +116,22 @@ a locally finite closed refinement.
 }
 
 \begin{proof}
-Let $\mathscr{P} = \bigcup_{n} \mathscr{P}_n$. For $S \in [\mathscr{P}]^{<\omega}$, let
-$F_S = (\overline{\bigcap_{\alpha \in S} P_\alpha}) \setminus (\overline{X \setminus \bigcup_{\alpha \in S} P_\alpha})$.
-For each $x \in X$, find $\alpha$ and $x \in P_\alpha$.
-$\mathscr{F} = \{F_S : S \in [\mathscr{P}]^{<\omega}\}$ is a closed
-cover of $X$. If $S \in [\mathscr{P}]^{<\omega}$,
-then $F_S \subset \bigcup_{\alpha \in S} P_\alpha$. $\mathscr{F}$ is a refinement of $\mathscr{P}^{*\mathscr{F}}$. To see that
-$\mathscr{F}$ is locally finite, let $x \in X$. Then $S(x) = \text{ind}(\mathscr{P})_x \in [\mathscr{P}]^{<\omega}$ and
-$W = X \setminus \overline{\bigcup \{P_\gamma : \gamma \notin S(x)\}}$ is an open neighborhood of $x$. It is easy to see that
-$\text{ind}(\mathscr{F})_W \subset \{S : S \subset S(x)\}$. It follows that $\text{ind}(\mathscr{F})_W$ is finite,
+Let $\mathscr{P} = \{P_\alpha: \alpha\in \Delta\}$ is a locally finite semi-open cover of $X$.
+For $S \in [\Delta]^{<\omega}$, let
+$$F_S = (\overline{\bigcap_{\alpha \in S} P_\alpha}) \cap
+ (\overline{X \setminus \bigcup_{\gamma \notin S} P_\gamma})$$
+\noindent For each $x \in X$,  $S = \operatorname{ind}(\mathscr{P})_x \in [\Delta]^{<\omega}$ 
+and $x \in F_S$. Hence
+$\mathscr{F} = \{F_S : S \in [\Delta]^{<\omega}\}$ is a closed
+cover of $X$. If $S \in [\Delta]^{<\omega}$,
+then $F_S \subset \bigcup_{\alpha \in S} P_\alpha$. 
+So, $\mathscr{F}$ is a refinement of $\mathscr{P}^{*F}$. To see that
+$\mathscr{F}$ is locally finite, let $x \in X$. Then 
+$S(x) = \text{ind}(\overline{\mathscr{P}})_x \in [\Delta]^{<\omega}$ and
+$W = X \setminus \overline{\bigcup \{P_\gamma : \gamma \notin S(x)\}}
+\in \operatorname{top}(x)$. It is easy to see that
+$\text{ind}(\mathscr{F})_W \subset \{S : S \subset S(x)\}$. 
+It follows that $\text{ind}(\mathscr{F})_W$ is finite,
 so $\mathscr{F}$ is locally finite.
 \end{proof}
 
