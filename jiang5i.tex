@@ -141,19 +141,22 @@ $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$ such that for each
 $m, n < \omega$,
 $\mathscr{F}_{m,n} = \{F_{m,n,\alpha}: \alpha \in \Delta\}$ is a discrete family of 
 closed subsets of the subspace 
-$X \setminus \bigcup\{\cup \mathscr{F}_{(p,q)}: (p, p)<(m,n)\}$.
+$X \setminus \bigcup\{\cup \mathscr{F}_{(p,q)}: (p, p)<(m,n)\}$ and 
+$F_{m,n,\alpha}\subset U_\alpha$ for each $\alpha\in \Delta$. 
 }
 
 \begin{proof}
 $(\Rightarrow)$ Clear.
-$(\Leftarrow)$ Suppose that $\mathscr{U}$ is an open cover of $X$, 
+
+$(\Leftarrow)$ Suppose that $\mathscr{U} =\{ U_\alpha: \alpha\in\Delta\}$ is an open cover 
+of $X$, 
 and that $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ 
-is a $D_\omega$-refinement of $\mathscr{U}$ with 
-$\mathscr{V}_{m,n} = \{V_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$. 
-For each $V_{m,n,\alpha}$, pick $S(\alpha) \in \mathscr{U}$ 
-such that $V_{m,n,\alpha} \subseteq S(\alpha)$. 
+is a $D\omega^2$-refinement of $\mathscr{U}$ with 
+$\mathscr{V}_{m,n} = \{V_{m,n,\gamma}: \gamma \in \Gamma_{m,n}\}$. 
+For each $\gamma\in \Gamma_{m,n}$, pick $\delta(\gamma) \in \Delta$ 
+such that $\mathscr{V}_{m,n,\gamma} \subset U_{\delta(\gamma)}$. 
 For each $\alpha$, let 
-$F_{m,n,\alpha} = V_{m,n,\alpha} \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. 
+$$F_{m,n,\alpha} = V_{m,n,\alpha} \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q}).$$ 
 Then $\mathscr{F}_{m,n}$ covers... 
 Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ 
 and $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
@@ -164,16 +167,11 @@ Since $\mathscr{V}$ is a $D_\omega$-refinement of..., it follows from... and... 
 \end{proof}
 
 {\theorem{} \label{th:5.1.5}
-
-5.1.5. Theorem
-
-* A $D_\omega$-weakly $\theta$-refinable space is a $D_\omega$-refinable space.
+A $\lambda$-weakly $\overline{\theta}$-refinable space is a $D\omega^2$-refinable.
 }
 
-
-Proof Outline from Text:
-
-* Suppose that $X$ is a weakly $\theta$-refinable [space] and that $\mathscr{U}$ is an open cover of $X$. Let $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha \in \Lambda_n\}$ is a weak $\theta$-refinement of $\mathscr{U}$.
+\begin{proof}
+Suppose that $X$ is a weakly $\theta$-refinable [space] and that $\mathscr{U}$ is an open cover of $X$. Let $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha \in \Lambda_n\}$ is a weak $\theta$-refinement of $\mathscr{U}$.
 
 
 * We show that $\mathscr{U}$ is a $D_\omega$-cover. Define a function $\varphi: \omega \times \omega \to \omega$ by $\varphi(k, l) = \dots$.
@@ -193,7 +191,6 @@ Proof Outline from Text:
 
 * To show $\mathscr{E}$ is a $D_\omega$-refinement, let $m, n < \omega$ with $\dots$.
 
-Based on the provided text from `jiang67.pdf`, here is the extracted continuation of the proof:
 
 * Let $\dots = m$. Let $Y = X \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. It suffices to show that $\mathscr{E}_{m,n}$ is discrete and closed in $Y$. By Lemma 1.1.5, we need ... to show the following:
 
@@ -260,11 +257,8 @@ Completion of Claim 2
 
 * If $S \neq S_0$, then $W \cap P(B, S, m, n) \cap H_n = \emptyset$.
 
-
-
-
-* Thus, $\mathscr{E}_{m,n}$ is discrete at $x$, completing the proof of Claim 2.
-
+Thus, $\mathscr{E}_{m,n}$ is discrete at $x$, completing the proof of Claim 2.
+\end{proof}
 
 \subfile{ch5_2}
 
