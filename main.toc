@@ -14,14 +14,14 @@
 \contentsline {section}{\numberline {4.2}Paracompact and Metacompact Spaces}{29}{section.4.2}%
 \contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{32}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Normal Covers and $D\omega ^2$-refinable Spaces}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{33}{section.5.2}%
-\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{36}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Submetacompact and $\lambda $-expandable Spaces}{36}{section.6.1}%
-\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{37}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{37}{section.7.1}%
-\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{38}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{38}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Fully Normal Spaces}{39}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Strongly Paracompact and Ultraparacompact Spaces}{41}{section.8.3}%
-\contentsline {chapter}{Bibliography}{46}{chapter*.9}%
-\contentsline {chapter}{Index}{49}{chapter*.9}%
+\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{34}{section.5.2}%
+\contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Submetacompact and $\lambda $-expandable Spaces}{38}{section.6.1}%
+\contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{39}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{39}{section.7.1}%
+\contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{40}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{40}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Fully Normal Spaces}{41}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Strongly Paracompact and Ultraparacompact Spaces}{43}{section.8.3}%
+\contentsline {chapter}{Bibliography}{48}{chapter*.9}%
+\contentsline {chapter}{Index}{51}{chapter*.9}%
