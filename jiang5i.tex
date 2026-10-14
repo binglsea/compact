@@ -21,9 +21,9 @@ $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ such that each $\bigcup \mathsc
 \begin{proof}
 (i) $\Rightarrow$ (ii). Suppose $\mathscr{U}$ is normal. By Theorem \ref{th:2.1.6}, $\mathscr{U}$ has a functionally open refinement $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ where each $\mathscr{V}_n$ is discrete, so is disjoint, and by Lemma \ref{lem:1.3.8}, $\bigcup \mathscr{V}_n$ is functionally open.
 
-$(ii) \Rightarrow (iii)$. Trivial.
+(ii) $\Rightarrow$ (iii). Trivial.
 
-$(iii) \Rightarrow (i)$. Suppose $\mathscr{U}$ is an open cover of $X$ and 
+(iii) $\Rightarrow$ (i). Suppose $\mathscr{U}$ is an open cover of $X$ and 
 $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is a functionally open refinement 
 of $\mathscr{U}$ such that each 
 $\mathscr{V}_n=\{V_{n,\alpha}: \alpha\in\Delta_n\}$ is star-finite and 
@@ -108,36 +108,60 @@ Hence $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ and  $\mathscr{U}$ 
 
 
 {\definition{} \label{def:5.1.3}
-* Let $<$ be the anti-lexicographic order on $\omega \times \omega$, where $(p, q) < (m, n)$ if and only if ($p < m$) or ($p = m$ and $q < n$).
-* An open cover $\mathscr{U}$ of $X$ is a **$D_\omega$-cover** if it has a refinement $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ such that for each $m, n < \omega$, the family $\bigcup_{(p,q)<(m,n)} \mathscr{V}_{p,q}$ is relatively discrete and closed in the subspace.
-* The family $\mathscr{V}$ is called a **$D_\omega$-refinement** of $\mathscr{U}$.
+\textup{(i)} Let $<$ be the anti-lexicographic order on $\omega \times \omega$, 
+where $(p, q) < (m, n)$ if and only if $(q < n$) or ($q = n$ and $p < m)$.
 
+\textup{(ii)} An open cover $\mathscr{U}$ of $X$ is a 
+\uwave{$D\omega^2$-cover}
+\index{$D\omega^2$-cover| \S\ref{def:5.1.3}\hfill}
+if it has a refinement 
+$\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ such that for each $m, n < \omega$, 
+the family 
+$$\mathscr{V}_{m,n}|_{(
+		X\setminus \bigcup\{\cup\mathscr{V}_{(p,q)}: (p,q)<(m,n)\}
+		)}$$
+is relatively discrete and closed in the subspace 
+$X\setminus \bigcup\{\cup\mathscr{V}_{(p,q)}: (p,q)<(m,n)\}$.
+
+The family $\mathscr{V}$ is called a
+\uwave{$D\omega^2$-refinement}
+\index{$D\omega^2$-refinement| \S\ref{def:5.1.3}\hfill}
+
+\textup{(iii)} $X$ is 
+\uwave{$\lambda$-$D\omega^2$-refinable}
+\index{$\lambda$-$D\omega^2$-refinable| \S\ref{def:5.1.3}\hfill}
+\index{$D\omega^2$-refinable| \S\ref{def:5.1.3}\hfill}
+if every open $\lambda$-cover of $X$ is a  $D_\omega^2$-cover.
 }
 
 {\lemma{}  \label{lem:5.1.4}
-
-5.1.4. Lemma
-
-* An open cover $\mathscr{U}$ of $X$ is a $D_\omega$-cover if and only if $\mathscr{U}$ has a refinement $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$ such that for each $m, n < \omega$:
-* $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ is a discrete family of closed subsets of the subspace $X \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$.
-* $F_{m,n,\alpha} \subseteq V_{m,n,\alpha}$ for each $\alpha$.
+An open cover $\mathscr{U}= \{U_\alpha: \alpha < \Delta\}$ of $X$ is a 
+$D\omega^2$-cover iff $\mathscr{U}$ has a refinement 
+$\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$ such that for each 
+$m, n < \omega$,
+$\mathscr{F}_{m,n} = \{F_{m,n,\alpha}: \alpha \in \Delta\}$ is a discrete family of 
+closed subsets of the subspace 
+$X \setminus \bigcup\{\cup \mathscr{F}_{(p,q)}: (p, p)<(m,n)\}$.
 }
 
+\begin{proof}
+$(\Rightarrow)$ Clear.
+$(\Leftarrow)$ Suppose that $\mathscr{U}$ is an open cover of $X$, 
+and that $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ 
+is a $D_\omega$-refinement of $\mathscr{U}$ with 
+$\mathscr{V}_{m,n} = \{V_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$. 
+For each $V_{m,n,\alpha}$, pick $S(\alpha) \in \mathscr{U}$ 
+such that $V_{m,n,\alpha} \subseteq S(\alpha)$. 
+For each $\alpha$, let 
+$F_{m,n,\alpha} = V_{m,n,\alpha} \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. 
+Then $\mathscr{F}_{m,n}$ covers... 
+Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ 
+and $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
 
-Proof Outline from Text:
+ If $(p, q) \neq (m, n)$, then...
 
-* $(\Rightarrow)$ Clear.
-
-
-* $(\Leftarrow)$ Suppose that $\mathscr{U}$ is an open cover of $X$, and that $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ is a $D_\omega$-refinement of $\mathscr{U}$ with $\mathscr{V}_{m,n} = \{V_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$. For each $V_{m,n,\alpha}$, pick $S(\alpha) \in \mathscr{U}$ such that $V_{m,n,\alpha} \subseteq S(\alpha)$. For each $\alpha$, let $F_{m,n,\alpha} = V_{m,n,\alpha} \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. Then $\mathscr{F}_{m,n}$ covers... Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ and $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
-
-Based on the provided text from `jiang66.pdf`, here is the extracted continuation of the proof and theorem:
-
-* If $(p, q) \neq (m, n)$, then...
-
-
-* Since $\mathscr{V}$ is a $D_\omega$-refinement of..., it follows from... and... that each $\mathscr{F}_{m,n}$ is a discrete family of closed subsets of $X \setminus \bigcup\{\bigcup \mathscr{V}_{p,q} : (p,q) < (m,n)\}$.
-
+Since $\mathscr{V}$ is a $D_\omega$-refinement of..., it follows from... and... that each $\mathscr{F}_{m,n}$ is a discrete family of closed subsets of $X \setminus \bigcup\{\bigcup \mathscr{V}_{p,q} : (p,q) < (m,n)\}$.
+\end{proof}
 
 {\theorem{} \label{th:5.1.5}
 
