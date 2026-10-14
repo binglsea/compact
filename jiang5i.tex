@@ -21,9 +21,9 @@ $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ such that each $\bigcup \mathsc
 \begin{proof}
 (i) $\Rightarrow$ (ii). Suppose $\mathscr{U}$ is normal. By Theorem \ref{th:2.1.6}, $\mathscr{U}$ has a functionally open refinement $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ where each $\mathscr{V}_n$ is discrete, so is disjoint, and by Lemma \ref{lem:1.3.8}, $\bigcup \mathscr{V}_n$ is functionally open.
 
-$(2) \Rightarrow (3)$. Trivial.
+$(ii) \Rightarrow (iii)$. Trivial.
 
-$(3) \Rightarrow (1)$. Suppose $\mathscr{U}$ is an open cover of $X$ and 
+$(iii) \Rightarrow (i)$. Suppose $\mathscr{U}$ is an open cover of $X$ and 
 $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is a functionally open refinement 
 of $\mathscr{U}$ such that each 
 $\mathscr{V}_n=\{V_{n,\alpha}: \alpha\in\Delta_n\}$ is star-finite and 
@@ -73,11 +73,38 @@ so \(\mathscr{R}\) is locally finite. By Theorem \ref{th:2.1.6}, \(\mathscr{U}\)
  For any open cover \(\mathscr{U}\) of \(X\) the following
 are equivalent:
 
-(i) \(\mathscr{U}\) is a normal cover.
+\textup{(i)} \(\mathscr{U}\) is a normal cover.
 
+\textup{(ii)} There is a sequence $\{\mathscr{E}_n: n < \omega\}$ of semi-open covers of $X$ 
+such that $\mathscr{E}_0$ refines $\mathscr{U}$ and each $\mathscr{E}_{n+1}$ is 
+a star refinement of $\mathscr{E}_n$.
+
+\textup{(iii)} There is a sequence $\{\mathscr{E}_n: n < \omega\}$ of semi-open covers of $X$ 
+such that $\mathscr{E}_0$ refines $\mathscr{U}$ and each $\mathscr{E}_{n+1}$ is 
+a point-star refinement of $\mathscr{E}_n$.
 }
 
+\begin{proof}
+ (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii). Clear
 
+(iii) $\Rightarrow$ (i). Assume (iii). For each $n < \omega$, let 
+$$\mathscr{U}_n = \{\operatorname{st}(x, \mathscr{E})^{\circ} : x \in X\}.$$
+Then each $\mathscr{U}_n$ is an open cover of $X$. To see that $\mathscr{U}_0$ refines $\mathscr{U}$, let $x \in X$. There exists $E \in \mathscr{E}_0$ and 
+$V \in \mathscr{U}$ such that $\operatorname{st}(x, \mathscr{E}_1) \subset E \subset V$. 
+Then $\operatorname{st}(x, \mathscr{E}_1)^{\circ} \subset V$, 
+so $\mathscr{U}_0$ refines $\mathscr{U}$.
+To see that $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$, let $x \in X$. 
+It suffices to prove that 
+$\mathrm{st}(x, \mathscr{U}_{n+1}) \subset \mathrm{st}(x, \mathscr{E}_{n+1})^{\circ}$. 
+Suppose $y \in \mathrm{st}(x, \mathscr{U}_{n+1})$, then 
+$x, y \in \operatorname{st}(u, \mathscr{E}_{n+2})^{\circ}$ 
+for some $u \in X$. Let $E \in \mathscr{E}_{n+1}$ be such that 
+$\mathrm{st}(u, \mathscr{E}_{n+2}) \subset E$. Then $x, y \in E^\circ$, so 
+$y \in E^{\circ} \subset \mathrm{st}(x, \mathscr{E}_{n+1})^{\circ}$. 
+This completes the proof of 
+$\mathrm{st}(x, \mathscr{U}_{n+1}) \subset \mathrm{st}(x, \mathscr{E}_{n+1})^{\circ}$. 
+Hence $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ and  $\mathscr{U}$ is normal.
+\end{proof}
 
 
 
