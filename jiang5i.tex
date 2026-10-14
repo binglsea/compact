@@ -106,20 +106,22 @@ $\mathrm{st}(x, \mathscr{U}_{n+1}) \subset \mathrm{st}(x, \mathscr{E}_{n+1})^{\c
 Hence $\mathscr{U}_{n+1}$ point-star refines $\mathscr{U}_n$ and  $\mathscr{U}$ is normal.
 \end{proof}
 
-Based on the provided text from `jiang65.pdf`, here is the extracted content, definitions, and lemmas:
 
- 5.1.3. Definition
-
+{\definition{} \label{def:5.1.3}
 * Let $<$ be the anti-lexicographic order on $\omega \times \omega$, where $(p, q) < (m, n)$ if and only if ($p < m$) or ($p = m$ and $q < n$).
 * An open cover $\mathscr{U}$ of $X$ is a **$D_\omega$-cover** if it has a refinement $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ such that for each $m, n < \omega$, the family $\bigcup_{(p,q)<(m,n)} \mathscr{V}_{p,q}$ is relatively discrete and closed in the subspace.
 * The family $\mathscr{V}$ is called a **$D_\omega$-refinement** of $\mathscr{U}$.
+
+}
+
+{\lemma{}  \label{lem:5.1.4}
 
 5.1.4. Lemma
 
 * An open cover $\mathscr{U}$ of $X$ is a $D_\omega$-cover if and only if $\mathscr{U}$ has a refinement $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$ such that for each $m, n < \omega$:
 * $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ is a discrete family of closed subsets of the subspace $X \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$.
 * $F_{m,n,\alpha} \subseteq V_{m,n,\alpha}$ for each $\alpha$.
-
+}
 
 
 Proof Outline from Text:
@@ -137,11 +139,12 @@ Based on the provided text from `jiang66.pdf`, here is the extracted continuatio
 * Since $\mathscr{V}$ is a $D_\omega$-refinement of..., it follows from... and... that each $\mathscr{F}_{m,n}$ is a discrete family of closed subsets of $X \setminus \bigcup\{\bigcup \mathscr{V}_{p,q} : (p,q) < (m,n)\}$.
 
 
+{\theorem{} \label{th:5.1.5}
 
- 5.1.5. Theorem
+5.1.5. Theorem
 
 * A $D_\omega$-weakly $\theta$-refinable space is a $D_\omega$-refinable space.
-
+}
 
 
 Proof Outline from Text:
@@ -213,7 +216,7 @@ Based on the provided text from `jiang68.pdf`, here is the extracted continuatio
 * The set $W = \dots$ is a neighborhood of $x$ in $Y$.
 
 
-* For each $B$ and $S$, since $\vert{}B\vert{} > l$, $W \and P(\beta, S, m, n) \subset \bigcap_{\alpha \in \beta} G_{k,\alpha} \cap D_k^l = \emptyset$. This completes the proof of the claim.
+% For each $B$ and $S$, since $\vert{}B\vert{} > l$, $W \and P(\beta, S, m, n) \subset \bigcap_{\alpha \in \beta} G_{k,\alpha} \cap D_k^l = \emptyset$. This completes the proof of the claim.
 
 
 
