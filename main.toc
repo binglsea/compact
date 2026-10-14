@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {4.2}Paracompact and Metacompact Spaces}{29}{section.4.2}%
 \contentsline {chapter}{\numberline {Chapter 5}Works of J.-G. Jiang (I)}{32}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Normal Covers and $D\omega ^2$-refinable Spaces}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{34}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{35}{section.5.2}%
 \contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{38}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Submetacompact and $\lambda $-expandable Spaces}{38}{section.6.1}%
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{39}{chapter.7}%

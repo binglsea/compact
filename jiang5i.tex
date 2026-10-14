@@ -180,24 +180,33 @@ $\overline{\theta}$-refinement of $\mathscr{U}$.
  Define an one-to-one function 
  $\varphi: \omega \times \omega \to \omega$ by 
  $\varphi(k, l) = \frac{1}{2}[(k+l)^2 +3k+l]$.
-
-
-* For $m, n < \omega$, there is a one-to-one unique pair $(k, l)$ such that $\varphi(k, l) = m$.
-
-
-* Let $\dots$.
-
-
-* We show that $\mathscr{E} = \bigcup_{m,n<\omega} \mathscr{E}_{m,n}$ is a $D_\omega$-refinement of $\mathscr{U}$.
-
-
-* Since $\mathscr{E}$ is a weak $\theta$-refinement of $\mathscr{U}$, $\mathscr{E}$ is a refinement of $\mathscr{U}$.
-
-
-* To show $\mathscr{E}$ is a $D_\omega$-refinement, let $m, n < \omega$ with $\dots$.
-
-
-* Let $\dots = m$. Let $Y = X \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. It suffices to show that $\mathscr{E}_{m,n}$ is discrete and closed in $Y$. By Lemma 1.1.5, we need ... to show the following:
+For $m < \omega$, there exists a unique pair $(k, l)$ such that $\varphi(k, l) = m$.
+Let
+\begin{gather}
+	D_k^0 = \emptyset \\
+	D_k^l = \{x\in X: 0 < |\{\alpha\in \Gamma_k: x\in G_{k, \alpha}\}| \le l\} \text { for } l \ge 1 \\
+	H_0 = \emptyset \\
+	H_n = \{x\in X: |\{i \in \omega: x\in \bigcup\mathscr{G}_i\}| \le n\} \text { for } n \ge 1 
+\end{gather}
+For $B\in [\Gamma_k]^l, S\in[\omega]^n$, let
+\begin{gather}
+	G(\emptyset, k, 0) = \emptyset \\
+	G(B, k, l) = \bigcap_{\alpha\in B} G_{k, \alpha} \text{ for } n \ge 1 \\
+	L(\emptyset, 0) = \emptyset \\
+	L(S, n) = \bigcap (\cup \mathscr{G}_i), \text{ for } n \ge 1, \\
+	P(, S, m, n) = G(B, k, l) \cap D_k^l \cap L(S, n) \cap H_n, \\
+	\mathscr{P}_{m, n} = \{P(B, S, m, n): B\in [\Gamma_k]^l, 
+	   S\in[\omega]^n, \text{ and } \varphi(k, l) = m\}.
+\end{gather}
+We show that $\mathscr{P} = \bigcup_{m,n<\omega} \mathscr{P}_{m,n}$ is a 
+$D\omega^2$-refinement of $\mathscr{U}$.
+ Since $\mathscr{P}$ is a weak $\overline{\theta}$-refinement of $\mathscr{U}$, 
+ $\mathscr{P}$ is a refinement of $\mathscr{U}$.
+To show $\mathscr{P}$ is a $D\omega^2$-refinement, let $m, n < \omega$ with $\varphi(k, l) = m$.
+Let 
+$Y = X \setminus \bigcup\{\bigcup \mathscr{P}_{p,q}: (p, q) < (m, n)\}$. 
+It suffices to show that $\mathscr{P}_{m,n}|_Y$ is discrete and closed in $Y$. 
+By Lemma \ref{lem:1.1.5}, we need only to show the following:
 
 
 * **Claim 2:** $\bigcup (\mathscr{E}_{m,n} \mid Y)$ is closed in $Y$, and $\mathscr{E}_{m,n} \mid Y$ is discrete at each point $x \in Y \setminus \bigcup (\mathscr{E}_{m,n} \mid Y)$.
