@@ -76,19 +76,20 @@ if every open \(\lambda\)-cover of \(X\) is a $C\omega^2$-cover.
 }
 
 \begin{proof}
-	\((\Rightarrow)\) Suppose \(X\) is $1$-shrinkable, then \(X\) is normal. Let \(\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}\) be an open cover of \(X\) and \(\mathscr{F}\) be a closed shrink of \(\mathscr{U}\). Let \dots
+\((\Rightarrow)\) Suppose \(X\) is $1$-shrinkable, then \(X\) is normal. 
+Let \(\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}\) be an open cover of \(X\) and 
+\(\mathscr{F}\) be a closed shrink of \(\mathscr{U}\). Let $\mathscr{F}_{0,0} = \mathscr{F}$ and 
+ for each $(m, n) > (0,0), \mathscr{F}_{m,n}=\{\emptyset\}$.
+ Then \(\bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) is a \(C\omega^2\)-refinement of 
+ \(\mathscr{U}\), so \(X\) is \(C\omega^2\)-refinable.
 	
-	For each \((m, n < \omega)\), let \(\mathscr{F}_{m,n} = \dots\) Then \(\bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) is a \(\sigma\)-Caz refinement of \(\mathscr{U}\), so \(X\) is \(\sigma\)-Caz refinable.
+\((\Leftarrow)\) Suppose \(X\) is normal and \(C\omega^2\)-refinable. 
+We first establish the following:
 	
-	\((\Leftarrow)\) Suppose \(X\) is normal and \(\sigma\)-Caz refinable. We first establish the following:
-	
-	\textbf{Claim 1.} For any open \(\kappa\)-cover \(\mathscr{U} = \dots\) of \(X\), there exists a sequence \(\{ \mathscr{U}_{m,n} \}_{m,n<\omega}\) of \(\sigma\)-families of open \dots
-\end{proof}
+\textsc{Claim 1.} For any open \(\lambda\)-cover \(\mathscr{U} = \dots\) of \(X\), there exists a sequence \(\{ \mathscr{V}_{m,n} \}_{m,n<\omega}\) of \(\lambda\)-families of open 
 
-```latex
 subsets of \dots\ where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \kappa \}\) such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \kappa\) and \(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).[cite: 2]
 
-\begin{proof}
 	We use induction on the well-ordered set \(\omega \times \omega\) (\(<\))[cite: 2]. Let \(\mathscr{U} = \{ U_\alpha : \alpha < \kappa \}\) be an open \(\kappa\)-cover of \(X\) and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a \(\sigma\)-Caz refinement of \(\mathscr{U}\), where each \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha < \kappa \}\) is a family of closed subsets of the subspace \(X \setminus \bigcup_{\langle p,q \rangle < \langle m,n \rangle} U^{\langle p,q \rangle}\) with \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \kappa\)[cite: 2].
 	
 	Let \(\mathscr{F}_{0,0} = \{\emptyset\}\) and let \(\mathscr{V}_{0,0} = \{\emptyset\}\)[cite: 2]. Let \(\langle m,n \rangle \in \omega \times \omega\)[cite: 2]. Assume that the families \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha} : \alpha < \kappa \}\) of open sets which satisfy the conditions[cite: 2]:
@@ -112,15 +113,9 @@ subsets of \dots\ where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < 
 	Hence the open families \(\mathscr{V}_{m,n}\) satisfy the conditions (1) and (2)[cite: 2]. By (2), \(\mathscr{V}\) covers \(X\)[cite: 2]. Claim 1 is true[cite: 2].
 	
 	\textbf{Claim 2.} \(X\) is countably paracompact[cite: 2].
-\end{proof}
-
-```
-
-```latex
 
 	an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.[cite: 4]
 	
-	\begin{proof}
 		Let \(A\) and \(B\) be disjoint closed sets in \(X\).[cite: 4] Then the open cover \(\{ X \setminus A, X \setminus B \}\) has an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).[cite: 4]
 		
 		For each \(k < \omega\), let 
@@ -134,11 +129,9 @@ subsets of \dots\ where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < 
 		F = \overline{\bigcup_{k<\omega} B_{2k}}, \quad K = \overline{\bigcup_{k<\omega} B_{2k+1}}. \text{[cite: 4]}
 		\]
 		Then
-	\end{proof}
-	
-	```
-```latex
 Then \(F\) and \(K\) are closed sets such that \(A \subset X \setminus F\), \(B \subset X \setminus K\), and \((X \setminus F) \cap (X \setminus K) = \emptyset\)[cite: 5]. Thus \(X\) is normal[cite: 5].
+\end{proof}
+
 
 {\theorem{} \label{the:5.2.7}
 For any space \(X\), the following are equivalent[cite: 5]:
@@ -170,13 +163,7 @@ For any space \(X\), the following are equivalent[cite: 5]:
 				\item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets of \(X\), and[cite: 5]
 				\item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\)[cite: 5].
 				\end{enumerate}
-				\end{proof}
-				
-				```
-
-
-
-
+\end{proof}
 
 
 {\corollary{\label{cor:5.2.9}}
