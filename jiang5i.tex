@@ -182,12 +182,12 @@ $\overline{\theta}$-refinement of $\mathscr{U}$.
  $\varphi(k, l) = \frac{1}{2}[(k+l)^2 +3k+l]$.
 For $m < \omega$, there exists a unique pair $(k, l)$ such that $\varphi(k, l) = m$.
 Let
-\begin{gather}
+\begin{gather*}
 	D_k^0 = \emptyset \\
 	D_k^l = \{x\in X: 0 < |\{\alpha\in \Gamma_k: x\in G_{k, \alpha}\}| \le l\} \text { for } l \ge 1 \\
 	H_0 = \emptyset \\
 	H_n = \{x\in X: |\{i \in \omega: x\in \cup\mathscr{G}_i\}| \le n\} \text { for } n \ge 1 
-\end{gather}
+\end{gather*}
 For $B\in [\Gamma_k]^l, S\in[\omega]^n$, let
 \begin{gather*}
 	G(\emptyset, k, 0) = \emptyset \\
@@ -210,67 +210,78 @@ By Lemma \ref{lem:1.1.5}, we need only to show the following:
 
 \textsc{Claim 1.} $\cup(\mathscr{P}_{m,n}|_Y)$ is closed in Y, and
 
-\textsc{Claim 2.}  $\mathscr{P}_{m,n}|_Y$ is discrete at each point $x \in \mathscr{P}_{m,n}|Y)$.
+\textsc{Claim 2.}  $\mathscr{P}_{m,n}|_Y$ is discrete at each point $x \in \mathscr{P}_{m,n}|_Y)$.
 
 \noindent To show Claim 1, first we show that $G = Y \setminus \bigcup (\mathscr{P}_{m,n}|_Y)$ 
 is open in $Y$. Let $x \in G$. We have 
-\begin{gather*}
-	x \in X \setminus \bigcup \{cup \mathscr{P}_{p,q} : (p,q) < (m,n)\}.
-\end{gather*}
+\begin{gather}
+	x \in X \setminus \bigcup \{\cup \mathscr{P}_{p,q} : (p,q) < (m,n)\}. \label{eq:5.1.5.1}
+\end{gather}
 
 \noindent Since $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ is a weak $\overline{\theta}$-refinement, there exist $r, j < \omega$ such that 
 \begin{gather*}
 	|\{\alpha\in \Gamma_r: x\in G_{r, \alpha}\}| = i > 0, \\
-	|\{t\in \omega: x\in \cup\mathscr{G}_t\}| = \delta. 
+	|\{t\in \omega: x\in \cup\mathscr{G}_t\}| = j. 
 \end{gather*}
 
-\noindent Suppose $\dots$. Take $B \in \dots$ and $S \in \dots$ such that $x \in G(B, k, \alpha) \cap D_k^l \cap \dots \cap H_n$. Then $\dots$ contains $\dots$. It follows that $(m,n) \le \dots \setminus Y$, a contradiction. Hence $\dots$.
+\noindent Suppose $h = \varphi(r, i)$. Take $B \in [\Gamma_r]^i$ and $S \in [\omega]^j$ 
+such that 
+$$x \in G(B, \Gamma, i) \cap D_r^l \cap L(S, j) \cap H_j = P(B, S, h, j)\subset
+\cup\mathscr{P}_{h, j}.$$
+If $j < r$, then $(h, j) < (m, n)$.
+It follows that 
+$x\in \cup\{\cup\mathscr{P}_{p. q}: (p, q) < (m, n)\}\subset X\setminus Y$, a contradiction. 
+Hence $j \ge n$.
+
+\textsc{Case 1}. Suppose $j > n$. Then $x\notin H_n$ and $W = Y \setminus H_n$ 
+is a neighborhood of $x$ in $Y$ such that 
+$W \cap (\cup \mathscr{P}_{m, n})\subset (X\setminus H_n)\cap H_n = \emptyset$,
+so $W\subset G$.
+
+\textsc{Case 2}. Suppose $j = n$. There is $S_0\in[\omega]^n$ such that 
+\begin{gather}
+x\in L(S_0, n) \cap H_n. \label{eq:5.1.5.2}
+\end{gather}
+
+\textsc{Case 2}a. 
+If $x \notin \cup\mathscr{G}_k$, then $k \notin S_0$. The set 
+$W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that 
+for each $B\subset [\Gamma_r]^l$, $S_0\in [\omega]^r$,
+\begin{gather*}
+	W\cap P(B, S_0, m, n) \subset\cap_{i\in S_0}((\cup \mathscr{G}_i))\cap
+	(\cup \mathscr{G}_h) \cap H_n = \emptyset.
+\end{gather*}
+Then $W\subset G$.
+
+\textsc{Case 2}b.
+If $x\in \mathscr{G}_k$, then $A_{k} = \{\alpha\in \Gamma_k: x\in G_{k, \alpha}\} \ne \emptyset$. 
+We have 
+\begin{gather}
+	\vert{}A_k\vert{} > l. \label{eq:5.1.5.3}
+\end{gather}
 
 
-* **Case 1:** Suppose $\dots$. Then $H_n$ and $W = Y \setminus H_n$ is a neighborhood of $x$ in $Y$ such that $W \cap \dots = \emptyset$.
+For if $A_k$ is infinite, then this holds. If $A_k$ is finite, suppose $\vert{}A_k\vert{} = \dots$. Then there is $B \in \mathscr{G}_k$ such that $x \in \dots$.
+
+If $q \le l$, then $p = S(k, l) = \varphi(k, l) = m$, so $(p, q) \le (m, n)$. But $x \in \bigcup \mathscr{V}_{p,q}$, which contradicts $\dots$. Hence $\dots$ and the inequality holds.
+
+The set $W = \dots$ is a neighborhood of $x$ in $Y$.
 
 
-* **Case 2:** Suppose $\dots$. There is $\dots$ such that $\dots$.
+For each $B$ and $S$, since $\vert{}B\vert{} > l$, $W \and P(\beta, S, m, n) \subset \bigcap_{\alpha \in \beta} G_{k,\alpha} \cap D_k^l = \emptyset$. This completes the proof of the claim.
 
 
-* **Case 2a:** If $x \in \dots$, then $\dots$. The set $W$ is a neighborhood of $x$ in $Y$ such that for each $\dots$, $W \cap (\dots) = \emptyset$.
-
-Based on the provided text from `jiang68.pdf`, here is the extracted continuation and conclusion of the proof:
-
-* **Case 2b continuation:**
-* If $\dots$, then $A_{k,l} = \dots$. We have $\vert{}A_k\vert{} > \omega$.
+To show Claim 2, let $x \in \bigcup (\mathscr{E}_{m,n} \mid Y)$. There is $B_0 \in \dots$ and $S_0$ such that $x \in P(B_0, S_0, m, n)$.
 
 
-* For if $A_k$ is infinite, then this holds. If $A_k$ is finite, suppose $\vert{}A_k\vert{} = \dots$. Then there is $B \in \mathscr{G}_k$ such that $x \in \dots$.
+The set $W = H_n$ is a neighborhood of $x$ in $Y$.
+
+For any $B$ and $S$ with $(B, S) \neq (B_0, S_0)$:
+
+If $B \neq B_0$, then $W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \emptyset$.
 
 
-* If $q \le l$, then $p = S(k, l) = \varphi(k, l) = m$, so $(p, q) \le (m, n)$. But $x \in \bigcup \mathscr{V}_{p,q}$, which contradicts $\dots$. Hence $\dots$ and the inequality holds.
-
-
-
-
-* The set $W = \dots$ is a neighborhood of $x$ in $Y$.
-
-
-% For each $B$ and $S$, since $\vert{}B\vert{} > l$, $W \and P(\beta, S, m, n) \subset \bigcap_{\alpha \in \beta} G_{k,\alpha} \cap D_k^l = \emptyset$. This completes the proof of the claim.
-
-
-
-Completion of Claim 2
-
-* To show Claim 2, let $x \in \bigcup (\mathscr{E}_{m,n} \mid Y)$. There is $B_0 \in \dots$ and $S_0$ such that $x \in P(B_0, S_0, m, n)$.
-
-
-* The set $W = H_n$ is a neighborhood of $x$ in $Y$.
-
-
-* For any $B$ and $S$ with $(B, S) \neq (B_0, S_0)$:
-
-
-* If $B \neq B_0$, then $W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \emptyset$.
-
-
-* If $S \neq S_0$, then $W \cap P(B, S, m, n) \cap H_n = \emptyset$.
+If $S \neq S_0$, then $W \cap P(B, S, m, n) \cap H_n = \emptyset$.
 
 Thus, $\mathscr{E}_{m,n}$ is discrete at $x$, completing the proof of Claim 2.
 \end{proof}
