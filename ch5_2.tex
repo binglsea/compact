@@ -108,23 +108,31 @@ of closed subsets of the subspace
  \(\langle m,n \rangle \in \omega \times \omega\). 
  Assume that the $\lambda$-families 
  \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha} : \alpha < \lambda \}\) 
- of open sets  satisfy the conditions:
+ of open sets  have been constructed for all \((p,q) <  ( m,n)\) to satisfy the conditions:
 \begin{gather}
-\overline{V_{p,q,\alpha}} \subset U_\alpha \text{ for all } \alpha < \lambda, \\
-\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{F}_{i,j}) \subset\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{V}_{i,j}). 
+\overline{V}_{p,q,\alpha} \subset U_\alpha \text{ for all } \alpha < \lambda, \label{eq:5.2.4.1}\\
+\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{F}_{i,j}) \subset\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{V}_{i,j}). \label{eq:5.2.4.2}
 \end{gather}
-have been constructed for all \((p,q) <  ( m,n)\). Then we have
-$$\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{i,j}). $$	
-Let \(L = \bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{i,j})\). 
+Then we have
+\begin{gather*}
+\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p, q}). 
+\end{gather*}
+Let \(L = \bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p,q})\). 
 Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there exists an open set \(V_{m,n,\alpha}\) of \(X\) such that
 $$F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha.$$
-Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda \}\). Then
-	\[
-	\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{\langle p,q \rangle \le \langle m,n \rangle} (\bigcup \mathscr{V}_{p,q}). \text{}
-	\]
-	Hence the open families \(\mathscr{V}_{m,n}\) satisfy the conditions (1) and (2). By (2), \(\mathscr{V}\) covers \(X\). Claim 1 is true.
+Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda \}\).  Then
+\begin{gather*}
+\bigcup \mathscr{F}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n}, \\
+\bigcup_{(p,q) \le (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset 
+L\bigcup(\bigcup \mathscr{F}_{m,n})\subset
+L\bigcup(\bigcup \mathscr{F}_{m,n}\setminus L)\subset
+\bigcup_{(p,q) \le (m,n)} (\bigcup \mathscr{V}_{p,q}) 
+\end{gather*}
+Hence the open families \(\mathscr{V}_{m,n}\) satisfy 
+Conditions \eqref{eq:5.2.4.1} and \eqref{eq:5.2.4.2} . 
+By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). \textsc{Claim 1} is true.
 	
-	\textbf{Claim 2.} \(X\) is countably paracompact.
+\textbf{Claim 2.} \(X\) is countably paracompact.
 
 	an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.
 	
