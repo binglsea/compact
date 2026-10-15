@@ -47,11 +47,11 @@ shrink of $\mathscr{U}$.
 \end{proof}
 
 {\definition{} \label{def:5.2.3}
-\textup{(ii)}  An open cover \(\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}\) of $X$ is a 
+\textup{(i)}  An open cover \(\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}\) of $X$ is a 
 \uwave{$C\omega^2$-cover}\index{$C\omega^2$-cover| \S\ref{def:5.2.3}\hfill} 
 if \(\mathscr{U}\) has a refinement \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) 
 where each \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha \in \Delta \}\) is a family of 
-closed subsets of the subspace  \(X\setminus \cup \{\cup \mathscr{F}_{p, q}: (p, q) < (m,n) \}\)
+closed subsets of the subspace  \(X\setminus \cup \{\bigcup \mathscr{F}_{p, q}: (p, q) < (m,n) \}\)
 and $F_{m, n, \alpha} \subset U_\alpha$ for all \(\alpha \in \Delta\).
 The family \(\mathscr{F}\) is called a 
 \uwave{$C\omega^2$-refinement}\index{$C\omega^2$-refinement| \S\ref{def:5.2.3}\hfill} 
@@ -62,7 +62,13 @@ of \(\mathscr{U}\).
 \index{$C\omega^2$-refinable| \S\ref{def:5.2.3}\hfill} 
 if every open \(\lambda\)-cover of \(X\) is a $C\omega^2$-cover.
 
-\textup{(ii)}  An open cover \(\mathscr{U}\) is a \dots\ cover if \(\mathscr{U}\) has a \dots\ refinement \(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) such that each \(F_{m,n} \dots\) is a closed subset of \dots
+\textup{(ii)}  An open cover \(\mathscr{U}\) is a 
+\uwave{$C^*\omega^2$-cover}
+\index{$C^*\omega^2$-cover| \S\ref{def:5.2.3}\hfill} 
+ if \(\mathscr{U}\) has a $C\omega^2$-refinement 
+ \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) 
+ such that each \(\bigcup \mathscr{F}_{m,n} \) is a closed subset of 
+ $X\setminus \bigcup\{\mathscr{F}_{p, q}: (p, q) < (m, n)\}$.
 }
 
 {\theorem{} \label{the:5.2.4}
