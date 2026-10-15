@@ -259,31 +259,31 @@ We have
 \begin{gather}
 	\vert{}A_k\vert{} > l. \label{eq:5.1.5.3}
 \end{gather}
+If $A_k$ is infinite, then this holds. If $A_k$ is finite, suppose $\vert{}A_k\vert{} = q > 0$. 
+Then there exists $B_1 \in [\Gamma_k]^q$ such that 
+$x \in G(B_1, k, q)\cap D_k^q$. Let $p = \varphi(k, q)$. If follows from
+\eqref{eq:5.1.5.2} that $x\in P(B, S_0, p, n) \subset \cup\mathscr{P}_{p, n}$.
+If $q \le l$, then $p =\varphi(k, q) \le \varphi(k, l) = m$, so $(p, q) \le (m, n)$. 
+But $x \in \bigcup \mathscr{P}_{p,q}$, which contradicts to \eqref{eq:5.1.5.1}. 
+Hence $q > l$ and the \eqref{eq:5.1.5.3} holds.
+
+The set $W = Y\cap G(B_1, k, q)$ is a neighborhood of $x$ in $Y$.
+For each $B\in [\Gamma_k]^l, S\in [\omega]^n$, 
+since $B_1  = q > l$, 
+$W \cap P(B, S, m, n) \subset \bigcap_{\alpha \in B_1} G_{k,\alpha} \cap D_k^l = \emptyset$. 
+This completes the proof of \textsc{Claim 1}.
 
 
-For if $A_k$ is infinite, then this holds. If $A_k$ is finite, suppose $\vert{}A_k\vert{} = \dots$. Then there is $B \in \mathscr{G}_k$ such that $x \in \dots$.
-
-If $q \le l$, then $p = S(k, l) = \varphi(k, l) = m$, so $(p, q) \le (m, n)$. But $x \in \bigcup \mathscr{V}_{p,q}$, which contradicts $\dots$. Hence $\dots$ and the inequality holds.
-
-The set $W = \dots$ is a neighborhood of $x$ in $Y$.
-
-
-For each $B$ and $S$, since $\vert{}B\vert{} > l$, $W \and P(\beta, S, m, n) \subset \bigcap_{\alpha \in \beta} G_{k,\alpha} \cap D_k^l = \emptyset$. This completes the proof of the claim.
-
-
-To show Claim 2, let $x \in \bigcup (\mathscr{E}_{m,n} \mid Y)$. There is $B_0 \in \dots$ and $S_0$ such that $x \in P(B_0, S_0, m, n)$.
-
-
-The set $W = H_n$ is a neighborhood of $x$ in $Y$.
-
-For any $B$ and $S$ with $(B, S) \neq (B_0, S_0)$:
-
-If $B \neq B_0$, then $W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \emptyset$.
-
-
-If $S \neq S_0$, then $W \cap P(B, S, m, n) \cap H_n = \emptyset$.
-
-Thus, $\mathscr{E}_{m,n}$ is discrete at $x$, completing the proof of Claim 2.
+To show Claim \textsc{Claim 2}, let $x \in \bigcup (\mathscr{P}_{m,n}|_Y)$. 
+There exists $B_0 \in [\Gamma_k]^l$ and $S_0\in [\omega]^n$ 
+such that $x \in P(B_0, S_0, m, n)$.
+The set $W = Y\cap G(B_0, k, l) \cap L(S_0, n)$ is a neighborhood of $x$ in $Y$.
+Let  $B\in [\Gamma_k]^l$ and $S\in [\omega]^n$ with $(B, S) \neq (B_0, S_0)$.
+If $B \neq B_0$, then 
+$$W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \emptyset.$$
+If $S \neq S_0$, then 
+$$W \cap P(B, S, m, n) \subset L(S_0, n) \cap L(S,n)\cap H_n = \emptyset.$$
+Thus, $\mathscr{P}_{m,n}|_Y$ is discrete at $x$. We ompleted the proof of \textsc{Claim 2}.
 \end{proof}
 
 \subfile{ch5_2}
