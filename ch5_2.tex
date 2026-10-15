@@ -94,31 +94,31 @@ where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda\}\)
 such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\) and 
 \(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).
 
-\textsc{Proof of Claim}.We use induction on the well-ordered set 
+\textsc{Proof of Claim}. We use induction on the well-ordered set 
 \(\omega \times \omega\) (\(<\)). 
 Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open \(\lambda\)-cover of \(X\) 
 and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a 
 \(C\omega^2\)-refinement of \(\mathscr{U}\), where each 
-\(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha < \lambda < \lambda \}\) is a family 
+\(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha < \lambda\}\) is a family 
 of closed subsets of the subspace 
 \(X \setminus \cup\{\bigcup\mathscr{F}_{p,q}: (p, q) <  m,n\}\) with 
 \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\).
-	Let \(\mathscr{F}_{0,0} = \{\emptyset\}\) and let 
-\(\mathscr{V}_{0,0} = \{\emptyset\}\). Let \(\langle m,n \rangle \in \omega \times \omega\). Assume that the families \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha} : \alpha < \kappa \}\) of open sets which satisfy the conditions:
-	\begin{enumerate}
-		\item[(1)] \(\overline{V_{p,q,\alpha}} \subset U_\alpha\) for all \(\alpha < \kappa\).
-		\item[(2)] \(\bigcup_{\langle i,j \rangle \le \langle p,q \rangle} (\bigcup \mathscr{F}_{i,j}) \subset \bigcup_{\langle i,j \rangle \le \langle p,q \rangle} (\bigcup \mathscr{V}_{i,j})\)
-	\end{enumerate}
-	have been constructed for all \(\langle p,q \rangle < \langle m,n \rangle\). Then we have
-	\[
-	\bigcup_{\langle p,q \rangle < \langle m,n \rangle} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{\langle p,q \rangle < \langle m,n \rangle} U^{\langle p,q \rangle}. \text{}
-	\]
-	
-	Let \(L = \bigcup_{\langle p,q \rangle < \langle m,n \rangle} (\bigcup \mathscr{V}_{p,q})\). Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there exists an open set \(V_{m,n,\alpha}\) of \(X\) such that
-	\[
-	F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha. \text{}
-	\]
-	Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \kappa \}\). Then
+	Let \(\mathscr{F}_{0,0} = \{\emptyset\}\), 
+\(\mathscr{V}_{0,0} = \{\emptyset\}\) and
+ \(\langle m,n \rangle \in \omega \times \omega\). 
+ Assume that the $\lambda$-families 
+ \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha} : \alpha < \lambda \}\) 
+ of open sets  satisfy the conditions:
+\begin{gather}
+\overline{V_{p,q,\alpha}} \subset U_\alpha \text{ for all } \alpha < \lambda, \\
+\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{F}_{i,j}) \subset\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{V}_{i,j}). 
+\end{gather}
+have been constructed for all \((p,q) <  ( m,n)\). Then we have
+$$\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{i,j}). $$	
+Let \(L = \bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{i,j})\). 
+Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there exists an open set \(V_{m,n,\alpha}\) of \(X\) such that
+$$F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha.$$
+Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda \}\). Then
 	\[
 	\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{\langle p,q \rangle \le \langle m,n \rangle} (\bigcup \mathscr{V}_{p,q}). \text{}
 	\]
@@ -148,10 +148,10 @@ Then \(F\) and \(K\) are closed sets such that \(A \subset X \setminus F\), \(B 
 {\theorem{} \label{the:5.2.7}
 For any space \(X\), the following are equivalent:
 \begin{enumerate}
-	\item[(i)] \(X\) is \(\kappa\)-shrinkable.
-	\item[(ii)] Every open \(\kappa\)-cover \(\mathscr{U}\) of \(X\) has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \kappa \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
-	\item[(iii)] Every open \(\kappa\)-cover \(\mathscr{U}\) of \(X\) has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \kappa \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
-	\item[(iv)] \(X\) is normal and every open \(\kappa\)-cover \(\mathscr{U}\) of \(X\) has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \kappa \}\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n, \alpha\).
+	\item[(i)] \(X\) is \(\lambda\)-shrinkable.
+	\item[(ii)] Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
+	\item[(iii)] Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
+	\item[(iv)] \(X\) is normal and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n, \alpha\).
 	\end{enumerate}
 }
 
@@ -165,13 +165,13 @@ For any space \(X\), the following are equivalent:
 			
 			(iv) \(\Rightarrow\) (i).
 			
-			Assume (iv). By Theorem 5.2.4, it suffices to prove that \(X\) is \(\sigma\)-Caz refinable. Let \(\mathscr{U} = \{ U_\alpha : \alpha < \kappa \}\) be an open cover of \(X\). Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \kappa \}\) be a closed cover of \(X\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \kappa\).
+			Assume (iv). By Theorem 5.2.4, it suffices to prove that \(X\) is \(\sigma\)-Caz refinable. Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open cover of \(X\). Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
 			
-			For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha} : \alpha < \kappa \}\).
+			For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha} : \alpha < \lambda \}\).
 			
-			\textbf{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \kappa \}\) such that
+			\textbf{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \lambda \}\) such that
 			\begin{enumerate}
-				\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \kappa\),
+				\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \lambda\),
 				\item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets of \(X\), and
 				\item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\).
 				\end{enumerate}
