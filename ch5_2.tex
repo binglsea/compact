@@ -234,29 +234,108 @@ For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha} : \alpha < \lambda \}\
 item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets of \(X\), and
 \item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\).
 \end{enumerate}
-\end{proof}
-Here is the text extracted from the document:
 
-4
-Proof. We use induction on $m$.
-Let $\mathcal{V}_{0,0} = \lambda F_{0,0,0,0} = \alpha_3$ where $F_{\emptyset,\emptyset,\infty} = B_{0,\infty} - \text{best mow}$ and assume that the families $\mathcal{F}_{i,0} = \{F_{i,0,\alpha}\}$ have been constructed such that the conditions are satisfied for all $i \le m$. For $m+1$ let
-$F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0})$.
-Then $\mathcal{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of $X$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
-$\bigcup \mathcal{F}_{m+1,0} = \bigcup \mathcal{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0}) = \bigcup \mathcal{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0})$.
+We use induction on $m$.
+Let $\mathscr{V}_{0,0} = \lambda F_{0,0,0,0} = \alpha_3$ where $F_{\emptyset,\emptyset,\infty} = B_{0,\infty} - \text{best mow}$ and assume that the families $\mathscr{F}_{i,0} = \{F_{i,0,\alpha}\}$ have been constructed such that the conditions are satisfied for all $i \le m$. For $m+1$ let
+$F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0})$.
+Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of $X$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
+$\bigcup \mathscr{F}_{m+1,0} = \bigcup \mathscr{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup \mathscr{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0})$.
 Thus
-$\bigcup_{i \le m+1} (\bigcup \mathcal{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0}) \cup (\bigcup \mathcal{F}_{m+1,0}) = \bigcup_{i \le m+1} (\bigcup \mathcal{B}_{i,0})$.
-It follows that the family $\mathcal{F}_{m,n,0}$ satisfies the condition (1)–(3) above. This completes the proof of the claim.
-By (3), $\bigcup (\bigcup \mathcal{F}_{m,0}) = X$. For each $m < \omega$ and $n$, let $\mathcal{S}_{m,n} = \{\phi\}$. It follows from claim that $\mathcal{S} = \bigcup_{m,n < \omega} \mathcal{S}_{m,n}$ is a $\sigma$-closure refinement of $\mathcal{U}$, so $X$ is $\sigma$-closure-refinable.
-5.2.8. Theorem. For any $X$, the following are equivalent:
+$\bigcup_{i \le m+1} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) \cup (\bigcup \mathscr{F}_{m+1,0}) = \bigcup_{i \le m+1} (\bigcup \mathscr{B}_{i,0})$.
+It follows that the family $\mathscr{F}_{m,n,0}$ satisfies the condition (1)–(3) above. This completes the proof of the claim.
+By (3), $\bigcup (\bigcup \mathscr{F}_{m,0}) = X$. For each $m < \omega$ and $n$, let $\mathscr{S}_{m,n} = \{\phi\}$. It follows from claim that $\mathscr{S} = \bigcup_{m,n < \omega} \mathscr{S}_{m,n}$ is a $\sigma$-closure refinement of $\mathscr{U}$, so $X$ is $\sigma$-closure-refinable.
+\end{proof}
+
+
+{\theorem{} \label{the:5.2.8}
+For any $X$, the following are equivalent:
 (i) $X$ is normal.
 (ii) Every $\sigma$-cover of $X$ has a functionally open shrink.
 (iii) Every $\sigma$-cover of $X$ has an open shrink.
 (iv) Every $\sigma$-cover of $X$ has a finite shrinkable.
 (v) Every $\sigma$-cover of $X$ has a closed shrink.
-Proof. (i) $\implies$ (ii). Suppose $\mathcal{U}$ is a $\sigma$-cover of $X$. Let $\mathcal{U} = \bigcup_{m,n < \omega} \mathcal{U}_{m,n}$ be a refinement of $\mathcal{U}$.
+}
 
+\begin{proof}
+ (i) $\implies$ (ii). Suppose $\mathscr{U}$ is a $\sigma$-cover of $X$. 
+ Let $\mathscr{U} = \bigcup_{m,n < \omega} \mathscr{U}_{m,n}$ 
+ be a refinement of $\mathscr{U}$.
+\end{proof}
+
+Here is the text extracted from the document:
+
+where each $V_{m,n,\alpha} = F_{m,n,\alpha}$ with $U_{m,n}$ and $U_{m,n}$ are $F_{m,n,\alpha}$ and each $m,n,\alpha$ closed subsets of $X$.
+Claim. For each $m,n$ there is a functionally open family $\mathcal{V}_{m,n} = \{V_{m,n,\alpha}\}$ such that:
+(1) $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha$,
+(2) $\mathscr{V}_{m,n}$ is functionally open, and
+(3) $\bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q}) < \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q})$.
+Proof. We use induction on $(m,n)$. Suppose $\mathscr{S}_{0,0} = \{\emptyset\}$ and let $\dots$
+Let $m,n \in \omega$ and assume that the families $\mathscr{V}_{p,q}$ have been constructed such that the conditions (1)–(3) are satisfied for all $(p,q) < (m,n)$. Then
+$\langle p,q \rangle < (m,n) (\bigcup \mathscr{V}_{p,q}) < \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q})$
+$L = \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$
+Then $\mathscr{F}_{m,n}(x-1)$ is a closed family in $X$. For each $\alpha$ there is a functionally open set $H_{m,n,\alpha}$ such that
+$F_{m,n,\alpha} - L < H_{m,n,\alpha} \subset \overline{H}_{m,n,\alpha} < U_\alpha$.
+Then
+$\bigcup \mathscr{F}_{m,n} - L \subset \bigcup_{\alpha \in \mathscr{A}} H_{m,n,\alpha}$. Since $X - L$ is a closed subset of $X$, there is a functionally open set $K$ such that
+$\bigcup \mathscr{F}_{m,n} - L \subset K \subset \overline{K} \subset \bigcup_{\alpha \in \mathscr{A}} H_{m,n,\alpha}$.
+Let $V_{m,n,\alpha} = \dots$. Then $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}\}$ is a functionally open family with $\overline{V}_{m,n,\alpha} \subset U_\alpha$ and such that
+$\bigcup \mathscr{V}_{m,n} = K$ is functionally open. Since the set
+$\bigcup \mathscr{F}_{m,n} - L \subset \bigcup \mathscr{V}_{m,n}$,
+
+Thus $U_{m,n}$ is the desired functionally open family and the claim is proved.
+
+By the claim and Theorem 2016, there is a LF functionally open cover $\{W_{m,n}\}$ for each $m,n$. Such that $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$.
+
+For $\alpha$, let $G_\alpha = \bigcup (W_{m,n} \cap V_{m,n,\alpha})$. Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha$, so $\mathscr{G}$ is an open shrink of $\mathscr{U}$.
+
+(ii) $\implies$ (iii) $\implies$ (iv) $\implies$ (v): Clear.
+
+(v) $\implies$ (i): Routine.
+
+15.2.9. Corollary. For any $X$, the following are equivalent:
+
+$X$ is normal.
+
+
+(ii) (Price and smooth...). Every open cover has a closed shrink.
+
+
+(iii) Every $\sigma$-disjoint refinement also has a closed refinement.
+
+
+(iv) (Lefschetz 1942). Every $\sigma$-finite open cover of $X$ has an open shrink.
+
+
+
+Proof. Since the ordinals are isomorphic well-ordered sets, any $\sigma$-disjoint refinement is a $\sigma$-closure refinement.
+
+5.2.10. Lemma. Any normal countably metacompact space is countably paracompact.
+
+73
 {\corollary{\label{cor:5.2.9}}
 For
 }
+17
 
+Proof. Suppose $X$ is normal countably metacompact and $\mathscr{U} = \{U_n\}$ be an increasing open cover of $X$. Then $\mathscr{U}$ has a point-finite open refinement $\mathscr{V}$. By corollary 6.2.10, there is an open cover $\mathscr{W}$ of such that $\overline{W}_n \subset U_n$. By Theorem 4.9, $X$ is countably paracompact.
+
+5.2.11. Theorem. For any $X$, the following are equivalent:
+
+(i) $X$ is normal.
+
+
+(ii) Every LF open cover of $X$ is normal.
+
+
+(iii) $X$ is fine fully normal.
+
+
+
+Proof. (i) $\implies$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a LF open cover of $X$. By corollary 5.2.9, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. Then $\mathscr{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
+
+(ii) $\implies$ (iii). Clear.
+
+(iii) $\implies$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathscr{S}$. Then $A \subset \bigcup \{S \in \mathscr{S} : S \cap A \neq \emptyset\}$ and $B \subset \bigcup \{S \in \mathscr{S} : S \cap B \neq \emptyset\}$, so $X$ is normal.
+
+74
 \end{document}
