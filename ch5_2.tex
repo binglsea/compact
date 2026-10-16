@@ -137,6 +137,35 @@ By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). \textsc{Claim 1} is true.
 \textsc{Proof of Claim 2}.  Suppose $\\mathscr{U} = \{U_k: k < \omega\}$ is a countable increasing
 open cover of $X$. By \textsc{Claim 1}, there exists a sequence ofan open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.
 	
+\end{proof}
+
+
+Here is the text extracted from the document:
+
+Proof. Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \kappa\}$ be a countable increasing open cover of $X$. By Claim 1, there is a sequence $\{V_{m,n,k} : m, n, k < \omega\}$ of $\sigma$-disjoint families of open sets of $X$ where each
+
+$$V_{m,n,k} = U_{m,n,k} + kcw^{3}$$
+
+
+
+Such that $\overline{V}_{m,n,k} \subset U_\alpha$ for all $\alpha$ and $U = \bigcup_{m,n < \omega} V_{m,n}$ covers $X$.
+For $m < \omega$, let $G_m = \bigcup_{i,j,k=0}^m V_{i,j,k}$.
+Since $\mathcal{U}$ is increasing, $\overline{G}_m \subset U_m$ and Then $G_m$ $\bigcup_{m < \omega} G_m = X$.
+$\mathcal{V}$ is an open shrink of $\mathcal{U}$. By Theorem 3.3.2, $X$ is countably paracompact.
+To see that $\mathcal{U}$ is shrinkable, let $\mathcal{U} = \{U_\alpha\}$ be an open cover of $X$. By claim 1, for each $m, n \in \omega$
+Now let $\mathcal{V} = \{V_{m,n,\alpha}\}$ be a family of open sets of $X$ such that $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha$ and $\mathcal{U} = \bigcup_{m,n \in \omega} \mathcal{V}_{m,n}$ covers $X$. By claim 2, there is a LF open cover $\{W_{m,n}\}$ such that $W_{m,n} \subset U^{m,n}$. For each $n$, let $H_\alpha = \bigcup_{m,n \in \omega} (W_{m,n} \cap V_{m,n,\alpha})$
+It follows that $\mathcal{H} = \{H_\alpha\}$ is an open cover of $X$ such that $\overline{H}_\alpha \subset U_\alpha$ for each $\alpha$, so $X$ is shrinkable.
+15.2.5. Corollary. $X$ is countably shrinkable iff $X$ is normal and countably paracompact.
+Proof. By Lemma 5.2.2. By Theorem 5.2.4.
+15.2.6. Lemma. If every open cover $\mathcal{U}$ of $X$ has
+
+
+
+
+
+
+
+
 		Let \(A\) and \(B\) be disjoint closed sets in \(X\). Then the open cover \(\{ X \setminus A, X \setminus B \}\) has an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).
 		
 		For each \(k < \omega\), let 
@@ -151,7 +180,7 @@ open cover of $X$. By \textsc{Claim 1}, there exists a sequence ofan open refine
 		\]
 		Then
 Then \(F\) and \(K\) are closed sets such that \(A \subset X \setminus F\), \(B \subset X \setminus K\), and \((X \setminus F) \cap (X \setminus K) = \emptyset\). Thus \(X\) is normal.
-\end{proof}
+
 
 
 {\theorem{} \label{the:5.2.7}
