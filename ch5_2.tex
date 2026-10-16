@@ -240,27 +240,46 @@ For \(i < \omega\), let \(\mathscr{B}_i = \{ B_{i,\alpha} : \alpha < \lambda \}\
 
 \textsc{Proof of Claim}.
 We use induction on $m$.
-Let $\mathscr{F}_{0,0} = \{\lambda F_{0,0, \alpha}: \alpha < \lambda$ 
+Let $\mathscr{F}_{0,0} = \{F_{0,0, \alpha}: \alpha < \lambda\}$ 
 where $F_{0, 0, \alpha} = B_{0,\alpha}$. Let $m < \omega$ and assume that the families 
 $\mathscr{F}_{i,0} = \{F_{i,0,\alpha}: \alpha < \lambda\}$ have been 
-constructed such that the conditions are satisfied for all $i \le m$. For $m+1$ let
-$F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0})$.
-Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of $X$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
-$\bigcup \mathscr{F}_{m+1,0} = \bigcup \mathscr{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup \mathscr{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0})$.
+constructed such that the conditions are satisfied for all $i \le m$. For $\alpha < \lambda$, let
+$$F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}).$$
+Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of 
+$X\setminus \bigcup_{i\le m}(\bigcup \mathscr{F}_{i, o})$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
+$$\bigcup \mathscr{F}_{m+1,0} = 
+\bigcup \mathscr{B}_{m,n} \setminus \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = 
+\bigcup \mathscr{B}_{m,n} \setminus \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}).$$
 Thus
-$\bigcup_{i \le m+1} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) \cup (\bigcup \mathscr{F}_{m+1,0}) = \bigcup_{i \le m+1} (\bigcup \mathscr{B}_{i,0})$.
-It follows that the family $\mathscr{F}_{m,n,0}$ satisfies the condition (1)–(3) above. This completes the proof of the claim.
-By (3), $\bigcup (\bigcup \mathscr{F}_{m,0}) = X$. For each $m < \omega$ and $n$, let $\mathscr{S}_{m,n} = \{\phi\}$. It follows from claim that $\mathscr{S} = \bigcup_{m,n < \omega} \mathscr{S}_{m,n}$ is a $\sigma$-closure refinement of $\mathscr{U}$, so $X$ is $\sigma$-closure-refinable.
+\begin{equation*}
+\begin{aligned}
+\bigcup_{i \le m+1} (\bigcup \mathscr{F}_{i,0}) &= \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) \cup (\bigcup \mathscr{F}_{m+1,0}) \\
+  &= \bigcup_{i \le m+1} (\bigcup \mathscr{B}_{i}) \bigcup
+      (\bigcup\mathscr{B}_{m+1}\setminus\bigcup_{i\le m}(\bigcup\mathscr{B}_i)) \\
+  & = \bigcup_{i\le m+ 1}(\bigcup\mathscr{B}_i).
+\end{aligned}
+\end{equation*}
+It follows that the family $\mathscr{F}_{m+1,0}$ satisfies the Condition (1)–(3) above. 
+This completes the proof of the claim.
+
+By (3), $\bigcup_{m < \omega} (\bigcup \mathscr{F}_{m,0}) = X$. For each $m < \omega$ and $n> 0$, 
+let $\mathscr{F}_{m,n} = \{\emptyset\}$. It follows from \textsc{Claim} that 
+$\mathscr{F} = \bigcup_{m,n < \omega} \mathscr{F}_{m,n}$ is a $C\omega^2$-refinement of $\mathscr{U}$, so $X$ is $\lambda$-$C\omega^2$-refinable.
 \end{proof}
 
 
 {\theorem{} \label{the:5.2.8}
 For any $X$, the following are equivalent:
-(i) $X$ is normal.
-(ii) Every $\sigma$-cover of $X$ has a functionally open shrink.
-(iii) Every $\sigma$-cover of $X$ has an open shrink.
-(iv) Every $\sigma$-cover of $X$ has a finite shrinkable.
-(v) Every $\sigma$-cover of $X$ has a closed shrink.
+
+\textup{(i)} $X$ is normal.
+
+\textup{(ii)} Every $C^*\omega^2$-cover of $X$ has a functionally open shrink.
+
+\textup{(iii)} Every $C^*\omega^2$-cover of $X$ has an open shrink.
+
+\textup{(iv)} Every $C^*\omega^2$-cover of $X$ has a close shrink.
+
+\textup{(v)} $X$ is finitely shrinkable.
 }
 
 \begin{proof}
