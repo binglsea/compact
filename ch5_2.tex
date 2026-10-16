@@ -224,19 +224,26 @@ such that \(B_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 (iii) \(\Rightarrow\) (iv). By Lemma \ref{lem:5.2.6}.
 			
 (iv) \(\Rightarrow\) (i). Assume (iv). By Theorem \ref{th:5.2.4}, it suffices to prove that \(X\) is 
-\(\sigma\)-Caz refinable. Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open cover of \(X\). Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
+\(\lambda\)-$C\omega^2$-refinable. 
+Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open cover of \(X\). 
+Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) 
+such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
+For \(i < \omega\), let \(\mathscr{B}_i = \{ B_{i,\alpha} : \alpha < \lambda \}\).
 			
-For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha} : \alpha < \lambda \}\).
-			
-\textbf{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \lambda \}\) such that
+\textsc{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \lambda \}\) in $X$ such that
 \begin{enumerate}
 \item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \lambda\),
-item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets of \(X\), and
+\item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets 
+ of \(X\setminus\bigcup_{i<m}(\bigcup\mathscr{F}_{i,0})\), and
 \item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\).
 \end{enumerate}
 
+\textsc{Proof of Claim}.
 We use induction on $m$.
-Let $\mathscr{V}_{0,0} = \lambda F_{0,0,0,0} = \alpha_3$ where $F_{\emptyset,\emptyset,\infty} = B_{0,\infty} - \text{best mow}$ and assume that the families $\mathscr{F}_{i,0} = \{F_{i,0,\alpha}\}$ have been constructed such that the conditions are satisfied for all $i \le m$. For $m+1$ let
+Let $\mathscr{F}_{0,0} = \{\lambda F_{0,0, \alpha}: \alpha < \lambda$ 
+where $F_{0, 0, \alpha} = B_{0,\alpha}$. Let $m < \omega$ and assume that the families 
+$\mathscr{F}_{i,0} = \{F_{i,0,\alpha}: \alpha < \lambda\}$ have been 
+constructed such that the conditions are satisfied for all $i \le m$. For $m+1$ let
 $F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0})$.
 Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of $X$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
 $\bigcup \mathscr{F}_{m+1,0} = \bigcup \mathscr{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup \mathscr{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0})$.
