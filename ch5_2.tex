@@ -170,32 +170,31 @@ $\overline{H}_\alpha \subset U_\alpha$ for each $\alpha$, so $X$ is shrinkable.
 \end{proof}
 
 {\lemma{} \label{lem:5.2.6}
-If every open cover $\mathscr{U}$ of $X$ has
+If every open cover $\mathscr{U} = \{U_\alpha: \alpha\in \Delta\}$ of $X$ has an open refinement
+$\mathscr{V} = \{V_{n, \alpha}: n < \omega, \alpha\in\Delta\}$ such that 
+$\overline{V}_\alpha \subset U_\alpha$ for each $n, \alpha$, then
+$X$ is normal.
 }
 
-
-
-
-
-
-
-
-
-		Let \(A\) and \(B\) be disjoint closed sets in \(X\). Then the open cover \(\{ X \setminus A, X \setminus B \}\) has an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).
-		
-		For each \(k < \omega\), let 
-		\[
-		W_{2k} = V_{k,0}, \quad W_{2k+1} = V_{k,1}. \text{}
-		\]
-		Then \(\mathscr{W} = \{ W_n : n < \omega \}\) is an open cover of \(X\). For \(n < \omega\), let \(B_n = W_n \setminus \dots\) Then \(\mathscr{B} = \{ B_n : n < \omega \}\) is a LF refinement of \(\mathscr{W}\).
-		
-		Let 
-		\[
-		F = \overline{\bigcup_{k<\omega} B_{2k}}, \quad K = \overline{\bigcup_{k<\omega} B_{2k+1}}. \text{}
-		\]
-		Then
-Then \(F\) and \(K\) are closed sets such that \(A \subset X \setminus F\), \(B \subset X \setminus K\), and \((X \setminus F) \cap (X \setminus K) = \emptyset\). Thus \(X\) is normal.
-
+\begin{proof}
+Let \(A\) and \(B\) be disjoint closed sets in \(X\). Then the open cover 
+\(\{ X \setminus A, X \setminus B \}\) has an open refinement 
+\(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that 
+\(\overline{V}_{n,0} \subset X \setminus B\) and
+ \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).
+For each \(k < \omega\), let 
+$$W_{2k} = V_{k,0}, \quad W_{2k+1} = V_{k,1}.$$
+Then \(\mathscr{W} = \{ W_n : n < \omega \}\) is an open cover of \(X\). 
+For \(n < \omega\), let 
+\(B_0 = W_0, B_n = W_n \setminus \overline{\bigcup_{i<n}W_i}\).
+Then \(\mathscr{B} = \{ B_n : n < \omega \}\) is a locally finite refinement of \(\mathscr{W}\).
+Let $F = \overline{\bigcup_{k<\omega} B_{2k}}, \quad K = \overline{\bigcup_{k<\omega} B_{2k+1}}.$
+Then  \(F\) and \(K\) are closed sets such that 
+$$A \subset X \setminus F, \quad
+B \subset X \setminus K, \quad
+(X \setminus F) \cap (X \setminus K) = \emptyset.$$
+Thus \(X\) is normal.
+\end{proof}
 
 
 {\theorem{} \label{the:5.2.7}
