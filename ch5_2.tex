@@ -94,7 +94,7 @@ where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda\}\)
 such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\) and 
 \(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).
 
-\textsc{Proof of Claim}. We use induction on the well-ordered set 
+\textsc{Proof of Claim 1}. We use induction on the well-ordered set 
 \(\omega \times \omega\) (\(<\)). 
 Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open \(\lambda\)-cover of \(X\) 
 and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a 
@@ -134,7 +134,8 @@ By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). \textsc{Claim 1} is true.
 	
 \textbf{Claim 2.} \(X\) is countably paracompact.
 
-	an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.
+\textsc{Proof of Claim 2}.  Suppose $\\mathscr{U} = \{U_k: k < \omega\}$ is a countable increasing
+open cover of $X$. By \textsc{Claim 1}, there exists a sequence ofan open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.
 	
 		Let \(A\) and \(B\) be disjoint closed sets in \(X\). Then the open cover \(\{ X \setminus A, X \setminus B \}\) has an open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).
 		
@@ -155,16 +156,17 @@ Then \(F\) and \(K\) are closed sets such that \(A \subset X \setminus F\), \(B 
 
 {\theorem{} \label{the:5.2.7}
 For any space \(X\), the following are equivalent:
-\begin{enumerate}
-	\item[(i)] \(X\) is \(\lambda\)-shrinkable.
-	\item[(ii)] Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
-	\item[(iii)] Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
-	\item[(iv)] \(X\) is normal and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n, \alpha\).
-	\end{enumerate}
+
+\textup{(ii)} \(X\) is \(\lambda\)-shrinkable.
+
+\textup{(ii)} Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
+
+\textup{(ii)} Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
+
+\textup{(ii)} \(X\) is normal and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n, \alpha\).
 }
 
-		
-		\begin{proof}
+\begin{proof}
 			(i) \(\Rightarrow\) (ii). By Lemma 5.2.2.
 			
 			(ii) \(\Rightarrow\) (iii). Clear.
