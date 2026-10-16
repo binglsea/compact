@@ -4,8 +4,8 @@
 
 \section{Shrinkable and Normal Spaces} \label{sec:5-2}
 
+Recall Definition \ref{def:1.1.2} in
 {\definition{\label{def:5.2.1}}
-Recall Definition \ref{def:1.1.2}. 
 Let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ and $\mathscr{B} = \{B_\alpha: \alpha \in \Delta\}$ 
 be covers of $X$. $\mathscr{B}$ is a 
 \uwave{shrink}\index{shrink| \S\ref{def:5.2.1}\hfill} 
@@ -71,7 +71,7 @@ if every open \(\lambda\)-cover of \(X\) is a $C\omega^2$-cover.
  $X\setminus \bigcup\{\mathscr{F}_{p, q}: (p, q) < (m, n)\}$.
 }
 
-{\theorem{} \label{the:5.2.4}
+{\theorem{} \label{th:5.2.4}
 \(X\) is $\lambda$-shrinkable iff \(X\) is normal and $\lambda$-$C\omega^2$-refinable.
 }
 
@@ -95,7 +95,7 @@ such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lam
 \(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).
 
 \textsc{Proof of Claim 1}. We use induction on the well-ordered set 
-\(\omega \times \omega\) (\(<\)). 
+$(\omega \times \omega, <)$. 
 Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open \(\lambda\)-cover of \(X\) 
 and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a 
 \(C\omega^2\)-refinement of \(\mathscr{U}\), where each 
@@ -132,32 +132,47 @@ Hence the open families \(\mathscr{V}_{m,n}\) satisfy
 Conditions \eqref{eq:5.2.4.1} and \eqref{eq:5.2.4.2} . 
 By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). \textsc{Claim 1} is true.
 	
-\textbf{Claim 2.} \(X\) is countably paracompact.
+\textsc{Claim 2.} \(X\) is countably paracompact.
 
-\textsc{Proof of Claim 2}.  Suppose $\\mathscr{U} = \{U_k: k < \omega\}$ is a countable increasing
-open cover of $X$. By \textsc{Claim 1}, there exists a sequence ofan open refinement \(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that \(\overline{V}_{n,0} \subset X \setminus B\) and \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\), then \(X\) is normal.
-	
+\textsc{Proof of Claim 2}. Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ be a 
+countable increasing open cover of $X$. By \textsc{Claim 1}, there exists a sequence 
+$\{\mathscr{V}_{m,n} : m, n < \omega\}$ of $\omega$-families of open sets of $X$ 
+where each
+$$V_{m,n} = \{\mathscr{V}_{m,n,k}: k < \omega\}$$
+Such that $\overline{V}_{m,n,k} \subset U_k$ for all $k$, and 
+$\mathscr{V} = \bigcup_{m,n < \omega} \mathscr{V}_{m,n}$ covers $X$.
+For $m < \omega$, let $G_m = \bigcup_{i,j,k=0}^m V_{i,j,k}$.
+Since $\mathscr{U}$ is increasing, $\overline{G}_m \subset U_m$ and  
+$\bigcup_{m < \omega} G_m = X$. Then
+$\{G_k: k < \omega\}$ is an open shrink of $\mathscr{U}$. By Theorem \ref{th:3.3.2}, 
+$X$ is countably paracompact.
+
+Now to see that $X$ is $\lambda$-shrinkable, 
+let $\mathscr{U} = \{U_\alpha\}$ be an open cover of $X$. By \textsc{Claim 1}, 
+for each $m, n \in \omega$, there exists a family 
+Now let $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}\}$ of open sets of $X$ such that 
+$\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha$ and 
+$\mathscr{V} = \bigcup_{m,n \in \omega} \mathscr{V}_{m,n}$ covers $X$. By \textsc{Claim 2},
+ there exists a locally finite open cover $\{W_{m,n}: m, n < \omega\}$ such that 
+ $W_{m,n} \subset \bigcup\mathscr{U}_{m,n}$. 
+ For each $\alpha < \lambda$, let 
+ $H_\alpha = \bigcup_{m,n \in \omega} (W_{m,n} \cap V_{m,n,\alpha})$
+It follows that $\mathscr{H} = \{H_\alpha\}$ is an open cover of $X$ such that 
+$\overline{H}_\alpha \subset U_\alpha$ for each $\alpha$, so $X$ is shrinkable.
 \end{proof}
 
+{\corollary{} \label{cor:5.2.5}
+ $X$ is countably shrinkable iff $X$ is normal and countably paracompact.
+}
 
-Here is the text extracted from the document:
+\begin{proof}
+\((\Rightarrow)\) By Lemma \ref{lem:5.2.2}. \((\Leftarrow)\) By Theorem \ref{th:5.2.4}.
+\end{proof}
 
-Proof. Suppose $\mathcal{U} = \{U_\alpha : \alpha \in \kappa\}$ be a countable increasing open cover of $X$. By Claim 1, there is a sequence $\{V_{m,n,k} : m, n, k < \omega\}$ of $\sigma$-disjoint families of open sets of $X$ where each
+{\lemma{} \label{lem:5.2.6}
+If every open cover $\mathscr{U}$ of $X$ has
+}
 
-$$V_{m,n,k} = U_{m,n,k} + kcw^{3}$$
-
-
-
-Such that $\overline{V}_{m,n,k} \subset U_\alpha$ for all $\alpha$ and $U = \bigcup_{m,n < \omega} V_{m,n}$ covers $X$.
-For $m < \omega$, let $G_m = \bigcup_{i,j,k=0}^m V_{i,j,k}$.
-Since $\mathcal{U}$ is increasing, $\overline{G}_m \subset U_m$ and Then $G_m$ $\bigcup_{m < \omega} G_m = X$.
-$\mathcal{V}$ is an open shrink of $\mathcal{U}$. By Theorem 3.3.2, $X$ is countably paracompact.
-To see that $\mathcal{U}$ is shrinkable, let $\mathcal{U} = \{U_\alpha\}$ be an open cover of $X$. By claim 1, for each $m, n \in \omega$
-Now let $\mathcal{V} = \{V_{m,n,\alpha}\}$ be a family of open sets of $X$ such that $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha$ and $\mathcal{U} = \bigcup_{m,n \in \omega} \mathcal{V}_{m,n}$ covers $X$. By claim 2, there is a LF open cover $\{W_{m,n}\}$ such that $W_{m,n} \subset U^{m,n}$. For each $n$, let $H_\alpha = \bigcup_{m,n \in \omega} (W_{m,n} \cap V_{m,n,\alpha})$
-It follows that $\mathcal{H} = \{H_\alpha\}$ is an open cover of $X$ such that $\overline{H}_\alpha \subset U_\alpha$ for each $\alpha$, so $X$ is shrinkable.
-15.2.5. Corollary. $X$ is countably shrinkable iff $X$ is normal and countably paracompact.
-Proof. By Lemma 5.2.2. By Theorem 5.2.4.
-15.2.6. Lemma. If every open cover $\mathcal{U}$ of $X$ has
 
 
 
