@@ -200,36 +200,60 @@ Thus \(X\) is normal.
 {\theorem{} \label{the:5.2.7}
 For any space \(X\), the following are equivalent:
 
-\textup{(ii)} \(X\) is \(\lambda\)-shrinkable.
+\textup{(i)} \(X\) is \(\lambda\)-shrinkable.
 
-\textup{(ii)} Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
+\textup{(ii)} Every open \(\lambda\)-cover \(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) of \(X\) 
+has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) 
+such that \(\overline{V}_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 
-\textup{(ii)} Every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(\overline{V}_{n,\alpha} \subset U_\alpha\).
+\textup{(iii)} Every open \(\lambda\)-cover \(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) of \(X\) 
+has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) 
+such that \(\overline{V}_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 
-\textup{(ii)} \(X\) is normal and every open \(\lambda\)-cover \(\mathscr{U}\) of \(X\) has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n, \alpha\).
+\textup{(iv)} \(X\) is normal and every open \(\lambda\)-cover  
+\(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) of \(X\) 
+has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) 
+such that \(B_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 }
 
 \begin{proof}
-			(i) \(\Rightarrow\) (ii). By Lemma 5.2.2.
+(i) \(\Rightarrow\) (ii). By Lemma \ref{lem:5.2.2}.
 			
-			(ii) \(\Rightarrow\) (iii). Clear.
+(ii) \(\Rightarrow\) (iii). Clear.
 			
-			(iii) \(\Rightarrow\) (iv). By Lemma 5.2.6.
+(iii) \(\Rightarrow\) (iv). By Lemma \ref{lem:5.2.6}.
 			
-			(iv) \(\Rightarrow\) (i).
+(iv) \(\Rightarrow\) (i). Assume (iv). By Theorem \ref{th:5.2.4}, it suffices to prove that \(X\) is 
+\(\sigma\)-Caz refinable. Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open cover of \(X\). Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
 			
-			Assume (iv). By Theorem 5.2.4, it suffices to prove that \(X\) is \(\sigma\)-Caz refinable. Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open cover of \(X\). Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
+For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha} : \alpha < \lambda \}\).
 			
-			For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha} : \alpha < \lambda \}\).
-			
-			\textbf{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \lambda \}\) such that
-			\begin{enumerate}
-				\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \lambda\),
-				\item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets of \(X\), and
-				\item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\).
-				\end{enumerate}
+\textbf{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \lambda \}\) such that
+\begin{enumerate}
+\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \lambda\),
+item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets of \(X\), and
+\item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\).
+\end{enumerate}
 \end{proof}
+Here is the text extracted from the document:
 
+4
+Proof. We use induction on $m$.
+Let $\mathcal{V}_{0,0} = \lambda F_{0,0,0,0} = \alpha_3$ where $F_{\emptyset,\emptyset,\infty} = B_{0,\infty} - \text{best mow}$ and assume that the families $\mathcal{F}_{i,0} = \{F_{i,0,\alpha}\}$ have been constructed such that the conditions are satisfied for all $i \le m$. For $m+1$ let
+$F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0})$.
+Then $\mathcal{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of $X$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
+$\bigcup \mathcal{F}_{m+1,0} = \bigcup \mathcal{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0}) = \bigcup \mathcal{B}_{m,n} - \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0})$.
+Thus
+$\bigcup_{i \le m+1} (\bigcup \mathcal{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathcal{F}_{i,0}) \cup (\bigcup \mathcal{F}_{m+1,0}) = \bigcup_{i \le m+1} (\bigcup \mathcal{B}_{i,0})$.
+It follows that the family $\mathcal{F}_{m,n,0}$ satisfies the condition (1)–(3) above. This completes the proof of the claim.
+By (3), $\bigcup (\bigcup \mathcal{F}_{m,0}) = X$. For each $m < \omega$ and $n$, let $\mathcal{S}_{m,n} = \{\phi\}$. It follows from claim that $\mathcal{S} = \bigcup_{m,n < \omega} \mathcal{S}_{m,n}$ is a $\sigma$-closure refinement of $\mathcal{U}$, so $X$ is $\sigma$-closure-refinable.
+5.2.8. Theorem. For any $X$, the following are equivalent:
+(i) $X$ is normal.
+(ii) Every $\sigma$-cover of $X$ has a functionally open shrink.
+(iii) Every $\sigma$-cover of $X$ has an open shrink.
+(iv) Every $\sigma$-cover of $X$ has a finite shrinkable.
+(v) Every $\sigma$-cover of $X$ has a closed shrink.
+Proof. (i) $\implies$ (ii). Suppose $\mathcal{U}$ is a $\sigma$-cover of $X$. Let $\mathcal{U} = \bigcup_{m,n < \omega} \mathcal{U}_{m,n}$ be a refinement of $\mathcal{U}$.
 
 {\corollary{\label{cor:5.2.9}}
 For
