@@ -89,9 +89,28 @@ If $n > 0$, then for each $x\in X$ and each $(k_0, \cdots, k_{n-1})\in\omega^{n}
 there exists $k_n(x) <\omega$ such that 
 $\operatorname{ind}(\mathscr{V}(k_0, \cdots, k_{n-1}, k_n(x)))_x$ is finite.
 
-\textsc{Proof of Claim 1}. 
-Suppose $X$ is normal and countably metacompact, and let $\mathcal{U}$ be an increasing open cover of $X$. Then $\mathcal{U}$ has a point-finite open refinement $\mathcal{V}$. By corollary 6.2.10, there is an open cover $\mathcal{W}$ of such that inclusion holds, hence $X$ is countably paracompact.
+\textsc{Proof of Claim 1}. We use induction on $n < \omega$. 
+Let $\mathscr{B}_0 = \{B_{0, \alpha}: \alpha < \lambda\}$ be a locally finite (or discrete closed) 
+family in $X$ with $B_{0, \alpha} \subset U_\alpha$. 
+Then $\mathscr{B}_0$ has a $\theta$-sequence 
+$\{\mathscr{V}(k_0): k_0 < \omega\}$ of open expansions where each 
+$\mathscr{V}(k_0) = \{V(k_0, \alpha): \alpha < \lambda\}$ such that 
+$\bigcup B_{0, \alpha_0} \subset V(k_0, \alpha) \subset U_\alpha$. Then
+$\mathscr{B}_0 \subset \bigcup \mathscr{V}(k_0)$. 
+For every $x$, there exists $k_0(x) < \omega$ such that 
+$\operatorname{ind}(\mathscr{V}(k_0(x)))_x$
+ is finite. Hence  $\mathscr{V}(k_0) $ satisfies Conditions (1), (2) and (4). 
+ 
+ Let $n \ge 1$. Suppose that for each $i \le n$ and each $(k_0, \dots, k_n)$, the family 
+ $\mathscr{V}(k_0, \cdots, k_i) = \{V(k_0, \cdots, k_i, \alpha): \alpha < \lambda\}$ 
+ have been constructed such that Conditions (1) --(4) are satisfied. 
+ We now define $\mathscr{V}(k_0, \dots, k_{n+1}) $ for any $\dots$. Let $\dots$. By inductive hypothesis, we have $\dots$. Hence, there is a $\sigma$-discrete closed family in $\mathscr{X}$ such that $\mathscr{B}$ has a $\sigma$-sequence of open expansions. Since $\bigcup \dots \in \bigcup \dots$.
 
+
+
+
+
+Suppose $X$ is normal and countably metacompact, and let $\mathscr{U}$ be an increasing open cover of $X$. Then $\mathscr{U}$ has a point-finite open refinement $\mathscr{V}$. By corollary 6.2.10, there is an open cover $\mathscr{W}$ of such that inclusion holds, hence $X$ is countably paracompact.
 
 5.2.11 Theorem. For any space $X$, the following are equivalent:
 
@@ -105,13 +124,10 @@ $X$ is fully normal.
 
 
 
-Proof. (i) $\implies$ (ii). Suppose $X$ is normal and let $\mathcal{U}$ be a LF open cover of $X$. By corollary 5.2.9, $\mathcal{U}$ has a functionally open shrink $\mathcal{V}$. Then $\mathcal{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
+Proof. (i) $\implies$ (ii). Suppose $X$ is normal and let $\mathscr{U}$ be a LF open cover of $X$. By corollary 5.2.9, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. Then $\mathscr{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
 (ii) $\implies$ (iii). Clear.
-(iii) $\implies$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathcal{W}$. Then $A$ and $B$ are separated, so $X$ is normal.
+(iii) $\implies$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathscr{W}$. Then $A$ and $B$ are separated, so $X$ is normal.
 
----
-
-2. From Document 2 (`jiang80.pdf`)
 
 
 
@@ -120,17 +136,17 @@ Proof. (i) $\implies$ (ii). Suppose $X$ is normal and let $\mathcal{U}$ be a LF 
 $X$ is $\omega$-expandable ($\omega$-discretely $\sigma$-expandable).
 
 
-Every $\mathcal{W}$ ($\mathcal{DW}$) $\omega$-cover of $X$ has a $\sigma$-sequence of open refinements.
+Every $\mathscr{W}$ ($\mathscr{DW}$) $\omega$-cover of $X$ has a $\sigma$-sequence of open refinements.
 
 
-Every directed $\mathcal{W}$ ($\mathcal{DW}$) $\omega$-cover of $X$ has a closed refinement.
+Every directed $\mathscr{W}$ ($\mathscr{DW}$) $\omega$-cover of $X$ has a closed refinement.
 
 
-Every $\mathcal{IP}$ directed $\mathcal{W}$ $\omega$-cover of $X$ has a $\sigma$-cushioned refinement.
+Every $\mathscr{IP}$ directed $\mathscr{W}$ $\omega$-cover of $X$ has a $\sigma$-cushioned refinement.
 \end{proof}
 
 
-Proof. $(i) \implies (ii)$. Assume (i) and let $\mathcal{U}$ be a $\mathcal{W}$ ($\mathcal{DW}$) $\omega$-cover of $X$. Then $\mathcal{U}$ has a refinement $\mathcal{B} = \bigcup_{n<\omega}\mathcal{B}_n$ where each $\mathcal{B}_n = \{B_{n,\alpha}\}_{\alpha\in \Lambda}$ is a LF (discrete closed) family of subsets of the subspace $X_n = \bigcup_{i<n}(\bigcup\mathcal{B}_i)$ with $\overline{B}_{n,\alpha}\subset V_{\alpha}$ for each $\alpha\in \Lambda$, and $\bigcup \mathcal{B}_n$ is a closed subset of $X$ for each $n<\omega$.
+Proof. $(i) \implies (ii)$. Assume (i) and let $\mathscr{U}$ be a $\mathscr{W}$ ($\mathscr{DW}$) $\omega$-cover of $X$. Then $\mathscr{U}$ has a refinement $\mathscr{B} = \bigcup_{n<\omega}\mathscr{B}_n$ where each $\mathscr{B}_n = \{B_{n,\alpha}\}_{\alpha\in \Lambda}$ is a LF (discrete closed) family of subsets of the subspace $X_n = \bigcup_{i<n}(\bigcup\mathscr{B}_i)$ with $\overline{B}_{n,\alpha}\subset V_{\alpha}$ for each $\alpha\in \Lambda$, and $\bigcup \mathscr{B}_n$ is a closed subset of $X$ for each $n<\omega$.
 
 We have the following Claim 1: For every $n<\omega$ and every family, there is a collection of open subsets such that conditions are satisfied.
 
