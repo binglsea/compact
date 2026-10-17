@@ -1,4 +1,5 @@
 \documentclass[main.tex]{subfiles}
+%file: jaing6ii.tex
 \begin{document}
 
 	
@@ -7,28 +8,41 @@
 
 \section{Submetacompact and $\lambda$-expandable Spaces} \label{sec:6-1}
 
-In order to characterize the $\lambda$-expandable spaces, [Katuta 1975] introduced the $\lambda$-$A$-cover. An open cover $\mathscr{U}$ of a space $X$ is an $A_\lambda$-cover if it has a LF refinement. We now generalize this notion as follows.
+In order to characterize expandable spaces, [Katuta 1975]\textsuperscript{\cite{Katuta1975}}
+introduced the $A$-cover. An open cover $\mathscr{U}$ of a space $X$ is an $A$-cover if it has a 
+locally finite refinement. We now generalize this notion as follows.
 
-{\definition{\label{def:6.1.6}} 
-(i) An open cover $\mathscr{U} = \{U_\alpha\}_{\alpha \in \Lambda}$ of $X$ 
-is an $A_\lambda^\omega$-cover if it has a refinement 
+{\definition{\label{def:6.1.1}} 
+\textup{(i)} An open cover $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ of $X$ 
+is an 
+\uwave{$A\omega$-cover}
+\index{$A\omega$-cover| \S\ref{def:6.1.1}\hfill}
+if it has a refinement 
 $\mathscr{B} = \bigcup_{n<\omega} \mathscr{B}_n$ 
-where each $\mathscr{B}_n = \{B_{n,\alpha}\}_{\alpha \in \Lambda}$ 
-is a LF family of subsets of the subspace 
+where each $\mathscr{B}_n = \{B_{n,\alpha}: alpha \in \Delta\}$ 
+is a relatively locally finite family of subsets of the subspace 
 $X \setminus \bigcup_{i<n} (\bigcup \mathscr{B}_i)$ with 
 $B_{n,\alpha} \subset U_\alpha$ for each $\alpha \in \Lambda$ 
-and $\bigcup \mathscr{B}_n$ is closed in 
-$X \setminus \bigcup_{i<n} (\bigcup \mathscr{B}_i)$ for each $n < \omega$.
+and  
+$\bigcup_{i<n} (\bigcup \mathscr{B}_i)$ is closed in $X$ for each $n < \omega$.
 
-(ii) An open cover $\mathscr{U}$ is an $A_{\lambda}^{\text{c}\omega}$-cover 
-if $\mathscr{U}$ has a refinement 
+\textup{(ii)} An open cover $\mathscr{U}$ is an 
+\uwave{$A\omega^2$-cover}
+\index{$A\omega^2$-cover| \S\ref{def:6.1.1}\hfill}
+if it has a refinement 
 $\mathscr{A} = \bigcup_{m,n<\omega} \mathscr{A}_{m,n}$ 
-where each $\mathscr{A}_{m,n}$ is a LF family of subsets of the 
-subspace $X \setminus \dots$ where $\le$ be a well ordering on 
-$\Lambda$ as in Definition 6.1.3.
+where each $\mathscr{A}_{m,n}$ is a locally finite family of subsets of the  subspace 
+$X \setminus \bigcup\{\bigcup \mathscr{A}_{p,q}: (p,q)< (m,n)\}$
+where < is a well ordering on 
+$\omega\times\omega$ as in Definition \ref{def:6.1.3}.
 
-(iii) A space $X$ is $\lambda$-$A_\lambda^\omega$-refinable ($\lambda$-$A_{\lambda}^{\text{c}\omega}$-refinable) if every open 
-$\lambda$-cover of the space is an $A_\lambda^\omega$-cover ($A_{\lambda}^{\text{c}\omega}$-cover).
+\textup{(iii)} A space $X$ is 
+\uwave{$\lambda$-$A\omega$-refinable}
+\index{$\lambda$-$A\omega$-refinable| \S\ref{def:6.1.1}\hfill}
+$($\uwave{$\lambda$-$A\omega^2$-refinable}$)$
+\index{$\lambda$-$A\omega^2$-refinable| \S\ref{def:6.1.1}\hfill}
+if every open  $\lambda$-cover of the space is an $A\omega$-cover
+$(A\omega^2$-cover$)$).
 }
 
 
