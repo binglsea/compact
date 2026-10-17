@@ -349,32 +349,47 @@ Every open cover which has a $B(\mathcal{C}, \omega^2)$-refinement has a closed 
 Every point-finite open cover of $X$ has an open shrink.
 }
 
-\begin{proof} Since the ordinals are isomorphic well-ordered sets, any $\sigma$-disjoint refinement is a $\sigma$-closure refinement.
+\begin{proof} 
+Since the ordinal $(\omega^2. \epsilon)$ and $(\omega\times\omega, <)$ are isomorphic 
+well-ordered sets, any $B(\mathcal{C}, \omega^2)$-refinement is a $C^*\omega^2)$-refinement.
 \end{proof}
 
-5.2.10. Lemma. Any normal countably metacompact space is countably paracompact.
+{\lemma{} \label{lem:5.2.10}
+Any normal countably metacompact space is countably paracompact.
+}
 
+\begin{proof}
+Suppose $X$ is normal countably metacompact and $\mathscr{U} = \{U_n: n < \omega\}$ is
+an increasing open cover of $X$. Then $\mathscr{U}$ has a point-finite open refinement 
+$\mathscr{G} = \{G_n: n < < \omega\}$ with $G_n\subset U_n$. 
+By corollary \ref{cor:6.2.10}, there exists an open cover $\mathscr{V} = \{V_n: n< \omega\}$ of 
+$X$ such that $\overline{V}_n \subset U_n$. By Theorem \ref{th:4.1.9}, $X$ is countably paracompact.
+\end{proof}
 
+{\theorem{} \label{th:5.2.11}
+For any $X$, the following are equivalent:
 
-Proof. Suppose $X$ is normal countably metacompact and $\mathscr{U} = \{U_n\}$ be an increasing open cover of $X$. Then $\mathscr{U}$ has a point-finite open refinement $\mathscr{V}$. By corollary 6.2.10, there is an open cover $\mathscr{W}$ of such that $\overline{W}_n \subset U_n$. By Theorem 4.9, $X$ is countably paracompact.
+\textup{(i)}  $X$ is normal.
 
-5.2.11. Theorem. For any $X$, the following are equivalent:
+\textup{(ii)}  Every locally fintie open cover of $X$ is normal.
 
-(i) $X$ is normal.
+\textup{(iii)} $X$ is finitely fully normal.
+}
 
-
-(ii) Every LF open cover of $X$ is normal.
-
-
-(iii) $X$ is fine fully normal.
-
-
-
-Proof. (i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a LF open cover of $X$. By corollary 5.2.9, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. Then $\mathscr{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
+\begin{proof}
+(i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a locally finite open cover of $X$. 
+By Corollary \ref{cor:5.2.9}, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. 
+Then $\mathscr{V}$ is also locally finite. By Theorem \ref{th:2.1.6}, $X$ is normal.
 
 (ii) $\Rightarrow$ (iii). Clear.
 
-(iii) $\Rightarrow$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathscr{S}$. Then $A \subset \bigcup \{S \in \mathscr{S} : S \cap A \neq \emptyset\}$ and $B \subset \bigcup \{S \in \mathscr{S} : S \cap B \neq \emptyset\}$, so $X$ is normal.
+(iii) $\Rightarrow$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), 
+the open cover $\{X\setminus A, X\setminus B\}$ has a point-star open refinement 
+$\mathscr{V}$. Then 
+$A \subset \operatorname{st}(A, \mathscr{V}),  B \subset \operatorname{st}(B, \mathscr{V})$ 
+and 
+$\operatorname{st}(A, \mathscr{V}\bigcap B \subset \operatorname{st}(B, \mathscr{V} = \emptyset$, 
+so $X$ is normal.
+\end{proof}
 
-74
 \end{document}
