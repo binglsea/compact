@@ -45,8 +45,49 @@ if every open  $\lambda$-cover of the space is an $A\omega$-cover
 $(A\omega^2$-cover$)$).
 }
 
+{\theorem{} \label{th:6.1.2}
+For any $X$ the following are equivalent.
 
+\textup{(i)} $X$ is $\lambda$-$\theta$-expandable $(\lambda$-discretely $\theta$-expandable$)$. 
 
+\textup{(ii)} Every $A\omega$ $(D\omega)$ $\lambda$-cover of $X$ has
+a $\theta$-sequence of open refinements.
+
+\textup{(iii)} Every directed $A\omega$ $(D\omega)$ $\lambda$-cover of $X$ has
+a $\sigma$-closure-preserving closed refinements.
+
+\textup{(iv)} Every interior-preserving directed $A\omega$ $(D\omega)$ $\lambda$-cover of 
+$X$ has a $\sigma$-cushioned refinements.
+}
+
+\begin{proof}
+(i) $\Rightarrow$  (ii). Assume (i) and let $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$
+be an $A\omega$ $(D\omega)$ cover of $X$. Then $\mathscr{U}$
+ has a refinement $\mathscr{B}=\bigcup_{n<\omega}\mathscr{B}_n$ where each $\mathscr{B}_n=\{B_{n,\alpha}: \alpha\in \lambda\}$ is a
+ocally finite (discrete closed) family of subsets of the
+subspace $X\setminus \bigcup_{i<n}(\bigcup\beta_{i})$ 
+with ${B}_{n,\alpha}\subset U_{\alpha}$ for each $n < \omega, \alpha\in \lambda$,
+and $\bigcup_{i<n}(\bigcup\mathscr{B}_i)$ is a closed subset of $X$ for each $n < \omega$.
+We have the following
+
+\textsc{Claim 1}. For every $n<\omega$ and every $(k_0, \cdots, k_n)\in\omega^{n+1}$,
+there exists a $\mathscr{V}(k_0, \cdots, k_n) = \{V(k_0, \cdots, k_n,\alpha): \alpha<\lambda\}$
+of open subsets of $X$ such that
+
+(1)  $V(k_0, \cdots, k_n,\alpha)\subset U_\alpha$ for each $\alpha< \lambda$.
+
+(2) $\bigcup_{i=0}^n (\bigcup\mathscr{B}_i)\subset
+ \bigcup_{i=0}^n (\bigcup\mathscr{V}(k_0, \cdots, k_i)).$
+
+(3) For $n \ge 1, \bigcup\mathscr{V}(k_0, \cdots, k_n)) \bigcap \bigcup_{i=0}^n (\bigcup\mathscr{B}_i)
+= \emptyset$, and 
+
+(4) If $n = 0$, then for each $x\in X$, there exists $k_0(x) < \omega$
+such that $\text{ind}(\mathscr{V}(k_0(x))_x$ is finite.
+If $n > 0$, then for each $x\in X$ and each $(k_0, \cdots, k_{n-1})\in\omega^{n}$
+there exists $k_n(x) <\omega$ such that 
+$\operatorname{ind}(\mathscr{V}(k_0, \cdots, k_n))_x$ is finite.
+\end{proof}
 
 
 
