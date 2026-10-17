@@ -325,41 +325,36 @@ $$\bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{F}_{p,q}) \subset L \setminus (\bigcup
 \subset \bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{V}_{p,q}).$$
 Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the \textsc{Claim} is proved.
 
-By the \textsc{Claim}and Theorem \ref{th:2.1.6}, there is a LF functionally open cover $\{W_{m,n}\}$ for each $m,n$. Such that $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$.
-
-For $\alpha$, let $G_\alpha = \bigcup (W_{m,n} \cap V_{m,n,\alpha})$. Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha$, so $\mathscr{G}$ is an open shrink of $\mathscr{U}$.
-
+By the \textsc{Claim} and Theorem \ref{th:2.1.6}, there is a locally finite functionally open 
+cover $\{W_{m,n}:  m,n<\omega\}$ of $X$ such that 
+$W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$ for each $m, n < \omega$.
+For $\alpha\in \Delta$, let $G_\alpha = \bigcup \{W_{m,n} \cap V_{m,n,\alpha}: m, n < \omega\}$. 
+Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha\in\Delta$, so 
+$\mathscr{G} = \{G_\alpha: \alpha\in\Delta\}$ is an functionally open shrink of $\mathscr{U}$.
 
 (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Rightarrow$ (v): Clear.
 
 (v) $\Rightarrow$ (i): Routine.
 \end{proof}
 
+{\corollary{} \label{cor:5.2.9}
+For any $X$, the following are equivalent:
 
-15.2.9. Corollary. For any $X$, the following are equivalent:
+\textup{(i)} $X$ is normal.
 
-$X$ is normal.
+\textup{(ii)}  \textup{([Price and Smith 1989]\textsuperscript{\cite{PriceSmith}})}
+Every open cover which has a $B(\mathcal{C}, \omega^2)$-refinement has a closed shrink.
 
+\textup{(iii)} \textup{([Lefschetz 1942]\textsuperscript{\cite{Lefschetz}})} 
+Every point-finite open cover of $X$ has an open shrink.
+}
 
-(ii) (Price and smooth...). Every open cover has a closed shrink.
-
-
-(iii) Every $\sigma$-disjoint refinement also has a closed refinement.
-
-
-(iv) (Lefschetz 1942). Every $\sigma$-finite open cover of $X$ has an open shrink.
-
-
-
-Proof. Since the ordinals are isomorphic well-ordered sets, any $\sigma$-disjoint refinement is a $\sigma$-closure refinement.
+\begin{proof} Since the ordinals are isomorphic well-ordered sets, any $\sigma$-disjoint refinement is a $\sigma$-closure refinement.
+\end{proof}
 
 5.2.10. Lemma. Any normal countably metacompact space is countably paracompact.
 
-73
-{\corollary{\label{cor:5.2.9}}
-For
-}
-17
+
 
 Proof. Suppose $X$ is normal countably metacompact and $\mathscr{U} = \{U_n\}$ be an increasing open cover of $X$. Then $\mathscr{U}$ has a point-finite open refinement $\mathscr{V}$. By corollary 6.2.10, there is an open cover $\mathscr{W}$ of such that $\overline{W}_n \subset U_n$. By Theorem 4.9, $X$ is countably paracompact.
 
