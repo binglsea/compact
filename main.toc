@@ -20,6 +20,7 @@
 \contentsline {section}{\numberline {6.2}Subparacompact and Discretely Subexpandable spaces}{41}{section.6.2}%
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{42}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{42}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Paracompact and Expandable Spaces}{42}{section.7.2}%
 \contentsline {chapter}{\numberline {Chapter 8}Works of J.-G. Jiang (IV)}{43}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{43}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Fully Normal Spaces}{44}{section.8.2}%
