@@ -95,17 +95,33 @@ family in $X$ with $B_{0, \alpha} \subset U_\alpha$.
 Then $\mathscr{B}_0$ has a $\theta$-sequence 
 $\{\mathscr{V}(k_0): k_0 < \omega\}$ of open expansions where each 
 $\mathscr{V}(k_0) = \{V(k_0, \alpha): \alpha < \lambda\}$ such that 
-$\bigcup B_{0, \alpha_0} \subset V(k_0, \alpha) \subset U_\alpha$. Then
+$B_{0, \alpha} \subset V(k_0, \alpha) \subset U_\alpha$. Then
 $\mathscr{B}_0 \subset \bigcup \mathscr{V}(k_0)$. 
-For every $x$, there exists $k_0(x) < \omega$ such that 
+For every $x\in X$, there exists $k_0(x) < \omega$ such that 
 $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$
  is finite. Hence  $\mathscr{V}(k_0) $ satisfies Conditions (1), (2) and (4). 
  
- Let $n \ge 1$. Suppose that for each $i \le n$ and each $(k_0, \dots, k_n)$, the family 
+ Let $n \ge 1$. Suppose that for each $i \le n$ and each $(k_0, \dots, k_i)\in\omega^{i+1}$, the family 
  $\mathscr{V}(k_0, \cdots, k_i) = \{V(k_0, \cdots, k_i, \alpha): \alpha < \lambda\}$ 
- have been constructed such that Conditions (1) --(4) are satisfied. 
- We now define $\mathscr{V}(k_0, \dots, k_{n+1}) $ for any $\dots$. Let $\dots$. By inductive hypothesis, we have $\dots$. Hence, there is a $\sigma$-discrete closed family in $\mathscr{X}$ such that $\mathscr{B}$ has a $\sigma$-sequence of open expansions. Since $\bigcup \dots \in \bigcup \dots$.
-
+ has been constructed such that Conditions (1) -- (4) are satisfied. 
+ We now define $\mathscr{V}(k_0, \dots, k_{n+1})$ for any 
+ $(k_0, \dots, k_{n+1}) \in \omega^{n+2}$. 
+ Let $L(k_0, \dots, k_n)=\bigcup_{i\le n}(\bigcup \mathscr{V}(k_0, \dots, k_i))$. 
+ By inductive hypothesis, we have 
+ $\bigcup_{i\le n}(\bigcup \mathscr{B}_i)\subset L(k_0, \dots, k_n)$. 
+ Hence, $\mathscr{B}_{n+1}|_{(X\setminus L(k_0,\cdots, k_n))}$ 
+ is a locally finite (or discrete closed) $\lambda$-family in $X$ such that 
+ $B_{n+1, \alpha}\setminus  L(k_0,\cdots, k_n)\subset 
+ U_\alpha \setminus \bigcup_{i\le n}(\bigcup \mathscr{B}_i)$.
+ There exists a $\theta$-sequence 
+ $\{\mathscr{V}(k_0, \dots, k_n, k_{n+1}): n+1 < \omega\}$ of open expansions,
+ where each 
+ $\mathscr{V}(k_0, \dots, k_n, k_{n+1}) = 
+ \{V(k_0, \dots, k_n, k_{n+1}, \alpha): \alpha<\lambda\}$
+ such that for each $\alpha < \lambda$,
+ $$B_{n+1, \alpha}\setminus  L(k_0,\cdots, k_n)\subset 
+ V(k_0,\cdots, k_n, k_{n+1}, \alpha) \subset
+ U_\alpha \setminus  \bigcup_{i\le n}(\bigcup \mathscr{B}_i).$$
 
 
 
