@@ -121,54 +121,24 @@ $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$
  such that for each $\alpha < \lambda$,
  $$B_{n+1, \alpha}\setminus  L(k_0,\cdots, k_n)\subset 
  V(k_0,\cdots, k_n, k_{n+1}, \alpha) \subset
- U_\alpha \setminus  \bigcup_{i\le n}(\bigcup \mathscr{B}_i).$$
+ U_\alpha \setminus  \bigcup_{i\le n}\left(\bigcup \mathscr{B}_i\right).$$
+Then 
+$$\left(\bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})\right) \bigcap 
+\left(\bigcup_{i\le n}\left(\bigcup \mathscr{B}_i\right)\right) = \emptyset.$$
+Since $\bigcup \mathscr{B}_{n+1} \setminus L(k_0, \dots, k_n, k_{n+1}) \subset
+\bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})$,
+\begin{equation*}
+\begin{aligned}
+ \bigcup_{i\le n+1}\left(\bigcup \mathscr{B}_{i}\right) &\subset L(k_0, \dots, k_n) \bigcup 
+                    \left(\bigcup \mathscr{B}_{n+1}\setminus L(k_0, \dots, k_n, k_{n+1})\right) \\
+                    &\subset \bigcup_{i\le n+1}\left(\bigcup \mathscr{V}(k_0, \dots, k_i)\right).
+\end{aligned}
+\end{equation*}
 
 
-
-
-Suppose $X$ is normal and countably metacompact, and let $\mathscr{U}$ be an increasing open cover of $X$. Then $\mathscr{U}$ has a point-finite open refinement $\mathscr{V}$. By corollary 6.2.10, there is an open cover $\mathscr{W}$ of such that inclusion holds, hence $X$ is countably paracompact.
-
-5.2.11 Theorem. For any space $X$, the following are equivalent:
-
-$X$ is normal.
-
-
-Every LF open cover of $X$ is normal.
-
-
-$X$ is fully normal.
-
-
-
-Proof. (i) $\implies$ (ii). Suppose $X$ is normal and let $\mathscr{U}$ be a LF open cover of $X$. By corollary 5.2.9, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. Then $\mathscr{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
-(ii) $\implies$ (iii). Clear.
-(iii) $\implies$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathscr{W}$. Then $A$ and $B$ are separated, so $X$ is normal.
-
-
-
-
-16.1.2 Theorem. For any space $X$, the following are equivalent:
-
-$X$ is $\omega$-expandable ($\omega$-discretely $\sigma$-expandable).
-
-
-Every $\mathscr{W}$ ($\mathscr{DW}$) $\omega$-cover of $X$ has a $\sigma$-sequence of open refinements.
-
-
-Every directed $\mathscr{W}$ ($\mathscr{DW}$) $\omega$-cover of $X$ has a closed refinement.
-
-
-Every $\mathscr{IP}$ directed $\mathscr{W}$ $\omega$-cover of $X$ has a $\sigma$-cushioned refinement.
 \end{proof}
 
 
-Proof. $(i) \implies (ii)$. Assume (i) and let $\mathscr{U}$ be a $\mathscr{W}$ ($\mathscr{DW}$) $\omega$-cover of $X$. Then $\mathscr{U}$ has a refinement $\mathscr{B} = \bigcup_{n<\omega}\mathscr{B}_n$ where each $\mathscr{B}_n = \{B_{n,\alpha}\}_{\alpha\in \Lambda}$ is a LF (discrete closed) family of subsets of the subspace $X_n = \bigcup_{i<n}(\bigcup\mathscr{B}_i)$ with $\overline{B}_{n,\alpha}\subset V_{\alpha}$ for each $\alpha\in \Lambda$, and $\bigcup \mathscr{B}_n$ is a closed subset of $X$ for each $n<\omega$.
-
-We have the following Claim 1: For every $n<\omega$ and every family, there is a collection of open subsets such that conditions are satisfied.
-
----
-
-3. From Document 3 (`jiang81.pdf`)
 
 
 
