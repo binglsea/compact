@@ -1,123 +1,20 @@
-5.1.4. Lemma
-
-* An open cover $\mathscr{U}$ of $X$ is a $D_\omega$-cover if and only if $\mathscr{U}$ has a refinement $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$ such that for each $m, n < \omega$:
-* $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ is a discrete family of closed subsets of the subspace $X \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$.
-* $F_{m,n,\alpha} \subseteq V_{m,n,\alpha}$ for each $\alpha$.
-
-
-
-Proof Outline from Text:
-
-* $(\Rightarrow)$ Clear.
-
-
-* $(\Leftarrow)$ Suppose that $\mathscr{U}$ is an open cover of $X$, and that $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ is a $D_\omega$-refinement of $\mathscr{U}$ with $\mathscr{V}_{m,n} = \{V_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$. For each $V_{m,n,\alpha}$, pick $S(\alpha) \in \mathscr{U}$ such that $V_{m,n,\alpha} \subseteq S(\alpha)$. For each $\alpha$, let $F_{m,n,\alpha} = V_{m,n,\alpha} \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. Then $\mathscr{F}_{m,n}$ covers... Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha} \mid \alpha \in \Gamma_{m,n}\}$ and $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
-
-Based on the provided text from `jiang66.pdf`, here is the extracted continuation of the proof and theorem:
-
-* If $(p, q) \neq (m, n)$, then...
-
-
-* Since $\mathscr{V}$ is a $D_\omega$-refinement of..., it follows from... and... that each $\mathscr{F}_{m,n}$ is a discrete family of closed subsets of $X \setminus \bigcup\{\bigcup \mathscr{V}_{p,q} : (p,q) < (m,n)\}$.
-
-
-
-5.1.5. Theorem
-
-* A $D_\omega$-weakly $\theta$-refinable space is a $D_\omega$-refinable space.
-
-
-
-Proof Outline from Text:
-
-* Suppose that $X$ is a weakly $\theta$-refinable [space] and that $\mathscr{U}$ is an open cover of $X$. Let $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha \in \Lambda_n\}$ is a weak $\theta$-refinement of $\mathscr{U}$.
-
-
-* We show that $\mathscr{U}$ is a $D_\omega$-cover. Define a function $\varphi: \omega \times \omega \to \omega$ by $\varphi(k, l) = \dots$.
-
-
-* For $m, n < \omega$, there is a one-to-one unique pair $(k, l)$ such that $\varphi(k, l) = m$.
-
-
-* Let $\dots$.
-
-
-* We show that $\mathscr{E} = \bigcup_{m,n<\omega} \mathscr{E}_{m,n}$ is a $D_\omega$-refinement of $\mathscr{U}$.
-
-
-* Since $\mathscr{E}$ is a weak $\theta$-refinement of $\mathscr{U}$, $\mathscr{E}$ is a refinement of $\mathscr{U}$.
-
-
-* To show $\mathscr{E}$ is a $D_\omega$-refinement, let $m, n < \omega$ with $\dots$.
-
-Based on the provided text from `jiang67.pdf`, here is the extracted continuation of the proof:
-
-* Let $\dots = m$. Let $Y = X \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$. It suffices to show that $\mathscr{E}_{m,n}$ is discrete and closed in $Y$. By Lemma 1.1.5, we need ... to show the following:
-
-
-* **Claim 2:** $\bigcup (\mathscr{E}_{m,n} \mid Y)$ is closed in $Y$, and $\mathscr{E}_{m,n} \mid Y$ is discrete at each point $x \in Y \setminus \bigcup (\mathscr{E}_{m,n} \mid Y)$.
-
-
-
-
-* To show Claim 2, first we show that $G = Y \setminus \bigcup (\mathscr{E}_{m,n} \mid Y)$ is open in $Y$.
-
-
-* Let $x \in G$. We have $x \in X \setminus \bigcup \{\bigcup \mathscr{V}_{p,q} : (p,q) < (m,n)\}$.
-
-
-* Since $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ is a weak $\theta$-refinement, there are $j, \dots$ such that $\dots$ and $\dots$.
-
-
-* Suppose $\dots$. Take $B \in \dots$ and $S \in \dots$ such that $x \in G(B, k, \alpha) \cap D_k^l \cap \dots \cap H_n$. Then $\dots$ contains $\dots$. It follows that $(m,n) \le \dots \setminus Y$, a contradiction. Hence $\dots$.
-
-
-* **Case 1:** Suppose $\dots$. Then $H_n$ and $W = Y \setminus H_n$ is a neighborhood of $x$ in $Y$ such that $W \cap \dots = \emptyset$.
-
-
-* **Case 2:** Suppose $\dots$. There is $\dots$ such that $\dots$.
-
-
-* **Case 2a:** If $x \in \dots$, then $\dots$. The set $W$ is a neighborhood of $x$ in $Y$ such that for each $\dots$, $W \cap (\dots) = \emptyset$.
-
-Based on the provided text from `jiang68.pdf`, here is the extracted continuation and conclusion of the proof:
-
-* **Case 2b continuation:**
-* If $\dots$, then $A_{k,l} = \dots$. We have $\vert{}A_k\vert{} > \omega$.
-
-
-* For if $A_k$ is infinite, then this holds. If $A_k$ is finite, suppose $\vert{}A_k\vert{} = \dots$. Then there is $B \in \mathscr{G}_k$ such that $x \in \dots$.
-
-
-* If $q \le l$, then $p = S(k, l) = \varphi(k, l) = m$, so $(p, q) \le (m, n)$. But $x \in \bigcup \mathscr{V}_{p,q}$, which contradicts $\dots$. Hence $\dots$ and the inequality holds.
-
-
-
-
-* The set $W = \dots$ is a neighborhood of $x$ in $Y$.
-
-
-% For each $B$ and $S$, since $\vert{}B\vert{} > l$, $W \and P(\beta, S, m, n) \subset \bigcap_{\alpha \in \beta} G_{k,\alpha} \cap D_k^l = \emptyset$. This completes the proof of the claim.
-
-
-
-Completion of Claim 2
-
-* To show Claim 2, let $x \in \bigcup (\mathscr{E}_{m,n} \mid Y)$. There is $B_0 \in \dots$ and $S_0$ such that $x \in P(B_0, S_0, m, n)$.
-
-
-* The set $W = H_n$ is a neighborhood of $x$ in $Y$.
-
-
-* For any $B$ and $S$ with $(B, S) \neq (B_0, S_0)$:
-
-
-* If $B \neq B_0$, then $W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \emptyset$.
-
-
-* If $S \neq S_0$, then $W \cap P(B, S, m, n) \cap H_n = \emptyset$.
-
-
-
-
-* Thus, $\mathscr{E}_{m,n}$ is discrete at $x$, completing the proof of Claim 2.
+Since $\bigcup \mathscr{F}_{m,n} \setminus L$ is a closed subset of $X$, there exists a 
+functionally open set $K$ such that
+$$\bigcup \mathscr{F}_{m,n} \subset L \subset K \subset \overline{K} \subset 
+\bigcup_{\alpha \in \Delta} H_{m,n,\alpha}.$$
+Let $V_{m,n,\alpha} = K\bigcap H_{m,n,\alpha}$. 
+Then $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha \in \Delta\}$ is a functionally open 
+family with $\overline{\mathscr{V}_{m,n,\alpha} \subset U_\alpha$ and such that
+	%$\bigcup \mathscr{V}_{m,n} = K$ is functionally open. Since 
+	%$\bigcup \mathscr{F}_{m,n} \setminus L \subset \bigcup \mathscr{V}_{m,n}$,
+	%$$\bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{F}_{p,q}) \subset L \setminus (\bigcup\mathscr{F}_{m,n})
+	%\subset \bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{V}_{p,q}).$$
+	%Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the \textsc{Claim} is proved.
+	
+	By the claim and Theorem 2016, there is a LF functionally open cover $\{W_{m,n}\}$ for each $m,n$. Such that $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$.
+	
+	For $\alpha$, let $G_\alpha = \bigcup (W_{m,n} \cap V_{m,n,\alpha})$. Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha$, so $\mathscr{G}$ is an open shrink of $\mathscr{U}$.
+	
+	(ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Rightarrow$ (v): Clear.
+	
+	(v) $\Rightarrow$ (i): Routine.

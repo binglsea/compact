@@ -283,40 +283,59 @@ For any $X$, the following are equivalent:
 }
 
 \begin{proof}
- (i) $\implies$ (ii). Suppose $\mathscr{U}$ is a $\sigma$-cover of $X$. 
- Let $\mathscr{U} = \bigcup_{m,n < \omega} \mathscr{U}_{m,n}$ 
- be a refinement of $\mathscr{U}$.
-\end{proof}
+ (i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a  $C^*\omega^2$-cover of $X$. 
+ Let $\mathscr{F} = \bigcup_{m,n < \omega} \mathscr{F}_{m,n}$ 
+ be a refinement of $\mathscr{U}$,
+where each $\mathscr{F}_{m,n,\alpha} = \{F_{m,n,\alpha}: \alpha\in\Delta\}$ 
+satisfies $F_{m,n,\alpha}\subset U_\alpha$, and each $F_{m,n,\alpha}$  and
+$\bigcup \mathscr{F}_{m,n}$ are  closed subsets of 
+$X\setminus\bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) < (m, n)\}$.
 
-Here is the text extracted from the document:
+\textsc{Claim}. For each $m,n$ there exists a functionally open family 
+$\mathcal{V}_{m,n,\alpha} = \{V_{m,n,\alpha}: \alpha\in\Delta\}$ such that:
 
-where each $V_{m,n,\alpha} = F_{m,n,\alpha}$ with $U_{m,n}$ and $U_{m,n}$ are $F_{m,n,\alpha}$ and each $m,n,\alpha$ closed subsets of $X$.
-Claim. For each $m,n$ there is a functionally open family $\mathcal{V}_{m,n} = \{V_{m,n,\alpha}\}$ such that:
-(1) $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha$,
+(1) $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha\in\Delta$,
+
 (2) $\mathscr{V}_{m,n}$ is functionally open, and
-(3) $\bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q}) < \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q})$.
-Proof. We use induction on $(m,n)$. Suppose $\mathscr{S}_{0,0} = \{\emptyset\}$ and let $\dots$
-Let $m,n \in \omega$ and assume that the families $\mathscr{V}_{p,q}$ have been constructed such that the conditions (1)–(3) are satisfied for all $(p,q) < (m,n)$. Then
-$\langle p,q \rangle < (m,n) (\bigcup \mathscr{V}_{p,q}) < \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q})$
-$L = \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$
-Then $\mathscr{F}_{m,n}(x-1)$ is a closed family in $X$. For each $\alpha$ there is a functionally open set $H_{m,n,\alpha}$ such that
-$F_{m,n,\alpha} - L < H_{m,n,\alpha} \subset \overline{H}_{m,n,\alpha} < U_\alpha$.
-Then
-$\bigcup \mathscr{F}_{m,n} - L \subset \bigcup_{\alpha \in \mathscr{A}} H_{m,n,\alpha}$. Since $X - L$ is a closed subset of $X$, there is a functionally open set $K$ such that
-$\bigcup \mathscr{F}_{m,n} - L \subset K \subset \overline{K} \subset \bigcup_{\alpha \in \mathscr{A}} H_{m,n,\alpha}$.
-Let $V_{m,n,\alpha} = \dots$. Then $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}\}$ is a functionally open family with $\overline{V}_{m,n,\alpha} \subset U_\alpha$ and such that
-$\bigcup \mathscr{V}_{m,n} = K$ is functionally open. Since the set
-$\bigcup \mathscr{F}_{m,n} - L \subset \bigcup \mathscr{V}_{m,n}$,
 
-Thus $U_{m,n}$ is the desired functionally open family and the claim is proved.
+(3) $\bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q})$.
+
+\noindent\textsc{Proof of CLaim}. We use induction on $(\omega\times\omega, <)$. 
+Let $\mathscr{F}_{0,0} = \{\emptyset\}$ and $\mathscr{V}_{0,0} = \{\emptyset\}$.
+Let $m,n < \omega$ and assume that the families $\mathscr{V}_{p,q, \alpha}$ have 
+been constructed such that the Conditions (1)–(3) are satisfied for all $(p,q) < (m,n)$. 
+Then
+$$\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q}).$$
+Let $L = \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$
+Then $\mathscr{F}_{m,n}|_{(X\setminus L)}$ is a closed family in $X$. 
+For each $\alpha\in\Delta$, there exists a functionally open set $H_{m,n,\alpha}$ such that
+$$F_{m,n,\alpha} \setminus L \subset H_{m,n,\alpha} \subset \overline{H}_{m,n,\alpha} \subset U_\alpha.$$
+Then
+$\bigcup \mathscr{F}_{m,n} \setminus L \subset \bigcup_{\alpha \in\Delta} H_{m,n,\alpha}$. 
+Since $\bigcup \mathscr{F}_{m,n} \setminus L$ is a closed subset of $X$, there exists a 
+functionally open set $K$ such that
+$$\bigcup \mathscr{F}_{m,n} \subset L \subset K \subset \overline{K} \subset 
+\bigcup_{\alpha \in \Delta} H_{m,n,\alpha}.$$
+Let $V_{m,n,\alpha} = K\bigcap H_{m,n,\alpha}$. 
+Then $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha \in \Delta\}$ is a functionally open 
+family with $\overline{\mathscr{V}}_{m,n,\alpha} \subset U_\alpha$ and such that
+$\bigcup \mathscr{V}_{m,n} = K$ is functionally open. Since 
+$\bigcup \mathscr{F}_{m,n} \setminus L \subset \bigcup \mathscr{V}_{m,n}$,
+$$\bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{F}_{p,q}) \subset L \setminus (\bigcup\mathscr{F}_{m,n})
+\subset \bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{V}_{p,q}).$$
+Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the \textsc{Claim} is proved.
+
 
 By the claim and Theorem 2016, there is a LF functionally open cover $\{W_{m,n}\}$ for each $m,n$. Such that $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$.
 
 For $\alpha$, let $G_\alpha = \bigcup (W_{m,n} \cap V_{m,n,\alpha})$. Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha$, so $\mathscr{G}$ is an open shrink of $\mathscr{U}$.
 
-(ii) $\implies$ (iii) $\implies$ (iv) $\implies$ (v): Clear.
 
-(v) $\implies$ (i): Routine.
+(ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Rightarrow$ (v): Clear.
+
+(v) $\Rightarrow$ (i): Routine.
+\end{proof}
+
 
 15.2.9. Corollary. For any $X$, the following are equivalent:
 
@@ -357,11 +376,11 @@ Proof. Suppose $X$ is normal countably metacompact and $\mathscr{U} = \{U_n\}$ b
 
 
 
-Proof. (i) $\implies$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a LF open cover of $X$. By corollary 5.2.9, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. Then $\mathscr{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
+Proof. (i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a LF open cover of $X$. By corollary 5.2.9, $\mathscr{U}$ has a functionally open shrink $\mathscr{V}$. Then $\mathscr{V}$ is also LF. By Theorem 2.1.6, $X$ is normal.
 
-(ii) $\implies$ (iii). Clear.
+(ii) $\Rightarrow$ (iii). Clear.
 
-(iii) $\implies$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathscr{S}$. Then $A \subset \bigcup \{S \in \mathscr{S} : S \cap A \neq \emptyset\}$ and $B \subset \bigcup \{S \in \mathscr{S} : S \cap B \neq \emptyset\}$, so $X$ is normal.
+(iii) $\Rightarrow$ (i). Suppose $A$ and $B$ are disjoint closed sets in $X$. By (iii), the open cover $\{X-A, X-B\}$ has a point-star open refinement $\mathscr{S}$. Then $A \subset \bigcup \{S \in \mathscr{S} : S \cap A \neq \emptyset\}$ and $B \subset \bigcup \{S \in \mathscr{S} : S \cap B \neq \emptyset\}$, so $X$ is normal.
 
 74
 \end{document}
