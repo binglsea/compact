@@ -25,14 +25,41 @@ point-star refining sequence of  semi-open covers of $X$.
 $\sigma$-cushioned refinement.
 }
 
-\begin{proof} (i) $\implies$ (ii). Assume (i) and let $\mathcal{U}$ be a $D\omega$ $\omega$-cover of $X$. Then $X$ is discretely subexpandable. By Theorem 6.1.2 and 3.1.5, there is a countable closed cover $\{F_n\}$ of $X$ such that each $\mathcal{U} \cap F_n$ has a point-finite open refinement $\mathcal{V}_n$ in the subspace $F_n$. Since the closed subspace $F_n$ of $X$ is $\sigma$-discretely subexpandable by Theorem 3.3.7, $\mathcal{V}$ has a discrete closed refinement $\mathcal{F}_n$ in $F_n$. Then $\bigcup \mathcal{F}_n$ is a $\sigma$-discrete closed refinement of $\mathcal{U}$.
+\begin{proof} (i) $\Rightarrow$ (ii). Assume (i) and let $\mathscr{U}$ be a 
+$D\omega$ $\lambda$-cover of $X$. Then $X$ is $\lambda$-discretely $\theta$-subexpandable. 
+By Theorem \ref{th:6.1.2} and \ref{th:3.1.5}, there exists a countable closed cover 
+$\{F_n: n < \omega\}$ of $X$ such that each $\mathscr{U}|_{F_n}$ has a 
+point-finite open refinement $\mathscr{V}_n$ in the subspace $F_n$. 
+Since the closed subspace $F_n$ of $X$ is $\lambda$-discretely subexpandable by 
+Theorem \ref{th:3.3.7}, $\mathscr{V}_n$ has a $\sigma$-discrete closed refinement 
+$\mathscr{P}_n$ in $F_n$. Then $\bigcup_{n<\omega} \mathscr{P}_n$ is a 
+$\sigma$-discrete closed refinement of $\mathscr{U}$.
 
-(ii) $\implies$ (iii) and (iv). Assume (ii) and let ...
+(ii) $\Rightarrow$ (iii) and (iv). Assume (ii) and let $\mathscr{U}=\{U_\alpha: \alpha < \lambda\}$ 
+be a $D\omega$ cover of $X$. Then $\mathscr{U}$ has a refinement 
+$\mathscr{D} = \bigcup_{n < \omega}\mathscr{D}_n$, where each
+ $\mathscr{D}_n = \{D_{n,\alpha}: \alpha< \lambda\}$ is a discrete family of closed subsets 
+ of $X$ with $D_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$. 
+ For $n < \omega, \alpha < \lambda$, let 
+ $G_{n,\alpha} = U_\alpha\setminus \bigcup_{\gamma\in \lambda\setminus\{\alpha\}}D_{n,\gamma}$
+ Then $D_\alpha \subset G_{n, \alpha}\subset U_\alpha$ and 
+ each $\mathscr{G} = \{G_{n,\alpha}: \alpha< \lambda\}$ is an open refinement o $\mathscr{U}$.
+ For each $x\in X$ there exists $m<\omega$ and $\alpha_0 < \alpha$ such that 
+ $x\in D_{m,\alpha_0}$. Then
+ $\operatorname{ind}(\mathscr{G}_m)_x \subset \{\alpha_0\}$, so $\{\mathscr{G}_n: n < \omega\}$ is
+ an $\varepsilon$-sequence. We have shown that (ii) $\Rightarrow$ (iii). If $\mathscr{U}$ is
+ interior-preserving open, then each $\mathscr{G}_n$ is interior-preserving open,
+ so (iv) holds. 
 
+(iii) $\Rightarrow$ (vi) and (iv) $\Rightarrow$ (v) $\Rightarrow$ (vi). Clear.
+
+(v) $\Rightarrow$ (vii) is clear by Theorem \ref{th:4.1.9}. 
+
+(vii) $\Rightarrow$ (i). Assume (vii) and let $\mathscr{D}$ be a discrete $\lambda$-family 
+of closed subsets of $X$. The induced cover $\mathscr{D}^*$ is an interior-preserving 
+$D\omega$-cover. By (vii), $\mathscr{D}^*$ has a $\sigma$-cushioned refinement. By Lemma
+\ref{lem:1.2.4}, $\mathscr{D}$ has a $\varepsilon$-sequence of open expansions, so (i) holds.
 \end{proof}
-$$G_{n,\alpha}=\bigcup\mathcal{P}_{n,\alpha}-\bigcup_{\gamma\ne\alpha}\mathcal{D}_{n,\gamma}$$
-
-, refinement $D=\bigcup_{n<\omega}D_{n}$. Let $\mathcal{D}$ be a discrete family of closed subsets of $\mathscr{X}$ and let $\mathscr{U}$ be a $Dw$ cover of $\mathscr{X}$. Then $\mathscr{U}$ has an open refinement $\xi$, where each $\mathcal{Q}_{n}=\bigcup\mathcal{P}_{n,\alpha}$. For $n \in \omega$, let $D_{n,\alpha} \subset R_{n,\alpha} \subset \mathscr{U}_{\alpha}$. Then each $\xi_n$ is an open refinement of $\mathscr{U}$. For each $\alpha$, there are collections such that $\dots$. Then $\beta_m\vert{}_{\text{loc}} \subset \{\alpha_0\}$, so $\xi$ is an $\omega$-sequence. We have shown that $(iii)$ holds. If $\mathscr{X}$ is $\sigma$-open, then each is $\sigma$-open, so $(iv)$ holds. $(v) \Rightarrow (vii)$ is clear by Theorem 4.1.9. $(vii) \Rightarrow (i')$: Assume $(vii)$ and let $\mathscr{X}$ be a discrete $\sigma$-family cover of closed subsets of $\mathscr{X}$. The induced collection is a cushioned refinement. By previous results, $\mathscr{X}^{\mathcal{V}}$ has open expansions, so $(i')$ holds.
 
 {\corollary{} \label{cor:6.2.2}
 $\lambda$-subparacompact spaces are $\lambda$-discretely subexpandable. \hfill
