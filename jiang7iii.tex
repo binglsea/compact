@@ -88,24 +88,24 @@ with $F_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$,
 and $\bigcup_{i<n}(\bigcup \mathscr{F}_i)$ is closed in  $X$  
 for each $n >0$.
 
-Claim. For each $n < \omega$ there is a point-finite family $\mathscr{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ of open sets in $\mathscr{X}$ such that for each $n < \omega$,
+Claim. For each $n < \omega$  there exists a point-finite family $\mathscr{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ of open sets in $X$ such that for each $n < \omega$,
 (i) $V_{n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$,
 (ii) $\bigcup_{i \le n} (\bigcup \mathscr{V}_i) \subset \bigcup_{i \le n} (\bigcup \mathscr{U}_i)$ and
 (iii) $\dots$
 
-**Proof.** We use induction on $n$. Assume $\mathscr{V}_0 = \{ \dots \}$ and $\mathscr{U}_0 = \{ \dots \}$. Let $n \ge 1$ and suppose that for each $i \le n$ the point-finite open family $\mathscr{V}_i = \{V_{i,\alpha} : \alpha < \lambda\}$ in $\mathscr{X}$ has been constructed and the conditions $(i)_i - (iii)_i$ are satisfied.
+**Proof.** We use induction on $n$. Assume $\mathscr{V}_0 = \{ \dots \}$ and $\mathscr{U}_0 = \{ \dots \}$. Let $n \ge 1$ and suppose that for each $i \le n$ the point-finite open family $\mathscr{V}_i = \{V_{i,\alpha} : \alpha < \lambda\}$ in $X$ has been constructed and the conditions $(i)_i - (iii)_i$ are satisfied.
 
 Then $(i)_{n+1} \rightarrow \dots$
 $\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \subset \bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \dots$ Let $L = \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
-For each $\alpha < \lambda$, $F_{n+1,\alpha} - L \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$. Since $\mathscr{U}_{n+1}/(\mathscr{X}-L)$ is a point-finite discrete closed family in $\mathscr{X}$, there is a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha} : \alpha < \lambda\}$ in $\mathscr{X}$ such that
+For each $\alpha < \lambda$, $F_{n+1,\alpha} - L \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$. Since $\mathscr{U}_{n+1}/(X-L)$ is a point-finite discrete closed family in $X$,  there exists  is a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha} : \alpha < \lambda\}$ in $X$ such that
 $F_{n+1,\alpha} - L \subset V_{n+1,\alpha} \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$
-for each $\alpha < \lambda$. Then $\bigcup F_{n+1,\alpha} - L \subset \bigcup \mathscr{V}_{n+1} \subset \mathscr{X} - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
+for each $\alpha < \lambda$. Then $\bigcup F_{n+1,\alpha} - L \subset \bigcup \mathscr{V}_{n+1} \subset X - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
 It follows that $\dots$ for each $\dots$ and
 $(\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i)) - (\bigcup_{i \le n} (\bigcup \mathscr{V}_i)) = \dots$, so the conditions $(i)_{n+1}$ and $(iii)_{n+1}$ are satisfied. To see $(ii)_{n+1}$, we show
 $\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \subset \dots \subset \bigcup_{i \le n+1} (\bigcup \mathscr{V}_i)$.
 This completes the induction and the proof of claim.
 
-By the Claim, there is a sequence $\dots$ of point-finite families of open sets in $\mathscr{X}$ such that $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is an open refinement of $\mathscr{U}$. For each $x \in \mathscr{X}$, there is $m < \omega$ such that $x \in \bigcup \mathscr{V}_m$.
+By the Claim,  there exists a sequence $\dots$ of point-finite families of open sets in $X$ such that $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is an open refinement of $\mathscr{U}$. For each $x \in X$,  there exists $m < \omega$ such that $x \in \bigcup \mathscr{V}_m$.
 For each $k \ge m$, $\dots$
 $\mathscr{W}_x = \bigcap_{n=m}^{\infty} \operatorname{ind}(\mathscr{V}_n)_{x_0}$,
 so by $(ii)$ $\dots$ Thus $\operatorname{ind}$ is point-finite.
