@@ -134,7 +134,39 @@ Since $\bigcup \mathscr{B}_{n+1} \setminus L(k_0, \dots, k_n, k_{n+1}) \subset
                     &\subset \bigcup_{i\le n+1}\left(\bigcup \mathscr{V}(k_0, \dots, k_i)\right).
 \end{aligned}
 \end{equation*}
+For each $x$, there exists $k_{n+1}(x) < \omega$ such that 
+$\operatorname{ind}( \mathscr{V}(k_0, \dots, k_n, k_{n+1}))_x$ 
+is finite. Thus the family satisfies Conditions (1) -- (4). This completes the induction and proof 
+of \textsc{Claim 1}. 
 
+For every $n \in \omega$, let 
+$$T_n = \{(k_0, \cdots, k_n, 0, 0, \cdots) \in \omega^\omega: (k_0, \cdots, k_n) \in \omega^{n+1}\}.$$ 
+Then the set $T = \bigcup_{n<\omega} T_n$ is countable. 
+For $t = (k_0, \dots, k_n, k_{n+1}, \cdots) \in T$, let 
+$$\mathscr{H}(t) = \bigcup_{n=0}^\infty T_n.$$ 
+Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
+
+\textsc{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ is a $\theta$-sequence, so (ii) holds.
+
+\textsc{Proof of Claim 2}. Let $x \in X$. There exists $m \ge 1$ such that 
+$x \in \bigcup_{i \le m}(\bigcup \mathscr{B}_i)$. By Condition (4), there is $k_0(x)<\omega$ 
+such that $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$ is finite; there exists $k_1 <\omega$ 
+such that $\operatorname{ind}(\mathscr{V}(k_1(x)))_x$ is finite, $\dots$; there is $k_{m-1}$ 
+such that $\operatorname{ind}(\mathscr{V}(k_{m-1}(x)))_x$ is finite. 
+For all $i \ge m$, let $k_i = 0$.  Then
+\begin{gather*}
+	t(x)=(k_0(x), k_1(x), \cdots, k_{m-1}(x), 0, 0, \cdots) \in T \text{ and} \\
+	\mathscr{H}(t(x)) = \bigcup_{n=0}^\infty \mathscr{V}(k_0(x), k_1(x), \cdots, k_{n}(x)).
+\end{gather*}
+For each $n \ge m, x \in \bigcup_{i\le n}(\bigcup \mathscr{B}_i)$, then by (3), 
+$x \notin \bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})$. 
+Hence, 
+$$\operatorname{ind}(\mathscr{H}(t(x)))_x = 
+\bigcup_{n=0}^{m-1}\operatorname{ind}(\mathscr{V}(k_0(x), \dots, k_n(x)))_x.$$
+So, $\operatorname{ind}(\mathscr{H}(t(x)))_x$ is finite, and \textsc{Claim 2} is true. 
+
+(ii) $\Rightarrow$ (iii) Suppose $\mathscr{U}$ is a directes $A\omega$ (or $D\omega$)
+$\lambda$-cover of $X$. By (ii) and Lemma \ref{lem:3.2.1},  $X$ has a
 
 \end{proof}
 
