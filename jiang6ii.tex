@@ -202,7 +202,12 @@ $\dot{F}$-refining sequence by semi-open covers of $X$.
 
 (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv): Clear.
 
- (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}$ be an IP directed $\mathcal{A}\omega$ ($\mathcal{D}\omega$)-cover of $X$. Then $\mathscr{U}$ has a point-star refining sequence of semi-open covers. By Theorem 4.1.9, $\mathscr{U}$ has a $\sigma$-cushioned refinement. By Theorem 6.1.2, (i) holds.
+ (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}$ be an IP directed 
+ $A\omega$ $($or $D\omega)$-cover of $X$. Then $\mathscr{U}$ has a 
+ point-star refining 
+ sequence of semi-open covers. By Theorem \ref{th:4.1.9}, $\mathscr{U}$ has a 
+ $\lambda$-cushioned refinement. 
+ By Theorem \ref{th:6.1.2}, (i) holds.
 \end{proof}
 
 
@@ -228,31 +233,28 @@ For any $X$, the following are equivalent:
 
 \textup{(i)} $X$ is $\lambda$-submetacompact.
 
-\textup{(ii)} For every open $\lambda$-cover $\mathscr{U}$ of $X$, there is a countable closed cover $\mathcal{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an IP open pointwise refinement in the subspace $F_n$.
+\textup{(ii)} For every open $\lambda$-cover $\mathscr{U}$ of $X$, there exists
+ a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an IP open pointwise refinement in the subspace $F_n$.
 
 
-\textup{(iii)} For every directed open $\mathcal{A}\omega$-cover of $X$, there is a countable closed cover $\mathcal{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an IP open point-star refinement in $F_n$.
+\textup{(iii)} For every directed open $\mathscr{A}\omega$-cover of $X$, there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an IP open point-star refinement in $F_n$.
 
 
-(iv) For every IP directed open $\mathcal{A}\omega$-cover of $X$, there is a countable closed cover $\mathcal{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement in $F_n$.
+(iv) For every IP directed open $\mathscr{A}\omega$-cover of $X$, there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement in $F_n$.
 }
 
-
-Proof.
-
+\begin{proof} 
 (i) $\Rightarrow$ (ii): By Theorem 3.1.5.
-
 
 (ii) $\Rightarrow$ (iii): Clear.
 
-
 (iii) $\Rightarrow$ (iv): By Lemma 4.1.6.
 
+(iv) $\Rightarrow$ (i): Let $\mathscr{U}$ be an IP directed open $\mathscr{A}\omega$-cover of $X$. By (iv), there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a $\sigma$-closed refinement of $\mathscr{U}$. By Theorem 4.1.7, $X$ is submetacompact.
 
-(iv) $\Rightarrow$ (i): Let $\mathscr{U}$ be an IP directed open $\mathcal{A}\omega$-cover of $X$. By (iv), there is a countable closed cover $\mathcal{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement $\mathcal{F}_n$ in the closed subspace $F_n$. Then $\mathcal{F}_n$ is a $\sigma$-closed refinement of $\mathscr{U}$. By Theorem 4.1.7, $X$ is submetacompact.
+We use induction on $n$. For each $n \ge 1$ and each index, the family has been constructed such that the required conditions are satisfied. Let us define the open expansions and sequences such that for each step, the properties hold true and the resulting refinement satisfies the necessary covering properties.
+\end{proof}
 
-
-Proof continuation: We use induction on $n$. For each $n \ge 1$ and each index, the family has been constructed such that the required conditions are satisfied. Let us define the open expansions and sequences such that for each step, the properties hold true and the resulting refinement satisfies the necessary covering properties.
 
 \subfile{ch6_2}
 \end{document}
