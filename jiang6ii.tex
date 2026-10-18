@@ -173,9 +173,14 @@ Since $\mathscr{U}$ is directed, $\mathscr{V}_n$ is an interior-preserving point
 $\mathscr{U}\vert{}_{F_n}$ in subspace $F_n$. By Lemma \ref{lem:5.1.6}, 
 $\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a closed refinement of $\mathscr{U}$.
 
-$(iii) \Rightarrow (iv)$ is clear.
+(iii) $\Rightarrow$ (iv) is clear.
 
-$(iv) \Rightarrow (i)$ Let $\mathscr{B}$ be a locally finite (discrete closed) $\sigma$-family in $X$. The induced cover $\mathscr{B}(\mathscr{F})$ is an interior-preserving directed $\mathscr{A}\omega$-cover of $X$. By $(iv)$, $\mathscr{B}(\mathscr{F})$ has a cushioned refinement. By Lemma 1.2.3 (1.2.4), $\mathscr{B}(\mathscr{F})$ has a $\sigma$-sequence of open expansions, so $(i)$ holds.
+(iv) $\Rightarrow$ (i) Let $\mathscr{B}$ (or $\mathscr{D}$) be a locally finite (or discrete closed)
+$\lambda$-family in $X$. The induced cover $\mathscr{B}^*$ (or $\mathscr{D}^*$) is 
+an interior-preserving directed $A\omega$-cover (or $D\omega$-cover) of $X$. 
+By (iv), $\mathscr{B}^*$ (or $\mathscr{D}^*$) has a $\sigma$-cushioned refinement. 
+By Lemma \ref{lem:1.2.3} (or Lemma \ref{lem:1.2.4}), $\mathscr{B}$ (or $\mathscr{D}$) 
+has a $\theta$-sequence of open expansions, so (i) holds.
 \end{proof}
 
 {\corollary{} \label{cor:6.1.3}
@@ -198,15 +203,19 @@ $\dot{F}$-refining sequence by semi-open covers of $X$.
 }
 
 \begin{proof}
-(i) $\Rightarrow$ (ii): By Theorem 6.1.2, if $\mathscr{U}$ is an open cover, then there exists a $\sigma$-sequence of open refinements of $\mathscr{U}$, which is a pointwise refining sequence for $\mathscr{U}$ by semi-open covers of $X$.
+(i) $\Rightarrow$ (ii): By Theorem 6.1.2, if $\{\mathscr{V}_n: n < \omega\}$ is a $\theta$-sequence
+ of refinement of open cover $\mathscr{U}$, 
+ then $\{\mathscr{V}_n: n < \omega\}$ is a pointwise $W$-refining sequence for $\mathscr{U}$ 
+ by semi-open covers of $X$.
 
 (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv): Clear.
 
- (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}$ be an interior-preserving directed 
- $A\omega$ $($or $D\omega)$-cover of $X$. Then $\mathscr{U}$ has a 
+ (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}= \{U_\alpha: \alpha \in \lambda\}$ 
+ be an interior-preserving directed 
+ $A\omega$ (or $D\omega$)-cover of $X$. Then $\mathscr{U}$ has a 
  point-star refining 
  sequence of semi-open covers. By Theorem \ref{th:4.1.9}, $\mathscr{U}$ has a 
- $\lambda$-cushioned refinement. 
+ $\sigma$-cushioned refinement. 
  By Theorem \ref{th:6.1.2}, (i) holds.
 \end{proof}
 
@@ -242,7 +251,7 @@ For any $X$, the following are equivalent:
 $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an interior-preserving open point-star 
 refinement in subspace $F_n$.
 
-(iv) For every interior-preserving directed open $\lambda$-cover of $X$, there exists a 
+\textup{(iv)} For every interior-preserving directed open $\lambda$-cover of $X$, there exists a 
 countable closed cover $\mathscr{F} = \{F_n: n < \omega\}$ of $X$ such that for each 
 $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement 
 in subspace $F_n$.
