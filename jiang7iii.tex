@@ -9,14 +9,14 @@
 
 {\lemma{} \label{lem:7.1.1}
 If $X$ is $\lambda$-almost expandable $($or $\lambda$-expandable$)$, then 
-every $A\omega^2$-$\lambda$-open cover of $X$ has a point-finite $($or locally finite$)$
+every $A\omega^2$-$\lambda$-cover of $X$ has a point-finite $($or locally finite$)$
 open refinement.
 }
 
 \begin{proof} 
 Suppose $X$ is $\lambda$-almost expandable (or $\lambda$-expandable) and 
 let $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ be an 
-$A\omega^2$-$\lambda$-open cover of $X$. 
+$A\omega^2$-$\lambda$-cover of $X$. 
 Let $\mathscr{A} = \bigcup_{m, n < \omega}\mathscr{A}_{m,n}$ be a refinement 
 of  $\mathscr{U}$ such that each $\mathscr{A}_{m,n} = \{A_{m,n,\alpha} : \alpha < \lambda\}$ 
 is a locally finite family of subsets of 
@@ -24,7 +24,7 @@ $X\setminus \bigcup\{\bigcup\mathscr{A}_{p,q}: (p,q) < (m,n)\}$,
 with  $A_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$. 
 We establish the following
 
-\textsc{Claim}. For each $m, n \in \omega$, there exists a point-finite (locally finite) family 
+\textsc{Claim}. For each $m, n \in \omega$, there exists a point-finite (or locally finite) family 
 $\mathscr{U}_{m,n} = \{U_{m,n,\alpha} : \alpha \in \lambda\}$ 
 of open sets in $X$ such that $U_{m,n,\alpha} \subset V_\alpha$ 
 for each $\alpha$ and
@@ -33,7 +33,7 @@ $$\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathscr{A
 
 \textsc{Proof of Claim}. We prove this by induction on 
 $(\omega \times \omega, <)$. 
-Suppose $\mathscr{V}_{0,0} = \{\emptyset\}$ and let $\mathscr{V}_{0,0} = \{\emptyset\}$.
+Suppose $\mathscr{A}_{0,0} = \{\emptyset\}$ and let $\mathscr{V}_{0,0} = \{\emptyset\}$.
 Let $m, n \in \omega$ and assume that the point-finite (or locally finite) 
 open families $\mathscr{V}_{p,q} = \{V_{p,q,\alpha} : \alpha \in \lambda\}$ 
 have been constructed such that the Conditions above are satisfied 
@@ -42,30 +42,73 @@ Let $L = \bigcup \{ \bigcup \mathscr{V}_{p,q} : \langle p,q \rangle < \langle m,
 By the inductive hypothesis we have 
 $$\bigcup_{\langle p,q \rangle < \langle m,n \rangle} \left(\bigcup \mathscr{A}_{p,q}\right) \subset L.$$ 
 The family $\mathscr{A}_{m,n}|_{(X\setminus L)}$ is 
-locally finite in $X$, so it has a point-finite (or locally finite)...
+locally finite in $X$, so it has a point-finite (or locally finite) 
+pen expansion $\mathscr{V}_{m,n} = \{V_{m,n,\alpha} : \alpha < \lambda\}$ 
+such that for each $\alpha < \lambda$, 
+$A_{m,n}\setminus L \subset V_{m,n}\subset U_\alpha$. 
+Then $\bigcup\mathscr{A}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n}$. 
+It follows from inductive hypothesis that 
+$$\bigcup_{(p,q)\le(m,n)}\left(\bigcup \mathscr{A}_{p,q}\right) \subset L\cup\left(\bigcup(\mathscr{A}_{m,n}\right) \subset 
+\bigcup_{(p,q)\le(m,n)}\left(\bigcup \mathscr{V}_{p,q}\right).$$
+Thus $\mathscr{V}_{m,n}$ is the desired family and the \textsc{Claim} is proved.
+
+By Theorem \ref{th:4.1.10} (\ref{th:4.1.9}),  $X$  is countably metacompact 
+(or countably paracompact). There exists a point-finite (or locally finite) open cover 
+$\mathscr{W} = \{W_{m,n}: m,n < \omega\}$ of  $X$  such that 
+$W_{m,n} \subset \bigcup\mathscr{V}_{m,n}$ for each $m, n < \omega$. 
+For $\alpha < \lambda$, let $G_\alpha = \bigcup\{W_{m,n}\cap V_{m,n,\alpha}: m,n<\omega\}$. 
+Then $\mathscr{G} = \{G_\alpha : \alpha < \lambda\}$ is an open refinement 
+of $\mathscr{U}$. We are to show:
+
+(1) $\mathscr{G}$ is point-finite (or locally finite).
+
+\noindent We only prove $\mathscr{G}$ is  locally finite. Let $x \in X$. There exists 
+ $H_0\in \operatorname{top}(x)$
+such that $\operatorname{ind}(\mathscr{W})_{H_0}$ is finite. For each $m, n < \omega$, 
+there exists $H_{m,n}\in  \operatorname{top}(x)$ such that $\operatorname{ind}(\mathscr{V}_{m,n})_{H_{m,n}}$ is finite. 
+Let $H = H_0 \cap(\bigcap\{H_{m,n}:(m,n)\in \operatorname{ind}(\mathscr{W})_{H_0}\})$. 
+Then $H\in\operatorname{top}(x)$ and
+$$\operatorname{ind}(\mathscr{G})_H \subset 
+\bigcup\{\operatorname{ind}(\mathscr{V}_{m,n})_{H_{m,n}}: (m,n)
+\in\operatorname{ind}(\mathscr{W})_{H_0}\}.$$ 
+Hence $\operatorname{ind}(\mathscr{G})_H$ is finite and $\mathscr{G}$ is locally finite.
 \end{proof}
 
-Open expansion $\mathscr{U}_{m,n} = \{V_{m,n,\alpha} : \alpha < \lambda\}$ such that for each $m, n < \omega$, $\mathscr{A}_{m,n} \subset \mathscr{V}_{m,n}$. Then $\mathscr{G}^*_{m,n} \dots \subset \bigcup \mathscr{V}_{m,n}$. It follows from inductive hypothesis that $\bigcup_{(p,q)\le(m,n)}(\bigcup \mathscr{A}_{p,q}) \subset \bigcup(\mathscr{V}_{m,n}) \subset \bigcup_{(p,q)\le(m,n)}(\bigcup \mathscr{V}_{p,q})$. Thus $\mathscr{U}_{m,n}$ is the desired family and the Claim is proved.
-
-By Theorem 4.1.10 (4.1.9),  $X$  is $\sigma$-metacompact ($\sigma$-paracompact), there is a point-finite (LF) open cover $\mathscr{W}$ of  $X$  such that $\mathscr{W}_{m,n} \subset \mathscr{U}_{m,n}$ for each $m, n < \omega$. For $\dots$, let $\dots$. Then $\mathcal{G} = \{G_\alpha : \alpha < \lambda\}$ is an open refinement of $\mathscr{U}$. We have:
-
- (1) $\mathcal{G}$ is point-finite (LF).
-
-
-
-Proof. We mostly prove $\mathcal{G}$ is  locally finite . Let $x \in \mathscr{X}$. There is a neighborhood such that $\operatorname{ind}(\dots)$ is finite. For each $m, n < \omega$, there is a neighborhood $H_{m,n}$ such that $\operatorname{ind}(\mathscr{U}_{m,n})_{H_{m,n}}$ is finite. Let $H = \dots$. Hence $\operatorname{ind}(\dots)$ is finite and $\mathcal{G}$ is LF.
-
 {\lemma{} \label{lem:7.1.2}
-If  $X$  is discretely almost expandable, every $\mathcal{D}\omega$-cover of  $X$  has a point-finite open refinement.
+If  $X$  is $\lambda$-discretely almost expandable, every $D\omega$-cover of  $X$  has a point-finite open refinement.
 }
 
 \begin{proof}
-Suppose that  $X$  is discretely almost expandable and that 
-$\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ is a $\mathcal{D}\omega$-cover of  $X$ . 
-Let $\mathscr{F} = \bigcup_n \mathscr{F}_n$ be a refinement of $\mathscr{U}$ 
+Suppose that  $X$  is $\lambda$-discretely almost expandable and that 
+$\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ is a $D\omega$-cover of  $X$ . 
+Let $\mathscr{F} = \bigcup_{n<\omega} \mathscr{F}_n$ be a refinement of $\mathscr{U}$ 
 such that each $\mathscr{F}_n = \{F_{n,\alpha} : \alpha \in \lambda\}$ 
-is a discrete closed family of subsets of  $X$ , and $\dots$ is closed in  $X$  
-for each $m, n$.
+is a discrete closed family of subsets of  $X\setminus\bigcup_{i<n}(\bigcup \mathscr{F}_i)$
+with $F_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$, 
+and $\bigcup_{i<n}(\bigcup \mathscr{F}_i)$ is closed in  $X$  
+for each $n >0$.
+
+Claim. For each $n < \omega$ there is a point-finite family $\mathscr{V}_n = \{V_{n,\alpha} : \alpha < \lambda\}$ of open sets in $\mathscr{X}$ such that for each $n < \omega$,
+(i) $V_{n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$,
+(ii) $\bigcup_{i \le n} (\bigcup \mathscr{V}_i) \subset \bigcup_{i \le n} (\bigcup \mathscr{U}_i)$ and
+(iii) $\dots$
+
+**Proof.** We use induction on $n$. Assume $\mathscr{V}_0 = \{ \dots \}$ and $\mathscr{U}_0 = \{ \dots \}$. Let $n \ge 1$ and suppose that for each $i \le n$ the point-finite open family $\mathscr{V}_i = \{V_{i,\alpha} : \alpha < \lambda\}$ in $\mathscr{X}$ has been constructed and the conditions $(i)_i - (iii)_i$ are satisfied.
+
+Then $(i)_{n+1} \rightarrow \dots$
+$\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \subset \bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \dots$ Let $L = \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
+For each $\alpha < \lambda$, $F_{n+1,\alpha} - L \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$. Since $\mathscr{U}_{n+1}/(\mathscr{X}-L)$ is a point-finite discrete closed family in $\mathscr{X}$, there is a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha} : \alpha < \lambda\}$ in $\mathscr{X}$ such that
+$F_{n+1,\alpha} - L \subset V_{n+1,\alpha} \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$
+for each $\alpha < \lambda$. Then $\bigcup F_{n+1,\alpha} - L \subset \bigcup \mathscr{V}_{n+1} \subset \mathscr{X} - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
+It follows that $\dots$ for each $\dots$ and
+$(\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i)) - (\bigcup_{i \le n} (\bigcup \mathscr{V}_i)) = \dots$, so the conditions $(i)_{n+1}$ and $(iii)_{n+1}$ are satisfied. To see $(ii)_{n+1}$, we show
+$\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \subset \dots \subset \bigcup_{i \le n+1} (\bigcup \mathscr{V}_i)$.
+This completes the induction and the proof of claim.
+
+By the Claim, there is a sequence $\dots$ of point-finite families of open sets in $\mathscr{X}$ such that $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is an open refinement of $\mathscr{U}$. For each $x \in \mathscr{X}$, there is $m < \omega$ such that $x \in \bigcup \mathscr{V}_m$.
+For each $k \ge m$, $\dots$
+$\mathscr{W}_x = \bigcap_{n=m}^{\infty} \operatorname{ind}(\mathscr{V}_n)_{x_0}$,
+so by $(ii)$ $\dots$ Thus $\operatorname{ind}$ is point-finite.
 \end{proof}
 
 
