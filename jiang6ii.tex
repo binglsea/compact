@@ -149,9 +149,9 @@ Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
 \textsc{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ is a $\theta$-sequence, so (ii) holds.
 
 \textsc{Proof of Claim 2}. Let $x \in X$. There exists $m \ge 1$ such that 
-$x \in \bigcup_{i \le m}(\bigcup \mathscr{B}_i)$. By Condition (4), there is $k_0(x)<\omega$ 
+$x \in \bigcup_{i \le m}(\bigcup \mathscr{B}_i)$. By Condition (4), there exists $k_0(x)<\omega$ 
 such that $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$ is finite; there exists $k_1 <\omega$ 
-such that $\operatorname{ind}(\mathscr{V}(k_1(x)))_x$ is finite, $\dots$; there is $k_{m-1}$ 
+such that $\operatorname{ind}(\mathscr{V}(k_1(x)))_x$ is finite, $\dots$; there exists $k_{m-1}$ 
 such that $\operatorname{ind}(\mathscr{V}(k_{m-1}(x)))_x$ is finite. 
 For all $i \ge m$, let $k_i = 0$.  Then
 \begin{gather*}
@@ -171,7 +171,7 @@ countable closed cover $\{\mathscr{F}_n: n <\omega\}$ such that for each $n < \o
 $\mathscr{U}|{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in subspace $F_n$. 
 Since $\mathscr{U}$ is directed, $\mathscr{V}_n$ is an interior-preserving point-star refinement of 
 $\mathscr{U}\vert{}_{F_n}$ in subspace $F_n$. By Lemma \ref{lem:5.1.6}, 
-$\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a closed refinement of $\mathscr{U}$.
+$\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a closed refinement of $\mathscr{U}$.
 
 $(iii) \Rightarrow (iv)$ is clear.
 
@@ -198,11 +198,11 @@ $\dot{F}$-refining sequence by semi-open covers of $X$.
 }
 
 \begin{proof}
-(i) $\Rightarrow$ (ii): By Theorem 6.1.2, if $\mathscr{U}$ is an open cover, then there is a $\sigma$-sequence of open refinements of $\mathscr{U}$, which is a pointwise refining sequence for $\mathscr{U}$ by semi-open covers of $X$.
+(i) $\Rightarrow$ (ii): By Theorem 6.1.2, if $\mathscr{U}$ is an open cover, then there exists a $\sigma$-sequence of open refinements of $\mathscr{U}$, which is a pointwise refining sequence for $\mathscr{U}$ by semi-open covers of $X$.
 
 (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv): Clear.
 
- (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}$ be an IP directed 
+ (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}$ be an interior-preserving directed 
  $A\omega$ $($or $D\omega)$-cover of $X$. Then $\mathscr{U}$ has a 
  point-star refining 
  sequence of semi-open covers. By Theorem \ref{th:4.1.9}, $\mathscr{U}$ has a 
@@ -234,25 +234,34 @@ For any $X$, the following are equivalent:
 \textup{(i)} $X$ is $\lambda$-submetacompact.
 
 \textup{(ii)} For every open $\lambda$-cover $\mathscr{U}$ of $X$, there exists
- a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an IP open pointwise refinement in the subspace $F_n$.
+ a countable closed cover $\mathscr{F} = \{F_n: n < \omega\}$ of $X$ such that for 
+ each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an interior-preserving 
+ open pointwise $W$-refinement in subspace $F_n$.
 
+\textup{(iii)} For every directed open $\lambda$-cover of $X$, there exists a countable closed cover $\mathscr{F} = \{F_n: n < \omega\}$ of $X$ such that for each 
+$n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an interior-preserving open point-star 
+refinement in subspace $F_n$.
 
-\textup{(iii)} For every directed open $\mathscr{A}\omega$-cover of $X$, there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has an IP open point-star refinement in $F_n$.
-
-
-(iv) For every IP directed open $\mathscr{A}\omega$-cover of $X$, there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement in $F_n$.
+(iv) For every interior-preserving directed open $\lambda$-cover of $X$, there exists a 
+countable closed cover $\mathscr{F} = \{F_n: n < \omega\}$ of $X$ such that for each 
+$n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement 
+in subspace $F_n$.
 }
 
 \begin{proof} 
-(i) $\Rightarrow$ (ii): By Theorem 3.1.5.
+(i) $\Rightarrow$ (ii): By Theorem \ref{th:3.1.5}.
 
 (ii) $\Rightarrow$ (iii): Clear.
 
-(iii) $\Rightarrow$ (iv): By Lemma 4.1.6.
+(iii) $\Rightarrow$ (iv): By Lemma \ref{lem:4.1.6}.
 
-(iv) $\Rightarrow$ (i): Let $\mathscr{U}$ be an IP directed open $\mathscr{A}\omega$-cover of $X$. By (iv), there is a countable closed cover $\mathscr{F}$ of $X$ such that for each $n < \omega$, $\mathscr{U}\vert{}_{F_n}$ has a CP closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a $\sigma$-closed refinement of $\mathscr{U}$. By Theorem 4.1.7, $X$ is submetacompact.
-
-We use induction on $n$. For each $n \ge 1$ and each index, the family has been constructed such that the required conditions are satisfied. Let us define the open expansions and sequences such that for each step, the properties hold true and the resulting refinement satisfies the necessary covering properties.
+(iv) $\Rightarrow$ (i): Let $\mathscr{U}$ be an interior-preserving directed open 
+$\lambda$-cover of $X$. By (iv), there exists a countable closed cover 
+$\mathscr{F}= \{F_n: n < \omega\}$ of $X$ such that for each $n < \omega$, 
+$\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ 
+in the closed subspace $F_n$. Then $\bigcup_{n < \omega}\mathscr{F}_n$ is a 
+$\sigma$-closure-preserving closed refinement of $\mathscr{U}$. 
+By Theorem \ref{th:4.1.7}, $X$ is $\lambda$-submetacompact.
 \end{proof}
 
 
