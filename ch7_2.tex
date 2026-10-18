@@ -9,19 +9,43 @@
 {\definition{\label{def:7.2.1}} 
 Let $X$ be a space and $\mathscr{U}, \mathscr{V}$ be covers of $X$.
 
-\textup{(i)} $\mathscr{V}$ is a local $\omega$-refinement of $\mathscr{U}$ at $x \in X$ if there is $A \in \mathscr{T}(x)$ and $V \in \mathscr{V}$ such that...
+\textup{(i)} $\mathscr{V}$ is a 
+\uwave{local $W$-refinement}
+\index{local $W$-refinement| \S\ref{def:7.2.1}\hfill}
+of $\mathscr{U}$ at $x \in X$ if there exists $G \in \operatorname{top}(x)$ and 
+$F\in[\Delta]^{<\omega}$ such that $(\mathscr{V})_G$ refines $\{U_\alpha: \alpha \in F\}$.
 
-\textup{(ii)} $\mathscr{V}$ is a local star-refinement of $\mathscr{U}$ at $x$ if there is $F \in \mathscr{C}(x)$ such that...
+\textup{(ii)} $\mathscr{V}$ is a 
+\uwave{local star $\overset{\star}{F}$-refinement}
+\index{local star $\overset{\star}{F}$-refinement| \S\ref{def:7.2.1}} 
+of $\mathscr{U}$ at $x$ if there exists  $F\in[\Delta]^{<\omega}$ such that
 
-$\mathscr{V}$ is a local $\omega$-refinement (local star-refinement) of $\mathscr{U}$ iff $\mathscr{V}$ is a local $\omega$-refinement (local star-refinement) of $\mathscr{U}$ at each $x \in X$.
+\quad \textup{(a)} $\operatorname{st}(x, \mathscr{V}) \subset 
+\operatorname{st}(x, \{U_\alpha: \alpha\in F\})$,
 
-A sequence of covers $\langle\mathscr{V}_n\rangle$ is a local $\omega$-refining sequence (local star-refining sequence) for $\mathscr{U}$ if for each $x \in X$ there is $n < \omega$ such that $\mathscr{V}_n$ is a local $\omega$-refinement (local star-refinement) of $\mathscr{U}$ at $x$.
+\quad \textup{(b)} $\exists \, W \in \operatorname{top}(x) \, 
+\forall \, G\in \operatorname{top}(x)$,
+$$G\subset W \Rightarrow \operatorname{st}(G, \mathscr{V}) \subset 
+\operatorname{st}(G, \{U_\alpha: \alpha\in F\}).$$
+
+\textup{(iii)} $\mathscr{V}$ is a 
+\uwave{local $W$-refinement}
+ $($ or \uwave{local star $\overset{\star}{F}$-refinement}$)$ of $\mathscr{U}$ 
+ if $\mathscr{V}$ is a local $W$-refinement (or local star-refinement) of $\mathscr{U}$ 
+ at each $x \in X$.
+
+A sequence of covers $\{\mathscr{V}_n: n < \omega\}$ is a 
+local $W$-refining sequence 
+$($or local star $\overset{\star}{F}$-refining sequence$)$ for $\mathscr{U}$ 
+if for each $x \in X$ there exists $m < \omega$ such that $\mathscr{V}_m$ is a 
+local $W$-refinement $($or local star$\overset{\star}{F}$-refinement$)$ of $\mathscr{U}$ at $x$.
 }
 
 
-{\lemma{} \label{lem:7.2.2}Let $\mathscr{U}, \mathscr{V}$ be covers of $X$.
+{\lemma{} \label{lem:7.2.2}
+Let $\mathscr{U}, \mathscr{V}$ be covers of $X$.
 
-\textup{(i)} If $\mathscr{V}$ is a local $\omega$-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a local star-refinement of $\mathscr{U}$ at $x$.
+\textup{(i)} If $\mathscr{V}$ is a local $W$-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a local star $\overset{\star}{F}$-refinement of $\mathscr{U}$ at $x$.
 
 
 \textup{(ii)} If $\mathscr{V}$ is a local star-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a point-star refinement of $\mathscr{U}$ at $x$.
