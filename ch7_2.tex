@@ -81,25 +81,74 @@ of $\mathscr{U}$ at $x$.
 {\theorem{} \label{th:7.2.3}
 7.2.3. Theorem. For any $X$, the following are equivalent:
 
-\textup{(i)} $X$ is $\sigma$-expandable.
+\textup{(i)} $X$ is $\lambda$-expandable.
 
-\textup{(ii)}  Every $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a LF open refinement.
+\textup{(ii)}  Every $A\omega^2$ $\lambda$-cover of $X$ has a locally finite open refinement.
 
-\textup{(iii)} Every $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has an IP open local-star $\omega$-refinement.
-
-
-\textup{(iv)} Every directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has an IP open local-star $\omega$-refinement.
+\textup{(iii)} Every $A\omega^2$ $\lambda$-cover of $X$ has an interior-preserving 
+open local-star $\overset{*}{F}$-refinement.
 
 
-\textup{(v)}  Every IP directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a semi-open local-star refinement.
+\textup{(iv)} Every directed $A\omega^2$ $\sigma$-cover of $X$ has 
+an interior-preserving open local-star refinement.
 
 
-\textup{(vi)}  Every directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a CP closed refinement $\mathcal{F}$ such that $\mathscr{F}$ covers $X$.
+\textup{(v)}  Every interior-preserving directed $A\omega^2$ 
+$\lambda$-cover of $X$ has a semi-open local-star refinement.
 
 
-\textup{(vii)}  Every IP directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a cushioned open refinement.
+\textup{(vi)}  Every directed $A\omega^2$ $\lambda$-cover of $X$ 
+has a closure-preserving closed refinement $\mathscr{F}$ such that 
+$\mathscr{F}^\circ$ covers $X$.
+
+
+\textup{(vii)}  Every interior-preserving directed $A\omega^2$ 
+$\lambda$-cover of $X$ has a cushioned open refinement.
 }
 
+**Proof.**
+
+* (i) $\Rightarrow$ (ii): By Lemma 7.1.1.
+
+
+* (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) and (vii) $\Rightarrow$ (iii): Clear. By Theorem 4.1.9.
+
+
+* (iv) $\Rightarrow$ (vi): By Lemma 4.1.6.
+
+
+* (vii) $\Rightarrow$ (i): Suppose $\mathcal{B}$ is a LF $\sigma$-family of subsets of $\mathscr{X}$. The induced cover $\mathcal{B}(\mathscr{F})$ is an IP directed $\mathcal{A}\omega$ ($\mathcal{D}\omega$)-$\sigma$-cover of $\mathscr{X}$. By (vii), $\mathcal{B}$ has a cushioned open refinement. By Lemma 1.2.3, $\mathcal{B}$ has a LF open expansion, so $\mathscr{X}$ is $\sigma$-expandable.
+
+
+{\corollary{} \label{cor:7.2.4}
+7.2.4. **Corollary.** Any $\sigma$-paracompact space is $\sigma$-expandable.
+}
+
+{\theorem{} \label{th:7.2.5}
+7.2.5. **Theorem.** For any $\mathscr{X}$, the following are equivalent:
+
+* (i) $\mathscr{X}$ is $\sigma$-expandable.
+
+
+* (ii) Every directed $\mathcal{A}\omega$ ($\mathcal{D}\omega$)-cover of $\mathscr{X}$ has a CP closed refinement $\mathcal{F}$ such that $\mathcal{F}$ covers $\mathscr{X}$.
+
+
+* (iii) Every IP directed $\mathcal{A}\omega$ ($\mathcal{D}\omega$)-cover of $\mathscr{X}$ has a CP closed refinement $\mathcal{F}$ such that $\mathcal{F}$ covers $\mathscr{X}$.
+
+
+* (iv) Every IP directed $\mathcal{A}\omega$ ($\mathcal{D}\omega$)-cover of $\mathscr{X}$ has a $\sigma$-cushioned open refinement.
+}
+
+
+**Proof.**
+
+* (i) $\Rightarrow$ (ii): By Theorem 7.2.3.
+
+
+* (ii) $\Rightarrow$ (iii): Clear.
+
+
+* Assume (iv) and let $\mathcal{B}$ be a $\sigma$-family...
 
 
 \end{document}
