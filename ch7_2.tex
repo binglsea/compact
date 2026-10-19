@@ -16,40 +16,90 @@ of $\mathscr{U}$ at $x \in X$ if there exists $G \in \operatorname{top}(x)$ and
 $F\in[\Delta]^{<\omega}$ such that $(\mathscr{V})_G$ refines $\{U_\alpha: \alpha \in F\}$.
 
 \textup{(ii)} $\mathscr{V}$ is a 
-\uwave{local star $\overset{*}{F}$-refinement}
-\index{local star $\overset{*}{F}$-refinement| \S\ref{def:7.2.1}} 
+\uwave{local-star $\overset{*}{F}$-refinement}
+\index{local-star $\overset{*}{F}$-refinement| \S\ref{def:7.2.1}} 
 of $\mathscr{U}$ at $x$ if there exists  $F\in[\Delta]^{<\omega}$ such that
 
 \quad \textup{(a)} $\operatorname{st}(x, \mathscr{V}) \subset 
 \operatorname{st}(x, \{U_\alpha: \alpha\in F\})$,
 
 \quad \textup{(b)} $\exists \, W \in \operatorname{top}(x) \, 
-\forall \, G\in \operatorname{top}(x)$,
+\forall \, G\in \operatorname{top}(x)$
 $$G\subset W \Rightarrow \operatorname{st}(G, \mathscr{V}) \subset 
 \operatorname{st}(G, \{U_\alpha: \alpha\in F\}).$$
 
 \textup{(iii)} $\mathscr{V}$ is a 
-\uwave{local $W$-refinement}
- $($ or \uwave{local star $\overset{*}{F}$-refinement}$)$ of $\mathscr{U}$ 
- if $\mathscr{V}$ is a local $W$-refinement (or local star-refinement) of $\mathscr{U}$ 
+\uwave{local\, $W$-refinement}
+ $($ or \uwave{local-star $\overset{*}{F}$-refinement}$)$ of $\mathscr{U}$ 
+ if $\mathscr{V}$ is a local $W$-refinement $($or local-star refinement$)$ of $\mathscr{U}$ 
  at each $x \in X$.
 
 A sequence of covers $\{\mathscr{V}_n: n < \omega\}$ is a 
-local $W$-refining sequence 
-$($or local star $\overset{*}{F}$-refining sequence$)$ for $\mathscr{U}$ 
+\uwave{local $W$-refining sequence}
+\index{local $W$-refining sequence| \S\ref{def:7.2.1}\hfill}
+$($or 
+\uwave{local-star $\overset{*}{F}$-refining sequence}$)$ 
+\index{local-star $\overset{*}{F}$-refining sequence| \S\ref{def:7.2.1}\hfill}
+for $\mathscr{U}$ 
 if for each $x \in X$ there exists $m < \omega$ such that $\mathscr{V}_m$ is a 
-local $W$-refinement $($or local star$\overset{*}{F}$-refinement$)$ of $\mathscr{U}$ at $x$.
+local $W$-refinement $($or local-star$\overset{*}{F}$-refinement$)$ of $\mathscr{U}$ at $x$.
 }
 
 
 {\lemma{} \label{lem:7.2.2}
 Let $\mathscr{U}, \mathscr{V}$ be covers of $X$.
 
-\textup{(i)} If $\mathscr{V}$ is a local $W$-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a local star $\overset{*}{F}$-refinement of $\mathscr{U}$ at $x$.
+\textup{(i)} If $\mathscr{V}$ is a local $W$-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a local-star $\overset{*}{F}$-refinement of $\mathscr{U}$ at $x$.
 
 
-\textup{(ii)} If $\mathscr{V}$ is a local star-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a point-star refinement of $\mathscr{U}$ at $x$.
+\textup{(ii)} If $\mathscr{V}$ is a local-star $\overset{*}{F}$-refinement of $\mathscr{U}$ at $x$, then $\mathscr{V}$ is a point-star $\dot{F}$-refinement of $\mathscr{U}$ at $x$.
 }
+
+\begin{proof}
+Let $\mathscr{U}=\{U_\alpha: \alpha \in \Delta\}$.
+
+(i)  Assume that $\mathscr{V}$ is a local $W$-refinement of 
+$\mathscr{U}$ at $x$. there exists $W \in \operatorname{top}(x)$ and 
+$F\in [\Delta]^{<\omega}$ such that $(\mathscr{V})_W$ refines $\{U_\alpha: \alpha \in F\}$. Then 
+$\operatorname{st}(x, \mathscr{V}) \subset \operatorname{st}(x, \{U_\alpha: \alpha \in F\})$. 
+If $G \in \operatorname{top}(x)$ with $G \subset W$, then 
+$\operatorname{st}(G, \mathscr{V}) \subset \operatorname{st}(G, \{U_\alpha: \alpha \in F\})$, 
+ so $\mathscr{V}$ is a local-star $\overset{*}{F}$-refinement of $\mathscr{U}$ at $x$.
+
+(ii) If $\mathscr{V}$ is a local-star $\overset{*}{F}$-refinement of $\mathscr{U}$ at $x$, 
+then there exists $F\in [\Delta]^{<\omega}$ such that 
+$\operatorname{st}(x, \mathscr{V}) \subset \operatorname{st}(x, \{U_\alpha: \alpha \in F\})$. 
+For each 
+$y \in \operatorname{st}(x, \mathscr{V})$, there exists $\alpha(y)\in F$ such that 
+$x, y\in U_{\alpha(y)}$. Let $F' = \{\alpha(y) : y \in \operatorname{st}(x, \mathscr{V})\}$. 
+Then $F' \subset F$, $x \in \bigcap_{\beta\in F'} U_\beta$ and 
+$\operatorname{st}(x, \mathscr{V})\subset \bigcup_{\beta\in F'}U_\beta$. 
+Hence $\mathscr{V}$ is a point-star $\dot{F}$-refinement 
+of $\mathscr{U}$ at $x$.
+\end{proof}
+
+{\theorem{} \label{th:7.2.3}
+7.2.3. Theorem. For any $X$, the following are equivalent:
+
+\textup{(i)} $X$ is $\sigma$-expandable.
+
+\textup{(ii)}  Every $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a LF open refinement.
+
+\textup{(iii)} Every $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has an IP open local-star $\omega$-refinement.
+
+
+\textup{(iv)} Every directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has an IP open local-star $\omega$-refinement.
+
+
+\textup{(v)}  Every IP directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a semi-open local-star refinement.
+
+
+\textup{(vi)}  Every directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a CP closed refinement $\mathcal{F}$ such that $\mathscr{F}$ covers $X$.
+
+
+\textup{(vii)}  Every IP directed $A\omega$ ($D\omega$)-$\sigma$-cover of $X$ has a cushioned open refinement.
+}
+
 
 
 \end{document}
