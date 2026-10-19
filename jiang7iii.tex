@@ -102,21 +102,37 @@ $\mathscr{F}_0 = \{ \emptyset \}$ and let $\mathscr{V}_0 = \{ \emptyset \}$.
 Let $n \ge 1$ and suppose that for each $i \le n$ the point-finite open family 
 $\mathscr{V}_i = \{V_{i,\alpha} : \alpha < \lambda\}$ in $X$ has been constructed and Conditions
 (i)\textsubscript{$i$} -- (iii)\textsubscript{$i$} are satisfied.
+Then $\bigcup_{i < n+1} (\bigcup \mathscr{F}_i) \subset \bigcup_{i < n+1} (\bigcup \mathscr{V}_i)$. 
+Let $L = \bigcup_{i < m+1} (\bigcup \mathscr{V}_i)$.
+For each $\alpha < \lambda$, 
+$F_{n+1,\alpha} \setminus L \subset 
+U_\alpha \setminus \bigcup_{i < n+1} (\bigcup \mathscr{F}_i)$. 
+Since $\mathscr{F}_{n+1}|_{(X-L)}$ is a point-finite discrete closed family in $X$,  there exists a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha} : \alpha < \lambda\}$ in $X$ 
+such that
+$$F_{n+1,\alpha} \setminus L \subset 
+  V_{n+1,\alpha} \subset 
+  U_\alpha - \bigcup_{i < n+1} (\bigcup \mathscr{F}_i) \text { for each } \alpha < \lambda.$$
+Then $\bigcup \mathscr{F}_{n+1} -\setminus L 
+\subset \bigcup \mathscr{V}_{n+1} \subset 
+X - \bigcup_{i < n+1} (\bigcup \mathscr{F}_i)$.
+It follows that $V_{n+1, \alpha}\subset U_\alpha$ for each $\alpha < \lambda$ and
+$(\bigcup_{i < n+1} (\bigcup \mathscr{F}_i))\bigcap (\bigcup\mathscr{V}_{n+1}) = \emptyset$, 
+so the Conditions (i)\textsubscript{$n+1$}$ and $(iii)\textsubscript{$n+1$}
+are satisfied. To see (ii)\textsubscript{$n+1$}, we have
+$$\bigcup_{i \le n+1} \left(\bigcup \mathscr{F}_i\right) 
+\subset L \cup\left(\bigcup\mathscr{F}_{n+1}\right)
+\subset L \cup\left(\bigcup\mathscr{F}_{n+1}\setminus L\right) 
+ \subset \bigcup_{i \le n+1} \left(\bigcup \mathscr{V}_i\right).$$
+This completes the induction and the proof of \textsc{Claim}.
 
-Then $(i)_{n+1} \rightarrow \dots$
-$\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \subset \bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \dots$ Let $L = \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
-For each $\alpha < \lambda$, $F_{n+1,\alpha} - L \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$. Since $\mathscr{U}_{n+1}/(X-L)$ is a point-finite discrete closed family in $X$,  there exists  is a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha} : \alpha < \lambda\}$ in $X$ such that
-$F_{n+1,\alpha} - L \subset V_{n+1,\alpha} \subset U_\alpha - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$
-for each $\alpha < \lambda$. Then $\bigcup F_{n+1,\alpha} - L \subset \bigcup \mathscr{V}_{n+1} \subset X - \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$.
-It follows that $\dots$ for each $\dots$ and
-$(\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i)) - (\bigcup_{i \le n} (\bigcup \mathscr{V}_i)) = \dots$, so the conditions $(i)_{n+1}$ and $(iii)_{n+1}$ are satisfied. To see $(ii)_{n+1}$, we show
-$\bigcup_{i \le n+1} (\bigcup \mathscr{V}_i) \subset \dots \subset \bigcup_{i \le n+1} (\bigcup \mathscr{V}_i)$.
-This completes the induction and the proof of claim.
-
-By the Claim,  there exists a sequence $\dots$ of point-finite families of open sets in $X$ such that $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is an open refinement of $\mathscr{U}$. For each $x \in X$,  there exists $m < \omega$ such that $x \in \bigcup \mathscr{V}_m$.
-For each $k \ge m$, $\dots$
-$\mathscr{W}_x = \bigcap_{n=m}^{\infty} \operatorname{ind}(\mathscr{V}_n)_{x_0}$,
-so by $(ii)$ $\dots$ Thus $\operatorname{ind}$ is point-finite.
+By the \textsc{Claim},  there exists a sequence $\{\mathscr{V}_n: n < \omega\}$ of 
+point-finite families of open sets in $X$ such that 
+$\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is an open refinement of $\mathscr{U}$. 
+For each $x \in X$,  there exists $m < \omega$ such that $x \in \bigcup \mathscr{F}_m$.
+For each $k > m$, $x\in \bigcup_{i < k} \left(\bigcup \mathscr{F}_i\right)$,
+so by (ii), $x\notin \bigcup\mathscr{V}_k$. Thus 
+$\operatorname{ind}(\mathscr{V})_x\subset  
+\bigcup_{i=0}^{m} \operatorname{ind}(\mathscr{V}_i)_x$ is point-finite.
 \end{proof}
 
 
