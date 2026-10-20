@@ -255,7 +255,9 @@ For any  $X$ the following are equivalent:
  	\text{ for all } \alpha < \lambda. \label{eq:7.2.6.claim1.1}
  \end{gather}
 
- Proof of Property \eqref{eq:7.2.6.claim1.1}.  Since $\omega^{ < \omega} = \bigcup_{n <\omega}\omega^n$, we use induction on $n < \omega$. 
+ \textsc{Proof of Claim 1}. 
+ %Property \eqref{eq:7.2.6.claim1.1}.  
+ Since $\omega^{ < \omega} = \bigcup_{n <\omega}\omega^n$, we use induction on $n < \omega$. 
  For $n = 0$, let $V(\emptyset, \alpha) = \emptyset$ and  
  $V(\emptyset, \lambda+\alpha) = \emptyset$ 
  for all $\alpha<\lambda$, and 
@@ -267,7 +269,7 @@ For any  $X$ the following are equivalent:
 For any $t \in \omega^{n+1}$, there exists a unique $s\omega^n$ and $k$ such that $t=s\oplus k$. 
 By (iii) and the inductive hypothesis, $\mathscr{V}(s)$ 
 has a local-star $\overset{*}{F}$-refining sequence 
-$\{\mathscr{W}_s(s): n < \omega\}$ by semi-open covers of  $X$. 
+$\{\mathscr{W}_n(s): n < \omega\}$ by semi-open covers of  $X$. 
 We use Junnila's following construction in the proof of Theorem \ref{th:5.1.2}. 
 For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambda$, let $\dots$.
 \begin{gather}
@@ -278,16 +280,24 @@ V(t, \lambda+ \alpha) = U_\alpha \cap (\cup_{\beta> \lambda+\alpha}V(s, \beta))
   \cap\operatorname{st}(X\setminus \cup_{\beta < \lambda+\alpha}V(s, \beta),
   \mathscr{W}_k(s))^\circ) \label{eq:7.2.6.claim1.3} 
 \end{gather}
+Let $\mathscr{V}(t) =  \{V(t, \beta) : \beta < \lambda\cdot 2\}$. 
+ Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \alpha + \lambda) \subset U_\alpha$.
+Then each open family $\mathscr{V}(t)$ covers  $X$. This completes the proof of \textsc{Claim 1}.
 
-  Clearly, $\dots$
+%\textsc{Statement (1)} For each $x$, there exist sequences $\{s_n: n < \omega\}$ in $\omega^n$ and $\dots$ 
+\textsc{Statement (1)} For each $x$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
+in $\omega$ with $s_{n+1} = s_n\oplus k_n$ such that for each $n < \omega$, there exists a 
+semi-open local-star $\overset{*}{F}$-refinement $\mathscr{W}_{k_n}(s_n)$ of 
+ $\mathscr{V}(s_n)$ at $x$.
 
-  Let $\dots$. Then each open family $\mathscr{V}(s)$ covers  $X$. This completes the proof of Claim 1.
-
-
-  (1) For each $x$, there are sequences $\dots$ and $\dots$ such that for each $n < \omega$, there exists a semi-open local star refinement $\dots$ at $x$.
-
-
-   Proof.  By claims and hypothesis (iii), for each $\dots$ there exists a local star $\mathscr{F}$-refining sequence $\dots$ where each $\mathscr{W}_n$ is a semi-open cover of  $X$. Suppose $\dots$. Let $S_0 = \emptyset$. there exists $\dots$ such that $\dots$ is a local star $\mathscr{F}$-refinement of $\dots$ at $x$. Let $s_1 = s_0 \frown k_0$. Suppose that $\dots$ have been defined for all $\dots$. Let $s_{n+1} = s_n \frown k_n$. there exists $\dots$ such that $\dots$ is a semi-open local star $\mathscr{F}$-refinement of $\dots$ at $x$. By induction, (1) holds.
+Proof.  By claims and hypothesis (iii), for each $\dots$ there exists a local star 
+$\mathscr{F}$-refining sequence $\dots$ where each $\mathscr{W}_n$ 
+is a semi-open cover of  $X$. Suppose $\dots$. Let $S_0 = \emptyset$. 
+there exists $\dots$ such that $\dots$ is a local star $\mathscr{F}$-refinement 
+of $\dots$ at $x$. Let $s_1 = s_0 \frown k_0$. Suppose that $\dots$ have 
+been defined for all $\dots$. Let $s_{n+1} = s_n \frown k_n$. there exists 
+$\dots$ such that $\dots$ is a semi-open local star $\mathscr{F}$-refinement 
+of $\dots$ at $x$. By induction, (1) holds.
 
 
    Claim 2.  $\dots$ is a $\sigma$-sequence of open $\dots$.
