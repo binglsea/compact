@@ -215,30 +215,61 @@ $X$ is $\lambda$-paracompact iff  $X$ is $\lambda$-$\theta^*$-refinable.
 \begin{proof}
 $(\Rightarrow)$ Clear. 
 
-$(\Leftarrow)$ Suppose  $X$ is $\sigma$-expandable. Suppose  $X$ is $\sigma$-$\mathscr{A}\omega$-refinable. By Corollary 7.2.9,  $X$ is $\sigma$-expandable. Since  $X$ is $\sigma$-submetacompact, by Corollary 8.2.12,  $X$ is $\sigma$-paracompact.
+$(\Leftarrow)$ Suppose  $X$ is $\lambda$-$\theta^*$-refinable.  By Corollary \ref{cor:8.2.9},  % TO_DO
+$X$ is $\lambda$-expandable. Since  $X$ is $\lambda$-submetacompact, by Corollary \ref{cor:8.2.12},  
+$X$ is $\lambda$-paracompact.
 \end{proof}
 
 {\theorem{} \label{th:7.2.10}
-7.2.10.  Theorem (Jiang (1987)).  For any  $X$ the following are equivalent:
+\textup{([Jiang 1987b]\textsuperscript{\cite{Jiang1987b}})}.   
+For any  $X$ the following are equivalent:
 
-  (i)  $X$ is $\sigma$-paracompact.
-  (ii) Every open cover of  $X$ has a semi-open local-star $\mathscr{F}$-refinement.
-  (iii) Every open $\sigma$-cover of  $X$ has a local-star $\mathscr{F}$-refining sequence by semi-open covers of  $X$.
+\textup{(i)}   $X$ is $\lambda$-paracompact.
+
+\textup{(ii)}  Every open $\lambda$-cover of  $X$ has a semi-open local-star $\overset{*}{F}$-refinement.
+
+\textup{(iii)}   Every open $\lambda$-cover of  $X$ has a local-star $\overset{*}{F}$-refining sequence by semi-open covers of  $X$.
 }
 
+\begin{proof}
+(i) $\Rightarrow$ (ii) $\Rightarrow$ (iii). Clear.
 
- \begin{proof}
+(iii) $\Rightarrow$ (i). We give two proofs.
 
-  (i) $\Rightarrow$ (ii). Clear.
-  (ii) $\Rightarrow$ (iii). We give two proofs.
+ Proof I (indirect).  Assume (iii). By Lemma \ref{lem:7.2.2} and Theorem \ref{th:4.1.2},  
+ $X$ is $\lambda$-submetacompact. Suppose now that $\mathscr{U}$ is an interior-preserving 
+ directed $A\omega^2$ $\lambda$-cover of  $X$. Let $\{\mathscr{V}_n: n < \omega\}$ be a 
+ local-star $\overset{*}{F}$-refining sequence for $\mathscr{U}$ by semi-open covers of  $X$, 
+ then $\{\mathscr{V}_n: n < \omega\}$ is a local-star refining sequence for $\mathscr{U}$. 
+ By Theorem \ref{th:7.2.6},  $X$ is $\lambda$-expandable. It follows from Corollary \ref{cor:7.2.8},  
+ $X$ is paracompact.
 
- Proof (indirect).  Assume (iii). By Lemma 7.2.2 and Theorem 4.1.2,  $X$ is $\sigma$-submetacompact. Suppose now that $\mathscr{U}$ is an interior-preserving directed $A\omega^2$ $\sigma$-cover of  $X$. Let $\dots$ be a local star $\mathscr{F}$-refining sequence for $\mathscr{U}$ by semi-open covers of  $X$, then $\dots$ is a local star refining sequence for $\mathscr{U}$. By Theorem 7.2.6,  $X$ is expandable. It follows from Corollary 7.2.8,  $X$ is paracompact.
+ Proof II (direct).  Assume (iii). We show that  $X$ is $\lambda$-$\theta^*$-refinable, 
+ then by Theorem \ref{th:7.2.9},  $X$ is $\lambda$-paracompact. To this end, let 
+ $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ be an open cover of  $X$. We have the following 
+ 
+ \textsc{Claim 1}. For each $t \in \omega^{ < \omega}$ there exists an open $\lambda$-cover 
+ $\mathscr{V}(t) =\{V(t, \beta): \beta < \lambda\cdot 2\}$ of  $X$ such that 
+ \begin{gather}
+ 	V(t, \alpha) \subset U_\alpha, V(t, \alpha + \lambda) \subset U_\alpha 
+ 	\text{ for all } \alpha < \lambda. \label{eq:7.2.6.claim1.1}
+ \end{gather}
 
- Proof (direct).  Assume (iii). We show that  $X$ is $\sigma$-refinable, then by Theorem 7.2.9  $X$ is $\sigma$-paracompact. To this end, let $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ be an open cover of  $X$. We have the following Claims. For each $n < \omega$ there is an open cover $\mathscr{V}_n$ of  $X$ such that $\dots$.
-
- Proof.  Since $\mathscr{U} = \dots$, we use induction on $n < \omega$. For $n = 0$ let $\mathscr{V}(\emptyset, \alpha) = \dots$ and $\dots$ for all $\alpha$, and $\mathscr{V}(\emptyset) = \{\mathscr{V}'(\emptyset, \beta) : \beta < \lambda\}$. Suppose that $n < \omega$ and that the open cover $\mathscr{V}(s) = \dots$ have been constructed for all $s \in \dots$. We need to construct $\mathscr{V}(s)$ for all $s \in \dots$.
-
-For any $t$, there is a unique $s$ and $\dots$. By (iii) and the inductive hypothesis, $\mathscr{V}(s)$ has a local-star $\mathscr{F}$-refining sequence by semi-open covers of  $X$. We use Junnila's following construction in the proof of Theorem 5.1.2. For every $s = s_0 k$ where $\dots$, let $\dots$.
+ Proof of Property \eqref{eq:7.2.6.claim1.1}.  Since $\omega^{ < \omega} = \bigcup_{n <\omega}\omega^n$, we use induction on $n < \omega$. 
+ For $n = 0$, let $V(\emptyset, \alpha) = \emptyset$ and  
+ $V(\emptyset, \lambda+\alpha) = \emptyset$ 
+ for all $\alpha<\lambda$, and 
+ $\mathscr{V}(\emptyset) = \{V(\emptyset, \beta) : \beta < \lambda\cdot 2\}$. 
+ Suppose that $n < \omega$ and that the open cover 
+ $\mathscr{V}(s) =  \{V(s, \beta) : \beta < \lambda\cdot 2\}$ with Property \eqref{eq:7.2.6.claim1.1}
+ have been constructed for all $s \in \omega^n$. 
+ We need to construct $\mathscr{V}(s)$ for all $s \in \omega^{n+1}$.
+For any $t \in \omega^{n+1}$, there exists a unique $s\omega^n$ and $k$ such that $t=s\oplus k$. 
+By (iii) and the inductive hypothesis, $\mathscr{V}(s)$ 
+has a local-star $\overset{*}{F}$-refining sequence 
+$\{\mathscr{W}_s(s): n < \omega\}$ by semi-open covers of  $X$. 
+We use Junnila's following construction in the proof of Theorem \ref{th:5.1.2}. 
+For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambda$, let $\dots$.
 
   (b) $\dots$
 
@@ -249,10 +280,10 @@ For any $t$, there is a unique $s$ and $\dots$. By (iii) and the inductive hypot
   Let $\dots$. Then each open family $\mathscr{V}(s)$ covers  $X$. This completes the proof of Claim 1.
 
 
-  (1) For each $x$, there are sequences $\dots$ and $\dots$ such that for each $n < \omega$, there is a semi-open local star refinement $\dots$ at $x$.
+  (1) For each $x$, there are sequences $\dots$ and $\dots$ such that for each $n < \omega$, there exists a semi-open local star refinement $\dots$ at $x$.
 
 
-   Proof.  By claims and hypothesis (iii), for each $\dots$ there is a local star $\mathscr{F}$-refining sequence $\dots$ where each $\mathscr{W}_n$ is a semi-open cover of  $X$. Suppose $\dots$. Let $S_0 = \emptyset$. There is $\dots$ such that $\dots$ is a local star $\mathscr{F}$-refinement of $\dots$ at $x$. Let $s_1 = s_0 \frown k_0$. Suppose that $\dots$ have been defined for all $\dots$. Let $s_{n+1} = s_n \frown k_n$. There is $\dots$ such that $\dots$ is a semi-open local star $\mathscr{F}$-refinement of $\dots$ at $x$. By induction, (1) holds.
+   Proof.  By claims and hypothesis (iii), for each $\dots$ there exists a local star $\mathscr{F}$-refining sequence $\dots$ where each $\mathscr{W}_n$ is a semi-open cover of  $X$. Suppose $\dots$. Let $S_0 = \emptyset$. there exists $\dots$ such that $\dots$ is a local star $\mathscr{F}$-refinement of $\dots$ at $x$. Let $s_1 = s_0 \frown k_0$. Suppose that $\dots$ have been defined for all $\dots$. Let $s_{n+1} = s_n \frown k_n$. there exists $\dots$ such that $\dots$ is a semi-open local star $\mathscr{F}$-refinement of $\dots$ at $x$. By induction, (1) holds.
 
 
    Claim 2.  $\dots$ is a $\sigma$-sequence of open $\dots$.
