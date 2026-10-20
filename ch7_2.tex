@@ -306,13 +306,13 @@ of $\mathscr{V}(s_{n+1})$  at $x$. Let $s_{n+2} = s_{n+1} \oplus k_{n+1}$. By in
 (1) holds.
 
 \textsc{Claim 2}. 
- $\dots$ is a $\sigma$-sequence of open $\dots$.
+ $\{\mathscr{V}(t): t < \omega^\omega\}$ is a $\theta$-sequence of open refinement of $\mathscr{U}$.
  
- Here is the transcribed text with unnecessary line breaks removed:
- 
- Proos. By Claims. each [is an] open refinement of [ $\mathcal{V}$ ]. 
- To sen[st]het[ic] ( ) is a [sequence], let $x \in E..$ (12, naw [Anew] top [GETOPED GEW], ...) 
- $Evisn :$ $,$. Let $\mathcal{A}_{\xi}, \mathcal{W} \in \mathcal{R},$ $\dots$ DO $\mathcal{W} \subset \mathcal{G},$ and lad $D_{n} = \{$: [$\dots$], new. We have (2) Sot[C]GX, [$\dots$], 
+ Proos. By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of [ $\mathcal{U}$ ]. 
+ To see that $\{\mathscr{V}(t):  t < \omega^\omega\}$ is a $\theta^*$-sequence, 
+ let $x \in X$ By (1), 
+ $Evisn :$ $,$. Let $\mathcal{A}_{\xi}, \mathcal{W} \in \mathcal{R},$ $\dots$ DO $\mathcal{W} \subset \mathcal{G},$ and lad $D_{n} = \{$: [$\dots$], new. 
+ We have (2) Sot[C]GX, [$\dots$], 
  WARISAD C[U]V BED. For each new, For now, let $B_{r} = \max D,$ and let 
  $\beta_{m} = \min\{\beta_{n} : n \angle \emptyset\}.$ (3) If [$\beta$] and 
  [$\beta \to \lambda$], then [$\dots$], $B = \dots$. For 
@@ -361,5 +361,33 @@ For any [$\dots$], the following are equivalent
 \textup{([Wormall 1968]\textsuperscript{\cite{Worrell1968}})}  
 If every open cover of [$\dots$] has an open local $\omega$- [$\dots$] [is] paracompact
 }
+
+
+
+If every open cover of $X$ has an open local $\omega$-refinement, then $X$ is paracompact.
+
+---
+
+{\theorem{} \label{th:7.2.13} 7.2.13 (Jiang [1989a])
+
+A space $X$ is $\kappa$-paracompact if and only if every increasing open $\sigma$-cover of $X$ has a sequence of open refinements.
+}
+
+
+ Proof Outline:
+
+ ($\Rightarrow$): Clear.
+
+
+ ($\Leftarrow$): Assume that every increasing open $\sigma$-cover of $X$ satisfies the condition. For each cardinal $\mu \le \kappa$, let $P_{\mu}$ denote the proposition: "Every open $\mu$-cover of $X$ has a local $\omega$-refining sequence by open covers of $X$".
+
+
+ We use transfinite induction on $\mu$ to show that $P_{\mu}$ holds for each $\mu \le \kappa$.
+
+
+ Once $P_{\kappa}$ holds, it implies the desired result via Corollary 7.2.11.
+
+
+ For the inductive step, suppose $P_{\alpha}$ holds for all $\alpha < \mu$. To show $P_{\mu}$ holds, let $\mathcal{W} = \{W_{\alpha} : \alpha < \mu\}$ be an open cover of $X$. Construct an increasing open $\sigma$-cover $\mathcal{W}'$ of $X$. By hypothesis, there exists a $\sigma$-sequence of open refinements of $\mathcal{W}$. By applying the inductive hypothesis, we obtain a local $\omega$-refining sequence $\mathcal{W}_n$ by open covers of $X$.
 
 \end{document}
