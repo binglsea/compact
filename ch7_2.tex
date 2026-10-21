@@ -465,13 +465,20 @@ Then each $\mathscr{H}_{n,k}$ is an open cover of $X$.
  
  (3) $\text{ind}(\mathscr{V})_m)_{B_0}$ is finite.
 
-For each index, there exist topologies and finite sets such that it refines the neighborhood.
+For each $i = 1, \cdots, p$, by (1), 
+$\exists \, r_i < \omega \exists \, B_i \in \operatorname{top}(x)$ and 
+$\exists \text{ finite } D_i \\alpha_i$ 
+such that 
 
- Let $B = \bigcap_{i=1}^{p} D_i Y_i$ and $q = \max\{p, r_0, \dots, r_p\}$.
 
- The claim holds as $\mathscr{U}_{m,q}$ refines the cover.
+(4)  $(\mathscr{W}_{r_i}(m, d_i))_{B_i}$ refines
+$\{U_\gamma: \gamma \in D_i\} \cup(\bigcup_{r > \alpha_i}V(m, \gamma))$. Let
+$B = \bigcap_{i=1}^{p} D_i, \mathscr{U}' = \{U_\gamma: \gamma\in \bigcup_{i=1}^p D_i\}$,
+ and $q = \max\{p, r_0, \dots, r_p\}$. We have
 
- Continuation of Proof:
+(5) $(\mathscr{H}_{m,q})_B$ refines $\mathscr{U}'$, so  \textsc{Claim} is true.
+
+
  By (4) there exists  a set such that $H = W_{\tilde{\gamma}\tilde{\sigma}}(m, \partial_{\tilde{\nu}}, \beta_{r_3}) \subset \dots$.
 
 
@@ -481,7 +488,7 @@ For each index, there exist topologies and finite sets such that it refines the 
 
 
 {\definition{\label{def:7.2.14}}  
- A family $\mathscr{F} = \{F_\alpha \mid \alpha \in \Delta\}$ is
+ A family $\mathscr{F} = \{F_\alpha: \alpha \in \Delta\}$ is
  \uwave{hereditarily closure-preserving}
 \index{hereditarily closure-preserving| \S\ref{def:7.2.14}\hfill} 
 if every family $\mathscr{F} = \{F_\alpha \mid \alpha \in \Delta\}$ where 
