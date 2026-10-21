@@ -366,12 +366,12 @@ By (5),
 $$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)} = 
 \{\alpha < \lambda: G(x, m) \cap V(s_{m+1}, \alpha) \ne \emptyset\}$$
 If  $\alpha\in \operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)}$, 
-then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$. 
-Since $y\notin \emptyset = V(s_0, \alpha)$. Let $p = \max\{i \le m: y\notin V(s_i, \alpha)\}$.
+then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$,
+since $y\notin \emptyset = V(s_0, \alpha)$. Let $p = \max\{i \le m: y\notin V(s_i, \alpha)\}$.
 Then $y\in V(s_{p+1}, \alpha)\setminus V(s_p, \alpha)$ and $p \le m$.
 Since $s_{p+1}= s_p\oplus k_p$, it follows from (b) % TO_DO
 that there exists $u\in X\setminus\bigcup_{\beta \ne \lambda+ \alpha} V(s_p, \beta)$ such that
-$y \in \operatorname{st}(u, \mathscr{W}_{k_p}(s_p))$. Since $y\in G(x, m) \subset G(x, p)$.
+$y \in \operatorname{st}(u, \mathscr{W}_{k_p}(s_p))$. Since $y\in G(x, m) \subset G(x, p)$,
 $u\in \operatorname{st}(G(x, p), \mathscr{W}_{k_p}(s_p))\subset \bigcup_{\beta\in D_p} V(s_p, \beta)$.
 Let $\beta_0\in D_p$ such that $u\in V(s_p, \beta_0)$. Then $\lambda + \alpha = \beta_0 \in D_p$. So
 $\alpha\in D^*_p$. Hence
@@ -400,8 +400,6 @@ semi-open covers of $X$. \hfill\qedsymbol
 $X$ is paracompact iff every open cover of $X$ has an open local $W$refinement.\hfill\qedsymbol
 }
 
-
-
 {\theorem{} \label{th:7.2.13} 
 \textup{([Jiang 1989]\textsuperscript{\cite{Jiang1989}})}  
 A space $X$ is $\lambda$-paracompact if and only if every increasing open $\lambda$-cover of $X$ 
@@ -411,15 +409,73 @@ has a $\theta^*$-sequence of open refinements.
 \begin{proof}
  ($\Rightarrow$): Clear.
 
- ($\Leftarrow$): Assume that every increasing open $\sigma$-cover of $X$ satisfies the condition. For each cardinal $\mu \le \kappa$, let $P_{\mu}$ denote the proposition: "Every open $\mu$-cover of $X$ has a local $\omega$-refining sequence by open covers of $X$".
+ ($\Leftarrow$): Assume that every increasing open $\lambda$-cover of $X$ 
+ is a $\theta^*$-cover. For each cardinal $\mu \le \lambda$, let 
+ $\mathcal{P}_{\mu}$ denote the proposition: ``Every open $\mu$-cover of 
+ $X$ has a local $W$-refining sequence by open covers of $X$".
+We use transfinite induction on $\mu\le \lambda$ to show that 
+$\mathcal{P}_{\mu}$ holds for each $\mu \le \lambda$.
+Then $\mathcal{P}_{\lambda}$ holds, so by Corollary \ref{cor:7.2.11},
+$X$ is $\lambda$-paracompact. Clearly, $\mathcal{P}_{\mu}$ holds for finite 
+$\mu$.
+Suppose $P_{\alpha}$ holds for all $\alpha < \mu$. To show $P_{\mu}$ holds, 
+let $\mathscr{U} = \{U{\alpha} : \alpha < \mu\}$ be an open cover of $X$. 
+$\mathscr{W} = \{\bigcup_{\gamma < \alpha}U_{\gamma} : \gamma < \mu\}$ is 
+an increasing open $\lambda$-cover of $X$.
+By hypothesis, there exists a $\theta^*$-sequence 
+$\{\mathscr{V}_n\}$ of open refinements of $\mathscr{W}$. 
+Let $\mathscr{V}_n= \{V(n, \alpha): \alpha < \mu \}$ such that 
+$V(n, \alpha)\subset \bigcup_{\gamma < \alpha}U_\gamma$ for each $\alpha < \mu$.
+For $n < \omega, \alpha < \mu$, let 
+$$\mathscr{G}(n, \alpha) = 
+\{U_\gamma: \gamma <\alpha\} \cup\{\bigcup_{\gamma> \alpha}V(n, \gamma)\}.$$
+Then each $B(n, \alpha)$ isan open cover of $X$ with power $< \mu$.
+By inductive hypothesis, 
 
- We use transfinite induction on $\mu$ to show that $P_{\mu}$ holds for each $\mu \le \kappa$.
+(1) $B(n, \alpha)$ has a  local $W$-refining sequence 
+$\{\mathscr{W}_l(n, \alpha): l < \omega\}$ by open covers of $X$.
 
- Once $P_{\kappa}$ holds, it implies the desired result via Corollary 7.2.11.
 
- For the inductive step, suppose $P_{\alpha}$ holds for all $\alpha < \mu$. To show $P_{\mu}$ holds, let $\mathcal{W} = \{W_{\alpha} : \alpha < \mu\}$ be an open cover of $X$. Construct an increasing open $\sigma$-cover $\mathcal{W}'$ of $X$. By hypothesis, there exists a $\sigma$-sequence of open refinements of $\mathcal{W}$. By applying the inductive hypothesis, we obtain a local $\omega$-refining sequence $\mathcal{W}_n$ by open covers of $X$.
+
+
 \end{proof}
+Here is the extracted and organized text from the provided document:
 
+ Definitions and Setup:
+ For new, let $F_{n,0}=\Phi$.
+
+
+ $F_{n,12}=2$.
+
+
+ Each such set is closed in $A$.
+
+
+ For each $l = 0, 1, ..., k_n$, let $H(y, n, k) = W(n, \text{sub}, \dots)$.
+
+
+ Let $\mathcal{U}_{n,k} = \{H(y, n, k) \mid y \in F_{n,k}\} \cup \{X \setminus F_{n,k}\}$. Then each $\mathcal{U}_{n,k}$ is an open cover of $X$.
+
+
+
+
+ Claim:
+ $\{\mathcal{U}_{n,k}\}_{n,k}$ is a local $\omega$-refining sequence for $X$, hence the property is true.
+
+
+
+
+ Proof:
+ Let $x \in X$. There exist $m$ and $B_0$ such that $\text{ind}(m) B_0$ is finite.
+
+
+ For each index, there exist topologies and finite sets such that it refines the neighborhood.
+
+
+ Let $B = \bigcap_{i=1}^{p} D_i Y_i$ and $q = \max\{p, r_0, \dots, r_p\}$.
+
+
+ The claim holds as $\mathcal{U}_{m,q}$ refines the cover.
 
 
 
