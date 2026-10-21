@@ -10,17 +10,20 @@ For any \(\lambda\) the following are equivalent:
 
 \textup{(i)} \(X\) is \(\lambda\)-strongly paracompact.
 
-\textup{(ii)} Every open \(\lambda\)-cover of \(X\) has a star-finite open refinement.
+\textup{(ii)} Every open \(\lambda\)-cover of \(X\) has a discrete closed refinement.
 
-\textup{(iii)}  Every open \(\lambda\)-cover of \(X\) has a star-finite closed refinement.
+\textup{(iii)}  Every open \(\lambda\)-cover of \(X\) has a disjoint open refinement.
 
-\textup{(iv)} Every open \(\lambda\)-cover of \(X\) has a star-finite refinement.
+\textup{(iii)}  Every open \(\lambda\)-cover of \(X\) has a disjoint functionally open refinement.
+
+\textup{(iv)} Every open \(\lambda\)-cover of \(X\) has a disjoint semi-open refinement.
 }
 
 \begin{proof}
-(i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iv) Clear.
+(i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iii)  \(\Rightarrow\)  (v) 
+and (iv) \(\Rightarrow\) (iii).  Clear.
 
-(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there exists an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
+(ii) \(\Rightarrow\) (iv) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is regular, there exists an open refinement \(\mathscr{W}\) of \(\mathscr{V}\) such that \(\{\overline{W}\mid W\in\mathscr{W}\}\) refines \(\mathscr{V}\). Since \(\mathscr{W}\) is star-finite, \(\{\overline{W}\mid W\in\mathscr{W}\}\) is a star-finite closed refinement of \(\mathscr{U}\).
 
 (iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-finite closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). For each \(F\in\mathscr{F}\), let \(V_F=X\setminus\bigcup\{F'\in\mathscr{F}\mid F'\cap F=\emptyset\}\). Then \(V_F\) is an open set containing \(F\). Let \(W_F=V_F\cap U_F\). Then \(\mathscr{W}=\{W_F\mid F\in\mathscr{F}\}\) is a star-finite open refinement of \(\mathscr{U}\).
 
@@ -29,9 +32,13 @@ For any \(\lambda\) the following are equivalent:
 \end{proof} 
 
 {\theorem{\label{th:8.3.2}} 
- For any \(\lambda\) the following are equivalent:
+ For any $X$ the following are equivalent:
 
 (i) \(X\) is \(\lambda\)-ultraparacompact.
+
+(ii) \(X\) is countably ultraparacompact and $\lambda$-screenable.
+
+(iii) \(X\) is countably ultraparacompact and $\lambda$-fully normal.
 
 (ii) \(X\) is countably paracompact and every open \(\lambda\)-cover of \(X\) has a disjoint open refinement.
 

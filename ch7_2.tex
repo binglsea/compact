@@ -284,7 +284,7 @@ Let $\mathscr{V}(t) =  \{V(t, \beta) : \beta < \lambda\cdot 2\}$.
  Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \alpha + \lambda) \subset U_\alpha$.
 Then each open family $\mathscr{V}(t)$ covers  $X$. This completes the proof of \textsc{Claim 1}.
 
-(1) For each $x$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
+(1) For each $x\in X$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
 in $\omega$ with $s_{n+1} = s_n\oplus k_n$ such that for each $n < \omega$, there exists a 
 semi-open local-star $\overset{*}{F}$-refinement $\mathscr{W}_{k_n}(s_n)$ of 
  $\mathscr{V}(s_n)$ at $x$.
@@ -307,7 +307,7 @@ of $\mathscr{V}(s_{n+1})$  at $x$. Let $s_{n+2} = s_{n+1} \oplus k_{n+1}$. By in
 \textsc{Claim 2}. 
  $\{\mathscr{V}(t): t < \omega^\omega\}$ is a $\theta$-sequence of open refinement of $\mathscr{U}$.
  
- Proos. By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of [ $\mathcal{U}$ ]. 
+ Proof. By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of [ $\mathcal{U}$ ]. 
  To see that $\{\mathscr{V}(t):  t < \omega^\omega\}$ is a $\theta^*$-sequence, 
  let $x \in X$ By (1), 
 \begin{gather*}
@@ -318,21 +318,32 @@ such that
 \begin{gather*}
 	\forall G \in  \operatorname{top}(x), \, G\subset W(x,n) \Rightarrow 
 	\operatorname{st}(G, \mathscr{W}_{k_n}(s_n)) \subset 
-	\operatorname{st}(G, \{\mathscr{V}(s_n, \beta): \beta \in A_n\}). 
+	\operatorname{st}(G, \{V(s_n, \beta): \beta \in A_n\}). 
 \end{gather*}
 Let $A(x, n) = W(x,0) \cap W(x, 1)\cap\cdots \cap W(x, n))$, and let
 $$ D_n = \{\beta\in A_n: V(s_n, \beta)\cap G(x, n) \ne \emptyset\} \text{ for } n < \omega.$$
 We have 
 
-(2)
- $\beta_{m} = \min\{\beta_{n} : n \angle \emptyset\}.$ 
+(2) For each $n < \omega$,
+$$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset 
+   \bigcup_{\beta\in D_n} V(s_n, \beta).$$ 
+ For each $n < \omega$, let $\beta_n = \max D_n$,  and let $\beta_m = \min\{\beta_n: n < \omega\}$.
+ %这里定理 7.2.10 的证明中的 $\beta_n$ 和 $\beta_m$ 是怎么回事？尤其是 $\beta_m$ =?  % TO_DO
  
- (3) If [$\beta$] and 
- [$\beta \to \lambda$], then [$\dots$], $B = \dots$. For 
- $if \sim \beta \ge a \sim d \sim \beta \to \beta_{m}, \forall a \sim b_{m} \vee \ast \in D_{m}, \forall 
- 3 \sim m < \beta. \quad Bgi(2)$ $\mathcal{S}k(acx, m), w_{k_{m}}(s_{m})) 
- \cap (\gamma \to \bigcup_{\gamma < \beta} v(s_{m, \beta})) = \phi$. Since Bar and Smith $= \dots k_{m},$ 
- it follows from (C) thed (4) (4) $\beta_{m} < \dots$ $m, \beta) \subset G(x, m)$ 
+ (3) If $\beta \ge \lambda$ abd $\beta > \beta_m$, the $G(x, m) \cap V(s_{m+1}, \beta) = \emptyset$.
+ 
+ For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
+ By (2),
+ \begin{gather}
+ \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \bigcap 
+  (X\setminus\bigcup_{\gamma < \beta} V(s_m, \beta)) = \emptyset. \label{eq:7.2.10.3.1}
+ \end{gather}
+ Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
+ it follows from the above \eqref{eq:7.2.10.3.1} that  %TO_DO What is (C)?
+ $$G(x, m)\bigcap V(s_{m+1}, \beta) \subset G(x, m) \bigcap 
+    \operatorname{st}(X\setminus \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)) = \emptyset.$$
+ 
+ (4) $\beta_{m} < \dots$ $m, \beta) \subset G(x, m)$ 
  $\mathcal{Z} \to \bigcup_{\gamma < \beta} \Psi(s_{m, \gamma}, \mathcal{W}_{\aleph_{m}}(s_{m})) = \phi,
  $ If not, $\beta_{m} \ge n,$ then for each 
  $\beta > \beta_{m} - n \cdot \beta > \beta_{m} = \lambda - \beta y (3b$ 
@@ -340,10 +351,10 @@ We have
  Since $B_{m+2} = B_{m} \dots$, by CC), we have 
  $G(x, m) \vee C_{s_{m+2}, \beta_{m} 2} \dots, M \text{ ALU}$. But $B_{m+2} \dots$, 
  so we have $\beta_{m} < \lambda\_$ $B_{m+2}$ a. 
- Contradiction. [l]hemas (5) If [$\dots$], then [$\dots$] $B) = \phi.$ 97
+ Contradiction. [l]hemas 
  
+ (5) If [$\dots$], then [$\dots$] $B) = \phi.$ 97
  
-
 
 
 For if $B \ge x$, then by (7). Thus that follows from 37.
@@ -373,7 +384,7 @@ semi-open covers of $X$. \hfill\qedsymbol
 }
 
 {\corollary{} \label{cor:7.2.12}
-\textup{([Wormall 1968]\textsuperscript{\cite{Worrell1968}})}  
+\textup{([Worrell 1968]\textsuperscript{\cite{Worrell1968}})}  
 $X$ is paracompact iff every open cover of $X$ has an open local $W$refinement.\hfill\qedsymbol
 }
 
