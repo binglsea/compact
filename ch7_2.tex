@@ -284,8 +284,7 @@ Let $\mathscr{V}(t) =  \{V(t, \beta) : \beta < \lambda\cdot 2\}$.
  Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \alpha + \lambda) \subset U_\alpha$.
 Then each open family $\mathscr{V}(t)$ covers  $X$. This completes the proof of \textsc{Claim 1}.
 
-%\textsc{Statement (1)} For each $x$, there exist sequences $\{s_n: n < \omega\}$ in $\omega^n$ and $\dots$ 
-\noindent(1) For each $x$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
+(1) For each $x$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
 in $\omega$ with $s_{n+1} = s_n\oplus k_n$ such that for each $n < \omega$, there exists a 
 semi-open local-star $\overset{*}{F}$-refinement $\mathscr{W}_{k_n}(s_n)$ of 
  $\mathscr{V}(s_n)$ at $x$.
@@ -311,10 +310,24 @@ of $\mathscr{V}(s_{n+1})$  at $x$. Let $s_{n+2} = s_{n+1} \oplus k_{n+1}$. By in
  Proos. By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of [ $\mathcal{U}$ ]. 
  To see that $\{\mathscr{V}(t):  t < \omega^\omega\}$ is a $\theta^*$-sequence, 
  let $x \in X$ By (1), 
- $Evisn :$ $,$. Let $\mathcal{A}_{\xi}, \mathcal{W} \in \mathcal{R},$ $\dots$ DO $\mathcal{W} \subset \mathcal{G},$ and lad $D_{n} = \{$: [$\dots$], new. 
- We have (2) Sot[C]GX, [$\dots$], 
- WARISAD C[U]V BED. For each new, For now, let $B_{r} = \max D,$ and let 
- $\beta_{m} = \min\{\beta_{n} : n \angle \emptyset\}.$ (3) If [$\beta$] and 
+\begin{gather*}
+	\forall \, n < \omega \; \exists \, A_n\in [\lambda\cdot 2]^{<\omega} \,
+	\exists \, W(x,n) \in \operatorname{top}(x)
+\end{gather*}
+such that 
+\begin{gather*}
+	\forall G \in  \operatorname{top}(x), \, G\subset W(x,n) \Rightarrow 
+	\operatorname{st}(G, \mathscr{W}_{k_n}(s_n)) \subset 
+	\operatorname{st}(G, \{\mathscr{V}(s_n, \beta): \beta \in A_n\}). 
+\end{gather*}
+Let $A(x, n) = W(x,0) \cap W(x, 1)\cap\cdots \cap W(x, n))$, and let
+$$ D_n = \{\beta\in A_n: V(s_n, \beta)\cap G(x, n) \ne \emptyset\} \text{ for } n < \omega.$$
+We have 
+
+(2)
+ $\beta_{m} = \min\{\beta_{n} : n \angle \emptyset\}.$ 
+ 
+ (3) If [$\beta$] and 
  [$\beta \to \lambda$], then [$\dots$], $B = \dots$. For 
  $if \sim \beta \ge a \sim d \sim \beta \to \beta_{m}, \forall a \sim b_{m} \vee \ast \in D_{m}, \forall 
  3 \sim m < \beta. \quad Bgi(2)$ $\mathcal{S}k(acx, m), w_{k_{m}}(s_{m})) 
@@ -330,8 +343,7 @@ of $\mathscr{V}(s_{n+1})$  at $x$. Let $s_{n+2} = s_{n+1} \oplus k_{n+1}$. By in
  Contradiction. [l]hemas (5) If [$\dots$], then [$\dots$] $B) = \phi.$ 97
  
  
- 
-\end{proof}
+
 
 
 For if $B \ge x$, then by (7). Thus that follows from 37.
@@ -343,51 +355,49 @@ Proos. For each [n]ew, let $D_{n} = [ \dots ] + \dots$. By ind[uc]ar [$(\mathcal
 If de[f] ind[ex] $(\mathcal{V}(\mathcal{S}_{m})) \in \mathcal{G}_{x}[m]$, then [$\dots$] then as a and [$\dots$]. Since [$\dots$] $= [ \dots ], \dots)$. Let $p = \max \mathcal{Z}$ is [$\dots$] $y \dots 233$. Then $y \in V(S_{p}, \delta)$ and $p \dots$ Since $S_{p}$ $k_{p}$, it follows from that there is $z \to \chi_{p} k + 2 \chi^{-}(s_{p}, \beta)$ such that $y \in st(u, \dots)$ overlaps. Since YELIMIC [$\dots$] US SACRED $\mathcal{W}_{h_{p}}(s_{p})) \subset \bigcup_{\beta \in \Delta_{p}} \sim c(s_{p}, \beta)$. Let $B_{op}$ [$\dots$] $v_{p}(\dots, \beta)$. Then $A_{\alpha} = p_{0}$ EDP so $x \in D_{n}$. Hence
 
 ind [$\dots$] is finite, and [$\dots$] such that ind $(\dots)$, $m$s COD. so (6) holds. Thus [$\dots$] is $\sigma$-refinable.
+\end{proof}
+
 
 {\corollary{} \label{cor:7.2.11}
 \textup{([Jiang 1987b]\textsuperscript{\cite{Jiang1987b}})}   
-For any [$\dots$], the following are equivalent
+For any $X$, the following are equivalent
 
-\textup{(i)} [$\dots$] is [$\dots$].
+\textup{(i)} $X$ is [$\lambda$-paracompact.
 
-\textup{(ii)} [$\dots$] is paracompact.
+\textup{(ii)} Every open $\lambda$-cover of $X$ has a $\theta^*$-sequence of semi-open covers of $X$.
 
-\textup{(iii)}  Every open $\sigma$-cover of [$\dots$] has a sequence of semi-open covers of [$\dots$] and Every open $\sigma$-cover of [$\dots$] has a local $\omega$-refining sequence by open covers of [$\dots$].
+\textup{(iii)}  Every open $\lambda$-cover of $X$ has a local $W$-refining sequence by open covers of $X$.
 
-\textup{(iv)} Every open [$\sigma$] cover of [$\dots$] has a local $\omega$-refining sequence by semi-open covers of [$\dots$].
+\textup{(iv)} Every open $\lambda$-cover of $X$ has a local $W$-refining sequence by 
+semi-open covers of $X$. \hfill\qedsymbol
 }
 
 {\corollary{} \label{cor:7.2.12}
 \textup{([Wormall 1968]\textsuperscript{\cite{Worrell1968}})}  
-If every open cover of [$\dots$] has an open local $\omega$- [$\dots$] [is] paracompact
+$X$ is paracompact iff every open cover of $X$ has an open local $W$refinement.\hfill\qedsymbol
 }
 
 
 
-If every open cover of $X$ has an open local $\omega$-refinement, then $X$ is paracompact.
-
----
-
-{\theorem{} \label{th:7.2.13} 7.2.13 (Jiang [1989a])
-
-A space $X$ is $\kappa$-paracompact if and only if every increasing open $\sigma$-cover of $X$ has a sequence of open refinements.
+{\theorem{} \label{th:7.2.13} 
+\textup{([Jiang 1989]\textsuperscript{\cite{Jiang1989}})}  
+A space $X$ is $\lambda$-paracompact if and only if every increasing open $\lambda$-cover of $X$ 
+has a $\theta^*$-sequence of open refinements.
 }
 
-
- Proof Outline:
-
+\begin{proof}
  ($\Rightarrow$): Clear.
-
 
  ($\Leftarrow$): Assume that every increasing open $\sigma$-cover of $X$ satisfies the condition. For each cardinal $\mu \le \kappa$, let $P_{\mu}$ denote the proposition: "Every open $\mu$-cover of $X$ has a local $\omega$-refining sequence by open covers of $X$".
 
-
  We use transfinite induction on $\mu$ to show that $P_{\mu}$ holds for each $\mu \le \kappa$.
-
 
  Once $P_{\kappa}$ holds, it implies the desired result via Corollary 7.2.11.
 
-
  For the inductive step, suppose $P_{\alpha}$ holds for all $\alpha < \mu$. To show $P_{\mu}$ holds, let $\mathcal{W} = \{W_{\alpha} : \alpha < \mu\}$ be an open cover of $X$. Construct an increasing open $\sigma$-cover $\mathcal{W}'$ of $X$. By hypothesis, there exists a $\sigma$-sequence of open refinements of $\mathcal{W}$. By applying the inductive hypothesis, we obtain a local $\omega$-refining sequence $\mathcal{W}_n$ by open covers of $X$.
+\end{proof}
+
+
+
 
 \end{document}
