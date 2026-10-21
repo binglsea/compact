@@ -336,36 +336,48 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  By (2),
  \begin{gather}
  \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \bigcap 
-  (X\setminus\bigcup_{\gamma < \beta} V(s_m, \beta)) = \emptyset. \label{eq:7.2.10.3.1}
+  \left(X\setminus\bigcup_{\gamma < \beta} V(s_m, \beta)\right) = \emptyset. \label{eq:7.2.10.3.1}
  \end{gather}
  Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
  it follows from the above \eqref{eq:7.2.10.3.1} that  %TO_DO What is (C)?
  $$G(x, m)\bigcap V(s_{m+1}, \beta) \subset G(x, m) \bigcap 
-    \operatorname{st}(X\setminus \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)) = \emptyset.$$
+    \operatorname{st}\left(X\setminus \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \emptyset.$$
  
- (4) $\beta_{m} < \dots$ $m, \beta) \subset G(x, m)$ 
- $\mathcal{Z} \to \bigcup_{\gamma < \beta} \Psi(s_{m, \gamma}, \mathcal{W}_{\aleph_{m}}(s_{m})) = \phi,
- $ If not, $\beta_{m} \ge n,$ then for each 
- $\beta > \beta_{m} - n \cdot \beta > \beta_{m} = \lambda - \beta y (3b$ 
- $\cap(x, im) \cap (\bigcup_{(\sigma > \beta_{m+2}} V(s_{mn}, \beta)) = \phi,$ 
- Since $B_{m+2} = B_{m} \dots$, by CC), we have 
- $G(x, m) \vee C_{s_{m+2}, \beta_{m} 2} \dots, M \text{ ALU}$. But $B_{m+2} \dots$, 
- so we have $\beta_{m} < \lambda\_$ $B_{m+2}$ a. 
- Contradiction. [l]hemas 
+ (4) $\beta_{m} < \lambda$.
  
- (5) If [$\dots$], then [$\dots$] $B) = \phi.$ 97
+ If not, $\beta_{m} \ge \lambda$, then for each 
+ $\beta > \beta_{m+2}, \beta > \beta_{m} \ge \lambda$. By (3),
+ $$G(x, m) \cap (\bigcup_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \emptyset,$$ 
+ Since $B_{m+2} = B_{m} > \lambda$ % TO_DO  by (C), 
+ By (C), we have 
+ $$G(x, m) \cap V(s_{m+2}, \beta_{m+ 2})\subset 
+ G(x, m)  \cap \left(\bigcup_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \emptyset.$$
+ But $\beta_{m+2} \in D_{m+2}$, so we have a. 
+ Contradiction. Hence $\beta_m < \lambda$. 
  
+ (5) If $\beta \ge \lambda$, then $G(x, m) \bigcap V(s_{m+1}, \beta) = \emptyset$.
+ 
+For if $\beta \ge \lambda$, then by (2), $\beta > \beta_m$. Thus that follows from (3).
 
+(6) $\mathscr{V}(s_{m+1})$ is locally finite at $x$, this says that \textsc{Claim 2} is true.
 
-For if $B \ge x$, then by (7). Thus that follows from 37.
-
-(6) [$(\mathcal{S}_{m})$] is LF at $x$, this [says] that claim 2 is true.
-
-Proos. For each [n]ew, let $D_{n} = [ \dots ] + \dots$. By ind[uc]ar [$(\mathcal{S}_{m})$] [$\dots$]:
-
-If de[f] ind[ex] $(\mathcal{V}(\mathcal{S}_{m})) \in \mathcal{G}_{x}[m]$, then [$\dots$] then as a and [$\dots$]. Since [$\dots$] $= [ \dots ], \dots)$. Let $p = \max \mathcal{Z}$ is [$\dots$] $y \dots 233$. Then $y \in V(S_{p}, \delta)$ and $p \dots$ Since $S_{p}$ $k_{p}$, it follows from that there is $z \to \chi_{p} k + 2 \chi^{-}(s_{p}, \beta)$ such that $y \in st(u, \dots)$ overlaps. Since YELIMIC [$\dots$] US SACRED $\mathcal{W}_{h_{p}}(s_{p})) \subset \bigcup_{\beta \in \Delta_{p}} \sim c(s_{p}, \beta)$. Let $B_{op}$ [$\dots$] $v_{p}(\dots, \beta)$. Then $A_{\alpha} = p_{0}$ EDP so $x \in D_{n}$. Hence
-
-ind [$\dots$] is finite, and [$\dots$] such that ind $(\dots)$, $m$s COD. so (6) holds. Thus [$\dots$] is $\sigma$-refinable.
+Proof. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
+By (5),
+$$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)} = 
+\{\alpha < \lambda: G(x, m) \cap V(s_{m+1}, \alpha) \ne \emptyset\}$$
+If  $\alpha\in \operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)}$, 
+then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$. 
+Since $y\notin \emptyset = V(s_0, \alpha)$. Let $p = \max\{i \le m: y\notin V(s_i, \alpha)\}$.
+Then $y\in V(s_{p+1}, \alpha)\setminus V(s_p, \alpha)$ and $p \le m$.
+Since $s_{p+1}= s_p\oplus k_p$, it follows from (b) % TO_DO
+that there exists $u\in X\setminus\bigcup_{\beta \ne \lambda+ \alpha} V(s_p, \beta)$ such that
+$y \in \operatorname{st}(u, \mathscr{W}_{k_p}(s_p))$. Since $y\in G(x, m) \subset G(x, p)$.
+$u\in \operatorname{st}(G(x, p), \mathscr{W}_{k_p}(s_p))\subset \bigcup_{\beta\in D_p} V(s_p, \beta)$.
+Let $\beta_0\in D_p$ such that $u\in V(s_p, \beta_0)$. Then $\lambda + \alpha = \beta_0 \in D_p$. So
+$\alpha\in D^*_p$. Hence
+$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x, m)}\subset \bigcup_{i=0}^m D_i^m$. 
+So, $\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x, m)}$ is finite, and (6) holds.
+Thus $X$ is $\theta^*$-refinable.
 \end{proof}
 
 
