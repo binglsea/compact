@@ -486,27 +486,27 @@ Here is the extracted and organized text from the provided document:
 
 
 
- 7.2.14 Definition:
- A family $\mathscr{F} = \{F_\alpha \mid \alpha \in \dots\}$ is hereditarily c.p. if every subfamily is c.p..
+{\definition{\label{def:7.2.14}}  
+ A family $\mathscr{F} = \{F_\alpha \mid \alpha \in \Delta\}$ is hereditarily closure-preserving if every subfamily is c.p..
 
 
- A family is hereditarily c.p. if it can be represented as a countable union of hereditarily c.p. families.
+ A family is hereditarily closure-preserving if it can be represented as a countable union of hereditarily closure-preserving families.
+}
 
 
-
-
- 7.2.15 Theorem (Jiang):
+{\theorem{} \label{th:7.2.15}
+(Jiang):
  For any of the following, they are equivalent.
 
 
  (i) $X$ is $\sigma$-paracompact.
 
 
- (ii) Every increasing open $\sigma$-cover has a hereditarily c.p. closed refinement $\mathscr{F}$ such that $\mathscr{F}$ covers $X$.
+ (ii) Every increasing open $\sigma$-cover has a hereditarily closure-preserving closed refinement $\mathscr{F}$ such that $\mathscr{F}$ covers $X$.
 
 
- (iii) Every increasing open $\sigma$-cover has a hereditarily c.p. closed refinement $\mathscr{F}$ such that $\mathscr{F}$ covers $X$.
-
+ (iii) Every increasing open $\sigma$-cover has a hereditarily closure-preserving closed refinement $\mathscr{F}$ such that $\mathscr{F}$ covers $X$.
+}
 
 
 
@@ -516,10 +516,10 @@ Here is the extracted and organized text from the provided document:
 Here is the extracted and organized text from the provided document:
 
  Refinement and Implications:
- There is a hereditarily c.p. closed refinement of $\dots$ such that it covers $X$.
+ There is a hereditarily closure-preserving closed refinement of $\dots$ such that it covers $X$.
 
 
- $(iii) \Rightarrow (i)$: Assume (iii) holds. For each $\dots$, denote by $P_{\mu}$ the proposition that every IP-directed open cover of $X$ has a $\sigma$-cp closed refinement such that $\omega_Q$ covers $X$.
+ $(iii) \Rightarrow (i)$: Assume (iii) holds. For each $\dots$, denote by $P_{\mu}$ the proposition that every IP-directed open cover of $X$ has a $\sigma$-closure-preserving  closed refinement such that $\omega_Q$ covers $X$.
 
 
  Use induction on $\dots$ to show that $P_{\omega}$ holds. Specially, $P_{r_0}$ holds, then by Theorem 4.2.4, $\dots$ is $\sigma$-paracompact.
@@ -534,7 +534,7 @@ Here is the extracted and organized text from the provided document:
  To this end, let $\mathscr{U}$ be an IP-directed open cover of $X$. $\omega = ?$ and is an increasing open cover of $X$.
 
 
- By (iii), it has a refinement $\mathscr{B} = \bigcup_{m \ge m} \mathscr{B}_m$ where each $\mathscr{B}_m$ is hereditarily c.p. closed.
+ By (iii), it has a refinement $\mathscr{B} = \bigcup_{m \ge m} \mathscr{B}_m$ where each $\mathscr{B}_m$ is hereditarily closure-preserving closed.
 
 
  Let $\mathscr{B}_m = \dots$ such that $\mathscr{B}_{m,\alpha}$ covers $X$.
@@ -543,13 +543,13 @@ Here is the extracted and organized text from the provided document:
  For $m, \alpha$, let $\mathscr{V}_{m,\alpha} = \{V_\gamma : \dots\} \cup \{X \setminus B_{m,\alpha}\}$.
 
 
- Each $\mathscr{G}_{m,\alpha}$ is an IP open cover of $B$ with power $< \mu$.
+ Each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $B$ with power $< \mu$.
 
 
  For each $s$, let $U_s = \dots$.
 
 
- By the inductive hypothesis, $\mathscr{G}_{m,\alpha}^{\mathscr{F}}$ has a refinement $\mathscr{E}_{m,\alpha} = \bigcup_{n < \omega} \mathscr{E}_{m,\alpha,n}$ where each $\mathscr{E}_{m,\alpha,n}$ is a c.p. closed family.
+ By the inductive hypothesis, $\mathscr{G}_{m,\alpha}^{\mathscr{F}}$ has a refinement $\mathscr{E}_{m,\alpha} = \bigcup_{n < \omega} \mathscr{E}_{m,\alpha,n}$ where each $\mathscr{E}_{m,\alpha,n}$ is a closure-preserving closed family.
 
 Here is the extracted and organized text from the provided document:
 
@@ -566,7 +566,7 @@ Here is the extracted and organized text from the provided document:
  Let $\mathscr{F}_{m,n,1} = \{E_{m,\alpha,n,s} \cap B_{m,\alpha} : (\alpha, s) \in \Delta\}$ and $\mathscr{F}_{m,n,2} = \{K_{m,\alpha,n,s} \cap B_{m,\alpha} : (\alpha, s) \in \Delta\}$.
 
 
- (1) For each $m, n < \omega$, $\mathscr{F}_{m,n,1}$ and $\mathscr{F}_{m,n,2}$ are c.p. closed families.
+ (1) For each $m, n < \omega$, $\mathscr{F}_{m,n,1}$ and $\mathscr{F}_{m,n,2}$ are closure-preserving closed families.
 
 
 
@@ -578,7 +578,7 @@ Here is the extracted and organized text from the provided document:
  For any $B \in \mathscr{B}$, let $b = \{\alpha < \mu : B \subset B_{m,\alpha}\}$.
 
 
- Since $\mathscr{B}_m = \{B_{m,\alpha} : \alpha < \mu\}$ is hereditarily c.p., the c.p. property holds.
+ Since $\mathscr{B}_m = \{B_{m,\alpha} : \alpha < \mu\}$ is hereditarily c.p., the closure-preserving property holds.
 
 
  Let $\mathscr{F} = \bigcup_{m,n<\omega} (\mathscr{F}_{m,n,1} \cup \mathscr{F}_{m,n,2})$.
@@ -611,7 +611,7 @@ Here is the extracted and organized text from the provided document page:
  Since $\mathscr{U}$ is directed, there is $a \in \mathscr{U}$ such that $U_s \subset U_a$. So $\mathscr{F}$ refines $\mathscr{U}$.
 
 
- Thus, $\mathscr{F}$ is a $\sigma$-cp closed refinement of $\mathscr{U}$ such that $\mathcal{F}$ covers $X$.
+ Thus, $\mathscr{F}$ is a $\sigma$-closure-preserving  closed refinement of $\mathscr{U}$ such that $\mathcal{F}$ covers $X$.
 
 
  That completes the proof of $P_\mu$ and the induction.
