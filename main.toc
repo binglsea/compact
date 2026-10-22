@@ -25,5 +25,5 @@
 \contentsline {section}{\numberline {8.1}Collectionwise Normal Spaces}{53}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Fully Normal Spaces}{54}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Strongly Paracompact and Ultraparacompact Spaces}{56}{section.8.3}%
-\contentsline {chapter}{Bibliography}{62}{chapter*.7}%
-\contentsline {chapter}{Index}{65}{chapter*.7}%
+\contentsline {chapter}{Bibliography}{61}{chapter*.7}%
+\contentsline {chapter}{Index}{64}{chapter*.7}%
