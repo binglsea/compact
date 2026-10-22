@@ -546,43 +546,44 @@ We use induction on $\mu \le \lambda$ to show that $\mathcal{P}_\mu$
 holds for all $\mu \le \lambda$. 
 Specially,  $\mathcal{P}_\lambda$ holds, then by Theorem \ref{th:4.2.4}, 
 $X$ is $\lambda$-paracompact.
-Clearly, $P_1$ holds for finite cases. Now let $m$ be such that $P_{m}$ holds for each $m < \omega$. We need to show that $P_{\mu}$ is true.
-
-
- Proof Steps:
- To this end, let $\mathscr{U}$ be an IP-directed open cover of $X$. $\omega = ?$ and is an increasing open cover of $X$.
-
-
- By (iii), it has a refinement $\mathscr{B} = \bigcup_{m \ge m} \mathscr{B}_m$ where each $\mathscr{B}_m$ is hereditarily closure-preserving closed.
-
-
- Let $\mathscr{B}_m = \dots$ such that $\mathscr{B}_{m,\alpha}$ covers $X$.
-
-
- For $m, \alpha$, let $\mathscr{V}_{m,\alpha} = \{V_\gamma: \dots\} \cup \{X \setminus B_{m,\alpha}\}$.
-
-
- Each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $B$ with power $< \mu$.
-
-
- For each $s$, let $U_s = \dots$.
-
-
- By the inductive hypothesis, $\mathscr{G}_{m,\alpha}^{\mathscr{F}}$ has a refinement $\mathscr{E}_{m,\alpha} = \bigcup_{n < \omega} \mathscr{E}_{m,\alpha,n}$ where each $\mathscr{E}_{m,\alpha,n}$ is a closure-preserving closed family.
-
-Here is the extracted and organized text from the provided document:
-
- Refinements and Families:
- $\mathscr{E}_{m,\alpha,n} \Rightarrow \{E_{m,\alpha,s}:  \dots\} \cup \{F_{m,\alpha}\}$.
-
-
- Such that for each $s$, $E_{m,\alpha,n,s} \subset U_s^*$.
-
-
- Let $\Delta = \bigcup_{\alpha < \mu} \{\alpha\} \times \text{cov}(\gamma^{<\omega})$.
-
-
- Let $\mathscr{F}_{m,n,1} = \{E_{m,\alpha,n,s} \cap B_{m,\alpha}: (\alpha, s) \in \Delta\}$ and $\mathscr{F}_{m,n,2} = \{K_{m,\alpha,n,s} \cap B_{m,\alpha}: (\alpha, s) \in \Delta\}$.
+Clearly, $\mathcal{P}_\mu$ holds for finite $\mu$. Now let $\mu \le \lambda$ be 
+such that $\mathcal{P}_\kappa$ holds for each $\kappa < \mu$. 
+We need to show that $P_{\mu}$ is true.
+ To this end, let $\mathscr{U}=\{U_\alpha: \alpha< \mu\}$ be an interior-preserving
+ directed open cover of $X$. 
+ $\mathscr{W}=\{\bigcup_{\gamma < \alpha}U_\gamma: \alpha< \mu\}$  and is an 
+ increasing open $\lambda$-cover of $X$.
+ By (iv), it has a refinement $\mathscr{B} = \bigcup_{m \ge m} \mathscr{B}_m$ 
+ where each $\mathscr{B}_m$ is hereditarily closure-preserving closed and 
+ $\mathscr{B}^\circ$ covers $X$.
+Let $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ such that 
+$\mathscr{B}_{m,\alpha}$ for each $m, \alpha\subset\bigcup_{\gamma < \alpha}U_\gamma$. 
+For $m < \omega, \alpha < \lambda$, let 
+$$\mathscr{G}_{m, \alpha}= \{U_\gamma: \gamma < \alpha\}\cup \{X\setminus B_{m,\alpha}\}.$$
+Then each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $X$ with power $< \mu$.
+For each $S\in [\alpha]^{<\omega}$, let $U_S = \bigcup_{\gamma\in S}U_\gamma$. Let
+$$\mathscr{G}_{m, \alpha}^F= \{U_S: S\in [\alpha]^{<\omega}\}\cup 
+\{U_t \cup (X\setminus B_{m,\alpha}):t\in [\alpha]^{<\omega}\}
+\cup \{X\setminus B_{m, \alpha}\}.$$
+Then $\mathscr{G}_{m, \alpha}^F$ is an interior-preserving directed open $\kappa$-cover for some $\kappa< \mu$.
+ By the inductive hypothesis, $\mathscr{G}_{m,\alpha}^F$ has a refinement 
+ $\mathscr{E}_{m,\alpha} = \bigcup_{n < \omega} \mathscr{E}_{m,\alpha,n}$ where each 
+ $\mathscr{E}_{m,\alpha,n}$ is a closure-preserving closed family,
+ and  $\mathscr{E}_{m,\alpha}^\circ$ covers $X$.
+For $m, n < \omega, \alpha < \mu$, let
+$$\mathscr{E}_{m,\alpha,n} = \{E_{m,\alpha,n, S}:  S\in [\alpha]^{<\omega}\} \cup 
+  \{K_{m,\alpha,n, S}:  S\in [\alpha]^{<\omega}\} \cup \{F_{m,\alpha}\}.$$
+such that for each $S\in [\alpha]^{<\omega}$, 
+\begin{gather*}
+	E_{m,\alpha,n,S} \subset U_S, \\
+	K_{m,\alpha,n, S} \subset U_S \cup (X\setminus B_{m, \alpha}), \\
+	P_{m, \alpha} \subset X\setminus B_{m, \alpha}
+\end{gather*}
+Let $\Delta = \bigcup_{\alpha < \mu} \{\alpha\} \times [\alpha]^{<\omega})$, and
+\begin{gather*}
+	\mathscr{F}_{m, n,1} = \{E_{m, \alpha, n, S} \cap B_{m, \alpha}: (\alpha, S) \in \Delta\}, \\
+	\mathscr{F}_{m, n,2} = \{K_{m, \alpha, n, S} \cap B_{m, \alpha}: (\alpha, S) \in \Delta\}, \\
+\end{gather*}
 
 
  (1) For each $m, n < \omega$, $\mathscr{F}_{m,n,1}$ and $\mathscr{F}_{m,n,2}$ are closure-preserving closed families.
