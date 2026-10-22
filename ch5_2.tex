@@ -47,10 +47,10 @@ shrink of $\mathscr{U}$.
 \end{proof}
 
 {\definition{} \label{def:5.2.3}
-\textup{(i)}  An open cover \(\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}\) of $X$ is a 
+\textup{(i)}  An open cover \(\mathscr{U} = \{ U_\alpha: \alpha \in \Delta \}\) of $X$ is a 
 \uwave{$C\omega^2$-cover}\index{$C\omega^2$-cover| \S\ref{def:5.2.3}\hfill} 
 if \(\mathscr{U}\) has a refinement \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) 
-where each \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha \in \Delta \}\) is a family of 
+where each \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha}: \alpha \in \Delta \}\) is a family of 
 closed subsets of the subspace  \(X\setminus \cup \{\bigcup \mathscr{F}_{p, q}: (p, q) < (m,n) \}\)
 and $F_{m, n, \alpha} \subset U_\alpha$ for all \(\alpha \in \Delta\).
 The family \(\mathscr{F}\) is called a 
@@ -77,7 +77,7 @@ if every open \(\lambda\)-cover of \(X\) is a $C\omega^2$-cover.
 
 \begin{proof}
 \((\Rightarrow)\) Suppose \(X\) is $\lambda$-shrinkable, then \(X\) is normal. 
-Let \(\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}\) be an open cover of \(X\) and 
+Let \(\mathscr{U} = \{ U_\alpha: \alpha \in \Delta \}\) be an open cover of \(X\) and 
 \(\mathscr{F}\) be a closed shrink of \(\mathscr{U}\). Let $\mathscr{F}_{0,0} = \mathscr{F}$ and 
  for each $(m, n) > (0,0), \mathscr{F}_{m,n}=\{\emptyset\}$.
  Then \(\bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) is a \(C\omega^2\)-refinement of 
@@ -90,16 +90,16 @@ We first establish the following:
 of \(X\), there exists a sequence \(\{\mathscr{V}_{m,n} \}_{m,n<\omega}\) of 
 \(\lambda\)-families of open 
 subsets of $X$, 
-where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda\}\) 
+where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha}: \alpha < \lambda\}\) 
 such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\) and 
 \(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).
 
 \textsc{Proof of Claim 1}. We use induction on the well-ordered set 
 $(\omega \times \omega, <)$. 
-Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open \(\lambda\)-cover of \(X\) 
+Let \(\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}\) be an open \(\lambda\)-cover of \(X\) 
 and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a 
 \(C\omega^2\)-refinement of \(\mathscr{U}\), where each 
-\(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha} : \alpha < \lambda\}\) is a family 
+\(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha}: \alpha < \lambda\}\) is a family 
 of closed subsets of the subspace 
 \(X \setminus \bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) <  m,n\}\) with 
 \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\).
@@ -107,7 +107,7 @@ of closed subsets of the subspace
 \(\mathscr{V}_{0,0} = \{\emptyset\}\) and
  \(\langle m,n \rangle \in \omega \times \omega\). 
  Assume that the $\lambda$-families 
- \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha} : \alpha < \lambda \}\) 
+ \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha}: \alpha < \lambda \}\) 
  of open sets  have been constructed for all \((p,q) <  ( m,n)\) to satisfy the conditions:
 \begin{gather}
 \overline{V}_{p,q,\alpha} \subset U_\alpha \text{ for all } \alpha < \lambda, \label{eq:5.2.4.1}\\
@@ -120,7 +120,7 @@ Then we have
 Let \(L = \bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p,q})\). 
 Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there exists an open set \(V_{m,n,\alpha}\) of \(X\) such that
 $$F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha.$$
-Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha} : \alpha < \lambda \}\).  Then
+Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha}: \alpha < \lambda \}\).  Then
 \begin{gather*}
 \bigcup \mathscr{F}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n}, \\
 \bigcup_{(p,q) \le (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset 
@@ -134,9 +134,9 @@ By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). \textsc{Claim 1} is true.
 	
 \textsc{Claim 2.} \(X\) is countably paracompact.
 
-\textsc{Proof of Claim 2}. Suppose $\mathscr{U} = \{U_k : k \in \omega\}$ be a 
+\textsc{Proof of Claim 2}. Suppose $\mathscr{U} = \{U_k: k \in \omega\}$ be a 
 countable increasing open cover of $X$. By \textsc{Claim 1}, there exists a sequence 
-$\{\mathscr{V}_{m,n} : m, n < \omega\}$ of $\omega$-families of open sets of $X$ 
+$\{\mathscr{V}_{m,n}: m, n < \omega\}$ of $\omega$-families of open sets of $X$ 
 where each
 $$V_{m,n} = \{\mathscr{V}_{m,n,k}: k < \omega\}$$
 such that $\overline{V}_{m,n,k} \subset U_k$ for all $k$, and 
@@ -179,15 +179,15 @@ $X$ is normal.
 \begin{proof}
 Let \(A\) and \(B\) be disjoint closed sets in \(X\). Then the open cover 
 \(\{ X \setminus A, X \setminus B \}\) has an open refinement 
-\(\mathscr{V} = \{ V_{n,0}, V_{n,1} : n < \omega \}\) such that 
+\(\mathscr{V} = \{ V_{n,0}, V_{n,1}: n < \omega \}\) such that 
 \(\overline{V}_{n,0} \subset X \setminus B\) and
  \(\overline{V}_{n,1} \subset X \setminus A\) for each \(n < \omega\).
 For each \(k < \omega\), let 
 $$W_{2k} = V_{k,0}, \quad W_{2k+1} = V_{k,1}.$$
-Then \(\mathscr{W} = \{ W_n : n < \omega \}\) is an open cover of \(X\). 
+Then \(\mathscr{W} = \{ W_n: n < \omega \}\) is an open cover of \(X\). 
 For \(n < \omega\), let 
 \(B_0 = W_0, B_n = W_n \setminus \overline{\bigcup_{i<n}W_i}\).
-Then \(\mathscr{B} = \{ B_n : n < \omega \}\) is a locally finite refinement of \(\mathscr{W}\).
+Then \(\mathscr{B} = \{ B_n: n < \omega \}\) is a locally finite refinement of \(\mathscr{W}\).
 Let $F = \overline{\bigcup_{k<\omega} B_{2k}}, \quad K = \overline{\bigcup_{k<\omega} B_{2k+1}}.$
 Then  \(F\) and \(K\) are closed sets such that 
 $$A \subset X \setminus F, \quad
@@ -203,16 +203,16 @@ For any space \(X\), the following are equivalent:
 \textup{(i)} \(X\) is \(\lambda\)-shrinkable.
 
 \textup{(ii)} Every open \(\lambda\)-cover \(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) of \(X\) 
-has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) 
+has a functionally open refinement \(\mathscr{V} = \{ V_{n,\alpha}: n < \omega, \alpha < \lambda \}\) 
 such that \(\overline{V}_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 
 \textup{(iii)} Every open \(\lambda\)-cover \(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) of \(X\) 
-has an open refinement \(\mathscr{V} = \{ V_{n,\alpha} : n < \omega, \alpha < \lambda \}\) 
+has an open refinement \(\mathscr{V} = \{ V_{n,\alpha}: n < \omega, \alpha < \lambda \}\) 
 such that \(\overline{V}_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 
 \textup{(iv)} \(X\) is normal and every open \(\lambda\)-cover  
 \(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) of \(X\) 
-has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) 
+has a closed refinement \(\mathscr{B} = \{ B_{n,\alpha}: n < \omega, \alpha < \lambda \}\) 
 such that \(B_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 }
 
@@ -225,12 +225,12 @@ such that \(B_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 			
 (iv) \(\Rightarrow\) (i). Assume (iv). By Theorem \ref{th:5.2.4}, it suffices to prove that \(X\) is 
 \(\lambda\)-$C\omega^2$-refinable. 
-Let \(\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}\) be an open cover of \(X\). 
-Let \(\{ B_{n,\alpha} : n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) 
+Let \(\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}\) be an open cover of \(X\). 
+Let \(\{ B_{n,\alpha}: n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) 
 such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
-For \(i < \omega\), let \(\mathscr{B}_i = \{ B_{i,\alpha} : \alpha < \lambda \}\).
+For \(i < \omega\), let \(\mathscr{B}_i = \{ B_{i,\alpha}: \alpha < \lambda \}\).
 			
-\textsc{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha} : \alpha < \lambda \}\) in $X$ such that
+\textsc{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha}: \alpha < \lambda \}\) in $X$ such that
 \begin{enumerate}
 \item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \lambda\),
 \item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets 

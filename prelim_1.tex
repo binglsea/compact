@@ -20,7 +20,7 @@ and $[0, 1]$ is the
 \uwave{closed unit interval}\index{closed unit interval| \S\ref{sec:1.1}\hfill}  in $\mathbb{R}$.
 
 For any sets $X, Y$, we denote 
-$\mathscr{P}(X) = \{A : A \subset{X}\}$; 
+$\mathscr{P}(X) = \{A: A \subset{X}\}$; 
 $Y^X= \{f: f$  is a function from $X$  into $Y$\}. 
 If $f \in Y^X$, we write $f: X \to Y$.
 
@@ -30,9 +30,9 @@ If $f: X \to Y$, $A \subset X$ and $B \subset Y$, then $f|_A: A \to Y$
 
 For a set $A$ and $n < \omega$,
 let $[A]^{n} = \{ B \subset A: | B| = n \}$,
-$[A]^{< \omega} = \bigcup \{ [A]^{n} : n < \omega \}$. 
+$[A]^{< \omega} = \bigcup \{ [A]^{n}: n < \omega \}$. 
 Let $ \omega^0 = \{ \emptyset \}$. For  $n = 1, \dots, n$, let
-$\omega^n = \{ f : f: n \to \omega \} = \{ ( k_{0}, k_{1}, \dots, k_{n-1} ) :  k_i \in\omega, i < n\} $.
+$\omega^n = \{ f: f: n \to \omega \} = \{ ( k_{0}, k_{1}, \dots, k_{n-1} ):  k_i \in\omega, i < n\} $.
 If $h < \omega$, let $\emptyset\oplus h = (h)$, 
 $(k_0, \cdots, k_{n-1})\oplus h = (k_0, \cdots, k_{n-1}, h)$.	
 Let $\omega^{<\omega} = \bigcup_{n<\omega}\omega^{n}$.
@@ -43,19 +43,19 @@ cardinality $|\Delta|$ the
  \uwave{power}\index{power| \S\ref{sec:1.1}\hfill}
 of $\mathscr{U}$. A \uwave{$\lambda$-family} is a family with power $\le \lambda$. $\mathscr{U}$ is a \uwave{cover} of $X$ if $\bigcup \mathscr{U} = X$. A \uwave{$\lambda$-cover} is a cover with power $\le \lambda$.
 
-Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$, $A \subset X$, $x \in X$. We denote
+Let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$, $A \subset X$, $x \in X$. We denote
 $$
-	\mathscr{U}|_A = \{U_\alpha \cap A : \alpha \in \Delta\}.$$
+	\mathscr{U}|_A = \{U_\alpha \cap A: \alpha \in \Delta\}.$$
 $$
-	(\mathscr{U})_A = \{U_\alpha : \alpha \in \Delta, 
-	\ U_\alpha \cap A \neq \emptyset\}; \quad (\mathscr{U})_x = \{U_\alpha : \alpha \in \Delta, \ x \in U_\alpha\}.$$
+	(\mathscr{U})_A = \{U_\alpha: \alpha \in \Delta, 
+	\ U_\alpha \cap A \neq \emptyset\}; \quad (\mathscr{U})_x = \{U_\alpha: \alpha \in \Delta, \ x \in U_\alpha\}.$$
 $$	
    \text{st}(A, \mathscr{U}) = \bigcup (\mathscr{U})_A, 
    \quad \text{st}(x, \mathscr{U}) = \bigcup (\mathscr{U})_x.$$
 $$
-   \text{ind}(\mathscr{U})_A = \{\alpha \in \Delta : 
+   \text{ind}(\mathscr{U})_A = \{\alpha \in \Delta: 
    U_\alpha \cap A \neq \emptyset\}, \quad 
-  \text{ind}(\mathscr{U})_x = \{\alpha \in \Delta : x \in U_\alpha\}.$$
+  \text{ind}(\mathscr{U})_x = \{\alpha \in \Delta: x \in U_\alpha\}.$$
 
 By a \uwave{space} \index{space| \S\ref{sec:1.1}\hfill} 
 we mean a topological space without any of the separation axioms $T_i$, $i=0,1,2$ at all.
@@ -69,7 +69,7 @@ of $A$ and $A^\circ$ the
  $\overline{\mathscr{U}}$ for  $\{\overline{U}: U\in\mathscr{U}\}$.
  For $x \in X$, let
 $$
-	\text{top}(x) = \{G : G \textit{ is an open subset of } X 
+	\text{top}(x) = \{G: G \textit{ is an open subset of } X 
 	\textit{ with } x \in G\}.$$
 	
 A \uwave{normal}\index{normal| \S\ref{sec:1.1}\hfill} 
@@ -145,25 +145,25 @@ Also see Defintion \ref{def:5.2.1}
 	
 \textup{(i)}  $ \mathscr{U}$ is  
   \uwave{disjoint}\index{disjoint at $x$| \S\ref{def:1.1.3}\hfill}
-    $($\uwave{point-finite}$)$\index{point-finite at $x$| \S\ref{def:1.1.3}\hfill}
+    \textup{(}or \uwave{point-finite}$)$\index{point-finite at $x$| \S\ref{def:1.1.3}\hfill}
     \uwave{at  $x$} $\in X$ if $|\operatorname{ind}(\mathscr{U})_x|\leq 1$ 
-     $(|\operatorname{ind}(\mathscr{U})_x| < \infty)$.
+     $(or\, |\operatorname{ind}(\mathscr{U})_x| < \infty)$.
 
 \textup{(ii)} $\mathscr{U}$ is  
   \uwave{discrete}\index{discrete at $x$| \S\ref{def:1.1.3}\hfill}
-  $($\uwave{\text{locally finite}}\index{locally finite at $x$| \S\ref{def:1.1.3}\hfill}$)$ 
+  $($or \uwave{\text{locally finite}}\index{locally finite at $x$| \S\ref{def:1.1.3}\hfill}$)$ 
   \uwave{at $x$} $\in X$
   if there exists some $G\in\operatorname{top}(x)$ such that
   $|\operatorname{ind}(\mathscr{U})_G| \leq 1 $ 
-  $(|\operatorname{ind}(\mathscr{U})_G|  < \omega).$
+  $(or \, |\operatorname{ind}(\mathscr{U})_G|  < \omega).$
 
 \textup{(iii)} $\mathscr{U}$ is  
  \uwave{disjoint}\index{disjoint| \S\ref{def:1.1.3}\hfill}
- $($\uwave{point-finite}\index{point-finite| \S\ref{def:1.1.3}\hfill},
+ $(or \, $\uwave{point-finite}\index{point-finite| \S\ref{def:1.1.3}\hfill},
   \uwave{discrete}\index{discrete| \S\ref{def:1.1.3}\hfill}, 
   \uwave{locally finite}\index{locally finite| \S\ref{def:1.1.3}\hfill}$)$ in $X$
   if $\mathscr{U}$ is  
-  disjoint $($point-finite, discrete, locally finite,$)$ at each $x\in X$.
+  disjoint $($or point-finite, discrete, locally finite$)$ at each $x\in X$.
   Clearly, $\mathscr{U}$ is disjoint in  $X$ iff  
   $(\alpha \neq \beta \rightarrow  
   U_\alpha\bigcap U_\beta= \emptyset).$
@@ -201,12 +201,12 @@ $\mathscr{V}_m$ is discrete $($locally finite$)$ at $x$.
 } %end of lemma
 
 {\lemma{} \label{lem:1.1.5}
-	Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ be a cover of $X$. 
+	Let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be a cover of $X$. 
 	
 \textup{(i)} If $\mathscr{U}$ has a locally finite open partial refinement $\mathscr{V}$ 
 $($such that $\overline{\mathscr{V}}$ refines $\mathscr{U})$, 
 then $\mathscr{U}$ has a locally finite 
-	 open partial refinement $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ such that
+	 open partial refinement $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ such that
 	  $H_\alpha \subset U_\alpha$ $(\overline{H}_\alpha \subset U_\alpha)$ 
 	  for all $\alpha \in \Delta$, and 
 	  $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
@@ -214,17 +214,17 @@ then $\mathscr{U}$ has a locally finite
 This result is also true if we replace ``locally finite" by ``discrete" 
 or replace ``open" by ``closed".
 
-\textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($open$)$ refinement $\mathscr{V}$, then $\mathscr{U}$ has a partial cushioned $($open$)$  refinement $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
+\textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($open$)$ refinement $\mathscr{V}$, then $\mathscr{U}$ has a partial cushioned $($open$)$  refinement $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
 
 \textup{(iii)} If $\mathscr{U}$ has a point-finite refinement $\mathscr{V}$, then we may assume that
 $\mathscr{V}$ is a precise refinment of $\mathscr{U}$.
 } % end of lemma
 
-\begin{proof} Suppose $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
+\begin{proof} Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
 $\overline{\mathscr{V}}$ refines $\mathscr{U}$). For every $V\in\mathscr{V}$, pick 
 a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
 $H_\alpha = \bigcup\{V\in\mathscr{V}: \delta(V) = \alpha\}$.   
-Then $\mathscr{H} = \{H_\alpha : \alpha \in \Delta\}$ is a desired 
+Then $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ is a desired 
 locally finite open partial refinement of $\mathscr{U}$.
 \end{proof} 
 
@@ -235,11 +235,11 @@ Let $\mathscr{U}$ and $\mathscr{V}$ be covers of $X$.
 	\textup{(i)} $\mathscr{V}$ is a 
 	\uwave{star-refinement}\index{star-refinement| \S\ref{def:1.1.6}\hfill}
 	of $\mathscr{U}$ if 
-	$\{\operatorname{st}(V, \mathscr{V}) : V\in \mathscr{V}\}$ refines $\mathscr{U}$.
+	$\{\operatorname{st}(V, \mathscr{V}): V\in \mathscr{V}\}$ refines $\mathscr{U}$.
 $\mathscr{V}$ is a 
 \uwave{point-star refinement}\index{point-star refinement| \S\ref{def:1.1.6}\hfill}
 of $\mathscr{U}$ if 
-$\{\operatorname{st}(x, \mathscr{V}) : x\in X\}$ refines $\mathscr{U}$.
+$\{\operatorname{st}(x, \mathscr{V}): x\in X\}$ refines $\mathscr{U}$.
 	
 	\textup{(ii)} An open cover $\mathscr{U}$ of $X$ is 
 		\uwave{normal}\index{normal (cover)| \S\ref{def:1.1.6}\hfill} 

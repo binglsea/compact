@@ -13,15 +13,15 @@
 	locally open shrink.
 }
 \begin{proof}
-Suppose $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ is a directed (increasing) open cover of $X$. By hypothesis, $\mathscr{U}$ has a locally finite open refinement $\mathscr{G} = \{G_\alpha : \alpha < \lambda\}$ with $G_\alpha \subset U_\alpha$. 
+Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ is a directed (increasing) open cover of $X$. By hypothesis, $\mathscr{U}$ has a locally finite open refinement $\mathscr{G} = \{G_\alpha: \alpha < \lambda\}$ with $G_\alpha \subset U_\alpha$. 
 For $\alpha < \lambda$, let
 
-$$W_\alpha = X \setminus \bigcup \{ \overline{G_\gamma} : \gamma < \lambda,  
+$$W_\alpha = X \setminus \bigcup \{ \overline{G_\gamma}: \gamma < \lambda,  
 G_\gamma \not\subset U_\alpha\}.$$
-Then $\mathscr{W} = \{W_\alpha : \alpha < \lambda\}$ is an open cover of $X$ 
+Then $\mathscr{W} = \{W_\alpha: \alpha < \lambda\}$ is an open cover of $X$ 
 with $\overline{W_\alpha} \subset U_\alpha$. 
 Since $\mathscr{U}$ is directed (increasing), $\mathscr{W}$ is also 
-directed (increasing). Let $\mathscr{V} = \{V_\alpha : \alpha < \lambda\}$ be  a locally finite open refinement of $\mathscr{W}$ such that $V_\alpha \subset W_\alpha$. Then $\mathscr{V}$ is a locally finite open shrink of $\mathscr{U}$. 
+directed (increasing). Let $\mathscr{V} = \{V_\alpha: \alpha < \lambda\}$ be  a locally finite open refinement of $\mathscr{W}$ such that $V_\alpha \subset W_\alpha$. Then $\mathscr{V}$ is a locally finite open shrink of $\mathscr{U}$. 
 \end{proof} 
 
 {\theorem{} \label{lth:3.1.2} 
@@ -64,22 +64,22 @@ For any $X$ the following are equivalent:
 
 (ii) $\Rightarrow$ (iii). Clear.
 
-(iii) $\Rightarrow$ (i). Assume (iii) and let $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ 
+(iii) $\Rightarrow$ (i). Assume (iii) and let $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
 be a directed open cover of $X$. Let 
-$\mathscr{F} = \{F_\alpha : \alpha < \lambda\}$ be a locally finite closed refinement of 
+$\mathscr{F} = \{F_\alpha: \alpha < \lambda\}$ be a locally finite closed refinement of 
 $\mathscr{U}$ with $F_\alpha \subset U_\alpha$. 
 For $S \in [\lambda]^{<\omega}$, let 
 $V_S = X \setminus \bigcup_{\gamma \in\lambda\setminus S} F_\gamma$. 
-Then $\mathscr{V} = \{V_S : S \in [\lambda]^{<\omega}\}$ is a directed open 
-$\lambda$-cover of $X$. Let $\mathscr{C} = \{C_S : S \in [\lambda]^{<\omega}\}$ 
+Then $\mathscr{V} = \{V_S: S \in [\lambda]^{<\omega}\}$ is a directed open 
+$\lambda$-cover of $X$. Let $\mathscr{C} = \{C_S: S \in [\lambda]^{<\omega}\}$ 
 be a locally finite closed refinement of $\mathscr{V}$ with $C_S \subset V_S$ 
 for each $S \in [\lambda]^{<\omega}$. For $\alpha < \lambda$, let
 
-$$G_\alpha = X \setminus \bigcup \{C_S : S \in [\lambda]^{<\omega} \textit{ and }
+$$G_\alpha = X \setminus \bigcup \{C_S: S \in [\lambda]^{<\omega} \textit{ and }
 C_S \cap F_\alpha = \emptyset\}.$$
 
 \noindent Then $F_\alpha \subset G_\alpha$ for each $\alpha < \lambda$. 
-It is easy to see that $\mathscr{W} = \{G_\alpha \cap U_\alpha : \alpha < \lambda\}$ 
+It is easy to see that $\mathscr{W} = \{G_\alpha \cap U_\alpha: \alpha < \lambda\}$ 
 is a locally finite open refinement of $\mathscr{U}$, so $X$ is 
 $\lambda$-paracompact.
 \end{proof}
@@ -93,7 +93,7 @@ in the subspace $F_n$.
 
 \begin{proof}
 ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence 
-$\{\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta_n\}\}_{n < \omega}$ of open refinements. For $m, n < \omega$, let 
+$\{\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta_n\}\}_{n < \omega}$ of open refinements. For $m, n < \omega$, let 
 \begin{gather*}
 	F_{m, 0} = \emptyset, \\
 	F_{m,n} = \{x \in X: \vert{}\operatorname{ind}(\mathscr{V}_m)_x\vert{} \le n\} \textit{ for } n\ge 1.
@@ -102,16 +102,16 @@ Then $\{F_{m,n}: n, m < \omega\}$ is a closed cover of $X$ such that for each $m
 $\mathscr{U} \vert{}_{F_{m,n}}$ has a point-finite open refinement 
 $\mathscr{V}_m \vert{} F_{m,n}$ in subspace $F_{m,n}$.
 
-($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha : \alpha < \Delta\}$ is an 
-open cover of $X$ and $\{F_n : n < \omega\}$ is a countable closed cover of $X$ 
+($\Leftarrow$). Suppose $\mathscr{U} = \{U_\alpha: \alpha < \Delta\}$ is an 
+open cover of $X$ and $\{F_n: n < \omega\}$ is a countable closed cover of $X$ 
 such that for each $n < \omega$, $\mathscr{U} \vert{}_{F_n}$ has a point-finite 
-open refinement $\mathscr{V}_n = \{V_{n,\alpha} : \alpha \in \Delta\}$ in the subspace 
+open refinement $\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta\}$ in the subspace 
 $F_n$ with $V_{n,\alpha} \subset U_\alpha\cap F_n$. 
 Let $V_{n,\alpha} = V_{n,\alpha}' \cap F_n$ for some open subset $V_{n,\alpha}'$ of $X$. 
 For $n < \omega$, let
 $$\mathscr{G}_n = \{V_{n,\alpha}'\cap U_\alpha: \alpha \in \Delta\} \cup 
 \{(V_{m,\alpha}'\setminus F_n)\cap U_\alpha: m\ne n, \alpha\in\Delta\}.$$
-Then $\{\mathscr{G}_n : n < \omega\}$ is a $\theta$-sequence of open refinements 
+Then $\{\mathscr{G}_n: n < \omega\}$ is a $\theta$-sequence of open refinements 
 of $\mathscr{U}$.
 \end{proof}
 
@@ -123,7 +123,7 @@ $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
 }
 
 {\definition{} \label{def:3.1.6}
-Let $\mathscr{U} = \{ U_\alpha : \alpha \in\Delta \}$ and $\mathscr{V}$ be covers of $X$.
+Let $\mathscr{U} = \{ U_\alpha: \alpha \in\Delta \}$ and $\mathscr{V}$ be covers of $X$.
 
 \textup{(i)} $\mathscr{V}$ is a 
 \uwave{pointwise $($local$)$ $W$-refinement}
@@ -131,7 +131,7 @@ Let $\mathscr{U} = \{ U_\alpha : \alpha \in\Delta \}$ and $\mathscr{V}$ be cover
 \index{local $W$-refinement| \S\ref{def:3.1.6}\hfill}
 of $\mathscr{U}$ at $x \in X$ if there exists $S \in [\Delta]^{<\omega}$ 
 $($and $\exists \, G\in \operatorname{top}(x) )$ such that $(\mathscr{V})_x$ 
-$($and $(\mathscr{V})_G )$ refines $\{U_\alpha : \alpha \in S\}$.
+$($and $(\mathscr{V})_G )$ refines $\{U_\alpha: \alpha \in S\}$.
  $\mathscr{V}$ is a pointwise $($local$)$ $W$-refinement of $\mathscr{U}$  if $\mathscr{V}$ is a pointwise $($local$)$ $W$-refinement of $\mathscr{U}$ at each $x \in X$.
 
 \textup{(ii)} A sequence $\{\mathscr{V}_n: n\in \omega\}$ of covers of $X$ 
@@ -184,24 +184,24 @@ proposition ``every open $\kappa$-cover of $X$ has a point-finite open refinemen
 We use induction to show that $\mathcal{P}_\kappa$ holds for each $\kappa \le \lambda$.
 If $\kappa$ is finite, $\mathcal{P}_\kappa$ clearly holds.
 Let $\kappa \le \lambda$ such that $\mathcal{P}_\mu$ holds for each $\mu < \kappa$. 
-To show $\mathcal{P}_\kappa$ holds, let $\mathscr{U} = \{U_\alpha : \alpha < \kappa\}$ 
+To show $\mathcal{P}_\kappa$ holds, let $\mathscr{U} = \{U_\alpha: \alpha < \kappa\}$ 
 be an open cover of $X$.
-$\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma : \alpha < \kappa \}$ is 
+$\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma: \alpha < \kappa \}$ is 
 an increasing open $\lambda$-cover of $X$.
-Let $\mathscr{W} = \{W_\alpha : \alpha < \kappa\}$ be a point-finite open 
+Let $\mathscr{W} = \{W_\alpha: \alpha < \kappa\}$ be a point-finite open 
 (precise, by (iii) of Lemma \ref{lem:1.1.5}) refinement of 
 $\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
 For $\alpha < \kappa$, let
-$$\mathscr{G}_\alpha = \{ U_\gamma : \gamma < \alpha \} \bigcup \{ \cup_{\gamma \ge \alpha} W_\gamma \}$$
+$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \bigcup \{ \cup_{\gamma \ge \alpha} W_\gamma \}$$
 Then $\mathscr{G}_\alpha$ is an open cover of $X$ with power $< \kappa$. 
 By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open 
 refinement $\mathscr{H}_\alpha$, say, precise refinement. 
 So, we can let 
-$\mathscr{H}_\alpha = \{ H_\gamma : \gamma < \alpha \} \cup \{ R_\alpha \}$ 
+$\mathscr{H}_\alpha = \{ H_\gamma: \gamma < \alpha \} \cup \{ R_\alpha \}$ 
 such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ 
 and $R_\alpha \subset \bigcup_{\gamma \ge \alpha} W_\gamma$.
 Let
-$$\mathscr{H} = \{W_\alpha\cap H_\gamma : \gamma <\alpha, \alpha<  \kappa \}.$$
+$$\mathscr{H} = \{W_\alpha\cap H_\gamma: \gamma <\alpha, \alpha<  \kappa \}.$$
 Then $\mathscr{H}$ is a point-finite open refinement of $\mathscr{U}$. So $\mathcal{P}_\kappa$ holds.
 This completes the induction. Thus $P_\lambda$ holds, so $X$ is $\lambda$-metacompact. \end{proof}
 

@@ -1,5 +1,5 @@
 \documentclass[ch3.tex]{subfiles}
-%subfile : ch3_2.tex
+%subfile: ch3_2.tex
 \begin{document}
 \section{Generalization of Submetacompactness} \label{sec:3.2}
 
@@ -8,14 +8,14 @@
 An open cover $\mathscr{U}$ of $X$ is a 
 \uwave{weak $\overline{\theta}$-cover}
 \index{weak $\overline{\theta}$-cover| \S\ref{def:3.2.1}\hfill}
-if $\mathscr{U}$ has an open refinement $\mathscr{G} = \bigcup_{n < \omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n, \alpha} : \alpha \in \Gamma_n\}$ such that
+if $\mathscr{U}$ has an open refinement $\mathscr{G} = \bigcup_{n < \omega} \mathscr{G}_n$ where each $\mathscr{G}_n = \{G_{n, \alpha}: \alpha \in \Gamma_n\}$ such that
 
 \textup{(i)}
 For each $x \in X$, there exists $m \in \omega$ such that 
 $0 < |\operatorname{ind}(\mathscr{G}_m)_x| n < \omega$.
 
 \textup{(ii)}
-$\mathscr{G}^* = \{\bigcup \mathscr{G}_n : n < \omega\}$ is a point-finite open cover of $X$.
+$\mathscr{G}^* = \{\bigcup \mathscr{G}_n: n < \omega\}$ is a point-finite open cover of $X$.
 
 \noindent The family $\mathscr{G}$ is called a 
 \uwave{weak $\overline{\theta}$-refinement}
@@ -93,13 +93,13 @@ A point-finite open cover of $X$ is a $D\omega$-cover.
 }
 
 \begin{proof}
-Suppose $\mathscr{U} = \{ U_\alpha : \alpha \in \Delta \}$ is a point-finite open 
+Suppose $\mathscr{U} = \{ U_\alpha: \alpha \in \Delta \}$ is a point-finite open 
 cover of $X$. For $n < \omega$, let $D_0= \emptyset$ and
 $$D_n = \{ x \in X: |\operatorname{ind}(\mathscr{U})_x| \le n \},  \textup{ when } n \ge 1.$$
 \noindent Then $D_n$ is closed. Let $F(\emptyset, 0) = \emptyset$. 
 For $n \ge 1$ and $S \in [\Delta]^n$, let
 $$F(S, n) = D_n\bigcap(\cap_{\alpha \in S} U_\alpha), \quad
-\mathscr{F}_n= \{F(S, n) : S \in [\Delta]^n\}$$
+\mathscr{F}_n= \{F(S, n): S \in [\Delta]^n\}$$
 
 \noindent We show that $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ is a $D\omega$-refinement of $\mathscr{U}$. Let $n < \omega$, 
 $Y = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that $\mathscr{F}_n\vert{}_Y$ is a discrete closed family in $Y$. 
@@ -132,7 +132,7 @@ A $\lambda$-submetacompact space is $\lambda$-strictly quasi-paracompact.
 
 \begin{proof}
 Assume $X$ is $\lambda$-submetacompact and let 
-$\mathscr{U} = \{ U_\alpha : \alpha < \lambda \}$ be an open cover of $X$. 
+$\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}$ be an open cover of $X$. 
 By Theorem \ref{th:3.1.5}, 
 there exists a countable closed cover $\{ F_n: n < \omega\}$ of $X$ such that each $\mathscr{U}\vert{}_{F_n}$ has a point-finite open refinement 
 $\mathscr{V}_n$ in $F_n$. By Lemma 3.2.4, let 
@@ -158,7 +158,7 @@ $\lambda$-weakly $\bar{\theta}$-refinable.
 }
 
 \begin{proof}
-Suppose $\mathscr{U} = \{U_\alpha : \alpha < \lambda\}$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
+Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
 Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets of $X \setminus \bigcup_{i<n}(\cup \mathscr{F}_i)$
 with $F_{n, \alpha}\subset U_\alpha$. Define
 $$G_{n,\alpha}=\left(U_\alpha\setminus\bigcup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}\right)

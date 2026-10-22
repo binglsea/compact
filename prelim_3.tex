@@ -4,7 +4,7 @@
 \label{sec:1.3}
 
 {\definition{}\label{def:1.3.1}
-	 Let Let $\mathscr{U} = \{U_{\alpha} : \alpha \in\Delta\}$ be a family of subsets of $X$.
+	 Let Let $\mathscr{U} = \{U_{\alpha}: \alpha \in\Delta\}$ be a family of subsets of $X$.
 
 \textup{(i) ([Michael 1957]\textsuperscript{\cite{Michael1957}})}
 $\mathscr{U}$ is 
@@ -20,7 +20,7 @@ $$\left(\bigcap_{\alpha\in \Gamma} U_{\alpha}\right)^{\circ} = \bigcap_{\alpha\i
 } %end of def
 
 {\lemma{}  \label{lem:1.3.2}
-For a family $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
+For a family $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ of open sets in $X$, the following are equivalent.
 
 \textup{(i)} $\mathscr{U}$ is interior-preserving.
 	
@@ -31,10 +31,10 @@ For a family $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ of open sets in $X
 } %end of lemma
 
 {\theorem{} \label{th:1.3.3}
-Let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ be an interior-preserving
+Let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an interior-preserving
  open family in $X$. For each $\beta \in B$, let $\Delta_\beta \subset \Delta$. Let
 
-$$\mathscr{U}' = \left\{ \bigcap_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}, \quad \mathscr{U}'' = \left\{ \bigcup_{\alpha \in \Delta_\beta} U_\alpha : \beta \in B \right\}.$$
+$$\mathscr{U}' = \left\{ \bigcap_{\alpha \in \Delta_\beta} U_\alpha: \beta \in B \right\}, \quad \mathscr{U}'' = \left\{ \bigcup_{\alpha \in \Delta_\beta} U_\alpha: \beta \in B \right\}.$$
 Then the families $\mathscr{U}'$ and $\mathscr{U}''$ are interior-preserving open.
 } %end of teorem
 
@@ -43,7 +43,7 @@ If $\mathscr{U}$ is interior-preserving open, then clearly so is  $\mathscr{U}'$
 To see that $\mathscr{U}''$ is open, let $D \subset B$. It is easy to verify that
 
 $$\bigcap_{\beta \in D} \left( \bigcup_{\alpha \in \Delta_\beta} U_\alpha \right) 
-= \bigcup \left\{ \bigcap_{\beta \in D} U_{f(\beta)} : f \in \prod_{\beta \in D} \Delta_\beta \right\}.$$
+= \bigcup \left\{ \bigcap_{\beta \in D} U_{f(\beta)}: f \in \prod_{\beta \in D} \Delta_\beta \right\}.$$
 By Lemma \ref{lem:1.3.2}, $\mathscr{U}'$ is interior-preserving open.
 \end{proof} 
 
@@ -76,18 +76,18 @@ A subset $A$ of $X$ is
 \uwave{functionally open}\index{functionally open| \S\ref{def:1.3.6}\hfill} 
 or a 
 \uwave{cozero set}\index{cozero set| \S\ref{def:1.3.6}\hfill} 
-if $A = f^{-1}(0, 1] = \{x \in X : f(x) > 0\}$ for some continuous function 
-$f : X \rightarrow [0, 1]$.
+if $A = f^{-1}(0, 1] = \{x \in X: f(x) > 0\}$ for some continuous function 
+$f: X \rightarrow [0, 1]$.
 A family of subsets of $X$ is functionally open if every member of it is functionally open.
 }%end of def
 
 
 {\definition{} \label{def:1.3.7}
-Let $\Phi = \{\varphi_\alpha : \alpha \in \Delta\}$ be a family of continuous functions from $X$ into $[0, 1]$ such that the family 
-$\{\varphi_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ is point finite. 
-For $x \in X$, let $\Delta(x) = \{\alpha \in \Delta : x \in\varphi_\alpha^{-1}(0, 1]\}$.
+Let $\Phi = \{\varphi_\alpha: \alpha \in \Delta\}$ be a family of continuous functions from $X$ into $[0, 1]$ such that the family 
+$\{\varphi_\alpha^{-1}(0, 1]: \alpha \in \Delta\}$ is point finite. 
+For $x \in X$, let $\Delta(x) = \{\alpha \in \Delta: x \in\varphi_\alpha^{-1}(0, 1]\}$.
 
-\textup{(i)} Define $\varphi : X \rightarrow \mathbb{R}$ by 
+\textup{(i)} Define $\varphi: X \rightarrow \mathbb{R}$ by 
 %$\varphi = \sum_{\alpha \in \Delta} \varphi_\alpha$.
 
 $$\varphi(x) = \sum_{\alpha \in \Delta} \varphi_\alpha(x) = 
@@ -113,19 +113,19 @@ such that $\mathscr{V} = \{\varphi_\alpha^{-1}(0, 1]:  \alpha\in\Delta\}$.
 }
 
 \begin{proof} 
- Let $\mathscr{V} = \{f_\alpha^{-1}(0, 1] : \alpha \in \Delta\}$ be a locally finite
- family of functionally open subsets of $X$ where each $f_\alpha : X \rightarrow [0, 1]$ is continuous.
+ Let $\mathscr{V} = \{f_\alpha^{-1}(0, 1]: \alpha \in \Delta\}$ be a locally finite
+ family of functionally open subsets of $X$ where each $f_\alpha: X \rightarrow [0, 1]$ is continuous.
 
-(i) For each $x \in X$, $\Delta(x) = \{\alpha \in \Delta : x \in f_\alpha^{-1}(0, 1]\}$ is finite.
-Define a continuous function $f : X \rightarrow [0, 1]$ by
-$f(x) = \max \{ f_\alpha : x \in \Delta \}$ for $x\in X$.
+(i) For each $x \in X$, $\Delta(x) = \{\alpha \in \Delta: x \in f_\alpha^{-1}(0, 1]\}$ is finite.
+Define a continuous function $f: X \rightarrow [0, 1]$ by
+$f(x) = \max \{ f_\alpha: x \in \Delta \}$ for $x\in X$.
 Then $\bigcup \mathscr{V} = f^{-1}(0, 1]$ is functionally open.
 
 (ii) If $\mathscr{V}$ covers $X$, then 
-$g = \sum_{\alpha\in\Delta}f_\alpha : X \rightarrow \mathbb{R}$ 
+$g = \sum_{\alpha\in\Delta}f_\alpha: X \rightarrow \mathbb{R}$ 
 is a continuous function such that $g(x) > 0$ for all $x\in X$. 
 For each $\alpha \in \Delta$, define a continuous function 
-$\varphi_\alpha : X \rightarrow [0, 1]$ by $\varphi_\alpha(x) = f_\alpha(x) /g(x)$. 
+$\varphi_\alpha: X \rightarrow [0, 1]$ by $\varphi_\alpha(x) = f_\alpha(x) /g(x)$. 
 Then $\sum_{\alpha\in\Delta}\varphi_\alpha(\alpha) = 1$ for each $x \in X$,
 and  $\varphi_\alpha^{-1}(0, 1] = f_\alpha^{-1}(0, 1]$.
 Therefore, $\{\varphi_\alpha: \alpha\in \Delta\}$ is a partition of unity on $X$.
