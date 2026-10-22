@@ -71,7 +71,7 @@ $$U_{n,\alpha} = \operatorname{st}(D_\alpha, \mathscr{B}_n^\circ)
 \setminus \bigcup_{i \ge n} 
 \overline{\bigcup \{B_{i,\gamma}^\circ : \gamma < \alpha, B_{i,\gamma} \cap D_\alpha = \emptyset\}}$$
 
-and $V_\alpha = \bigcup_{n < \omega} V_{n,\alpha}$. We show that $\mathscr{V} = \{V_\alpha \mid \alpha < \lambda\}$ is a disjoint open expansion of $\mathscr{D}$.
+and $V_\alpha = \bigcup_{n < \omega} V_{n,\alpha}$. We show that $\mathscr{V} = \{V_\alpha : \alpha < \lambda\}$ is a disjoint open expansion of $\mathscr{D}$.
 
 (2) $D_\alpha \subset V_\alpha$ for all $\alpha < \lambda$.
 
@@ -95,7 +95,7 @@ Based on `jiang111.pdf`, here is the mathematical transcription into LaTeX:
 
 If a cover $\mathscr{U}$ of $X$ has a $\sigma$-cushioned open refinement, then $\mathscr{U}$ has a cushioned open refinement.
 
-Proof. Suppose that the cover $\mathscr{U} = \{U_\alpha \mid \alpha \in \Lambda\}$ has an open refinement $\mathscr{W} = \bigcup_{n < \omega} \mathscr{W}_n$ where each $\mathscr{W}_n = \{V_{n,\alpha} \mid \alpha \in \Lambda\}$ such that for every $n < \omega$ and $\Gamma \subset \Lambda$, $\overline{\bigcup_{\alpha \in \Gamma} V_{n,\alpha}} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$. For $n < \omega$, let $A_n = \bigcup \mathscr{W}_n$, $H_0 = A_0$, and $H_n = A_n \setminus \bigcup_{i < n} A_i$ for $n \ge 1$. Then $\{H_n \mid n < \omega\}$ is a LF cover of $X$. For $\alpha \in \Lambda$, let $B_\alpha = \bigcup_{n < \omega} (H_n \cap V_{n,\alpha})$. Then $\mathscr{B} = \{B_\alpha \mid \alpha \in \Lambda\}$ is a cushioned refinement of $\mathscr{U}$.
+Proof. Suppose that the cover $\mathscr{U} = \{U_\alpha : \alpha \in \Lambda\}$ has an open refinement $\mathscr{W} = \bigcup_{n < \omega} \mathscr{W}_n$ where each $\mathscr{W}_n = \{V_{n,\alpha} : \alpha \in \Lambda\}$ such that for every $n < \omega$ and $\Gamma \subset \Lambda$, $\overline{\bigcup_{\alpha \in \Gamma} V_{n,\alpha}} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$. For $n < \omega$, let $A_n = \bigcup \mathscr{W}_n$, $H_0 = A_0$, and $H_n = A_n \setminus \bigcup_{i < n} A_i$ for $n \ge 1$. Then $\{H_n : n < \omega\}$ is a LF cover of $X$. For $\alpha \in \Lambda$, let $B_\alpha = \bigcup_{n < \omega} (H_n \cap V_{n,\alpha})$. Then $\mathscr{B} = \{B_\alpha : \alpha \in \Lambda\}$ is a cushioned refinement of $\mathscr{U}$.
 
 ---
 
@@ -115,7 +115,7 @@ For any space $X$, the following are equivalent:
 
 Proof. $(\text{i}) \implies (\text{ii})$ Suppose that $X$ is $\kappa$-collectionwise normal and that $\mathscr{U}$ be a $D_\omega \kappa$-cover of $X$. Let us show that $\mathscr{U}$ is normal.
 
-Let $\mathscr{P} = \bigcup_{m,n < \omega} \mathscr{P}_{m,n}$ be a refinement of $\mathscr{U}$, where each $\mathscr{P}_{m,n} = \{D_{m,n,\alpha} \mid \alpha < \kappa\}$ is a discrete closed family of subsets of $X$ with $D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \kappa$. We have $\dots$
+Let $\mathscr{P} = \bigcup_{m,n < \omega} \mathscr{P}_{m,n}$ be a refinement of $\mathscr{U}$, where each $\mathscr{P}_{m,n} = \{D_{m,n,\alpha} : \alpha < \kappa\}$ is a discrete closed family of subsets of $X$ with $D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \kappa$. We have $\dots$
 
 
 
@@ -134,9 +134,9 @@ Let $\mathscr{P} = \bigcup_{m,n < \omega} \mathscr{P}_{m,n}$ be a refinement of 
 
 
 
-(i) $\implies$ (ii) Assume (i) holds and let $\mathscr{U} = \{U_\alpha \mid \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathscr{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
+(i) $\implies$ (ii) Assume (i) holds and let $\mathscr{U} = \{U_\alpha : \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathscr{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
 
-$$A_n = \{x \in X \mid \mathscr{V}_n \text{ is a local-star refinement of } \mathscr{U} \text{ at } x\}$$
+$$A_n = \{x \in X : \mathscr{V}_n \text{ is a local-star refinement of } \mathscr{U} \text{ at } x\}$$
 
 Then $\mathscr{V}_n$ is a local-star refinement of $\mathscr{U}$ at each point of $A_n$. By Lemma 8.2.4, there exists an open family $\mathscr{W}_n$ which is cushioned in $\mathscr{U}$ and covers $A_n$.
 
