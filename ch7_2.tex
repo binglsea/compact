@@ -478,21 +478,33 @@ $B = \bigcap_{i=1}^{p} D_i, \mathscr{U}' = \{U_\gamma: \gamma\in \bigcup_{i=1}^p
 
 (5) $(\mathscr{H}_{m,q})_B$ refines $\mathscr{U}'$, so  \textsc{Claim} is true.
 
-
- By (4) there exists  a set such that $H = W_{\tilde{\gamma}\tilde{\sigma}}(m, \partial_{\tilde{\nu}}, \beta_{r_3}) \subset \dots$.
-
-
- Thus, the refinement holds, completing the proof of the claim and the induction. Then the property holds and is paracompact.
+\textsc{Proof}. Let $H\in \mathscr{H}_{m, q}$ with $H\bigcap B \ne \emptyset$. 
+By (3), $B_0\subset F_{m,p}$.Then $H\bigcap F_{m,q}\ne \emptyset$, hence there exists 
+$y \in F_{m,q}$ such that $H= H(y, m, q)$. Sice $\emptyset \ne H\bigcap B \subset
+V(m, \delta(y, m, q)) \bigcap B_0$ by (3) $\exists \, j le p\; \delta(y, m, q) = \alpha_j$.
+Then
+\begin{equation*}
+	\begin{aligned}
+H(y,m,q)  &\subset \bigcap_{l=0}^q W_l(m, \alpha_j, \beta_l) \\
+ & \subset \bigcap_{i=0}^p W_{r_i}(m, \alpha_j, \beta_i) \\
+ & \subset W_{r_j}(m, \alpha_j, \beta_j) 
+	\end{aligned}
+\end{equation*}
+Hence $B_j \bigcap W_{r_j}(_l(m, \alpha_j, \beta_j) \supset B \bigcap H \ne \emptyset$. By (2),
+$y\notin\bigcup_{\gamma > \alpha_j}V(m,\gamma)$.
+ By (4) there exists $\gamma\in D_j$ such that 
+ $H = W_{r_j}(m, \alpha_j, \beta_{r_j}) \subset U_\gamma\in \mathscr{U}'$.
+Thus, $(\mathscr{H}_{m,q})_B$ refines the finite subfamily $\mathscr{U}'$ of $\mathscr{U}$, 
+That completes the proof of the \textsc{Claim} and so the induction. 
+Then $\mathcal{P}_\lambda$ holds and $X$ is $\lambda$-paracompact.
 \end{proof}
-
-
 
 {\definition{\label{def:7.2.14}}  
  A family $\mathscr{F} = \{F_\alpha: \alpha \in \Delta\}$ is
  \uwave{hereditarily closure-preserving}
 \index{hereditarily closure-preserving| \S\ref{def:7.2.14}\hfill} 
-if every family $\mathscr{F} = \{F_\alpha \mid \alpha \in \Delta\}$ where 
-$G_\alpha\subset F_\alpha$ is closure-preserving .
+if every family $\mathscr{F} = \{F_\alpha: \alpha \in \Delta\}$, where 
+$G_\alpha\subset F_\alpha$, is closure-preserving .
 A family is hereditarily 
  \uwave{$\sigma$-hereditarily closure-preserving}
  \index{$\sigma$-hereditarily closure-preserving| \S\ref{def:7.2.14}\hfill} 
