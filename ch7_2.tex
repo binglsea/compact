@@ -588,53 +588,46 @@ Let $\Delta = \bigcup_{\alpha < \mu} \{\alpha\} \times [\alpha]^{<\omega})$, and
 
  (1) For each $m, n < \omega$, $\mathscr{F}_{m,n,1}$ and $\mathscr{F}_{m,n,2}$ are closure-preserving closed families.
 
-
-
-
- Proof of (1):
- We prove $\mathscr{F}_{m,n,1}$; the proof for $\mathscr{F}_{m,n,2}$ is analogous.
-
-
- For any $B \in \mathscr{B}$, let $b = \{\alpha < \mu: B \subset B_{m,\alpha}\}$.
-
-
- Since $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ is hereditarily c.p., the closure-preserving property holds.
-
+\textsc{Proof}.
+ We prove $\mathscr{F}_{m,n,1}$; the proof for $\mathscr{F}_{m,n,2}$ is similar.
+For any $D\in \Delta$, let $b = \{\alpha < \mu: \exists \, S \in [\alpha]^{<\omega} \text { such that } (\alpha, S) \in D\}$.
+FOr each $a\in b$, let $d_\alpha = \{S\in [\alpha]^{<\omega}, (\alpha, S)\in D\}$.
+Then $D = \bigcup_{\alpha\in D}(\{\alpha\}\times d_\alpha)$.
+Since $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ is hereditarily  closure-preserving, we have
+\begin{equation*}
+	\begin{aligned}
+		\overline{\bigcup_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha}\right)} &= 
+			\overline{\bigcup_{\alpha\in b}\left(
+			(\cup_{S\in d_\alpha}E_{m,\alpha,n,S}) \cap B_{m,\alpha} \right)} \\
+		&\subset 	\bigcup_{\alpha\in b}\left(
+			\left(\overline{\bigcup_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) \cap \overline{B_{m,\alpha}} \right)  \\
+		&= \bigcup_{\alpha\in b} \bigcup_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right) \\
+		&= \bigcup_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right).
+	\end{aligned}
+\end{equation*}
+Thus (1) holds.
 
  Let $\mathscr{F} = \bigcup_{m,n<\omega} (\mathscr{F}_{m,n,1} \cup \mathscr{F}_{m,n,2})$.
 
-
-
-
- (2) $\mathscr{F}$ covers $X$:
- Proof: Let $x \in X$. Since $\mathscr{B}^\circ$ covers $X$, there exist $m$ and $\alpha$ with $x \in B_{m,\alpha}^\circ$.
-
-
- Since $\mathscr{E}_{m,\alpha}^\circ$ covers $X$, there exists  $n < \omega$ and $A \in \mathscr{E}_{m,\alpha,n}$ such that $x \in A$.
-
-
- If $A = E_{m,\alpha,n,s}$, then $x \in (E_{m,\alpha,n,s} \cap B_{m,\alpha})^\circ \in \mathscr{F}_{m,n,1}$.
-
-
- If $A = K_{m,\alpha,n,s}$ for some $s$, then $x \in \dots$.
-
-
- Thus, (2) holds.
-Here is the extracted and organized text from the provided document page:
-
+(2) $\mathscr{F}^\circ$ covers $X$:
+ Proof: Let $x \in X$. Since $\mathscr{B}^\circ$ covers $X$, there exist $m< \omega$ and 
+ $\alpha<\mu$ with $x \in B_{m,\alpha}^\circ$.
+Since $\mathscr{E}_{m,\alpha}^\circ$ covers $X$, there exists  $n < \omega$ 
+and $A \in \mathscr{E}_{m,\alpha,n}$ such that $x \in A^\circ$. Then $A\ne P_{m, \alpha}$. 
+ If $A = E_{m,\alpha,n,S}$ for some $S\in [\alpha]^{<\omega}$, then 
+ $x \in (E_{m,\alpha,n,S} \cap B_{m,\alpha})^\circ \in \mathscr{F}_{m,n,1}^\circ$.
+If $A = K_{m,\alpha,n,S}$ for some $S$, then $x \bigcup\mathscr{F}_{m,n,2}^\circ$.
+Thus, (2) holds.
 
  (3) $\mathscr{F}$ is a refinement of $\mathscr{U}$:
 
- Proof: For any $m, n, s$, there exist $a \in \mathscr{U}$ and $s$ such that $E \subset U_s$.
-
-
- Since $\mathscr{U}$ is directed, there exists  $a \in \mathscr{U}$ such that $U_s \subset U_a$. So $\mathscr{F}$ refines $\mathscr{U}$.
-
-
- Thus, $\mathscr{F}$ is a $\sigma$-closure-preserving  closed refinement of $\mathscr{U}$ such that $\mathcal{F}$ covers $X$.
-
-
- That completes the proof of $P_\mu$ and the induction.
+ Proof: For any $F\in \mathscr{F}$, there exist $\alpha<\mu$ and $S\in [\alpha]^{<\omega}$
+ such that $F\subset  U_\alpha$. % TO_DO
+Since $\mathscr{U}$ is directed, there exists  $\alpha< \mu$ such that $U_S \subset U_\alpha$. 
+So $\mathscr{F}$ refines $\mathscr{U}$.
+Thus, $\mathscr{F}$ is a $\sigma$-closure-preserving  closed refinement of $\mathscr{U}$ 
+such that $\mathcal{F}^\circ$ covers $X$.
+That completes the proof of $\mathcal{P}_\mu$ and the induction.
 \end{proof}
 
 
