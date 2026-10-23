@@ -1,20 +1,16 @@
-Since $\bigcup \mathscr{F}_{m,n} \setminus L$ is a closed subset of $X$, there exists a 
-functionally open set $K$ such that
-$$\bigcup \mathscr{F}_{m,n} \subset L \subset K \subset \overline{K} \subset 
-\bigcup_{\alpha \in \Delta} H_{m,n,\alpha}.$$
-Let $V_{m,n,\alpha} = K\bigcap H_{m,n,\alpha}$. 
-Then $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha \in \Delta\}$ is a functionally open 
-family with $\overline{\mathscr{V}_{m,n,\alpha} \subset U_\alpha$ and such that
-	%$\bigcup \mathscr{V}_{m,n} = K$ is functionally open. Since 
-	%$\bigcup \mathscr{F}_{m,n} \setminus L \subset \bigcup \mathscr{V}_{m,n}$,
-	%$$\bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{F}_{p,q}) \subset L \setminus (\bigcup\mathscr{F}_{m,n})
-	%\subset \bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{V}_{p,q}).$$
-	%Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the \textsc{Claim} is proved.
-	
-	By the claim and Theorem 2016, there is a LF functionally open cover $\{W_{m,n}\}$ for each $m,n$. Such that $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$.
-	
-	For $\alpha$, let $G_\alpha = \bigcup (W_{m,n} \cap V_{m,n,\alpha})$. Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha$, so $\mathscr{G}$ is an open shrink of $\mathscr{U}$.
-	
-	(ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Rightarrow$ (v): Clear.
-	
-	(v) $\Rightarrow$ (i): Routine.
+\documentclass[jiang8iv.tex]{subfiles}
+%subfile: ch8_4.tex
+\begin{document}
+
+
+
+
+
+(i) $\Rightarrow$ (ii) Assume (i) holds and let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathscr{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
+
+$$A_n = \{x \in X: \mathscr{V}_n \text{ is a local-star refinement of } \mathscr{U} \text{ at } x\}$$
+
+Then $\mathscr{V}_n$ is a local-star refinement of $\mathscr{U}$ at each point of $A_n$. By Lemma 8.2.4, there exists an open family $\mathscr{W}_n$ which is cushioned in $\mathscr{U}$ and covers $A_n$.
+
+Since $\bigcup_{n < \omega} A_n = X$, $\mathscr{W} = \bigcup_{n < \omega} \mathscr{W}_n$ is a $\sigma$-cushioned open refinement of $\mathscr{U}$. By Theorem 8.1.7, this holds.
+\end{document}
