@@ -215,7 +215,7 @@ point-star refinement of $\mathscr{U}$.
 
  
  {\corollary{} \label{lem:8.1.6}
- Any $\lambda$-fully normal space is $\lambda$-fcollectionwise normal. \hfill\qedsymbol
+ Any $\lambda$-fully normal space is $\lambda$-collectionwise normal. \hfill\qedsymbol
  }
  
  
@@ -226,14 +226,23 @@ For any $X$ the following are equivalent:
 normal$)$. 
 
 \textup{(ii)}  Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover of $X$ 
-has an open star-refinement. 
+is a normal cover. 
 
 \textup{(iii)}   Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
-of $X$ has a semi-open local-star refinement. 
+$\mathscr{U}$  of $X$ has a locally finite and $\sigma$-discrete oepn 
+refinement $\mathscr{V}$ such that $\mathscr{\overline{V}}$ refines $\mathscr{U}$.
 
-\textup{(iv)}  Every  interior-preserving  $A\omega^2$ 
-$($or $D\omega^2)$  $\lambda$-cover of $X$ 
- has a cushioned ope refinement.
+\textup{(iv)}  Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has a $\sigma$-locally finite closed
+refinement $\mathscr{F}$ such that $\mathscr{\overline{F}}\circ$ covers $X$.
+
+\textup{(v)}  Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has a $\sigma$-closure-preserving  closed
+refinement $\mathscr{F}$ such that $\mathscr{\overline{F}}\circ$ covers $X$.
+
+\textup{(vi)}  Every interior-preserving $A\omega^2$ 
+$($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has a $\sigma$-cushioned open refinement.
 }
 
 \begin{proof} 
@@ -252,7 +261,8 @@ a $\sigma$-cushioned open nefinement. By Lemma \ref{lem:8.1.4} and
 Theonem \ref{th:8.1.5}, $X$ is $\lambda$-collectionwise normal. 
 Now suppose that every interior-presserving directed $A\omega^2$ 
 $\lambda$-cover of  thas 
-a  cushioned open refinement. Let $\mathscr{B}$ be a locally finte family 
+a  $\sigma$-cushioned open refinement. Let $\mathscr{B}$ be 
+a locally finte family 
 of subsets of $X$. The induced cover  $\mathscr{B}^*$ is an 
 interior-preserving  directed $A\omega^2$  $\lambda$-cover of $X$. 
 Then  $\mathscr{B}^*$ has a $\sigma$-cushioned  open refinement. 
@@ -271,29 +281,41 @@ such that $A\subset U$ and $B\subset V$, so $X$ is normal.
 {\theorem{} \label{th:8.1.8}
 For any  $X$ the following are equivalent.
 
-\textup{(i)}   is normal $\lambda$-expandable $($or $\lambda$-collectionwise normal$)$.
+\textup{(i)}  $X$ is normal $\lambda$-expandable $($or $\lambda$-collectionwise normal$)$.
 
-\textup{(ii)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover $\mathscr{U}$
-of has a locally finite  and $\sigma$-discrete open refinement $\mathscr{V}$ 
-such that $\mathscr{\overline{V}}$ refines $\mathscr{U}$. 
+\textup{(ii)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has an open star refinement. 
 
+\textup{(iii)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has a semi-open local-star refinement. 
 
-\textup{(iii)}   
-qushioned open refinement,
-cover of t has
-Proof (is   Assume (is and let  be an A
-cover of B. By Theorem  Uis normas.
-Hience u has an
-(iis cins. Clear
-open star refinements
-cilis  iv). Let    dars be an IP directed Acus 
-(IPD)  -cover of  By  ).  has a semi opon
-localk star refinement a. For  let
-: Wetop    Ca
-The  Gaiacy is a
-cushioned open refinement of U.
-CID. By Theorem 8.1.7. a
+\textup{(iii)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has a semi-open local-star refinement. 
+
+\textup{(iv)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
+of $X$ has cushioed open refinemnt.
 }
+
+\begin{proof} 
+(i) $\Rightarrow$ (ii).  Assume (i) and let $\mathscr{U}$ be an $A\omega^2$ 
+(or $D\omega^2$) $\lambda$-cover of $X$. By Theorem \ref{th:8.1.7}, it is normal.
+Hence it has an open star refinement.
+
+(ii) $\Rightarrow$ (iii). Clear.
+
+(iii) $\Rightarrow$ (iv). Let $\mathscr{U}=\{U_\alpha: \alpha < \lambda\}$ be 
+directed  
+interior-preserving  $A\omega^2$ (or interior-preserving $D\omega^2$ )
+$\lambda$-cover of $X$. By (iii), $\mathscr{U}$ has a semi-open local-star refinement
+$\mathscr{V}$. For $\alpha < \lambda$, let 
+$$G_\alpha = \{x\in : \exists \, W\in \operatorname{top}(x)
+ \text{ and } \operatorname{st}(W, \mathscr{V})\subset U_\alpha\}.$$
+ The $\{G_\alpha:\alpha < \lambda\}$ is a cushioned opent refinement of 
+ $\mathscr{U}$.
+ 
+ (iv) $\Rightarrow$ (i). By Theorem \ref{th:8.1.7}.
+\end{proof}
+
 
 
 
