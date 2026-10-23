@@ -289,9 +289,6 @@ of $X$ has an open star refinement.
 \textup{(iii)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
 of $X$ has a semi-open local-star refinement. 
 
-\textup{(iii)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
-of $X$ has a semi-open local-star refinement. 
-
 \textup{(iv)}    Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover 
 of $X$ has cushioed open refinemnt.
 }
@@ -317,12 +314,63 @@ $$G_\alpha = \{x\in : \exists \, W\in \operatorname{top}(x)
 \end{proof}
 
 
+{\theorem{} \label{th:8.1.9}
+For any space the following are equivalent:
 
+\textup{(i)} $X$ is normal $\lambda$-expandable ($\lambda$-collectionwise normal),
+
+\textup{(ii)}  Every $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover of $X$ has an $\varepsilon^*$-sequence of open refinements.
+
+\textup{(iii)}  Every interior-preserving $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover of $X$ has an $\varepsilon^*$-sequence 
+of interior-preserving open covers of $X$,
+
+\textup{(iv)}  Every interior-preserving $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover of $X$ has a local-star refining sequence of interior-preserving 
+open covers of $X$.
+
+\textup{(v)} Every interior-preserving $A\omega^2$ $($or $D\omega^2)$  $\lambda$-coverr of $X$ has a local-star refining sequence of semi-open covers of $X$.
+}
+
+
+P\begin{proof} 
+$\Rightarrow$ (ii) and (iii). Assume (i) and let $\mathscr{U}$ 
+be an $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover of $X$. 
+By Theorem \ref{th:8.1.8}, $\mathscr{U}$ has a refinement 
+$\mathscr{D} = \bigcup_{n<\omega} \mathscr{D}_n$ where each 
+$\mathscr{D}_n= \{D_{n,\alpha}: \alpha<\lambda\}$ is a discrete closed family in $X$ 
+with $\mathscr{D}_n = \{D_{n,\alpha}: \alpha< \lambda\}$ for each $\alpha< \lambda$, 
+and $\mathscr{D}_n^\circ$ covers $X$.
+For each $n<\omega$ and $\alpha<\lambda$, let 
+$G_{n,\alpha} = U_\alpha \setminus \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$. 
+Then each $G_{n,\alpha}$ is open with 
+$D_{n,\alpha} \subset G_{n,\alpha} \subset U_\alpha$, and 
+each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha \in \lambda\}$ is an open 
+refinement of $\mathscr{U}$. To see that $\{\mathscr{G}_n:n< \omega\}$ 
+is an $\varepsilon^*$-sequence, let $x \in X$. There exists $m < \omega$ 
+and $\alpha_0< \lambda$ such that $x \in D_{m,\alpha_0}^\circ$. Then
+$W=D_{m,\alpha_0}^\circ\in \operatorname{top}(x)$ and 
+$\operatorname{ind}(\mathscr{G}_m)_W\subset \{\alpha_0\}$, so
+$\{\mathscr{G}_n\}$ is an $\varepsilon^*$-sequence. We have proved that (i)
+$\Rightarrow$ (ii).
+If $\mathscr{U}$ is interior-preserving open, then each $\mathscr{G}_n$
+is interior-preserving open, so (iii) holds.
+It is clear that (ii) $\Rightarrow$ (v) and (iii) $\Rightarrow$ (iv) 
+$\Rightarrow$ (v).
+
+
+
+(i) $\Rightarrow$ (ii) Assume (i) holds and let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathscr{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
+
+$$A_n = \{x \in X: \mathscr{V}_n \text{ is a local-star refinement of } \mathscr{U} \text{ at } x\}$$
+
+Then $\mathscr{V}_n$ is a local-star refinement of $\mathscr{U}$ at each point of $A_n$. By Lemma 8.2.4, there exists an open family $\mathscr{W}_n$ which is cushioned in $\mathscr{U}$ and covers $A_n$.
+
+Since $\bigcup_{n < \omega} A_n = X$, $\mathscr{W} = \bigcup_{n < \omega} \mathscr{W}_n$ is a $\sigma$-cushioned open refinement of $\mathscr{U}$. By Theorem 8.1.7, this holds.
+\end{proof}
 
 
 
 \subfile{ch8_2}
 \subfile{ch8_3}
-\subfile{ch8_4}
+%\subfile{ch8_4}
 
 \end{document}
