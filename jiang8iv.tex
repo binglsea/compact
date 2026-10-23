@@ -49,7 +49,7 @@ It follows that the family
 $\{H_n \bigcap(\bigcup_{\gamma \ne \alpha}V_{n,\gamma}): \alpha < \lambda\}$ 
 is an interior-preserving open family in $H_n$. 
 For $n \in \omega, \alpha < \lambda$, let
-$$B_{n,\alpha} = H_n \setminus \bigcup_{\alpha\ne\gamma} V_{n,\gamma} 
+$$B_{n,\alpha} = H_n \setminus \bigcup_{\gamma\ne\alpha} V_{n,\gamma} 
 \text{ and } \mathscr{B}_n = \{B_{n,\alpha}: \alpha < \lambda\}.$$
 
 \noindent Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is 
@@ -57,32 +57,49 @@ a $\sigma$-closure-preserving closed family in $X$. We have
 
 (1) $\bigcup \mathscr{B}^\circ = X$.
 
-\noindent\textsc{Proof of (1)}. Let $x \in X$. There exists $m < \omega$ and 
+\noindent\textsc{Proof}. Let $x \in X$. There exists $m < \omega$ and 
 $W \in \operatorname{top}(x)$ such that 
 $|\operatorname{ind}(\mathscr{V}_m)_W|\le 1$. 
 Let $\alpha_0<\lambda$ be such that 
 $\operatorname{ind}(\mathscr{V}_m)_W\subset \{\alpha_0\}$. 
 Then $W\subset B_{n,\alpha_0} $, so $x\in B_{m, \alpha_0}^\circ$. Thus (1) holds.
 
-For $n < \omega$, let
+For $n < \omega, \alpha<\lambda$, let
 
 $$U_{n,\alpha} = \operatorname{st}(D_\alpha, \mathscr{B}_n^\circ)
-\setminus \bigcup_{i \ge n} 
-\overline{\bigcup \{B_{i,\gamma}^\circ: \gamma < \alpha, B_{i,\gamma} \cap D_\alpha = \emptyset\}}$$
+\setminus \bigcup_{i \le n} 
+\overline{\bigcup \{B_{i,\gamma}^\circ: \gamma < \alpha
+	\text{ and }B_{i,\gamma} \cap D_\alpha = \emptyset\}}$$
+and $U_\alpha = \bigcup_{n < \omega} U_{n,\alpha}$. We show that 
+$\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
+is a disjoint open expansion of $\mathscr{D}$.
 
-and $V_\alpha = \bigcup_{n < \omega} V_{n,\alpha}$. We show that $\mathscr{V} = \{V_\alpha: \alpha < \lambda\}$ is a disjoint open expansion of $\mathscr{D}$.
+(2) $D_\alpha \subset U_\alpha$ for all $\alpha < \lambda$.
 
-(2) $D_\alpha \subset V_\alpha$ for all $\alpha < \lambda$.
+\noindent\textsc{Proof}. Let $x \in D_\alpha$. 
+By (1), $\exists \, m < \omega, x \in \bigcup \mathscr{B}_m^\circ$, 
+$x\in \operatorname{st}(D_\alpha, \mathscr{B}_m^\circ)$.
+For each $i \le m$ and $\gamma < \alpha$, 
+if $B_{i,\gamma} \cap D_\alpha = \emptyset$, then 
+$x \notin B_{i,\gamma}^\circ$. Hence $x \in U_{m,\alpha} \subset U_\alpha$.
 
-*Proof.* Let $x \in D_\alpha$. For some $m < \omega$, $x \in U_{m,\alpha}^\circ$. For each $i \le m$ and $\gamma < \alpha$, if $B_{i,\gamma} \cap D_\alpha = \emptyset$, then $x \notin B_{i,\gamma}^\circ$. Hence $x \in V_{m,\alpha} \subset V_\alpha$.
+(3) If $n < \omega$ and $\gamma\ne \alpha$, then
+$$B_{n,\gamma} \cap D_\alpha \subset 
+\left(X\setminus \bigcup_{\mu\ne\gamma}V_{n,\mu}\right)
+\cap V_{n,\alpha} = \emptyset$$
 
-(3) If $n < \omega$ and $\gamma < \alpha$, then
+(4) If $\alpha \neq \beta$, then $U_\alpha \cap U_\beta = \emptyset$.
 
-$$B_{n,\gamma} \cap D_\alpha \subset \left( \overline{V_{n,\gamma}} \setminus \bigcup_{\mu \neq \gamma} V_{n,\mu} \right) \cap V_{n,\alpha} = \emptyset$$
-
-(4) If $\alpha \neq \beta$, then $V_\alpha \cap V_\beta = \emptyset$.
-
-*Proof.* If not, then $V_{m,\alpha} \cap V_{m,\beta} \neq \emptyset$ for some $m < \omega$. Suppose $x \in V_{m,\alpha} \cap V_{m,\beta}$. Since $x \in V_{m,\alpha}$, there exists $\gamma < \alpha$ such that $x \in B_{m,\gamma}^\circ$ and $D_\alpha \cap B_{m,\gamma} \neq \emptyset$. It follows from (3) that $x \in V_\beta$, a contradiction. On the other hand, since $B_{m,\alpha} \cap D_\beta = \emptyset$, hence (4) holds.
+\noindent\textsc{Proof}.  If not, then $\exists \, x\in U_{\alpha} \cap U_{\beta} $ 
+for some 
+$\alpha\ne\beta$. Suppose  $x \in U_{m,\alpha} \cap U_{m,\beta}$ and
+$m\le n$. Since $x \in U_{m,\alpha}$, there exists 
+$\gamma < \lambda$ such that $x \in B_{m,\gamma}^\circ$ and 
+$D_\alpha \cap B_{m,\gamma} \neq \emptyset$. 
+It follows from (3) that $\gamma = \alpha$, so $x\in B_{m,\alpha}^\circ$. 
+On the other hand, since $x\in U_{n, \beta}, m\le n$ and by (3) 
+$B_{m,\alpha} \cap D_\beta = \emptyset$, so $x\notin B_{m,\alpha}^\circ$, 
+a contradiction. Hence (4) holds.
 \end{proof}
 
 
