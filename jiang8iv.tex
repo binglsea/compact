@@ -108,38 +108,46 @@ If a cover $\mathscr{U}$ of $X$ has a $\sigma$-cushioned open refinement, then $
 }
 
 \begin{proof}
-Suppose that the cover $\mathscr{U} = \{U_\alpha: \alpha \in \Lambda\}$ has an 
-open refinement $\mathscr{W} = \bigcup_{n < \omega} \mathscr{W}_n$ where 
-each $\mathscr{W}_n = \{V_{n,\alpha}: \alpha \in \Lambda\}$ such that for every 
-$n < \omega$ and $\Gamma \subset \Lambda$, 
-$\overline{\bigcup_{\alpha \in \Gamma} V_{n,\alpha}} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$. 
-For $n < \omega$, let $A_n = \bigcup \mathscr{W}_n$, $H_0 = A_0$, and 
-$H_n = A_n \setminus \bigcup_{i < n} A_i$ for $n \ge 1$. Then $\{H_n: n < \omega\}$ is a 
- locally finite  cover of $X$. For $\alpha \in \Lambda$, let 
+Suppose that the cover $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ 
+has an  open refinement $\mathscr{V} = \bigcup_{n < \omega} \mathscr{V}_n$ 
+where  each $\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta\}$ such that 
+for every  $n < \omega$ and $\Gamma \subset \Delta$, 
+$\overline{\bigcup_{\alpha \in \Gamma} V_{n,\alpha}} 
+\subset \bigcup_{\alpha \in \Gamma} U_\alpha$. 
+For $n < \omega$, let $A_n = \bigcup \mathscr{V}_n$, $H_0 = A_0$, and 
+$H_n = A_n \setminus \bigcup_{i < n} A_i$ for $n \ge 1$. 
+Then $\{H_n: n < \omega\}$ is a 
+ locally finite  cover of $X$. For $\alpha \in \Delta$, let 
 $B_\alpha = \bigcup_{n < \omega} (H_n \cap V_{n,\alpha})$. 
-Then $\mathscr{B} = \{B_\alpha: \alpha \in \Lambda\}$ 
+Then $\mathscr{B} = \{B_\alpha: \alpha \in \Delta\}$ 
 is a cushioned refinement of $\mathscr{U}$.
 \end{proof}
 
  {\theorem{\label{th:8-1-5}} 
 For any space $X$, the following are equivalent:
 
-(i) $X$ is $\kappa$-collectionwise normal.
+\textup{(i)}  $X$ is $\lambda$-collectionwise normal.
 
-(ii) Every $D_\omega \kappa$-cover of $X$ is a normal cover.
+\textup{(ii)}  Every $D\omega^2$ $\lambda$-cover of $X$ is a normal cover.
 
-(iii) Every $D_\omega \kappa$-cover of $X$ has a star refinement.
+\textup{(iii)}  Every $D\omega^2$ $\lambda$-cover of $X$ has CP closed refinement.
+a star refinement.
 
-(iv) Every $D_\omega \kappa$-cover of $X$ has a CP closed refinement.
+\textup{(iv)}  Every $D\omega^2$ $\lambda$-cover of $X$ has a semi-open point-star refinement.
 
-(v) Every CP $D_\omega \kappa$-cover of $X$ has a cushioned refinement.
+\textup{(v)}  Every interior-preserving
+$D\omega^2$ $\lambda$-cover of $X$ has a cushioned refinement.
 }
 
 \begin{proof}
-	
-$(\text{i}) \Rightarrow (\text{ii})$ Suppose that $X$ is $\kappa$-collectionwise normal and that $\mathscr{U}$ be a $D_\omega \kappa$-cover of $X$. Let us show that $\mathscr{U}$ is normal.
-
-Let $\mathscr{P} = \bigcup_{m,n < \omega} \mathscr{P}_{m,n}$ be a refinement of $\mathscr{U}$, where each $\mathscr{P}_{m,n} = \{D_{m,n,\alpha}: \alpha < \kappa\}$ is a discrete closed family of subsets of $X$ with $D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \kappa$. We have $\dots$
+(i) $\Rightarrow$ (ii). Suppose that $X$ is $\lambda$-collectionwise normal and
+ that $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be a $D\omega^2$ 
+ $\lambda$-cover of $X$. Let us show that $\mathscr{U}$ is normal.
+Let $\mathscr{D} = \bigcup_{m,n < \omega} \mathscr{D}_{m,n}$ be a refinement of
+$\mathscr{U}$, where each $\mathscr{D}_{m,n} = \{D_{m,n,\alpha}: \alpha < \lambda\}$ 
+is a discrete closed family of subsets of 
+$X\setminus \cup\{\cup \mathscr{D}_{p,q}: (p,q) < (m,n)\}$ with 
+$D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \kappa$. We have 
 
 
 (i) $\Rightarrow$ (ii) Assume (i) holds and let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathscr{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
