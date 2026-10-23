@@ -99,61 +99,13 @@ $\mathscr{E}$ is
 if for every $A, B\in \mathscr{E}$ there
 exists a link in $\mathscr{E}$ from $A$ to $B$. For any family 
 $\mathscr{E}, D\in \mathscr{E}$ and $n\ge 1$, let
-$$\mathscr{L}_n(D)=\{A\in \mathscr{E}: \text{ there exists an $n$-link in } 
+$$P_n(D)=\{A\in \mathscr{E}: \text{ there exists an $n$-link in } 
 \mathscr{E} \text{ from } A \text{ to } B\}.$$
 
-{\theorem{\label{th:8.3.3}} 
- Theorem. For any \(\lambda\) the following are equivalent:
-(i) \(X\) is \(\lambda\)-ultraparacompact.
-(ii) Every open \(\lambda\)-cover of \(X\) has a star-countable open refinement.
-(iii) Every open \(\lambda\)-cover of \(X\) has a star-countable closed refinement.
-}
-
-Proof. (i) \(\Rightarrow\) (ii) Clear.
-(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a star-countable open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(X\) is ultraparacompact, \(X\) is zero-dimensional. For each \(V\in\mathscr{V}\), \(V\) can be partitioned into clopen sets. Thus, there exists a star-countable closed refinement of \(\mathscr{U}\).
-
-(iii) \(\Rightarrow\) (i) Similar to the proof of 8.3.1. \(\square\)
-
-Yes. I reconstructed the **visible page** into clean LaTeX, preserving the notation and organization of the handwritten original. The last proof is cut off at the bottom of the page, so I have not invented the missing portion. 
-
-```latex
-Let $\mathscr{E}$ be a family of subsets of $X$ and $n\geq 1$.
-A $n$-sequence
-\[
-c_1,c_2,\ldots,c_n
-\]
-in $\mathscr{E}$ is a $n$-link from $c_1$ to $c_n$ if, for each
-$1\leq i\leq n-1$,
-\[
-c_i\cap c_{i+1}\ne\varnothing.
-\]
-
-Let $A,B\in\mathscr{E}$.  A link in $\mathscr{E}$ from $A$ to $B$
-is a $n$-link from $c_1$ to $c_n$ for some $n\geq1$ such that
-\[
-c_1=A\quad\text{and}\quad c_n=B.
-\]
-
-$\mathscr{E}$ is \emph{connected} if for every $A,B\in\mathscr{E}$
-there exists a link in $\mathscr{E}$ from $A$ to $B$.
-
-For any family $\mathscr{E}$, $D\in\mathscr{E}$, and $n\geq1$, let
-\[
-P_n(D)
-=
-\{A\in\mathscr{E}:\text{ there exists a $n$-link in $\mathscr{E}$
-	from $A$ to $D$}\}.
-\]
-
-\bigskip
-
-\textbf{8.3.3. Lemma.}
 {\lemma{\label{lem:8.3.3}} 
 Let $\mathscr{E}$ be a family in $X$.
 
-\begin{enumerate}
-	\item[(i)]
-	If $\mathscr{E}$ is connected, then for any $D\in\mathscr{E}$,
+\textup{(i)} 	If $\mathscr{E}$ is connected, then for any $D\in\mathscr{E}$,
 	\[
 	\mathscr{E}=\bigcup_{n\geq1}P_n(D),
 	\]
@@ -161,67 +113,46 @@ Let $\mathscr{E}$ be a family in $X$.
 	\[
 	P_{n+1}(D)
 	=
-	\bigcup_{\substack{C\in\mathscr{E}\\
-			C\cap P_n(D)\ne\varnothing}} C.
+	\bigcup\{(\mathscr{E})_E: E\in P_n(D)\}.
 	\]
 	
-	\item[(ii)]
+\textup{(ii)} 
 	If $\mathscr{E}$ is connected and star-countable, then
 	$\mathscr{E}$ is countable.
-\end{enumerate}
-
 }
 
-\textbf{Proof.}
+\begin{proof}
 (i) By a routine operation.
 
 (ii) Suppose $\mathscr{E}$ is connected and star-countable. Then for
-each $E\in\mathscr{E}$, $(CE)_{\mathscr{E}}$ is countable.
+each $E\in\mathscr{E}$, $(\mathscr{E})_E$ is countable.
 If $D\in\mathscr{E}$, then
-\[
-P_1(D)=\{D\},\qquad P_2(D)=(CE)_{D}
-\]
+$P_1(D)=\{D\}, P_2(D)=(\mathscr{E})_{D}$
 are countable. If $P_n(D)$ is countable, then by (i),
-\[
-P_{n+1}(D)
-=
-\bigcup_{C\in P_n(D)}(CE)_{C}
-\]
-is countable. Thus each $P_n(D)$ is countable, so
-\[
-\mathscr{E}=\bigcup_{n\geq1}P_n(D)
-\]
-is countable. \qed
+$P_{n+1}(D)=\bigcup\{(\mathscr{E})_E: E\in P_n(D)\}$
+is countable. Thus each $P_n(D)$ is countable, then each
+$P_n(D)$ is is countable, so $\mathscr{E} = \bigcup_{n\ge 1}P_n(D)$
+is countable.
+\end{proof} 
 
-\bigskip
 
 {\lemma{\label{lem:8.3.4}} 
-
 Any family $\mathscr{B}$ of subsets of $X$ can be expressed as
-\[
-\mathscr{B}=\bigcup_{\alpha\in A}\mathscr{E}_{\alpha}
-\]
-such that
-\[
-\left(\bigcup\mathscr{E}_{\alpha}\right)
-\cap
+$\mathscr{B}=\bigcup_{\alpha\in \Delta}\mathscr{E}_{\alpha}$
+such that $\left(\bigcup\mathscr{E}_{\alpha}\right)\cap
 \left(\bigcup\mathscr{E}_{\beta}\right)
-=\varnothing
-\qquad\text{whenever }\alpha\ne\beta.
-\]
-
+=\emptyset$ whenever $\alpha\ne\beta$.
 If $\mathscr{B}$ is star-countable, then each
 $\mathscr{E}_{\alpha}$ is countable.
-
 }
 
 
-\textbf{Proof.}
+\begin{proof}
 Let $\mathscr{B}$ be a family in $X$. Let
 ```
 
-```latex
 Let \(\mathscr{A}\) be a family of subsets of \(X\) and \(n\ge 1\). A sequence \(A_1,\dots,A_n\) in \(\mathscr{A}\) is a \(n\)-chain from \(A_1\) to \(A_n\) in \(\mathscr{A}\) if \(A_i\cap A_{i+1}\neq\emptyset\) for each \(i=1,\dots,n-1\). For \(A,B\in\mathscr{A}\), \(A\) and \(B\) are chain-connected in \(\mathscr{A}\) if there exists a chain from \(A\) to \(B\) in \(\mathscr{A}\). We define a relation \(\sim\) on \(\mathscr{A}\) by \(A\sim B\) if and only if \(A\) and \(B\) are chain-connected in \(\mathscr{A}\). It is easy to show that \(\sim\) is an equivalence relation on \(\mathscr{A}\). For each \(A\in\mathscr{A}\), let \(\mathscr{A}(A)\) denote the equivalence class containing \(A\), and let \(C(A,\mathscr{A})=\bigcup\mathscr{A}(A)\). Then \(\{C(A,\mathscr{A}): A\in\mathscr{A}\}\) forms a partition of \(\bigcup\mathscr{A}\).
+\end{proof} 
 
 8.3.4. Lemma. Let \(\mathscr{U}\) be a star-countable open cover of \(X\). Then \(\{C(U,\mathscr{U}): U\in\mathscr{U}\}\) is a disjoint open cover of \(X\) such that each \(C(U,\mathscr{U})\) is a open-closed set in \(X\) and \(C(U,\mathscr{U})\) is covered by a countable subcollection of \(\mathscr{U}\).
 
