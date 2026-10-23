@@ -59,9 +59,29 @@ and $\lambda$-$D\omega^2$-refinable.
 \begin{proof}
 (i) \(\Rightarrow\) (ii) and (i) \(\Rightarrow\) (iv) Clear.
 
-(ii) \(\Rightarrow\) (iii) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a disjoint open refinement \(\mathscr{V}\) of \(\mathscr{U}\). Since \(\mathscr{V}\) is disjoint, \(\mathscr{V}\) is a partition of \(X\) by open sets, so members of \(\mathscr{V}\) are also closed. Thus, \(\mathscr{V}\) is a disjoint open refinement.
+(ii) \(\Rightarrow\) (iii). Assume (ii), then $X$ is countably shrinkable. By
+Theorem \ref{th:8.2.1}, $X$ is $\lambda$-fully normal.
 
-(iii) \(\Rightarrow\) (i) Let \(\mathscr{U}\) be an open \(\lambda\)-cover of \(X\). There exists a disjoint closed refinement \(\mathscr{F}\) of \(\mathscr{U}\). For each \(F\in\mathscr{F}\), choose \(U_F\in\mathscr{U}\) with \(F\subset U_F\). Since \(\mathscr{F}\) is a disjoint closed cover of \(X\), each \(F\in\mathscr{F}\) is also open. Thus, \(\mathscr{F}\) is a disjoint open refinement of \(\mathscr{U}\). \(\square\)
+(iii) \(\Rightarrow\) (v). Assume (iii). By Corollary \ref{cor:8.1.6}, $X$ is  
+$\lambda$-collectionwise normal. Since $X$ is $\lambda$-paracompact, it is 
+$D\omega^2$-refinable.
+
+(iv) \(\Rightarrow\) (v). Assume (iv). By Theorem \ref{th:8.1.5}, $X$ is  
+$\lambda$-collectionwise normal. By Theorem \ref{th:4.1.1}, $X$ is $\lambda$-subparacompacr, so it is $\lambda$-$D\omega^2$-refinabel.
+
+(v) \(\Rightarrow\) (i) Assume (v), and let 
+\(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) be an open cover of \(X\). 
+Then $\mathscr{U}$ is a $D\omega^2$-cover.
+By Theorem \ref{th:8.1.5}, $\mathscr{U}$ is a normal cover.
+By Theorem \ref{th:2.1.6}, $\mathscr{U}$ has a refinement
+$\mathscr{V}=\{\bigcup_{n<\omega}\mathscr{V}_n\}$ where each
+$\mathscr{V}_n=\{V_{n, \alpha}:\alpha < \omega\}$ is a discrete open
+with $V_{n, \alpha}\subset U_\alpha$ for all $\alpha$.
+Let $\{W_n: n<\omega\}$ be a discrete open cover of $X$ 
+such that $W_n=\bigcup\mathscr{V}_n$ for each $n<\omega$. For $\alpha < \lambda$,
+let $G_\alpha = \bigcup_{n < \omega}(W_n\cap V_{n,\alpha})$. 
+Then $\{G_\alpha:\alpha < \lambda\}$ is a disjoint open refinement of $\mathscr{U}$,
+so $X$ is  $\lambda$-ultraparacompact.
 \end{proof} 
 
 
