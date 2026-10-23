@@ -330,8 +330,7 @@ open covers of $X$.
 \textup{(v)} Every interior-preserving $A\omega^2$ $($or $D\omega^2)$  $\lambda$-coverr of $X$ has a local-star refining sequence of semi-open covers of $X$.
 }
 
-
-P\begin{proof} 
+\begin{proof} 
 $\Rightarrow$ (ii) and (iii). Assume (i) and let $\mathscr{U}$ 
 be an $A\omega^2$ $($or $D\omega^2)$  $\lambda$-cover of $X$. 
 By Theorem \ref{th:8.1.8}, $\mathscr{U}$ has a refinement 
@@ -356,15 +355,20 @@ is interior-preserving open, so (iii) holds.
 It is clear that (ii) $\Rightarrow$ (v) and (iii) $\Rightarrow$ (iv) 
 $\Rightarrow$ (v).
 
-
-
-(i) $\Rightarrow$ (ii) Assume (i) holds and let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an $IPAR(D_0)$ cover of $X$. Let $\{\mathscr{V}_n\}_{n < \omega}$ be a local-star refining sequence for $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
-
-$$A_n = \{x \in X: \mathscr{V}_n \text{ is a local-star refinement of } \mathscr{U} \text{ at } x\}$$
-
-Then $\mathscr{V}_n$ is a local-star refinement of $\mathscr{U}$ at each point of $A_n$. By Lemma 8.2.4, there exists an open family $\mathscr{W}_n$ which is cushioned in $\mathscr{U}$ and covers $A_n$.
-
-Since $\bigcup_{n < \omega} A_n = X$, $\mathscr{W} = \bigcup_{n < \omega} \mathscr{W}_n$ is a $\sigma$-cushioned open refinement of $\mathscr{U}$. By Theorem 8.1.7, this holds.
+(v) $\Rightarrow$ (i) Assume (v) holds and let 
+$\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an inrerior-preserving
+$A\omega^2$ (or $D\omega^2$)  $\lambda$-cover  of $X$. 
+Let $\{\mathscr{E}_n: n < \omega\}$ be a local-star refining sequence for 
+$\mathscr{U}$ by semi-open covers. For $n < \omega$, let
+$$A_n = \{x \in X: \exists \, G\in \operatorname{top}(x)\; \exists \, \alpha<\lambda
+  \text{ such that } \operatorname{st}(G, \mathscr{E}_n)\subset U_\alpha\}.$$
+Then $\mathscr{E}_n$ is a local-star refinement of $\mathscr{U}$ at each point of 
+$x\in A_n$. By Lemma \ref{lem:8.1.4}, there exists an open family $\mathscr{V}_n$ 
+which is cushioned in $\mathscr{U}$ and covers $A_n$.
+Since $\bigcup_{n < \omega} A_n = X$, 
+$\mathscr{V} = \bigcup_{n < \omega}\mathscr{V}_n$ 
+is a $\sigma$-cushioned open refinement of $\mathscr{U}$. 
+By Theorem \ref{th:8.1.7}, (i) holds.
 \end{proof}
 
 
