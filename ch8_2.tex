@@ -21,7 +21,7 @@ For any space $X$, the following are equivalent:
 (ii) $\Rightarrow$ (iii). Clear. 
 
 (iii) $\Rightarrow$ (i). Assume (iii). Then $X$ is normal. 
-By Theorem \ref{th:2.2.3} let us show that $X$ is paracompact. 
+By Theorem \ref{th:2.2.3}, let us show that $X$ is $\lambda$-paracompact. 
 Suppose $\mathscr{U}$ is an open $\lambda$-cover of $X$. By (iii), 
 $\mathscr{U}$ has an open refinement 
 $\mathscr{V} = \bigcup_{n < \omega} \mathscr{V}_n$, 
@@ -29,16 +29,17 @@ where each $\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta_n\}$
 is star-finite.
 Since \(\mathscr{V}\) is countably shrinkable, there exists an
 open cover $\{S_n: n\in\omega\}$ such that 
-$\overline{S_n}\subset\mathscr{V}_n$
+$\overline{S_n}\subset\bigcup\mathscr{V}_n$
 for each \(n < \omega\).
-By Corollary \ref{cor:5.2.5},  % TO_DO
+By Corollary \ref{cor:5.2.5}, 
 \(X\) is countably paracompact. There exists
 a locally finite open cover \(\mathscr{W}=\{W_n: n<\omega\}\) of \(X\) such that 
 \(W_n\subset S_n\)
-for each \(n\in\omega\). Then \(\overline{W_n}\subset\bigcup\mathscr{V}_n\). 
+for each \(n<\omega\). Then \(\overline{W_n}\subset\bigcup\mathscr{V}_n\). 
 We have
 
-(1) \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\) is locally finite and open
+\textbf{(1)} \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\)
+ is locally finite and open
 for each \(n < \omega\).
 
 \noindent\textsc{Proof of (1).}
