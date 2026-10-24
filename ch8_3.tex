@@ -67,7 +67,7 @@ $\lambda$-collectionwise normal. Since $X$ is $\lambda$-paracompact, it is
 $D\omega^2$-refinable.
 
 (iv) \(\Rightarrow\) (v). Assume (iv). By Theorem \ref{th:8.1.5}, $X$ is  
-$\lambda$-collectionwise normal. By Theorem \ref{th:4.1.1}, $X$ is $\lambda$-subparacompacr, so it is $\lambda$-$D\omega^2$-refinabel.
+$\lambda$-collectionwise normal. By Theorem \ref{th:4.1.11}, $X$ is $\lambda$-subparacompacr, so it is $\lambda$-$D\omega^2$-refinabel.
 
 (v) \(\Rightarrow\) (i) Assume (v), and let 
 \(\mathscr{U}=\{U_\alpha: \alpha < \lambda\}\) be an open cover of \(X\). 
@@ -175,7 +175,7 @@ cover has a $\sigma$-closure-preserving open refinement.
 Suppose $X$ is regular and every open cover of $X$ has a
 $\sigma$-closure-preserving open refinement. Let $A$ and $B$ be disjoint closed subsets
 of $X$. By regularity of $X$, let $\mathscr{G}$ be an open cover of $X$ such that $\mathscr{\overline{G}}$
-refines $\{X-A, X-B\}$. Let $\mathscr{V}$ be a $\sigma$-closure-preserving open refinement of $\mathscr{G}$. Then $\mathscr{V}$ is a $\sigma$-cushioned open refinement of $\mathscr{U}$. By
+refines $\{X\setminus A, X\setminus B\}$. Let $\mathscr{V}$ be a $\sigma$-closure-preserving open refinement of $\mathscr{G}$. Then $\mathscr{V}$ is a $\sigma$-cushioned open refinement of $\mathscr{U}$. By
 Lemma \ref{lem:8.1.4}, $\mathscr{U}$ has a cushioned refinement.
 Hence there exist disjoint open sets $U$ and $V$ such that $A\subset U$ 
 and $B\subset V$,
@@ -232,7 +232,7 @@ has a star-finite functionally open refinement.
 (i) $\Rightarrow$ (ii). Assume $X$ and let $\mathscr{U}= \{U_\alpha: \alpha<\lambda\}$ 
 be an open cover of $X$. Then $\mathscr{U}$ has a star-finite open refinement
 $\mathscr{G} = \{G_\beta : \beta \in \Gamma\}$. $\mathscr{G}$ is a 
-point-finite open refinement of itself, 
+point-finite open refinement of itselocally finte, 
 hence $\mathscr{G}$ is an $C^*\omega^2$-cover. By Theorem \ref{th:5.2.8},
  there exists a functionally open cover $\mathscr{V} = \{\beta: \beta\in \Gamma\}$
 of $X$ such that
@@ -279,17 +279,19 @@ $\mathscr{U}$ has a star-finite functionally open refinement.
 {\theorem{\label{th:8.3.8}} 
 For any space the following evre equivalents
 
-\textup{(i)} $X$ is normal $\sigma$-strongly paracompact.
+\textup{(i)} $X$ is normal $\lambda$-strongly paracompact.
 
-\textup{(ii)} Every open $\mathscr{A}$-cover of $X$ has a star finite and $\text{LF}$ closed refinement.
+\textup{(ii)} Every open $\lambda$-cover of $X$ has a star finite and locally finte
+ closed refinement.
 
-\textup{(iii)}  Every open incover of $X$ has a star-countable and $\sigma\text{-CP}$ closed refinement.
+\textup{(iii)}  Every open $\lambda$-cover  of $X$ has a star-countable and 
+closure-preserving closed refinement.
 }
 
 \begin{proof}  (i) $\Rightarrow$ (ii).
 Assume (i) and let $\mathscr{U}$ be an open $\mathscr{A}$-cover of $X$.
 By theonem 8.3.7, $\mathscr{U}$ has a star finite open refinement $\mathscr{V}$ and a star-finite closed nofirement $\mathscr{W}$.
-Since $\mathscr{V}$ is $\text{LF}$, $\mathscr{W}$ is a star-finste and $\text{LF}$ closed refinement of $\mathscr{U}$.
+Since $\mathscr{V}$ is $\text{locally finte}$, $\mathscr{W}$ is a star-finste and $\text{locally finte}$ closed refinement of $\mathscr{U}$.
 
 (ii) $\Rightarrow$ (i) clean.
 
@@ -313,22 +315,34 @@ By Lemma 8.3.6, $\mathscr{U}$ has a star-finite functionally open refinement. Th
 \end{proof}
 
 {\corollary{} \label{cor:8.3.9}
- (Smirnov [1956]) For any regular space the following are equivalent:
+  \textup{([Smirnov 1956]\textsuperscript{\cite{Smirnov}})}
+For any regular space the following are equivalent:
 
 \textup{(ii)}  $X$ is strongly paracompact.
 
-\textup{(ii)}  Every open cover of $X$ has a LF and star countable closed refinement.
+\textup{(ii)}  Every open cover of $X$ has a locally finte and 
+star countable closed refinement.
 
 \textup{(iii)}  Every open cover of $X$ has a star-countable open refinement.
 }
 
-\begin{proof}  (i) $\Rightarrow$ (ii). Suppose $X$ is regular and strongly paracompact. By Theorem 8.3.5, $X$ is normal. By Theorem 8.3.8, holds $\dots$
-(ii) $\Rightarrow$ (iii). By Theorem 8.3.8.
-(iii) $\Rightarrow$ (i). Clear.
-```latex
-% Extracted from jiang132.pdf, page 128
+\begin{proof}  (i) $\Rightarrow$ (ii).
+ Suppose $X$ is regular strongly paracompact. 
+ By Theorem \ref{th:8.3.5}, 
+$X$ is normal. By Theorem \ref{th:8.3.8}, (ii) holds.
 
-(ii) $\Rightarrow$ (i). Assume (ii). For every space and every open $\mathscr{A}$-cover $\mathscr{U}$ of $X$, since $X$ is regular, there is an open cover $\mathscr{W}$ of $X$ such that $\mathscr{W}$ refines $\mathscr{U}$. Let $\mathscr{V}$ be a star-countable open refinement of $\mathscr{W}$. Then $\mathscr{V}$ refines $\mathscr{U}$. By Theorem 8.3.7 $X$ is $\sigma$-strongly paracompact, thus $X$ is strongly paracompact.
+(ii) $\Rightarrow$ (iii). By Theorem \ref{th:8.3.8}.
+
+(iii) $\Rightarrow$ (i). Clear.
+
+(ii) $\Rightarrow$ (i). Assume (iii). For any $\lambda$, every open 
+$\lambda$-cover $\mathscr{U}$ of $X$ has an
+ open refinement $\mathscr{W}$  such that $\mathscr{\overline{W}}$ 
+ refines $\mathscr{U}$ by regularity of $X$. 
+ Let $\mathscr{V}$ be a star-countable open refinement 
+ of $\mathscr{W}$. Then $\mathscr{\overline{V}}$ refines $\mathscr{U}$. 
+ By Theorem \ref{th:8.3.7}, $X$ is $\lambda$-strongly paracompact. So it is
+ strongly paracompact.
 \end{proof}
 
 
