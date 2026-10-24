@@ -276,15 +276,17 @@ $K_\beta\subset \bigcup\{U_{\alpha_n}: n < \omega\}$. By Lemma \ref{lem:8.3.6},
 $\mathscr{U}$ has a star-finite functionally open refinement.
 \end{proof}
 
-```latex
-% Extracted from jiang130.pdf, page 126
+{\theorem{\label{th:8.3.8}} 
+For any space the following evre equivalents
 
-8.3.8. Theonem. For any space the following evre equivalents
-(i) $X$ is normal $\sigma$-strongly paracompact.
-(ii) Every open $\mathscr{A}$-cover of $X$ has a star finite and $\text{LF}$ closed refinement.
-(iii) Every open incover of $X$ has a star-countable and $\sigma\text{-CP}$ closed refinement.
+\textup{(i)} $X$ is normal $\sigma$-strongly paracompact.
 
-Proof. (i) $\Rightarrow$ (ii).
+\textup{(ii)} Every open $\mathscr{A}$-cover of $X$ has a star finite and $\text{LF}$ closed refinement.
+
+\textup{(iii)}  Every open incover of $X$ has a star-countable and $\sigma\text{-CP}$ closed refinement.
+}
+
+\begin{proof}  (i) $\Rightarrow$ (ii).
 Assume (i) and let $\mathscr{U}$ be an open $\mathscr{A}$-cover of $X$.
 By theonem 8.3.7, $\mathscr{U}$ has a star finite open refinement $\mathscr{V}$ and a star-finite closed nofirement $\mathscr{W}$.
 Since $\mathscr{V}$ is $\text{LF}$, $\mathscr{W}$ is a star-finste and $\text{LF}$ closed refinement of $\mathscr{U}$.
@@ -308,20 +310,26 @@ Let $\mathscr{B} = \bigcup_{\beta \in \Delta} \mathscr{B}_\beta$ where each $\ma
 Then $\mathscr{K} = \{K_\beta : \beta \in \Delta\}$ is a disjoint open and closed cover of $X$.
 For each $\beta \in \Delta, n < \omega$ there is an $\alpha$ such that $B_{\beta,n} \subset U_\alpha$. Then $\dots$
 By Lemma 8.3.6, $\mathscr{U}$ has a star-finite functionally open refinement. Thus $X$ is normal and strongly paracompact.
+\end{proof}
 
-8.3.9. Corollary. (Smirnov [1956]) For any regular space the following are equivalent:
-(i) $X$ is strongly paracompact.
-(ii) Every open cover of $X$ has a LF and star countable closed refinement.
-(iii) Every open cover of $X$ has a star-countable open refinement.
+{\corollary{} \label{cor:8.3.9}
+ (Smirnov [1956]) For any regular space the following are equivalent:
 
-Proof. (i) $\Rightarrow$ (ii). Suppose $X$ is regular and strongly paracompact. By Theorem 8.3.5, $X$ is normal. By Theorem 8.3.8, holds $\dots$
+\textup{(ii)}  $X$ is strongly paracompact.
+
+\textup{(ii)}  Every open cover of $X$ has a LF and star countable closed refinement.
+
+\textup{(iii)}  Every open cover of $X$ has a star-countable open refinement.
+}
+
+\begin{proof}  (i) $\Rightarrow$ (ii). Suppose $X$ is regular and strongly paracompact. By Theorem 8.3.5, $X$ is normal. By Theorem 8.3.8, holds $\dots$
 (ii) $\Rightarrow$ (iii). By Theorem 8.3.8.
 (iii) $\Rightarrow$ (i). Clear.
 ```latex
 % Extracted from jiang132.pdf, page 128
 
 (ii) $\Rightarrow$ (i). Assume (ii). For every space and every open $\mathscr{A}$-cover $\mathscr{U}$ of $X$, since $X$ is regular, there is an open cover $\mathscr{W}$ of $X$ such that $\mathscr{W}$ refines $\mathscr{U}$. Let $\mathscr{V}$ be a star-countable open refinement of $\mathscr{W}$. Then $\mathscr{V}$ refines $\mathscr{U}$. By Theorem 8.3.7 $X$ is $\sigma$-strongly paracompact, thus $X$ is strongly paracompact.
-
+\end{proof}
 
 
 \end{document}
