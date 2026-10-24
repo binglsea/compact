@@ -243,11 +243,14 @@ refinement of $\mathscr{U}$.
 (ii) $\Rightarrow$ (iii) and (iv) $\Rightarrow$ (i). clear,
 
 (iii) $\Rightarrow$ (iv). 
-Assume (iii): we first show that $X$ is shrinkable.
-Let $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ be an open cover of $X$. Let $\mathscr{V}$
+Assume (iii),  
+let $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ be an open cover of $X$. Let $\mathscr{V}$
 be a star-countable open refinement of $\mathscr{U}$ such that 
 $\mathscr{\overline{V}}$
-refines $\mathscr{U}$. By Lemma \ref{lem:8.3.4}, 
+refines $\mathscr{U}$. 
+
+We first show that $X$ is shrinkable.
+By Lemma \ref{lem:8.3.4}, 
 $\mathscr{V}$ can be expressed
 $\mathscr{V} = \bigcup_{\beta\in\Delta} \mathscr{V}_\beta$ where each $\mathscr{V}_\beta= \{V_{\beta,n}: n < \omega\}$ is countable
 and $(\bigcup \mathscr{V}_\beta) \cap (\bigcup \mathscr{V}_\gamma) = \emptyset$ whenever $\beta \neq \gamma$. For $n< \omega$, let
@@ -260,10 +263,64 @@ $\overline{H}_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$.
 Then $\{H_{n,\alpha}:\alpha < \lambda\} = \bigcup\mathscr{H}_n = \bigcup\mathscr{G}_n
 =\mathscr{V}$. By Theorem \ref{th:5.2.7}, $X$ is $\lambda$-shrinkable.
 
-Now let 
-
-
+Now, by the proof above, let 
+$\mathscr{V} = \bigcup_{\beta\in\Delta}\mathscr{V}_\beta$ where 
+$\mathscr{V}_\beta =\{V_{\beta,n}: n<\omega\}$ is countable and 
+$(\bigcup\mathscr{V}_\beta)\cap(\bigcup\mathscr{V}_\gamma)=\emptyset$
+whenever $\beta\ne\gamma$. For $\beta\in\Delta$, let 
+$K_\beta = (\bigcup\mathscr{V}_\beta)$. Then 
+$\mathscr{K}=\{K_\beta:\beta\in\Delta\}$ is a disjoint open and closed cover of $X$.
+For each $\beta\in \Delta$, there exists $\alpha_n <\lambda$ such that 
+$V_{\beta, n}\subset U_{\alpha_n}$. Then  
+$K_\beta\subset \bigcup\{U_{\alpha_n}: n < \omega\}$. By Lemma \ref{lem:8.3.6}, 
+$\mathscr{U}$ has a star-finite functionally open refinement.
 \end{proof}
+
+```latex
+% Extracted from jiang130.pdf, page 126
+
+8.3.8. Theonem. For any space the following evre equivalents
+(i) $X$ is normal $\sigma$-strongly paracompact.
+(ii) Every open $\mathscr{A}$-cover of $X$ has a star finite and $\text{LF}$ closed refinement.
+(iii) Every open incover of $X$ has a star-countable and $\sigma\text{-CP}$ closed refinement.
+
+Proof. (i) $\Rightarrow$ (ii).
+Assume (i) and let $\mathscr{U}$ be an open $\mathscr{A}$-cover of $X$.
+By theonem 8.3.7, $\mathscr{U}$ has a star finite open refinement $\mathscr{V}$ and a star-finite closed nofirement $\mathscr{W}$.
+Since $\mathscr{V}$ is $\text{LF}$, $\mathscr{W}$ is a star-finste and $\text{LF}$ closed refinement of $\mathscr{U}$.
+
+(ii) $\Rightarrow$ (i) clean.
+
+(iii) $\Rightarrow$ (i).
+Assume (iii) and let $\mathscr{U}$ be an open cover of $X$.
+Let $\mathscr{B}$ be a star-countable and $\sigma\text{-CP}$ closed refinement of $\mathscr{U}$.
+By Lemma 8.3.4 let $\mathscr{B} = \bigcup_{\beta \in \Delta} \mathscr{B}_\beta$ where each $\mathscr{B}_\beta$ is countable and $(\bigcup \mathscr{B}_\beta) \cap (\bigcup \mathscr{B}_\gamma) = \emptyset$ whenever $\beta \neq \gamma$.
+For now, let $\mathscr{G}_n = \{B_{\beta,n} : \beta \in \Delta\}$.
+Then $\mathscr{G}_n$ is $\sigma\text{-CP}$ closed and $\overline{\mathscr{G}}_n$ refines $\mathscr{U}$.
+By Lemma 1.1.5 There is a $\sigma\text{-CP}$ closed family $\mathscr{A}_n = \{A_{\alpha,n}\}$ such thet $\overline{A}_{\alpha,n} \subset U_\alpha$ for all $n, \alpha$, and $\bigcup \mathscr{A}_n = \bigcup \mathscr{B}_n$ for each $n$.
+For each $\alpha$, let $F_\alpha = \overline{\bigcup_{n < \omega} A_{\alpha,n}}$.
+Then $F_\alpha \subset U_\alpha$.
+Thus $\mathscr{U}$ has a closed $\dots$
+
+
+be a cover of $X$ ... star-countable and CP closed refinement of $\mathscr{U}$.
+Let $\mathscr{B} = \bigcup_{\beta \in \Delta} \mathscr{B}_\beta$ where each $\mathscr{B}_\beta = \{B_{\beta,n}\}$ and $\bigcup \mathscr{B}_\beta = \dots$ whenever $\dots$. For $\dots$, let $K_\beta = \bigcup \mathscr{B}_\beta$.
+Then $\mathscr{K} = \{K_\beta : \beta \in \Delta\}$ is a disjoint open and closed cover of $X$.
+For each $\beta \in \Delta, n < \omega$ there is an $\alpha$ such that $B_{\beta,n} \subset U_\alpha$. Then $\dots$
+By Lemma 8.3.6, $\mathscr{U}$ has a star-finite functionally open refinement. Thus $X$ is normal and strongly paracompact.
+
+8.3.9. Corollary. (Smirnov [1956]) For any regular space the following are equivalent:
+(i) $X$ is strongly paracompact.
+(ii) Every open cover of $X$ has a LF and star countable closed refinement.
+(iii) Every open cover of $X$ has a star-countable open refinement.
+
+Proof. (i) $\Rightarrow$ (ii). Suppose $X$ is regular and strongly paracompact. By Theorem 8.3.5, $X$ is normal. By Theorem 8.3.8, holds $\dots$
+(ii) $\Rightarrow$ (iii). By Theorem 8.3.8.
+(iii) $\Rightarrow$ (i). Clear.
+```latex
+% Extracted from jiang132.pdf, page 128
+
+(ii) $\Rightarrow$ (i). Assume (ii). For every space and every open $\mathscr{A}$-cover $\mathscr{U}$ of $X$, since $X$ is regular, there is an open cover $\mathscr{W}$ of $X$ such that $\mathscr{W}$ refines $\mathscr{U}$. Let $\mathscr{V}$ be a star-countable open refinement of $\mathscr{W}$. Then $\mathscr{V}$ refines $\mathscr{U}$. By Theorem 8.3.7 $X$ is $\sigma$-strongly paracompact, thus $X$ is strongly paracompact.
 
 
 
