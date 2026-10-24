@@ -27,7 +27,7 @@ $\mathscr{U}$ has an open refinement
 $\mathscr{V} = \bigcup_{n < \omega} \mathscr{V}_n$, 
 where each $\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta_n\}$ 
 is star-finite.
-Since \(\mathscr{V}\) is countably shrinkable, there exists an
+Since $X$ is countably shrinkable, there exists an
 open cover $\{S_n: n\in\omega\}$ such that 
 $\overline{S_n}\subset\bigcup\mathscr{V}_n$
 for each \(n < \omega\).
@@ -42,7 +42,7 @@ We have
  is locally finite and open
 for each \(n < \omega\).
 
-\noindent\textsc{Proof of (1).}
+\noindent\textsc{Proof}.
 Let \(n<\omega\), \(x\in X\). If \(x\notin\bigcup{\mathscr{V}}_n\), 
 then \(X\setminus\overline{W_n}\) is a
 neighborhood of \(x\) which 
@@ -57,16 +57,17 @@ Let \(\mathscr{H}=\{H_n: n<\omega\}\) be a locally finite open cover of \(X\) su
 \(H_n\subset\bigcup \mathscr{G}_n\) for each \(n<\omega\). 
 Let \(\mathscr{R}=\{H_n\cap W_n\cap V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\}\).
 
-(2) \(\mathscr{R}\) is a locally finite open refinement of \(\mathscr{U}\). Thus, \(X\) is paracompact.
+\textbf{(2)} \(\mathscr{R}\) is a locally finite open refinement of \(\mathscr{U}\). Thus, 
+\(X\) is $\lambda$-paracompact.
 
-\noindent\textsc{Proof of (2).} It is clear that \(\mathscr{R}\) is an open refinement of \(\mathscr{U}\). To show
+\noindent\textsc{Proof}. It is clear that \(\mathscr{R}\) is an open refinement of \(\mathscr{U}\). To show
 that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{H}\) is locally finite, 
 there exists \(G_0\in\operatorname{top}(x)\) such
 that \(D=\{n<\omega: G_0\cap H_n \ne \emptyset\}\) is finite. By (1), 
 for each \(n\in D\)
 there exists \(G_n\in\operatorname{top}(x)\) such that 
 \(C_n=\{\alpha\in\Delta_n: G_n\cap(W_n\cap V_{n,\alpha})\neq\emptyset\}\)
-is finite. Let \(G=G_0\bigcap(\cap_{n\in D}G_n)\) and let 
+is finite. Let \(G=G_0\cap(\bigcap_{n\in D}G_n)\) and let 
 
 $$C=\{(n,\alpha): n<\omega,\alpha\in\Delta_n, G\cap H_n \cap W_n\cap V_{n,\alpha} \neq\emptyset\}.$$
 
@@ -83,9 +84,14 @@ Every screenable, normal, countably paracompact space is paracompact. \hfill\qed
 
 {\theorem{\label{th:8.2.3}}
 For any \(\lambda\) the following are equivalent:
-(i) \(X\) is \(\lambda\)-fully normal.
-(ii) \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-\(\mathscr{D}_\omega\)-refinable.
-(iii) \(X\) is normal, \(\lambda\)-expandable and \(\lambda\)-\(\mathscr{D}_\omega\)-refinable.
+
+\textup{(i)}  \(X\) is \(\lambda\)-fully normal.
+
+\textup{(ii)}  \(X\) is \(\lambda\)-collectionwise normal and 
+\(\lambda\)-$D\omega^2$-refinable.
+
+\textup{(iii)}  \(X\) is normal \(\lambda\)-expandable and 
+\(\lambda\)-$A\omega^2$-refinable.
 }
 
 \begin{proof}
@@ -95,16 +101,25 @@ By Theorem \ref{th:8.1.7}.
 {\corollary{} \label{cor:8.2.4}
 For any \(\lambda\) the following are
 equivalent:
+
 \textup{(i)}  \(X\) is \(\lambda\)-fully normal.
+
 \textup{(ii)}  \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-subparacompact.
-\textup{(iii)} \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-metacompact.
-\textup{(iv)}  \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-submetacompact.
+
+\textup{(iii)}  \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-metacompact.
+
+\textup{(iii)}  \(X\) is \(\lambda\)-collectionwise normal and 
+\(\lambda\)-submetacompact.
 }
 
-Proof. (i) \(\Rightarrow\) (ii) By Theorem 8.2.3 and ...
-(ii) \(\Rightarrow\) (iii) By Theorem 8.2.3.
-(i) \(\Rightarrow\) (iv) and (iii) \(\Rightarrow\) (iv) Clear.
-(iv) \(\Rightarrow\) (i) By Theorem 8.2.3 and Corollary 2.6.8. \(\square\)
+\begin{proof}
+ (i) \(\Rightarrow\) (ii) By Theorem \ref{th:8.2.3} and Corollary \ref{cor:2.1.8}.
+ 
+(i) \(\Rightarrow\) (iii) By Theorem \ref{th:8.2.3}.
+
+(ii) \(\Rightarrow\) (iv) and (iii) \(\Rightarrow\) (iv) Clear.
+(iv) \(\Rightarrow\) (i) By Theorem \ref{th:8.2.3}.
+\end{proof}
 
 {\corollary{} \label{cor:8.2.5} Corollary. For any \(T_1\) collectionwise normal space \(X\),
 the following are equivalent:
