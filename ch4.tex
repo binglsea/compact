@@ -420,7 +420,7 @@ Then
 \begin{gather*}
 	\operatorname{st}(x, \mathscr{E}_n)\subset V_m(x)= U(\delta(m, x)).
 \end{gather*}
-Hence $\{\mathscr{E}_n\}$ is a point-star refining sequence for $\dots$.
+Hence $\{\mathscr{E}_n\}$ is a point-star refining sequence for $\mathscr{U}$.
 
 (iii) Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a point-star refining sequence $\{\mathscr{E}_n: n < \omega\}$ of semi-open covers. For $n < \omega, \alpha \in \Delta$, 
 let $F_{n,\alpha} = \{x \in X: \operatorname{st}(x, \mathscr{E}_n) \subset U_\alpha\}$.
@@ -463,20 +463,24 @@ $\sigma$-closure-preserving closed refinement.
 
 (ii) $\Rightarrow$ (iii) follows by Theorem \ref{th:4.1.9}.
 
- (i) Suppose $\mathscr{U}$ is an open cover of $X$.
+(iii) or (iv)$\Rightarrow$ (i). Assume (iii)  or (iv) is true. We have
 
- Let $\mathscr{V} = \bigcup_{n < \omega} \mathscr{V}_n$ be a refinement of $\mathscr{U}$ where each $\mathscr{V}_n$ is a discrete closed family in $X$ with $D_{n, \alpha}$ for each $n, \alpha$.
+\textbf{(1)}  $X$ is $\sigma$-submetacompact. 
 
+\noindent\textsc{Proof}. If (iii) holds, then by Theorem \ref{th:4.1.2}, $X$ is $\lambda$-submetacompact. 
+If (iv) holds, then by Theorem \ref{th:4.1.7}, $X$ is $\lambda$-submetacompact.
 
-* For new elements, let $G_{n, \alpha} = V_\alpha - \bigcup_{\gamma \neq \alpha} D_{n, \gamma}$. Then $D_{n, \alpha} \subset G_{n, \alpha}$ and each $\mathscr{G}_n = \{G_{n, \alpha}: \alpha < \kappa\}$ is an open refinement of $\mathscr{U}$.
+\textbf{(2)} $X$ is discretely subexpandable. 
 
-* **Proof of (iii) or (iv) $\Rightarrow$ (i):** Assume (iii) or (iv) is true. We have:
+\noindent\textsc{Proof}. Let $\mathscr{D}$ be a discrete $\lambda$-family of closed subsets of $X$. 
+The induced cover $\mathscr{D}^*$ is an interior-preserving open $\lambda$-cover of $X$. 
+By (iv), $\mathscr{D}^*$ has a $\sigma$-cushioned refinement; or by (iii) and Theorem \ref{th:4.1.9},
+ $\mathscr{D}^*$ also has a $\sigma$-cushioned refinement. 
+ By Lemma \ref{lem:1.2.4}, $\mathscr{D}^*$ has an $\varepsilon$-sequence of open expansions, 
+ so $X$ is discretely subexpandable.
 
-* (1) $X$ is $\sigma$-submetacompact. If (iii) holds, then by Theorem 4.1.2, $X$ is $\sigma$-submetacompact. If (iv) holds, then by Theorem 4.1.7, $X$ is $\sigma$-submetacompact.
-
-* (2) $X$ is discretely subexpandable. Let $\mathscr{F}$ be a discrete $\kappa$-family of closed subsets of $X$. The induced cover $\mathscr{U}$ is an IP open $\sigma$-cover of $X$. By (iv), $\mathscr{U}$ has a $\sigma$-cushioned refinement; or by (iii) and Theorem 4.1.9, $\mathscr{U}$ also has a $\sigma$-cushioned refinement. By Lemma 1.2.4, $\mathscr{U}$ has a $\sigma$-sequence of open expansions, so $X$ is discretely subexpandable.
-
-It follows from (1), (2), and Theorem 4.1.10 that $X$ is $\sigma$-subparacompact.
+It follows from \textbf{(1)}, (\textbf{(2)}, and Theorem \ref{th:4.1.10} that 
+$X$ is $\sigma$-subparacompact.
 \end{proof} 
 
 
