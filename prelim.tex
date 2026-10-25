@@ -187,7 +187,7 @@ $$|\operatorname{ind}(
 	$($or \uwave{$\sigma$-locally finite}\index{$\sigma$-locally finite| \S\ref{def:1.1.3}\hfill}, 
 	\uwave{$\sigma$-star finite}\index{$\sigma$-star finite| \S\ref{def:1.1.3}\hfill}, $\cdots)$ if
 	$\mathscr{U} = \bigcup_{n < \omega}\mathscr{U}_n$,
-	where each $\mathscr{U}_n$ is disjoint $($locally finite, star-finite, $\cdots)$.
+	where each $\mathscr{U}_n$ is disjoint $($or locally finite, star-finite, $\cdots)$.
 	
 \textup{(vi)}  $\{\mathscr{V}_n: n \in\omega\}$  is an 
 	\uwave{$\varepsilon$-sequence}\index{$\varepsilon$-sequence| \S\ref{def:1.1.3}\hfill}
@@ -210,21 +210,26 @@ $$|\operatorname{ind}(
 {\lemma{} \label{lem:1.1.5}
 	Let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be a cover of $X$. 
 	
-	\textup{(i)} If $\mathscr{U}$ has a locally finite open partial refinement $\mathscr{V}$ 
-	$($such that $\overline{\mathscr{V}}$ refines $\mathscr{U})$, 
+\textup{(i)} If $\mathscr{U}$ has a locally finite open partial refinement $\mathscr{V}$ 
+	$($or such that $\overline{\mathscr{V}}$ refines $\mathscr{U})$, 
 	then $\mathscr{U}$ has a locally finite 
 	open partial refinement $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ such that
-	$H_\alpha \subset U_\alpha$ $(\overline{H}_\alpha \subset U_\alpha)$ 
+	$H_\alpha \subset U_\alpha$ $($or $\overline{H}_\alpha \subset U_\alpha)$ 
 	for all $\alpha \in \Delta$, and 
 	$\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
 	
 	This result is also true if we replace ``locally finite" by ``discrete" 
 	or replace ``open" by ``closed".
 	
-	\textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($open$)$ refinement $\mathscr{V}$, then $\mathscr{U}$ has a partial cushioned $($open$)$  refinement $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ such that for any $\Gamma \subset \Delta$, $\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$ and $\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
+\textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($and open$)$ refinement $\mathscr{V}$, 
+then $\mathscr{U}$ has a partial cushioned $($and open$)$  refinement 
+$\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ such that for any 
+$\Gamma \subset \Delta$, 
+$$\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha
+\; \textup{ and } \; \bigcup \mathscr{H} = \bigcup \mathscr{V}.$$  
 	
-	\textup{(iii)} If $\mathscr{U}$ has a point-finite refinement $\mathscr{V}$, then we may assume that
-	$\mathscr{V}$ is a precise refinement of $\mathscr{U}$.
+%\textup{(iii)} If $\mathscr{U}$ has a point-finite refinement $\mathscr{V}$, then we may assume that
+%	$\mathscr{V}$ is a precise refinement of $\mathscr{U}$.
 } % end of lemma
 
 \begin{proof} Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
