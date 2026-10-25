@@ -218,7 +218,7 @@ $$|\operatorname{ind}(
 	for all $\alpha \in \Delta$, and 
 	$\bigcup \mathscr{H} = \bigcup \mathscr{V}$.  
 	
-	This result is also true if we replace ``locally finite" by ``discrete" 
+	This result is also true if we replace ``locally finite" by  ``point-finite" or``discrete",
 	or replace ``open" by ``closed".
 	
 \textup{(ii)} If $\mathscr{U}$ has a partial cushioned $($and open$)$ refinement $\mathscr{V}$, 
@@ -229,10 +229,10 @@ $$\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \G
 \; \textup{ and } \; \bigcup \mathscr{H} = \bigcup \mathscr{V}.$$  
 	
 %\textup{(iii)} If $\mathscr{U}$ has a point-finite refinement $\mathscr{V}$, then we may assume that
-%	$\mathscr{V}$ is a precise refinement of $\mathscr{U}$.
+%	$\mathscr{V}$ is a precise point-finite refinement of $\mathscr{U}$.
 } % end of lemma
 
-\begin{proof} Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (such that 
+\begin{proof} Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (or such that 
 	$\overline{\mathscr{V}}$ refines $\mathscr{U}$). For every $V\in\mathscr{V}$, pick 
 	a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
 	$H_\alpha = \bigcup\{V\in\mathscr{V}: \delta(V) = \alpha\}$.   
@@ -241,10 +241,10 @@ $$\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \G
 \end{proof} 
 
 {\definition{} \label{def:1.1.6}
-	\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}
+\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}
 	Let $\mathscr{U}$ and $\mathscr{V}$ be covers of $X$.
 	
-	\textup{(i)} $\mathscr{V}$ is a 
+\textup{(i)} $\mathscr{V}$ is a 
 	\uwave{star-refinement}\index{star-refinement| \S\ref{def:1.1.6}\hfill}
 	of $\mathscr{U}$ if 
 	$\{\operatorname{st}(V, \mathscr{V}): V\in \mathscr{V}\}$ refines $\mathscr{U}$.
@@ -253,9 +253,9 @@ $$\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \G
 	of $\mathscr{U}$ if 
 	$\{\operatorname{st}(x, \mathscr{V}): x\in X\}$ refines $\mathscr{U}$.
 	
-	\textup{(ii)} An open cover $\mathscr{U}$ of $X$ is 
+\textup{(ii)} An open cover $\mathscr{U}$ of $X$ is 
 	\uwave{normal}\index{normal (cover)| \S\ref{def:1.1.6}\hfill} 
-	if there exists a sequence $\{ \mathscr{U}_n: n\in\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and $\mathscr{U}_{n+1}$ star-refines $\mathscr{U}_n$ for each $n<\omega$.
+	if there exists a sequence $\{ \mathscr{U}_n: n<\omega\}$ of open covers such that $\mathscr{U}_0$ refines $\mathscr{U}$ and $\mathscr{U}_{n+1}$ star-refines $\mathscr{U}_n$ for each $n<\omega$.
 }%end of def
 
 {\lemma{\label{lem:1.1.7}}
