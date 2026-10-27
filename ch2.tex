@@ -52,25 +52,24 @@ k(x) = \min\biggl\{m(u): u\in X, x\in B_\rho\left(u, \frac{1}{m(u)}\right)\biggr
 \end{equation}
 and pick $u_x\in X$ such that $k(x) = m(u_x)$. Now, we have
 \begin{equation}
-		\mathclap{x\in B_\rho\left(u_x, \frac{1}{k(x)}\right) 
-			= B_\rho\left(u_x, \frac{1}{m(u_x)}\right)\in \mathscr{V}.} \label{eq:2.1.2.4}
+x\in B_\rho\left(u_x, \frac{1}{k(x)}\right) 
+			= B_\rho\left(u_x, \frac{1}{m(u_x)}\right)\in \mathscr{V}. \label{eq:2.1.2.4}
 \end{equation}
 It suffices to show that 
 \begin{equation}
-		\mathclap{\mathrm{st}(x, \mathscr{V}) \subset U_{u_x}.} \tag*{(3)}
+\mathrm{st}(x, \mathscr{V}) \subset U_{u_x}. \label{eq:2.1.2.5}
 \end{equation}
-	
-	\noindent By (\ref{eq:2.1.2.1}), it suffices to show
+By (\ref{eq:2.1.2.1}), it suffices to show
 \begin{equation}
-	\mathrm{st}(x, \mathscr{V}) \subset B_\rho\left(u_x, \frac{3}{m(u_x)}\right). \label{eq:2.1.2.5}
+	\operatorname{st}(x, \mathscr{V}) \subset B_\rho\left(u_x, \frac{3}{m(u_x)}\right). \label{eq:2.1.2.6}
 \end{equation}
-	
-	\noindent For if $y \in \mathrm{st}(x, \mathscr{V})$, then exists $t\in X$ 
+If $y \in \mathrm{st}(x, \mathscr{V})$, then exists $t\in X$ 
 	such that $y, x \in B_\rho\left(t, \frac{1}{m(t)}\right)$.
 	Since $m(u_x)=k(x) \le m(t)$, we have
-	
-	$$\rho(y, u_x) \le \rho(y, t) + \rho(t, x) + \rho(x, u_x) < \frac{3}{m(u_x)}.$$
-	Thus \eqref{eq:2.1.2.5} holds. 
+\begin{equation}
+	\rho(y, u_x) \le \rho(y, t) + \rho(t, x) + \rho(x, u_x) < \frac{3}{m(u_x)}.\label{eq:2.1.2.7}
+\end{equation}
+Thus \eqref{eq:2.1.2.6} holds. 
 \end{proof}
 
 {\theorem{} \label{th:2.1.3}
