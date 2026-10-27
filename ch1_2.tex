@@ -34,13 +34,15 @@ $\mathscr{B}^*$ is an interior-preserving
 {\definition{}\label{def:1.2.2}
 Let $\mathscr{D} = \{D_\alpha: \alpha \in \Delta\}$ be a discrete family of 
 closed subsets of $X$.
-For $\alpha\in\Delta$, we use notation 
-$U_\alpha = X \setminus \bigcup_{\gamma\in\Delta\setminus\{\alpha\}}D_\gamma$,
-then $D_\alpha \subseteq U_\alpha$.
+For $\alpha\in\Delta, S\in[\Delta]^{<\omega}$, we use notation 
+\begin{gather}
+	U_\alpha = X \setminus \bigcup_{\gamma\in\Delta\setminus\{\alpha\}}D_\gamma,\quad
+	U_S = \bigcup_{\gamma\in S}U_\gamma. \label{eq:1.2.2.1}
+\end{gather}
+Then $D_\alpha \subseteq U_\alpha$ for each $\alpha\in\Delta$.
 Let $\mathscr{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
-$\mathscr{D}^{*F} = \{U_S: U_S = \bigcup_{\alpha \in S}U_\alpha
-\textup{ where } S\in [\Delta]^{<\omega}\}$.
+$\mathscr{D}^{*F} = \{U_S: S\in [\Delta]^{<\omega}\}$.
 Then $\mathscr{D}^*$ and $\mathscr{D}^{*F}$ are open $|\Delta|$-cover of $X$.
 We call $\mathscr{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
@@ -85,36 +87,37 @@ of $\mathscr{B}$.
 Let $\mathscr{D} = \{D_\alpha: \alpha \in \Delta\}$ be a discrete family
 of closed subsets of $X$ and $\mathscr{D}^*$ the induced cover.
 
-\textup{(i)}  If $\mathscr{D}^*$ has a cushioned open $($cushioned$)$ refinement, 
-then $\mathscr{D}$ has a discrete $($disjoint$)$ open expansion.
+\textup{(i)}  If $\mathscr{D}^*$ has a cushioned open $($or cushioned$)$ refinement, 
+then $\mathscr{D}$ has a discrete $($or disjoint$)$ open expansion.
 
 \textup{(ii)}  If $\mathscr{D}^*$ has a  $\sigma$-cushioned open 
-$(\sigma$-cushioned$)$ 
+$($or $\sigma$-cushioned$)$ 
  refinement, then $\mathscr{D}$ has a $\varepsilon^*$-sequence 
- $(\varepsilon$-sequence$)$ 
+ $($or $\varepsilon$-sequence$)$ 
  of open expansions.
 
-\textup{(iii)}  If $\mathscr{D}^{*F}$ has a cushioned open $($cushioned$)$ 
+\textup{(iii)}  If $\mathscr{D}^{*F}$ has a cushioned open $($or cushioned$)$ 
 refinement, then $\mathscr{D}$ 
-has a locally finite (point-finite) open expansion.
+has a locally finite $($or point-finite$)$ open expansion.
 
 \textup{(iv)}  If $\mathscr{D}^{*F}$ has a $\sigma$-cushioned open 
 $(\sigma$-cushioned$)$ 
 refinement, then $\mathscr{D}$ has a $\theta^*$-sequence 
-$(\theta$-sequence$)$ of open expansions.
+$($or $\theta$-sequence$)$ of open expansions.
 }%end of lemma
 
 \begin{proof} 
-We prove only Case (iv). Use the definition and notation details in 
-Definition \ref{def:1.2.2} for $\mathscr{D}^{*F}$. 
+We prove only (iv). 
+Let $\mathscr{D}^{*F}$ be as in Definition \ref{def:1.2.2} with notations $U_\alpha$ 
+and $U_S$ as in (\ref{eq:1.2.2.1}). 
 Suppose $\mathscr{D}^{*F}$  has a
 $\sigma$-cushioned open refinement
 $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_{n}$, where 
 $\mathscr{G}_{n} = \{G_{n, S}: S\in [\Delta]^{<\omega}\}$ 
 such that for each $n<\omega$ and each $\Gamma\subset [\Delta]^{<\omega}$,  
 $\overline{\bigcup_{S\in\Gamma} G_{n,S}} \subset \bigcup_{S\in\Gamma} U_S$. For $n<\omega$, $\alpha\in \Delta$, let
-$$H_{n,\alpha} = X \setminus \bigcup \{G_{n,S}: 
-S\in [\Delta]^{<\omega}, \alpha\notin S\}$$
+$$H_{n,\alpha} = X \setminus \overline{\bigcup \{G_{n,S}: 
+S\in [\Delta]^{<\omega}, \alpha\notin S\}}$$
 Then $D_\alpha \subset H_{n,\alpha}$ for each $\alpha \in \Delta$ and $n<\omega$. 
 For each $n<\omega$, $\mathscr{H}_{n} = \{H_{n,\alpha}: \alpha \in \Delta\}$ 
 is an open expansion of $\mathscr{D}$. 
