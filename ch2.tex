@@ -167,38 +167,40 @@ So, we have $f(x, y) \le 2f(x, a)$ (as  $r \rightarrow f(x, a)$ above).
 \noindent\textsc{Proof of Claim}. We use induction. For $n=0$, 
 we have $f(x, y) = h_0(x, y, \phi)$. 
 Let $m \ge 1$, and assume that for all $i < m$, 
-$S\in X^i$, $f(x, y) \le h_i(x, y, s)$. Let us show that 
-for $x, y \in X$, $S = (a_{1}, \dots, a_{m})\in X^m$.
+$S\in X^i$, $f(x, y) \le h_i(x, y, S)$. Let us show that 
 \begin{gather}
-	f(x, y) \le h_{m}(x, y, S). \label{eq:2.1.4.10}
+	f(x, y) \le h_{m}(x, y, S) \text{ for } x, y \in X, S = (a_{1}, \dots, a_{m})\in X^m. \label{eq:2.1.4.10}
 \end{gather}
 Either the first or the second of \eqref{eq:2.1.4.9} holds. 
 If the first inequality holds, we have
-	$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$. We are finished.
+	$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, S) \le h_{m}(x, y, S)$. We are finished.
 If the second inequality of  \eqref{eq:2.1.4.9} holds, then $f(x, y) \le 2 f(x, a_{m})$. 
 Let 
 	$$k = \min \{i \le m: f(x, y) \le 2 f(x, a_{i})\}.$$
 	Then $1 \le k \le m$, $f(x, y) \le 2 f(x, a_{k})$. If $k = 1$, then 
-	$$f(x, y) \le 2 f(x, a_{1}) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s),$$
+	$$f(x, y) \le 2 f(x, a_{1}) \le 2 g_{m}(x, y, S) \le h_{m}(x, y, S),$$
 	We are finished. 
-	So we assume $k \ge 2$. By the definition of $k$ and \eqref{eq:2.1.ineq}, 
+So we assume $k \ge 2$. By the definition of $k$ and \eqref{eq:2.1.4.9}, 
 	$f(x, y) \le 2 f(a_{k-1}, y)$. It follows that
-	
-	$$f(x, y) \le f(x, a_{k}) + f(a_{k-1}, y).$$
-	Let $S_1 = (a_{1}, \dots, a_{k-1})$, $S_2 = (a_{k}, \dots, a_{m})$, 
+\begin{gather}
+	f(x, y) \le f(x, a_{k}) + f(a_{k-1}, y). \label{eq:2.1.4.11}
+\end{gather}
+Let $S_1 = (a_{1}, \dots, a_{k-1})$, $S_2 = (a_{k}, \dots, a_{m})$, 
 	and $S= (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, 
 	by the induction hypothesis, we have
-	$$f(x, a_{k}) \le f_{k-1}(x, a_{k}, S_1), \quad
-	f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, S_2).$$
-	Then 
+\begin{gather}
+	f(x, a_{k}) \le f_{k-1}(x, a_{k}, S_1), \quad
+	f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, S_2). \label{eq:4.1.4.12}
+\end{gather}
+Then 
 \begin{equation}
-		\begin{aligned}
-			f(x, y)    &\le f_{k-1}(x, a_{k}, s_{1}) + f_{m-k+1}(a_{k-1}, y, s_{2}) \\
+	\begin{aligned}
+			f(x, y)    &\le f_{k-1}(x, a_{k}, S_{1}) + f_{m-k+1}(a_{k-1}, y, S_{2}) \\
 			&= 2 f(x, a_{1}) + 4 \sum_{i=1}^{k-2} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y) \\
-			&= h_{m}(x, y, s)
-		\end{aligned}  \label{eq:2.1.4.?}
+			&= h_{m}(x, y, S)
+	\end{aligned}  \label{eq:2.1.4.13}
 \end{equation}
-This completes the induction and the proof of Claim \eqref{eq:2.1.4.9}.
+This completes the induction and the proof of Claim \eqref{eq:2.1.4.8}.
 \end{proof}
 
 
