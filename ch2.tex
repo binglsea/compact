@@ -91,7 +91,7 @@ Let
 	1\le k \le n<\omega\}.$$
 To see that $\mathscr{W}$ covers $X$, let $x \in X$. 
 Since $\mathscr{U}$ covers $X$, $f(x) > 0$. Let $m$ be the smallest integer such that 
-$x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k \le m} U_k$, 
+$x \in F_m$. Since $F_m \subset G_{m+1} \subset \bigcup_{k=1}^m U_k$, 
 there exists $k \le m$ such that 
 $x \in U_k \bigcap (G_{m+1} \setminus F_{m-1}) = W_{m,k}$.
 Hence $\mathscr{W}$ is a countable functionally open refinement of $\mathscr{U}$.
@@ -106,32 +106,32 @@ so $\mathscr{W}$ is star-finite.
 
 {\theorem{\label{th:2.1.4}} \textup{([Frink 1937]\textsuperscript{\cite{Frink}})}. Suppose $f: X \times X \to [0, \infty)$ which satisfies
 	
-	\textup{(a)} $f(x,x)=0$, and $f(x,y)=f(y,x)$,
+\textup{(a)} $f(x,x)=0$, and $f(x,y)=f(y,x)$,
 	
-	\textup{(b)} For any $r > 0$ and any $x, y\in X$,  we have $f(x,y) < 2r$ if $f(x,z) < r$ 
-	and $f(z, y) < r$ for any $z\in X$.
+\textup{(b)} For any $r > 0$ and any $x, y\in X$,   $f(x,y) < 2r$ if $f(x,z) < r$ 
+and $f(z, y) < r$ for any $z\in X$.
 	
-	Then there exists a pseudo-metric $\rho$ on $X$ such that for any $x, y \in X$,
+Then there exists a pseudo-metric $\rho$ on $X$ such that for any $x, y \in X$,
 	
-	\textup{(i)}  $\rho(x,y) \le f(x,y)$,
+\textup{(i)}  $\rho(x,y) \le f(x,y)$, \label{eq:2.1.4.0.1}
 	
-	\textup{(ii)}  $f(x,y) \le 4\rho(x,y)$.
+\textup{(ii)}  $f(x,y) \le 4\rho(x,y)$.
 }
 
 \begin{proof} 
 	For $x, y\in X$, let
 	\begin{gather}
-		g_0(x,y,\emptyset) = f(x,y), \\
-		g_1(x,y,s) = f(x,a_1) + f(a_1,y), \text{ for } s = (a_1) \in X^1
+		g_0(x,y,\emptyset) = f(x,y), \label{eq:2.1.4.1}\\
+		g_1(x,y,s) = f(x,a_1) + f(a_1,y), \text{ for } s = (a_1) \in X^1,  \label{eq:2.1.4.2}
 	\end{gather}
 	\begin{equation}
 		\begin{aligned}
 			g_n(x,y,s) =  f(x,a_1) + &\sum_{i=1}^{n-1} f(a_i, a_{i+1}) + f(a_n,y) \\
-			& \text{ for }  n \ge 2, s = (a_1, \ldots, a_n) \in X^n,
+			& \text{ for }  n \ge 2, s = (a_1, \ldots, a_n) \in X^n,  \label{eq:2.1.4.3}
 		\end{aligned}
 	\end{equation}
 	\begin{gather}
-		\rho(x,y) = \inf \,\{ g_n(x,y,s): s \in X^n, n \ge 0 \}.
+		\rho(x,y) = \inf \,\{ g_n(x,y,s): s \in X^n, n \ge 0 \}.  \label{eq:2.1.4.4}
 	\end{gather}
 	It is easy to verify that $\rho$ is a pseudo-metric on $X$ and $\rho(x,y) \le f(x,y)$. It remains to show (ii). For $x, y \in X$, let 
 	\begin{gather}
