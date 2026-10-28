@@ -151,35 +151,32 @@ Then there exists a pseudo-metric $\rho$ on $X$ such that for any $x, y \in X$,
 If we have proved \eqref{eq:2.1.4.8} of the Claim, 
 then $f(x,y) \le 4g_n(x,y,S)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
 	
-For any $x, y, a \in X$ we have 
+For any $x, y, a \in X$ we have either
 \begin{gather}
-		f(x, y) \le 2 f(a, y) \quad \textup{ or }\quad f(x, y) \le 2 f(x, a)  \label{eq:2.1.4.9}
+	f(x, y) \le 2 f(a, y)  \; \text{ or } \; f(x, y) \le 2 f(x, a)  \label{eq:2.1.4.9}
 \end{gather}
 \textsc{Proof of} \eqref{eq:2.1.4.9} has two cases.
 	
-	Case 1. If $f(x, a) \le f(a, y)$, then for any $r >0$, $f(x, a) \le f(a, y) <   f(a, y) + r$. 
-	By hypothesis (b), $f(x, y) < 2 f(a, y)+2r$. So, $f(x, y) \le 2 f(a, y)$ (as  $r \rightarrow 0$).
+\textbf{Case 1}. If $f(x, a) \le f(a, y)$, then for any $r >0$, $f(x, a) \le f(a, y) <   f(a, y) + r$. 
+By hypothesis (b), $f(x, y) < 2 f(a, y)+2r$. So, $f(x, y) \le 2 f(a, y)$ (as  $r \rightarrow 0$).
 	
-	Case 2. If $f(a, y) < f(x, a)$, then by (b) we have $f(x, y) < 2 r$ for any $r > f(x, a)$.
-	It results that $f(x, y) \le 2f(x, a)$ as  $r \rightarrow f(x, a)$ above.
+\textbf{Case 2}. If $f(a, y) < f(x, a)$, then by hypothesis (b), $f(x, y) < 2 r$ for any $r > f(x, a)$.
+So, we have $f(x, y) \le 2f(x, a)$ (as  $r \rightarrow f(x, a)$ above).
 	
-	\vspace{8pt}
-	\noindent\textsc{Proof of Claim \eqref{gather:2.1.4.claim}}. We use induction. For $n=0$, 
-	we have $f(x, y) = h_0(x, y, \phi)$. 
-	Let $m \ge 1$, and assume that for all $i < m$, 
-	$s\in X^i$, $f(x, y) \le h_i(x, y, s)$. Let us show that %Claim \eqref{gather:2.1.4.claim} for $n\ge1$.
-	For $x, y \in X$, $s = (a_{1}, \dots, a_{m})\in X^m$.
-	\begin{gather}
-		f(x, y) \le h_{m}(x, y, s)
-	\end{gather}
-	
-	Either the first or the second of \eqref{eq:2.1.ineq} holds. 
-	
-	If the first inequality holds, we have
+\vspace{8pt}
+\noindent\textsc{Proof of Claim}. We use induction. For $n=0$, 
+we have $f(x, y) = h_0(x, y, \phi)$. 
+Let $m \ge 1$, and assume that for all $i < m$, 
+$S\in X^i$, $f(x, y) \le h_i(x, y, s)$. Let us show that 
+for $x, y \in X$, $S = (a_{1}, \dots, a_{m})\in X^m$.
+\begin{gather}
+	f(x, y) \le h_{m}(x, y, S). \label{eq:2.1.4.10}
+\end{gather}
+Either the first or the second of \eqref{eq:2.1.4.9} holds. 
+If the first inequality holds, we have
 	$f(x, y) \le 2 f(a_{m}, y) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s)$. We are finished.
-	
-	If the second inequality of  \eqref{eq:2.1.ineq} holds, then $f(x, y) \le 2 f(x, a_{m})$. 
-	Let 
+If the second inequality of  \eqref{eq:2.1.4.9} holds, then $f(x, y) \le 2 f(x, a_{m})$. 
+Let 
 	$$k = \min \{i \le m: f(x, y) \le 2 f(x, a_{i})\}.$$
 	Then $1 \le k \le m$, $f(x, y) \le 2 f(x, a_{k})$. If $k = 1$, then 
 	$$f(x, y) \le 2 f(x, a_{1}) \le 2 g_{m}(x, y, s) \le h_{m}(x, y, s),$$
@@ -188,32 +185,35 @@ For any $x, y, a \in X$ we have
 	$f(x, y) \le 2 f(a_{k-1}, y)$. It follows that
 	
 	$$f(x, y) \le f(x, a_{k}) + f(a_{k-1}, y).$$
-	Let $s_{1} = (a_{1}, \dots, a_{k-1})$, $s_{2} = (a_{k}, \dots, a_{m})$, and $s = (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, by the induction hypothesis, we have
-	$$f(x, a_{k}) \le f_{k-1}(x, a_{k}, s_{1}), \quad
-	f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, s_{2}).$$
+	Let $S_1 = (a_{1}, \dots, a_{k-1})$, $S_2 = (a_{k}, \dots, a_{m})$, 
+	and $S= (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, 
+	by the induction hypothesis, we have
+	$$f(x, a_{k}) \le f_{k-1}(x, a_{k}, S_1), \quad
+	f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, S_2).$$
 	Then 
-	\begin{equation*}
+\begin{equation}
 		\begin{aligned}
 			f(x, y)    &\le f_{k-1}(x, a_{k}, s_{1}) + f_{m-k+1}(a_{k-1}, y, s_{2}) \\
 			&= 2 f(x, a_{1}) + 4 \sum_{i=1}^{k-2} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y) \\
 			&= h_{m}(x, y, s)
-		\end{aligned}
-	\end{equation*}
-	This completes the induction and the Claim \eqref{gather:2.1.4.claim}.
+		\end{aligned}  \label{eq:2.1.4.?}
+\end{equation}
+This completes the induction and the proof of Claim \eqref{eq:2.1.4.9}.
 \end{proof}
 
 
 {\theorem{}\label{th:2.1.5}
-	\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}. Suppose there exists 
-	a sequence $\{\mathscr{U}_n: n\in\omega\}$ of open covers of a space $(X, \tau)$ 
-	such that $\mathscr{U}_0 = \{X\}$ and 
-	$\mathscr{U}_{n+1}$ is a point-star refinement of $\mathscr{U}_n$ for each $n \ge 1$. 
-	Then there exists a pseudo-metric $\rho$ on $X$ such that for each $x \in X, n < \omega:$
+\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}. 
+Suppose there exists 
+a sequence $\{\mathscr{U}_n: n\in\omega\}$ of open covers of a space $(X, \tau)$ 
+such that $\mathscr{U}_0 = \{X\}$ and 
+$\mathscr{U}_{n+1}$ is a point-star refinement of $\mathscr{U}_n$ for each $n \ge 1$. 
+Then there exists a pseudo-metric $\rho$ on $X$ such that for each $x \in X, n < \omega:$
 	
-	\textup{(i)}  $\operatorname{st}(x, \mathscr{U}_n) \subset B_\rho(x, 1/{2^n})$,
-	and $\tau_\rho \subset \tau$ where  $\tau_\rho$ is the topology generated by metric $\rho$.
+\textup{(i)}  $\operatorname{st}(x, \mathscr{U}_n) \subset B_\rho(x, 1/{2^n})$,
+and $\tau_\rho \subset \tau$ where  $\tau_\rho$ is the topology generated by metric $\rho$.
 	
-	\textup{(ii)} $B_\rho(x, 1/{2^{n+2}}) \subset \operatorname{st}(x, \mathscr{U}_n)$
+\textup{(ii)} $B_\rho(x, 1/{2^{n+2}}) \subset \operatorname{st}(x, \mathscr{U}_n)$
 }
 
 \begin{proof}
@@ -241,11 +241,11 @@ For any $x, y, a \in X$ we have
 	We show $f(x, y) < 2r$ in
 	two cases.
 	
-	Case 1. Suppose $r \ge 1/2$. If $y \in \operatorname{st}(x, \mathscr{U}_n)$ 
+\textbf{Case 1}. Suppose $r \ge 1/2$. If $y \in \operatorname{st}(x, \mathscr{U}_n)$ 
 	for each $n < \omega$, then $f(x, y) = 0 < 2r$. Otherwise there exists a least $k \ge 1$
 	such that $y \in \operatorname{st}(x, \mathscr{U}_{k-1}) \setminus \operatorname{st}(x, \mathscr{U}_k)$. Then $f(x, y) = 1/{2^k} \le 1/2 < 2r$.
 	
-	Case 2. Suppose $r <1/2$. Let $k = \min\{n< \omega: 1/{2^n} < r\}$.
+\textbf{Case 2}. Suppose $r <1/2$. Let $k = \min\{n< \omega: 1/{2^n} < r\}$.
 	Then $1/{2^k} < r < 1/2$, so $k > 1$. Either $f(x, z) = 0 < 1/{2^{k-1}}$ or 
 	$f(x, z) = 1/{2^m} < r$, so $k \le m$. Hence $f(x, z) \le 1/{2^m} < 1/2^{k-1}$.
 	For the same reason we also have $f(z, y) < 1/{2^{k-1}}$. 
