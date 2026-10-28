@@ -144,9 +144,9 @@ Then there exists a pseudo-metric $\rho$ on $X$ such that for any $x, y \in X$,
 			& \text{ for }  n \ge 2, S = (a_1, \ldots, a_n) \in X^n. \label{eq:2.1.4.7}
 		\end{aligned}
 \end{equation}	
-\textbf{Claim.}  For any $x, y \in X, n <\omega$, and $S \in X^n$,
+\textbf{Claim.}  We have
 \begin{gather}
-		f(x,y) \le h_n(x,y,S). \label{eq:2.1.4.8}
+		f(x,y) \le h_n(x,y,S) \text{ for any } x, y \in X, n < \omega \text{ and } S\in X^n. \label{eq:2.1.4.8}
 \end{gather}
 If we have proved \eqref{eq:2.1.4.8} of the Claim, 
 then $f(x,y) \le 4g_n(x,y,S)$, so $f(x,y) \le 4\rho(x,y)$, that completes our proof.
@@ -164,7 +164,7 @@ By hypothesis (b), $f(x, y) < 2 f(a, y)+2r$. So, $f(x, y) \le 2 f(a, y)$ (as  $r
 So, we have $f(x, y) \le 2f(x, a)$ (as  $r \rightarrow f(x, a)$ above).
 	
 \vspace{8pt}
-\noindent\textsc{Proof of Claim}. We use induction. For $n=0$, 
+\noindent\textsc{Proof of Claim} \eqref{eq:2.1.4.8}. We use induction. For $n=0$, 
 we have $f(x, y) = h_0(x, y, \phi)$. 
 Let $m \ge 1$, and assume that for all $i < m$, 
 $S\in X^i$, $f(x, y) \le h_i(x, y, S)$. Let us show that 
@@ -186,17 +186,17 @@ So we assume $k \ge 2$. By the definition of $k$ and \eqref{eq:2.1.4.9},
 	f(x, y) \le f(x, a_{k}) + f(a_{k-1}, y). \label{eq:2.1.4.11}
 \end{gather}
 Let $S_1 = (a_{1}, \dots, a_{k-1})$, $S_2 = (a_{k}, \dots, a_{m})$, 
-	and $S= (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, 
-	by the induction hypothesis, we have
+and $S= (a_{1}, \dots, a_{k}, \dots, a_{m})$. Since $k - 1 < m$, $m - k + 1 < m$, 
+by the induction hypothesis, we have
 \begin{gather}
-	f(x, a_{k}) \le f_{k-1}(x, a_{k}, S_1), \quad
-	f(a_{k-1}, y) \le f_{m-k+1}(a_{k-1}, y, S_2). \label{eq:4.1.4.12}
+	f(x, a_{k}) \le h_{k-1}(x, a_{k}, S_1), \quad
+	f(a_{k-1}, y) \le h_{m-k+1}(a_{k-1}, y, S_2). \label{eq:4.1.4.12}
 \end{gather}
 Then 
 \begin{equation}
 	\begin{aligned}
-			f(x, y)    &\le f_{k-1}(x, a_{k}, S_{1}) + f_{m-k+1}(a_{k-1}, y, S_{2}) \\
-			&= 2 f(x, a_{1}) + 4 \sum_{i=1}^{k-2} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y) \\
+			f(x, y)    &\le h_{k-1}(x, a_{k}, S_{1}) + h_{m-k+1}(a_{k-1}, y, S_{2}) \\
+			&= 2 f(x, a_{1}) + 4 \sum_{i=1}^{n-1} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y) \\
 			&= h_{m}(x, y, S)
 	\end{aligned}  \label{eq:2.1.4.13}
 \end{equation}
