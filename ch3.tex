@@ -13,15 +13,19 @@ open refinement, then every directed $($or increasing$)$ open $\lambda$-cover ha
 locally finite open shrink.
 }
 \begin{proof}
-Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ is a directed (increasing) open cover of $X$. By hypothesis, $\mathscr{U}$ has a locally finite open refinement $\mathscr{G} = \{G_\alpha: \alpha < \lambda\}$ with $G_\alpha \subset U_\alpha$. 
+Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ is a directed (or increasing) 
+open cover of $X$. By hypothesis, $\mathscr{U}$ has a locally finite open 
+refinement $\mathscr{G} = \{G_\alpha: \alpha < \lambda\}$ such that 
+$G_\alpha \subset U_\alpha$. 
 For $\alpha < \lambda$, let
-
 $$W_\alpha = X \setminus \bigcup \{ \overline{G_\gamma}: \gamma < \lambda,  
 G_\gamma \not\subset U_\alpha\}.$$
 Then $\mathscr{W} = \{W_\alpha: \alpha < \lambda\}$ is an open cover of $X$ 
 with $\overline{W_\alpha} \subset U_\alpha$. 
 Since $\mathscr{U}$ is directed (increasing), $\mathscr{W}$ is also 
-directed (increasing). Let $\mathscr{V} = \{V_\alpha: \alpha < \lambda\}$ be  a locally finite open refinement of $\mathscr{W}$ such that $V_\alpha \subset W_\alpha$. Then $\mathscr{V}$ is a locally finite open shrink of $\mathscr{U}$. 
+directed (or increasing). Then $\mathscr{W}$ has a locally finite open refinement 
+$\mathscr{V} = \{V_\alpha: \alpha < \lambda\}$  such that $V_\alpha \subset W_\alpha$. 
+Thus $\mathscr{V}$ is a locally finite open shrink of $\mathscr{U}$. 
 \end{proof} 
 
 {\theorem{} \label{th:3.1.2} 
