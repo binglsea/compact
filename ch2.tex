@@ -197,7 +197,7 @@ Then
 	\begin{aligned}
 			f(x, y)    &\le h_{k-1}(x, a_{k}, S_{1}) + h_{m-k+1}(a_{k-1}, y, S_{2}) \\
 			&= 2 f(x, a_{1}) + 4 \sum_{i=1}^{n-1} f(a_{i}, a_{i+1}) + 2 f(a_{m}, y) \\
-			&= h_{m}(x, y, S)
+			&= h_{m}(x, y, S).
 	\end{aligned}  \label{eq:2.1.4.13}
 \end{equation}
 This completes the induction and the proof of Claim \eqref{eq:2.1.4.8}.
@@ -228,20 +228,20 @@ $$f(x, y) =  \begin{cases}
 		\text{if } y \in \operatorname{st}(x, \mathscr{U}_{n-1}) 
 		\setminus \operatorname{st}(x, \mathscr{U}_{n}), n \ge 1.  
 	\end{cases}$$
-Clearly, $f$ satisfies the condition (a) of Theorem \ref{th:2.1.4}.
-To show the condition (b), first, it is easy to see that
+Clearly, $f$ satisfies the Condition (a) of Theorem \ref{th:2.1.4}.
+To show the Condition (b), first, it is easy to see that
 	for $x, y \in X, n < \omega$
 	\begin{gather}
 		y \in \operatorname{st}(x, \mathscr{U}_n) \iff f(x, y) < \frac{1}{2^n}. \label{eq:2.1.5.1}
 	\end{gather}
-	Use the notation in condition (b) of Theorem \ref{th:2.1.4} to
+	Use the notation in Condition (b) of Theorem \ref{th:2.1.4} to
 	assume that $x, y, z \in X, r > 0$ such that $f(x, z) < r$ and $f(z, y) < r$.
 	%Suppose $x, y, z \in X, r > 0$ such that $f(x, y) < r$ and $f(y, z) < r$. 
 	We show $f(x, y) < 2r$ in
 	two cases.
 	
 \textbf{Case 1}. Suppose $r \ge 1/2$. If $y \in \operatorname{st}(x, \mathscr{U}_n)$ 
-	for each $n < \omega$, then $f(x, y) = 0 < 2r$. Otherwise there exists a least $k \ge 1$
+	for all $n < \omega$, then $f(x, y) = 0 < 2r$. Otherwise there exists a least $k \ge 1$
 	such that $y \in \operatorname{st}(x, \mathscr{U}_{k-1}) \setminus \operatorname{st}(x, \mathscr{U}_k)$. Then $f(x, y) = 1/{2^k} \le 1/2 < 2r$.
 	
 \textbf{Case 2}. Suppose $r <1/2$. Let $k = \min\{n< \omega: 1/{2^n} < r\}$.
@@ -250,14 +250,14 @@ To show the condition (b), first, it is easy to see that
 	For the same reason we also have $f(z, y) < 1/{2^{k-1}}$. 
 	It follows from \eqref{eq:2.1.5.1} that $z \in \operatorname{st}(x, \mathscr{U}_{k-1})$ 
 	and $y \in \operatorname{st}(z, \mathscr{U}_{k-1})$. 
-	There are $U_1, U_2 \in \mathscr{U}_{k-1}$ such that $x, z \in U_1$ 
+	There exist $U_1, U_2 \in \mathscr{U}_{k-1}$ such that $x, z \in U_1$ 
 	and $z, y \in U_2$. Since $z \in U_1 \cap U_2$ 
 	and $\mathscr{U}_{k-1}$ is a point-star refinement of $\mathscr{U}_{k-2}$, 
 	$U_1 \cup U_2 \subset U$ for some $U \in \mathscr{U}_{k-2}$. 
 	Then $y \in \operatorname{st}(x, \mathscr{U}_{k-2})$. 
 	By \eqref{eq:2.1.5.1}, 
 	$f(x, y) < 1/{2^{k-2}} < 2r$.
-	Hence condition (b) holds of Theorem \ref{th:2.1.4} holds.
+	Hence Condition (b) of Theorem \ref{th:2.1.4} holds.
 	
 	By Theorem \ref{th:2.1.4}, there exists a pseudo-metric $\rho$ on $X$ such that for each $x, y \in X$,
 	\begin{gather}
