@@ -100,33 +100,33 @@ $$D_n = \{ x \in X: |\operatorname{ind}(\mathscr{U})_x| \le n \},  \textup{ when
 \noindent Then $D_n$ is closed. Let $F(\emptyset, 0) = \emptyset$. 
 For $n \ge 1$, let
 \begin{gather*}
-	F(S, n) = D_n\cap(\cap_{\alpha \in S} U_\alpha) \text{ for any } S \in [\Delta]^n, \\
+	F(S, n) = D_n\cap(\bigcap_{\alpha \in S} U_\alpha) \text{ for any } S \in [\Delta]^n, \\
 	\mathscr{F}_n= \{F(S, n): S \in [\Delta]^n\}.
 \end{gather*}
 We show that $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ is a 
 $D\omega$-refinement of $\mathscr{U}$. Let $n < \omega$, 
-$Y = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that 
-$\mathscr{F}_n\vert{}_Y$ is a discrete closed family in $Y$, 
+$Y_n = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that 
+$\mathscr{F}_n\vert{}_{Y_n}$ is a discrete closed family in $Y_n$, 
 by Lemma \ref{lem:1.1.4}, we need only to show that
 
 \textbf{(1)} 
-$\bigcup(\mathscr{F}_n\vert{}_Y)$ is closed in $Y$, and
+$\bigcup(\mathscr{F}_n\vert{}_{Y_n})$ is closed in $Y_n$, and
 
-\textbf{(2)}  $\mathscr{F}_n\vert{}_Y$ is discrete at each 
-$x \in \bigcup(\mathscr{F}_n\vert{}_Y)$.
+\textbf{(2)}  $\mathscr{F}_n\vert{}_{Y_n}$ is discrete at each 
+$x \in \bigcup(\mathscr{F}_n\vert{}_{Y_n})$.
 
-To see (1), let $x\in G = Y \setminus \bigcup(\mathscr{F}_n\vert{}_Y)$. 
+To see (1), let $x\in G_n = Y_n \setminus \bigcup(\mathscr{F}_n\vert{}_Y)$. 
 Suppose $|\operatorname{ind}(\mathscr{U})_x| = j>0$. Then $x \in D_j$. 
 Pick $S \in [\Delta]^j$ such that 
 $x \in D_j\cap (\bigcap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
-Since $x \in G$, $j > n$. Then $Y \setminus D_n$ is a neighborhood of $x$ in $Y$ 
-such that $Y \setminus D_n \subset G$. Hence $G$ is open in $Y$.
+Since $x \in G_n$, $j > n$. Then $Y_n \setminus D_n$ is a neighborhood of $x$ in $Y_n$ 
+such that $Y_n \setminus D_n \subset G_n$. Hence $G_n$ is open in $Y_n$.
 
-To see (2), let $x \in \bigcup(\mathscr{F}_n\vert{}_Y)$. Suppose $S_0 \in [\Delta]^n$ 
-such that $x \in F(S_0, n)$. Then $W = Y \cap (\bigcap_{\alpha \in S_0} U_\alpha)$ 
-is a neighborhood of $x$ in $Y$. 
+To see (2), let $x \in \bigcup(\mathscr{F}_n\vert{}_{Y_n})$. Suppose $S_0 \in [\Delta]^n$ 
+such that $x \in F(S_0, n)$. Then $W = Y_n \cap (\bigcap_{\alpha \in S_0} U_\alpha)$ 
+is a neighborhood of $x$ in $Y_n$. 
 For each $S \in [\Delta]^n \setminus \{S_0\}$, $W \cap F(S, n) = \emptyset$. 
-So, $\mathscr{F}_n\vert{}_Y$ is discrete at $x$.
+So, $\mathscr{F}_n\vert{}_{Y_n}$ is discrete at $x$.
 \end{proof}
 
 {\theorem{}  \label{th:3.2.5}
@@ -166,11 +166,12 @@ $\lambda$-weakly $\bar{\theta}$-refinable.
 Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
 Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets of $X \setminus \bigcup_{i<n}(\cup \mathscr{F}_i)$
 with $F_{n, \alpha}\subset U_\alpha$. Define
-$$G_{n,\alpha}=\left(U_\alpha\setminus\bigcup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}\right)
-\cap\left(X\setminus\bigcup_{i<n}(\cup \mathscr{F}_i)\right)
-$$
-\noindent for $n <\omega$ and $\alpha< \lambda$, and let
-$\mathscr G_n=\{G_{n,\alpha}:\alpha<\lambda\}$.
+\begin{gather}
+G_{n,\alpha}=\left(U_\alpha\setminus\bigcup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}\right)
+\cap\left(X\setminus\bigcup_{i<n}(\cup \mathscr{F}_i)\right) 
+\text{ for } n <\omega, \alpha< \lambda. \label{eq:3.2.6.1}\\
+\mathscr G_n=\{G_{n,\alpha}:\alpha<\lambda\}.  \label{eq:3.2.6.2}
+\end{gather}
 Then $F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha$.
 
 (1) $\mathscr G=\bigcup_{n<\omega}\mathscr G_n$ is an open refinement 
