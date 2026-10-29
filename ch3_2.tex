@@ -98,29 +98,33 @@ Suppose $\mathscr{U} = \{ U_\alpha: \alpha \in \Delta \}$ is a point-finite open
 cover of $X$. For $n < \omega$, let $D_0= \emptyset$ and
 $$D_n = \{ x \in X: |\operatorname{ind}(\mathscr{U})_x| \le n \},  \textup{ when } n \ge 1.$$
 \noindent Then $D_n$ is closed. Let $F(\emptyset, 0) = \emptyset$. 
-For $n \ge 1$ and $S \in [\Delta]^n$, let
-$$F(S, n) = D_n\bigcap(\cap_{\alpha \in S} U_\alpha), \quad
-\mathscr{F}_n= \{F(S, n): S \in [\Delta]^n\}$$
+For $n \ge 1$, let
+\begin{gather*}
+	F(S, n) = D_n\cap(\cap_{\alpha \in S} U_\alpha) \text{ for any } S \in [\Delta]^n, \\
+	\mathscr{F}_n= \{F(S, n): S \in [\Delta]^n\}.
+\end{gather*}
+We show that $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ is a 
+$D\omega$-refinement of $\mathscr{U}$. Let $n < \omega$, 
+$Y = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that 
+$\mathscr{F}_n\vert{}_Y$ is a discrete closed family in $Y$, 
+by Lemma \ref{lem:1.1.4}, we need only to show that
 
-\noindent We show that $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ is a $D\omega$-refinement of $\mathscr{U}$. Let $n < \omega$, 
-$Y = X \setminus \bigcup_{i<n}(\cup\mathscr{F}_i)$. To show that $\mathscr{F}_n\vert{}_Y$ is a discrete closed family in $Y$. 
-By Lemma \ref{lem:1.1.4}, we need only to show that
-
-\textup{(1)} 
+\textbf{(1)} 
 $\bigcup(\mathscr{F}_n\vert{}_Y)$ is closed in $Y$, and
 
-\textup{(2)}  $\mathscr{F}_n\vert{}_Y$ is discrete at each 
+\textbf{(2)}  $\mathscr{F}_n\vert{}_Y$ is discrete at each 
 $x \in \bigcup(\mathscr{F}_n\vert{}_Y)$.
 
 To see (1), let $x\in G = Y \setminus \bigcup(\mathscr{F}_n\vert{}_Y)$. 
 Suppose $|\operatorname{ind}(\mathscr{U})_x| = j>0$. Then $x \in D_j$. 
 Pick $S \in [\Delta]^j$ such that 
-$x \in D_j\bigcap (\cap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
+$x \in D_j\cap (\bigcap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
 Since $x \in G$, $j > n$. Then $Y \setminus D_n$ is a neighborhood of $x$ in $Y$ 
 such that $Y \setminus D_n \subset G$. Hence $G$ is open in $Y$.
 
 To see (2), let $x \in \bigcup(\mathscr{F}_n\vert{}_Y)$. Suppose $S_0 \in [\Delta]^n$ 
-such that $x \in F(S_0, n)$. Then $W = Y \bigcap (\cap_{\alpha \in S_0} U_\alpha)$ is a neighborhood of $x$ in $Y$. 
+such that $x \in F(S_0, n)$. Then $W = Y \cap (\bigcap_{\alpha \in S_0} U_\alpha)$ 
+is a neighborhood of $x$ in $Y$. 
 For each $S \in [\Delta]^n \setminus \{S_0\}$, $W \cap F(S, n) = \emptyset$. 
 So, $\mathscr{F}_n\vert{}_Y$ is discrete at $x$.
 \end{proof}
