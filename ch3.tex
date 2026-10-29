@@ -97,7 +97,7 @@ in subspace $F_n$.
 
 \begin{proof}
 ($\Rightarrow$). Suppose $\mathscr{U}$ has a $\theta$-sequence 
-$\{\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta_n\}\}_{n < \omega}$ of open refinements. For $m, n < \omega$, let 
+$\{\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta_n\}:n < \omega\}$ of open refinements. For $m, n < \omega$, let 
 \begin{gather*}
 	F_{m, 0} = \emptyset, \\
 	F_{m,n} = \{x \in X: \vert{}\operatorname{ind}(\mathscr{V}_m)_x\vert{} \le n\} \text{ for } n\ge 1.
@@ -130,13 +130,13 @@ $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover
 Let $\mathscr{U} = \{ U_\alpha: \alpha \in\Delta \}$ and $\mathscr{V}$ be covers of $X$.
 
 \textup{(i)} $\mathscr{V}$ is a 
-\uwave{pointwise $($local$)$ $W$-refinement}
+\uwave{pointwise $($or local$)$ $W$-refinement}
 \index{pointwise $W$-refinement| \S\ref{def:3.1.6}\hfill}
 \index{local $W$-refinement| \S\ref{def:3.1.6}\hfill}
 of $\mathscr{U}$ at $x \in X$ if there exists $S \in [\Delta]^{<\omega}$ 
 $($and $\exists \, G\in \operatorname{top}(x) )$ such that $(\mathscr{V})_x$ 
 $($and $(\mathscr{V})_G )$ refines $\{U_\alpha: \alpha \in S\}$.
- $\mathscr{V}$ is a pointwise $($local$)$ $W$-refinement of $\mathscr{U}$  if $\mathscr{V}$ is a pointwise $($local$)$ $W$-refinement of $\mathscr{U}$ at each $x \in X$.
+ $\mathscr{V}$ is a pointwise $($or local$)$ $W$-refinement of $\mathscr{U}$  if $\mathscr{V}$ is a pointwise $($or local$)$ $W$-refinement of $\mathscr{U}$ at each $x \in X$.
 
 \textup{(ii)} A sequence $\{\mathscr{V}_n: n\in \omega\}$ of covers of $X$ 
 $\mathscr{V}$ is a 
@@ -196,7 +196,7 @@ Let $\mathscr{W} = \{W_\alpha: \alpha < \kappa\}$ be a point-finite open
 (precise, by (iii) of Lemma \ref{lem:1.1.5}) refinement of 
 $\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
 For $\alpha < \kappa$, let
-$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \bigcup \{ \cup_{\gamma \ge \alpha} W_\gamma \}$$
+$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \cup \{ \cup_{\gamma \ge \alpha} W_\gamma \}$$
 Then $\mathscr{G}_\alpha$ is an open cover of $X$ with power $< \kappa$. 
 By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open 
 refinement $\mathscr{H}_\alpha$, say, precise refinement. 
