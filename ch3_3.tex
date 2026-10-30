@@ -136,9 +136,9 @@ closed subsets of $X$. Let $\{\mathscr{G}_n: n < \omega\}$ be a
 $\theta^*$-sequence where each 
 $\mathscr{G}_n = \{G_{n,\alpha}: \alpha < \lambda\}$ such that 
 $F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ 
-for each $n, \alpha$.
+for each $n<\omega, \alpha<\lambda$.
 For $n < \omega$, let
-$$U_n = \{x \in X: \exists \, H \in \operatorname{top}(x) \textit{ such that } \vert{}\text{ind}(\mathscr{G}_n)_H\vert{} < \omega\}$$
+$$U_n = \{x \in X: \exists \, H \in \operatorname{top}(x) \text{ such that } \vert{}\text{ind}(\mathscr{G}_n)_H\vert{} < \omega\}$$
 \noindent Then $\{U_n: n < \omega\}$ is an increasing open cover of $X$. 
 By Theorem \ref{th:4.1.9}, $X$ is countably paracompact. 
 There exists a locally finite open cover $\{V_n: n < \omega\}$ of $X$ 
@@ -150,7 +150,7 @@ Let $R = X \setminus \bigcup_{n \in\omega\setminus C} \overline{V_n}$.
 Then $R \in \operatorname{top}(x)$. For each $n \in C$, 
 $x\in\overline{V_n} \subset U_n$, so there exists $H_n \in \operatorname{top}(x)$ 
 such that $\vert{}\operatorname{ind}(\mathscr{G}_n)_{H_n}\vert{} < \omega$. Then
-$H = R \bigcap(\bigcap_{n \in C} H_n )\in \operatorname{top}(x)$.
+$H = R \cap(\bigcap_{n \in C} H_n )\in \operatorname{top}(x)$.
 It is easy to check that 
 $$\operatorname{ind}(\mathscr{G})_H \subset \bigcup_{n \in C} \operatorname{ind}(\mathscr{G}_n)_{H_n}.$$ 
 \noindent Thus $\operatorname{ind}(\mathscr{G})_H$ is finite, 
@@ -168,19 +168,19 @@ is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
 If $X$ is $\lambda$-discretely subexpandable, then for every open 
 $\lambda$-cover $\mathscr{U}$ of $X$ there exists a $\sigma$-discrete closed partial refinement 
 $\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that 
-$\bigcup \widetilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P}$,
+$$\bigcup \widetilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P},$$
 where $\widetilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
 }
 
-\begin{proof} Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be an 
+\begin{proof} Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ is an 
 open cover of a $\lambda$-discretely subexpandable space $X$. 
 By the previous Lemma \ref{lem:3.3.5}, $\widetilde{\mathscr{U}} = \{\widetilde{U}_\alpha:  \alpha < \lambda\}$ 
 is a discrete closed family such that $\widetilde{U}_\alpha \subset U_\alpha$. 
 There exists an $\varepsilon$-sequence 
 $\{\mathscr{G}_n = \{G_{\alpha,n}\}: n < \omega\}$ 
 of open expansions of $\widetilde{\mathscr{U}}$ such that 
-$\widetilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $\alpha, n$.
-For each $n < \omega$, $\{\bigcup \widetilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There exists a $\varepsilon$-sequence 
+$\widetilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $n<\omega,\alpha < \lambda$.
+For each $n < \omega$, $\{\bigcup \widetilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There exists an $\varepsilon$-sequence 
 $\{\mathscr{L}_k = \{Q_{n,k}, W_{n,k}\}: k < \omega\}$ of open expansions such that 
 
 $$\bigcup \widetilde{\mathscr{U}} \subset Q_{n,k} \text{ and }
@@ -202,7 +202,7 @@ $$\mathscr{G}_{n,k} = \mathscr{G}_n \cup \{W_{n,k} \cap U_\alpha:  \alpha < \lam
 
 \noindent Then each $\mathscr{G}_{n,k}$ is an open refinement of $\mathscr{U}$. 
 By Lemma \ref{lem:3.3.5}, $\mathscr{P} = \bigcup_{n,k < \omega} \widetilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
-Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by (1), 
+Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by \eqref{eq3.3.6.1}, 
 $\bigcup \widetilde{\mathscr{U}} \subset A$.
 
 To show that $A\subset \bigcup\mathscr{P}$, let $x \in A$. 
@@ -210,10 +210,9 @@ There exists $m < \omega$ such that $|\operatorname{ind}(\mathscr{G}_m)_x| \le 1
 Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some $h < \omega$. 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
-
-$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \ne \alpha_0} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = \widetilde{G}_{\alpha_0, m} \in \widetilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
-
-\noindent Thus $A \subset \bigcup \mathscr{P}$.
+$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \in\lambda\setminus \{\alpha_0\}} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = 
+\widetilde{G}_{\alpha_0, m} \in \widetilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
+Thus $A \subset \bigcup \mathscr{P}$.
 \end{proof} 
 
 
@@ -223,9 +222,13 @@ In a $\lambda$-discretely subexpandable space, every point-finite open $\lambda$
 }
 
 \begin{proof}
-Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ be a point-finite open cover of a $\lambda$-discretely subexpandable space $X$. For $n < \omega$, let $F_0 = \emptyset$ and
-$$F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\}, \text{ for } \ge 1$$
-\noindent Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
+Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ is a point-finite open cover of a $\lambda$-discretely 
+space $X$. Let 
+\begin{gather*}
+	F_0 = \emptyset,\\
+	F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\} \text{ for } n\ge 1.
+\end{gather*}
+Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
 
 \textbf{Claim.} For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that
 
@@ -234,9 +237,8 @@ $$F_n \subset A_n \subset \bigcup \mathscr{P}_n.$$
 \noindent \textsc{Proof of Claim}. We use induction on $n < \omega$. Let $A_0 = \emptyset$ and $\mathscr{P}_0 = \{\emptyset\}$. Assume that $A_n$ and $\mathscr{P}_n$ have been defined. To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} Q_k$, where each $Q_k$ is open. 
 For $k < \omega$, let
 $$\mathscr{G}_k = \{ \bigcap_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
-\bigcup \{Q_k\cap U_\alpha: \alpha < \lambda\}.$$
-
-\noindent For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
+\cup \{Q_k\bigcap U_\alpha: \alpha < \lambda\}.$$
+For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
 so $x \in Q_k\cap U_\alpha$ for some $\alpha < \lambda$; if $x \notin F_n$, 
 then $|\text{ind}(\mathscr{U})_x| > n$,
 so $x\in \bigcap_{\alpha\in S} U_\alpha$ for some 
@@ -245,35 +247,34 @@ $\mathscr{G}_k$ is an open refinement of $\mathscr{U}$ such that
 $|\mathscr{G}_k| \le \lambda$.
 By Lemma \ref{lem:3.3.6}, we have:
 
-(1) For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement 
+\textbf{(*)} 
+\textit{For each $k < \omega$, there exists a $\sigma$-discrete closed partial refinement 
 $\mathscr{E}_k$ of $\mathscr{G}_k$ and a $G_\delta$-set $B_k$ such that 
-$\bigcup \widetilde{\mathscr{G}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.
+$\bigcup \widetilde{\mathscr{G}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.}
 
 Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup Q_k)$ and 
 $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. 
 Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a 
 $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us show that:
 \begin{gather}
-F_{n+1} \setminus Q_k \subset \widetilde{\mathscr{G}}_k \text{ for each }  k < \omega \label{formula3.3.7.1}
+F_{n+1} \setminus Q_k \subset \widetilde{\mathscr{G}}_k \text{ for each }  k < \omega \label{eq:3.3.7.1}
 \end{gather}
-
-\noindent Suppose $x \in F_{n+1} \setminus Q_k$. Then 
+\textsc{Proof of \eqref{eq:3.3.7.1}.} Suppose $x \in F_{n+1} \setminus Q_k$. Then 
 $\vert{}\text{ind}(\mathscr{U})_x\vert{} \le n+1$. 
-Since $x \in \cup \mathscr{G}_k$ and $x \notin Q_k$, there exists $S_0 \subset [\lambda]^{n+1}$,  
+Since $x \in \bigcup \mathscr{G}_k$ and $x \notin Q_k$, there exists $S_0 \subset [\lambda]^{n+1}$,  
 $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
 \begin{gather}
 x \in \bigcap_{\alpha \in S_0} U_\alpha 
 \setminus \bigcup \left\{ \bigcap_{\alpha \in S} U_\alpha: S\neq S_0 \right\} 
 \setminus \bigcup_{\alpha \in \lambda} (Q_k \cap U_\alpha) 
-= \widetilde{\bigcap_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{formula3.3.7.2}
+= \widetilde{\bigcap_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{eq:3.3.7.2}
 \end{gather}
-\noindent So \eqref{formula3.3.7.1} holds.
+\noindent So \eqref{eq:3.3.7.1} holds.
 
-By \eqref{formula3.3.7.1}, for each $k < \omega$,
-
+By \eqref{eq:3.3.7.1}, for each $k < \omega$,
 $$F_{n+1} \subset (F_{n+1} \setminus Q_k) \cup Q_k \subset
 (\cup \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup Q_k.$$
-\noindent So $F_{n+1} \subset A_{n+1}$. 
+So $F_{n+1} \subset A_{n+1}$. 
 To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, 
 let $x \in A_{n+1}$. If $x \in A_n$, then 
 $x \in \bigcup \mathscr{P}_n \subset \bigcup \mathscr{P}_{n+1}$. 
