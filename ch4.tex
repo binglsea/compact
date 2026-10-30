@@ -91,7 +91,9 @@ $\mathscr{V}(t)$, $t \in \omega^n$, are open covers of $X$.
 It is easy to see that these families consist of open subsets. 
 To show that they cover $X$, let $t = s \oplus k \in \omega^n$ and let $x \in X$.
 Since $\mathscr{V}(s)$ covers $X$, let 
-$\beta_0 = \min \{ \alpha < \lambda \cdot 2: x \in \mathscr{V}(s, \beta) \}.$
+\begin{gather*}
+	\beta_0 = \min \{ \alpha < \lambda \cdot 2: x \in \mathscr{V}(s, \beta) \}.
+\end{gather*}
 We have
 \begin{equation}
 x \in V(s, \beta_0)  \textup{ and }
@@ -100,19 +102,19 @@ x \notin \bigcup_{\beta < \beta_{0}} V(s, \beta).   \label{eq:4.2.2.4}
 If $\beta_0 < \lambda$, then $V(s, \beta_0)\subset V(t, \beta_0)$. 
 So $x \in V(t, \beta_0)$.
 Assume that $\beta_{0} \ge \lambda$, then $\beta_{0} = \lambda + \alpha_{0}$ 
-for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \beta_0) \subset U_\alpha.$
+for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \beta_0) \subset U_{\alpha_0}.$
 \begin{enumerate}
 \item[(a)] If $x \notin \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.2.2.4} and \eqref{eq:4.2.2.2}
-	\[ x \in U_{\alpha_{0}} \cap \operatorname{st}\left(x \setminus 
+	\[ x \in U_{\alpha_{0}} \bigcap \operatorname{st}\left(x \setminus 
 	\bigcup_{\beta \ne \lambda + \alpha_{0}} V(s, \beta), 
 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
 	\subset V(t, \alpha_{0}) \]
 \item[(b)] If $x \in \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.2.2.4} and \eqref{eq:4.2.2.3}
-	\[ x \in U_{\alpha_{0}} \cap \left(\bigcup_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
+	\[ x \in U_{\alpha_{0}} \bigcap \left(\bigcup_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
 	\cap \operatorname{st}\left(X\setminus\bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
-	\subset V(t, \alpha_{0}) \]
+	\subset V(t, \beta_0) \]
 \end{enumerate}
 Thus $\mathscr{V}(t)$ covers $X$. 
 By  \eqref{eq:4.2.2.1}, we have now defined the open refinements 
@@ -121,7 +123,7 @@ Since $\omega^{<\omega}$ is countable, to complete the proof, it suffices to sho
 \begin{equation}
 	\{\mathscr{V}(t): t \in \omega^{<\omega}\} \text{ is a } \theta\text{-sequence.}  \label{eq:4.2.2.5}
 \end{equation}
-\noindent Let $x \in X$. There exists a sequence $\{s_n\}$ such that 
+\textsc{Proof of \eqref{eq:4.2.2.5}}. Let $x \in X$. There exists a sequence $\{s_n\}$ such that 
 $s_0 = \emptyset\in \omega^0, s_1 = s_0\oplus k, 
 \cdots, s_{n+1} = s_n \oplus k$ where $s_n \in \omega^n, k < \omega$, 
 and such that $\mathscr{L}_{s_{n+1}}$ is a point-star $\dot{F}$-refinement of
