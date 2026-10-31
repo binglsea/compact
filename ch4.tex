@@ -240,13 +240,14 @@ $$\mathscr{U}(n, \alpha) = \{U_\gamma: \gamma \le \alpha\} \cup
 \noindent Then each $\mathscr{U}(n, \alpha)$ is an open cover of $X$ with power less than $\kappa$.
 By the induction hypothesis, it has a pointwise W-refining sequence 
 $\{\mathscr{W}_l(n, \alpha): l < \omega\}$ by open covers of $X$.
-For $n, h < \omega$, let $F_{n,0} = \emptyset$ and 
-$$F_{n,h} = \{x \in X: |\operatorname{ind}(\mathscr{V}_n)_x| \le h\} \text{ for } h \ge 1.$$
+For $n, h < \omega$, let 
+$$F_{n,0} = \emptyset \text{ and }
+F_{n,h} = \{x \in X: |\operatorname{ind}(\mathscr{V}_n)_x| \le h\} \text{ for } h \ge 1.$$
 Then each $F_{n,h}$ is closed.
  For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\text{ind}(\mathscr{V}_n)_y)$.
 We have 
 
-(1) $y \in V(n, \delta(y, n))$ and $y\notin \bigcup_{\gamma > \delta(y, n)} V(n, \gamma).$
+\textbf{(1)} $y \in V(n, \delta(y, n))$ \textit{and} $y\notin \bigcup_{\gamma > \delta(y, n)} V(n, \gamma).$
 
 \noindent For each $l = 0, 1, \dots, h$, let $W_l(n, y)$ be a member of $\mathscr{W}_l(n, \delta(y, n))$ containing $y$.
 Let 
@@ -257,26 +258,29 @@ $$\mathscr{H}_{n,h} = \{H(n, h, y): y \in F_{n,h}\} \cup \{X \setminus F_{n,h}\}
 \noindent Then $\mathscr{U}_{n,h}$ are open covers of $X$.
 We have
 
-(2) $\{\mathscr{H}_{n,h}: n,h < \omega\}$ is a pointwise W-refining sequence for $\mathscr{U}$, so $\mathcal{P}_\kappa$ holds.
+\textbf{(2)}  $\{\mathscr{H}_{n,h}: n,h < \omega\}$ \textit{is a pointwise W-refining sequence for} $\mathscr{U}$.
 
-\textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that $\text{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
+This says that $\mathcal{P}_\kappa$ holds.
+
+\noindent\textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that $\text{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
 $\{\mathscr{W}_l(m, \alpha_i): l < \omega\}$ is a pointwise W-refining sequence for 
 $\mathscr{U}(m, \alpha_i)$, 
 there exists $l_i < \omega$ and a finite set $D_i \subset \alpha_i$ such that:
 
-(3) $(W_{l_i}(m, \alpha_i))_x$ refines $\{U_\gamma: \gamma \in D_i\} \cup
+\textbf{(3)}  $(W_{l_i}(m, \alpha_i))_x$ \textit{refines} $\{U_\gamma: \gamma \in D_i\} \cup
 \{\bigcup_{\gamma > \alpha_i}V(m, \gamma)\}$.
 
-\noindent Let $\mathscr{U}' = \{U_\gamma: \gamma \in \bigcup_{i=1}^{p} D_i\}$ and 
+\textbf{(4)}  Let $\mathscr{U}' = \{U_\gamma: \gamma \in \bigcup_{i=1}^{p} D_i\}$ and 
 $r = \max\{p,  l_1, \dots, l_p\}$.
+$(\mathscr{H}_{m,r})_x$ refines $\mathscr{U}'$.
 
-(4) $(\mathscr{H}_{m,r})_x$ refines $\mathscr{U}'$, so (2) holds.
+This shows that (2) holds.
 
-\textsc{Proof.} Let $H \in (\mathscr{H}_{m,r})_x$, then $x\in H\cap F_{m,r}$.
+\noindent\textsc{Proof.} Let $H \in (\mathscr{H}_{m,r})_x$, then $x\in H\cap F_{m,r}$.
 Hence there exists $y \in F_{m,r}$ such that $H= H(m, r, y)$.
 Since $x\in V(m, \delta(y, m))$, there exists $j \le p$ such that $\delta(y, m) = \alpha_j$.
 Also, $x\in\bigcap_{l=0}^r W_l(m, y)\subset W_{l_j}(m, y)$. It follows from (3) and (1), there exists
-$\gamma \in D_j$ such that $W_{l_j}(m, y) \subset U_\gamma$,
+$\gamma \in D_j$ such that $W_{l_j}(m, y) \subset U_\gamma$, so
 $H \subset U_{\gamma} \in \mathscr{U}'$, thus (4) holds. This completes the proof that 
 $\mathcal{P}_\kappa$ holds.
 \end{proof}
