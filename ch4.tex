@@ -397,15 +397,15 @@ $($or $\sigma$-cushioned open$)$ refinement.
 }
 
 \begin{proof}
-(i) Let $\mathscr{U} = \{U(\alpha): \alpha \in \Delta\}$ be an open cover of $X$ and let 
+(i) Let $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an open cover of $X$ and let 
 $\mathscr{P} = \bigcup_{n < \omega} \mathscr{P}_n$ be a $\sigma$-cushioned refinement 
-of $\mathscr{U}$ where each $\mathscr{P}_n = \{P(n, \alpha): \alpha \in \Delta\}$ 
+of $\mathscr{U}$ where each $\mathscr{P}_n = \{P_{n, \alpha}: \alpha \in \Delta\}$ 
 such that for every $n < \omega$ and $\Gamma \subset \Delta$, 
-$\overline{\bigcup_{\alpha \in \Gamma} P(n, \alpha)} \subset \bigcup_{\alpha \in \Gamma} U(\alpha)$.
+$\overline{\bigcup_{\alpha \in \Gamma} P_{n, \alpha}} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$.
 For each $n < \omega$ and $x \in \bigcup \mathscr{P}_n$, pick $\delta(n, x) \in \Delta$ 
-such that $x\in P(n, \delta(n, x))\subset U(\delta(n, x))$. Let
+such that $x\in P_{n, \delta(n, x)}\subset U_{\delta(n, x)}$. Let
 \[ V_n(x) = 
-\begin{cases} U(\delta(n, x)), & \text{if } x \in \bigcup \mathscr{P}_n, \\ 
+\begin{cases} U_{\delta(n, x)}, & \text{if } x \in \bigcup \mathscr{P}_n, \\ 
 	X, & \text{if } x \in X \setminus \bigcup \mathscr{P}_n.
 \end{cases} \]
 Then
@@ -416,13 +416,13 @@ Then
 For if there exists $y \in B \setminus \bigcup \mathscr{P}_n$, then $\overline{B}\subset X =V_n(y)$. 
 If $B \subset \bigcup \mathscr{P}_n$, then
 \begin{gather*}
-\overline{B} \subset \overline{\bigcup_{x \in B} P(n, \delta(n, x))} 
+\overline{B} \subset \overline{\bigcup_{x \in B} P_{n, \delta(n, x)}} 
   \subset \bigcup \{V_n(x): x \in B\}.
 \end{gather*}
 For $n < \omega$ and $x\in X$, let $G_n(x)=\{y\in X: x\in V_n(y)\}$.
 By \eqref{eq:4.1.9.1}, $x\in G_n(x)^\circ$. For $n < \omega$, let
 \begin{gather*}
-	E_x = \{y\in X: x\in V_n(y) \text{ and } y\in V_n(x)\}, \\
+	E_x = \{y\in X: x\in V_n(y) \text{ and } y\in V_n(x)\} \text{ for } x\in X, \\
 	\mathscr{E}_n = \{E_x: x\in X\}.
 \end{gather*}
 For each $x\in X, V_n(x) \bigcap G_n(x) \subset \operatorname{st}(x, \mathscr{E}_n)$, so
@@ -431,7 +431,7 @@ Hence each $\mathscr{E}_n$ is a semi-open cover of $X$.
 If $x\in X$, there exists $m < \omega$ such that $x \in \bigcup\mathscr{P}_n$.
 Then 
 \begin{gather*}
-	\operatorname{st}(x, \mathscr{E}_n)\subset V_m(x)= U(\delta(m, x)).
+	\operatorname{st}(x, \mathscr{E}_n)\subset V_m(x)= U_{\delta(m, x)}.
 \end{gather*}
 Hence $\{\mathscr{E}_n: n < \omega\}$ is a point-star refining sequence for $\mathscr{U}$.
 
@@ -480,12 +480,12 @@ $\sigma$-closure-preserving closed refinement.
 
 \textbf{(1)}  $X$ is $\sigma$-submetacompact. 
 
-\noindent\textsc{Proof}. If (iii) holds, then by Theorem \ref{th:4.1.2}, $X$ is $\lambda$-submetacompact. 
+\noindent\textsc{Proof of (1)}. If (iii) holds, then by Theorem \ref{th:4.1.2}, $X$ is $\lambda$-submetacompact. 
 If (iv) holds, then by Theorem \ref{th:4.1.7}, $X$ is $\lambda$-submetacompact.
 
 \textbf{(2)} $X$ is discretely subexpandable. 
 
-\noindent\textsc{Proof}. Let $\mathscr{D}$ be a discrete $\lambda$-family of closed subsets of $X$. 
+\noindent\textsc{Proof of (2)}. Let $\mathscr{D}$ be a discrete $\lambda$-family of closed subsets of $X$. 
 The induced cover $\mathscr{D}^*$ is an interior-preserving open $\lambda$-cover of $X$. 
 By (iv), $\mathscr{D}^*$ has a $\sigma$-cushioned refinement; or by (iii) and Theorem \ref{th:4.1.9},
  $\mathscr{D}^*$ also has a $\sigma$-cushioned refinement. 
@@ -518,16 +518,17 @@ For any space $X$, the following are equivalent:
 (i) $\Rightarrow$ (iv).  Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ is an open cover of $X$.
 Let $\mathscr{D} = \bigcup_{n < \omega} \mathscr{D}_n$ be a refinement of $\mathscr{U}$,
 where each $\mathscr{D}_n = \{D_{n,\alpha}: \alpha < \lambda\}$ is a discrete closed family in $X$ 
-with $D_{n,\alpha}\subset U_\alpha$.
+such that $D_{n,\alpha}\subset U_\alpha$, for $n < \omega, \alpha < \lambda$.
 For $n < \omega, \alpha < \lambda$, let 
-$G_{n,\alpha} = U_\alpha - \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$. 
+$G_{n,\alpha} = U_\alpha -\setminus \bigcup_{\gamma \in \lambda\setminus\{\alpha\}} D_{n,\gamma}$. 
 Then $D_{n,\alpha} \subset G_{n,\alpha}$ and each 
 $\mathscr{G}_n = \{G_{n,\alpha}: \alpha < \lambda\}$ is an open refinement of 
-$\mathscr{U}$. To see that $\mathscr{G}$ is $\theta$-refinable, there exists 
+$\mathscr{U}$. To see that $\{\mathscr{G}_n: n < \omega\}$ is an $\varepsilon$-sequence ,let $x\in X$.
+There exists 
 $m < \omega$ and $\alpha_0 < \lambda$ such that $x\in D_{m,\alpha_0}$. Then
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. 
 So $\{\mathscr{G}_n: n < \omega\}$ is an $\varepsilon$-sequence and $X$ is 
-$\lambda$-$\varepsilon$refinable.
+$\lambda$-$\varepsilon$-refinable.
 
 (iv) $\Rightarrow$ (i). By Theorem \ref{th:4.1.11}.
 \end{proof} 
