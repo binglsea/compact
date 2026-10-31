@@ -63,7 +63,7 @@ $t \in \omega^n \subset \omega^{<\omega}$ such that:
  
 \begin{equation}
 V(t, \alpha) \subset U_\alpha \textup{ and } V(t, \lambda+\alpha) \subset U_\alpha 
-\textup{ for each } \alpha < \lambda.      \label{eq:4.2.2.1}
+\textup{ for each } \alpha < \lambda.      \label{eq:4.1.2.1}
 \end{equation}
 
 \noindent Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ 
@@ -77,11 +77,11 @@ We now define, for all $s \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda
 \begin{gather}
 V(s \oplus k, \alpha) = V(s, \alpha) \bigcup \left( U_\alpha \bigcap 
 \text{st}\left( X \setminus \bigcup_{\beta \ne\lambda+ \alpha} V(s, \beta), 
-\mathscr{L}_{s \oplus k} \right)^\circ \right),      \label{eq:4.2.2.2} \\
+\mathscr{L}_{s \oplus k} \right)^\circ \right),      \label{eq:4.1.2.2} \\
 V(s \oplus k, \lambda + \alpha) = U_\alpha \bigcap 
 \left( \bigcup_{\beta > \lambda + \alpha} V(s, \beta) \right) 
 \bigcap \text{st}\left( X \setminus \bigcup_{\beta < \lambda + \alpha} V(s, \beta), 
-\mathscr{L}_{s \oplus k} \right)^\circ.   \label{eq:4.2.2.3}
+\mathscr{L}_{s \oplus k} \right)^\circ.   \label{eq:4.1.2.3}
 \end{gather}
 Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ 
 for some $s\in \omega^{n-1}$ and $k < \omega$, 
@@ -97,7 +97,7 @@ Since $\mathscr{V}(s)$ covers $X$, let
 We have
 \begin{equation}
 x \in V(s, \beta_0)  \textup{ and }
-x \notin \bigcup_{\beta < \beta_{0}} V(s, \beta).   \label{eq:4.2.2.4}
+x \notin \bigcup_{\beta < \beta_{0}} V(s, \beta).   \label{eq:4.1.2.4}
 \end{equation}
 If $\beta_0 < \lambda$, then $V(s, \beta_0)\subset V(t, \beta_0)$. 
 So $x \in V(t, \beta_0)$.
@@ -105,75 +105,74 @@ Assume that $\beta_{0} \ge \lambda$, then $\beta_{0} = \lambda + \alpha_{0}$
 for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \beta_0) \subset U_{\alpha_0}.$
 \begin{enumerate}
 \item[(a)] If $x \notin \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
-	then by \eqref{eq:4.2.2.4} and \eqref{eq:4.2.2.2}
+	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.2}
 	\[ x \in U_{\alpha_{0}} \bigcap \operatorname{st}\left(x \setminus 
 	\bigcup_{\beta \ne \lambda + \alpha_{0}} V(s, \beta), 
 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
 	\subset V(t, \alpha_{0}) \]
 \item[(b)] If $x \in \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
-	then by \eqref{eq:4.2.2.4} and \eqref{eq:4.2.2.3}
+	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.3}
 	\[ x \in U_{\alpha_{0}} \bigcap \left(\bigcup_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
-	\cap \operatorname{st}\left(X\setminus\bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
+	\bigcap \operatorname{st}\left(X\setminus\bigcup_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
 	\subset V(t, \beta_0) \]
 \end{enumerate}
 Thus $\mathscr{V}(t)$ covers $X$. 
-By  \eqref{eq:4.2.2.1}, we have now defined the open refinements 
+By  \eqref{eq:4.1.2.1}, we have now defined the open refinements 
 $\mathscr{V}(t)$ for $t \in \omega^{<\omega}$.
 Since $\omega^{<\omega}$ is countable, to complete the proof, it suffices to show that
 \begin{equation}
-	\{\mathscr{V}(t): t \in \omega^{<\omega}\} \text{ is a } \theta\text{-sequence.}  \label{eq:4.2.2.5}
+	\{\mathscr{V}(t): t \in \omega^{<\omega}\} \text{ is a } \theta\text{-sequence.}  \label{eq:4.1.2.5}
 \end{equation}
-\textsc{Proof of \eqref{eq:4.2.2.5}}. Let $x \in X$. There exists a sequence $\{s_n\}$ such that 
+\textsc{Proof of \eqref{eq:4.1.2.5}}. Let $x \in X$. There exists a sequence $\{s_n\}$ such that 
 $s_0 = \emptyset\in \omega^0, s_1 = s_0\oplus k, 
-\cdots, s_{n+1} = s_n \oplus k$ where $s_n \in \omega^n, k < \omega$, 
+\cdots, s_{n+1} = s_n \oplus k_n$ where $s_n \in \omega^n, k_n < \omega$, 
 and such that $\mathscr{L}_{s_{n+1}}$ is a point-star $\dot{F}$-refinement of
 $\mathscr{V}(s_n)$ at $x$ for each $n < \omega$.
 For each $n < \omega$, let $A_n$ be a finite subset of $\lambda\cdot 2$ such that 
 $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and
 \begin{equation}
 	\operatorname{st}(x, \mathscr{L}_{s_{n+1}}) \subset \bigcup_{\beta \in A_n} V(s_n, \beta),
-\forall \, n < \omega.   \label{eq:4.2.2.6}
+\forall \, n < \omega.   \label{eq:4.1.2.6}
 \end{equation}
 \noindent Let $\beta_n = \max A_n$ and $\beta_m = \min\{\beta_n: n < \omega\}$. We have
 \begin{equation}
-\text{If } \beta \ge \lambda, \text{ then } x \notin V(s_{m+1}, \beta). \label{eq:4.2.2.7}
+\textit{If } \beta \ge \lambda, \textit{ then } x \notin V(s_{m+1}, \beta). \label{eq:4.1.2.7}
 \end{equation}
-
-\noindent\textsc{Proof}. We proceed with two parts.
+\textsc{Proof of \eqref{eq:4.1.2.7}}. We proceed with two parts.
 
 \textbf{(a)} If $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
 
-With the assumption of (a),  we have $\gamma \le \beta_m < \beta$ 
+If $\beta \ge \lambda$ and $\beta > \beta_m$, then  $\gamma \le \beta_m < \beta$ 
 for all $ \gamma\in A_m$. 
-Then by \eqref{eq:4.2.2.6}, 
+Then by \eqref{eq:4.1.2.6}, 
 $\operatorname{st}(x, \mathscr{L}_{s_{m+1}}) \subset \bigcup_{\gamma < \beta} V(s_m, \gamma)$. 
 Thus: $x \notin \operatorname{st}
 \left(X \setminus \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{L}_{s_{m+1}}\right)$.
-It follows from \eqref{eq:4.2.2.3} that $x\notin V(s_{m+1}, \beta)$, (a) is true.
+It follows from \eqref{eq:4.1.2.3} that $x\notin V(s_{m+1}, \beta)$, (a) is true.
 
 \textbf{(b)}  $\beta_m < \lambda$.
 
 \noindent For if $\beta_m \ge \lambda$, 
-$\beta > \beta_m \ge \lambda$ for all $\beta > \beta_{m+2}$
-since $\beta_{m+2} \ge \beta_m$.
+since $\beta_{m+2} \ge \beta_m$, we have $\beta > \beta_m \ge \lambda$ for all $\beta > \beta_{m+2}$.
 So by (a), $x\notin V(s_{m+1}, \beta)$. 
 Hence $x\notin \bigcup_{\beta> \beta+2}V(s_{m+1}, \beta)$.
-Since $\beta_{m+2} \ge \lambda$, by \eqref{eq:4.2.2.3},
+Since $\beta_{m+2} \ge \lambda$, by \eqref{eq:4.1.2.3},
 $x\notin V(s_{m+2}, \beta_{m+2})$. But $\beta_{m+2} \in A_{m+2}$,
-this contradiction, shows that part (b) is true.
-Then \eqref{eq:4.2.2.7} follows from (a) and (b). We say that
+this contradiction shows that part (b) is true.
+Then \eqref{eq:4.1.2.7} follows from (a) and (b). We say that
 
 \begin{equation}
-	\mathscr{V}(s_{m+1}) \text{ is point-finite at } x. \label{eq:4.2.2.8}
+	\mathscr{V}(s_{m+1}) \text{ is point-finite at } x. \label{eq:4.1.2.8}
 \end{equation}
-\noindent If this is true, then \eqref{eq:4.2.2.5} is true and we complete the proof. 
 
-Now, we prove \eqref{eq:4.2.2.8}.
-Let $C= \operatorname{ind}(\mathscr{V}(s_{m+1}))_x$. By \eqref{eq:4.2.2.7}, $C = \{\alpha < \lambda: x \in V(s_{m+1}, \alpha)\}$.For $n\le m$, let $B_n = \{\alpha < \lambda: \lambda + \alpha\in A_n\}$. Since each
+If this is true, then \eqref{eq:4.1.2.5} is true and we complete the proof. 
+
+\textsc{Proof of \eqref{eq:4.1.2.7}}. 
+Let $C= \operatorname{ind}(\mathscr{V}(s_{m+1}))_x$. By \eqref{eq:4.1.2.7}, $C = \{\alpha < \lambda: x \in V(s_{m+1}, \alpha)\}$.For $n\le m$, let $B_n = \{\alpha < \lambda: \lambda + \alpha\in A_n\}$. Since each
 $B_n $ is finite, it suffices to show that $C \subset \bigcup_{n=1}^{m} B_n$. 
 Let $\alpha \in C$. Since $x\notin \emptyset = V(s_0, \alpha)$, there exists $p$ such that 
 $0 \le p \le m$ and $x \in \mathscr{V}({s_{p+1}}, \alpha)\setminus  \mathscr{V}{s_{p}}, \alpha)$.
-By \eqref{eq:4.2.2.2}, 
+By \eqref{eq:4.1.2.2}, 
 $x \in \operatorname{st}(X \setminus \bigcup_{\beta \ne \lambda + \alpha}\mathscr{V}(s_p, \beta),
 	 \mathscr{L}_{s_{p+1}})$.
 Let $y \in \operatorname{st}(x, \mathscr{L}_{s_{p+1}})\subset 
