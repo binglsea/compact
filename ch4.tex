@@ -416,13 +416,14 @@ Then
 For if there exists $y \in B \setminus \bigcup \mathscr{P}_n$, then $\overline{B}\subset X =V_n(y)$. 
 If $B \subset \bigcup \mathscr{P}_n$, then
 \begin{gather*}
-B \subset \overline{\bigcup_{x \in B} P(n, \delta(n, x))} 
+\overline{B} \subset \overline{\bigcup_{x \in B} P(n, \delta(n, x))} 
   \subset \bigcup \{V_n(x): x \in B\}.
 \end{gather*}
 For $n < \omega$ and $x\in X$, let $G_n(x)=\{y\in X: x\in V_n(y)\}$.
 By \eqref{eq:4.1.9.1}, $x\in G_n(x)^\circ$. For $n < \omega$, let
 \begin{gather*}
-	\mathscr{E}_n = \{\{x,y\}: x\in V_n(y) \text{ and } y\in V_n(x)\}
+	E_x = \{y\in X: x\in V_n(y) \text{ and } y\in V_n(x)\}, \\
+	\mathscr{E}_n = \{E_x: x\in X\}.
 \end{gather*}
 For each $x\in X, V_n(x) \bigcap G_n(x) \subset \operatorname{st}(x, \mathscr{E}_n)$, so
 $x\in \operatorname{st}(x, \mathscr{E}_n)^\circ$.
@@ -432,10 +433,10 @@ Then
 \begin{gather*}
 	\operatorname{st}(x, \mathscr{E}_n)\subset V_m(x)= U(\delta(m, x)).
 \end{gather*}
-Hence $\{\mathscr{E}_n\}$ is a point-star refining sequence for $\mathscr{U}$.
+Hence $\{\mathscr{E}_n: n < \omega\}$ is a point-star refining sequence for $\mathscr{U}$.
 
-(iii) Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a point-star refining sequence $\{\mathscr{E}_n: n < \omega\}$ of semi-open covers. For $n < \omega, \alpha \in \Delta$, 
-let $F_{n,\alpha} = \{x \in X: \operatorname{st}(x, \mathscr{E}_n) \subset U_\alpha\}$.
+(iii) Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a point-star refining sequence $\{\mathscr{E}_n: n < \omega\}$ of semi-open covers. For $n < \omega, \alpha \in \Delta$, let
+$$F_{n,\alpha} = \{x \in X: \operatorname{st}(x, \mathscr{E}_n) \subset U_\alpha\}.$$
 Then $\mathscr{F}_n = \{F_{n,\alpha}: \alpha \in \Delta\}$ is cushioned in $\mathscr{U}$ and 
 $\bigcup \mathscr{F}_n$ is a $\sigma$-cushioned refinement of $\mathscr{U}$.
 
