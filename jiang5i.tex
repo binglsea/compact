@@ -119,10 +119,10 @@ if it has a refinement
 $\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}$ such that for each $m, n < \omega$, 
 the family 
 $$\mathscr{V}_{m,n}|_{(
-		X\setminus \bigcup\{\bigcup\mathscr{V}_{(p,q)}: (p,q)<(m,n)\}
+		X\setminus \bigcup\{\bigcup\mathscr{V}_{p,q}: (p,q)<(m,n)\}
 		)}$$
 is relatively discrete and closed in subspace 
-$X\setminus \bigcup\{\bigcup\mathscr{V}_{(p,q)}: (p,q)<(m,n)\}$.
+$X\setminus \bigcup\{\bigcup\mathscr{V}_{p,q}: (p,q)<(m,n)\}$.
 The family $\mathscr{V}$ is called a
 \uwave{$D\omega^2$-refinement}
 \index{$D\omega^2$-refinement| \S\ref{def:5.1.3}\hfill}
@@ -141,8 +141,8 @@ $D\omega^2$-cover iff $\mathscr{U}$ has a refinement
 $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$ such that for each 
 $m, n < \omega$,
 $\mathscr{F}_{m,n} = \{F_{m,n,\alpha}: \alpha \in \Delta\}$ is a discrete family of 
-closed subsets of the subspace 
-$X \setminus \bigcup\{\bigcup \mathscr{F}_{(p,q)}: (p, p)<(m,n)\}$ and 
+closed subsets of  subspace 
+$X \setminus \bigcup\{\bigcup \mathscr{F}_{p,q}: (p, p)<(m,n)\}$ and 
 $F_{m,n,\alpha}\subset U_\alpha$ for each $\alpha\in \Delta$. 
 }
 
@@ -156,15 +156,27 @@ is a $D\omega^2$-refinement of $\mathscr{U}$ with
 $\mathscr{V}_{m,n} = \{V_{m,n,\gamma}: \gamma \in \Gamma_{m,n}\}$. 
 For each $\gamma\in \Gamma_{m,n}$, pick $\delta(\gamma) \in \Delta$ 
 such that $\mathscr{V}_{m,n,\gamma} \subset U_{\delta(\gamma)}$. 
-For each $\alpha$, let 
-$$F_{m,n,\alpha} = V_{m,n,\alpha} \setminus \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q}).$$ 
-Then $\mathscr{F}_{m,n}$ covers... 
-Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha}:  \alpha \in \Gamma_{m,n}\}$ 
-and $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
-
- If $(p, q) \neq (m, n)$, then...
-
-Since $\mathscr{V}$ is a $D_\omega$-refinement of..., it follows from... and... that each $\mathscr{F}_{m,n}$ is a discrete family of closed subsets of $X \setminus \bigcup\{\bigcup \mathscr{V}_{p,q}: (p,q) < (m,n)\}$.
+For $\alpha\in\Delta$, let 
+\begin{gather*}
+F_{m,n,\alpha} = \bigcup\big\{ V_{m,n,\alpha} \setminus 
+  \bigcup  \{\bigcup\mathscr{V}_{p,q}: (p,q)<(m,n)\} 
+  	: \gamma \in \Gamma_{m,n}, \delta(\gamma) = \alpha
+	\big\}. 
+\end{gather*}
+Then $\mathscr{F}_{m,n}\subset U_\alpha$.
+Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha}:  \alpha \in \Delta\}$,
+$\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
+Then, we have
+\begin{gather}
+\bigcup_{(p,q)<(m,n)} \left(\bigcup\mathscr{F}_{p,q}\right) = 
+    \bigcup_{(p,q)<(m,n)} \left(\bigcup\mathscr{V}_{p,q}\right) 
+    \text{ for each } m, n < \omega \label{eq:5.1.4.1} \\
+ \left(\bigcup\mathscr{F}_{p,q}\right) \cap  \left(\bigcup\mathscr{F}_{m,n}\right) = \emptyset
+   \; \text{ if } (p,q) \ne (m,n).  \label{eq:5.1.4.2} 
+\end{gather}
+Since $\mathscr{V}$ is a $D\omega^2$-refinement of $\mathscr{U}$,
+it follows from \eqref{eq:5.1.4.1} and \eqref{eq:5.1.4.1} that each $\mathscr{F}_{m,n}$ 
+is a discrete family of closed subsets of $X \setminus \bigcup\{\bigcup \mathscr{V}_{p,q}: (p,q) < (m,n)\}$.
 \end{proof}
 
 {\theorem{} \label{th:5.1.5}
