@@ -121,26 +121,29 @@ Then we have
 \end{gather}
 Let \(L = \bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p,q})\). 
 Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there exists an open set \(V_{m,n,\alpha}\) of \(X\) such that
-$$F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha.$$
+\begin{gather}
+	F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset 
+	\overline{V}_{m,n,\alpha} \subset U_\alpha. \label{eq:5.2.4.4}
+\end{gather}
 Let \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha}: \alpha < \lambda \}\).  Then
-\begin{gather*}
-\bigcup \mathscr{F}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n}, \\
+\begin{gather}
+\bigcup \mathscr{F}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n},  \label{eq:5.2.4.5}\\
 \bigcup_{(p,q) \le (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset 
 L\bigcup(\bigcup \mathscr{F}_{m,n})\subset
 L\bigcup(\bigcup \mathscr{F}_{m,n}\setminus L)\subset
-\bigcup_{(p,q) \le (m,n)} (\bigcup \mathscr{V}_{p,q}) 
-\end{gather*}
+\bigcup_{(p,q) \le (m,n)} (\bigcup \mathscr{V}_{p,q}). \label{eq:5.2.4.6}
+\end{gather}
 Hence the open families \(\mathscr{V}_{m,n}\) satisfy 
 Conditions \eqref{eq:5.2.4.1} and \eqref{eq:5.2.4.2} . 
-By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). \textsc{Claim 1} is true.
+By \eqref{eq:5.2.4.2}, \(\mathscr{V}\) covers \(X\). Claim 1 is true.
 	
-\textsc{Claim 2.} \(X\) is countably paracompact.
+\textbf{Claim 2.} \textit{\(X\) is countably paracompact.}
 
-\textsc{Proof of Claim 2}. Suppose $\mathscr{U} = \{U_k: k \in \omega\}$ be a 
-countable increasing open cover of $X$. By \textsc{Claim 1}, there exists a sequence 
+\noindent\textsc{Proof of Claim 2}. Suppose $\mathscr{U} = \{U_k: k \in \omega\}$ is a 
+countable increasing open cover of $X$. By Claim 1, there exists a sequence 
 $\{\mathscr{V}_{m,n}: m, n < \omega\}$ of $\omega$-families of open sets of $X$ 
 where each
-$$V_{m,n} = \{\mathscr{V}_{m,n,k}: k < \omega\}$$
+$V_{m,n} = \{\mathscr{V}_{m,n,k}: k < \omega\}$
 such that $\overline{V}_{m,n,k} \subset U_k$ for all $k$, and 
 $\mathscr{V} = \bigcup_{m,n < \omega} \mathscr{V}_{m,n}$ covers $X$.
 For $m < \omega$, let $G_m = \bigcup_{i,j,k=0}^m V_{i,j,k}$.
@@ -150,16 +153,16 @@ $\{G_k: k < \omega\}$ is an open shrink of $\mathscr{U}$. By Theorem \ref{th:3.3
 $X$ is countably paracompact.
 
 Now to see that $X$ is $\lambda$-shrinkable, 
-let $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be an open cover of $X$. By \textsc{Claim 1}, 
+let $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be an open cover of $X$. By Claim 1, 
 for each $m, n < \omega$, there exists a family 
 $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha< \lambda\}$ of open sets of $X$ such that 
 $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha<\lambda$ and 
-$\mathscr{V} = \bigcup_{m,n \in \omega} \mathscr{V}_{m,n}$ covers $X$. By \textsc{Claim 2},
+$\mathscr{V} = \bigcup_{m,n < \omega} \mathscr{V}_{m,n}$ covers $X$. By \textsc{Claim 2},
  there exists a locally finite open cover $\{W_{m,n}: m, n < \omega\}$ such that 
  $W_{m,n} \subset \bigcup\mathscr{V}_{m,n}$. 
  For each $\alpha < \lambda$, let 
- $H_\alpha = \bigcup_{m,n < \omega} (W_{m,n} \cap V_{m,n,\alpha})$
-It follows that $\mathscr{H} = \{H_\alpha\}$ is an open cover of $X$ such that 
+ $H_\alpha = \bigcup_{m,n < \omega} (W_{m,n} \cap V_{m,n,\alpha})$.
+It follows that $\mathscr{H} = \{H_\alpha: \alpha < \lambda\}$ is an open cover of $X$ such that 
 $\overline{H}_\alpha \subset U_\alpha$ for each $\alpha$, so $X$ is shrinkable.
 \end{proof}
 
