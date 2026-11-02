@@ -262,8 +262,9 @@ If $x \notin \bigcup\mathscr{G}_k$, then $k \notin S_0$. The set
 $W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that 
 for each $B\subset [\Gamma_r]^l$, $S_0\in [\omega]^r$,
 \begin{gather*}
-	W\cap P(B, S_0, m, n) \subset\cap_{i\in S_0}((\cup \mathscr{G}_i))\cap
-	(\cup \mathscr{G}_h) \cap H_n = \emptyset.
+W\cap P(B, S, m, n) \subset
+  \left( \bigcap_{i\in S_0} \left(\bigcup \mathscr{G}_i\right)  \right)
+  \cap\left(\bigcup \mathscr{G}_k\right) \cap H_n = \emptyset.
 \end{gather*}
 Then $W\subset G$.
 
@@ -273,22 +274,25 @@ We have
 \begin{gather}
 	\vert{}A_k\vert{} > l. \label{eq:5.1.5.3}
 \end{gather}
-If $A_k$ is infinite, then this holds. If $A_k$ is finite, suppose $\vert{}A_k\vert{} = q > 0$. 
+If $A_k$ is infinite, then \eqref{eq:5.1.5.3} holds. 
+If $A_k$ is finite, suppose $\vert{}A_k\vert{} = q > 0$. 
 Then there exists $B_1 \in [\Gamma_k]^q$ such that 
 $x \in G(B_1, k, q)\cap D_k^q$. Let $p = \varphi(k, q)$. If follows from
 \eqref{eq:5.1.5.2} that $x\in P(B, S_0, p, n) \subset \cup\mathscr{P}_{p, n}$.
-If $q \le l$, then $p =\varphi(k, q) \le \varphi(k, l) = m$, so $(p, q) \le (m, n)$. 
-But $x \in \bigcup \mathscr{P}_{p,q}$, which contradicts to \eqref{eq:5.1.5.1}. 
+If $q \le l$, then $p =\varphi(k, q) \le \varphi(k, l) = m$, so $(p, n) \le (m, n)$. 
+But $x \in \bigcup \mathscr{P}_{p,n}$, which contradicts to \eqref{eq:5.1.5.1}. 
 Hence $q > l$ and the \eqref{eq:5.1.5.3} holds.
 
 The set $W = Y\cap G(B_1, k, q)$ is a neighborhood of $x$ in $Y$.
 For each $B\in [\Gamma_k]^l, S\in [\omega]^n$, 
 since $B_1  = q > l$, 
-$W \cap P(B, S, m, n) \subset \bigcap_{\alpha \in B_1} G_{k,\alpha} \cap D_k^l = \emptyset$. 
-This completes the proof of \textsc{Claim 1}.
+\begin{gather*}
+W \cap P(B, S, m, n) \subset \left(\bigcap_{\alpha \in B_1} G_{k,\alpha}\right) \cap D_k^l 
+= \emptyset.
+\end{gather*} 
+This completes the proof of Claim 1.
 
-
-To show Claim \textsc{Claim 2}, let $x \in \bigcup (\mathscr{P}_{m,n}|_Y)$. 
+To show Claim 2, let $x \in \bigcup (\mathscr{P}_{m,n}|_Y)$. 
 There exists $B_0 \in [\Gamma_k]^l$ and $S_0\in [\omega]^n$ 
 such that $x \in P(B_0, S_0, m, n)$.
 The set $W = Y\cap G(B_0, k, l) \cap L(S_0, n)$ is a neighborhood of $x$ in $Y$.
