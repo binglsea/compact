@@ -51,7 +51,7 @@ shrink of $\mathscr{U}$.
 \uwave{$C\omega^2$-cover}\index{$C\omega^2$-cover| \S\ref{def:5.2.3}\hfill} 
 if \(\mathscr{U}\) has a refinement \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) 
 where each \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha}: \alpha \in \Delta \}\) is a family of 
-closed subsets of the subspace  \(X\setminus \cup \{\bigcup \mathscr{F}_{p, q}: (p, q) < (m,n) \}\)
+closed subsets of subspace  \(X\setminus \bigcup \{\bigcup \mathscr{F}_{p, q}: (p, q) < (m,n) \}\)
 and $F_{m, n, \alpha} \subset U_\alpha$ for all \(\alpha \in \Delta\).
 The family \(\mathscr{F}\) is called a 
 \uwave{$C\omega^2$-refinement}\index{$C\omega^2$-refinement| \S\ref{def:5.2.3}\hfill} 
@@ -86,15 +86,15 @@ Let \(\mathscr{U} = \{ U_\alpha: \alpha \in \Delta \}\) be an open cover of \(X\
 \((\Leftarrow)\) Suppose \(X\) is normal and \(C\omega^2\)-refinable. 
 We first establish the following:
 	
-\textsc{Claim 1}. For any open \(\lambda\)-cover \(\mathscr{U} = \{U_\alpha: \alpha < \lambda\}\) 
-of \(X\), there exists a sequence \(\{\mathscr{V}_{m,n} \}_{m,n<\omega}\) of 
+\textbf{Claim 1}. \textit{For any open \(\lambda\)-cover \(\mathscr{U} = \{U_\alpha: \alpha < \lambda\}\) 
+of \(X\), there exists a sequence $\{\mathscr{V}_{m,n}: m,n<\omega\}$ of 
 \(\lambda\)-families of open 
 subsets of $X$, 
 where each \(\mathscr{V}_{m,n} = \{ V_{m,n,\alpha}: \alpha < \lambda\}\) 
 such that \(\overline{V}_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\) and 
-\(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).
+\(\mathscr{V} = \bigcup_{m,n<\omega} \mathscr{V}_{m,n}\) covers \(X\).}
 
-\textsc{Proof of Claim 1}. We use induction on the well-ordered set 
+\noindent\textsc{Proof of Claim 1}. We use induction on the well-ordered set 
 $(\omega \times \omega, <)$. 
 Let \(\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}\) be an open \(\lambda\)-cover of \(X\) 
 and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a 
