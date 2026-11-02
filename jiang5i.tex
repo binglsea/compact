@@ -221,14 +221,15 @@ $Y = X \setminus \bigcup\{\bigcup \mathscr{P}_{p,q}: (p, q) < (m, n)\}$.
 It suffices to show that $\mathscr{P}_{m,n}|_Y$ is discrete and closed in $Y$. 
 By Lemma \ref{lem:1.1.5}, we need only to show the following:
 
-\textsc{Claim 1.} $\cup(\mathscr{P}_{m,n}|_Y)$ is closed in Y, and
+\textbf{Claim 1.} $\bigcup(\mathscr{P}_{m,n}|_Y)$ \textit{ is closed in} $Y$.
 
-\textsc{Claim 2.}  $\mathscr{P}_{m,n}|_Y$ is discrete at each point $x \in \mathscr{P}_{m,n}|_Y)$.
+\textbf{Claim 2.}  $\mathscr{P}_{m,n}|_Y$ \textit{is discrete at each point}
+  $x \in \mathscr{P}_{m,n}|_Y$.
 
 \noindent To show Claim 1, first we show that $G = Y \setminus \bigcup (\mathscr{P}_{m,n}|_Y)$ 
 is open in $Y$. Let $x \in G$. We have 
 \begin{gather}
-	x \in X \setminus \bigcup \{\cup \mathscr{P}_{p,q}: (p,q) < (m,n)\}. \label{eq:5.1.5.1}
+	x \in X \setminus \bigcup \{\bigcup \mathscr{P}_{p,q}: (p,q) \le (m,n)\}. \label{eq:5.1.5.1}
 \end{gather}
 
 \noindent Since $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ is a weak $\overline{\theta}$-refinement, there exist $r, j < \omega$ such that 
@@ -240,15 +241,15 @@ is open in $Y$. Let $x \in G$. We have
 \noindent Suppose $h = \varphi(r, i)$. Take $B \in [\Gamma_r]^i$ and $S \in [\omega]^j$ 
 such that 
 $$x \in G(B, \Gamma, i) \cap D_r^l \cap L(S, j) \cap H_j = P(B, S, h, j)\subset
-\cup\mathscr{P}_{h, j}.$$
+\bigcup\mathscr{P}_{h, j}.$$
 If $j < r$, then $(h, j) < (m, n)$.
 It follows that 
-$x\in \cup\{\cup\mathscr{P}_{p. q}: (p, q) < (m, n)\}\subset X\setminus Y$, a contradiction. 
+$x\in \bigcup\{\bigcup\mathscr{P}_{p. q}: (p, q) < (m, n)\}\subset X\setminus Y$, a contradiction. 
 Hence $j \ge n$.
 
 \textsc{Case 1}. Suppose $j > n$. Then $x\notin H_n$ and $W = Y \setminus H_n$ 
 is a neighborhood of $x$ in $Y$ such that 
-$W \cap (\cup \mathscr{P}_{m, n})\subset (X\setminus H_n)\cap H_n = \emptyset$,
+$W \cap (\bigcup \mathscr{P}_{m, n})\subset (X\setminus H_n)\cap H_n = \emptyset$,
 so $W\subset G$.
 
 \textsc{Case 2}. Suppose $j = n$. There exists $S_0\in[\omega]^n$ such that 
@@ -257,7 +258,7 @@ x\in L(S_0, n) \cap H_n. \label{eq:5.1.5.2}
 \end{gather}
 
 \textsc{Case 2}a. 
-If $x \notin \cup\mathscr{G}_k$, then $k \notin S_0$. The set 
+If $x \notin \bigcup\mathscr{G}_k$, then $k \notin S_0$. The set 
 $W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that 
 for each $B\subset [\Gamma_r]^l$, $S_0\in [\omega]^r$,
 \begin{gather*}
