@@ -100,8 +100,8 @@ Let \(\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}\) be an open \(\lambda\)-co
 and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a 
 \(C\omega^2\)-refinement of \(\mathscr{U}\), where each 
 \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha}: \alpha < \lambda\}\) is a family 
-of closed subsets of the subspace 
-\(X \setminus \bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) <  m,n\}\) with 
+of closed subsets of  subspace 
+\(X \setminus \bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) <  m,n\}\) such that 
 \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\).
 	Let \(\mathscr{F}_{0,0} = \{\emptyset\}\), 
 \(\mathscr{V}_{0,0} = \{\emptyset\}\) and
@@ -111,12 +111,14 @@ of closed subsets of the subspace
  of open sets  have been constructed for all \((p,q) <  ( m,n)\) to satisfy the conditions:
 \begin{gather}
 \overline{V}_{p,q,\alpha} \subset U_\alpha \text{ for all } \alpha < \lambda, \label{eq:5.2.4.1}\\
-\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{F}_{i,j}) \subset\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{V}_{i,j}). \label{eq:5.2.4.2}
+\bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{F}_{i,j}) \subset
+ \bigcup_{(i, j) \le (p,q)} (\bigcup \mathscr{V}_{i,j}). \label{eq:5.2.4.2}
 \end{gather}
 Then we have
-\begin{gather*}
-\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p, q}). 
-\end{gather*}
+\begin{gather}
+\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset
+\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p, q}).  \label{eq:5.2.4.3}
+\end{gather}
 Let \(L = \bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{V}_{p,q})\). 
 Since each \(F_{m,n,\alpha} \setminus L\) is a closed subset of \(X\), there exists an open set \(V_{m,n,\alpha}\) of \(X\) such that
 $$F_{m,n,\alpha} \setminus L \subset V_{m,n,\alpha} \subset \overline{V}_{m,n,\alpha} \subset U_\alpha.$$
