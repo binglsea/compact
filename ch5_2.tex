@@ -252,27 +252,28 @@ We use induction on $m$.
 Let $\mathscr{F}_{0,0} = \{F_{0,0, \alpha}: \alpha < \lambda\}$ 
 where $F_{0, 0, \alpha} = B_{0,\alpha}$. Let $m < \omega$ and assume that the families 
 $\mathscr{F}_{i,0} = \{F_{i,0,\alpha}: \alpha < \lambda\}$ have been 
-constructed such that the conditions are satisfied for all $i \le m$. For $\alpha < \lambda$, let
-$$F_{m+1,0,\alpha} = B_{m,n,\alpha} - \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}).$$
-Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}\}$ is a family of closed subsets of 
-$X\setminus \bigcup_{i\le m}(\bigcup \mathscr{F}_{i, o})$, and $F_{m+1,0,\alpha} \subset V_\alpha$ for each $\alpha$. Then
+constructed such that the Conditions (1) -- (3) are satisfied for all $i \le m$. For $\alpha < \lambda$, let
+$$F_{m+1,0,\alpha} = B_{m,n,\alpha} \setminus \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}).$$
+Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}: \alpha < \lambda\}$ is a family of closed subsets of 
+$X\setminus \bigcup_{i\le m}(\bigcup \mathscr{F}_{i, o})$, and $F_{m+1,0,\alpha} \subset U_\alpha$ for each $\alpha$. Then
 $$\bigcup \mathscr{F}_{m+1,0} = 
-\bigcup \mathscr{B}_{m,n} \setminus \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = 
-\bigcup \mathscr{B}_{m,n} \setminus \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}).$$
+\bigcup \mathscr{B}_{m+1,n} \setminus \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = 
+\bigcup \mathscr{B}_{m+1,n} \setminus \bigcup_{i \le m} (\bigcup \mathscr{B}_{i,0}).$$
 Thus
 \begin{equation*}
 \begin{aligned}
-\bigcup_{i \le m+1} (\bigcup \mathscr{F}_{i,0}) &= \bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) \cup (\bigcup \mathscr{F}_{m+1,0}) \\
-  &= \bigcup_{i \le m+1} (\bigcup \mathscr{B}_{i}) \bigcup
-      (\bigcup\mathscr{B}_{m+1}\setminus\bigcup_{i\le m}(\bigcup\mathscr{B}_i)) \\
+\bigcup_{i \le m+1} \left(\bigcup \mathscr{F}_{i,0}\right) &= 
+    \bigcup_{i \le m} \left(\bigcup \mathscr{F}_{i,0}\right) \cup \left(\bigcup \mathscr{F}_{m+1,0}\right) \\
+  &= \bigcup_{i \le m} \left(\bigcup \mathscr{B}_{i}\right) \bigcup
+      \left(\bigcup\mathscr{B}_{m+1}\setminus\bigcup_{i\le m}(\bigcup\mathscr{B}_i)\right) \\
   & = \bigcup_{i\le m+ 1}(\bigcup\mathscr{B}_i).
 \end{aligned}
 \end{equation*}
-It follows that the family $\mathscr{F}_{m+1,0}$ satisfies the Condition (1)–(3) above. 
+It follows that the family $\mathscr{F}_{m+1,0}$ satisfies the Conditions (1)–(3) above. 
 This completes the proof of the claim.
 
 By (3), $\bigcup_{m < \omega} (\bigcup \mathscr{F}_{m,0}) = X$. For each $m < \omega$ and $n> 0$, 
-let $\mathscr{F}_{m,n} = \{\emptyset\}$. It follows from \textsc{Claim} that 
+let $\mathscr{F}_{m,n} = \{\emptyset\}$. It follows from Claim that 
 $\mathscr{F} = \bigcup_{m,n < \omega} \mathscr{F}_{m,n}$ is a $C\omega^2$-refinement of $\mathscr{U}$, so $X$ is $\lambda$-$C\omega^2$-refinable.
 \end{proof}
 
