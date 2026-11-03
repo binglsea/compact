@@ -99,26 +99,24 @@ for each $n >0$.
 
 (iii)\textsubscript{$n$}    $(\bigcup_{i < n} (\bigcup \mathscr{F}_i)) \bigcap
 (\bigcup \mathscr{V}_n) = \emptyset$. 
-        %end of \textit{text}
-
-\noindent\textsc{Proof of Claim}. We use induction on $n < \omega$. Assume 
+\textsc{Proof of Claim}. We use induction on $n < \omega$. Assume 
 $\mathscr{F}_0 = \{ \emptyset \}$ and let $\mathscr{V}_0 = \{ \emptyset \}$. 
 Let $n \ge 1$ and suppose that for each $i \le n$ the point-finite open family 
 $\mathscr{V}_i = \{V_{i,\alpha}: \alpha < \lambda\}$ in $X$ has been constructed and Conditions
-(i)\textsubscript{$i$} -- (iii)\textsubscript{$i$} are satisfied.
+(i)\textsubscript{$n$} -- (iii)\textsubscript{$n$} are satisfied.
 Then $\bigcup_{i < n+1} (\bigcup \mathscr{F}_i) \subset \bigcup_{i < n+1} (\bigcup \mathscr{V}_i)$. 
 Let $L = \bigcup_{i < m+1} (\bigcup \mathscr{V}_i)$.
 For each $\alpha < \lambda$, 
 $F_{n+1,\alpha} \setminus L \subset 
 U_\alpha \setminus \bigcup_{i < n+1} (\bigcup \mathscr{F}_i)$. 
-Since $\mathscr{F}_{n+1}|_{(X-L)}$ is a point-finite discrete closed family in $X$,  there exists a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha}: \alpha < \lambda\}$ in $X$ 
+Since $\mathscr{F}_{n+1}|_{X-L}$ is a point-finite discrete closed family in $X$,  there exists a point-finite open family $\mathscr{V}_{n+1} = \{V_{n+1,\alpha}: \alpha < \lambda\}$ in $X$ 
 such that
 $$F_{n+1,\alpha} \setminus L \subset 
   V_{n+1,\alpha} \subset 
-  U_\alpha - \bigcup_{i < n+1} (\bigcup \mathscr{F}_i) \text { for each } \alpha < \lambda.$$
-Then $\bigcup \mathscr{F}_{n+1} -\setminus L 
+  U_\alpha \setminus \bigcup_{i < n+1} (\bigcup \mathscr{F}_i) \text { for each } \alpha < \lambda.$$
+Then $\bigcup \mathscr{F}_{n+1} \setminus L 
 \subset \bigcup \mathscr{V}_{n+1} \subset 
-X - \bigcup_{i < n+1} (\bigcup \mathscr{F}_i)$.
+X \setminus \bigcup_{i < n+1} (\bigcup \mathscr{F}_i)$.
 It follows that $V_{n+1, \alpha}\subset U_\alpha$ for each $\alpha < \lambda$ and
 $(\bigcup_{i < n+1} (\bigcup \mathscr{F}_i))\bigcap (\bigcup\mathscr{V}_{n+1}) = \emptyset$, 
 so the Conditions (i)\textsubscript{$n+1$}$ and $(iii)\textsubscript{$n+1$}
@@ -127,9 +125,9 @@ $$\bigcup_{i \le n+1} \left(\bigcup \mathscr{F}_i\right)
 \subset L \cup\left(\bigcup\mathscr{F}_{n+1}\right)
 \subset L \cup\left(\bigcup\mathscr{F}_{n+1}\setminus L\right) 
  \subset \bigcup_{i \le n+1} \left(\bigcup \mathscr{V}_i\right).$$
-This completes the induction and the proof of \textsc{Claim}.
+This completes the induction and the proof of Claim.
 
-By the \textsc{Claim},  there exists a sequence $\{\mathscr{V}_n: n < \omega\}$ of 
+By the Claim,  there exists a sequence $\{\mathscr{V}_n: n < \omega\}$ of 
 point-finite families of open sets in $X$ such that 
 $\mathscr{V} = \bigcup_{n<\omega} \mathscr{V}_n$ is an open refinement of $\mathscr{U}$. 
 For each $x \in X$,  there exists $m < \omega$ such that $x \in \bigcup \mathscr{F}_m$.
@@ -161,7 +159,7 @@ of $X$ has a cushioned refinement.
 }
 
 \begin{proof}
-(i) $\Rightarrow$ (ii). By Lemma \ref{lem:7.1.1} (or Lemma \ref{lem:7.1.2}).
+(i) $\Rightarrow$ (ii). By Lemma \ref{lem:7.1.1} (resp. Lemma \ref{lem:7.1.2}).
 
 (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Rightarrow$ (v) and (vi) $\Rightarrow$ (vii). Clear.
 
@@ -169,10 +167,10 @@ of $X$ has a cushioned refinement.
 
 (v) $\Rightarrow$ (vii). By Theorem \ref{th:4.1.9}.
 
-(vii) $\Rightarrow$ (i). Assume (vii) and let $\mathscr{B}$ (or $\mathscr{D})$ be 
-a locally finite (or discretely closed) $\lambda$-family in $X$. By (vii), the induced cover
- $\mathscr{B}^*$ (or $\mathscr{D}^{*F})$ has a cushioned refinement. 
- By Lemma \ref{lem:1.2.3} (or Lemma \ref{lem:1.2.4}), $\mathscr{B}$ (or $\mathscr{D})$ 
+(vii) $\Rightarrow$ (i). Assume (vii) and let $\mathscr{B}$ (resp. $\mathscr{D})$ be 
+a locally finite (resp. discretely closed) $\lambda$-family in $X$. By (vii), the induced cover
+ $\mathscr{B}^*$ (resp. $\mathscr{D}^{*F})$ has a cushioned refinement. 
+ By Lemma \ref{lem:1.2.3} (resp. Lemma \ref{lem:1.2.4}), $\mathscr{B}$ (resp. $\mathscr{D})$ 
  has a point-finite open expansion, so (i) holds.
 \end{proof}
 
