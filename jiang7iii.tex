@@ -21,16 +21,17 @@ Let $\mathscr{A} = \bigcup_{m, n < \omega}\mathscr{A}_{m,n}$ be a refinement
 of  $\mathscr{U}$ such that each $\mathscr{A}_{m,n} = \{A_{m,n,\alpha}: \alpha < \lambda\}$ 
 is a locally finite family of subsets of 
 $X\setminus \bigcup\{\bigcup\mathscr{A}_{p,q}: (p,q) < (m,n)\}$, 
-with  $A_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$. 
+such that  $A_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$. 
 We establish the following
 
-\textsc{Claim}. For each $m, n \in \omega$, there exists a point-finite (or locally finite) family 
-$\mathscr{U}_{m,n} = \{U_{m,n,\alpha}: \alpha \in \lambda\}$ 
-of open sets in $X$ such that $U_{m,n,\alpha} \subset V_\alpha$ 
-for each $\alpha$ and
-
-$$\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathscr{A}_{p,q}\right) \subset \bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathscr{V}_{p,q}\right)$$
-
+\textbf{Claim}. \textit{For each $m, n < \omega$, there exists a point-finite 
+	(resp. locally finite) family 
+$\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha \in \lambda\}$ 
+of open sets in $X$ such that $V_{m,n,\alpha} \subset U_\alpha$ 
+for each $\alpha$ and}
+$$\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathscr{A}_{p,q}\right) 
+\subset \bigcup_{\langle p,q \rangle \le \langle m,n \rangle} 
+\left(\bigcup \mathscr{V}_{p,q}\right)$$
 \textsc{Proof of Claim}. We prove this by induction on 
 $(\omega \times \omega, <)$. 
 Suppose $\mathscr{A}_{0,0} = \{\emptyset\}$ and let $\mathscr{V}_{0,0} = \{\emptyset\}$.
