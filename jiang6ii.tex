@@ -19,10 +19,10 @@ is an
 \index{$A\omega$-cover| \S\ref{def:6.1.1}\hfill}
 if it has a refinement 
 $\mathscr{B} = \bigcup_{n<\omega} \mathscr{B}_n$ 
-where each $\mathscr{B}_n = \{B_{n,\alpha}: alpha \in \Delta\}$ 
+where each $\mathscr{B}_n = \{B_{n,\alpha}: \alpha \in \Delta\}$ 
 is a relatively locally finite family of subsets of the subspace 
 $X \setminus \bigcup_{i<n} (\bigcup \mathscr{B}_i)$ with 
-$B_{n,\alpha} \subset U_\alpha$ for each $\alpha \in \Lambda$ 
+$B_{n,\alpha} \subset U_\alpha$ for each $\alpha \in \Delta$ 
 and  
 $\bigcup_{i<n} (\bigcup \mathscr{B}_i)$ is closed in $X$ for each $n < \omega$.
 
@@ -62,32 +62,32 @@ $X$ has a $\sigma$-cushioned refinements.
 
 \begin{proof}
 (i) $\Rightarrow$  (ii). Assume (i) and let $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$
-be an $A\omega$-cover  (or $D\omega$-cover) of $X$. Then $\mathscr{U}$
+be an $A\omega$-cover  (resp. $D\omega$-cover) of $X$. Then $\mathscr{U}$
  has a refinement $\mathscr{B}=\bigcup_{n<\omega}\mathscr{B}_n$ where each $\mathscr{B}_n=\{B_{n,\alpha}: \alpha\in \lambda\}$ is a
-locally finite (or discrete closed) family of subsets of the
+locally finite (resp. discrete closed) family of subsets of the
 subspace $X\setminus \bigcup_{i<n}(\bigcup\mathscr{B}_i)$ 
 with ${B}_{n,\alpha}\subset U_{\alpha}$ for each $n < \omega, \alpha\in \lambda$,
 and $\bigcup_{i<n}(\bigcup\mathscr{B}_i)$ is a closed subset of $X$ for each $n < \omega$.
 We have the following
 
-\textsc{Claim 1}. For every $n<\omega$ and every $(k_0, \cdots, k_n)\in\omega^{n+1}$,
+\textbf{Claim 1}. \textit{For every $n<\omega$ and every $(k_0, \cdots, k_n)\in\omega^{n+1}$,
 there exists a family $\mathscr{V}(k_0, \cdots, k_n) = \{V(k_0, \cdots, k_n,\alpha): \alpha<\lambda\}$
-of open subsets of $X$ such that
+of open subsets of $X$ such that}
 
-(1)  $V(k_0, \cdots, k_n,\alpha)\subset U_\alpha$ for each $\alpha< \lambda$;
+(1)  $V(k_0, \cdots, k_n,\alpha)\subset U_\alpha$ \textit{ for each } $\alpha< \lambda$;
 
 (2) $\bigcup_{i=0}^n (\bigcup\mathscr{B}_i)\subset
  \bigcup_{i=0}^n (\bigcup\mathscr{V}(k_0, \cdots, k_i))$;
 
 (3) For $n \ge 1, (\bigcup\mathscr{V}(k_0, \cdots, k_n)) \bigcap 
 (\bigcup_{i=0}^n (\bigcup\mathscr{B}_i))
-= \emptyset$; and 
+= \emptyset$; \textit{ and }
 
-(4) If $n = 0$, then for each $x\in X$, there exists $k_0(x) < \omega$
+(4) \textit{ If $n = 0$, then for each $x\in X$, there exists $k_0(x) < \omega$
 such that $\text{ind}(\mathscr{V}(k_0(x))_x$ is finite.
 If $n > 0$, then for each $x\in X$ and each $(k_0, \cdots, k_{n-1})\in\omega^{n}$
 there exists $k_n(x) <\omega$ such that 
-$\operatorname{ind}(\mathscr{V}(k_0, \cdots, k_{n-1}, k_n(x)))_x$ is finite.
+$\operatorname{ind}(\mathscr{V}(k_0, \cdots, k_{n-1}, k_n(x)))_x$ is finite.}
 
 \textsc{Proof of Claim 1}. We use induction on $n < \omega$. 
 Let $\mathscr{B}_0 = \{B_{0, \alpha}: \alpha < \lambda\}$ be a locally finite (or discrete closed) 
