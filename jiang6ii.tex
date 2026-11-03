@@ -90,7 +90,7 @@ there exists $k_n(x) <\omega$ such that
 $\operatorname{ind}(\mathscr{V}(k_0, \cdots, k_{n-1}, k_n(x)))_x$ is finite.}
 
 \textsc{Proof of Claim 1}. We use induction on $n < \omega$. 
-Let $\mathscr{B}_0 = \{B_{0, \alpha}: \alpha < \lambda\}$ be a locally finite (or discrete closed) 
+Let $\mathscr{B}_0 = \{B_{0, \alpha}: \alpha < \lambda\}$ be a locally finite (resp. discrete closed) 
 family in $X$ with $B_{0, \alpha} \subset U_\alpha$. 
 Then $\mathscr{B}_0$ has a $\theta$-sequence 
 $\{\mathscr{V}(k_0): k_0 < \omega\}$ of open expansions where each 
@@ -109,12 +109,12 @@ $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$
  Let $L(k_0, \dots, k_n)=\bigcup_{i\le n}(\bigcup \mathscr{V}(k_0, \dots, k_i))$. 
  By inductive hypothesis, we have 
  $\bigcup_{i\le n}(\bigcup \mathscr{B}_i)\subset L(k_0, \dots, k_n)$. 
- Hence, $\mathscr{B}_{n+1}|_{(X\setminus L(k_0,\cdots, k_n))}$ 
- is a locally finite (or discrete closed) $\lambda$-family in $X$ such that 
+ Hence, $\mathscr{B}_{n+1}|_{X\setminus L(k_0,\cdots, k_n)}$ 
+ is a locally finite (resp. discrete closed) $\lambda$-family in $X$ such that 
  $B_{n+1, \alpha}\setminus  L(k_0,\cdots, k_n)\subset 
  U_\alpha \setminus \bigcup_{i\le n}(\bigcup \mathscr{B}_i)$.
  There exists a $\theta$-sequence 
- $\{\mathscr{V}(k_0, \dots, k_n, k_{n+1}): n+1 < \omega\}$ of open expansions,
+ $\{\mathscr{V}(k_0, \dots, k_n, k_{n+1}): k_{n+1} < \omega\}$ of open expansions,
  where each 
  $\mathscr{V}(k_0, \dots, k_n, k_{n+1}) = 
  \{V(k_0, \dots, k_n, k_{n+1}, \alpha): \alpha<\lambda\}$
@@ -137,13 +137,13 @@ Since $\bigcup \mathscr{B}_{n+1} \setminus L(k_0, \dots, k_n, k_{n+1}) \subset
 For each $x$, there exists $k_{n+1}(x) < \omega$ such that 
 $\operatorname{ind}( \mathscr{V}(k_0, \dots, k_n, k_{n+1}))_x$ 
 is finite. Thus the family satisfies Conditions (1) -- (4). This completes the induction and proof 
-of \textsc{Claim 1}. 
+of Claim 1. 
 
-For every $n \in \omega$, let 
+For every $n < \omega$, let 
 $$T_n = \{(k_0, \cdots, k_n, 0, 0, \cdots) \in \omega^\omega: (k_0, \cdots, k_n) \in \omega^{n+1}\}.$$ 
 Then the set $T = \bigcup_{n<\omega} T_n$ is countable. 
 For $t = (k_0, \dots, k_n, k_{n+1}, \cdots) \in T$, let 
-$$\mathscr{H}(t) = \bigcup_{n=0}^\infty T_n.$$ 
+$$\mathscr{H}(t) = \bigcup_{n<\omega} \mathscr{V}(k_0,\cdots, k_n).$$ 
 Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
 
 \textsc{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ is a $\theta$-sequence, so (ii) holds.
@@ -175,7 +175,7 @@ $\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{
 
 (iii) $\Rightarrow$ (iv) is clear.
 
-(iv) $\Rightarrow$ (i) Let $\mathscr{B}$ (or $\mathscr{D}$) be a locally finite (or discrete closed)
+(iv) $\Rightarrow$ (i) Let $\mathscr{B}$ (or $\mathscr{D}$) be a locally finite (resp. discrete closed)
 $\lambda$-family in $X$. The induced cover $\mathscr{B}^*$ (or $\mathscr{D}^*$) is 
 an interior-preserving directed $A\omega$-cover (or $D\omega$-cover) of $X$. 
 By (iv), $\mathscr{B}^*$ (or $\mathscr{D}^*$) has a $\sigma$-cushioned refinement. 
