@@ -293,26 +293,27 @@ For any $X$, the following are equivalent:
 }
 
 \begin{proof}
- (i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}$ is a  $C^*\omega^2$-cover of $X$. 
+ (i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}=\{U_\alpha: \alpha\in\Delta\}$ is a  $C^*\omega^2$-cover of $X$. 
  Let $\mathscr{F} = \bigcup_{m,n < \omega} \mathscr{F}_{m,n}$ 
  be a refinement of $\mathscr{U}$,
 where each $\mathscr{F}_{m,n,\alpha} = \{F_{m,n,\alpha}: \alpha\in\Delta\}$ 
-satisfies $F_{m,n,\alpha}\subset U_\alpha$, and each $F_{m,n,\alpha}$  and
+such that $F_{m,n,\alpha}\subset U_\alpha$, and each $F_{m,n,\alpha}$  and
 $\bigcup \mathscr{F}_{m,n}$ are  closed subsets of 
 $X\setminus\bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) < (m, n)\}$.
 
-\textsc{Claim}. For each $m,n$ there exists a functionally open family 
-$\mathcal{V}_{m,n,\alpha} = \{V_{m,n,\alpha}: \alpha\in\Delta\}$ such that:
+\textbf{Claim}. \textit{For each $m,n$ there exists a functionally open family 
+$\mathcal{V}_{m,n,\alpha} = \{V_{m,n,\alpha}: \alpha\in\Delta\}$ such that}:
 
-(1) $\overline{V}_{m,n,\alpha} \subset U_\alpha$ for each $\alpha\in\Delta$,
+(1) $\overline{V}_{m,n,\alpha} \subset U_\alpha$ \textit{ for each } $\alpha\in\Delta$,
 
-(2) $\mathscr{V}_{m,n}$ is functionally open, and
+(2) $\mathscr{V}_{m,n}$ \textit{ is functionally open, and}
 
 (3) $\bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q})$.
 
 \noindent\textsc{Proof of CLaim}. We use induction on $(\omega\times\omega, <)$. 
 Let $\mathscr{F}_{0,0} = \{\emptyset\}$ and $\mathscr{V}_{0,0} = \{\emptyset\}$.
-Let $m,n < \omega$ and assume that the families $\mathscr{V}_{p,q, \alpha}$ have 
+Let $m,n < \omega$ and assume that the families $\mathscr{V}_{p,q} 
+= \{V_{p,q,\alpha}: \alpha\in\Delta\}$ have 
 been constructed such that the Conditions (1)–(3) are satisfied for all $(p,q) < (m,n)$. 
 Then
 $$\bigcup_{(p,q) < (m,n)} (\bigcup \mathscr{F}_{p,q}) \subset \bigcup_{(p,q)\le(m,n)} (\bigcup \mathscr{V}_{p,q}).$$
@@ -324,7 +325,7 @@ Then
 $\bigcup \mathscr{F}_{m,n} \setminus L \subset \bigcup_{\alpha \in\Delta} H_{m,n,\alpha}$. 
 Since $\bigcup \mathscr{F}_{m,n} \setminus L$ is a closed subset of $X$, there exists a 
 functionally open set $K$ such that
-$$\bigcup \mathscr{F}_{m,n} \subset L \subset K \subset \overline{K} \subset 
+$$\bigcup \mathscr{F}_{m,n} \setminus L \subset K \subset \overline{K} \subset 
 \bigcup_{\alpha \in \Delta} H_{m,n,\alpha}.$$
 Let $V_{m,n,\alpha} = K\bigcap H_{m,n,\alpha}$. 
 Then $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha \in \Delta\}$ is a functionally open 
@@ -333,9 +334,9 @@ $\bigcup \mathscr{V}_{m,n} = K$ is functionally open. Since
 $\bigcup \mathscr{F}_{m,n} \setminus L \subset \bigcup \mathscr{V}_{m,n}$,
 $$\bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{F}_{p,q}) \subset L \setminus (\bigcup\mathscr{F}_{m,n})
 \subset \bigcup_{(p,q) < (m,n)}(\bigcup\mathscr{V}_{p,q}).$$
-Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the \textsc{Claim} is proved.
+Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the Claim is proved.
 
-By the \textsc{Claim} and Theorem \ref{th:2.1.6}, there exists a locally finite functionally open 
+By the Claim and Theorem \ref{th:2.1.6}, there exists a locally finite functionally open 
 cover $\{W_{m,n}:  m,n<\omega\}$ of $X$ such that 
 $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$ for each $m, n < \omega$.
 For $\alpha\in \Delta$, let $G_\alpha = \bigcup \{W_{m,n} \cap V_{m,n,\alpha}: m, n < \omega\}$. 
