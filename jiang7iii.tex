@@ -77,7 +77,8 @@ Hence $\operatorname{ind}(\mathscr{G})_H$ is finite and $\mathscr{G}$ is locally
 \end{proof}
 
 {\lemma{} \label{lem:7.1.2}
-If  $X$  is $\lambda$-discretely almost expandable, every $D\omega$-cover of  $X$  has a point-finite open refinement.
+If  $X$  is $\lambda$-discretely almost expandable, then
+every $D\omega$-cover of  $X$  has a point-finite open refinement.
 }
 
 \begin{proof}
@@ -85,19 +86,20 @@ Suppose that  $X$  is $\lambda$-discretely almost expandable and that
 $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ is a $D\omega$-cover of  $X$ . 
 Let $\mathscr{F} = \bigcup_{n<\omega} \mathscr{F}_n$ be a refinement of $\mathscr{U}$ 
 such that each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha \in \lambda\}$ 
-is a discrete closed family of subsets of  $X\setminus\bigcup_{i<n}(\bigcup \mathscr{F}_i)$
-with $F_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$, 
+is a discrete  family of closed subsets of  $X\setminus\bigcup_{i<n}(\bigcup \mathscr{F}_i)$
+such that $F_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$, 
 and $\bigcup_{i<n}(\bigcup \mathscr{F}_i)$ is closed in  $X$  
 for each $n >0$.
 
-\textsc{Claim}. For each $n < \omega$  there exists a point-finite family $\mathscr{V}_n = \{V_{n,\alpha}: \alpha < \lambda\}$ of open sets in $X$ such that for each $n < \omega$,
+\textbf{Claim}. \textit{For each $n < \omega$  there exists a point-finite family $\mathscr{V}_n = \{V_{n,\alpha}: \alpha < \lambda\}$ of open sets in $X$ such that for each $n < \omega$},
 
-(i)\textsubscript{$n$} $V_{n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$,
+(i)\textsubscript{$n$} $V_{n,\alpha} \subset U_\alpha$ \textit{ for each } $\alpha < \lambda$,
 
-(ii)\textsubscript{$n$}   $\bigcup_{i \le n} (\bigcup \mathscr{F}_i) \subset \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$ and
+(ii)\textsubscript{$n$}   $\bigcup_{i \le n} (\bigcup \mathscr{F}_i) \subset \bigcup_{i \le n} (\bigcup \mathscr{V}_i)$ \textit{and}
 
 (iii)\textsubscript{$n$}    $(\bigcup_{i < n} (\bigcup \mathscr{F}_i)) \bigcap
 (\bigcup \mathscr{V}_n) = \emptyset$. 
+        %end of \textit{text}
 
 \noindent\textsc{Proof of Claim}. We use induction on $n < \omega$. Assume 
 $\mathscr{F}_0 = \{ \emptyset \}$ and let $\mathscr{V}_0 = \{ \emptyset \}$. 
@@ -142,7 +144,6 @@ $\operatorname{ind}(\mathscr{V})_x\subset
 	For any $X$, the following are equivalent:
 
 \textup{(i)}  $X$ is $\lambda$-almost expandable $($resp. $\lambda$-discretely almost expandable$)$.
-
 
 \textup{(ii)}  Every $A^2\omega$ $($resp. $D\omega)$-$\lambda$-cover of $X$ has a point-finite open refinement.
 
