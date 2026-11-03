@@ -80,7 +80,7 @@ of open subsets of $X$ such that}
  \bigcup_{i=0}^n (\bigcup\mathscr{V}(k_0, \cdots, k_i))$;
 
 (3) For $n \ge 1, (\bigcup\mathscr{V}(k_0, \cdots, k_n)) \bigcap 
-(\bigcup_{i=0}^n (\bigcup\mathscr{B}_i))
+(\bigcup_{i=0}^{n-1} (\bigcup\mathscr{B}_i))
 = \emptyset$; \textit{ and }
 
 (4) \textit{ If $n = 0$, then for each $x\in X$, there exists $k_0(x) < \omega$
@@ -146,7 +146,7 @@ For $t = (k_0, \dots, k_n, k_{n+1}, \cdots) \in T$, let
 $$\mathscr{H}(t) = \bigcup_{n<\omega} \mathscr{V}(k_0,\cdots, k_n).$$ 
 Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
 
-\textsc{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ is a $\theta$-sequence, so (ii) holds.
+\textbf{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ \textit{ is a  $\theta$-sequence, so} (ii) \textit{ holds}.
 
 \textsc{Proof of Claim 2}. Let $x \in X$. There exists $m \ge 1$ such that 
 $x \in \bigcup_{i \le m}(\bigcup \mathscr{B}_i)$. By Condition (4), there exists $k_0(x)<\omega$ 
@@ -156,16 +156,16 @@ such that $\operatorname{ind}(\mathscr{V}(k_{m-1}(x)))_x$ is finite.
 For all $i \ge m$, let $k_i = 0$.  Then
 \begin{gather*}
 	t(x)=(k_0(x), k_1(x), \cdots, k_{m-1}(x), 0, 0, \cdots) \in T \text{ and} \\
-	\mathscr{H}(t(x)) = \bigcup_{n=0}^\infty \mathscr{V}(k_0(x), k_1(x), \cdots, k_{n}(x)).
+	\mathscr{H}(t(x)) = \bigcup_{n<\omega}\mathscr{V}(k_0(x), k_1(x), \cdots, k_{n}(x)).
 \end{gather*}
 For each $n \ge m, x \in \bigcup_{i\le n}(\bigcup \mathscr{B}_i)$, then by (3), 
 $x \notin \bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})$. 
 Hence, 
 $$\operatorname{ind}(\mathscr{H}(t(x)))_x = 
 \bigcup_{n=0}^{m-1}\operatorname{ind}(\mathscr{V}(k_0(x), \dots, k_n(x)))_x.$$
-So, $\operatorname{ind}(\mathscr{H}(t(x)))_x$ is finite, and \textsc{Claim 2} is true. 
+So, $\operatorname{ind}(\mathscr{H}(t(x)))_x$ is finite, and  Claim 2  is true. 
 
-(ii) $\Rightarrow$ (iii) Suppose $\mathscr{U}$ is a directed $A\omega$ (or $D\omega$)
+(ii) $\Rightarrow$ (iii) Suppose $\mathscr{U}$ is a directed $A\omega$ (resp. $D\omega$)
 $\lambda$-cover of $X$. By (ii) and Lemma \ref{lem:3.1.4},  $X$ has a
 countable closed cover $\{\mathscr{F}_n: n <\omega\}$ such that for each $n < \omega$,
 $\mathscr{U}|{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in subspace $F_n$. 
@@ -173,13 +173,13 @@ Since $\mathscr{U}$ is directed, $\mathscr{V}_n$ is an interior-preserving point
 $\mathscr{U}\vert{}_{F_n}$ in subspace $F_n$. By Lemma \ref{lem:4.1.6}, 
 $\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a closed refinement of $\mathscr{U}$.
 
-(iii) $\Rightarrow$ (iv) is clear.
+(iii) $\Rightarrow$ (iv) Clear.
 
-(iv) $\Rightarrow$ (i) Let $\mathscr{B}$ (or $\mathscr{D}$) be a locally finite (resp. discrete closed)
-$\lambda$-family in $X$. The induced cover $\mathscr{B}^*$ (or $\mathscr{D}^*$) is 
-an interior-preserving directed $A\omega$-cover (or $D\omega$-cover) of $X$. 
-By (iv), $\mathscr{B}^*$ (or $\mathscr{D}^*$) has a $\sigma$-cushioned refinement. 
-By Lemma \ref{lem:1.2.3} (or Lemma \ref{lem:1.2.4}), $\mathscr{B}$ (or $\mathscr{D}$) 
+(iv) $\Rightarrow$ (i) Let $\mathscr{B}$ (resp.  $\mathscr{D}$) be a locally finite (resp. discrete closed)
+$\lambda$-family in $X$. The induced cover $\mathscr{B}^*$ (resp. $\mathscr{D}^*$) is 
+an interior-preserving directed $A\omega$-cover (resp. $D\omega$-cover) of $X$. 
+By (iv), $\mathscr{B}^*$ (resp. $\mathscr{D}^*$) has a $\sigma$-cushioned refinement. 
+By Lemma \ref{lem:1.2.3} (resp. Lemma \ref{lem:1.2.4}), $\mathscr{B}$ (resp. $\mathscr{D}$) 
 has a $\theta$-sequence of open expansions, so (i) holds.
 \end{proof}
 
@@ -212,7 +212,7 @@ $\dot{F}$-refining sequence by semi-open covers of $X$.
 
  (iv) $\Rightarrow$ (i): Assume (iv) and let $\mathscr{U}= \{U_\alpha: \alpha \in \lambda\}$ 
  be an interior-preserving directed 
- $A\omega$ (or $D\omega$)-cover of $X$. Then $\mathscr{U}$ has a 
+ $A\omega$ (resp. $D\omega$)-cover of $X$. Then $\mathscr{U}$ has a 
  point-star refining 
  sequence of semi-open covers. By Theorem \ref{th:4.1.9}, $\mathscr{U}$ has a 
  $\sigma$-cushioned refinement. 
