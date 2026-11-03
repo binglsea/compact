@@ -35,35 +35,36 @@ $$\bigcup_{\langle p,q \rangle \le \langle m,n \rangle} \left(\bigcup \mathscr{A
 \textsc{Proof of Claim}. We prove this by induction on 
 $(\omega \times \omega, <)$. 
 Suppose $\mathscr{A}_{0,0} = \{\emptyset\}$ and let $\mathscr{V}_{0,0} = \{\emptyset\}$.
-Let $m, n \in \omega$ and assume that the point-finite (or locally finite) 
+Let $m, n < \omega$ and assume that the point-finite (resp. locally finite) 
 open families $\mathscr{V}_{p,q} = \{V_{p,q,\alpha}: \alpha \in \lambda\}$ 
 have been constructed such that the Conditions above are satisfied 
 for all $\langle p,q \rangle < \langle m,n \rangle$. 
 Let $L = \bigcup \{ \bigcup \mathscr{V}_{p,q}: \langle p,q \rangle < \langle m,n \rangle \}$. 
 By the inductive hypothesis we have 
 $$\bigcup_{\langle p,q \rangle < \langle m,n \rangle} \left(\bigcup \mathscr{A}_{p,q}\right) \subset L.$$ 
-The family $\mathscr{A}_{m,n}|_{(X\setminus L)}$ is 
-locally finite in $X$, so it has a point-finite (or locally finite) 
+The family $\mathscr{A}_{m,n}|_{X\setminus L}$ is 
+locally finite in $X$, so it has a point-finite (resp. locally finite) 
 open expansion $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha < \lambda\}$ 
 such that for each $\alpha < \lambda$, 
-$A_{m,n}\setminus L \subset V_{m,n}\subset U_\alpha$. 
+$A_{m,n,\alpha}\setminus L \subset V_{m,n,\alpha}\subset U_\alpha$. 
 Then $\bigcup\mathscr{A}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n}$. 
 It follows from inductive hypothesis that 
 $$\bigcup_{(p,q)\le(m,n)}\left(\bigcup \mathscr{A}_{p,q}\right) \subset L\cup\left(\bigcup(\mathscr{A}_{m,n}\right) \subset 
 \bigcup_{(p,q)\le(m,n)}\left(\bigcup \mathscr{V}_{p,q}\right).$$
-Thus $\mathscr{V}_{m,n}$ is the desired family and the \textsc{Claim} is proved.
+Thus $\mathscr{V}_{m,n}$ is the desired family and the Claim is proved.
 
-By Theorem \ref{th:4.1.10} (\ref{th:4.1.9}),  $X$  is countably metacompact 
-(or countably paracompact). There exists a point-finite (or locally finite) open cover 
+By Theorem \ref{th:4.1.10} (resp. \ref{th:4.1.9}),  $X$  is countably metacompact 
+(resp. countably paracompact). There exists a point-finite (resp. locally finite) open cover 
 $\mathscr{W} = \{W_{m,n}: m,n < \omega\}$ of  $X$  such that 
 $W_{m,n} \subset \bigcup\mathscr{V}_{m,n}$ for each $m, n < \omega$. 
 For $\alpha < \lambda$, let $G_\alpha = \bigcup\{W_{m,n}\cap V_{m,n,\alpha}: m,n<\omega\}$. 
 Then $\mathscr{G} = \{G_\alpha: \alpha < \lambda\}$ is an open refinement 
 of $\mathscr{U}$. We are to show:
 
-(1) $\mathscr{G}$ is point-finite (or locally finite).
+\textbf{(*)} $\mathscr{G}$ \textit{is point-finite} (\textit{resp. locally finite}).
 
-\noindent We only prove $\mathscr{G}$ is  locally finite. Let $x \in X$. There exists 
+\noindent\textsc{Proof of (*)} We only prove that $\mathscr{G}$ is  locally finite. 
+Let $x \in X$. There exists 
  $H_0\in \operatorname{top}(x)$
 such that $\operatorname{ind}(\mathscr{W})_{H_0}$ is finite. For each $m, n < \omega$, 
 there exists $H_{m,n}\in  \operatorname{top}(x)$ such that $\operatorname{ind}(\mathscr{V}_{m,n})_{H_{m,n}}$ is finite. 
