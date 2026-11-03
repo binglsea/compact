@@ -196,8 +196,8 @@ For each \(n < \omega\), change the notations for convenience
 Then $\{U_n: n< \omega \}$ covers $A$, $\{V_n: n< \omega \}$ covers $B$,
 and
 \begin{gather*}
-	U_i \bigcap \overline{V}_j = \emptyset \; \text{ and } \; \overline{U}_i\bigcap V_j = \emptyset 
-	\;\text{ for all } i, j <\omega. 
+	A \bigcap \overline{V}_n = \emptyset \; \text{ and } \; \overline{U}_n\bigcap B = \emptyset 
+	\;\text{ for all } n <\omega. 
 \end{gather*}
 Let  $U =\bigcup_{n<\omega} \left(U_n 
 \setminus \bigcup_{k \le n} \overline{V}_k\right)$ and 
@@ -238,16 +238,15 @@ such that \(B_{n,\alpha} \subset U_\alpha\) for $n < \omega, \alpha < \lambda$.
 Let \(\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}\) be an open cover of \(X\). 
 Let \(\{ B_{n,\alpha}: n < \omega, \alpha < \lambda \}\) be a closed cover of \(X\) 
 such that \(B_{n,\alpha} \subset U_\alpha\) for each \(n < \omega, \alpha < \lambda\).
-For \(i < \omega\), let \(\mathscr{B}_i = \{ B_{i,\alpha}: \alpha < \lambda \}\).
+For \(n < \omega\), let \(\mathscr{B}_n = \{ B_{n,\alpha}: \alpha < \lambda \}\).
 			
-\textsc{Claim.} For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha}: \alpha < \lambda \}\) in $X$ such that
+\textbf{Claim.} \textit{For each \(m < \omega\), there exists a family \(\mathscr{F}_{m,0} = \{ F_{m,0,\alpha}: \alpha < \lambda \}\) in $X$ such that}
 \begin{enumerate}
-\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) for each \(\alpha < \lambda\),
-\item[(2)] \(\mathscr{F}_{m,0}\) is a family of closed subsets 
- of \(X\setminus\bigcup_{i<m}(\bigcup\mathscr{F}_{i,0})\), and
+\item[(1)] \(F_{m,0,\alpha} \subset U_\alpha\) \textit {for each } \(\alpha < \lambda\),
+\item[(2)] \(\mathscr{F}_{m,0}\) 
+\textit{ is a family of closed subsets of } \(X\setminus\bigcup_{i<m}(\bigcup\mathscr{F}_{i,0})\), \textit{ and }
 \item[(3)] \(\bigcup_{i \le m} (\bigcup \mathscr{F}_{i,0}) = \bigcup_{i \le m} (\bigcup \mathscr{B}_i)\).
 \end{enumerate}
-
 \textsc{Proof of Claim}.
 We use induction on $m$.
 Let $\mathscr{F}_{0,0} = \{F_{0,0, \alpha}: \alpha < \lambda\}$ 
