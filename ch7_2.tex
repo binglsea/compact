@@ -560,12 +560,13 @@ We need to show that $P_{\mu}$ is true.
  directed open cover of $X$. 
  $\mathscr{W}=\{\bigcup_{\gamma < \alpha}U_\gamma: \alpha< \mu\}$  and is an 
  increasing open $\lambda$-cover of $X$.
- By (iv), it has a refinement $\mathscr{B} = \bigcup_{m \ge m} \mathscr{B}_m$ 
+ By (iv), it has a refinement $\mathscr{B} = \bigcup_{m < \omega} \mathscr{B}_m$ 
  where each $\mathscr{B}_m$ is hereditarily closure-preserving closed and 
  $\mathscr{B}^\circ$ covers $X$.
 Let $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ such that 
-$\mathscr{B}_{m,\alpha}$ for each $m, \alpha\subset\bigcup_{\gamma < \alpha}U_\gamma$. 
-For $m < \omega, \alpha < \lambda$, let 
+$B_{m,\alpha}\subset\bigcup_{\gamma < \alpha}U_\gamma$ for each $m < \omega 
+\alpha < \mu$. 
+For $m < \omega, \alpha < \mu$, let 
 $$\mathscr{G}_{m, \alpha}= \{U_\gamma: \gamma < \alpha\}\cup \{X\setminus B_{m,\alpha}\}.$$
 Then each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $X$ with power $< \mu$.
 For each $S\in [\alpha]^{<\omega}$, let $U_S = \bigcup_{\gamma\in S}U_\gamma$. Let
