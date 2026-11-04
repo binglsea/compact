@@ -304,7 +304,7 @@ of $\mathscr{V}(s_{n+1})$  at $x$. Let $s_{n+2} = s_{n+1} \oplus k_{n+1}$. By in
 (1) holds.
 
 \textbf{Claim 2}. 
- \textit{$\{\mathscr{V}(t): t \in \omega^{<\omega}\}$ is a $\theta$-sequence of open refinement of $\mathscr{U}$.}
+ \textit{$\{\mathscr{V}(t): t \in \omega^{<\omega}\}$ is a $\theta^*$-sequence of open refinement of $\mathscr{U}$.}
  
  \noindent\textsc{Proof of Claim 2.} By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of $\mathscr{U}$. 
  To see that $\{\mathscr{V}(t):  t < \omega^{<\omega}\}$ is a $\theta^*$-sequence, 
@@ -335,7 +335,7 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  By (2),
  \begin{gather}
  \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \bigcap 
-  \left(X\setminus\bigcup_{\gamma < \beta} V(s_m, \beta)\right) = \emptyset. \label{eq:7.2.10.3.1}
+  \left(X\setminus\bigcup_{\gamma < \beta} V(s_m, \gamma)\right) = \emptyset. \label{eq:7.2.10.3.1}
  \end{gather}
  Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
  it follows from the above \eqref{eq:7.2.10.3.1} that  %TO_DO What is (C)?
@@ -351,18 +351,17 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  By (C), we have 
  $$G(x, m) \cap V(s_{m+2}, \beta_{m+ 2})\subset 
  G(x, m)  \cap \left(\bigcup_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \emptyset.$$
- But $\beta_{m+2} \in D_{m+2}$, so we have a. 
- Contradiction. Hence $\beta_m < \lambda$. 
+ But $\beta_{m+2} \in D_{m+2}$, so we have a contradiction. Hence $\beta_m < \lambda$. 
  
- \textbf{(5)} If $\beta \ge \lambda$, then $G(x, m) \bigcap V(s_{m+1}, \beta) = \emptyset$.
+ \textbf{(5)} \textit{If}  $\beta \ge \lambda$, \textit{then} $G(x, m) \bigcap V(s_{m+1}, \beta) = \emptyset$.
  
-For if $\beta \ge \lambda$, then by (2), $\beta > \beta_m$. Thus that follows from (3).
+\noindent For if $\beta \ge \lambda$, then by (2), $\beta > \beta_m$. Thus, (5) follows from (3).
 
-\textbf{(6)} $\mathscr{V}(s_{m+1})$ is locally finite at $x$, this says that \textsc{Claim 2} is true.
+\textbf{(6)} $\mathscr{V}(s_{m+1})$ \textit{ is locally finite at } $x$. It says that Claim 2 is true.
 
-Proof. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
+\noindent\textsc{Proof of(6)}. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
 By (5),
-$$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)} = 
+$$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,m)} = 
 \{\alpha < \lambda: G(x, m) \cap V(s_{m+1}, \alpha) \ne \emptyset\}$$
 If  $\alpha\in \operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)}$, 
 then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$,
@@ -376,7 +375,7 @@ Let $\beta_0\in D_p$ such that $u\in V(s_p, \beta_0)$. Then $\lambda + \alpha = 
 $\alpha\in D^*_p$. Hence
 $\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x, m)}\subset \bigcup_{i=0}^m D_i^m$. 
 So, $\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x, m)}$ is finite, and (6) holds.
-Thus $X$ is $\theta^*$-refinable.
+Thus $X$ is $\lambda$-$\theta^*$-refinable.
 \end{proof}
 
 {\corollary{} \label{cor:7.2.11}
