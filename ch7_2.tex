@@ -549,7 +549,7 @@ closed refinement $\mathscr{F}$ such that $\mathscr{F}^\circ$ covers $X$.
  open cover of $X$ has a $\sigma$-closure-preserving  closed refinement 
  $\mathscr{F}$ such that  $\mathscr{F}^\circ$ covers $X$.}
  
-\noindent We use induction on $\mu \le \lambda$ to show that $\mathcal{P}_\mu$ 
+\noindent\textsc{Proof of  $\mathcal{P}_\mu$}. We use induction on $\mu \le \lambda$ to show that $\mathcal{P}_\mu$ 
 holds for all $\mu \le \lambda$. 
 Specially, if  $\mathcal{P}_\lambda$ holds, then by Theorem \ref{th:4.2.4}, 
 $X$ is $\lambda$-paracompact.
@@ -558,18 +558,18 @@ such that $\mathcal{P}_\kappa$ holds for each $\kappa < \mu$.
 We need to show that $P_{\mu}$ is true.
  To this end, let $\mathscr{U}=\{U_\alpha: \alpha< \mu\}$ be an interior-preserving
  directed open cover of $X$. 
- $\mathscr{W}=\{\bigcup_{\gamma < \alpha}U_\gamma: \alpha< \mu\}$  and is an 
+ $\mathscr{W}=\{\bigcup_{\gamma < \alpha}U_\gamma: \alpha< \mu\}$   is an 
  increasing open $\lambda$-cover of $X$.
  By (iv), it has a refinement $\mathscr{B} = \bigcup_{m < \omega} \mathscr{B}_m$ 
  where each $\mathscr{B}_m$ is hereditarily closure-preserving closed and 
  $\mathscr{B}^\circ$ covers $X$.
 Let $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ such that 
-$B_{m,\alpha}\subset\bigcup_{\gamma < \alpha}U_\gamma$ for each $m < \omega 
+$B_{m,\alpha}\subset\bigcup_{\gamma < \alpha}U_\gamma$ for each $m < \omega,
 \alpha < \mu$. 
 For $m < \omega, \alpha < \mu$, let 
 $$\mathscr{G}_{m, \alpha}= \{U_\gamma: \gamma < \alpha\}\cup \{X\setminus B_{m,\alpha}\}.$$
 Then each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $X$ with power $< \mu$.
-For each $S\in [\alpha]^{<\omega}$, let $U_S = \bigcup_{\gamma\in S}U_\gamma$. Let
+For each $S\in [\alpha]^{<\omega}$, let $U_S = \bigcup_{\gamma\in S}U_\gamma$, and
 $$\mathscr{G}_{m, \alpha}^F= \{U_S: S\in [\alpha]^{<\omega}\}\cup 
 \{U_t \cup (X\setminus B_{m,\alpha}):t\in [\alpha]^{<\omega}\}
 \cup \{X\setminus B_{m, \alpha}\}.$$
@@ -626,13 +626,13 @@ Since $\mathscr{E}_{m,\alpha}^\circ$ covers $X$, there exists  $n < \omega$
 and $A \in \mathscr{E}_{m,\alpha,n}$ such that $x \in A^\circ$. Then $A\ne P_{m, \alpha}$. 
  If $A = E_{m,\alpha,n,S}$ for some $S\in [\alpha]^{<\omega}$, then 
  $x \in (E_{m,\alpha,n,S} \cap B_{m,\alpha})^\circ \in \mathscr{F}_{m,n,1}^\circ$.
-If $A = K_{m,\alpha,n,S}$ for some $S$, then $x \bigcup\mathscr{F}_{m,n,2}^\circ$.
+If $A = K_{m,\alpha,n,S}$ for some $S$, then $x \in\bigcup\mathscr{F}_{m,n,2}^\circ$.
 Thus, (2) holds.
 
 \textbf{(3)} \textit{$\mathscr{F}$ is a refinement of $\mathscr{U}$.}
 
  \noindent\textsc{Proof of (3)}. For any $F\in \mathscr{F}$, there exist $\alpha<\mu$ and $S\in [\alpha]^{<\omega}$
- such that $F\subset  U_\alpha$. % TO_DO
+ such that $F\subset  U_S$. % TO_DO
 Since $\mathscr{U}$ is directed, there exists  $\alpha< \mu$ such that $U_S \subset U_\alpha$. 
 So $\mathscr{F}$ refines $\mathscr{U}$.
 Thus, $\mathscr{F}$ is a $\sigma$-closure-preserving  closed refinement of $\mathscr{U}$ 
