@@ -407,20 +407,23 @@ has a $\theta^*$-sequence of open refinements.
  ($\Rightarrow$): Clear.
 
  ($\Leftarrow$): Assume that every increasing open $\lambda$-cover of $X$ 
- is a $\theta^*$-cover. For each cardinal $\mu \le \lambda$, let 
- $\mathcal{P}_{\mu}$ denote the proposition: ``Every open $\mu$-cover of 
- $X$ has a local $W$-refining sequence by open covers of $X$".
-We use transfinite induction on $\mu\le \lambda$ to show that 
+ is a $\theta^*$-cover. For each cardinal $\mu \le \lambda$, let property
+ 
+ $\mathcal{P}_{\mu}$: \textit{Every open $\mu$-cover of 
+ $X$ has a local $W$-refining sequence by open covers of $X$.}
+ 
+\noindent We use transfinite induction on $\mu\le \lambda$ to show that 
 $\mathcal{P}_{\mu}$ holds for each $\mu \le \lambda$.
 Then $\mathcal{P}_{\lambda}$ holds, so by Corollary \ref{cor:7.2.11},
 $X$ is $\lambda$-paracompact. Clearly, $\mathcal{P}_{\mu}$ holds for finite 
 $\mu$.
-Suppose $P_{\alpha}$ holds for all $\alpha < \mu$. To show $P_{\mu}$ holds, 
-let $\mathscr{U} = \{U{\alpha}: \alpha < \mu\}$ be an open cover of $X$. 
-$\mathscr{W} = \{\bigcup_{\gamma < \alpha}U_{\gamma}: \gamma < \mu\}$ is 
+Suppose that $\omega\le\mu\le\lambda$ and that
+$\mathcal{P}_{\alpha}$ holds for all $\alpha < \mu$. To show $P_{\mu}$ holds, 
+let $\mathscr{U} = \{U_\alpha: \alpha < \mu\}$ be an open cover of $X$. 
+$\mathscr{W} = \{\bigcup_{\gamma < \alpha}U_{\gamma}: \alpha < \mu\}$ is 
 an increasing open $\lambda$-cover of $X$.
 By hypothesis, there exists a $\theta^*$-sequence 
-$\{\mathscr{V}_n\}$ of open refinements of $\mathscr{W}$. 
+$\{\mathscr{V}_n:n<\omega\}$ of open refinements of $\mathscr{W}$. 
 Let $\mathscr{V}_n= \{V(n, \alpha): \alpha < \mu \}$ such that 
 $V(n, \alpha)\subset \bigcup_{\gamma < \alpha}U_\gamma$ for each $\alpha < \mu$.
 For $n < \omega, \alpha < \mu$, let 
