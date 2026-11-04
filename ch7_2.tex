@@ -252,20 +252,19 @@ For any  $X$ the following are equivalent:
  $\mathscr{V}(t) =\{V(t, \beta): \beta < \lambda\cdot 2\}$ of  $X$ such that}
  \begin{gather}
  	V(t, \alpha) \subset U_\alpha, V(t, \alpha + \lambda) \subset U_\alpha 
- 	\textit{ for all } \alpha < \lambda. \label{eq:7.2.6.claim1.1}
+ 	\textit{ for all } \alpha < \lambda. \label{eq:7.2.6.1}
  \end{gather}
 \textsc{Proof of Claim 1}. 
- %Property \eqref{eq:7.2.6.claim1.1}.  
  Since $\omega^{ < \omega} = \bigcup_{n <\omega}\omega^n$, we use induction on $n < \omega$. 
- For $n = 0$, let $V(\emptyset, \alpha) = \emptyset$ and  
+ For $n = 0$, let $V(\emptyset, \alpha) = U_\alpha$ and  
  $V(\emptyset, \lambda+\alpha) = \emptyset$ 
  for all $\alpha<\lambda$, and 
  $\mathscr{V}(\emptyset) = \{V(\emptyset, \beta): \beta < \lambda\cdot 2\}$. 
  Suppose that $n < \omega$ and that the open cover 
- $\mathscr{V}(s) =  \{V(s, \beta): \beta < \lambda\cdot 2\}$ with Property \eqref{eq:7.2.6.claim1.1}
+ $\mathscr{V}(s) =  \{V(s, \beta): \beta < \lambda\cdot 2\}$ with Property \eqref{eq:7.2.6.1}
  have been constructed for all $s \in \omega^n$. 
  We need to construct $\mathscr{V}(s)$ for all $s \in \omega^{n+1}$.
-For any $t \in \omega^{n+1}$, there exists a unique $s\omega^n$ and $k$ such that $t=s\oplus k$. 
+For any $t \in \omega^{n+1}$, there exists a unique $s\in\omega^n$ and $k<\omega$ such that $t=s\oplus k$. 
 By (iii) and the inductive hypothesis, $\mathscr{V}(s)$ 
 has a local star $\overset{*}{F}$-refining sequence 
 $\{\mathscr{W}_n(s): n < \omega\}$ by semi-open covers of  $X$. 
@@ -274,21 +273,22 @@ For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambd
 \begin{gather}
 V(t, \alpha) = 	V(s, \alpha) \cup (U_\alpha\cap 
 	\operatorname{st}(X\setminus \cup_{\beta\ne \lambda+\alpha}V(s, \beta),
-	\mathscr{W}_k(s))^\circ) \label{eq:7.2.6.claim1.2} \\
+	\mathscr{W}_k(s))^\circ) \label{eq:7.2.6.2} \\
 V(t, \lambda+ \alpha) = U_\alpha \cap (\cup_{\beta> \lambda+\alpha}V(s, \beta))
   \cap\operatorname{st}(X\setminus \cup_{\beta < \lambda+\alpha}V(s, \beta),
-  \mathscr{W}_k(s))^\circ) \label{eq:7.2.6.claim1.3} 
+  \mathscr{W}_k(s))^\circ) \label{eq:7.2.6.3} 
 \end{gather}
 Let $\mathscr{V}(t) =  \{V(t, \beta): \beta < \lambda\cdot 2\}$. 
  Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \alpha + \lambda) \subset U_\alpha$.
-Then each open family $\mathscr{V}(t)$ covers  $X$. This completes the proof of \textsc{Claim 1}.
+Then each open family $\mathscr{V}(t)$ covers  $X$. This completes the proof of Claim 1.
 
-(1) For each $x\in X$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
+\textbf{(1)} \textit{For each $x\in X$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
 in $\omega$ with $s_{n+1} = s_n\oplus k_n$ such that for each $n < \omega$, there exists a 
 semi-open local star $\overset{*}{F}$-refinement $\mathscr{W}_{k_n}(s_n)$ of 
- $\mathscr{V}(s_n)$ at $x$.
+ $\mathscr{V}(s_n)$ at $x$.}
 
-Proof.  By \textsc{Claim 1} and hypothesis (iii), for each $t \in \omega^\omega$ there exists a local star 
+\noindent\textsc{Proof of (1)}.  By Claim 1 and hypothesis (iii), for each $t \in \omega^\omega$ 
+there exists a local star 
 $\overset{*}{F}$-refining sequence $\{\mathscr{W}_k(t): k < \omega\}$ for $\mathscr{V}(t)$ 
 where each $\mathscr{W}_k(t)$ 
 is a semi-open cover of  $X$. Suppose $x\in X$. Let $s_0 = \emptyset$. 
@@ -299,23 +299,23 @@ Suppose that $i<\omega$ and tgat $s_i, k_i$ have
 been defined for all $i \le n$ with $s_i = s_{i-1}\oplus k_{i-1}$. 
 Let $s_{n+1} = s_n \oplus k_n$. There exists 
 $k_{n+1} < \omega$ such that  
-$\mathscr{W}_{k_{n+1}}(s_{n+1})$ i is a semi-open local star $\overset{*}{F}$-refinement 
+$\mathscr{W}_{k_{n+1}}(s_{n+1})$ is a semi-open local star $\overset{*}{F}$-refinement 
 of $\mathscr{V}(s_{n+1})$  at $x$. Let $s_{n+2} = s_{n+1} \oplus k_{n+1}$. By induction, 
 (1) holds.
 
-\textsc{Claim 2}. 
- $\{\mathscr{V}(t): t < \omega^\omega\}$ is a $\theta$-sequence of open refinement of $\mathscr{U}$.
+\textbf{Claim 2}. 
+ \textit{$\{\mathscr{V}(t): t < \omega^\omega\}$ is a $\theta$-sequence of open refinement of $\mathscr{U}$.}
  
- Proof. By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of [ $\mathcal{U}$ ]. 
+ \noindent\textsc{Proof of Claim 2.} By Claim 1,  each $\mathscr{V}(t)$ is an open refinement of $\mathscr{U}$. 
  To see that $\{\mathscr{V}(t):  t < \omega^\omega\}$ is a $\theta^*$-sequence, 
- let $x \in X$ By (1), 
+ let $x \in X$. By (1), 
 \begin{gather*}
 	\forall \, n < \omega \; \exists \, A_n\in [\lambda\cdot 2]^{<\omega} \,
 	\exists \, W(x,n) \in \operatorname{top}(x)
 \end{gather*}
 such that 
 \begin{gather*}
-	\forall G \in  \operatorname{top}(x), \, G\subset W(x,n) \Rightarrow 
+	\forall\; G \in  \operatorname{top}(x), \, G\subset W(x,n) \Rightarrow 
 	\operatorname{st}(G, \mathscr{W}_{k_n}(s_n)) \subset 
 	\operatorname{st}(G, \{V(s_n, \beta): \beta \in A_n\}). 
 \end{gather*}
@@ -323,15 +323,15 @@ Let $A(x, n) = W(x,0) \cap W(x, 1)\cap\cdots \cap W(x, n))$, and let
 $$ D_n = \{\beta\in A_n: V(s_n, \beta)\cap G(x, n) \ne \emptyset\} \text{ for } n < \omega.$$
 We have 
 
-(2) For each $n < \omega$,
+\textbf{(2)} \textit{For each } $n < \omega$,
 $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset 
    \bigcup_{\beta\in D_n} V(s_n, \beta).$$ 
  For each $n < \omega$, let $\beta_n = \max D_n$,  and let $\beta_m = \min\{\beta_n: n < \omega\}$.
  %这里定理 7.2.10 的证明中的 $\beta_n$ 和 $\beta_m$ 是怎么回事？尤其是 $\beta_m$ =?  % TO_DO
  
- (3) If $\beta \ge \lambda$ abd $\beta > \beta_m$, the $G(x, m) \cap V(s_{m+1}, \beta) = \emptyset$.
+ \textbf{(3)} \textit{If} $\beta \ge \lambda$ \textit{ and } $\beta > \beta_m$, \textit{then} $G(x, m) \cap V(s_{m+1}, \beta) = \emptyset$.
  
- For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
+ \noindent For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
  By (2),
  \begin{gather}
  \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \bigcap 
@@ -342,9 +342,9 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  $$G(x, m)\bigcap V(s_{m+1}, \beta) \subset G(x, m) \bigcap 
     \operatorname{st}\left(X\setminus \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \emptyset.$$
  
- (4) $\beta_{m} < \lambda$.
+ \textbf{(4)} $\beta_{m} < \lambda$.
  
- If not, $\beta_{m} \ge \lambda$, then for each 
+\noindent If not, $\beta_{m} \ge \lambda$, then for each 
  $\beta > \beta_{m+2}, \beta > \beta_{m} \ge \lambda$. By (3),
  $$G(x, m) \cap (\bigcup_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \emptyset,$$ 
  Since $B_{m+2} = B_{m} > \lambda$ % TO_DO  by (C), 
@@ -354,11 +354,11 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  But $\beta_{m+2} \in D_{m+2}$, so we have a. 
  Contradiction. Hence $\beta_m < \lambda$. 
  
- (5) If $\beta \ge \lambda$, then $G(x, m) \bigcap V(s_{m+1}, \beta) = \emptyset$.
+ \textbf{(5)} If $\beta \ge \lambda$, then $G(x, m) \bigcap V(s_{m+1}, \beta) = \emptyset$.
  
 For if $\beta \ge \lambda$, then by (2), $\beta > \beta_m$. Thus that follows from (3).
 
-(6) $\mathscr{V}(s_{m+1})$ is locally finite at $x$, this says that \textsc{Claim 2} is true.
+\textbf{(6)} $\mathscr{V}(s_{m+1})$ is locally finite at $x$, this says that \textsc{Claim 2} is true.
 
 Proof. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
 By (5),
@@ -378,7 +378,6 @@ $\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x, m)}\subset \bigcup_{i=0}^m D_i^m
 So, $\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x, m)}$ is finite, and (6) holds.
 Thus $X$ is $\theta^*$-refinable.
 \end{proof}
-
 
 {\corollary{} \label{cor:7.2.11}
 \textup{([Jiang 1987b]\textsuperscript{\cite{Jiang1987b}})}   
