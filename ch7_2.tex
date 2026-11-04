@@ -465,27 +465,28 @@ Then each $\mathscr{H}_{n,k}$ is an open cover of $X$.
  Let $x \in X$. There exist $m< \omega$ and $B_0\in \operatorname{top}(x)$ 
  such that 
  
- (3) $\text{ind}(\mathscr{V}_m)_{B_0}$ \textit{is finite.}
+ \textbf{(3)} $\text{ind}(\mathscr{V}_m)_{B_0}= \{\alpha_1,\cdots, \alpha_p\}$ \textit{is finite.}
 
-For each $i = 1, \cdots, p$, by (1), 
+\noindent For each $i = 1, \cdots, p$, by (1), 
 $\exists \, r_i < \omega \exists \, B_i \in \operatorname{top}(x)$ and 
-$\exists \text{ finite } D_i \\alpha_i$ 
+$\exists $ \text{ finite } $D_i \subset \alpha_i$ 
 such that 
-
 
 \textbf{(4)}  $(\mathscr{W}_{r_i}(m, d_i))_{B_i}$ \textit{refines}
 $\{U_\gamma: \gamma \in D_i\} \bigcup(\bigcup_{r > \alpha_i}V(m, \gamma))$. 
 
-Let
-$B = \bigcap_{i=1}^{p} D_i, \mathscr{U}' = \{U_\gamma: \gamma\in \bigcup_{i=1}^p D_i\}$,
+\noindent Let
+$B = \bigcap_{i=1}^{p} B_i, \mathscr{U}' = \{U_\gamma: \gamma\in \bigcup_{i=1}^p D_i\}$,
  and $q = \max\{p, r_0, \dots, r_p\}$. We have
 
-\textbf{(5)} \textit{$(\mathscr{H}_{m,q})_B$ refines $\mathscr{U}'$, so  the Claim is true.}
+\textbf{(5)} \textit{$(\mathscr{H}_{m,q})_B$ refines $\mathscr{U}'$. So  the Claim is true.}
 
-\textsc{Proof}. Let $H\in \mathscr{H}_{m, q}$ with $H\bigcap B \ne \emptyset$. 
+\noindent\textsc{Proof of (5)}. Let $H\in \mathscr{H}_{m, q}$ such that  
+$H\bigcap B \ne \emptyset$. 
 By (3), $B_0\subset F_{m,p}$.Then $H\bigcap F_{m,q}\ne \emptyset$, hence there exists 
-$y \in F_{m,q}$ such that $H= H(y, m, q)$. Sice $\emptyset \ne H\bigcap B \subset
-V(m, \delta(y, m, q)) \bigcap B_0$ by (3) $\exists \, j \le p\; \delta(y, m, q) = \alpha_j$.
+$y \in F_{m,q}$ such that $H= H(y, m, q)$. Since $\emptyset \ne H\bigcap B \subset
+V(m, \delta(y, m, q)) \bigcap B_0$, by (3), 
+$\exists \, j \le p$ such that  $\delta(y, m, q) = \alpha_j$.
 Then
 \begin{equation*}
 	\begin{aligned}
@@ -494,12 +495,12 @@ H(y,m,q)  &\subset \bigcap_{l=0}^q W_l(m, \alpha_j, \beta_l) \\
  & \subset W_{r_j}(m, \alpha_j, \beta_j) 
 	\end{aligned}
 \end{equation*}
-Hence $B_j \bigcap W_{r_j}(m, \alpha_j, \beta_j) \supset B \bigcap H \ne \emptyset$. By (2),
+Hence $B_j \bigcap W_{r_j}(m, \alpha_j, \beta_{r_j}) \supset B \bigcap H \ne \emptyset$. By (2),
 $y\notin\bigcup_{\gamma > \alpha_j}V(m,\gamma)$.
  By (4) there exists $\gamma\in D_j$ such that 
  $H = W_{r_j}(m, \alpha_j, \beta_{r_j}) \subset U_\gamma\in \mathscr{U}'$.
 Thus, $(\mathscr{H}_{m,q})_B$ refines the finite subfamily $\mathscr{U}'$ of $\mathscr{U}$, 
-That completes the proof of the \textsc{Claim} and so the induction. 
+That completes the proof of the Claim and so the induction. 
 Then $\mathcal{P}_\lambda$ holds and $X$ is $\lambda$-paracompact.
 \end{proof}
 
