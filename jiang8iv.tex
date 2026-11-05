@@ -41,7 +41,7 @@ let $\mathscr{D} = \{D_\alpha: \alpha < \lambda\}$ be a
 discrete closed family in $X$. Let $\{\mathscr{V}_n: n \in \omega\}$ be an
 $\varepsilon^*$-sequence of open expansions of $\mathscr{D}$, where each $\mathscr{V}_n = \{V_{n,\alpha}: \alpha < \lambda\}$ with 
 $D_\alpha \subset V_{n,\alpha}$ for each 
-$n, \alpha$. For $n <\omega$, let 
+$n < \omega, \alpha < \lambda$. For $n <\omega$, let 
 $H_n = \{x \in X: \vert{}\operatorname{ind}(\mathscr{V}_n)_x\vert{} \le 1\}$. 
 Clearly, each $H_n$ is closed in $X$. 
 For each $n < \omega$, $\mathscr{V}_n\vert{}_{H_n}$ 
@@ -49,16 +49,16 @@ is a point-finite open family in subspace $H_n$.
 It follows that the family 
 $\{H_n \bigcap(\bigcup_{\gamma \ne \alpha}V_{n,\gamma}): \alpha < \lambda\}$ 
 is an interior-preserving open family in $H_n$. 
-For $n \in \omega, \alpha < \lambda$, let
+For $n < \omega, \alpha < \lambda$, let
 $$B_{n,\alpha} = H_n \setminus \bigcup_{\gamma\ne\alpha} V_{n,\gamma} 
 \text{ and } \mathscr{B}_n = \{B_{n,\alpha}: \alpha < \lambda\}.$$
 
 \noindent Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is 
 a $\sigma$-closure-preserving closed family in $X$. We have
 
-(1) $\bigcup \mathscr{B}^\circ = X$.
+\textbf{(1)}  $\bigcup \mathscr{B}^\circ = X$.
 
-\noindent\textsc{Proof}. Let $x \in X$. There exists $m < \omega$ and 
+\noindent\textsc{Proof of (1)}. Let $x \in X$. There exists $m < \omega$ and 
 $W \in \operatorname{top}(x)$ such that 
 $|\operatorname{ind}(\mathscr{V}_m)_W|\le 1$. 
 Let $\alpha_0<\lambda$ be such that 
@@ -69,29 +69,29 @@ For $n < \omega, \alpha<\lambda$, let
 
 $$U_{n,\alpha} = \operatorname{st}(D_\alpha, \mathscr{B}_n^\circ)
 \setminus \bigcup_{i \le n} 
-\overline{\bigcup \{B_{i,\gamma}^\circ: \gamma < \alpha
+\overline{\bigcup \{B_{i,\gamma}^\circ: \gamma < \lambda
 	\text{ and }B_{i,\gamma} \cap D_\alpha = \emptyset\}}$$
 and $U_\alpha = \bigcup_{n < \omega} U_{n,\alpha}$. We show that 
 $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
 is a disjoint open expansion of $\mathscr{D}$.
 
-(2) $D_\alpha \subset U_\alpha$ for all $\alpha < \lambda$.
+\textbf{(2)} $D_\alpha \subset U_\alpha$ \textit{ for all } $\alpha < \lambda$.
 
-\noindent\textsc{Proof}. Let $x \in D_\alpha$. 
+\noindent\textsc{Proof of (2)}. Let $x \in D_\alpha$. 
 By (1), $\exists \, m < \omega, x \in \bigcup \mathscr{B}_m^\circ$, 
-$x\in \operatorname{st}(D_\alpha, \mathscr{B}_m^\circ)$.
-For each $i \le m$ and $\gamma < \alpha$, 
+so $x\in \operatorname{st}(D_\alpha, \mathscr{B}_m^\circ)$.
+For each $i \le m$ and $\gamma < \lambda$, 
 if $B_{i,\gamma} \cap D_\alpha = \emptyset$, then 
 $x \notin B_{i,\gamma}^\circ$. Hence $x \in U_{m,\alpha} \subset U_\alpha$.
 
-(3) If $n < \omega$ and $\gamma\ne \alpha$, then
+\textbf{(3)} \textit{If $n < \omega$ and $\gamma\ne \alpha$, then}
 $$B_{n,\gamma} \cap D_\alpha \subset 
 \left(X\setminus \bigcup_{\mu\ne\gamma}V_{n,\mu}\right)
 \cap V_{n,\alpha} = \emptyset$$
 
-(4) If $\alpha \neq \beta$, then $U_\alpha \cap U_\beta = \emptyset$.
+\textbf{(4)} \textit{If} $\alpha \neq \beta$, \textit{then} $U_\alpha \cap U_\beta = \emptyset$.
 
-\noindent\textsc{Proof}.  If not, then $\exists \, x\in U_{\alpha} \cap U_{\beta} $ 
+\noindent\textsc{Proof of (4)}.  If not, then $\exists \, x\in U_{\alpha} \cap U_{\beta} $ 
 for some 
 $\alpha\ne\beta$. Suppose  $x \in U_{m,\alpha} \cap U_{m,\beta}$ and
 $m\le n$. Since $x \in U_{m,\alpha}$, there exists 
