@@ -212,7 +212,7 @@ point-star refinement of $\mathscr{U}$.
  $\lambda$-cover of $X$. 
  By (vi). $\mathscr{D}^*$ has a cushioned refinement. 
  By Lemma \ref{lem:1.2.4}, $\mathscr{D}$ has a disjoint open expansion. 
- Hence is $\lambda$-collectionwise normal. 
+ Hence $X$ is $\lambda$-collectionwise normal. 
  \end{proof}
 
  
@@ -236,11 +236,11 @@ refinement $\mathscr{V}$ such that $\mathscr{\overline{V}}$ refines $\mathscr{U}
 
 \textup{(iv)}  Every $A\omega^2$ $($resp. $D\omega^2)$  $\lambda$-cover 
 of $X$ has a $\sigma$-locally finite closed
-refinement $\mathscr{F}$ such that $\mathscr{\overline{F}}^\circ$ covers $X$.
+refinement $\mathscr{F}$ such that $\mathscr{F}^\circ$ covers $X$.
 
 \textup{(v)}  Every $A\omega^2$ $($resp. $D\omega^2)$  $\lambda$-cover 
 of $X$ has a $\sigma$-closure-preserving  closed
-refinement $\mathscr{F}$ such that $\mathscr{\overline{F}}^\circ$ covers $X$.
+refinement $\mathscr{F}$ such that $\mathscr{F}^\circ$ covers $X$.
 
 \textup{(vi)}  Every interior-preserving $A\omega^2$ 
 $($resp. $D\omega^2)$  $\lambda$-cover 
@@ -269,14 +269,14 @@ of subsets of $X$. The induced cover  $\mathscr{B}^*$ is an
 interior-preserving  directed $A\omega^2$  $\lambda$-cover of $X$. 
 Then  $\mathscr{B}^*$ has a $\sigma$-cushioned  open refinement. 
 By Lemma \ref{lem:8.1.4}, $\mathscr{B}$ has a $\theta^*$-sequence 
-of open expansions. By Theorem \ref{th:4.1.11},  $X$ is $\lambda$-expandable, 
+of open expansions. By Theorem \ref{th:4.1.11},  $X$ is $\lambda$-expandable.
 To see that  $X$ is normal, let $A$ and $B$ be disjoint 
 closed subsets of $X$. $\mathscr{B}_1 = \{A, B\}$ is a locally finite $\lambda$-family 
 and  the induced 
-coner $\mathscr{B}_1^* = \{X\setminus A, X\setminus B\}$ is an interior-preserving 
+cover $\mathscr{B}_1^* = \{X\setminus A, X\setminus B\}$ is an interior-preserving 
 $A\omega^2$ $\lambda$-cover. 
 By (vi) and Lemma \ref{lem:8.1.4}, $\mathscr{B}_1^*$ has a  cushioned
-refinement. Hence there are disjoint open sets $U$ and $V$
+refinement. Hence there exist disjoint open sets $U$ and $V$
 such that $A\subset U$ and $B\subset V$, so $X$ is normal.
 \end{proof}
 
@@ -297,17 +297,17 @@ of $X$ has cushioned open refinement.
 
 \begin{proof} 
 (i) $\Rightarrow$ (ii).  Assume (i) and let $\mathscr{U}$ be an $A\omega^2$ 
-(or $D\omega^2$) $\lambda$-cover of $X$. By Theorem \ref{th:8.1.7}, it is normal.
+(resp. $D\omega^2$) $\lambda$-cover of $X$. By Theorem \ref{th:8.1.7}, it is normal.
 Hence it has an open star refinement.
 
 (ii) $\Rightarrow$ (iii). Clear.
 
 (iii) $\Rightarrow$ (iv). Let $\mathscr{U}=\{U_\alpha: \alpha < \lambda\}$ be 
 directed  
-interior-preserving  $A\omega^2$ (or interior-preserving $D\omega^2$ )
+interior-preserving  $A\omega^2$ (resp. interior-preserving $D\omega^2$ )
 $\lambda$-cover of $X$. By (iii), $\mathscr{U}$ has a semi-open local star refinement
 $\mathscr{V}$. For $\alpha < \lambda$, let 
-$$G_\alpha = \{x\in : \exists \, W\in \operatorname{top}(x)
+$$G_\alpha = \{x\in X: \exists \, W\in \operatorname{top}(x)
  \text{ and } \operatorname{st}(W, \mathscr{V})\subset U_\alpha\}.$$
  The $\{G_\alpha:\alpha < \lambda\}$ is a cushioned open refinement of 
  $\mathscr{U}$.
@@ -319,7 +319,7 @@ $$G_\alpha = \{x\in : \exists \, W\in \operatorname{top}(x)
 {\theorem{} \label{th:8.1.9}
 For any space the following are equivalent:
 
-\textup{(i)} $X$ is normal $\lambda$-expandable ($\lambda$-collectionwise normal),
+\textup{(i)} $X$ is normal $\lambda$-expandable (resp. $\lambda$-collectionwise normal),
 
 \textup{(ii)}  Every $A\omega^2$ $($resp. $D\omega^2)$  $\lambda$-cover of $X$ has an $\varepsilon^*$-sequence of open refinements.
 
@@ -333,12 +333,12 @@ open covers of $X$.
 }
 
 \begin{proof} 
-$\Rightarrow$ (ii) and (iii). Assume (i) and let $\mathscr{U}$ 
+(i) $\Rightarrow$ (ii) and (iii). Assume (i) and let $\mathscr{U}= \{U_\alpha: \alpha < \lambda\}$ 
 be an $A\omega^2$ $($resp. $D\omega^2)$  $\lambda$-cover of $X$. 
 By Theorem \ref{th:8.1.8}, $\mathscr{U}$ has a refinement 
 $\mathscr{D} = \bigcup_{n<\omega} \mathscr{D}_n$ where each 
 $\mathscr{D}_n= \{D_{n,\alpha}: \alpha<\lambda\}$ is a discrete closed family in $X$ 
-with $\mathscr{D}_n = \{D_{n,\alpha}: \alpha< \lambda\}$ for each $\alpha< \lambda$, 
+such that  $D_{n,\alpha}\subset U_\alpha$ for each $\alpha< \lambda$, 
 and $\mathscr{D}_n^\circ$ covers $X$.
 For each $n<\omega$ and $\alpha<\lambda$, let 
 $G_{n,\alpha} = U_\alpha \setminus \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$. 
@@ -354,12 +354,13 @@ $\{\mathscr{G}_n\}$ is an $\varepsilon^*$-sequence. We have proved that (i)
 $\Rightarrow$ (ii).
 If $\mathscr{U}$ is interior-preserving open, then each $\mathscr{G}_n$
 is interior-preserving open, so (iii) holds.
+
 It is clear that (ii) $\Rightarrow$ (v) and (iii) $\Rightarrow$ (iv) 
 $\Rightarrow$ (v).
 
-(v) $\Rightarrow$ (i) Assume (v) holds and let 
+(v) $\Rightarrow$ (i). Assume (v) holds and let 
 $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an interior-preserving
-$A\omega^2$ (or $D\omega^2$)  $\lambda$-cover  of $X$. 
+$A\omega^2$ (resp. $D\omega^2$)  $\lambda$-cover  of $X$. 
 Let $\{\mathscr{E}_n: n < \omega\}$ be a local star refining sequence for 
 $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
 $$A_n = \{x \in X: \exists \, G\in \operatorname{top}(x)\; \exists \, \alpha<\lambda
