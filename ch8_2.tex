@@ -28,7 +28,7 @@ $\mathscr{V} = \bigcup_{n < \omega} \mathscr{V}_n$,
 where each $\mathscr{V}_n = \{V_{n,\alpha}: \alpha \in \Delta_n\}$ 
 is star-finite.
 Since $X$ is countably shrinkable, there exists an
-open cover $\{S_n: n\in\omega\}$ such that 
+open cover $\{S_n: n<\omega\}$ such that 
 $\overline{S_n}\subset\bigcup\mathscr{V}_n$
 for each \(n < \omega\).
 By Corollary \ref{cor:5.2.5}, 
@@ -39,10 +39,9 @@ for each \(n<\omega\). Then \(\overline{W_n}\subset\bigcup\mathscr{V}_n\).
 We have
 
 \textbf{(1)} \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\)
- is locally finite and open
-for each \(n < \omega\).
+ \textit{is locally finite and open for each } \(n < \omega\).
 
-\noindent\textsc{Proof}.
+\noindent\textsc{Proof of (1)}.
 Let \(n<\omega\), \(x\in X\). If \(x\notin\bigcup{\mathscr{V}}_n\), 
 then \(X\setminus\overline{W_n}\) is a
 neighborhood of \(x\) which 
@@ -57,10 +56,10 @@ Let \(\mathscr{H}=\{H_n: n<\omega\}\) be a locally finite open cover of \(X\) su
 \(H_n\subset\bigcup \mathscr{G}_n\) for each \(n<\omega\). 
 Let \(\mathscr{R}=\{H_n\cap W_n\cap V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\}\).
 
-\textbf{(2)} \(\mathscr{R}\) is a locally finite open refinement of \(\mathscr{U}\). Thus, 
-\(X\) is $\lambda$-paracompact.
+\textbf{(2)} \textit{\(\mathscr{R}\) is a locally finite open refinement of \(\mathscr{U}\). Thus, 
+\(X\) is $\lambda$-paracompact.}
 
-\noindent\textsc{Proof}. It is clear that \(\mathscr{R}\) is an open refinement of \(\mathscr{U}\). To show
+\noindent\textsc{Proof of (2)}. It is clear that \(\mathscr{R}\) is an open refinement of \(\mathscr{U}\). To show
 that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{H}\) is locally finite, 
 there exists \(G_0\in\operatorname{top}(x)\) such
 that \(D=\{n<\omega: G_0\cap H_n \ne \emptyset\}\) is finite. By (1), 
@@ -83,7 +82,7 @@ Every screenable, normal, countably paracompact space is paracompact. \hfill\qed
 
 
 {\theorem{\label{th:8.2.3}}
-For any \(\lambda\) the following are equivalent:
+For any $X$ the following are equivalent:
 
 \textup{(i)}  \(X\) is \(\lambda\)-fully normal.
 
@@ -99,7 +98,7 @@ By Theorem \ref{th:8.1.7}.
 \end{proof}
 
 {\corollary{} \label{cor:8.2.4}
-For any \(\lambda\) the following are
+For any $X$ the following are
 equivalent:
 
 \textup{(i)}  \(X\) is \(\lambda\)-fully normal.
@@ -108,16 +107,17 @@ equivalent:
 
 \textup{(iii)}  \(X\) is \(\lambda\)-collectionwise normal and \(\lambda\)-metacompact.
 
-\textup{(iii)}  \(X\) is \(\lambda\)-collectionwise normal and 
+\textup{(iv)}  \(X\) is \(\lambda\)-collectionwise normal and 
 \(\lambda\)-submetacompact.
 }
 
 \begin{proof}
  (i) \(\Rightarrow\) (ii). By Theorem \ref{th:8.2.3} and Corollary \ref{cor:2.1.8}.
  
-(i) \(\Rightarrow\) (iii) By Theorem \ref{th:8.2.3}.
+(i) \(\Rightarrow\) (iii). By Theorem \ref{th:8.2.3}.
 
 (ii) \(\Rightarrow\) (iv) and (iii) \(\Rightarrow\) (iv). Clear.
+
 (iv) \(\Rightarrow\) (i). By Theorem \ref{th:8.2.3}.
 \end{proof}
 
@@ -133,8 +133,8 @@ the following are equivalent:
 \textup{(iii)}  \textup{([McAuley 1958]\textsuperscript{\cite{McAuley}})}
 \(X\) is subparacompact.
 
-\textup{(iv)}   \textup{([Worrell and Wicke 1965]]\textsuperscript{\cite{WorrellWicke}})}
-([Worrell and Wicke 1965]). \(X\) is submetacompact.
+\textup{(iv)}   \textup{([Worrell and Wicke 1965]\textsuperscript{\cite{WorrellWicke}})}
+\(X\) is submetacompact.
 
 \textup{(v)} \textup{([Liu 1977]\textsuperscript{\cite{Liu}})}
 \(X\) is strictly quasi-paracompact.
@@ -164,7 +164,7 @@ $\lambda$-metacompact. By Corollary \ref{cor:8.2.4}, \(X\) is \(\lambda\)-fully 
 
 
 {\theorem{\label{th:8.2.7}} 
-For any$X$ the following are equivalent:
+For any $X$ the following are equivalent:
 
 \textup{(i)} \(X\) is \(\lambda\)-fully normal.
 
@@ -176,9 +176,9 @@ closed refinement.
 
 \textup{(iv)}  Every open \(\lambda\)-cover of \(X\) has a cushioned open refinement.
 
-\textup{(v)} Every open \(\lambda\)-cover has a cushioned refinement.
+\textup{(v)} Every open \(\lambda\)-cover of $X$ has a cushioned refinement.
 
-\textup{(vi)} Every interior-preserving open \(\lambda\)-cover 
+\textup{(vi)} Every interior-preserving open \(\lambda\)-cover of $X$
 has a closure-preserving closed refinement.
 }
 
@@ -196,16 +196,17 @@ For any $X$ the following are equivalent:
 
 \textup{(i)}   \(X\) is \(\lambda\)-fully normal.
 
-\textup{(ii)}   Every open \(\lambda\)-cover has a \(\sigma\)-discrete closed refinement \(\mathscr{F}\) such that \(\mathscr{F}^\circ\) covers \(X\).
+\textup{(ii)}   Every open \(\lambda\)-cover of $X$  has a \(\sigma\)-discrete closed 
+refinement \(\mathscr{F}\) such that \(\mathscr{F}^\circ\) covers \(X\).
 
 
-\textup{(iii)}   Every open \(\lambda\)-cover has a \(\sigma\)-locally finite 
+\textup{(iii)}   Every open \(\lambda\)-cover  of $X$ has a \(\sigma\)-locally finite 
 closed refinement \(\mathscr{F}\) such that \(\mathscr{F}^\circ\) covers \(X\).
 
 \textup{(iv)}  \textup{([Jiang 1992]\textsuperscript{\cite{Jiang1992}})}
-Every open \(\lambda\)-cover has a \(\sigma\)-cushioned open refinement.
+Every open \(\lambda\)-cover of $X$  has a \(\sigma\)-cushioned open refinement.
 
-\textup{(iii)}  Every interior-preserving open \(\lambda\)-cover has a
+\textup{(iii)}  Every interior-preserving open \(\lambda\)-cover  of $X$ has a
  \(\sigma\)-closure-preserving closed refinement \(\mathscr{F}\) 
  such that \(\mathscr{F}^\circ\) covers \(X\).
 }
@@ -228,20 +229,20 @@ For any \(T_1\) regular space \(X\), the following are equivalent:
 
 \quad\textup{(i)} \(X\) is \(T_2\) paracompact.
 
-\quad\textup{(ii)} Every open cover has a \(\sigma\)-discrete open refinement.
+\quad\textup{(ii)} Every open cover  of $X$ has a \(\sigma\)-discrete open refinement.
 
-\quad\textup{(iii)} Every open cover has a \(\sigma\)-locally finite open refinement.
+\quad\textup{(iii)} Every open cover  of $X$ has a \(\sigma\)-locally finite open refinement.
 
-\quad\textup{(iv)} Every open cover has a \(\sigma\)-closure-preserving open refinement.
+\quad\textup{(iv)} Every open cover  of $X$ has a \(\sigma\)-closure-preserving open refinement.
 
-\textup{(b)}  \textup{([Michael 1959]\textsuperscript{\cite{Michael1959}}}
+\textup{(b)}  \textup{([Michael 1959]\textsuperscript{\cite{Michael1959}})}
 For any \(T_1\) space \(X\), the following are equivalent:
 
 \quad\textup{(i)} \(X\) is \(T_2\) paracompact.
 
-\quad\textup{(ii)}  Every open cover has a \(\sigma\)-cushioned open refinement.
+\quad\textup{(ii)}  Every open cover  of $X$ has a \(\sigma\)-cushioned open refinement.
 
-\quad\textup{(iii)} Every open cover has a cushioned refinement.\hfill\qedsymbol
+\quad\textup{(iii)} Every open cover has  of $X$ a cushioned refinement.\hfill\qedsymbol
 }
 
 {\corollary{} \label{cor:8.2.10}
@@ -250,9 +251,9 @@ For any $X$ the following are equivalent:
 
 \textup{(i)}  \(X\) is \(\lambda\)-fully normal.
 
-\textup{(ii)}   Every open \(\lambda\)-cover has a locally finite closed refinement.
+\textup{(ii)}   Every open \(\lambda\)-cover  of $X$ has a locally finite closed refinement.
 
-\textup{(iii)}   Every open \(\lambda\)-cover has a closure-preserving closed 
+\textup{(iii)}   Every open \(\lambda\)-cover  of $X$ has a closure-preserving closed 
 refinement.\hfill\qedsymbol
 }
 
@@ -278,7 +279,7 @@ is similar  to that for  Theorem \ref{th:8.1.9}.
 
 (ii) \(\Rightarrow\) (v) and (iii) \(\Rightarrow\) (iv). Clear.
 
-(iv) \(\Rightarrow\) (v) Assume (ii). By Theorem \ref{th:4.1.7}, $X$ is 
+(iv) \(\Rightarrow\) (i) Assume (iv). By Theorem \ref{th:4.1.7}, $X$ is 
 $\lambda$-submetacompact. The Theorem \ref{th:8.1.9}, $X$ is $\lambda$-collectionwise
 normal. Then $X$ is $\lambda$-fully normal. 
 
