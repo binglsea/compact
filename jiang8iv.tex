@@ -147,20 +147,20 @@ cover of $X$. Let us show that $\mathscr{U}$ is normal.
 Let $\mathscr{D} = \bigcup_{m,n < \omega} \mathscr{D}_{m,n}$ be a refinement of
 $\mathscr{U}$, where each $\mathscr{D}_{m,n} = \{D_{m,n,\alpha}: \alpha < \lambda\}$ 
 is a discrete closed family of subsets of 
-$X\setminus \cup\{\cup \mathscr{D}_{p,q}: (p,q) < (m,n)\}$ with 
-$D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \kappa$. We have 
+$X\setminus \bigcup\{\bigcup \mathscr{D}_{p,q}: (p,q) < (m,n)\}$ with 
+$D_{m,n,\alpha} \subset U_\alpha$ for each $\alpha < \lambda$. We have 
 
 \textbf{Claim}. 
- For each $m, n < \omega$ there exists a discrete functionally open family 
- $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha < \lambda\}$ in $X$. such that
+ \textit{For each $m, n < \omega$ there exists a discrete functionally open family 
+ $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha < \lambda\}$ in $X$. such that}
 
-(a) $V_{m,n,\alpha} \subset U_\alpha$ for all $\alpha < \lambda$,
+\textbf{(a)} $V_{m,n,\alpha} \subset U_\alpha$ \textit{ for all } $\alpha < \lambda$,
 
-(b)
+\textbf{(b)}
 $\bigcup_{(p,q)\le(m,n)}(\bigcup \mathscr{D}_{p,q})\subset 
 \bigcup_{(p,q)\le (m,n)}(\bigcup\mathscr{V}_{p,q})$.
 
-\noindent\textsc{Proof}. We use induction on $(\omega\times\omega, <)$.
+\noindent\textsc{Proof of Claim}. We use induction on $(\omega\times\omega, <)$.
 Assume $\mathscr{D}_{00}=\{\emptyset\}$, let $\mathscr{V}_{00}=\{\emptyset\}$.
 Suppose that $\mathscr{V}_{p,q}=\{V_{p,q,\alpha}:\alpha<\lambda\}$ have 
 been constructed for all  $(p,q) < (m,n)$ such that 
@@ -181,13 +181,14 @@ $$\bigcup_{(p,q)\le (m,n)}\left(\bigcup\mathscr{D}_{p,q}\right) \subset
  Thus $\mathscr{V}_{m,n}$ is a discrete family of functionally open sets 
  in $X$ with Properties (a) and (b). We complete the proof of induction.
  
- By the \textsc{Claim}, $\mathscr{V} = \bigcup_{m,n<\omega}\mathscr{V}_{m,n}$ is a 
+ By the Claim, $\mathscr{V} = \bigcup_{m,n<\omega}\mathscr{V}_{m,n}$ is a 
  $\sigma$-discrete functionally open refinement of $\mathscr{U}$.
  By Theorem \ref{th:2.1.6},  %TO_DO no 
   $\mathscr{U}$ is a normal cover.
  
  (ii) $\Rightarrow$ (iii). 
  Suppose $\mathscr{U}$ is a normal $D\omega^2$ $\lambda$-cover of $X$. 
+ By (ii), it is normal.
  Let $\mathscr{G}$ be  normal cover of $X$ such that $\mathscr{\overline{G}}$
 refines $\mathscr{U}$.
  Then $\mathscr{G}$ has a locally finite and $\sigma$-discrete open a refinement
