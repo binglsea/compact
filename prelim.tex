@@ -55,8 +55,8 @@ $$
 (\mathscr{U})_A = \{U_\alpha: \alpha \in \Delta, 
 \ U_\alpha \cap A \neq \varnothing\}; \quad (\mathscr{U})_x = \{U_\alpha: \alpha \in \Delta, \ x \in U_\alpha\}.$$
 $$	
-\text{st}(A, \mathscr{U}) = \bigcup (\mathscr{U})_A, 
-\quad \text{st}(x, \mathscr{U}) = \bigcup (\mathscr{U})_x.$$
+\text{st}(A, \mathscr{U}) = \scalebox{1.2}{$\cup$} (\mathscr{U})_A, 
+\quad \text{st}(x, \mathscr{U}) = \scalebox{1.2}{$\cup$} (\mathscr{U})_x.$$
 $$
 \text{ind}(\mathscr{U})_A = \{\alpha \in \Delta: 
 U_\alpha \cap A \neq \varnothing\}, \quad 
@@ -225,19 +225,24 @@ $$|\operatorname{ind}(
 then $\mathscr{U}$ has a partial cushioned $($and open$)$  refinement 
 $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ such that for any 
 $\Gamma \subset \Delta$, 
-$$\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \Gamma} U_\alpha
-\; \textup{ and } \; \bigcup \mathscr{H} = \bigcup \mathscr{V}.$$  
+$$\overline{\scalebox{1.2}{$\cup$}_{\alpha \in \Gamma} H_\alpha} \subset \scalebox{1.2}{$\cup$}_{\alpha \in \Gamma} U_\alpha
+\; \textup{ and } \; \scalebox{1.2}{$\cup$} \mathscr{H} = 
+ \scalebox{1.2}{$\cup$}  \mathscr{V}.$$  
 	
 %\textup{(iii)} If $\mathscr{U}$ has a point-finite refinement $\mathscr{V}$, then we may assume that
 %	$\mathscr{V}$ is a precise point-finite refinement of $\mathscr{U}$.
 } % end of lemma
 
-\begin{proof} Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$ (or such that 
+\begin{proof} (i) Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a locally finite open partial refinement $\mathscr{V}$  (and such that 
 	$\overline{\mathscr{V}}$ refines $\mathscr{U}$). For every $V\in\mathscr{V}$, pick 
-	a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$. For $\alpha \in \Delta$, let
+	a $\delta(V)\in\Delta$ such that $V\subset U_{\delta(V)}$
+	(and $\overline{V}\subset U_{\delta(V)}$). 
+	For $\alpha \in \Delta$, let
 	$H_\alpha = \bigcup\{V\in\mathscr{V}: \delta(V) = \alpha\}$.   
 	Then $\mathscr{H} = \{H_\alpha: \alpha \in \Delta\}$ is a desired 
 	locally finite open partial refinement of $\mathscr{U}$.
+	
+	(ii) Similar to (i).
 \end{proof} 
 
 {\definition{} \label{def:1.1.6}
@@ -277,8 +282,8 @@ $$\overline{\bigcup_{\alpha \in \Gamma} H_\alpha} \subset \bigcup_{\alpha \in \G
 	$\operatorname{st}(x, \mathscr{W}) \subset V_x$. Then 
 	$a \in W \subset \operatorname{st}(x, \mathscr{W}) \subset V_x$, and 
 	$V_x \subset \operatorname{st}(a, \mathscr{V}) \subset U$. It follows that:
-	$$\operatorname{st}(W, \mathscr{W}) = \bigcup_{x \in W} 
-	\operatorname{st}(x, \mathscr{W}) \subset \bigcup_{x \in W} V_x 
+	$$\operatorname{st}(W, \mathscr{W}) =  \scalebox{1.2}{$\cup$}_{x \in W} 
+	\operatorname{st}(x, \mathscr{W}) \subset  \scalebox{1.2}{$\cup$}_{x \in W} V_x 
 	\subset\operatorname{st}(a, \mathscr{V}) \subset U.$$  
 	Hence $\mathscr{W}$ star-refines $\mathscr{U}$.  
 	
@@ -370,10 +375,10 @@ We will prove that a space is $\lambda$-paracompact iff it is
 $\lambda$-$\theta^*$-refinable 
 (Theorem \ref{th:8.2.11}), % TO_DO
 and is $\lambda$-fully normal iff it is $\lambda$-$\varepsilon^*$-refinable 
-(Theorem \ref{th:8.2.11}). % TO_DO
+(Theorem \ref{th:8.2.11}). 
 Burke proved that a space is subparacompact iff it is 
-$\varepsilon$-refinable.
-%(Theorem \ref{th:5.1.12}). %TO_DO
+$\varepsilon$-refinable
+(Theorem \ref{th:4.1.12}). 
 
 
 
