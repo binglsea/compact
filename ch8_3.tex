@@ -232,7 +232,7 @@ has a star-finite functionally open refinement.
 (i) $\Rightarrow$ (ii). Assume $X$ and let $\mathscr{U}= \{U_\alpha: \alpha<\lambda\}$ 
 be an open cover of $X$. Then $\mathscr{U}$ has a star-finite open refinement
 $\mathscr{G} = \{G_\beta : \beta \in \Gamma\}$. $\mathscr{G}$ is a 
-point-finite open refinement of itselocally finite, 
+point-finite open refinement of itself,
 hence $\mathscr{G}$ is an $C^*\omega^2$-cover. By Theorem \ref{th:5.2.8},
  there exists a functionally open cover $\mathscr{V} = \{\beta: \beta\in \Gamma\}$
 of $X$ such that
@@ -244,14 +244,13 @@ refinement of $\mathscr{U}$.
 
 (iii) $\Rightarrow$ (iv). 
 Assume (iii),  
-let $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ be an open cover of $X$. Let $\mathscr{V}$
+We first show that $X$ is shrinkable.
+Let $\mathscr{U} = \{U_\alpha : \alpha \in \lambda\}$ be an open cover of $X$. Let $\mathscr{V}$
 be a star-countable open refinement of $\mathscr{U}$ such that 
 $\mathscr{\overline{V}}$
 refines $\mathscr{U}$. 
-
-We first show that $X$ is shrinkable.
 By Lemma \ref{lem:8.3.4}, 
-$\mathscr{V}$ can be expressed
+$\mathscr{V}$ can be expressed as
 $\mathscr{V} = \bigcup_{\beta\in\Delta} \mathscr{V}_\beta$ where each $\mathscr{V}_\beta= \{V_{\beta,n}: n < \omega\}$ is countable
 and $(\bigcup \mathscr{V}_\beta) \cap (\bigcup \mathscr{V}_\gamma) = \emptyset$ whenever $\beta \neq \gamma$. For $n< \omega$, let
 $\mathscr{G}_n = \{V_{\beta, n}: \beta\in \Delta\}$. Then each 
@@ -260,7 +259,7 @@ By Lemma \ref{lem:1.1.5}, there exists a discrete open
 family $\mathscr{H}_n=\{H_{n,\alpha}:\alpha < \lambda\}$ such that 
 $\bigcup\mathscr{H}_n = \bigcup\mathscr{G}_n $, and 
 $\overline{H}_{n,\alpha}\subset U_\alpha$ for each $\alpha < \lambda$.
-Then $\{H_{n,\alpha}:\alpha < \lambda\} = \bigcup\mathscr{H}_n = \bigcup\mathscr{G}_n
+Then $\{H_{n,\alpha}:n < \omega, \alpha < \lambda\} = \bigcup\mathscr{H}_n = \bigcup\mathscr{G}_n
 =\mathscr{V}$. By Theorem \ref{th:5.2.7}, $X$ is $\lambda$-shrinkable.
 
 Now, by the proof above, let 
@@ -268,9 +267,9 @@ $\mathscr{V} = \bigcup_{\beta\in\Delta}\mathscr{V}_\beta$ where
 $\mathscr{V}_\beta =\{V_{\beta,n}: n<\omega\}$ is countable and 
 $(\bigcup\mathscr{V}_\beta)\cap(\bigcup\mathscr{V}_\gamma)=\emptyset$
 whenever $\beta\ne\gamma$. For $\beta\in\Delta$, let 
-$K_\beta = (\bigcup\mathscr{V}_\beta)$. Then 
+$K_\beta = \bigcup\mathscr{V}_\beta$. Then 
 $\mathscr{K}=\{K_\beta:\beta\in\Delta\}$ is a disjoint open and closed cover of $X$.
-For each $\beta\in \Delta$, there exists $\alpha_n <\lambda$ such that 
+For each $\beta\in \Delta, n <\omega$, there exists $\alpha_n <\lambda$ such that 
 $V_{\beta, n}\subset U_{\alpha_n}$. Then  
 $K_\beta\subset \bigcup\{U_{\alpha_n}: n < \omega\}$. By Lemma \ref{lem:8.3.6}, 
 $\mathscr{U}$ has a star-finite functionally open refinement.
