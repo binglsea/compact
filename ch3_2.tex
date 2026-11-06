@@ -32,7 +32,7 @@ An open cover $\mathscr{U}$ of $X$ is a $D\omega$-cover if $\mathscr{U}$
 has a refinement $\mathscr{F} = \bigcup_{n < \omega} \mathscr{F}_n$ where each 
 $\mathscr{F}_n$ is a family of relatively discrete and closed in subspace 
 $X \setminus\bigcup_{i< n}(\cup \mathscr{F}_i)$, and 
-$(\cup\mathscr{F}_m)\bigcap(\cup\mathscr{F}_n) = \emptyset$ for any $m\ne n$.
+$(\cup\mathscr{F}_m)\bigcap(\cup\mathscr{F}_n) = \varnothing$ for any $m\ne n$.
 The family $\mathscr{F}$ is called a 
 \uwave{$D\omega$-refinement}
 \index{$D\omega$-refinement| \S\ref{def:3.2.2}\hfill}
@@ -61,7 +61,7 @@ or closed $(\mathcal{C})$.
 if $\mathscr{U}$ has a refinement 
 $\mathscr{E} = \bigcup_{\beta < \xi} \mathscr{E}_\beta$, which satisfies
 	
-\textup{(a)} $(\cup\mathscr{E}_\beta) \bigcap (\cup\mathscr{E}_{\beta'}) = \emptyset$ 
+\textup{(a)} $(\cup\mathscr{E}_\beta) \bigcap (\cup\mathscr{E}_{\beta'}) = \varnothing$ 
 if $\beta \ne \beta'$;
 
 \textup{(b)} for each $\beta < \xi$, $\mathscr{E}_\beta$ is a relatively $\mathcal{P}$ family 
@@ -95,9 +95,9 @@ A point-finite open cover of $X$ is a $D\omega$-cover.
 
 \begin{proof}
 Suppose $\mathscr{U} = \{ U_\alpha: \alpha \in \Delta \}$ is a point-finite open 
-cover of $X$. For $n < \omega$, let $D_0= \emptyset$ and
+cover of $X$. For $n < \omega$, let $D_0= \varnothing$ and
 $$D_n = \{ x \in X: |\operatorname{ind}(\mathscr{U})_x| \le n \},  \textup{ when } n \ge 1.$$
-\noindent Then $D_n$ is closed. Let $F(\emptyset, 0) = \emptyset$. 
+\noindent Then $D_n$ is closed. Let $F(\varnothing, 0) = \varnothing$. 
 For $n \ge 1$, let
 \begin{gather*}
 	F(S, n) = D_n\cap(\bigcap_{\alpha \in S} U_\alpha) \text{ for any } S \in [\Delta]^n, \\
@@ -125,7 +125,7 @@ such that $Y_n \setminus D_n \subset G_n$. Hence $G_n$ is open in $Y_n$.
 To see (2), let $x \in \bigcup(\mathscr{F}_n\vert{}_{Y_n})$. Suppose $S_0 \in [\Delta]^n$ 
 such that $x \in F(S_0, n)$. Then $W = Y_n \cap (\bigcap_{\alpha \in S_0} U_\alpha)$ 
 is a neighborhood of $x$ in $Y_n$. 
-For each $S \in [\Delta]^n \setminus \{S_0\}$, $W \cap F(S, n) = \emptyset$. 
+For each $S \in [\Delta]^n \setminus \{S_0\}$, $W \cap F(S, n) = \varnothing$. 
 So, $\mathscr{F}_n\vert{}_{Y_n}$ is discrete at $x$.
 \end{proof}
 

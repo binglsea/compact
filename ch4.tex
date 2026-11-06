@@ -66,9 +66,9 @@ V(t, \alpha) \subset U_\alpha \textup{ and } V(t, \lambda+\alpha) \subset U_\alp
 \textup{ for each } \alpha < \lambda.      \label{eq:4.1.2.1}
 \end{equation}
 
-\noindent Let $V(\emptyset, \alpha) = \emptyset$ and $V(\emptyset, \lambda + \alpha) = U_\alpha$ 
+\noindent Let $V(\varnothing, \alpha) = \varnothing$ and $V(\varnothing, \lambda + \alpha) = U_\alpha$ 
 for each $\alpha < \lambda$. 
-Let $\mathscr{V}(\emptyset) = \{V(\emptyset, \beta): \beta < \lambda \cdot 2\}$. 
+Let $\mathscr{V}(\varnothing) = \{V(\varnothing, \beta): \beta < \lambda \cdot 2\}$. 
 Suppose that $n < \omega$ and that we have defined the open covers 
 $\mathscr{V}(s) = \{V(s, \beta): \beta < \lambda \cdot 2\}$ for each $s \in \omega^{n-1}$.
 For each $s \in \omega^{n-1}$, $\mathscr{V}(s)$ has a point-star $\dot{F}$-refining sequence $\{\mathscr{L}_{s \oplus k}\}_{k < \omega}$ by semi-open covers of $X$. 
@@ -124,7 +124,7 @@ Since $\omega^{<\omega}$ is countable, to complete the proof, it suffices to sho
 	\{\mathscr{V}(t): t \in \omega^{<\omega}\} \text{ is a } \theta\text{-sequence.}  \label{eq:4.1.2.5}
 \end{equation}
 \textsc{Proof of \eqref{eq:4.1.2.5}}. Let $x \in X$. There exists a sequence $\{s_n\}$ such that 
-$s_0 = \emptyset\in \omega^0, s_1 = s_0\oplus k, 
+$s_0 = \varnothing\in \omega^0, s_1 = s_0\oplus k, 
 \cdots, s_{n+1} = s_n \oplus k_n$ where $s_n \in \omega^n, k_n < \omega$, 
 and such that $\mathscr{L}_{s_{n+1}}$ is a point-star $\dot{F}$-refinement of
 $\mathscr{V}(s_n)$ at $x$ for each $n < \omega$.
@@ -170,7 +170,7 @@ If this true, then \eqref{eq:4.1.2.5} is true and we complete the proof.
 \noindent\textsc{Proof of \eqref{eq:4.1.2.7}}. 
 Let $C= \operatorname{ind}(\mathscr{V}(s_{m+1}))_x$. By \eqref{eq:4.1.2.7}, $C = \{\alpha < \lambda: x \in V(s_{m+1}, \alpha)\}$. For $n\le m$, let $B_n = \{\alpha < \lambda: \lambda + \alpha\in A_n\}$. Since each
 $B_n $ is finite, it suffices to show that $C \subset \bigcup_{n=1}^{m} B_n$. 
-Let $\alpha \in C$. Since $x\notin \emptyset = V(s_0, \alpha)$, there exists $p$ such that 
+Let $\alpha \in C$. Since $x\notin \varnothing = V(s_0, \alpha)$, there exists $p$ such that 
 $0 \le p \le m$ and $x \in \mathscr{V}({s_{p+1}}, \alpha)\setminus  \mathscr{V}{s_{p}}, \alpha)$.
 By \eqref{eq:4.1.2.2}, 
 $x \in \operatorname{st}(X \setminus \bigcup_{\beta \ne \lambda + \alpha}\mathscr{V}(s_p, \beta),
@@ -241,7 +241,7 @@ $$\mathscr{U}(n, \alpha) = \{U_\gamma: \gamma \le \alpha\} \cup
 By the induction hypothesis, it has a pointwise W-refining sequence 
 $\{\mathscr{W}_l(n, \alpha): l < \omega\}$ by open covers of $X$.
 For $n, h < \omega$, let 
-$$F_{n,0} = \emptyset \text{ and }
+$$F_{n,0} = \varnothing \text{ and }
 F_{n,h} = \{x \in X: |\operatorname{ind}(\mathscr{V}_n)_x| \le h\} \text{ for } h \ge 1.$$
 Then each $F_{n,h}$ is closed.
  For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\text{ind}(\mathscr{V}_n)_y)$.

@@ -45,7 +45,7 @@ functionally open. To see that \(\mathscr{G}_n\) is locally finite, let \(x\in X
 \(X\setminus\overline{H}_n\in\operatorname{top}(x)\) 
 which intersects no member of \(\mathscr{G}_n\). 
 If \(x\in V_{n,\beta}\) for some \(\beta\in\Delta_n\), then the set
-\(\{\alpha\in\Delta_n: V_{n,\beta}\cap (H_n\cap V_{n,\alpha})\neq\emptyset\}\) 
+\(\{\alpha\in\Delta_n: V_{n,\beta}\cap (H_n\cap V_{n,\alpha})\neq\varnothing\}\) 
 is finite because \(\mathscr{V}_n\) is
 star-finite. Hence each \(\mathscr{G}_n\) is locally finite. 
 By Theorem \ref{th:2.1.3}, 
@@ -61,11 +61,11 @@ that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{S}\) is
 $\operatorname{ind}(\mathscr{S})_{G_0} = \{n_1, \cdots, n_k\}$
  is finite. For each \(i\le k\), \(\mathscr{S}_{n_i}\)
 is locally finite, so \(\exists \, G_i\in\operatorname{top}(x)\) such that the set
-$$D_i=\{\alpha\in\Delta_{n_i}: G_i\cap H_{n_i}\cap V_{n_i,\alpha}\neq\emptyset\}$$
+$$D_i=\{\alpha\in\Delta_{n_i}: G_i\cap H_{n_i}\cap V_{n_i,\alpha}\neq\varnothing\}$$
 
 \noindent is finite. Let \(G=\bigcap_{i=0}^k G_i\), and let
 \[C=\{(\alpha, n):  \alpha\in \Delta_n, n < \omega,  \,
-G\cap(S_{n}\cap H_n\cap V_{n,\alpha})\neq\emptyset\}.\]
+G\cap(S_{n}\cap H_n\cap V_{n,\alpha})\neq\varnothing\}.\]
 \noindent It is easy to see that \(C\subset\bigcup_{i=1}^k (D_i\times\{n_i\})\). Thus \(C\) is finite,
 so \(\mathscr{R}\) is locally finite. By Theorem \ref{th:2.1.6}, \(\mathscr{U}\) is a normal cover.
 \end{proof}
@@ -171,7 +171,7 @@ Then, we have
 \bigcup_{(p,q)<(m,n)} \left(\bigcup\mathscr{F}_{p,q}\right) = 
     \bigcup_{(p,q)<(m,n)} \left(\bigcup\mathscr{V}_{p,q}\right) 
     \text{ for each } m, n < \omega \label{eq:5.1.4.1} \\
- \left(\bigcup\mathscr{F}_{p,q}\right) \cap  \left(\bigcup\mathscr{F}_{m,n}\right) = \emptyset
+ \left(\bigcup\mathscr{F}_{p,q}\right) \cap  \left(\bigcup\mathscr{F}_{m,n}\right) = \varnothing
    \; \text{ if } (p,q) \ne (m,n).  \label{eq:5.1.4.2} 
 \end{gather}
 Since $\mathscr{V}$ is a $D\omega^2$-refinement of $\mathscr{U}$,
@@ -196,16 +196,16 @@ $\overline{\theta}$-refinement of $\mathscr{U}$.
 For $m,n < \omega$, there exists a unique pair $(k, l)$ such that $\varphi(k, l) = m$.
 Let
 \begin{gather*}
-	D_k^0 = \emptyset, \\
+	D_k^0 = \varnothing, \\
 	D_k^l = \{x\in X: 0 < |\{\alpha\in \Gamma_k: x\in G_{k, \alpha}\}| \le l\} \text { for } l \ge 1, \\
-	H_0 = \emptyset, \\
+	H_0 = \varnothing, \\
 	H_n = \{x\in X: |\{i \in \omega: x\in \bigcup\mathscr{G}_i\}| \le n\} \text { for } n \ge 1. 
 \end{gather*}
 For $B\in [\Gamma_k]^l, S\in[\omega]^n$, let
 \begin{gather*}
-	G(\emptyset, k, 0) = \emptyset, \\
+	G(\varnothing, k, 0) = \varnothing, \\
 	G(B, k, l) = \bigcap_{\alpha\in B} G_{k, \alpha} \text{ for } n \ge 1, \\
-	L(\emptyset, 0) = \emptyset, \\
+	L(\varnothing, 0) = \varnothing, \\
 	L(S, n) = \bigcap_{i\in S} (\bigcup \mathscr{G}_i) \, \text{ for } n \ge 1, \\
 	P(B, S, m, n) = G(B, k, l) \cap D_k^l \cap L(S, n) \cap H_n, \\
 	\mathscr{P}_{m, n} = \{P(B, S, m, n): B\in [\Gamma_k]^l, 
@@ -249,7 +249,7 @@ Hence $j \ge n$.
 
 \textsc{Case 1}. Suppose $j > n$. Then $x\notin H_n$ and $W = Y \setminus H_n$ 
 is a neighborhood of $x$ in $Y$ such that 
-$W \cap (\bigcup \mathscr{P}_{m, n})\subset (X\setminus H_n)\cap H_n = \emptyset$,
+$W \cap (\bigcup \mathscr{P}_{m, n})\subset (X\setminus H_n)\cap H_n = \varnothing$,
 so $W\subset G$.
 
 \textsc{Case 2}. Suppose $j = n$. There exists $S_0\in[\omega]^n$ such that 
@@ -264,12 +264,12 @@ for each $B\subset [\Gamma_r]^l$, $S_0\in [\omega]^r$,
 \begin{gather*}
 W\cap P(B, S, m, n) \subset
   \left( \bigcap_{i\in S_0} \left(\bigcup \mathscr{G}_i\right)  \right)
-  \cap\left(\bigcup \mathscr{G}_k\right) \cap H_n = \emptyset.
+  \cap\left(\bigcup \mathscr{G}_k\right) \cap H_n = \varnothing.
 \end{gather*}
 Then $W\subset G$.
 
 \textsc{Case 2}b.
-If $x\in \mathscr{G}_k$, then $A_{k} = \{\alpha\in \Gamma_k: x\in G_{k, \alpha}\} \ne \emptyset$. 
+If $x\in \mathscr{G}_k$, then $A_{k} = \{\alpha\in \Gamma_k: x\in G_{k, \alpha}\} \ne \varnothing$. 
 We have 
 \begin{gather}
 	\vert{}A_k\vert{} > l. \label{eq:5.1.5.3}
@@ -288,7 +288,7 @@ For each $B\in [\Gamma_k]^l, S\in [\omega]^n$,
 since $B_1  = q > l$, 
 \begin{gather*}
 W \cap P(B, S, m, n) \subset \left(\bigcap_{\alpha \in B_1} G_{k,\alpha}\right) \cap D_k^l 
-= \emptyset.
+= \varnothing.
 \end{gather*} 
 This completes the proof of Claim 1.
 
@@ -298,9 +298,9 @@ such that $x \in P(B_0, S_0, m, n)$.
 The set $W = Y\cap G(B_0, k, l) \cap L(S_0, n)$ is a neighborhood of $x$ in $Y$.
 Let  $B\in [\Gamma_k]^l$ and $S\in [\omega]^n$ with $(B, S) \neq (B_0, S_0)$.
 If $B \neq B_0$, then 
-$$W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \emptyset.$$
+$$W \cap P(\beta, S, m, n) \subset G(B_0, k, l) \cap G(B, k, l) \cap D_k^l = \varnothing.$$
 If $S \neq S_0$, then 
-$$W \cap P(B, S, m, n) \subset L(S_0, n) \cap L(S,n)\cap H_n = \emptyset.$$
+$$W \cap P(B, S, m, n) \subset L(S_0, n) \cap L(S,n)\cap H_n = \varnothing.$$
 Thus, $\mathscr{P}_{m,n}|_Y$ is discrete at $x$. We completed the proof of Claim 2.
 \end{proof}
 
