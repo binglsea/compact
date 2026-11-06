@@ -296,16 +296,19 @@ Since $\mathscr{V}$ is locally finite, $\mathscr{\overline{V}}$ is a star-finite
 (ii) $\Rightarrow$ (i). Clear.
 
 (iii) $\Rightarrow$ (i).
-Assume (iii) and let $\mathscr{U}$ be an open cover of $X$.
-Let $\mathscr{B}$ be a star-countable and $\sigma$-closure-preserving closed refinement of $\mathscr{U}$.
-By Lemma 8.3.4 let $\mathscr{B} = \bigcup_{\beta \in \Delta} \mathscr{B}_\beta$ where each $\mathscr{B}_\beta$ is countable and $(\bigcup \mathscr{B}_\beta) \cap (\bigcup \mathscr{B}_\gamma) = \emptyset$ whenever $\beta \neq \gamma$.
-For now, let $\mathscr{G}_n = \{B_{\beta,n} : \beta \in \Delta\}$.
-Then $\mathscr{G}_n$ is $\sigma$-closure-preservingclosed and $\overline{\mathscr{G}}_n$ 
+Assume (iii) and let  $\mathscr{U}= \{U_\alpha: \alpha<\lambda\}$  be an open cover of $X$.
+Let $\mathscr{B}$ be a star-countable and closure-preserving closed refinement of $\mathscr{U}$.
+By Lemma 8.3.4 let $\mathscr{B} = \bigcup_{\beta \in \Delta} \mathscr{B}_\beta$ where each $\mathscr{B}_\beta=\{B_{\beta,n} : n < \omega\}$ is countable and $(\bigcup \mathscr{B}_\beta) \cap (\bigcup \mathscr{B}_\gamma) = \emptyset$ whenever $\beta \neq \gamma$.
+For $n<\omega$, let $\mathscr{G}_n = \{B_{\beta,n} : \beta \in \Delta\}$.
+Then $\mathscr{G}_n$ is closure-preserving closed and $\overline{\mathscr{G}}_n$ 
 refines $\mathscr{U}$.
-By Lemma 1.1.5 There exists a $\sigma$-closure-preserving closed family $\mathscr{A}_n = \{A_{\alpha,n}\}$ such thet $\overline{A}_{\alpha,n} \subset U_\alpha$ for all $n, \alpha$, and $\bigcup \mathscr{A}_n = \bigcup \mathscr{B}_n$ for each $n$.
-For each $\alpha$, let $F_\alpha = \overline{\bigcup_{n < \omega} A_{\alpha,n}}$.
+By Lemma 1.1.5 There exists a closure-preserving closed family 
+$\mathscr{A}_n = \{A_{\alpha,n}: \alpha < \lambda\}$ such that $\overline{A}_{\alpha,n} \subset U_\alpha$ 
+for all $n<\omega, \alpha<\lambda$, and $\bigcup \mathscr{A}_n = \bigcup \mathscr{B}_n$ for each $n$.
+For each $\alpha<\lambda$, let $F_\alpha = \overline{\bigcup_{n < \omega} A_{\alpha,n}}$.
 Then $F_\alpha \subset U_\alpha$.
-Thus $\mathscr{U}$ has a closed $\dots$
+Thus $\mathscr{U}$ has a closed shrink
+$\{F_\alpha: \alpha < \lambda\}$ and $X$ is $\lambda$-shrinkable.
 
 
 be a cover of $X$ ... star-countable and closure-preserving closed refinement of $\mathscr{U}$.
