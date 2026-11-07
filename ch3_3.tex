@@ -152,7 +152,7 @@ $x\in\overline{V_n} \subset U_n$, so there exists $H_n \in \operatorname{top}(x)
 such that $\vert{}\operatorname{ind}(\mathscr{G}_n)_{H_n}\vert{} < \omega$. Then
 $H = R \cap(\bigcap_{n \in C} H_n )\in \operatorname{top}(x)$.
 It is easy to check that 
-$$\operatorname{ind}(\mathscr{G})_H \subset \bigcup_{n \in C} \operatorname{ind}(\mathscr{G}_n)_{H_n}.$$ 
+$$\operatorname{ind}(\mathscr{G})_H \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{n \in C} \operatorname{ind}(\mathscr{G}_n)_{H_n}.$$ 
 \noindent Thus $\operatorname{ind}(\mathscr{G})_H$ is finite, 
 so $\mathscr{G}$ is a locally finite open expansion of $\mathscr{F}$.
 \end{proof}
@@ -168,7 +168,7 @@ is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
 If $X$ is $\lambda$-discretely subexpandable, then for every open 
 $\lambda$-cover $\mathscr{U}$ of $X$ there exists a $\sigma$-discrete closed partial refinement 
 $\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that 
-$$\bigcup \widetilde{\mathscr{U}} \subset A \subset \bigcup \mathscr{P},$$
+$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset A \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{P},$$
 where $\widetilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
 }
 
@@ -183,16 +183,16 @@ $\widetilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $n<\omega,
 For each $n < \omega$, $\{\bigcup \widetilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There exists an $\varepsilon$-sequence 
 $\{\mathscr{L}_k = \{Q_{n,k}, W_{n,k}\}: k < \omega\}$ of open expansions such that 
 
-$$\bigcup \widetilde{\mathscr{U}} \subset Q_{n,k} \text{ and }
-X \setminus \bigcup \mathscr{G}_n \subset W_{n,k}.$$
+$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset Q_{n,k} \text{ and }
+X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_n \subset W_{n,k}.$$
 
 \noindent For each $x \in X$, there exists $h < \omega$ such that $x$ is contained in 
 at most one member of $\{Q_{n, h}, W_{n, h}\}$. 
 Let $Q_n = \bigcap_{k < \omega} Q_{n,k}$, $W_n = \bigcap_{k < \omega} W_{n,k}$. We have:
 
 \begin{gather}
-\bigcup \widetilde{\mathscr{U}} \subset Q_n, \;
-X \setminus \bigcup \mathscr{G}_n \subset W_n \; \text{ and } \;
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset Q_n, \;
+X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_n \subset W_n \; \text{ and } \;
 Q_n \cap W_n = \varnothing \;
  \text{ for } n < \omega.        \label{eq3.3.6.1}
 \end{gather}
@@ -210,7 +210,7 @@ There exists $m < \omega$ such that $|\operatorname{ind}(\mathscr{G}_m)_x| \le 1
 Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some $h < \omega$. 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
-$$x \in G_{\alpha_0, m} \setminus \bigcup_{\gamma \in\lambda\setminus \{\alpha_0\}} G_{\gamma, m} \setminus \bigcup_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = 
+$$x \in G_{\alpha_0, m} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma \in\lambda\setminus \{\alpha_0\}} G_{\gamma, m} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = 
 \widetilde{G}_{\alpha_0, m} \in \widetilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
 Thus $A \subset \bigcup \mathscr{P}$.
 \end{proof} 
@@ -231,7 +231,7 @@ space $X$. Let
 Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
 
 \textbf{Claim.} \textit{For each $n < \omega$, there exists a $\sigma$-discrete closed partial refinement $\mathscr{P}_n$ and a $G_\delta$-set $A_n \subset X$ such that}
-$$F_n \subset A_n \subset \bigcup \mathscr{P}_n.$$
+$$F_n \subset A_n \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{P}_n.$$
 \textsc{Proof of Claim}. We use induction on $n < \omega$. 
 Let $A_0 = \varnothing$ and $\mathscr{P}_0 = \{\varnothing\}$. 
 Assume that $A_n$ and $\mathscr{P}_n$ have been defined. 
@@ -267,15 +267,15 @@ $S_0 \in [\lambda]^{n+1}$,
 $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
 \begin{gather}
 x \in \bigcap_{\alpha \in S_0} U_\alpha 
-\setminus \bigcup \left\{ \bigcap_{\alpha \in S} U_\alpha: S\neq S_0 \right\} 
-\setminus \bigcup_{\alpha \in \lambda} (Q_k \cap U_\alpha) 
+\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left\{ \bigcap_{\alpha \in S} U_\alpha: S\neq S_0 \right\} 
+\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \lambda} (Q_k \cap U_\alpha) 
 = \widetilde{\bigcap_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{eq:3.3.7.2}
 \end{gather}
 \noindent So \eqref{eq:3.3.7.1} holds.
 
 By \eqref{eq:3.3.7.1}, for each $k < \omega$,
 $$F_{n+1} \subset (F_{n+1} \setminus Q_k) \cup Q_k \subset
-(\bigcup \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup Q_k.$$
+(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup Q_k.$$
 So $F_{n+1} \subset A_{n+1}$. 
 To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, 
 let $x \in A_{n+1}$. If $x \in A_n$, then 
