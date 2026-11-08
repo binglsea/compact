@@ -75,12 +75,12 @@ For each $s \in \omega^{n-1}$, $\mathscr{V}(s)$ has a point-star $\dot{F}$-refin
 We now define, for all $s \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda$:
 
 \begin{gather}
-V(s \oplus k, \alpha) = V(s, \alpha) \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left( U_\alpha \bigcap 
+V(s \oplus k, \alpha) = V(s, \alpha) \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left( U_\alpha \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
 \text{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \ne\lambda+ \alpha} V(s, \beta), 
 \mathscr{L}_{s \oplus k} \right)^\circ \right),      \label{eq:4.1.2.2} \\
-V(s \oplus k, \lambda + \alpha) = U_\alpha \bigcap 
+V(s \oplus k, \lambda + \alpha) = U_\alpha \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
 \left( \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \lambda + \alpha} V(s, \beta) \right) 
-\bigcap \text{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha} V(s, \beta), 
+\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \text{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha} V(s, \beta), 
 \mathscr{L}_{s \oplus k} \right)^\circ.   \label{eq:4.1.2.3}
 \end{gather}
 Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ 
@@ -106,14 +106,14 @@ for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \alpha_0) \subset U_{\
 \begin{enumerate}
 \item[(a)] If $x \notin \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.2}
-	\[ x \in U_{\alpha_{0}} \bigcap \operatorname{st}\left(x \setminus 
+	\[ x \in U_{\alpha_{0}} \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \operatorname{st}\left(x \setminus 
 	\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \ne \lambda + \alpha_{0}} V(s, \beta), 
 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
 	\subset V(t, \alpha_{0}) \]
 \item[(b)] If $x \in \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.3}
-	\[ x \in U_{\alpha_{0}} \bigcap \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
-	\bigcap \operatorname{st}\left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
+	\[ x \in U_{\alpha_{0}} \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
+	\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \operatorname{st}\left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
 	\subset V(t, \beta_0) \]
 \end{enumerate}
 Thus $\mathscr{V}(t)$ covers $X$. 
@@ -251,7 +251,7 @@ We have
 
 \noindent For each $l = 0, 1, \dots, h$, let $W_l(n, y)$ be a member of $\mathscr{W}_l(n, \delta(y, n))$ containing $y$.
 Let 
-$$H(n, h, y) = V(n, \delta(y, n)) \cap \bigcap_{l=0}^{h} W_l(n, y).$$ 
+$$H(n, h, y) = V(n, \delta(y, n)) \cap \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^{h} W_l(n, y).$$ 
 \noindent Then $H(n, h, y)$ are open sets containing $y$.
 Let 
 $$\mathscr{H}_{n,h} = \{H(n, h, y): y \in F_{n,h}\} \cup \{X \setminus F_{n,h}\}.$$
@@ -355,7 +355,7 @@ $\mathscr{U}$,
 (iii) $\Rightarrow$ (iv). Assume (iii) and let $\mathscr{U}$ be an interior-preserving 
 $\lambda$-cover of $X$. By (iii), $\mathscr{U}^F$ has a $\sigma$-closure-preserving closed
 refinement $\mathscr{P} = \bigcup_{n<\omega}\mathscr{P}_n$. For  $n<\omega, x\in X$, let
-$$V_n(x)= \bigcap (\mathscr{U})_x \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\{P\in\mathscr{P}_n: x\notin P\}.$$
+$$V_n(x)= \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} (\mathscr{U})_x \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\{P\in\mathscr{P}_n: x\notin P\}.$$
 \noindent $x\in V_n(x)$ and each $\mathscr{V}_n = \{V_n(x): x \in X\}$ is an 
 interior-preserving open cover of $X$. To see that 
 $\{\mathscr{V}_n: n < \omega\}$ is a pointwise W-refining sequence for 

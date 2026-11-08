@@ -204,9 +204,9 @@ Let
 For $B\in [\Gamma_k]^l, S\in[\omega]^n$, let
 \begin{gather*}
 	G(\varnothing, k, 0) = \varnothing, \\
-	G(B, k, l) = \bigcap_{\alpha\in B} G_{k, \alpha} \text{ for } n \ge 1, \\
+	G(B, k, l) = \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in B} G_{k, \alpha} \text{ for } n \ge 1, \\
 	L(\varnothing, 0) = \varnothing, \\
-	L(S, n) = \bigcap_{i\in S} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i) \, \text{ for } n \ge 1, \\
+	L(S, n) = \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{i\in S} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i) \, \text{ for } n \ge 1, \\
 	P(B, S, m, n) = G(B, k, l) \cap D_k^l \cap L(S, n) \cap H_n, \\
 	\mathscr{P}_{m, n} = \{P(B, S, m, n): B\in [\Gamma_k]^l, 
 	   S\in[\omega]^n, \text{ and } \varphi(k, l) = m\}.
@@ -263,7 +263,7 @@ $W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that
 for each $B\subset [\Gamma_r]^l$, $S_0\in [\omega]^r$,
 \begin{gather*}
 W\cap P(B, S, m, n) \subset
-  \left( \bigcap_{i\in S_0} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i\right)  \right)
+  \left( \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{i\in S_0} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i\right)  \right)
   \cap\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_k\right) \cap H_n = \varnothing.
 \end{gather*}
 Then $W\subset G$.
@@ -287,7 +287,7 @@ The set $W = Y\cap G(B_1, k, q)$ is a neighborhood of $x$ in $Y$.
 For each $B\in [\Gamma_k]^l, S\in [\omega]^n$, 
 since $B_1  = q > l$, 
 \begin{gather*}
-W \cap P(B, S, m, n) \subset \left(\bigcap_{\alpha \in B_1} G_{k,\alpha}\right) \cap D_k^l 
+W \cap P(B, S, m, n) \subset \left(\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in B_1} G_{k,\alpha}\right) \cap D_k^l 
 = \varnothing.
 \end{gather*} 
 This completes the proof of Claim 1.

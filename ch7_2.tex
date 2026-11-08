@@ -334,12 +334,12 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  \noindent For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
  By (2),
  \begin{gather}
- \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \bigcap 
+ \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
   \left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.3.1}
  \end{gather}
  Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
  it follows from the above \eqref{eq:7.2.10.3.1} that  %TO_DO What is (C)?
- $$G(x, m)\bigcap V(s_{m+1}, \beta) \subset G(x, m) \bigcap 
+ $$G(x, m)\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} V(s_{m+1}, \beta) \subset G(x, m) \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
     \operatorname{st}\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \varnothing.$$
  
  \textbf{(4)} $\beta_{m} < \lambda$.
@@ -452,7 +452,7 @@ $y\in W_l(n, \delta(y, n, k), \beta_l) \in (\mathscr{W}_l(n, \delta(y, n, k)))_y
 Let 
 \begin{gather*}
 H(y, n, k) = V(n, \delta(y, n, k)) \cap \left(
-	\bigcap_{l=0}^k W_l(n, \delta(y, n, k), \beta_l)\right),\\
+	\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^k W_l(n, \delta(y, n, k), \beta_l)\right),\\
 \mathscr{H}_{n,k}= \{H(y, n, k): y\in F_{n, k} \}\cup \{X\setminus F_{n,k}\}\}.
 \end{gather*}
 Then each $\mathscr{H}_{n,k}$ is an open cover of $X$.
@@ -490,8 +490,8 @@ $\exists \, j \le p$ such that  $\delta(y, m, q) = \alpha_j$.
 Then
 \begin{equation*}
 	\begin{aligned}
-H(y,m,q)  &\subset \bigcap_{l=0}^q W_l(m, \alpha_j, \beta_l) \\
- & \subset \bigcap_{i=0}^p W_{r_i}(m, \alpha_j, \beta_i) \\
+H(y,m,q)  &\subset \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^q W_l(m, \alpha_j, \beta_l) \\
+ & \subset \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{i=0}^p W_{r_i}(m, \alpha_j, \beta_i) \\
  & \subset W_{r_j}(m, \alpha_j, \beta_j) 
 	\end{aligned}
 \end{equation*}

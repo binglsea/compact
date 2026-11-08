@@ -237,8 +237,8 @@ Let $A_0 = \varnothing$ and $\mathscr{P}_0 = \{\varnothing\}$.
 Assume that $A_n$ and $\mathscr{P}_n$ have been defined. 
 To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} Q_k$, where each $Q_k$ is open. 
 For $k < \omega$, let
-$$\mathscr{G}_k = \{ \bigcap_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
-\cup \{Q_k\bigcap U_\alpha: \alpha < \lambda\}.$$
+$$\mathscr{G}_k = \{ \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in S}U_\alpha: S\in[\lambda]^{n+1} \}
+\cup \{Q_k\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha: \alpha < \lambda\}.$$
 For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
 so $x \in Q_k\cap U_\alpha$ for some $\alpha < \lambda$; if $x \notin F_n$, 
 then $|\text{ind}(\mathscr{U})_x| > n$,
@@ -267,9 +267,9 @@ $S_0 \in [\lambda]^{n+1}$,
 $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
 \begin{gather}
 x \in \bigcap_{\alpha \in S_0} U_\alpha 
-\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left\{ \bigcap_{\alpha \in S} U_\alpha: S\neq S_0 \right\} 
+\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left\{ \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in S} U_\alpha: S\neq S_0 \right\} 
 \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \lambda} (Q_k \cap U_\alpha) 
-= \widetilde{\bigcap_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{eq:3.3.7.2}
+= \widetilde{\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{eq:3.3.7.2}
 \end{gather}
 \noindent So \eqref{eq:3.3.7.1} holds.
 
