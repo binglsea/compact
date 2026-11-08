@@ -158,8 +158,8 @@ For each $\gamma\in \Gamma_{m,n}$, pick $\delta(\gamma) \in \Delta$
 such that $\mathscr{V}_{m,n,\gamma} \subset U_{\delta(\gamma)}$. 
 For $\alpha\in\Delta$, let 
 \begin{gather*}
-F_{m,n,\alpha} = \bigcup\big\{ V_{m,n,\alpha} \setminus 
-  \bigcup  \{\bigcup\mathscr{V}_{p,q}: (p,q)<(m,n)\} 
+F_{m,n,\alpha} = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\big\{ V_{m,n,\alpha} \setminus 
+  \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}  \{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{V}_{p,q}: (p,q)<(m,n)\} 
   	: \gamma \in \Gamma_{m,n}, \delta(\gamma) = \alpha
 	\big\}. 
 \end{gather*}
@@ -168,10 +168,10 @@ Let $\mathscr{F}_{m,n} = \{F_{m,n,\alpha}:  \alpha \in \Delta\}$,
 $\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}$.
 Then, we have
 \begin{gather}
-\bigcup_{(p,q)<(m,n)} \left(\bigcup\mathscr{F}_{p,q}\right) = 
-    \bigcup_{(p,q)<(m,n)} \left(\bigcup\mathscr{V}_{p,q}\right) 
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)<(m,n)} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{F}_{p,q}\right) = 
+    \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)<(m,n)} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{V}_{p,q}\right) 
     \text{ for each } m, n < \omega \label{eq:5.1.4.1} \\
- \left(\bigcup\mathscr{F}_{p,q}\right) \cap  \left(\bigcup\mathscr{F}_{m,n}\right) = \varnothing
+ \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{F}_{p,q}\right) \cap  \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{F}_{m,n}\right) = \varnothing
    \; \text{ if } (p,q) \ne (m,n).  \label{eq:5.1.4.2} 
 \end{gather}
 Since $\mathscr{V}$ is a $D\omega^2$-refinement of $\mathscr{U}$,
@@ -199,14 +199,14 @@ Let
 	D_k^0 = \varnothing, \\
 	D_k^l = \{x\in X: 0 < |\{\alpha\in \Gamma_k: x\in G_{k, \alpha}\}| \le l\} \text { for } l \ge 1, \\
 	H_0 = \varnothing, \\
-	H_n = \{x\in X: |\{i \in \omega: x\in \bigcup\mathscr{G}_i\}| \le n\} \text { for } n \ge 1. 
+	H_n = \{x\in X: |\{i \in \omega: x\in \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{G}_i\}| \le n\} \text { for } n \ge 1. 
 \end{gather*}
 For $B\in [\Gamma_k]^l, S\in[\omega]^n$, let
 \begin{gather*}
 	G(\varnothing, k, 0) = \varnothing, \\
 	G(B, k, l) = \bigcap_{\alpha\in B} G_{k, \alpha} \text{ for } n \ge 1, \\
 	L(\varnothing, 0) = \varnothing, \\
-	L(S, n) = \bigcap_{i\in S} (\bigcup \mathscr{G}_i) \, \text{ for } n \ge 1, \\
+	L(S, n) = \bigcap_{i\in S} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i) \, \text{ for } n \ge 1, \\
 	P(B, S, m, n) = G(B, k, l) \cap D_k^l \cap L(S, n) \cap H_n, \\
 	\mathscr{P}_{m, n} = \{P(B, S, m, n): B\in [\Gamma_k]^l, 
 	   S\in[\omega]^n, \text{ and } \varphi(k, l) = m\}.
@@ -229,7 +229,7 @@ By Lemma \ref{lem:1.1.5}, we need only to show the following:
 \noindent To show Claim 1, first we show that $G = Y \setminus \bigcup (\mathscr{P}_{m,n}|_Y)$ 
 is open in $Y$. Let $x \in G$. We have 
 \begin{gather}
-	x \in X \setminus \bigcup \{\bigcup \mathscr{P}_{p,q}: (p,q) \le (m,n)\}. \label{eq:5.1.5.1}
+	x \in X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{P}_{p,q}: (p,q) \le (m,n)\}. \label{eq:5.1.5.1}
 \end{gather}
 
 \noindent Since $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ is a weak $\overline{\theta}$-refinement, there exist $r, j < \omega$ such that 
@@ -241,7 +241,7 @@ is open in $Y$. Let $x \in G$. We have
 \noindent Suppose $h = \varphi(r, i)$. Take $B \in [\Gamma_r]^i$ and $S \in [\omega]^j$ 
 such that 
 $$x \in G(B, \Gamma, i) \cap D_r^l \cap L(S, j) \cap H_j = P(B, S, h, j)\subset
-\bigcup\mathscr{P}_{h, j}.$$
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{P}_{h, j}.$$
 If $j < r$, then $(h, j) < (m, n)$.
 It follows that 
 $x\in \bigcup\{\bigcup\mathscr{P}_{p. q}: (p, q) < (m, n)\}\subset X\setminus Y$, a contradiction. 
@@ -263,8 +263,8 @@ $W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that
 for each $B\subset [\Gamma_r]^l$, $S_0\in [\omega]^r$,
 \begin{gather*}
 W\cap P(B, S, m, n) \subset
-  \left( \bigcap_{i\in S_0} \left(\bigcup \mathscr{G}_i\right)  \right)
-  \cap\left(\bigcup \mathscr{G}_k\right) \cap H_n = \varnothing.
+  \left( \bigcap_{i\in S_0} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i\right)  \right)
+  \cap\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_k\right) \cap H_n = \varnothing.
 \end{gather*}
 Then $W\subset G$.
 
