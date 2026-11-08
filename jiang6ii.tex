@@ -121,17 +121,17 @@ $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$
  such that for each $\alpha < \lambda$,
  $$B_{n+1, \alpha}\setminus  L(k_0,\cdots, k_n)\subset 
  V(k_0,\cdots, k_n, k_{n+1}, \alpha) \subset
- U_\alpha \setminus  \bigcup_{i\le n}\left(\bigcup \mathscr{B}_i\right).$$
+ U_\alpha \setminus  \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i\le n}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_i\right).$$
 Then 
-$$\left(\bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})\right) \bigcap 
-\left(\bigcup_{i\le n}\left(\bigcup \mathscr{B}_i\right)\right) = \varnothing.$$
+$$\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{V}(k_0, \dots, k_n, k_{n+1})\right) \bigcap 
+\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i\le n}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_i\right)\right) = \varnothing.$$
 Since $\bigcup \mathscr{B}_{n+1} \setminus L(k_0, \dots, k_n, k_{n+1}) \subset
 \bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})$,
 \begin{equation*}
 \begin{aligned}
- \bigcup_{i\le n+1}\left(\bigcup \mathscr{B}_{i}\right) &\subset L(k_0, \dots, k_n) \bigcup 
-                    \left(\bigcup \mathscr{B}_{n+1}\setminus L(k_0, \dots, k_n, k_{n+1})\right) \\
-                    &\subset \bigcup_{i\le n+1}\left(\bigcup \mathscr{V}(k_0, \dots, k_i)\right).
+ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i\le n+1}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_{i}\right) &\subset L(k_0, \dots, k_n) \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} 
+                    \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_{n+1}\setminus L(k_0, \dots, k_n, k_{n+1})\right) \\
+                    &\subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i\le n+1}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{V}(k_0, \dots, k_i)\right).
 \end{aligned}
 \end{equation*}
 For each $x$, there exists $k_{n+1}(x) < \omega$ such that 
@@ -143,7 +143,7 @@ For every $n < \omega$, let
 $$T_n = \{(k_0, \cdots, k_n, 0, 0, \cdots) \in \omega^\omega: (k_0, \cdots, k_n) \in \omega^{n+1}\}.$$ 
 Then the set $T = \bigcup_{n<\omega} T_n$ is countable. 
 For $t = (k_0, \dots, k_n, k_{n+1}, \cdots) \in T$, let 
-$$\mathscr{H}(t) = \bigcup_{n<\omega} \mathscr{V}(k_0,\cdots, k_n).$$ 
+$$\mathscr{H}(t) = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{n<\omega} \mathscr{V}(k_0,\cdots, k_n).$$ 
 Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
 
 \textbf{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ \textit{ is a  $\theta$-sequence, so} (ii) \textit{ holds}.
@@ -156,13 +156,13 @@ such that $\operatorname{ind}(\mathscr{V}(k_{m-1}(x)))_x$ is finite.
 For all $i \ge m$, let $k_i = 0$.  Then
 \begin{gather*}
 	t(x)=(k_0(x), k_1(x), \cdots, k_{m-1}(x), 0, 0, \cdots) \in T \text{ and} \\
-	\mathscr{H}(t(x)) = \bigcup_{n<\omega}\mathscr{V}(k_0(x), k_1(x), \cdots, k_{n}(x)).
+	\mathscr{H}(t(x)) = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{n<\omega}\mathscr{V}(k_0(x), k_1(x), \cdots, k_{n}(x)).
 \end{gather*}
 For each $n \ge m, x \in \bigcup_{i\le n}(\bigcup \mathscr{B}_i)$, then by (3), 
 $x \notin \bigcup \mathscr{V}(k_0, \dots, k_n, k_{n+1})$. 
 Hence, 
 $$\operatorname{ind}(\mathscr{H}(t(x)))_x = 
-\bigcup_{n=0}^{m-1}\operatorname{ind}(\mathscr{V}(k_0(x), \dots, k_n(x)))_x.$$
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{n=0}^{m-1}\operatorname{ind}(\mathscr{V}(k_0(x), \dots, k_n(x)))_x.$$
 So, $\operatorname{ind}(\mathscr{H}(t(x)))_x$ is finite, and  Claim 2  is true. 
 
 (ii) $\Rightarrow$ (iii). Suppose $\mathscr{U}$ is a directed $A\omega$ (resp. $D\omega$)

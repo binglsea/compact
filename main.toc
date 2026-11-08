@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {5.2}Shrinkable and Normal Spaces}{40}{section.5.2}%
 \contentsline {chapter}{\numberline {Chapter 6}Works of J.-G. Jiang (II)}{45}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Submetacompact and $\theta $-expandable Spaces}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Subparacompact and Discretely Subexpandable Spaces}{48}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Subparacompact and Discretely Subexpandable Spaces}{47}{section.6.2}%
 \contentsline {chapter}{\numberline {Chapter 7}Works of J.-G. Jiang (III)}{49}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Metacompact and Almost Expandable Spaces}{49}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Paracompact and Expandable Spaces}{51}{section.7.2}%
