@@ -102,7 +102,7 @@ x \notin \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \beta_{0}} V(s, \beta)
 If $\beta_0 < \lambda$, then $V(s, \beta_0)\subset V(t, \beta_0)$. 
 So $x \in V(t, \beta_0)$.
 Assume that $\beta_{0} \ge \lambda$, then $\beta_{0} = \lambda + \alpha_{0}$ 
-for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \beta_0) \subset U_{\alpha_0}.$
+for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \alpha_0) \subset U_{\alpha_0}.$
 \begin{enumerate}
 \item[(a)] If $x \notin \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.2}
@@ -131,8 +131,8 @@ $\mathscr{V}(s_n)$ at $x$ for each $n < \omega$.
 For each $n < \omega$, let $A_n$ be a finite subset of $\lambda\cdot 2$ such that 
 $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and
 \begin{equation}
-	\operatorname{st}(x, \mathscr{L}_{s_{n+1}}) \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \in A_n} V(s_n, \beta),
-\forall \, n < \omega.   \label{eq:4.1.2.6}
+	\operatorname{st}(x, \mathscr{L}_{s_{n+1}}) \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \in A_n} V(s_n, \beta).
+   \label{eq:4.1.2.6}  %\forall \, n < \omega.  
 \end{equation}
 \noindent Let $\beta_n = \max A_n$ and $\beta_m = \min\{\beta_n: n < \omega\}$. We have
 \begin{equation}
@@ -155,7 +155,7 @@ It follows from \eqref{eq:4.1.2.3} that $x\notin V(s_{m+1}, \beta)$, (a) is true
 \noindent For if $\beta_m \ge \lambda$, 
 since $\beta_{m+2} \ge \beta_m$, we have $\beta > \beta_m \ge \lambda$ for all $\beta > \beta_{m+2}$.
 So by (a), $x\notin V(s_{m+1}, \beta)$. 
-Hence $x\notin \bigcup_{\beta> \beta+2}V(s_{m+1}, \beta)$.
+Hence $x\notin \bigcup_{\beta> \beta_{m+2}}V(s_{m+1}, \beta)$.
 Since $\beta_{m+2} \ge \lambda$, by \eqref{eq:4.1.2.3},
 $x\notin V(s_{m+2}, \beta_{m+2})$. But $\beta_{m+2} \in A_{m+2}$,
 this contradiction shows that part (b) is true.
@@ -206,7 +206,7 @@ then every interior-preserving open $\lambda$-cover has a $\theta$-sequence of o
 \begin{proof}
 In the proof of Theorem \ref{th:4.1.2}, if the open covers $\mathscr{U}$ and each $\mathscr{U}_{t}$
 for  $t \in \omega^{<\omega}$, are interior-preserving open, then it is easy to see that the covers 
-$\mathscr{V}(t)$ for $t \in \omega^{<\omega}$, defined by \eqref{eq:4.1.2.2} and \eqref{eq:4.1.2.2} of the proof 
+$\mathscr{V}(t)$ for $t \in \omega^{<\omega}$, defined by \eqref{eq:4.1.2.2} and \eqref{eq:4.1.2.3} of the proof 
 will also be interior-preserving open.
 \end{proof}
 
