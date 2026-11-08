@@ -50,7 +50,7 @@ It follows that the family
 $\{H_n \bigcap(\bigcup_{\gamma \ne \alpha}V_{n,\gamma}): \alpha < \lambda\}$ 
 is an interior-preserving open family in $H_n$. 
 For $n < \omega, \alpha < \lambda$, let
-$$B_{n,\alpha} = H_n \setminus \bigcup_{\gamma\ne\alpha} V_{n,\gamma} 
+$$B_{n,\alpha} = H_n \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\ne\alpha} V_{n,\gamma} 
 \text{ and } \mathscr{B}_n = \{B_{n,\alpha}: \alpha < \lambda\}.$$
 
 \noindent Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is 
@@ -68,8 +68,8 @@ Then $W\subset B_{n,\alpha_0} $, so $x\in B_{m, \alpha_0}^\circ$. Thus (1) holds
 For $n < \omega, \alpha<\lambda$, let
 
 $$U_{n,\alpha} = \operatorname{st}(D_\alpha, \mathscr{B}_n^\circ)
-\setminus \bigcup_{i \le n} 
-\overline{\bigcup \{B_{i,\gamma}^\circ: \gamma < \lambda
+\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i \le n} 
+\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{B_{i,\gamma}^\circ: \gamma < \lambda
 	\text{ and }B_{i,\gamma} \cap D_\alpha = \varnothing\}}$$
 and $U_\alpha = \bigcup_{n < \omega} U_{n,\alpha}$. We show that 
 $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ 
@@ -86,7 +86,7 @@ $x \notin B_{i,\gamma}^\circ$. Hence $x \in U_{m,\alpha} \subset U_\alpha$.
 
 \textbf{(3)} \textit{If $n < \omega$ and $\gamma\ne \alpha$, then}
 $$B_{n,\gamma} \cap D_\alpha \subset 
-\left(X\setminus \bigcup_{\mu\ne\gamma}V_{n,\mu}\right)
+\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\mu\ne\gamma}V_{n,\mu}\right)
 \cap V_{n,\alpha} = \varnothing$$
 
 \textbf{(4)} \textit{If} $\alpha \neq \beta$, \textit{then} $U_\alpha \cap U_\beta = \varnothing$.
@@ -175,9 +175,9 @@ $\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha < \lambda\}$ such that
 $D_{m, n, \alpha}\setminus L\subset V_{m,n,\alpha}\subset U_\alpha$.
 Then $\bigcup\mathscr{D}_{m,n}\setminus L\subset \bigcup\mathscr{V}_{m,n}$. It follows
 from inductive hypothesis that 
-$$\bigcup_{(p,q)\le (m,n)}\left(\bigcup\mathscr{D}_{p,q}\right) \subset 
- L\cup \left(\bigcup\mathscr{D}_{m,n}\setminus L\right) \subset 
- \bigcup_{(p,q)\le (m,n)}\left(\bigcup\mathscr{V}_{p,q}\right).$$
+$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le (m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{D}_{p,q}\right) \subset 
+ L\cup \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{D}_{m,n}\setminus L\right) \subset 
+ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le (m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{V}_{p,q}\right).$$
  Thus $\mathscr{V}_{m,n}$ is a discrete family of functionally open sets 
  in $X$ with Properties (a) and (b). We complete the proof of induction.
  

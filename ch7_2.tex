@@ -325,7 +325,7 @@ We have
 
 \textbf{(2)} \textit{For each } $n < \omega$,
 $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset 
-   \bigcup_{\beta\in D_n} V(s_n, \beta).$$ 
+   \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta\in D_n} V(s_n, \beta).$$ 
  For each $n < \omega$, let $\beta_n = \max D_n$,  and let $\beta_m = \min\{\beta_n: n < \omega\}$.
  %这里定理 7.2.10 的证明中的 $\beta_n$ 和 $\beta_m$ 是怎么回事？尤其是 $\beta_m$ =?  % TO_DO
  
@@ -335,22 +335,22 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  By (2),
  \begin{gather}
  \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \bigcap 
-  \left(X\setminus\bigcup_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.3.1}
+  \left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.3.1}
  \end{gather}
  Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
  it follows from the above \eqref{eq:7.2.10.3.1} that  %TO_DO What is (C)?
  $$G(x, m)\bigcap V(s_{m+1}, \beta) \subset G(x, m) \bigcap 
-    \operatorname{st}\left(X\setminus \bigcup_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \varnothing.$$
+    \operatorname{st}\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \varnothing.$$
  
  \textbf{(4)} $\beta_{m} < \lambda$.
  
 \noindent If not, $\beta_{m} \ge \lambda$, then for each 
  $\beta > \beta_{m+2}, \beta > \beta_{m} \ge \lambda$. By (3),
- $$G(x, m) \cap (\bigcup_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
+ $$G(x, m) \cap (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
  Since $B_{m+2} = B_{m} > \lambda$ % TO_DO  by (C), 
  By (C), we have 
  $$G(x, m) \cap V(s_{m+2}, \beta_{m+ 2})\subset 
- G(x, m)  \cap \left(\bigcup_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \varnothing.$$
+ G(x, m)  \cap \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \varnothing.$$
  But $\beta_{m+2} \in D_{m+2}$, so we have a contradiction. Hence $\beta_m < \lambda$. 
  
  \textbf{(5)} \textit{If}  $\beta \ge \lambda$, \textit{then} $G(x, m) \bigcap V(s_{m+1}, \beta) = \varnothing$.
@@ -428,7 +428,7 @@ Let $\mathscr{V}_n= \{V(n, \alpha): \alpha < \mu \}$ such that
 $V(n, \alpha)\subset \bigcup_{\gamma < \alpha}U_\gamma$ for each $\alpha < \mu$.
 For $n < \omega, \alpha < \mu$, let 
 $$\mathscr{G}(n, \alpha) = 
-\{U_\gamma: \gamma <\alpha\} \cup\{\bigcup_{\gamma> \alpha}V(n, \gamma)\}.$$
+\{U_\gamma: \gamma <\alpha\} \cup\{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma> \alpha}V(n, \gamma)\}.$$
 Then each $B(n, \alpha)$ is an open cover of $X$ with power $< \mu$.
 By inductive hypothesis, 
 
@@ -589,7 +589,7 @@ such that for each $S\in [\alpha]^{<\omega}$,
 \end{gather*}
 Let 
 \begin{gather*}
-	\Delta = \bigcup_{\alpha < \mu} \{\alpha\} \times [\alpha]^{<\omega}), \\
+	\Delta = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha < \mu} \{\alpha\} \times [\alpha]^{<\omega}), \\
 	\mathscr{F}_{m, n,1} = \{E_{m, \alpha, n, S} \cap B_{m, \alpha}: (\alpha, S) \in \Delta\}, \\
 	\mathscr{F}_{m, n,2} = \{K_{m, \alpha, n, S} \cap B_{m, \alpha}: (\alpha, S) \in \Delta\}, \\
 \end{gather*}
@@ -605,13 +605,13 @@ Then $D = \bigcup_{\alpha\in D}(\{\alpha\}\times d_\alpha)$.
 Since $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ is hereditarily  closure-preserving, we have
 \begin{equation*}
 	\begin{aligned}
-		\overline{\bigcup_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha}\right)} &= 
-			\overline{\bigcup_{\alpha\in b}\left(
+		\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha}\right)} &= 
+			\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}\left(
 			(\cup_{S\in d_\alpha}E_{m,\alpha,n,S}) \cap B_{m,\alpha} \right)} \\
-		&\subset 	\bigcup_{\alpha\in b}\left(
-			\left(\overline{\bigcup_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) \cap \overline{B_{m,\alpha}} \right)  \\
-		&= \bigcup_{\alpha\in b} \bigcup_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right) \\
-		&= \bigcup_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right).
+		&\subset 	\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}\left(
+			\left(\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) \cap \overline{B_{m,\alpha}} \right)  \\
+		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right) \\
+		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right).
 	\end{aligned}
 \end{equation*}
 Thus (1) holds.
