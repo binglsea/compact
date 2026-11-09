@@ -271,12 +271,12 @@ $\{\mathscr{W}_n(s): n < \omega\}$ by semi-open covers of  $X$.
 We use Junnila's following construction in the proof of Theorem \ref{th:5.1.2}. 
 For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambda$, let 
 \begin{gather}
-V(t, \alpha) = 	V(s, \alpha) \cup (U_\alpha\cap 
-	\operatorname{st}(X\setminus \cup_{\beta\ne \lambda+\alpha}V(s, \beta),
-	\mathscr{W}_k(s))^\circ) \label{eq:7.2.10.2} \\
-V(t, \lambda+ \alpha) = U_\alpha \cap (\cup_{\beta> \lambda+\alpha}V(s, \beta))
-  \cap\operatorname{st}(X\setminus \cup_{\beta < \lambda+\alpha}V(s, \beta),
-  \mathscr{W}_k(s))^\circ) \label{eq:7.2.10.3} 
+V(t, \alpha) = 	V(s, \alpha) \cup \left(U_\alpha\scalebox{1.5}{$\cap$} 
+	\operatorname{st}(X\setminus \scalebox{1.5}{$\cup$}_{\beta\ne \lambda+\alpha}V(s, \beta), \;
+	\mathscr{W}_k(s))^\circ\right) \label{eq:7.2.10.2} \\
+V(t, \lambda+ \alpha) = U_\alpha \cap (\scalebox{1.5}{$\cup$}_{\beta> \lambda+\alpha}V(s, \beta))
+  \cap\operatorname{st}(X\setminus \scalebox{1.5}{$\cup$}_{\beta < \lambda+\alpha}V(s, \beta),\;
+  \mathscr{W}_k(s))^\circ \label{eq:7.2.10.3} 
 \end{gather}
 Let $\mathscr{V}(t) =  \{V(t, \beta): \beta < \lambda\cdot 2\}$. 
  Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \lambda + \alpha) \subset U_\alpha$.
@@ -347,8 +347,8 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
 \noindent If not, $\beta_{m} \ge \lambda$, then for each 
  $\beta > \beta_{m+2}, \beta > \beta_{m} \ge \lambda$. By (3),
  $$G(x, m) \cap (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
- Since $\beta_{m+2} \ge \beta_{m} \ge \lambda$ % TO_DO  by (C), 
- By (C), we have 
+ Since $\beta_{m+2} \ge \beta_{m} \ge \lambda$.
+ By \eqref{eq:7.2.10.3}, we have 
  $$G(x, m) \cap V(s_{m+2}, \beta_{m+ 2})\subset 
  G(x, m)  \cap \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \varnothing.$$
  But $\beta_{m+2} \in D_{m+2}$, so we have a contradiction. Hence $\beta_m < \lambda$. 
@@ -359,7 +359,7 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
 
 \textbf{(6)} $\mathscr{V}(s_{m+1})$ \textit{ is locally finite at } $x$. It says that Claim 2 is true.
 
-\noindent\textsc{Proof of(6)}. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
+\noindent\textsc{Proof of (6)}. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
 By (5),
 $$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,m)} = 
 \{\alpha < \lambda: G(x, m) \cap V(s_{m+1}, \alpha) \ne \varnothing\}$$
