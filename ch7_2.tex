@@ -252,7 +252,7 @@ For any  $X$ the following are equivalent:
  $\mathscr{V}(t) =\{V(t, \beta): \beta < \lambda\cdot 2\}$ of  $X$ such that}
  \begin{gather}
  	V(t, \alpha) \subset U_\alpha, V(t, \lambda + \alpha) \subset U_\alpha 
- 	\textit{ for all } \alpha < \lambda. \label{eq:7.2.6.1}
+ 	\textit{ for all } \alpha < \lambda. \label{eq:7.2.10.1}
  \end{gather}
 \textsc{Proof of Claim 1}. 
  Since $\omega^{ < \omega} = \bigcup_{n <\omega}\omega^n$, we use induction on $n < \omega$. 
@@ -261,7 +261,7 @@ For any  $X$ the following are equivalent:
  for all $\alpha<\lambda$, and 
  $\mathscr{V}(\varnothing) = \{V(\varnothing, \beta): \beta < \lambda\cdot 2\}$. 
  Suppose that $n < \omega$ and that the open cover 
- $\mathscr{V}(s) =  \{V(s, \beta): \beta < \lambda\cdot 2\}$ with Property \eqref{eq:7.2.6.1}
+ $\mathscr{V}(s) =  \{V(s, \beta): \beta < \lambda\cdot 2\}$ with Property \eqref{eq:7.2.10.1}
  have been constructed for all $s \in \omega^n$. 
  We need to construct $\mathscr{V}(s)$ for all $s \in \omega^{n+1}$.
 For any $t \in \omega^{n+1}$, there exists a unique $s\in\omega^n$ and $k<\omega$ such that $t=s\oplus k$. 
@@ -273,10 +273,10 @@ For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambd
 \begin{gather}
 V(t, \alpha) = 	V(s, \alpha) \cup (U_\alpha\cap 
 	\operatorname{st}(X\setminus \cup_{\beta\ne \lambda+\alpha}V(s, \beta),
-	\mathscr{W}_k(s))^\circ) \label{eq:7.2.6.2} \\
+	\mathscr{W}_k(s))^\circ) \label{eq:7.2.10.2} \\
 V(t, \lambda+ \alpha) = U_\alpha \cap (\cup_{\beta> \lambda+\alpha}V(s, \beta))
   \cap\operatorname{st}(X\setminus \cup_{\beta < \lambda+\alpha}V(s, \beta),
-  \mathscr{W}_k(s))^\circ) \label{eq:7.2.6.3} 
+  \mathscr{W}_k(s))^\circ) \label{eq:7.2.10.3} 
 \end{gather}
 Let $\mathscr{V}(t) =  \{V(t, \beta): \beta < \lambda\cdot 2\}$. 
  Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \lambda + \alpha) \subset U_\alpha$.
@@ -335,10 +335,10 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  By (2),
  \begin{gather}
  \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
-  \left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.3.1}
+  \left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.4}
  \end{gather}
  Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
- it follows from the above \eqref{eq:7.2.10.3.1} that  %TO_DO What is (C)?
+ it follows from the above \eqref{eq:7.2.10.3} that  %TO_DO What is (C)?
  $$G(x, m)\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} V(s_{m+1}, \beta) \subset G(x, m) \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
     \operatorname{st}\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \varnothing.$$
  
@@ -367,7 +367,7 @@ If  $\alpha\in \operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)}$,
 then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$,
 since $y\notin \varnothing = V(s_0, \alpha)$. Let $p = \max\{i \le m: y\notin V(s_i, \alpha)\}$.
 Then $y\in V(s_{p+1}, \alpha)\setminus V(s_p, \alpha)$ and $p \le m$.
-Since $s_{p+1}= s_p\oplus k_p$, it follows from (b) % TO_DO
+Since $s_{p+1}= s_p\oplus k_p$, it follows from \eqref{eq:7.2.10.2}
 that there exists $u\in X\setminus\bigcup_{\beta \ne \lambda+ \alpha} V(s_p, \beta)$ such that
 $y \in \operatorname{st}(u, \mathscr{W}_{k_p}(s_p))$. Since $y\in G(x, m) \subset G(x, p)$,
 $u\in \operatorname{st}(G(x, p), \mathscr{W}_{k_p}(s_p))\subset \bigcup_{\beta\in D_p} V(s_p, \beta)$.
