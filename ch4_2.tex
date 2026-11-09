@@ -173,22 +173,29 @@ $$\mathscr{W}_S = \{U_\gamma: \gamma < \delta(S)\} \cup \{X\setminus K_S\}.$$
 \noindent As a convention adopted since Definiton \ref{def:1.1.1} and Definition \ref{def:1.2.1},
 $U_t  = \bigcup_{\alpha\in t}U_\alpha$ for $t\in [\delta(S)]^{<\omega}$ or $t\in [\Delta]^{<\omega}$.
 Then
-$$\mathscr{W}_S^F = \{U_t: t \in [\delta(S)]^{<\omega}\} \cup \{U_t \cup (X \setminus K_S): 
-t \in [\delta(S)]^{<\omega}\}.$$
+\begin{gather}
+\mathscr{W}_S^F = \{U_t: t \in [\delta(S)]^{<\omega}\} \cup \{U_t \cup (X \setminus K_S): 
+t \in [\delta(S)]^{<\omega}\}. \label{eq:4.2.6.1}
+\end{gather}
 \noindent $\mathscr{W}_S$ is an
 open cover of $X$, so $\mathscr{W}_S^{F}$ is a directed open
 $\mu$-cover where $\mu = |[\delta(S)]^{<\omega}| = |\delta(S)| < \kappa$. 
 By the induction hypothesis, $\mathscr{W}_S^{F}$ has a locally finite closed refinement $\mathscr{C}_S$. 
-Let
-$$\mathscr{C}_S = \{C_t: t\in [\delta(S)]^{<\omega} \}
-\cup \{{C'}_t: t\in [\delta(S)]^{<\omega}\}$$
+We may assume the refinement $\mathscr{C}_S$ is precise, so from \eqref{eq:4.2.6.1} we can let
+\begin{gather}
+\mathscr{C}_S = \{C_t: t\in [\delta(S)]^{<\omega} \}
+\cup \{{C'}_t: t\in [\delta(S)]^{<\omega}\} \label{eq:4.2.6.2}
+\end{gather}
 such that
-$C_t \subset U_t$ and ${C'}_t \subset U_t\cup (X \setminus K_S)$. Let
-\begin{gather*}
+\begin{gather}
+	C_t \subset U_t, \; {C'}_t \subset U_t\cup (X \setminus K_S) \text{ for all } t\in [\delta(S)]^{<\omega}. \label{eq:4.2.6.3}
+\end{gather}
+Let
+\begin{gather}
 \mathscr{D} _S=\{C_t\cap K_S: t\in [\delta(S)]^{<\omega}\} \cup
   \{C'_t\cap K_S: t\in [\delta(S)]^{<\omega}\}, \\
-\mathscr{D} = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{D_S: S \in [\kappa]^{<\omega}\}.
-\end{gather*}
+\mathscr{D} = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{D_S: S \in [\kappa]^{<\omega}\}. 
+\end{gather}
 \noindent Since $\mathscr{K}$ and each 
 $\mathscr{C}_S$ are locally finite, it is easy to see that $\mathscr{D}$ is
 a locally finite closed refinement of $\mathscr{U}$. This completes the proof of
