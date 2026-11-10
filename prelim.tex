@@ -20,7 +20,7 @@ of a set $A$.
 The \uwave{\textit{empty set}}\index{empty set| \S\ref{sec:1.1}\hfill}  $\varnothing$ is the unique set $B$ such that $|B| = 0$.
 $\mathbb{R}$ denotes the  
 \uwave{\textit{real line}}\index{real line| \S\ref{sec:1.1}\hfill},
-and $[0, 1]$ is the   
+and $\hstretch{1.8}{[}0, 1\hstretch{1.8}{]}$ is the   
 \uwave{\textit{closed unit interval}}\index{closed unit interval| \S\ref{sec:1.1}\hfill}  
 in $\mathbb{R}$.
 
@@ -31,11 +31,11 @@ If $f \in Y^X$, we write $f: X \to Y$.
 
 If $f: X \to Y$, $A \subset X$ and $B \subset Y$, then $f|_A: A \to Y$
 is defined by $f|_A(x) = f(x)$ for each $x \in A$; 
-$f[A] = \{f(x): x \in A\}$. $f^{-1}B = f^{-1}[B] = \{x \in X: f(x) \in B\}$.
+$f\hstretch{1.8}{[}A\hstretch{1.8}{]} = \{f(x): x \in A\}$. $f^{-1}B = f^{-1}\hstretch{1.8}{[}B\hstretch{1.8}{]} = \{x \in X: f(x) \in B\}$.
 
 For a set $A$ and $n < \omega$,
-let $[A]^{n} = \{ B \subset A: | B| = n \}$,
-$[A]^{< \omega} = \bigcup \{ [A]^{n}: n < \omega \}$. 
+let $\hstretch{1.8}{[}A\hstretch{1.8}{]}^{n} = \{ B \subset A: | B| = n \}$,
+$\hstretch{1.8}{[}A\hstretch{1.8}{]}^{< \omega} = \bigcup \{ \hstretch{1.8}{[}A\hstretch{1.8}{]}^{n}: n < \omega \}$. 
 Let $ \omega^0 = \{ \varnothing \}$. For  $n = 1, \dots, n$, let
 $\omega^n = \{ f: f: n \to \omega \} = \{ ( k_{0}, k_{1}, \dots, k_{n-1} ):  k_i \in\omega, i < n\} $.
 If $h < \omega$, let $\varnothing\oplus h = (h)$, 
@@ -96,9 +96,9 @@ space need not be $T_1$.
 \vspace{8pt}
 For any family $\mathscr{U} = \{ U_\alpha: \alpha\in \Delta\}$, the family
 $\mathscr{U}^F = \{U_S: U_S = \bigcup_{\alpha\in S}U_\alpha 
-\text{ where } S\in[\Delta]^{<\omega}\}$ 
+\text{ where } S\in\hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}\}$ 
 is directed, and 
-$\mathscr{U}$ is directed iff for each $S\in [\Delta]^{<\omega}$
+$\mathscr{U}$ is directed iff for each $S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$
 there exists some $\alpha\in\Delta$ such that $U_S\subset U_\alpha$.
 
 {\definition{} \label{def:1.1.2} Let
@@ -246,7 +246,7 @@ $$\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \Gamma} H_\alpha
 \end{proof} 
 
 {\definition{} \label{def:1.1.6}
-\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}
+\textup{(\hstretch{1.8}{[}Tukey 1940\hstretch{1.8}{]}\textsuperscript{\cite{Tukey}})}
 	Let $\mathscr{U}$ and $\mathscr{V}$ be covers of $X$.
 	
 \textup{(i)} $\mathscr{V}$ is a 
@@ -307,31 +307,31 @@ $$\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \Gamma} H_\alpha
 	\textup{(ii)} $X$ is \uwave{$\lambda$-strongly paracompact}
 	\index{$\lambda$-strongly paracompact| \S\ref{def:1.1.8}\hfill} 
 	\index{strongly paracompact| \S\ref{def:1.1.8}\hfill} 
-	\textup{([Dowker 1947]\textsuperscript{\cite{Dowker}})}
+	\textup{(\hstretch{1.8}{[}Dowker 1947\hstretch{1.8}{]}\textsuperscript{\cite{Dowker}})}
 	if every open $\lambda$-cover of $X$ has a star-finite open refinement.
 	
 	\textup{(iii)} $X$ is \uwave{$\lambda$-fully normal}
 	\index{$\lambda$-fully normal| \S\ref{def:1.1.8}\hfill} 
 	\index{fully normal| \S\ref{def:1.1.8}\hfill} 
-	\textup{([Tukey 1940]\textsuperscript{\cite{Tukey}})}
+	\textup{(\hstretch{1.8}{[}Tukey 1940\hstretch{1.8}{]}\textsuperscript{\cite{Tukey}})}
 	if every open $\lambda$-cover of $X$ is a normal cover.
 	
 	\textup{(iv)} $X$ is \uwave{$\lambda$-paracompact}
 	\index{$\lambda$-paracompact| \S\ref{def:1.1.8}\hfill} 
 	\index{paracompact| \S\ref{def:1.1.8}\hfill} 
-	\textup{([Dieudonne 1940]\textsuperscript{\cite{Dieudonne}})}
+	\textup{(\hstretch{1.8}{[}Dieudonne 1940\hstretch{1.8}{]}\textsuperscript{\cite{Dieudonne}})}
 	if every open $\lambda$-cover of $X$ has a locally finite open refinement.
 	
 	\textup{(v)} $X$ is \uwave{$\lambda$-metacompact}
 	\index{$\lambda$-metacompact| \S\ref{def:1.1.8}\hfill} 
 	\index{metacompact| \S\ref{def:1.1.8}\hfill} 
-	\textup{([Arens and Dugundji 1950]\textsuperscript{\cite{ArensDugundji}})}
+	\textup{(\hstretch{1.8}{[}Arens and Dugundji 1950\hstretch{1.8}{]}\textsuperscript{\cite{ArensDugundji}})}
 	if every open $\lambda$-cover of $X$ has a point-finite open refinement.
 	
 	\textup{(vi)} $X$ is \uwave{$\lambda$-subparacompact}
 	\index{$\lambda$-subparacompact| \S\ref{def:1.1.8}\hfill} 
 	\index{subparacompact| \S\ref{def:1.1.8}\hfill} 
-	\textup{([Burke 1969]\textsuperscript{\cite{Burke}})}
+	\textup{(\hstretch{1.8}{[}Burke 1969\hstretch{1.8}{]}\textsuperscript{\cite{Burke}})}
 	if every open $\lambda$-cover of $X$ has a 
 	$\sigma$-discrete closed refinement.
 	
@@ -341,7 +341,7 @@ $$\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \Gamma} H_\alpha
 	or \uwave{$\lambda$-submetacompact}
 	\index{$\lambda$-submetacompact| \S\ref{def:1.1.8}\hfill} 
 	\index{submetacompact| \S\ref{def:1.1.8}\hfill} 
-	\textup{([Worrel and Wicke 1965]\textsuperscript{\cite{WorrellWicke}})}
+	\textup{(\hstretch{1.8}{[}Worrel and Wicke 1965\hstretch{1.8}{]}\textsuperscript{\cite{WorrellWicke}})}
 	if every open $\lambda$-cover of $X$ has a $\theta$-sequence
 	of open refinements.
 } %end of definition
@@ -350,18 +350,18 @@ $$\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \Gamma} H_\alpha
 	\textup{(i)} $X$ is \uwave{$\lambda$-$\theta^*$-refinable} 
 	\index{$\lambda$-$\theta^*$-refinable| 
 		\S\ref{def:1.1.9}\hfill} 
-	\textup{([Smith 1976]\textsuperscript{\cite{Smith1976}})} if every open $\lambda$-cover of 
+	\textup{(\hstretch{1.8}{[}Smith 1976\hstretch{1.8}{]}\textsuperscript{\cite{Smith1976}})} if every open $\lambda$-cover of 
 	$X$ has a  $\theta^*$-sequence of open refinements.
 	
 	\textup{(ii)}  $X$ is \uwave{$\lambda$-$\varepsilon^*$-refinable}
 	\index{$\lambda$-$\varepsilon^*$-refinable| 
 		\S\ref{def:1.1.9}\hfill}
-	\textup{([Jiang])}, if every open $\lambda$-cover of 
+	\textup{(\hstretch{1.8}{[}Jiang\hstretch{1.8}{]})}, if every open $\lambda$-cover of 
 	$X$ has an  $\varepsilon^*$-sequence of open refinements.
 	
 	\textup{(iii)}  $X$ is \uwave{$\lambda$-$\varepsilon$-refinable}
 	\index{$\lambda$-$\varepsilon$-refinable| 
-		\S\ref{def:1.1.9}\hfill} \textup{([Jiang])},
+		\S\ref{def:1.1.9}\hfill} \textup{(\hstretch{1.8}{[}Jiang\hstretch{1.8}{]})},
 	if every open $\lambda$-cover of 
 	$X$ has an  $\varepsilon$-sequence of open refinements.
 } %end of definition
