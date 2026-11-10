@@ -585,7 +585,7 @@ such that for each $S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}$,
 \begin{gather*}
 	E_{m,\alpha,n,S} \subset U_S, \\
 	K_{m,\alpha,n, S} \subset U_S \cup (X\setminus B_{m, \alpha}), \\
-	P_{m, \alpha} \subset X\setminus B_{m, \alpha}
+	P_{m, \alpha} \subset X\setminus B_{m, \alpha}.
 \end{gather*}
 Let 
 \begin{gather*}
@@ -605,13 +605,18 @@ Then $D = \bigcup_{\alpha\in D}(\{\alpha\}\times d_\alpha)$.
 Since $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ is hereditarily  closure-preserving, we have
 \begin{equation*}
 	\begin{aligned}
-		\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha}\right)} &= 
-			\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}\left(
-			(\cup_{S\in d_\alpha}E_{m,\alpha,n,S}) \cap B_{m,\alpha} \right)} \\
+		\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}
+		\left(E_{m,\alpha,n,S}\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha}\right)} &= 
+			\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}
+				\left(
+			(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}) 
+				\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right)} \\
 		&\subset 	\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}\left(
-			\left(\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) \cap \overline{B_{m,\alpha}} \right)  \\
-		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right) \\
-		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}\cap B_{m,\alpha} \right).
+			\left(\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) 
+			\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \overline{B_{m,\alpha}} \right)  \\
+		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right) \\
+		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}
+		\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right).
 	\end{aligned}
 \end{equation*}
 Thus (1) holds.
