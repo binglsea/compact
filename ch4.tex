@@ -24,7 +24,7 @@ $($resp. $\operatorname{st}(G, \mathscr{V}) \subset U_\alpha)$.
 \uwave{point-star $\dot{F}$-refinement}
 \index{point-star $\dot{F}$-refinement| \S\ref{def:4.1.1}\hfill}
 of $\mathscr{U}$ at $x$ if there exists 
-$F \in [\Delta]^{<\omega}$ such that $x \in \bigcap_{\alpha \in F} U_\alpha$ 
+$F \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$ such that $x \in \bigcap_{\alpha \in F} U_\alpha$ 
 and $\operatorname{st}(x, \mathscr{V}) \subset \bigcup_{\alpha\in F}U_\alpha$.
 
 \textup{(iii)} $\mathscr{V}$ is a 
@@ -44,7 +44,7 @@ local star, point-star $\dot{F})$ refinement of $\mathscr{U}$ at $x$.
 }
 
 {\theorem{} \label{th:4.1.2} 
-\textup{([Junnila 1978]\textsuperscript{\cite{Junnila1978}})}
+\textup{(\hstretch{1.8}{[}Junnila 1978\hstretch{1.8}{]}\textsuperscript{\cite{Junnila1978}})}
 $X$ is $\lambda$-submetacompact iff for every open $\lambda$-cover $\mathscr{U}$ of $X$, 
 there exists a point-star $\dot{F}$-refining sequence for $\mathscr{U}$ 
 by semi-open covers of $X$.
@@ -106,15 +106,15 @@ for some $\alpha_0 < \lambda$. Then $x \in V(s, \lambda + \alpha_0) \subset U_{\
 \begin{enumerate}
 \item[(a)] If $x \notin \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.2}
-	\[ x \in U_{\alpha_{0}} \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \operatorname{st}\left(x \setminus 
+	$$x \in U_{\alpha_{0}} \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \operatorname{st}\left(x \setminus 
 	\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \ne \lambda + \alpha_{0}} V(s, \beta), 
 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
-	\subset V(t, \alpha_{0}) \]
+	\subset V(t, \alpha_{0}).$$
 \item[(b)] If $x \in \bigcup_{\beta > \lambda + \alpha_{0}} V(s, \beta)$, 
 	then by \eqref{eq:4.1.2.4} and \eqref{eq:4.1.2.3}
-	\[ x \in U_{\alpha_{0}} \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
+	$$ x \in U_{\alpha_{0}} \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \lambda + \alpha_{0}} U(s, \beta)\right) 
 	\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \operatorname{st}\left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha_{0}} V(s, \beta), 	\mathscr{L}_{s \oplus k}\right)^{\circ} 
-	\subset V(t, \beta_0) \]
+	\subset V(t, \beta_0).$$
 \end{enumerate}
 Thus $\mathscr{V}(t)$ covers $X$. 
 By  \eqref{eq:4.1.2.1}, we have now defined the open refinements 
@@ -192,7 +192,7 @@ For any space $X$, the following are equivalent:
 
 \textup{(ii)}  Every open $\lambda$-cover of $X$ has a $\theta$-sequence of  open refinements.
 
-\textup{(iii) ([Worrell and Wicke 1965]\textsuperscript{\cite{WorrellWicke}})} Every open $\lambda$-cover of $X$ has 
+\textup{(iii) (\hstretch{1.8}{[}Worrell and Wicke 1965\hstretch{1.8}{]}\textsuperscript{\cite{WorrellWicke}})} Every open $\lambda$-cover of $X$ has 
 a pointwise $W$-refining sequence by open covers. \hfill\qedsymbol
 }
 
@@ -361,7 +361,7 @@ interior-preserving open cover of $X$. To see that
 $\{\mathscr{V}_n: n < \omega\}$ is a pointwise W-refining sequence for 
 $\mathscr{U}$, let $x \in X$.
 There exists $m \in \omega$ and $P \in \mathscr{P}_m$ such that $x\in P$. 
-Let $S_p\in [\Delta]^{<\omega}$ such that $P \subset \bigcup_{\alpha \in S_p} U_\alpha$. 
+Let $S_p\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$ such that $P \subset \bigcup_{\alpha \in S_p} U_\alpha$. 
 We have 
 
 (*) $\mathscr{V}_m$ \textit{refines} $\mathscr{U}' = \{U_\alpha: \alpha \in S_p\}$.
@@ -406,10 +406,10 @@ such that for every $n < \omega$ and $\Gamma \subset \Delta$,
 $\overline{\bigcup_{\alpha \in \Gamma} P_{n, \alpha}} \subset \bigcup_{\alpha \in \Gamma} U_\alpha$.
 For each $n < \omega$ and $x \in \bigcup \mathscr{P}_n$, pick $\delta(n, x) \in \Delta$ 
 such that $x\in P_{n, \delta(n, x)}\subset U_{\delta(n, x)}$. Let
-\[ V_n(x) = 
+$$V_n(x) = 
 \begin{cases} U_{\delta(n, x)}, & \text{if } x \in \bigcup \mathscr{P}_n, \\ 
 	X, & \text{if } x \in X \setminus \bigcup \mathscr{P}_n.
-\end{cases} \]
+\end{cases}$$
 Then
 \begin{gather}
 	\forall \, n < \omega \; \forall \, B \subset X, \quad
@@ -452,13 +452,13 @@ Then $\{V_\alpha: \alpha \in \Delta\}$ is a cushioned open refinement of $\maths
 
 
 {\theorem{} \label{th:4.1.10}
-\textup{([Chaber 1979]\textsuperscript{\cite{Chaber}})} 
+\textup{(\hstretch{1.8}{[}Chaber 1979\hstretch{1.8}{]}\textsuperscript{\cite{Chaber}})} 
 $X$ is $\lambda$-subparacompact iff $X$ is 
 $\lambda$-submetacompact and discretely subexpandable. \hfill\qedsymbol
 }
 
 {\theorem{} \label{th:4.1.11}
-\textup{([Junnila 1978]\textsuperscript{\cite{Junnila1978}})} 
+\textup{(\hstretch{1.8}{[}Junnila 1978\hstretch{1.8}{]}\textsuperscript{\cite{Junnila1978}})} 
 For any space $X$, the following are equivalent:
 
 \textup{(i)}  $X$ is $\lambda$-subparacompact.
@@ -499,7 +499,7 @@ $X$ is $\lambda$-subparacompact.
 
 
 {\theorem{} \label{th:4.1.12}
-\textup{([Burke 1969]\textsuperscript{\cite{Burke}})} 
+\textup{(\hstretch{1.8}{[}Burke 1969\hstretch{1.8}{]}\textsuperscript{\cite{Burke}})} 
 For any space $X$, the following are equivalent:
 
 \textup{(i)} $X$ is $\lambda$-subparacompact.
