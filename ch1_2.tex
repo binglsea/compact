@@ -7,8 +7,8 @@
 
 {\definition{}\label{def:1.2.1} 
 Let $\mathscr{B}=\{B_\alpha: \alpha\in\Delta\}$ be a locally finite
-family of subsets of $X$, $U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}$ for $S\in [\Delta]^{<\omega}$, and 
-$\mathscr{B}^* = \{U_S: S\in [\Delta]^{<\omega}\}$. 
+family of subsets of $X$, $U_S = X \setminus \bigcup_{\gamma \in\Delta\setminus S} \overline{B_\gamma}$ for $S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$, and 
+$\mathscr{B}^* = \{U_S: S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}\}$. 
 Then $\mathscr{B}^*$ 
 is an open cover of $X$. We call $\mathscr{B}^*$ an 
 \uwave{induced cover}\index{induced cover| \S\ref{def:1.2.1}\hfill} 
@@ -20,9 +20,9 @@ of $X$.
 $\mathscr{B}$ need not be a cover of $X$. 
 We see that $U_{\varnothing} = X\setminus  \bigcup_{\gamma \in\Delta} \overline{B_\gamma}$.
 Let $V_\varnothing = U_\varnothing$ and $V_S = U_S\cap (\bigcap_{\alpha\in S} \overline{B_\alpha})$ 
-for $S\in [\Delta]^{<\omega} \setminus\{\varnothing\}$.
+for $S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega} \setminus\{\varnothing\}$.
 It is easy to see that 
-$\mathscr{A} = \{V_S: S\in [\Delta]^{<\omega}\}$ 
+$\mathscr{A} = \{V_S: S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}\}$ 
 is a locally finite refinement of $\mathscr{B}^*$.
 $\mathscr{B}^*$ is an interior-preserving 
 (see the later Definition \ref{def:1.3.1}) directed open cover of $X$. 
@@ -30,7 +30,7 @@ $\mathscr{B}^*$ is an interior-preserving
 {\definition{}\label{def:1.2.2}
 Let $\mathscr{D} = \{D_\alpha: \alpha \in \Delta\}$ be a discrete family of 
 closed subsets of $X$.
-For $\alpha\in\Delta, S\in[\Delta]^{<\omega}$, we use notation 
+For $\alpha\in\Delta, S\in\hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$, we use notation 
 \begin{gather}
 	U_\alpha = X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\in\Delta\setminus\{\alpha\}}D_\gamma,\quad
 	U_S =  \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\in S}U_\gamma. \label{eq:1.2.2.1}
@@ -38,7 +38,7 @@ For $\alpha\in\Delta, S\in[\Delta]^{<\omega}$, we use notation
 Then $D_\alpha \subseteq U_\alpha$ for each $\alpha\in\Delta$.
 Let $\mathscr{D}^* = \{ U_\alpha: \alpha\in\Delta\}$, 
 and
-$\mathscr{D}^{*F} = \{U_S: S\in [\Delta]^{<\omega}\}$.
+$\mathscr{D}^{*F} = \{U_S: S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}\}$.
 Then $\mathscr{D}^*$ and $\mathscr{D}^{*F}$ are open $|\Delta|$-cover of $X$.
 We call $\mathscr{D}^*$ an \uwave{induced cover} of $X$.
 } %end of def
@@ -65,14 +65,14 @@ We prove only (i). The proof of (ii) is
 similar. Let $\mathscr{B} = \{B_\alpha: \alpha \in \Delta\}$. Suppose
 the induced cover $\mathscr{B}^*$ %as in Definition \ref{def:1.2.1}
 has a cushioned open refinement
-$\mathscr{G} = \{G_S: S\in [\Delta]^{<\omega}\}$ such that for any
-$\Gamma\subset[\Delta]^{<\omega}$,
+$\mathscr{G} = \{G_S: S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}\}$ such that for any
+$\Gamma\subset\hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$,
 $\overline{\bigcup_{S\in\Gamma}G_S}\subset\bigcup_{S\in\Gamma}U_S$.
 For $\alpha\in\Delta$, let
-$$H_\alpha = X \setminus \overline{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\{G_S: S\in [\Delta]^{<\omega}, \alpha\notin S\}}.$$
+$$H_\alpha = X \setminus \overline{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\{G_S: S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}, \alpha\notin S\}}.$$
 Then $B_\alpha\subset H_\alpha$ for each $\alpha\in\Delta$.
 To see $\mathscr{H}=\{H_\alpha: \alpha\in\Delta\}$
-is locally finite, let $x \in X$. There exists $S_0 \in [\Delta]^{<\omega}$ such that 
+is locally finite, let $x \in X$. There exists $S_0 \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$ such that 
 $x \in G_{S_0}$.
 Then $\operatorname{ind}(\mathscr{H})_{G_{S_0}}  \subset S_0$. Thus 
 $\mathscr{H}$ is a locally finite open expansion
@@ -112,16 +112,16 @@ and $U_S$ as in (\ref{eq:1.2.2.1}).
 Suppose $\mathscr{D}^{*F}$  has a
 $\sigma$-cushioned open refinement
 $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_{n}$, where 
-$\mathscr{G}_{n} = \{G_{n, S}: S\in [\Delta]^{<\omega}\}$ 
-such that for each $n<\omega$ and each $\Gamma\subset [\Delta]^{<\omega}$,  
+$\mathscr{G}_{n} = \{G_{n, S}: S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}\}$ 
+such that for each $n<\omega$ and each $\Gamma\subset \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$,  
 $\overline{\bigcup_{S\in\Gamma} G_{n,S}} \subset \bigcup_{S\in\Gamma} U_S$. For $n<\omega$, $\alpha\in \Delta$, let
 $$H_{n,\alpha} = X \setminus \overline{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{G_{n,S}: 
-S\in [\Delta]^{<\omega}, \alpha\notin S\}}$$
+S\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}, \alpha\notin S\}}$$
 Then $D_\alpha \subset H_{n,\alpha}$ for each $\alpha \in \Delta$ and $n<\omega$. 
 For each $n<\omega$, $\mathscr{H}_{n} = \{H_{n,\alpha}: \alpha \in \Delta\}$ 
 is an open expansion of $\mathscr{D}$. 
 To see that $\{\mathscr{H}_n: n<\omega\}$ is a $\theta^*$-sequence, let $x \in X$. 
-There exist $m<\omega$ and $S_0 \in [\Delta]^{<\omega}$ 
+There exist $m<\omega$ and $S_0 \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$ 
 such that $x \in G_{m, S_0}$. 
 Then $\operatorname{ind} (\mathscr{H})_{G_{m,S_0}}\subset S_0$. 
 Thus $\{\mathscr{H}_n: n<\omega\}$ is a $\theta^*$-sequence.
