@@ -197,16 +197,16 @@ Let $\mathscr{W} = \{W_\alpha: \alpha < \kappa\}$ be a precise point-finite open
 (Lemma \ref{lem:1.1.5} (i)) refinement of 
 $\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
 For $\alpha < \kappa$, let
-$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \cup \{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma \ge \alpha} W_\gamma \}$$
+$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma \ge \alpha} W_\gamma \}.$$
 Then $\mathscr{G}_\alpha$ is an open cover of $X$ with power $< \kappa$. 
 By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open 
 refinement $\mathscr{H}_\alpha$. Assume that it is a  precise refinement,
 so we can let 
-$\mathscr{H}_\alpha = \{ H_\gamma: \gamma < \alpha \} \cup \{ R_\alpha \}$ 
+$\mathscr{H}_\alpha = \{ H_\gamma: \gamma < \alpha \} \bigcup \{ R_\alpha \}$ 
 such that $H_\gamma \subset U_\gamma$ for $\gamma < \alpha$ 
 and $R_\alpha \subset \bigcup_{\gamma \ge \alpha} W_\gamma$.
 Let
-$$\mathscr{H} = \{W_\alpha\cap H_\gamma: \gamma <\alpha, \alpha<  \kappa \}.$$
+$$\mathscr{H} = \{W_\alpha\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} H_\gamma: \gamma <\alpha, \alpha<  \kappa \}.$$
 Then $\mathscr{H}$ is a point-finite open refinement of $\mathscr{U}$. So $\mathcal{P}_\kappa$ holds.
 This completes the induction. Thus $\mathcal{P}_\lambda$ holds, 
 so $X$ is $\lambda$-metacompact. \end{proof}
