@@ -138,7 +138,7 @@ $\mathscr{G}_n = \{G_{n,\alpha}: \alpha < \lambda\}$ such that
 $F_\alpha \subset G_{n,\alpha}$ and $G_{n+1,\alpha} \subset G_{n,\alpha}$ 
 for each $n<\omega, \alpha<\lambda$.
 For $n < \omega$, let
-$$U_n = \{x \in X: \exists \, H \in \operatorname{top}(x) \text{ such that } \vert{}\text{ind}(\mathscr{G}_n)_H\vert{} < \omega\}$$
+$$U_n = \{x \in X: \exists \, H \in \operatorname{top}(x) \textit{ such that } \vert{}\operatorname{ind}(\mathscr{G}_n)_H\vert{} < \omega\}$$
 \noindent Then $\{U_n: n < \omega\}$ is an increasing open cover of $X$. 
 By Theorem \ref{th:4.1.9}, $X$ is countably paracompact. 
 There exists a locally finite open cover $\{V_n: n < \omega\}$ of $X$ 
@@ -183,7 +183,7 @@ $\widetilde{U}_\alpha \subset G_{\alpha,n} \subset U_\alpha$ for each $n<\omega,
 For each $n < \omega$, $\{\bigcup \widetilde{\mathscr{U}}, X \setminus \bigcup \mathscr{G}_n\}$ is a discrete closed family in $X$. There exists an $\varepsilon$-sequence 
 $\{\mathscr{L}_k = \{Q_{n,k}, W_{n,k}\}: k < \omega\}$ of open expansions such that 
 
-$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset Q_{n,k} \text{ and }
+$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset Q_{n,k} \textit{ and }
 X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_n \subset W_{n,k}.$$
 
 \noindent For each $x \in X$, there exists $h < \omega$ such that $x$ is contained in 
@@ -192,9 +192,9 @@ Let $Q_n = \bigcap_{k < \omega} Q_{n,k}$, $W_n = \bigcap_{k < \omega} W_{n,k}$. 
 
 \begin{gather}
 \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset Q_n, \;
-X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_n \subset W_n \; \text{ and } \;
+X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_n \subset W_n \; \textit{ and } \;
 Q_n \cap W_n = \varnothing \;
- \text{ for } n < \omega.        \label{eq3.3.6.1}
+ \textit{ for } n < \omega.        \label{eq3.3.6.1}
 \end{gather}
 
 \noindent For $n, k < \omega$, let 
@@ -226,7 +226,7 @@ Suppose $\mathscr{U} = \{U_\alpha:  \alpha < \lambda\}$ is a point-finite open c
 subexpandable space $X$. Let 
 \begin{gather*}
 	F_0 = \varnothing,\\
-	F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\} \text{ for } n\ge 1.
+	F_n = \{x \in X:  \vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n\} \textit{ for } n\ge 1.
 \end{gather*}
 Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
 
@@ -241,7 +241,7 @@ $$\mathscr{G}_k = \{ \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in S}U_\alp
 \cup \{Q_k\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha: \alpha < \lambda\}.$$
 For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
 so $x \in Q_k\cap U_\alpha$ for some $\alpha < \lambda$; if $x \notin F_n$, 
-then $|\text{ind}(\mathscr{U})_x| > n$,
+then $|\operatorname{ind}(\mathscr{U})_x| > n$,
 so $x\in \bigcap_{\alpha\in S} U_\alpha$ for some 
 $S\in \hstretch{1.8}{[}\lambda\hstretch{1.8}{]}^{n+1}$. Hence
 $\mathscr{G}_k$ is an open refinement of $\mathscr{U}$ such that  
@@ -258,10 +258,10 @@ $\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_
 Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a 
 $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us show that:
 \begin{gather}
-F_{n+1} \setminus Q_k \subset \widetilde{\mathscr{G}}_k \; \text{ for each }  k < \omega. \label{eq:3.3.7.1}
+F_{n+1} \setminus Q_k \subset \widetilde{\mathscr{G}}_k \; \textit{ for each }  k < \omega. \label{eq:3.3.7.1}
 \end{gather}
 \textsc{Proof of \eqref{eq:3.3.7.1}.} Suppose $x \in F_{n+1} \setminus Q_k$. Then 
-$\vert{}\text{ind}(\mathscr{U})_x\vert{} \le n+1$. 
+$\vert{}\operatorname{ind}(\mathscr{U})_x\vert{} \le n+1$. 
 Since $x \in \bigcup \mathscr{G}_k$ and $x \notin Q_k$, there exists 
 $S_0 \in \hstretch{1.8}{[}\lambda\hstretch{1.8}{]}^{n+1}$,  
 $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
