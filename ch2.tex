@@ -299,9 +299,9 @@ To show the Condition (b), first, it is easy to see that
 	$\mathscr{U}_n$ for each $n \ge 1$.
 	By Theorem \ref{th:2.1.5} there exists a pseudo-metric $\rho$ on $X$ such that:
 	
-	(1) $\tau_\rho \subset \tau$.
+\textbf{(1)} $\tau_\rho \subset \tau$.
 	
-	(2) $B_\rho(x, 1/{2^{n+2}}) \subset \textit{st}(x, \mathscr{U}_n)$ for $x \in X$ and $n < \omega$.
+\textbf{(2)} $B_\rho(x, 1/{2^{n+2}}) \subset \textit{st}(x, \mathscr{U}_n)$ for $x \in X$ and $n < \omega$.
 	
 	\noindent Since $\{\operatorname{st}(x, \mathscr{U}_2): x \in X\}$ refines $\mathscr{U}_1$, 
 	$\mathscr{B} = \{B_\rho(x, 1/{16}): x \in X\}$ is a refinement of $\mathscr{U}$. 
@@ -315,9 +315,10 @@ or equivalently, if it is normal and every open set of it is a $F_\sigma$-set.},
 	every member of $\mathscr{V}$ is functionally 
 open\footnote{An open set $U$ of a perfectly normal space is a $F_\sigma$-set. Apply Urysohn's Lemma
 to construct countably many functions $\{f_n: n < \omega\}$ from
-$X$ to unit closed interval $[0,1]$ such that 
+$X$ to closed unit interval $[0,1]$ such that 
 $U$ is the union of the cozero sets of these functions, then $U$ is the cozero set of function 
-$f =\sum_{n = 0}^n f_n$.}. 
+$f =\sum_{n = 0}^n f_n$. In our case that $\tau_\rho \subset \tau$, it is simpler to just
+let $f(x) = \rho(x, X\setminus U)$, the distance function.}. 
 	Since $\tau_\rho \subset \tau$, $\mathscr{V}$ is a locally finite 
 	and $\sigma$-discrete functionally open refinement of $\mathscr{U}$ in $(X, \tau)$.
 	
