@@ -76,11 +76,11 @@ We now define, for all $s \in \omega^{n-1}$, $k < \omega$, and $\alpha < \lambda
 
 \begin{gather}
 V(s \oplus k, \alpha) = V(s, \alpha) \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left( U_\alpha \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
-\text{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \ne\lambda+ \alpha} V(s, \beta), 
+\operatorname{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \ne\lambda+ \alpha} V(s, \beta), 
 \mathscr{L}_{s \oplus k} \right)^\circ \right),      \label{eq:4.1.2.2} \\
 V(s \oplus k, \lambda + \alpha) = U_\alpha \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
 \left( \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \lambda + \alpha} V(s, \beta) \right) 
-\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \text{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha} V(s, \beta), 
+\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \operatorname{st}\left( X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta < \lambda + \alpha} V(s, \beta), 
 \mathscr{L}_{s \oplus k} \right)^\circ.   \label{eq:4.1.2.3}
 \end{gather}
 Since every element $t \in \omega^n$ can be uniquely represented in the form $s \oplus k$ 
@@ -241,10 +241,10 @@ $$\mathscr{U}(n, \alpha) = \{U_\gamma: \gamma \le \alpha\} \cup
 By the induction hypothesis, it has a pointwise W-refining sequence 
 $\{\mathscr{W}_l(n, \alpha): l < \omega\}$ by open covers of $X$.
 For $n, h < \omega$, let 
-$$F_{n,0} = \varnothing \text{ and }
-F_{n,h} = \{x \in X: |\operatorname{ind}(\mathscr{V}_n)_x| \le h\} \text{ for } h \ge 1.$$
+$$F_{n,0} = \varnothing \textit{ and }
+F_{n,h} = \{x \in X: |\operatorname{ind}(\mathscr{V}_n)_x| \le h\} \textit{ for } h \ge 1.$$
 Then each $F_{n,h}$ is closed.
- For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\text{ind}(\mathscr{V}_n)_y)$.
+ For each $y \in F_{n,h}$, let $\delta(y, n) = \max(\operatorname{ind}(\mathscr{V}_n)_y)$.
 We have 
 
 \textbf{(1)} $y \in V(n, \delta(y, n))$ \textit{and} $y\notin \bigcup_{\gamma > \delta(y, n)} V(n, \gamma).$
@@ -262,7 +262,8 @@ We have
 
 This says that $\mathcal{P}_\kappa$ holds.
 
-\noindent\textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that $\text{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
+\noindent\textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that 
+$\operatorname{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
 $\{\mathscr{W}_l(m, \alpha_i): l < \omega\}$ is a pointwise W-refining sequence for 
 $\mathscr{U}(m, \alpha_i)$, 
 there exists $l_i < \omega$ and a finite set $D_i \subset \alpha_i$ such that:
@@ -407,8 +408,8 @@ $\overline{\bigcup_{\alpha \in \Gamma} P_{n, \alpha}} \subset \bigcup_{\alpha \i
 For each $n < \omega$ and $x \in \bigcup \mathscr{P}_n$, pick $\delta(n, x) \in \Delta$ 
 such that $x\in P_{n, \delta(n, x)}\subset U_{\delta(n, x)}$. Let
 $$V_n(x) = 
-\begin{cases} U_{\delta(n, x)}, & \text{if } x \in \bigcup \mathscr{P}_n, \\ 
-	X, & \text{if } x \in X \setminus \bigcup \mathscr{P}_n.
+\begin{cases} U_{\delta(n, x)}, & \textit{ if } x \in \bigcup \mathscr{P}_n, \\ 
+	X, & \textit{ if } x \in X \setminus \bigcup \mathscr{P}_n.
 \end{cases}$$
 Then
 \begin{gather}
@@ -424,7 +425,7 @@ If $B \subset \bigcup \mathscr{P}_n$, then
 For $n < \omega$ and $x\in X$, let $G_n(x)=\{y\in X: x\in V_n(y)\}$.
 By \eqref{eq:4.1.9.1}, $x\in G_n(x)^\circ$. For $n < \omega$, let
 \begin{gather*}
-	\mathscr{E}_{n} = \{x\in X: \exists \, y\in V_n(x) \text{ such that } x\in V_n(y)\}.
+	\mathscr{E}_{n} = \{x\in X: \exists \, y\in V_n(x) \textit{ such that } x\in V_n(y)\}.
 \end{gather*}
 For each $x\in X, V_n(x) \bigcap G_n(x) \subset \operatorname{st}(x, \mathscr{E}_n)$, so
 $x\in \operatorname{st}(x, \mathscr{E}_n)^\circ$.
@@ -444,7 +445,7 @@ $\bigcup \mathscr{F}_n$ is a $\sigma$-cushioned refinement of $\mathscr{U}$.
 (ii) If $\mathscr{U}$ has a semi-open local star refinement $\mathscr{E}$, for $\alpha \in \Delta$, 
 let 
 \begin{gather*}
-V_\alpha = \{x\in X: \exists \, G\in\operatorname{top}(x) \text{ and } 
+V_\alpha = \{x\in X: \exists \, G\in\operatorname{top}(x) \textit{ and } 
 \operatorname{st}(G, \mathscr{E}) \subset U_\alpha\}.
 \end{gather*}
 Then $\{V_\alpha: \alpha \in \Delta\}$ is a cushioned open refinement of $\mathscr{U}$.
