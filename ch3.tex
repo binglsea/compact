@@ -192,12 +192,13 @@ Let $\kappa \le \lambda$ such that $\mathcal{P}_\mu$ holds for each $\mu < \kapp
 To show $\mathcal{P}_\kappa$ holds, let $\mathscr{U} = \{U_\alpha: \alpha < \kappa\}$ 
 be an open cover of $X$.
 $\mathscr{U}^* = \{ \bigcup_{\gamma < \alpha} U_\gamma: \alpha < \kappa \}$ is 
-an increasing open $\lambda$-cover of $X$.
-Let $\mathscr{W} = \{W_\alpha: \alpha < \kappa\}$ be a precise point-finite open 
-(Lemma \ref{lem:1.1.5} (i)) refinement of 
-$\mathscr{U}^*$ with $W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
+an increasing open $\kappa$-cover ($\lambda$-cover, of course) of $X$, so it has a point-finite open 
+refinement $\mathscr{W}$. By Lemma \ref{lem:1.1.5} (i), we may assume that it is
+precise. So we can use the same index $\kappa$ to 
+let $\mathscr{W} = \{W_\alpha: \alpha < \kappa\}$ such that 
+$W_\alpha \subset \bigcup_{\gamma < \alpha} U_\gamma$. 
 For $\alpha < \kappa$, let
-$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma \ge \alpha} W_\gamma \}.$$
+$$\mathscr{G}_\alpha = \{ U_\gamma: \gamma < \alpha \} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\le\gamma < \kappa} W_\gamma \}.$$
 Then $\mathscr{G}_\alpha$ is an open cover of $X$ with power $< \kappa$. 
 By induction assumption, $\mathscr{G}_\alpha$ has a point-finite open 
 refinement $\mathscr{H}_\alpha$. Assume that it is a  precise refinement,
