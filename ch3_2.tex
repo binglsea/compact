@@ -68,7 +68,8 @@ if $\beta \ne \beta'$;
 of closed subsets of the subspace 
 $X\setminus \bigcup_{\mu<\beta}( \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{E}_\mu)$;
 
-\textup{(c)} for each $\beta < \xi$, $\bigcup_{\mu<\beta}(\cup\mathscr{E}_\mu)$ 
+\textup{(c)} for each $\beta < \xi$, $\bigcup_{\mu<\beta}
+( \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{E}_\mu)$ 
 is closed in $X$.
 
 \noindent For the case $\mathcal{P} = \mathcal{C}$, we require $\mathscr{E}_\beta$ to be a 
@@ -100,7 +101,9 @@ $$D_n = \{ x \in X: |\operatorname{ind}(\mathscr{U})_x| \le n \} \, \textit{ for
 \noindent Then $D_n$ is closed. Let $F(\varnothing, 0) = \varnothing$. 
 For $n \ge 1$, let
 \begin{gather*}
-	F(S, n) = D_n\cap(\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in S} U_\alpha) \textit{ for any } S \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^n, \\
+	F(S, n) = D_n\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}
+	(\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in S} U_\alpha) \textit{ for any } 
+	S \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^n, \\
 	\mathscr{F}_n= \{F(S, n): S \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^n\}.
 \end{gather*}
 We show that $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ is a 
@@ -110,20 +113,20 @@ $\mathscr{F}_n\vert{}_{Y_n}$ is a discrete closed family in $Y_n$,
 by Lemma \ref{lem:1.1.4}, we need only to show that
 
 \textbf{(1)} 
-$\bigcup(\mathscr{F}_n\vert{}_{Y_n})$ is closed in $Y_n$, and
+$\bigcup(\mathscr{F}_n\vert{}_{Y_n})$ \textit{ is closed in } $Y_n$, \textit{and}
 
-\textbf{(2)}  $\mathscr{F}_n\vert{}_{Y_n}$ is discrete at each 
+\textbf{(2)}  $\mathscr{F}_n\vert{}_{Y_n}$ \textit{ is discrete at each }
 $x \in \bigcup(\mathscr{F}_n\vert{}_{Y_n})$.
 
-To see (1), let $x\in G_n = Y_n \setminus \bigcup(\mathscr{F}_n\vert{}_Y)$. 
+To see (1), let $x\in G_n = Y_n \setminus \bigcup(\mathscr{F}_n\vert{}_{Y_n})$. 
 Suppose $|\operatorname{ind}(\mathscr{U})_x| = j>0$. Then $x \in D_j$. 
 Pick $S \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^j$ such that 
-$x \in D_j\cap (\bigcap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
+$x \in D_j\bigcap (\bigcap_{\alpha \in S} U_\alpha) = F(S, j) \subset \bigcup \mathscr{F}_j$.
 Since $x \in G_n$, $j > n$. Then $Y_n \setminus D_n$ is a neighborhood of $x$ in $Y_n$ 
 such that $Y_n \setminus D_n \subset G_n$. Hence $G_n$ is open in $Y_n$.
 
 To see (2), let $x \in \bigcup(\mathscr{F}_n\vert{}_{Y_n})$. Suppose $S_0 \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^n$ 
-such that $x \in F(S_0, n)$. Then $W = Y_n \cap (\bigcap_{\alpha \in S_0} U_\alpha)$ 
+such that $x \in F(S_0, n)$. Then $W = Y_n \bigcap (\bigcap_{\alpha \in S_0} U_\alpha)$ 
 is a neighborhood of $x$ in $Y_n$. 
 For each $S \in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^n \setminus \{S_0\}$, $W \cap F(S, n) = \varnothing$. 
 So, $\mathscr{F}_n\vert{}_{Y_n}$ is discrete at $x$.
@@ -137,17 +140,24 @@ A $\lambda$-submetacompact space is $\lambda$-strictly quasi-paracompact.
 
 \begin{proof}
 Assume $X$ is $\lambda$-submetacompact and let 
-$\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}$ be an open cover of $X$. 
+$\mathscr{U} = \{ U_\alpha: \alpha < \lambda \}$ be an open $\lambda$-cover of $X$. 
 By Theorem \ref{th:3.1.5}, 
 there exists a countable closed cover $\{ F_n: n < \omega\}$ of $X$ such that each $\mathscr{U}\vert{}_{F_n}$ has a point-finite open refinement 
 $\mathscr{V}_n$ in $F_n$. By Lemma 3.2.4, let 
 $\mathscr{E}_n = \bigcup_{k<\omega} \mathscr{E}_{n,k}$ be a 
 $D\omega$-refinement of $\mathscr{V}_n$ in $F_n$. For each $n, k$, 
 $\mathscr{E}_{n,k}$ is a discrete closed family in 
-$F_n \setminus\bigcup_{i<k}(\cup \mathscr{E}_{n,i})$. Then each 
-$\mathscr{E}_{n,k}$ is a discrete closed family in 
-$X \setminus \bigcup_{i<k}(\cup \mathscr{E}_{n,i})$.
-Let $\varphi$ be a one-to-one function from $\omega \times \omega$ 
+$F_n \setminus\bigcup_{i<k}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{E}_{n,i})$. Then each 
+$\mathscr{E}_{n,k}$ is also a discrete closed family in 
+$X \setminus \bigcup_{i<k}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{E}_{n,i})$.
+Let $\varphi$ be a one-to-one function\footnote{Look at the isosceles triangle bounded by $x$-axis, 
+$y$-axis and the line through point $(n,k)$ with slope -1 on the plane. It has $(0, n+k), (n+k, 0)$ and 
+the origin as vertices. Count the number of points with non-negative integer coordinates on the triangle. 
+$(n+k)(n+k+1)/2$ points are below the hypotenuse through point $(n, k)$, plus $n+1$
+points on the hypotenuse from vertex $(0, n+k)$ to point $(n,k)$ inclusively. Calculate
+total and consider function $\varphi$ starts at 0, we have
+$\varphi(n,k) = (n+k)(n+k+1)/2 +(n+1) -1 =[(n+k)^2+3n+k]/2$.}
+from $\omega \times \omega$ 
 onto $\omega$ defined by $\varphi(n, k) =\hstretch{1.8}{[}(n+k)^2 + 3n + k\hstretch{1.8}{]}/2$. 
 Define $\mathscr{F}_m = \mathscr{E}_{n,k}$ iff $m = \varphi(n, k)$. 
 Then $\mathscr{F} = \bigcup_{m<\omega} \mathscr{F}_m$ is a 
@@ -163,11 +173,14 @@ $\lambda$-weakly $\bar{\theta}$-refinable.
 
 \begin{proof}
 Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
-Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets of $X \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i<n}(\cup \mathscr{F}_i)$
+Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, 
+where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets 
+of $X \setminus \bigcup_{i<n}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}p \mathscr{F}_i)$
 such that $F_{n, \alpha}\subset U_\alpha$. Define
 \begin{gather}
 G_{n,\alpha}=\left(U_\alpha\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}\right)
-\cap\left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i<n}(\cup \mathscr{F}_i)\right) 
+\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}\left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i<n}
+(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{F}_i)\right) 
 \textit{ for } n <\omega, \alpha< \lambda. \label{eq:3.2.6.1}\\
 \mathscr G_n=\{G_{n,\alpha}:\alpha<\lambda\}.  \label{eq:3.2.6.2}
 \end{gather}
@@ -181,8 +194,8 @@ $C_n=\bigcup_{i<n}(\cup\mathscr{F}_i)$.
 Since \(\mathscr F_n\setminus\{F_{n,\alpha}\}\) is a discrete closed family in $X\setminus C_n$,
 $\bigcup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}=K\cap(X\setminus C_n)$
 for some closed set $K$ in $X$. Thus
-$$G_{n,\alpha}=U_\alpha\setminus((\cup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma})\cup C_n)
-=U_\alpha\setminus (K\cup C_n)$$
+$$G_{n,\alpha}=U_\alpha\setminus((\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma})\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} C_n)
+=U_\alpha\setminus (K\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} C_n)$$
 \noindent is an open set in $X$.
 For each $x\in X$, there exists $m<\omega$ such that
 $x\in\bigcup\mathscr{F}_m$.
@@ -198,7 +211,7 @@ $x\in G_{m,\beta}$ and $\operatorname{ind}(\mathscr G_m)_x\subset\{\beta\}$. (2)
 \textbf{(3)} $\{\bigcup\mathscr G_n: n<\omega\}$ is point-finite.
 
 \noindent\textsc{Proof of (3)}   If $x\in X$, then $x\in\bigcup\mathscr F_m$ for some 
-$m<\omega$. $\forall k>m, x\in\bigcup_{i<k}(\cup\mathscr F_i)$,
+$m<\omega$. $\forall k>m, x\in\bigcup_{i<k}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr F_i)$,
 hence $x\notin \bigcup\mathscr{G}_k$, (3) holds.
 
 It follows from (1)–(3) that \(\mathscr G\) is a weakly \(\bar{\theta}\)-refinement of 
