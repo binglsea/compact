@@ -175,7 +175,7 @@ $\lambda$-weakly $\bar{\theta}$-refinable.
 Suppose $\mathscr{U} = \{U_\alpha: \alpha < \lambda\}$ be an open cover of a $\lambda$-$D\omega$-refinable space $X$. 
 Let $\mathscr{F} = \bigcup_{n<\omega}\mathscr{F}_n$ be a $D\omega$-refinement of $\mathscr{U}$, 
 where each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha < \lambda\}$ is a discrete family of closed subsets 
-of $X \setminus \bigcup_{i<n}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}p \mathscr{F}_i)$
+of $X \setminus \bigcup_{i<n}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{F}_i)$
 such that $F_{n, \alpha}\subset U_\alpha$. Define
 \begin{gather}
 G_{n,\alpha}=\left(U_\alpha\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}\right)
@@ -186,13 +186,13 @@ G_{n,\alpha}=\left(U_\alpha\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\ga
 \end{gather}
 Then $F_{n,\alpha}\subset G_{n,\alpha}\subset U_\alpha$.
 
-\textbf{(1)} $\mathscr G=\bigcup_{n<\omega}\mathscr G_n$ is an open refinement 
-of $\mathscr{U}$.
+\textbf{(1)} $\mathscr G=\bigcup_{n<\omega}\mathscr G_n$ \textit{ is an open refinement of }
+$\mathscr{U}$.
 
 \noindent\textsc{Proof of (1)} Let $n<\omega,\ \alpha<\lambda$, and let
-$C_n=\bigcup_{i<n}(\cup\mathscr{F}_i)$.
+$C_n=\bigcup_{i<n}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{F}_i)$.
 Since \(\mathscr F_n\setminus\{F_{n,\alpha}\}\) is a discrete closed family in $X\setminus C_n$,
-$\bigcup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}=K\cap(X\setminus C_n)$
+$\bigcup_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma}=K\bigcap(X\setminus C_n)$
 for some closed set $K$ in $X$. Thus
 $$G_{n,\alpha}=U_\alpha\setminus((\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\in\lambda\setminus\{\alpha\}}F_{n,\gamma})\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} C_n)
 =U_\alpha\setminus (K\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} C_n)$$
@@ -202,13 +202,13 @@ $x\in\bigcup\mathscr{F}_m$.
 Then $x\in \bigcup \mathscr{G}_m\subset\bigcup\mathscr{G}$.
 (1) holds.
 
-\textbf{(2)}  $\forall x\in X\ \exists m<\omega$ such that 
+\textbf{(2)}  $\forall x\in X\ \exists \, m<\omega$ \textit{ such that }
 $0<|\operatorname{ind}(\mathscr G_m)_x|<\omega$.
 
 \noindent\textsc{Proof of (2)}  Let \(x\in X\). There exist $m<\omega$ and $\beta<\lambda$ such that $x\in F_{m, \beta}$. Then
 $x\in G_{m,\beta}$ and $\operatorname{ind}(\mathscr G_m)_x\subset\{\beta\}$. (2) holds.
 
-\textbf{(3)} $\{\bigcup\mathscr G_n: n<\omega\}$ is point-finite.
+\textbf{(3)} $\{\bigcup\mathscr G_n: n<\omega\}$ \textit{ is point-finite.}
 
 \noindent\textsc{Proof of (3)}   If $x\in X$, then $x\in\bigcup\mathscr F_m$ for some 
 $m<\omega$. $\forall k>m, x\in\bigcup_{i<k}(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr F_i)$,
