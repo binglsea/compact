@@ -234,8 +234,9 @@ Then $\{F_n: n < \omega\}$ is a closed cover of $X$. We have the following:
 $$F_n \subset A_n \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{P}_n.$$
 \textsc{Proof of Claim}. We use induction on $n < \omega$. 
 Let $A_0 = \varnothing$ and $\mathscr{P}_0 = \{\varnothing\}$. 
-Assume that $A_n$ and $\mathscr{P}_n$ have been defined. 
-To define $A_{n+1}$ and $\mathscr{P}_{n+1}$, let $A_n = \bigcap_{k < \omega} Q_k$, where each $Q_k$ is open. 
+Assume that $A_n$ and $\mathscr{P}_n$ have been defined,
+we need to construct $A_{n+1}$ and $\mathscr{P}_{n+1}$. Since $A_n$ is assumed as a $G_\delta$-set, 
+we let $A_n = \bigcap_{k < \omega} Q_k$ such that each $Q_k$ is open. 
 For $k < \omega$, let
 $$\mathscr{G}_k = \{ \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in S}U_\alpha: S\in\hstretch{1.8}{[}\lambda\hstretch{1.8}{]}^{n+1} \}
 \cup \{Q_k\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha: \alpha < \lambda\}.$$
