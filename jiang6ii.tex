@@ -151,9 +151,10 @@ Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
 \textsc{Proof of Claim 2}. Let $x \in X$. There exists $m \ge 1$ such that 
 $x \in \bigcup_{i \le m}(\bigcup \mathscr{B}_i)$. By Condition (4), there exists $k_0(x)<\omega$ 
 such that $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$ is finite; there exists $k_1 <\omega$ 
-such that $\operatorname{ind}(\mathscr{V}(k_1(x)))_x$ is finite, $\dots$; there exists $k_{m-1}$ 
-such that $\operatorname{ind}(\mathscr{V}(k_{m-1}(x)))_x$ is finite. 
-For all $i \ge m$, let $k_i = 0$.  Then
+such that $\operatorname{ind}(\mathscr{V}(k_1(x)))_x$ is finite, $\dots$; 
+there exists $k_{m-1}(x) <\omega$ 
+such that $\operatorname{ind}(\mathscr{V}(k_0(x)), \cdots,  \mathscr{V}(k_{m-1}(x)))_x$ is finite. 
+For all $i \ge m$, let $k_i(x) = 0$.  Then
 \begin{gather*}
 	t(x)=(k_0(x), k_1(x), \cdots, k_{m-1}(x), 0, 0, \cdots) \in T \textit{ and} \\
 	\mathscr{H}(t(x)) = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{n<\omega}\mathscr{V}(k_0(x), k_1(x), \cdots, k_{n}(x)).
@@ -171,7 +172,8 @@ countable closed cover $\{\mathscr{F}_n: n <\omega\}$ such that for each $n < \o
 $\mathscr{U}|{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in subspace $F_n$. 
 Since $\mathscr{U}$ is directed, $\mathscr{V}_n$ is an interior-preserving point-star refinement of 
 $\mathscr{U}\vert{}_{F_n}$ in subspace $F_n$. By Lemma \ref{lem:4.1.6}, 
-$\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\mathscr{F}_n$ is a closed refinement of $\mathscr{U}$.
+$\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\bigcup\{\mathscr{F}_n: n<\omega\}$ is a $\sigma$-closure-preserving 
+closed refinement of $\mathscr{U}$.
 
 (iii) $\Rightarrow$ (iv). Clear.
 
