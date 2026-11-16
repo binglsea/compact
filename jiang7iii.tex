@@ -49,7 +49,7 @@ such that for each $\alpha < \lambda$,
 $A_{m,n,\alpha}\setminus L \subset V_{m,n,\alpha}\subset U_\alpha$. 
 Then $\bigcup\mathscr{A}_{m,n}\setminus L \subset \bigcup \mathscr{V}_{m,n}$. 
 It follows from inductive hypothesis that 
-$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le(m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{A}_{p,q}\right) \subset L\cup\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}(\mathscr{A}_{m,n}\right) \subset 
+$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le(m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{A}_{p,q}\right) \subset L\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}(\mathscr{A}_{m,n}\right) \subset 
 \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le(m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{V}_{p,q}\right).$$
 Thus $\mathscr{V}_{m,n}$ is the desired family and the Claim is proved.
 
@@ -63,12 +63,12 @@ of $\mathscr{U}$. We are to show:
 
 \textbf{(*)} $\mathscr{G}$ \textit{is point-finite} (\textit{resp. locally finite}).
 
-\noindent\textsc{Proof of (*)} We only prove that $\mathscr{G}$ is  locally finite. 
+\noindent\textsc{Proof of (*)} We only prove the case when $\mathscr{G}$ is  locally finite. 
 Let $x \in X$. There exists 
  $H_0\in \operatorname{top}(x)$
 such that $\operatorname{ind}(\mathscr{W})_{H_0}$ is finite. For each $m, n < \omega$, 
 there exists $H_{m,n}\in  \operatorname{top}(x)$ such that $\operatorname{ind}(\mathscr{V}_{m,n})_{H_{m,n}}$ is finite. 
-Let $H = H_0 \cap(\bigcap\{H_{m,n}:(m,n)\in \operatorname{ind}(\mathscr{W})_{H_0}\})$. 
+Let $H = H_0 \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}(\bigcap\{H_{m,n}:(m,n)\in \operatorname{ind}(\mathscr{W})_{H_0}\})$. 
 Then $H\in\operatorname{top}(x)$ and
 $$\operatorname{ind}(\mathscr{G})_H \subset 
 \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\{\operatorname{ind}(\mathscr{V}_{m,n})_{H_{m,n}}: (m,n)
