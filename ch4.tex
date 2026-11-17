@@ -298,11 +298,11 @@ $\mathscr{F}$ $($resp. with $\bigcup \mathscr{F}^\circ = X)$.
 
 \textup{(ii)} If $\mathscr{U}$ has a point-star $($resp. local star$)$ refining sequence of interior-preserving 
 open covers of $X$, then $\mathscr{U}$ has a $\sigma$-closure-preserving closed 
-refinement $\mathscr{F}$ (and with $\bigcup \mathscr{F}^\circ = X$).
+refinement $\mathscr{F}$ $($and with $\bigcup \mathscr{F}^\circ = X)$.
 }
 
 \begin{proof}  
-(ii). Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a point (local) star refining 
+(ii). Suppose $\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ has a point-star (resp. local star) refining 
 sequence $\{\mathscr{V}_n: n < \omega\}$ of interior-preserving open covers of $X$. 
 For each $n < \omega, \alpha \in \Delta$, let 
 $F_{n,\alpha} = \{x \in X: \operatorname{st}(x, \mathscr{V}_n) \subset U_\alpha\}$. 
@@ -310,10 +310,10 @@ Then $F_{n,\alpha}\subset U_\alpha$ for all $\alpha \in \Delta$.
 To see that each $\mathscr{F}_n = \{F_{n,\alpha}: \alpha \in \Delta\}$ is closure-preserving
  closed, let $\Gamma\subset\Delta$ and $x\in \overline{\bigcup_{\alpha\in\Gamma}F_{n, \alpha}}$.
 Then there exists $\alpha_0\in\Gamma$ such that there exists some
-$y\in F_{n,\alpha_0}\cap(\bigcap(\mathscr{V}_n)_x)$. It follows
+$y\in F_{n,\alpha_0}\bigcap(\bigcap(\mathscr{V}_n)_x)$. It follows
 that $\operatorname{st}(x, \mathscr{V}_n)\subset \operatorname{st}(y, \mathscr{V}_n)\subset U_{\alpha_0}$,
 so $\overline{\bigcup_{\alpha\in\Gamma}F_{n, \alpha}} = \bigcup_{\alpha\in \Gamma}U_\alpha$.
- $\bigcup_{n < \omega}\mathscr{F}_n = \mathscr{F}$ is a $\sigma$-closure-preserving 
+ Then $\mathscr{F} = \bigcup_{n < \omega}\mathscr{F}_n$ is a $\sigma$-closure-preserving 
  closed refinement of $\mathscr{U}$.
  (If  for  $x \in X$, there exists $m$ and $G \in \operatorname{top}(x)$ such that 
  $\operatorname{st}(G, \mathscr{V}_m) \subset U_\alpha$ for some $\alpha\in\Delta$, 
