@@ -38,7 +38,7 @@ a locally finite open cover \(\mathscr{W}=\{W_n: n<\omega\}\) of \(X\) such that
 for each \(n<\omega\). Then \(\overline{W_n}\subset\bigcup\mathscr{V}_n\). 
 We have
 
-\textbf{(1)} \(\mathscr{G}_n=\{W_n\cap V_{n,\alpha}: \alpha\in\Delta_n\}\)
+\textbf{(1)} \(\mathscr{G}_n=\{W_n\bigcap V_{n,\alpha}: \alpha\in\Delta_n\}\)
  \textit{is locally finite and open for each } \(n < \omega\).
 
 \noindent\textsc{Proof of (1)}.
@@ -49,12 +49,14 @@ neighborhood of \(x\) which
 is disjoint with any member
 of \(\mathscr{G}_n\). If \(x\in\mathscr{V}_{n,\beta}\) for some \(\beta\in\Delta_n\),
 then \(\{\alpha\in\Delta_n: V_{n,\beta}\cap V_{n,\alpha}\neq\varnothing\}\) is finite. Then the set
-\(\{\alpha\in\Delta_n: V_{n,\beta}\cap (W_n\cap V_{n,\alpha})\neq\varnothing\}\) is finite, 
+\(\{\alpha\in\Delta_n: V_{n,\beta}\bigcap (W_n\bigcap V_{n,\alpha})\neq\varnothing\}\) is finite, 
 so \(\mathscr{G}_n\) is locally finite and (1) holds.
 
 Let \(\mathscr{H}=\{H_n: n<\omega\}\) be a locally finite open cover of \(X\) such that
 \(H_n\subset\bigcup \mathscr{G}_n\) for each \(n<\omega\). 
-Let \(\mathscr{R}=\{H_n\cap W_n\cap V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\}\).
+Let
+$$\mathscr{R}=\{H_n\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} W_n
+\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\}.$$
 
 \textbf{(2)} \textit{\(\mathscr{R}\) is a locally finite open refinement of \(\mathscr{U}\). Thus, 
 \(X\) is $\lambda$-paracompact.}
@@ -62,13 +64,15 @@ Let \(\mathscr{R}=\{H_n\cap W_n\cap V_{n,\alpha}: \alpha\in\Delta_n, n < \omega\
 \noindent\textsc{Proof of (2)}. It is clear that \(\mathscr{R}\) is an open refinement of \(\mathscr{U}\). To show
 that \(\mathscr{R}\) is locally finite, let \(x\in X\). Since \(\mathscr{H}\) is locally finite, 
 there exists \(G_0\in\operatorname{top}(x)\) such
-that \(D=\{n<\omega: G_0\cap H_n \ne \varnothing\}\) is finite. By (1), 
+that \(D=\{n<\omega: G_0\bigcap H_n \ne \varnothing\}\) is finite. By (1), 
 for each \(n\in D\)
 there exists \(G_n\in\operatorname{top}(x)\) such that 
-\(C_n=\{\alpha\in\Delta_n: G_n\cap(W_n\cap V_{n,\alpha})\neq\varnothing\}\)
-is finite. Let \(G=G_0\cap(\bigcap_{n\in D}G_n)\) and let 
+\(C_n=\{\alpha\in\Delta_n: G_n\bigcap(W_n\bigcap V_{n,\alpha})\neq\varnothing\}\)
+is finite. Let \(G=G_0\bigcap(\bigcap_{n\in D}G_n)\) and
 
-$$C=\{(n,\alpha): n<\omega,\alpha\in\Delta_n, G\cap H_n \cap W_n\cap V_{n,\alpha} \neq\varnothing\}.$$
+$$C=\{(n,\alpha): n<\omega,\alpha\in\Delta_n, G\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} H_n 
+\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} W_n \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
+V_{n,\alpha} \neq\varnothing\}.$$
 
 \noindent Then $C\subset \bigcup_{n\in D}(\{n\}\times C_n)$, 
 so \(C\) is finite and (2) holds.
@@ -185,7 +189,7 @@ has a closure-preserving closed refinement.
 \begin{proof} It is clear that (i) \(\Rightarrow\) (ii) \(\Rightarrow\) (iii) \(\Rightarrow\) (vi),
  (iii) \(\Rightarrow\) (v), and (ii) \(\Rightarrow\) (iv) \(\Rightarrow\) (v). 
  
- To see that (vi) \(\Rightarrow\) (i) and (v) \(\Rightarrow\) (i).
+(vi) \(\Rightarrow\) (i) and (v) \(\Rightarrow\) (i).
 Assume (v) or (vi). By Theorem \ref{th:8.1.5}, \(X\) is \(\lambda\)-collectionwise
 normal. By Theorem \ref{th:4.1.11}, \(X\) is \(\lambda\)-subparacompact. 
 By Corollary \ref{cor:8.2.4}, \(X\) is \(\lambda\)-fully normal. 
@@ -280,7 +284,7 @@ is similar  to that for  Theorem \ref{th:8.1.9}.
 (ii) \(\Rightarrow\) (v) and (iii) \(\Rightarrow\) (iv). Clear.
 
 (iv) \(\Rightarrow\) (i) Assume (iv). By Theorem \ref{th:4.1.7}, $X$ is 
-$\lambda$-submetacompact. The Theorem \ref{th:8.1.9}, $X$ is $\lambda$-collectionwise
+$\lambda$-submetacompact. ByTheorem \ref{th:8.1.9}, $X$ is $\lambda$-collectionwise
 normal. Then $X$ is $\lambda$-fully normal. 
 
 (v) \(\Rightarrow\) (i). Assume (v). By Theorem \ref{th:4.1.11}, $X$ 
