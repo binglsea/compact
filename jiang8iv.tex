@@ -21,7 +21,7 @@ A space $X$ is
 \index{$\lambda$-discretely $\varepsilon^*$-expandable| \S\ref{def:8.1.2}\hfill} 
 \index{discretely $\varepsilon^*$-expandable| \S\ref{def:8.1.2}\hfill} 
 if every discrete 
-$\lambda$-family of closed subsets of $X$ has a 
+$\lambda$-family of closed subsets of $X$ has an 
 $\varepsilon^*$-sequence of open expansions.
 }
 
@@ -37,7 +37,7 @@ $(\Rightarrow)$. Clear.
 $(\Leftarrow)$. 
 Suppose that $X$ is $\lambda$-discretely $\varepsilon^*$-expandable and 
 let $\mathscr{D} = \{D_\alpha: \alpha < \lambda\}$ be a 
-discrete closed family in $X$. Let $\{\mathscr{V}_n: n \in \omega\}$ be an
+discrete closed family in $X$. Let $\{\mathscr{V}_n: n < \omega\}$ be an
 $\varepsilon^*$-sequence of open expansions of $\mathscr{D}$, where each $\mathscr{V}_n = \{V_{n,\alpha}: \alpha < \lambda\}$ with 
 $D_\alpha \subset V_{n,\alpha}$ for each 
 $n < \omega, \alpha < \lambda$. For $n <\omega$, let 
@@ -46,10 +46,11 @@ Clearly, each $H_n$ is closed in $X$.
 For each $n < \omega$, $\mathscr{V}_n\vert{}_{H_n}$ 
 is a point-finite open family in subspace $H_n$. 
 It follows that the family 
-$\{H_n \bigcap(\bigcup_{\gamma \ne \alpha}V_{n,\gamma}): \alpha < \lambda\}$ 
+$\{H_n \bigcap(\bigcup_{\gamma \in \lambda\setminus\{\alpha\}}V_{n,\gamma}): \alpha < \lambda\}$ 
 is an interior-preserving open family in $H_n$. 
 For $n < \omega, \alpha < \lambda$, let
-$$B_{n,\alpha} = H_n \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\ne\alpha} V_{n,\gamma} 
+$$B_{n,\alpha} = H_n \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{
+	\gamma\in \lambda\setminus\{\alpha\}} V_{n,\gamma} 
 \textit{ and } \mathscr{B}_n = \{B_{n,\alpha}: \alpha < \lambda\}.$$
 
 \noindent Then $\mathscr{B} = \bigcup_{n < \omega} \mathscr{B}_n$ is 
@@ -85,7 +86,7 @@ $x \notin B_{i,\gamma}^\circ$. Hence $x \in U_{m,\alpha} \subset U_\alpha$.
 
 \textbf{(3)} \textit{If $n < \omega$ and $\gamma\ne \alpha$, then}
 $$B_{n,\gamma} \cap D_\alpha \subset 
-\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\mu\ne\gamma}V_{n,\mu}\right)
+\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\mu\in\lambda\setminus\{\gamma\}}V_{n,\mu}\right)
 \cap V_{n,\alpha} = \varnothing.$$
 
 \textbf{(4)} \textit{If} $\alpha \neq \beta$, \textit{then} $U_\alpha \cap U_\beta = \varnothing$.
