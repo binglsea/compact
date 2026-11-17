@@ -176,7 +176,8 @@ $D_{m, n, \alpha}\setminus L\subset V_{m,n,\alpha}\subset U_\alpha$.
 Then $\bigcup\mathscr{D}_{m,n}\setminus L\subset \bigcup\mathscr{V}_{m,n}$. It follows
 from inductive hypothesis that 
 $$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le (m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{D}_{p,q}\right) \subset 
- L\cup \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{D}_{m,n}\setminus L\right) \subset 
+ L\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}
+  \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{D}_{m,n}\setminus L\right) \subset 
  \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le (m,n)}\left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{V}_{p,q}\right).$$
  Thus $\mathscr{V}_{m,n}$ is a discrete family of functionally open sets 
  in $X$ with Properties (a) and (b). We complete the proof of induction.
@@ -195,7 +196,8 @@ refines $\mathscr{U}$.
  $\mathscr{V}$. Thus $\mathscr{\overline{V}}$ is closure-preserving closed refinement of $\mathscr{U}$.
  
 (ii) $\Rightarrow$ (iv). Let $\mathscr{U}$ be a normal $D\omega^2$ $\lambda$-cover 
-of $X$. There exists a sequence $\{\mathscr{U}_n: n < \omega\}$ of open covers of $X$
+of $X$.  By (ii), it is normal.
+There exists a sequence $\{\mathscr{U}_n: n < \omega\}$ of open covers of $X$
 such that $\mathscr{U}_0$ refines $\mathscr{U}$ and $\mathscr{U}_1$
 point-star refines $\mathscr{U}_0$. Then $\mathscr{U}_1$ is a semi-open 
 point-star refinement of $\mathscr{U}$.
@@ -309,7 +311,7 @@ $\lambda$-cover of $X$. By (iii), $\mathscr{U}$ has a semi-open local star refin
 $\mathscr{V}$. For $\alpha < \lambda$, let 
 $$G_\alpha = \{x\in X: \exists \, W\in \operatorname{top}(x)
  \textit{ and } \operatorname{st}(W, \mathscr{V})\subset U_\alpha\}.$$
- The $\{G_\alpha:\alpha < \lambda\}$ is a cushioned open refinement of 
+ Then $\{G_\alpha:\alpha < \lambda\}$ is a cushioned open refinement of 
  $\mathscr{U}$.
  
  (iv) $\Rightarrow$ (i). By Theorem \ref{th:8.1.7}.
@@ -319,7 +321,7 @@ $$G_\alpha = \{x\in X: \exists \, W\in \operatorname{top}(x)
 {\theorem{} \label{th:8.1.9}
 For any space $X$, the following are equivalent:
 
-\textup{(i)} $X$ is normal $\lambda$-expandable (resp. $\lambda$-collectionwise normal),
+\textup{(i)} $X$ is normal $\lambda$-expandable $($resp. $\lambda$-collectionwise normal$)$,
 
 \textup{(ii)}  Every $A\omega^2$ $($resp. $D\omega^2)$  $\lambda$-cover of $X$ has an $\varepsilon^*$-sequence of open refinements.
 
@@ -339,9 +341,9 @@ By Theorem \ref{th:8.1.8}, $\mathscr{U}$ has a refinement
 $\mathscr{D} = \bigcup_{n<\omega} \mathscr{D}_n$ where each 
 $\mathscr{D}_n= \{D_{n,\alpha}: \alpha<\lambda\}$ is a discrete closed family in $X$ 
 such that  $D_{n,\alpha}\subset U_\alpha$ for each $\alpha< \lambda$, 
-and $\mathscr{D}_n^\circ$ covers $X$.
+and $\mathscr{D}^\circ$ covers $X$.
 For each $n<\omega$ and $\alpha<\lambda$, let 
-$G_{n,\alpha} = U_\alpha \setminus \bigcup_{\gamma \neq \alpha} D_{n,\gamma}$. 
+$G_{n,\alpha} = U_\alpha \setminus \bigcup_{\gamma \in\lambda\setminus\{\alpha\}} D_{n,\gamma}$. 
 Then each $G_{n,\alpha}$ is open with 
 $D_{n,\alpha} \subset G_{n,\alpha} \subset U_\alpha$, and 
 each $\mathscr{G}_n = \{G_{n,\alpha} : \alpha \in \lambda\}$ is an open 
@@ -359,7 +361,7 @@ It is clear that (ii) $\Rightarrow$ (v) and (iii) $\Rightarrow$ (iv)
 $\Rightarrow$ (v).
 
 (v) $\Rightarrow$ (i). Assume (v) holds and let 
-$\mathscr{U} = \{U_\alpha: \alpha \in \Delta\}$ be an interior-preserving
+$\mathscr{U} = \{U_\alpha: \alpha < \Delta\}$ be an interior-preserving
 $A\omega^2$ (resp. $D\omega^2$)  $\lambda$-cover  of $X$. 
 Let $\{\mathscr{E}_n: n < \omega\}$ be a local star refining sequence for 
 $\mathscr{U}$ by semi-open covers. For $n < \omega$, let
