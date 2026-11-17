@@ -219,7 +219,7 @@ Thus $A \subset \bigcup \mathscr{P}$.
 
 {\theorem{\label{th:3.3.7}}  
 \textup{(\hstretch{1.8}{[}Chaber 1979\hstretch{1.8}{]}\textsuperscript{\cite{Chaber}})}
-In a $\lambda$-discretely subexpandable space, every point-finite open $\lambda$-cover has a $\sigma$-discrete closed refinement.
+In a $\lambda$-discretely subexpandable space $X$, every point-finite open $\lambda$-cover has a $\sigma$-discrete closed refinement.
 }
 
 \begin{proof}
@@ -240,7 +240,7 @@ we need to construct $A_{n+1}$ and $\mathscr{P}_{n+1}$. Since $A_n$ is assumed a
 we let $A_n = \bigcap_{k < \omega} Q_k$ such that each $Q_k$ is open. 
 For $k < \omega$, let
 $$\mathscr{G}_k = \{ \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in S}U_\alpha: S\in\hstretch{1.8}{[}\lambda\hstretch{1.8}{]}^{n+1} \}
-\cup \{Q_k\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha: \alpha < \lambda\}.$$
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{Q_k\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha: \alpha < \lambda\}.$$
 For each $x \in X$, if $x \in F_n$, then $x \in A_n \subset Q_k$, 
 so $x \in Q_k\cap U_\alpha$ for some $\alpha < \lambda$; if $x \notin F_n$, 
 then $|\operatorname{ind}(\mathscr{U})_x| > n$,
@@ -255,8 +255,9 @@ By Lemma \ref{lem:3.3.6}, we have:
 $\mathscr{E}_k$ of $\mathscr{G}_k$ and a $G_\delta$-set $B_k$ such that 
 $\bigcup \widetilde{\mathscr{G}}_k \subset B_k \subset \bigcup \mathscr{E}_k$.}
 
-Let $A_{n+1} = \bigcap_{k < \omega} (B_k \cup Q_k)$ and 
-$\mathscr{P}_{n+1} = \mathscr{P}_n \cup \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. 
+Let $A_{n+1} = \bigcap_{k < \omega} (B_k \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} Q_k)$ and 
+$\mathscr{P}_{n+1} = \mathscr{P}_n \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}
+ \left( \bigcup_{k < \omega} \mathscr{E}_k \right)$. 
 Then $A_{n+1}$ is a $G_\delta$-set and $\mathscr{P}_{n+1}$ is a 
 $\sigma$-discrete closed partial refinement of $\mathscr{U}$. Let us show that:
 \begin{gather}
@@ -270,14 +271,16 @@ $x \in \bigcap_{\alpha \in S_0} U_\alpha$. It follows that
 \begin{gather}
 x \in \bigcap_{\alpha \in S_0} U_\alpha 
 \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left\{ \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in S} U_\alpha: S\neq S_0 \right\} 
-\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \lambda} (Q_k \cap U_\alpha) 
+\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha \in \lambda} 
+(Q_k \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha)
 = \widetilde{\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha \in S_0} U_\alpha} \in \widetilde{\mathscr{G}}_k. \label{eq:3.3.7.2}
 \end{gather}
 \noindent So \eqref{eq:3.3.7.1} holds.
 
 By \eqref{eq:3.3.7.1}, for each $k < \omega$,
-$$F_{n+1} \subset (F_{n+1} \setminus Q_k) \cup Q_k \subset
-(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{G}}_k) \cup Q_k \subset B_k \cup Q_k.$$
+$$F_{n+1} \subset (F_{n+1} \setminus Q_k) \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} Q_k \subset
+(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{G}}_k) 
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} Q_k \subset B_k \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} Q_k.$$
 So $F_{n+1} \subset A_{n+1}$. 
 To show that $A_{n+1} \subset \bigcup \mathscr{P}_{n+1}$, 
 let $x \in A_{n+1}$. If $x \in A_n$, then 
