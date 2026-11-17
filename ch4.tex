@@ -142,7 +142,7 @@ $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and
 
 \textbf{(a)} If $\beta \ge \lambda$ and $\beta > \beta_m$, then $x \notin V(s_{m+1}, \beta)$.
 
-If $\beta \ge \lambda$ and $\beta > \beta_m$, then  $\gamma \le \beta_m < \beta$ 
+\noindent If $\beta \ge \lambda$ and $\beta > \beta_m$, then  $\gamma \le \beta_m < \beta$ 
 for all $ \gamma\in A_m$. 
 Then by \eqref{eq:4.1.2.6}, 
 $\operatorname{st}(x, \mathscr{L}_{s_{m+1}}) \subset \bigcup_{\gamma < \beta} V(s_m, \gamma)$. 
@@ -167,11 +167,11 @@ Then \eqref{eq:4.1.2.7} follows from (a) and (b). We say that
 
 If this true, then \eqref{eq:4.1.2.5} is true and we complete the proof. 
 
-\noindent\textsc{Proof of \eqref{eq:4.1.2.7}}. 
+\noindent\textsc{Proof of \eqref{eq:4.1.2.8}}. 
 Let $C= \operatorname{ind}(\mathscr{V}(s_{m+1}))_x$. By \eqref{eq:4.1.2.7}, $C = \{\alpha < \lambda: x \in V(s_{m+1}, \alpha)\}$. For $n\le m$, let $B_n = \{\alpha < \lambda: \lambda + \alpha\in A_n\}$. Since each
 $B_n $ is finite, it suffices to show that $C \subset \bigcup_{n=1}^{m} B_n$. 
 Let $\alpha \in C$. Since $x\notin \varnothing = V(s_0, \alpha)$, there exists $p$ such that 
-$0 \le p \le m$ and $x \in \mathscr{V}({s_{p+1}}, \alpha)\setminus  \mathscr{V}{s_{p}}, \alpha)$.
+$\alpha \le p \le m$ and $x \in \mathscr{V}({s_{p+1}}, \alpha)\setminus  \mathscr{V}{s_{p}}, \alpha)$.
 By \eqref{eq:4.1.2.2}, 
 $x \in \operatorname{st}(X \setminus \bigcup_{\beta \ne \lambda + \alpha}\mathscr{V}(s_p, \beta),
 	 \mathscr{L}_{s_{p+1}})$.
@@ -251,10 +251,11 @@ We have
 
 \noindent For each $l = 0, 1, \dots, h$, let $W_l(n, y)$ be a member of $\mathscr{W}_l(n, \delta(y, n))$ containing $y$.
 Let 
-$$H(n, h, y) = V(n, \delta(y, n)) \cap \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^{h} W_l(n, y).$$ 
+$$H(n, h, y) = V(n, \delta(y, n))  \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}
+ (\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^{h} W_l(n, y)).$$ 
 \noindent Then $H(n, h, y)$ are open sets containing $y$.
 Let 
-$$\mathscr{H}_{n,h} = \{H(n, h, y): y \in F_{n,h}\} \cup \{X \setminus F_{n,h}\}.$$
+$$\mathscr{H}_{n,h} = \{H(n, h, y): y \in F_{n,h}\}  \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X \setminus F_{n,h}\}.$$
 \noindent Then $\mathscr{U}_{n,h}$ are open covers of $X$.
 We have
 
@@ -262,22 +263,24 @@ We have
 
 This says that $\mathcal{P}_\kappa$ holds.
 
-\noindent\textsc{Proof of (2)}. Let $x \in X$. There exists $m$ such that 
+\noindent\textsc{Proof of (2)}. Let $x \in X$. There exists $m<\omega$ such that 
 $\operatorname{ind}(\mathscr{V}_m)_x = \{\alpha_1, \alpha_2, \dots, \alpha_p\}$ is finite. Then $x \in F_{m,p}$. For each $i = 1, \dots, p$, since 
 $\{\mathscr{W}_l(m, \alpha_i): l < \omega\}$ is a pointwise W-refining sequence for 
 $\mathscr{U}(m, \alpha_i)$, 
 there exists $l_i < \omega$ and a finite set $D_i \subset \alpha_i$ such that:
 
-\textbf{(3)}  $(W_{l_i}(m, \alpha_i))_x$ \textit{refines} $\{U_\gamma: \gamma \in D_i\} \cup
+\textbf{(3)}  $(W_{l_i}(m, \alpha_i))_x$ \textit{refines} $\{U_\gamma: \gamma \in D_i\} 
+ \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}
 \{\bigcup_{\gamma > \alpha_i}V(m, \gamma)\}$.
 
-\textbf{(4)}  Let $\mathscr{U}' = \{U_\gamma: \gamma \in \bigcup_{i=1}^{p} D_i\}$ and 
+\noindent Let $\mathscr{U}' = \{U_\gamma: \gamma \in \bigcup_{i=1}^{p} D_i\}$ and 
 $r = \max\{p,  l_1, \dots, l_p\}$.
-$(\mathscr{H}_{m,r})_x$ refines $\mathscr{U}'$.
 
-This shows that (2) holds.
+\textbf{(4)}  $(\mathscr{H}_{m,r})_x$ \textit{ refines } $\mathscr{U}'$.
 
-\noindent\textsc{Proof.} Let $H \in (\mathscr{H}_{m,r})_x$, then $x\in H\cap F_{m,r}$.
+\noindent This shows that (2) holds.
+
+\noindent\textsc{Proof of (4).} Let $H \in (\mathscr{H}_{m,r})_x$, then $x\in H\cap F_{m,r}$.
 Hence there exists $y \in F_{m,r}$ such that $H= H(m, r, y)$.
 Since $x\in V(m, \delta(y, m))$, there exists $j \le p$ such that $\delta(y, m) = \alpha_j$.
 Also, $x\in\bigcap_{l=0}^r W_l(m, y)\subset W_{l_j}(m, y)$. It follows from (3) and (1), there exists
