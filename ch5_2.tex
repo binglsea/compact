@@ -103,11 +103,11 @@ and let \(\mathscr{F} = \bigcup_{m,n<\omega} \mathscr{F}_{m,n}\) be a
 \(C\omega^2\)-refinement of \(\mathscr{U}\), where each 
 \(\mathscr{F}_{m,n} = \{ F_{m,n,\alpha}: \alpha < \lambda\}\) is a family 
 of closed subsets of  subspace 
-\(X \setminus \bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) <  m,n\}\) such that 
+\(X \setminus \bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) <  (m,n)\}\) such that 
 \(F_{m,n,\alpha} \subset U_\alpha\) for all \(\alpha < \lambda\).
 	Let \(\mathscr{F}_{0,0} = \{\varnothing\}\), 
 \(\mathscr{V}_{0,0} = \{\varnothing\}\) and
- \(\langle m,n \rangle \in \omega \times \omega\). 
+$m,n < \omega$. 
  Assume that the $\lambda$-families 
  \(\mathscr{V}_{p,q} = \{ V_{p,q,\alpha}: \alpha < \lambda \}\) 
  of open sets  have been constructed for all \((p,q) <  ( m,n)\) to satisfy the conditions:
@@ -256,7 +256,7 @@ $$F_{m+1,0,\alpha} = B_{m,n,\alpha} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\c
 Then $\mathscr{F}_{m+1,0} = \{F_{m+1,0,\alpha}: \alpha < \lambda\}$ is a family of closed subsets of 
 $X\setminus \bigcup_{i\le m}(\bigcup \mathscr{F}_{i, o})$, and $F_{m+1,0,\alpha} \subset U_\alpha$ for each $\alpha$. Then
 $$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{F}_{m+1,0} = 
-\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_{m+1,n} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i \le m} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{F}_{i,0}) = 
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_{m+1} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i \le m} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{F}_{i,0}) = 
 \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_{m+1,n} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{i \le m} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{B}_{i,0}).$$
 Thus
 \begin{equation*}
@@ -338,7 +338,7 @@ Thus $\mathscr{V}_{m,n}$ is the desired functionally open family and the Claim i
 By the Claim and Theorem \ref{th:2.1.6}, there exists a locally finite functionally open 
 cover $\{W_{m,n}:  m,n<\omega\}$ of $X$ such that 
 $W_{m,n} \subset \bigcup \mathscr{V}_{m,n}$ for each $m, n < \omega$.
-For $\alpha\in \Delta$, let $G_\alpha = \bigcup \{W_{m,n} \cap V_{m,n,\alpha}: m, n < \omega\}$. 
+For $\alpha\in \Delta$, let $G_\alpha = \bigcup \{W_{m,n} \bigcap V_{m,n,\alpha}: m, n < \omega\}$. 
 Then $\overline{G}_\alpha \subset U_\alpha$ for each $\alpha\in\Delta$, so 
 $\mathscr{G} = \{G_\alpha: \alpha\in\Delta\}$ is an functionally open shrink of $\mathscr{U}$.
 
