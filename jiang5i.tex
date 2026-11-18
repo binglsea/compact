@@ -208,7 +208,7 @@ H_n = \{x\in X: |\{i \in \omega: x\in \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\ma
 For $B\in \hstretch{1.8}{[}\Gamma_k\hstretch{1.8}{]}^l, S\in\hstretch{1.8}{[}\omega\hstretch{1.8}{]}^n$, let
 \begin{gather*}
 	G(\varnothing, k, 0) = \varnothing, \\
-	G(B, k, l) = \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in B} G_{k, \alpha} \textit{ for } n \ge 1, \\
+	G(B, k, l) = \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{\alpha\in B} G_{k, \alpha} \textit{ for } l \ge 1, \\
 	L(\varnothing, 0) = \varnothing, \\
 	L(S, n) = \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{i\in S} (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i) \, \textit{ for } n \ge 1, \\
 	P(B, S, m, n) = G(B, k, l) \cap D_k^l \cap L(S, n) \cap H_n, \\
@@ -239,21 +239,21 @@ is open in $Y$. Let $x \in G$. We have
 \noindent Since $\mathscr{G} = \bigcup_{n<\omega} \mathscr{G}_n$ is a weak $\overline{\theta}$-refinement, there exist $r, j < \omega$ such that 
 \begin{gather*}
 	|\{\alpha\in \Gamma_r: x\in G_{r, \alpha}\}| = i > 0, \\
-	|\{t\in \omega: x\in \cup\mathscr{G}_t\}| = j. 
+	|\{t\in \omega: x\in \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{G}_t\}| = j. 
 \end{gather*}
 
 \noindent Suppose $h = \varphi(r, i)$. Take $B \in \hstretch{1.8}{[}\Gamma_r\hstretch{1.8}{]}^i$ and $S \in \hstretch{1.8}{[}\omega\hstretch{1.8}{]}^j$ 
 such that 
-$$x \in G(B, \Gamma, i) \cap D_r^l \cap L(S, j) \cap H_j = P(B, S, h, j)\subset
+$$x \in G(B, \Gamma, i) \cap D_r^i \cap L(S, j) \cap H_j = P(B, S, h, j)\subset
 \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}\mathscr{P}_{h, j}.$$
-If $j < r$, then $(h, j) < (m, n)$.
+If $j < n$, then $(h, j) < (m, n)$.
 It follows that 
 $x\in \bigcup\{\bigcup\mathscr{P}_{p. q}: (p, q) < (m, n)\}\subset X\setminus Y$, a contradiction. 
 Hence $j \ge n$.
 
 \textsc{Case 1}. Suppose $j > n$. Then $x\notin H_n$ and $W = Y \setminus H_n$ 
 is a neighborhood of $x$ in $Y$ such that 
-$W \cap (\bigcup \mathscr{P}_{m, n})\subset (X\setminus H_n)\cap H_n = \varnothing$,
+$W \bigcap (\bigcup \mathscr{P}_{m, n})\subset (X\setminus H_n)\bigcap H_n = \varnothing$,
 so $W\subset G$.
 
 \textsc{Case 2}. Suppose $j = n$. There exists $S_0\in\hstretch{1.8}{[}\omega\hstretch{1.8}{]}^n$ such that 
@@ -264,7 +264,7 @@ x\in L(S_0, n) \cap H_n. \label{eq:5.1.5.2}
 \textsc{Case 2}a. 
 If $x \notin \bigcup\mathscr{G}_k$, then $k \notin S_0$. The set 
 $W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that 
-for each $B\subset \hstretch{1.8}{[}\Gamma_r\hstretch{1.8}{]}^l$, $S_0\in \hstretch{1.8}{[}\omega\hstretch{1.8}{]}^r$,
+for each $B\subset \hstretch{1.8}{[}\Gamma_k\hstretch{1.8}{]}^l$, $S_0\in \hstretch{1.8}{[}\omega\hstretch{1.8}{]}^n$,
 \begin{gather*}
 W\cap P(B, S, m, n) \subset
   \left( \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{i\in S_0} \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i\right)  \right)
