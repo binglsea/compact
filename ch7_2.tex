@@ -570,12 +570,14 @@ Let $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ such that
 $B_{m,\alpha}\subset\bigcup_{\gamma < \alpha}U_\gamma$ for each $m < \omega,
 \alpha < \mu$. 
 For $m < \omega, \alpha < \mu$, let 
-$$\mathscr{G}_{m, \alpha}= \{U_\gamma: \gamma < \alpha\}\cup \{X\setminus B_{m,\alpha}\}.$$
+$$\mathscr{G}_{m, \alpha}= \{U_\gamma: \gamma < \alpha\}
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X\setminus B_{m,\alpha}\}.$$
 Then each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $X$ with power $< \mu$.
 For each $S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}$, let $U_S = \bigcup_{\gamma\in S}U_\gamma$, and
-$$\mathscr{G}_{m, \alpha}^F= \{U_S: S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}\cup 
-\{U_t \cup (X\setminus B_{m,\alpha}):t\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}
-\cup \{X\setminus B_{m, \alpha}\}.$$
+$$\mathscr{G}_{m, \alpha}^F= \{U_S: S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} 
+\{U_t \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} (X\setminus B_{m,\alpha}):t\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X\setminus B_{m, \alpha}\}.$$
 Then $\mathscr{G}_{m, \alpha}^F$ is an interior-preserving directed open $\kappa$-cover for some $\kappa< \mu$.
  By the inductive hypothesis, $\mathscr{G}_{m,\alpha}^F$ has a refinement 
  $\mathscr{E}_{m,\alpha} = \bigcup_{n < \omega} \mathscr{E}_{m,\alpha,n}$ where each 
