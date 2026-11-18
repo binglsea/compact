@@ -357,15 +357,17 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
  
 \noindent For if $\beta \ge \lambda$, then by (2), $\beta > \beta_m$. Thus, (5) follows from (3).
 
-\textbf{(6)} $\mathscr{V}(s_{m+1})$ \textit{ is locally finite at } $x$. It says that Claim 2 is true.
+\textbf{(6)} $\mathscr{V}(s_{m+1})$ \textit{ is locally finite at } $x$.
+
+\noindent It says that Claim 2 is true.
 
 \noindent\textsc{Proof of (6)}. For each $n < \omega$, let $D^*_{n} = \{\alpha < \lambda: \lambda + \alpha \in D_n\}$. 
 By (5),
 $$\operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,m)} = 
 \{\alpha < \lambda: G(x, m) \cap V(s_{m+1}, \alpha) \ne \varnothing\}.$$
 If  $\alpha\in \operatorname{ind}(\mathscr{V}(s_{m+1}))_{G(x,n)}$, 
-then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$,
-since $y\notin \varnothing = V(s_0, \alpha)$. Let $p = \max\{i \le m: y\notin V(s_i, \alpha)\}$.
+then $\alpha < \lambda$ and $\exists\, y\in G(x, m)\bigcap V(s_{m+1}, \alpha)$.
+Since $y\notin \varnothing = V(s_0, \alpha)$, let $p = \max\{i \le m: y\notin V(s_i, \alpha)\}$.
 Then $y\in V(s_{p+1}, \alpha)\setminus V(s_p, \alpha)$ and $p \le m$.
 Since $s_{p+1}= s_p\oplus k_p$, it follows from \eqref{eq:7.2.10.2}
 that there exists $u\in X\setminus\bigcup_{\beta \ne \lambda+ \alpha} V(s_p, \beta)$ such that
@@ -394,7 +396,7 @@ semi-open covers of $X$. \hfill\qedsymbol
 
 {\corollary{} \label{cor:7.2.12}
 \textup{(\hstretch{1.8}{[}Worrell 1968\hstretch{1.8}{]}\textsuperscript{\cite{Worrell1968}})}  
-$X$ is paracompact iff every open cover of $X$ has an open local $W$refinement.\hfill\qedsymbol
+$X$ is paracompact iff every open cover of $X$ has an open local $W$-refinement.\hfill\qedsymbol
 }
 
 {\theorem{} \label{th:7.2.13} 
@@ -424,11 +426,12 @@ $\mathscr{W} = \{\bigcup_{\gamma < \alpha}U_{\gamma}: \alpha < \mu\}$ is
 an increasing open $\lambda$-cover of $X$.
 By hypothesis, there exists a $\theta^*$-sequence 
 $\{\mathscr{V}_n:n<\omega\}$ of open refinements of $\mathscr{W}$. 
-Let $\mathscr{V}_n= \{V(n, \alpha): \alpha < \mu \}$ such that 
+Assuming these refinements precise, let $\mathscr{V}_n= \{V(n, \alpha): \alpha < \mu \}$ such that 
 $V(n, \alpha)\subset \bigcup_{\gamma < \alpha}U_\gamma$ for each $\alpha < \mu$.
 For $n < \omega, \alpha < \mu$, let 
 $$\mathscr{G}(n, \alpha) = 
-\{U_\gamma: \gamma <\alpha\} \cup\{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma> \alpha}V(n, \gamma)\}.$$
+\{U_\gamma: \gamma <\alpha\} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}
+\{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\ge \alpha}V(n, \gamma)\}.$$
 Then each $B(n, \alpha)$ is an open cover of $X$ with power $< \mu$.
 By inductive hypothesis, 
 
@@ -451,9 +454,9 @@ We have
 $y\in W_l(n, \delta(y, n, k), \beta_l) \in (\mathscr{W}_l(n, \delta(y, n, k)))_y$.
 Let 
 \begin{gather*}
-H(y, n, k) = V(n, \delta(y, n, k)) \cap \left(
+H(y, n, k) = V(n, \delta(y, n, k))\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \left(
 	\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^k W_l(n, \delta(y, n, k), \beta_l)\right),\\
-\mathscr{H}_{n,k}= \{H(y, n, k): y\in F_{n, k} \}\cup \{X\setminus F_{n,k}\}\}.
+\mathscr{H}_{n,k}= \{H(y, n, k): y\in F_{n, k} \}\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X\setminus F_{n,k}\}\}.
 \end{gather*}
 Then each $\mathscr{H}_{n,k}$ is an open cover of $X$.
 
@@ -472,7 +475,7 @@ $\exists \, r_i < \omega \exists \, B_i \in \operatorname{top}(x)$ and
 $\exists $ \textit{ finite } $D_i \subset \alpha_i$ 
 such that 
 
-\textbf{(4)}  $(\mathscr{W}_{r_i}(m, d_i))_{B_i}$ \textit{refines}
+\textbf{(4)}  $(\mathscr{W}_{r_i}(m, \alpha_i))_{B_i}$ \textit{refines}
 $\{U_\gamma: \gamma \in D_i\} \bigcup(\bigcup_{r > \alpha_i}V(m, \gamma))$. 
 
 \noindent Let
