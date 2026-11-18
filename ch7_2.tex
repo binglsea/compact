@@ -251,7 +251,7 @@ For any space $X$, the following are equivalent:
  \textbf{Claim 1}. \textit{For each $t \in \omega^{ < \omega}$ there exists an open $\lambda$-cover 
  $\mathscr{V}(t) =\{V(t, \beta): \beta < \lambda\cdot 2\}$ of  $X$ such that}
  \begin{gather}
- 	V(t, \alpha) \subset U_\alpha,\quad V(t, \lambda + \alpha) \subset U_\alpha 
+ 	V(t, \alpha) \subset U_\alpha,\quad V(t, \lambda + \alpha) \subset U_\alpha \;
  	\textit{ for all } \alpha < \lambda. \label{eq:7.2.10.1}
  \end{gather}
 \textsc{Proof of Claim 1}. 
@@ -263,7 +263,7 @@ For any space $X$, the following are equivalent:
  Suppose that $n < \omega$ and that the open cover 
  $\mathscr{V}(s) =  \{V(s, \beta): \beta < \lambda\cdot 2\}$ with Property \eqref{eq:7.2.10.1}
  have been constructed for all $s \in \omega^n$. 
- We need to construct $\mathscr{V}(s)$ for all $s \in \omega^{n+1}$.
+ We need to construct $\mathscr{V}(t)$ for all $t \in \omega^{n+1}$.
 For any $t \in \omega^{n+1}$, there exists a unique $s\in\omega^n$ and $k<\omega$ such that $t=s\oplus k$. 
 By (iii) and the inductive hypothesis, $\mathscr{V}(s)$ 
 has a local star $\overset{*}{F}$-refining sequence 
@@ -271,11 +271,11 @@ $\{\mathscr{W}_n(s): n < \omega\}$ by semi-open covers of  $X$.
 We use Junnila's following construction in the proof of Theorem \ref{th:5.1.2}. 
 For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambda$, let 
 \begin{gather}
-V(t, \alpha) = 	V(s, \alpha) \cup \left(U_\alpha\scalebox{1.5}{$\cap$} 
-	\operatorname{st}(X\setminus \scalebox{1.5}{$\cup$}_{\beta\ne \lambda+\alpha}V(s, \beta), \;
+V(t, \alpha) = 	V(s, \alpha)\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left(U_\alpha\scalebox{1.5}{$\cap$} 
+	\operatorname{st}(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta\ne \lambda+\alpha}V(s, \beta), \;
 	\mathscr{W}_k(s))^\circ\right) \label{eq:7.2.10.2} \\
-V(t, \lambda+ \alpha) = U_\alpha \cap (\scalebox{1.5}{$\cup$}_{\beta> \lambda+\alpha}V(s, \beta))
-  \cap\operatorname{st}(X\setminus \scalebox{1.5}{$\cup$}_{\beta < \lambda+\alpha}V(s, \beta),\;
+V(t, \lambda+ \alpha) = U_\alpha \scalebox{1.5}{$\cap$} (\scalebox{1.5}{$\cup$}_{\beta> \lambda+\alpha}V(s, \beta)) \scalebox{1.5}{$\cap$} \operatorname{st}(X\setminus 
+  \scalebox{1.5}{$\cup$}_{\beta < \lambda+\alpha}V(s, \beta),\;
   \mathscr{W}_k(s))^\circ \label{eq:7.2.10.3} 
 \end{gather}
 Let $\mathscr{V}(t) =  \{V(t, \beta): \beta < \lambda\cdot 2\}$. 
@@ -295,7 +295,7 @@ is a semi-open cover of  $X$. Suppose $x\in X$. Let $s_0 = \varnothing$.
 there exists $k_0 < \omega$ such that $\mathscr{W}_{k_0}(s_0)$ is a local star 
 $\overset{*}{F}$-refinement 
 of $\mathscr{V}(s_0)$ at $x$. Let $s_1 = s_0 \oplus k_0$. 
-Suppose that $i<\omega$ and tgat $s_i, k_i$ have 
+Suppose that $i<\omega$ and that $s_i, k_i$ have 
 been defined for all $i \le n$ with $s_i = s_{i-1}\oplus k_{i-1}$. 
 Let $s_{n+1} = s_n \oplus k_n$. There exists 
 $k_{n+1} < \omega$ such that  
