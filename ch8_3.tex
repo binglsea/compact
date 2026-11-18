@@ -133,7 +133,7 @@ is countable.
 {\lemma{\label{lem:8.3.4}} 
 Any family $\mathscr{B}$ of subsets of $X$ can be expressed as
 $\mathscr{B}=\bigcup_{\alpha\in \Delta}\mathscr{E}_{\alpha}$
-such that $\left(\bigcup\mathscr{E}_{\alpha}\right)\cap
+such that $\left(\bigcup\mathscr{E}_{\alpha}\right)\bigcap
 \left(\bigcup\mathscr{E}_{\beta}\right)
 =\varnothing$ whenever $\alpha\ne\beta$.
 If $\mathscr{B}$ is star-countable, then each
@@ -154,8 +154,9 @@ maximal elements of $\hat{\mathscr{B}}$. Then there exists $\alpha \in \Delta, \
  $B\in\mathscr{E}_\alpha$.
 It follows that $\mathscr{B}=\bigcup_{\alpha\in\Delta}\mathscr{E}_\alpha$. 
 Now if there exists 
-$x\in(\bigcup\mathscr{E}_\alpha)\cap(\bigcup\mathscr{E}_\beta)$, 
-then $\mathscr{E}_\alpha\cup\mathscr{E}_\beta\in \hat{\mathscr{B}}$, so $\mathscr{E}_\alpha=\mathscr{E}_\alpha\cup\mathscr{E}_\beta=\mathscr{E}_\beta$, so $\alpha=\beta$.
+$x\in(\bigcup\mathscr{E}_\alpha)\bigcap(\bigcup\mathscr{E}_\beta)$, 
+then $\mathscr{E}_\alpha\bigcup\mathscr{E}_\beta\in \hat{\mathscr{B}}$, so $\mathscr{E}_\alpha=\mathscr{E}_\alpha\bigcup\mathscr{E}_\beta
+=\mathscr{E}_\beta$, so $\alpha=\beta$.
 Finally, if $\mathscr{B}$ is star-countable, then each $\mathscr{E}_\alpha$ 
 is star-countable and connected. By Lemma \ref{lem:8.3.3},
 $\mathscr{E}_\alpha$  countable.
@@ -223,7 +224,7 @@ has a star-finite functionally open refinement.
 
 
 \begin{proof} 
-(i) $\Rightarrow$ (ii). Assume $X$ and let $\mathscr{U}= \{U_\alpha: \alpha<\lambda\}$ 
+(i) $\Rightarrow$ (ii). Assume (i) and let $\mathscr{U}= \{U_\alpha: \alpha<\lambda\}$ 
 be an open cover of $X$. Then $\mathscr{U}$ has a star-finite open refinement
 $\mathscr{G} = \{G_\beta : \beta \in \Gamma\}$. $\mathscr{G}$ is a 
 point-finite open refinement of itself,
