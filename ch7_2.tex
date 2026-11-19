@@ -282,7 +282,8 @@ Let $\mathscr{V}(t) =  \{V(t, \beta): \beta < \lambda\cdot 2\}$.
  Clearly, 	$V(t, \alpha) \subset U_\alpha, V(t, \lambda + \alpha) \subset U_\alpha$.
 Then each open family $\mathscr{V}(t)$ covers  $X$. This completes the proof of Claim 1.
 
-\textbf{(1)} \textit{For each $x\in X$, there exist sequences $\{s_n\}$ in $\omega^n$ and $\{k_n\}$ 
+% and $\{k_n\}$ 
+\textbf{(1)} \textit{For each $x\in X$ and $\{s_n\}$ in $\omega^n$,
 in $\omega$ with $s_{n+1} = s_n\oplus k_n$ such that for each $n < \omega$, there exists a 
 semi-open local star $\overset{*}{F}$-refinement $\mathscr{W}_{k_n}(s_n)$ of 
  $\mathscr{V}(s_n)$ at $x$.}
@@ -326,9 +327,8 @@ We have
 \textbf{(2)} \textit{For each } $n < \omega$,
 $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset 
    \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta\in D_n} V(s_n, \beta).$$ 
- For each $n < \omega$, let $\beta_n = \max D_n$,  and let $\beta_m = \min\{\beta_n: n < \omega\}$.
- %这里定理 7.2.10 的证明中的 $\beta_n$ 和 $\beta_m$ 是怎么回事？尤其是 $\beta_m$ =?  % TO_DO
- 
+ Let $\beta_m = \min\{\max D_n: n < \omega\}$.
+  
  \textbf{(3)} \textit{If} $\beta \ge \lambda$ \textit{ and } $\beta > \beta_m$, \textit{then} $G(x, m) \cap V(s_{m+1}, \beta) = \varnothing$.
  
  \noindent For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
