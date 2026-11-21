@@ -134,7 +134,11 @@ $x \in \bigcap_{\beta \in A_n} V(s_n, \beta)$ and
 	\operatorname{st}(x, \mathscr{L}_{s_{n+1}}) \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta \in A_n} V(s_n, \beta).
    \label{eq:4.1.2.6}  %\forall \, n < \omega.  
 \end{equation}
-\noindent Let $\beta_n = \max A_n$ and $\beta_m = \min\{\beta_n: n < \omega\}$. We have
+%\noindent Let $\beta_n = \max A_n$ and $\beta_m = \min\{\beta_n: n < \omega\}$. We have
+\noindent Let $\beta_{\min} = \min\{\max A_n: n < \omega\}$ and 
+$m = \min\{n < \omega: \beta_{\min} = \max A_n\}$. 
+To reflect the dependence of $\beta_{\min}$ on $m$ for convenience of proof, 
+let us rewrite it as $\beta_m=\beta_{\min}$. We have
 \begin{equation}
 \textit{If } \beta \ge \lambda, \textit{ then } x \notin V(s_{m+1}, \beta). \label{eq:4.1.2.7}
 \end{equation}
