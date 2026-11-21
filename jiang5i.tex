@@ -258,7 +258,7 @@ so $W\subset G$.
 
 \textsc{Case 2}. Suppose $j = n$. There exists $S_0\in\hstretch{1.8}{[}\omega\hstretch{1.8}{]}^n$ such that 
 \begin{gather}
-x\in L(S_0, n) \cap H_n. \label{eq:5.1.5.2}
+x\in L(S_0, n) \raisebox{-1pt}{\scalebox{1.5}{$\cap$}} H_n. \label{eq:5.1.5.2}
 \end{gather}
 
 \textsc{Case 2}a. 
@@ -266,9 +266,10 @@ If $x \notin \bigcup\mathscr{G}_k$, then $k \notin S_0$. The set
 $W = Y\cap L(S_0, n)$ is a neighborhood of $x$ in $Y$ such that 
 for each $B\subset \hstretch{1.8}{[}\Gamma_k\hstretch{1.8}{]}^l$, $S_0\in \hstretch{1.8}{[}\omega\hstretch{1.8}{]}^n$,
 \begin{gather*}
-W\cap P(B, S, m, n) \subset
+W\raisebox{-1pt}{\scalebox{1.5}{$\cap$}}  P(B, S, m, n) \subset
   \left( \raisebox{-1pt}{\scalebox{1.5}{$\cap$}}_{i\in S_0} \left(\raisebox{-1pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_i\right)  \right)
-  \cap\left(\raisebox{-1pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_k\right) \cap H_n = \varnothing.
+  \cap\left(\raisebox{-1pt}{\scalebox{1.5}{$\cup$}} \mathscr{G}_k\right) 
+  \raisebox{-1pt}{\scalebox{1.5}{$\cap$}}  H_n = \varnothing.
 \end{gather*}
 Then $W\subset G$.
 
