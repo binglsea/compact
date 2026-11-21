@@ -167,8 +167,8 @@ is a discrete closed partial refinement of $\mathscr{U}$. \hfill\qedsymbol
  {\lemma{\label{lem:3.3.6}}
 If $X$ is $\lambda$-discretely subexpandable, then for every open 
 $\lambda$-cover $\mathscr{U}$ of $X$ there exists a $\sigma$-discrete closed partial refinement 
-$\mathscr{P}$ and a $G_\delta$-set $A$ in $X$ such that 
-$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset A \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{P},$$
+$\mathscr{F}$ and a $G_\delta$-set $A$ in $X$ such that 
+$$\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \widetilde{\mathscr{U}} \subset A \subset \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \mathscr{F},$$
 where $\widetilde{\mathscr{U}}$ is defined as in the previous Lemma \ref{lem:3.3.5} .
 }
 
@@ -203,18 +203,18 @@ $$\mathscr{G}_{n,k} = \mathscr{G}_n \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{W_
 \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} U_\alpha:  \alpha < \lambda\}.$$ 
 
 \noindent Then each $\mathscr{G}_{n,k}$ is an open refinement of $\mathscr{U}$. 
-By Lemma \ref{lem:3.3.5}, $\mathscr{P} = \bigcup_{n,k < \omega} \widetilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
+By Lemma \ref{lem:3.3.5}, $\mathscr{F} = \bigcup_{n,k < \omega} \widetilde{\mathscr{G}}_{n,k}$ is a $\sigma$-discrete closed partial refinement of $\mathscr{U}$. 
 Let $A = \bigcap_{n < \omega} Q_n$. Then $A$ is a $G_\delta$-set and by \eqref{eq3.3.6.1}, 
 $\bigcup \widetilde{\mathscr{U}} \subset A$.
 
-To show that $A\subset \bigcup\mathscr{P}$, let $x \in A$. 
+To show that $A\subset \bigcup\mathscr{F}$, let $x \in A$. 
 There exists $m < \omega$ such that $|\operatorname{ind}(\mathscr{G}_m)_x| \le 1$.
 Since $x \in A \subset Q_m$, by \eqref{eq3.3.6.1}, $x \notin W_{m, h}$ for some $h < \omega$. 
 Since $x \in \bigcup\mathscr{G}_{m,h}$, there exists $\alpha_0 < \lambda, x\in G_{\alpha_0, m}$, so
 $\operatorname{ind}(\mathscr{G}_m)_x\subset \{\alpha_0\}$. It follows that
 $$x \in G_{\alpha_0, m} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma \in\lambda\setminus \{\alpha_0\}} G_{\gamma, m} \setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha < \lambda} (W_{m,k} \cap U_\alpha) = 
-\widetilde{G}_{\alpha_0, m} \in \widetilde{\mathscr{G}}_{m,k} \subset \mathscr{P}.$$
-Thus $A \subset \bigcup \mathscr{P}$.
+\widetilde{G}_{\alpha_0, m} \in \widetilde{\mathscr{G}}_{m,k} \subset \mathscr{F}.$$
+Thus $A \subset \bigcup \mathscr{F}$.
 \end{proof} 
 
 
