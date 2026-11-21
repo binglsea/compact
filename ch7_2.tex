@@ -271,8 +271,8 @@ $\{\mathscr{W}_n(s): n < \omega\}$ by semi-open covers of  $X$.
 We use Junnila's following construction in the proof of Theorem \ref{th:5.1.2}. 
 For every $t = s\oplus k$ where $s\in \omega^n, k < \omega$ and $\alpha < \lambda$, let 
 \begin{gather}
-V(t, \alpha) = 	V(s, \alpha)\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \left(U_\alpha\scalebox{1.5}{$\cap$} 
-	\operatorname{st}(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta\ne \lambda+\alpha}V(s, \beta), \;
+V(t, \alpha) = 	V(s, \alpha)\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \left(U_\alpha\scalebox{1.5}{$\cap$} 
+	\operatorname{st}(X\setminus \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta\ne \lambda+\alpha}V(s, \beta), \;
 	\mathscr{W}_k(s))^\circ\right) \label{eq:7.2.10.2} \\
 V(t, \lambda+ \alpha) = U_\alpha \scalebox{1.5}{$\cap$} (\scalebox{1.5}{$\cup$}_{\beta> \lambda+\alpha}V(s, \beta)) \scalebox{1.5}{$\cap$} \operatorname{st}(X\setminus 
   \scalebox{1.5}{$\cup$}_{\beta < \lambda+\alpha}V(s, \beta),\;
@@ -328,7 +328,7 @@ We have
 
 \textbf{(2)} \textit{For each } $n < \omega$,
 $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset 
-   \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta\in D_n} V(s_n, \beta).$$ 
+   \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta\in D_n} V(s_n, \beta).$$ 
  Let $\beta_{\min} = \min\{\max D_n: n < \omega\}$ and 
  $m = \min\{n < \omega: \beta_{\min} = \max D_n\}$. 
 To reflect the dependence of $\beta_{\min}$ on $m$ for convenience of proof, 
@@ -339,23 +339,23 @@ let us rewrite it as $\beta_m=\beta_{\min}$.
  \noindent For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
  By (2),
  \begin{gather}
- \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
-  \left(X\setminus\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.4}
+ \operatorname{st}(G(x, m), \mathscr{W}_{k_m}(s_m)) \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} 
+  \left(X\setminus\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma)\right) = \varnothing. \label{eq:7.2.10.4}
  \end{gather}
  Since $\beta \ge \lambda$ and $s_{m+1} = s_m\oplus k_m$, 
  it follows from the above \eqref{eq:7.2.10.3} that  %TO_DO What is (C)?
- $$G(x, m)\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} V(s_{m+1}, \beta) \subset G(x, m) \raisebox{-3pt}{\scalebox{1.5}{$\cap$}} 
-    \operatorname{st}\left(X\setminus \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \varnothing.$$
+ $$G(x, m)\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} V(s_{m+1}, \beta) \subset G(x, m) \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} 
+    \operatorname{st}\left(X\setminus \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\gamma < \beta} V(s_m, \gamma), \mathscr{W}_{k_m}(s_m)\right) = \varnothing.$$
  
  \textbf{(4)} $\beta_{m} < \lambda$.
  
 \noindent If not, $\beta_{m} \ge \lambda$, then for each 
  $\beta > \beta_{m+2}, \beta > \beta_{m} \ge \lambda$. By (3),
- $$G(x, m) \cap (\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
+ $$G(x, m) \cap (\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
  Since $\beta_{m+2} \ge \beta_{m} \ge \lambda$.
  By \eqref{eq:7.2.10.3}, we have 
  $$G(x, m) \cap V(s_{m+2}, \beta_{m+ 2})\subset 
- G(x, m)  \cap \left(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \varnothing.$$
+ G(x, m)  \cap \left(\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \varnothing.$$
  But $\beta_{m+2} \in D_{m+2}$, so we have a contradiction. Hence $\beta_m < \lambda$. 
  
  \textbf{(5)} \textit{If}  $\beta \ge \lambda$, \textit{then} $G(x, m) \bigcap V(s_{m+1}, \beta) = \varnothing$.
@@ -435,8 +435,8 @@ Assuming these refinements precise, let $\mathscr{V}_n= \{V(n, \alpha): \alpha <
 $V(n, \alpha)\subset \bigcup_{\gamma < \alpha}U_\gamma$ for each $\alpha < \mu$.
 For $n < \omega, \alpha < \mu$, let 
 $$\mathscr{G}(n, \alpha) = 
-\{U_\gamma: \gamma <\alpha\} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}
-\{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma\ge \alpha}V(n, \gamma)\}.$$
+\{U_\gamma: \gamma <\alpha\} \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}
+\{\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\gamma\ge \alpha}V(n, \gamma)\}.$$
 Then each $B(n, \alpha)$ is an open cover of $X$ with power $< \mu$.
 By inductive hypothesis, 
 
@@ -459,9 +459,9 @@ We have
 $y\in W_l(n, \delta(y, n, k), \beta_l) \in (\mathscr{W}_l(n, \delta(y, n, k)))_y$.
 Let 
 \begin{gather*}
-H(y, n, k) = V(n, \delta(y, n, k))\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \left(
-	\raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^k W_l(n, \delta(y, n, k), \beta_l)\right),\\
-\mathscr{H}_{n,k}= \{H(y, n, k): y\in F_{n, k} \}\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X\setminus F_{n,k}\}\}.
+H(y, n, k) = V(n, \delta(y, n, k))\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} \left(
+	\raisebox{-2pt}{\scalebox{1.5}{$\cap$}}_{l=0}^k W_l(n, \delta(y, n, k), \beta_l)\right),\\
+\mathscr{H}_{n,k}= \{H(y, n, k): y\in F_{n, k} \}\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \{X\setminus F_{n,k}\}\}.
 \end{gather*}
 Then each $\mathscr{H}_{n,k}$ is an open cover of $X$.
 
@@ -498,8 +498,8 @@ $\exists \, j \le p$ such that  $\delta(y, m, q) = \alpha_j$.
 Then
 \begin{equation*}
 	\begin{aligned}
-H(y,m,q)  &\subset \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{l=0}^q W_l(m, \alpha_j, \beta_l) \\
- & \subset \raisebox{-3pt}{\scalebox{1.5}{$\cap$}}_{i=0}^p W_{r_i}(m, \alpha_j, \beta_i) \\
+H(y,m,q)  &\subset \raisebox{-2pt}{\scalebox{1.5}{$\cap$}}_{l=0}^q W_l(m, \alpha_j, \beta_l) \\
+ & \subset \raisebox{-2pt}{\scalebox{1.5}{$\cap$}}_{i=0}^p W_{r_i}(m, \alpha_j, \beta_i) \\
  & \subset W_{r_j}(m, \alpha_j, \beta_j) 
 	\end{aligned}
 \end{equation*}
@@ -576,31 +576,31 @@ $B_{m,\alpha}\subset\bigcup_{\gamma < \alpha}U_\gamma$ for each $m < \omega,
 \alpha < \mu$. 
 For $m < \omega, \alpha < \mu$, let 
 $$\mathscr{G}_{m, \alpha}= \{U_\gamma: \gamma < \alpha\}
-\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X\setminus B_{m,\alpha}\}.$$
+\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \{X\setminus B_{m,\alpha}\}.$$
 Then each $\mathscr{G}_{m,\alpha}$ is an interior-preserving open cover of $X$ with power $< \mu$.
 For each $S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}$, let $U_S = \bigcup_{\gamma\in S}U_\gamma$, and
 $$\mathscr{G}_{m, \alpha}^F= \{U_S: S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}
-\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} 
-\{U_t \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} (X\setminus B_{m,\alpha}):t\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}
-\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{X\setminus B_{m, \alpha}\}.$$
+\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} 
+\{U_t \raisebox{-2pt}{\scalebox{1.5}{$\cup$}} (X\setminus B_{m,\alpha}):t\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\}
+\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \{X\setminus B_{m, \alpha}\}.$$
 Then $\mathscr{G}_{m, \alpha}^F$ is an interior-preserving directed open $\kappa$-cover for some $\kappa< \mu$.
  By the inductive hypothesis, $\mathscr{G}_{m,\alpha}^F$ has a refinement 
  $\mathscr{E}_{m,\alpha} = \bigcup_{n < \omega} \mathscr{E}_{m,\alpha,n}$ where each 
  $\mathscr{E}_{m,\alpha,n}$ is a closure-preserving closed family,
  and  $\mathscr{E}_{m,\alpha}^\circ$ covers $X$.
 For $m, n < \omega, \alpha < \mu$, let
-$$\mathscr{E}_{m,\alpha,n} = \{E_{m,\alpha,n, S}:  S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} 
+$$\mathscr{E}_{m,\alpha,n} = \{E_{m,\alpha,n, S}:  S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\} \raisebox{-2pt}{\scalebox{1.5}{$\cup$}} 
   \{K_{m,\alpha,n, S}:  S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}\} 
-  \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} \{F_{m,\alpha}\}.$$
+  \raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \{F_{m,\alpha}\}.$$
 such that for each $S\in \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}$, 
 \begin{gather*}
 	E_{m,\alpha,n,S} \subset U_S, \\
-	K_{m,\alpha,n, S} \subset U_S \raisebox{-3pt}{\scalebox{1.5}{$\cup$}} (X\setminus B_{m, \alpha}), \\
+	K_{m,\alpha,n, S} \subset U_S \raisebox{-2pt}{\scalebox{1.5}{$\cup$}} (X\setminus B_{m, \alpha}), \\
 	P_{m, \alpha} \subset X\setminus B_{m, \alpha}.
 \end{gather*}
 Let 
 \begin{gather*}
-	\Delta = \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha < \mu} \{\alpha\} \times \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}), \\
+	\Delta = \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\alpha < \mu} \{\alpha\} \times \hstretch{1.8}{[}\alpha\hstretch{1.8}{]}^{<\omega}), \\
 	\mathscr{F}_{m, n,1} = \{E_{m, \alpha, n, S} \cap B_{m, \alpha}: (\alpha, S) \in \Delta\}, \\
 	\mathscr{F}_{m, n,2} = \{K_{m, \alpha, n, S} \cap B_{m, \alpha}: (\alpha, S) \in \Delta\}. \\
 \end{gather*}
@@ -616,18 +616,18 @@ Then $D = \bigcup_{\alpha\in D}(\{\alpha\}\times d_\alpha)$.
 Since $\mathscr{B}_m = \{B_{m,\alpha}: \alpha < \mu\}$ is hereditarily  closure-preserving, we have
 \begin{equation*}
 	\begin{aligned}
-		\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}
-		\left(E_{m,\alpha,n,S}\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha}\right)} &= 
-			\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}
+		\overline{\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}
+		\left(E_{m,\alpha,n,S}\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha}\right)} &= 
+			\overline{\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}
 				\left(
-			(\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}) 
-				\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right)} \\
-		&\subset 	\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}\left(
-			\left(\overline{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) 
-			\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} \overline{B_{m,\alpha}} \right)  \\
-		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b} \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right) \\
-		&= \raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}
-		\raisebox{-3pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right).
+			(\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}) 
+				\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right)} \\
+		&\subset 	\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b}\left(
+			\left(\overline{\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}E_{m,\alpha,n,S}}\right) 
+			\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} \overline{B_{m,\alpha}} \right)  \\
+		&= \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\alpha\in b} \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{S\in d_\alpha}\left(E_{m,\alpha,n,S}\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right) \\
+		&= \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{(\alpha, S)\in D}\left(E_{m,\alpha,n,S}
+		\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} B_{m,\alpha} \right).
 	\end{aligned}
 \end{equation*}
 Thus (1) holds.
