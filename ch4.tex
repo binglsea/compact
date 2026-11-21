@@ -239,8 +239,9 @@ It has a $\theta$-sequence $\{\mathscr{V}_n: n < \omega\}$ of open refinements.
 We may assume that each $\mathscr{V}_n = \{V(n, \alpha): \alpha < \kappa\}$ 
 such that $V(n, \alpha) \subset \bigcup_{\gamma \le \alpha} U_\gamma$ for all $\alpha < \kappa$. 
 For $n < \omega, \alpha < \kappa$, let
-$$\mathscr{U}(n, \alpha) = \{U_\gamma: \gamma \le \alpha\} \cup 
-\{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\gamma > \alpha} V(n, \gamma)\}.$$
+$$\mathscr{U}(n, \alpha) = \{U_\gamma: \gamma \le \alpha\} 
+\raisebox{-3pt}{\scalebox{1.5}{$\cup$}} 
+\{\raisebox{-3pt}{\scalebox{1.5}{$\cup$}}_{\alpha < \gamma < \kappa} V(n, \gamma)\}.$$
 \noindent Then each $\mathscr{U}(n, \alpha)$ is an open cover of $X$ with power less than $\kappa$.
 By the induction hypothesis, it has a pointwise W-refining sequence 
 $\{\mathscr{W}_l(n, \alpha): l < \omega\}$ by open covers of $X$.
