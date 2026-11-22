@@ -149,9 +149,9 @@ Then $\mathscr{H}(t)$ sis an open refinement of $\mathscr{U}$.
 
 \textbf{Claim 2}. $\{\mathscr{H}(t): t \in T\}$ \textit{ is a  $\theta$-sequence, so} (ii) \textit{ holds}.
 
-\textsc{Proof of Claim 2}. Let $x \in X$. There exists $m \ge 1$ such that 
+\textsc{Proof of Claim 2}. Let $x \in X$. There exists $m > 1$ such that 
 $x \in \bigcup_{i \le m}(\bigcup \mathscr{B}_i)$. By Condition (4), there exists $k_0(x)<\omega$ 
-such that $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$ is finite; there exists $k_1 <\omega$ 
+such that $\operatorname{ind}(\mathscr{V}(k_0(x)))_x$ is finite; there exists $k_1(x) <\omega$ 
 such that $\operatorname{ind}(\mathscr{V}(k_0(x)), \mathscr{V}(k_1(x)))_x$ is finite, $\dots$; 
 there exists $k_{m-1}(x) <\omega$ 
 such that $\operatorname{ind}(\mathscr{V}(k_0(x)), \cdots,  \mathscr{V}(k_{m-1}(x)))_x$ is finite. 
@@ -170,7 +170,7 @@ So, $\operatorname{ind}(\mathscr{H}(t(x)))_x$ is finite, and  Claim 2  is true.
 (ii) $\Rightarrow$ (iii). Suppose $\mathscr{U}$ is a directed $A\omega$ (resp. $D\omega$)
 $\lambda$-cover of $X$. By (ii) and Lemma \ref{lem:3.1.4},  $X$ has a
 countable closed cover $\{\mathscr{F}_n: n <\omega\}$ such that for each $n < \omega$,
-$\mathscr{U}|{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in subspace $F_n$. 
+$\mathscr{U}|_{F_n}$ has a point-finite open refinement $\mathscr{V}_n$ in subspace $F_n$. 
 Since $\mathscr{U}$ is directed, $\mathscr{V}_n$ is an interior-preserving point-star refinement of 
 $\mathscr{U}\vert{}_{F_n}$ in subspace $F_n$. By Lemma \ref{lem:4.1.6}, 
 $\mathscr{U}\vert{}_{F_n}$ has a closure-preserving closed refinement $\mathscr{F}_n$ in the closed subspace $F_n$. Then $\bigcup\{\mathscr{F}_n: n<\omega\}$ is a $\sigma$-closure-preserving 
@@ -179,9 +179,9 @@ closed refinement of $\mathscr{U}$.
 (iii) $\Rightarrow$ (iv). Clear.
 
 (iv) $\Rightarrow$ (i). Let $\mathscr{B}$ (resp.  $\mathscr{D}$) be a locally finite (resp. discrete closed)
-$\lambda$-family in $X$. The induced cover $\mathscr{B}^*$ (resp. $\mathscr{D}^*$) is 
+$\lambda$-family in $X$. The induced cover $\mathscr{B}^*$ (resp. $\mathscr{D}^{*F}$) is 
 an interior-preserving directed $A\omega$-cover (resp. $D\omega$-cover) of $X$. 
-By (iv), $\mathscr{B}^*$ (resp. $\mathscr{D}^*$) has a $\sigma$-cushioned refinement. 
+By (iv), $\mathscr{B}^*$ (resp. $\mathscr{D}^{*F}$) has a $\sigma$-cushioned refinement. 
 By Lemma \ref{lem:1.2.3} (resp. Lemma \ref{lem:1.2.4}), $\mathscr{B}$ (resp. $\mathscr{D}$) 
 has a $\theta$-sequence of open expansions, so (i) holds.
 \end{proof}
