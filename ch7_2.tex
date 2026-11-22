@@ -420,16 +420,17 @@ has a $\theta^*$-sequence of open refinements.
  ($\Rightarrow$). Clear.
 
  ($\Leftarrow$). Assume that every increasing open $\lambda$-cover of $X$ 
- is a $\theta^*$-cover. For each cardinal $\mu \le \lambda$, denote a property by
+ is a $\theta^*$-cover. 
+ For every cardinal $\mu \le \lambda$,
+ we use transfinite induction to prove a proposition  $\mathcal{P}_\mu$.
  
  $\mathcal{P}_{\mu}$: \textit{Every open $\mu$-cover of 
  $X$ has a local $W$-refining sequence by open covers of $X$.}
  
-\noindent We use transfinite induction on $\mu\le \lambda$ to show that 
-$\mathcal{P}_{\mu}$ holds for each $\mu \le \lambda$.
-Then $\mathcal{P}_{\lambda}$ holds, so by Corollary \ref{cor:7.2.11},
-$X$ is $\lambda$-paracompact. Clearly, $\mathcal{P}_{\mu}$ holds for finite 
-$\mu$.
+If $\mathcal{P}_{\lambda}$ holds, by Corollary \ref{cor:7.2.11},
+$X$ is $\lambda$-paracompact.
+
+\noindent \textsc{Proof of $\mathcal{P}_{\mu}$}. Clearly, $\mathcal{P}_{\mu}$ holds for finite  $\mu$.
 Suppose that $\omega\le\mu\le\lambda$ and that
 $\mathcal{P}_{\kappa}$ holds for all $\kappa < \mu$. To show $P_{\mu}$ holds, 
 let $\mathscr{U} = \{U_\alpha: \alpha < \mu\}$ be an open cover of $X$. 
@@ -557,16 +558,18 @@ closed refinement $\mathscr{F}$ such that $\mathscr{F}^\circ$ covers $X$.
 
 (ii) $\Rightarrow$ (iii). Clear.
 
- (iii) $\Rightarrow$ (i). Assume (iii) holds. For each $\mu \le \lambda$, denote a property by
+ (iii) $\Rightarrow$ (i). Assume (iii) holds. 
+ For every cardinal $\mu \le \lambda$,
+ we use transfinite induction to prove a proposition  $\mathcal{P}_\mu$.
  
  $\mathcal{P}_\mu$: \textit{Every interior-preserving directed 
  open cover of $X$ has a $\sigma$-closure-preserving  closed refinement 
  $\mathscr{F}$ such that  $\mathscr{F}^\circ$ covers $X$.}
  
-\noindent\textsc{Proof of  $\mathcal{P}_\mu$}. We use induction on $\mu \le \lambda$ to show that $\mathcal{P}_\mu$ 
-holds for all $\mu \le \lambda$. 
-Specially, if  $\mathcal{P}_\lambda$ holds, then by Theorem \ref{th:4.2.4}, 
-$X$ is $\lambda$-paracompact.
+ If $\mathcal{P}_\lambda$ holds, 
+ then by Theorem \ref{th:4.2.4},  $X$ is $\lambda$-paracompact.
+ 
+\noindent\textsc{Proof of  $\mathcal{P}_\mu$}. 
 Clearly, $\mathcal{P}_\mu$ holds for finite $\mu$. Now let $\mu \le \lambda$ be 
 such that $\mathcal{P}_\kappa$ holds for each $\kappa < \mu$. 
 We need to show that $P_{\mu}$ is true.
