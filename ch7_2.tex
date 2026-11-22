@@ -63,7 +63,7 @@ Let $\mathscr{U}=\{U_\alpha: \alpha \in \Delta\}$.
 $\mathscr{U}$ at $x$. There exists $W \in \operatorname{top}(x)$ and 
 $F\in \hstretch{1.8}{[}\Delta\hstretch{1.8}{]}^{<\omega}$ such that $(\mathscr{V})_W$ refines $\{U_\alpha: \alpha \in F\}$. Then 
 $\operatorname{st}(x, \mathscr{V}) \subset \operatorname{st}(x, \{U_\alpha: \alpha \in F\})$. 
-If $G \in \operatorname{top}(x)$ with $G \subset W$, then 
+If $G \in \operatorname{top}(x)$ such that $G \subset W$, then 
 $\operatorname{st}(G, \mathscr{V}) \subset \operatorname{st}(G, \{U_\alpha: \alpha \in F\})$, 
  so $\mathscr{V}$ is a local star $\overset{*}{F}$-refinement of $\mathscr{U}$ at $x$.
 
@@ -323,8 +323,10 @@ such that
 	\operatorname{st}(G, \mathscr{W}_{k_n}(s_n)) \subset 
 	\operatorname{st}(G, \{V(s_n, \beta): \beta \in A_n\}). 
 \end{gather*}
-Let $G(x, n) = W(x,0) \cap W(x, 1)\cap\cdots \cap W(x, n))$, and let
-$$ D_n = \{\beta\in A_n: V(s_n, \beta)\cap G(x, n) \ne \varnothing\} \textit{ for } n < \omega.$$
+Let $G(x, n) = W(x,0) \raisebox{-2pt}{\scalebox{1.5}{$\cap$}}  W(x, 1)
+ \raisebox{-2pt}{\scalebox{1.5}{$\cap$}}\cdots \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} W(x, n))$, 
+ and let
+$$ D_n = \{\beta\in A_n: V(s_n, \beta)\raisebox{-2pt}{\scalebox{1.5}{$\cap$}} G(x, n) \ne \varnothing\} \textit{ for } n < \omega.$$
 We have 
 
 \textbf{(2)} \textit{For each } $n < \omega$,
@@ -335,7 +337,8 @@ $$	\operatorname{st}(G(x, n), \mathscr{W}_{k_n}(s_n)) \subset
 To reflect the dependence of $\beta_{\min}$ on $m$ for convenience of proof, 
 let us rewrite it as $\beta_m=\beta_{\min}$.
   
- \textbf{(3)} \textit{If} $\beta \ge \lambda$ \textit{ and } $\beta > \beta_m$, \textit{then} $G(x, m) \cap V(s_{m+1}, \beta) = \varnothing$.
+ \textbf{(3)} \textit{If} $\beta \ge \lambda$ \textit{ and } $\beta > \beta_m$, \textit{then} $G(x, m) 
+ \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} V(s_{m+1}, \beta) = \varnothing$.
  
  \noindent For if $\beta \ge \lambda$ and $\beta > \beta_m$, then $\forall \, \gamma\in D_m, \gamma\le \beta_m < \beta$. 
  By (2),
@@ -352,11 +355,13 @@ let us rewrite it as $\beta_m=\beta_{\min}$.
  
 \noindent If not, $\beta_{m} \ge \lambda$, then for each 
  $\beta > \beta_{m+2}, \beta > \beta_{m} \ge \lambda$. By (3),
- $$G(x, m) \cap (\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
+ $$G(x, m) \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} (\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}} V(s_{m+1}, \beta)) = \varnothing,$$ 
  Since $\beta_{m+2} \ge \beta_{m} \ge \lambda$.
  By \eqref{eq:7.2.10.3}, we have 
- $$G(x, m) \cap V(s_{m+2}, \beta_{m+ 2})\subset 
- G(x, m)  \cap \left(\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) = \varnothing.$$
+ $$G(x, m) \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} V(s_{m+2}, \beta_{m+ 2})\subset 
+ G(x, m)  \raisebox{-2pt}{\scalebox{1.5}{$\cap$}} 
+ \left(\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{\beta > \beta_{m+2}}V(s_{m+1}, \beta)\right) 
+ = \varnothing.$$
  But $\beta_{m+2} \in D_{m+2}$, so we have a contradiction. Hence $\beta_m < \lambda$. 
  
  \textbf{(5)} \textit{If}  $\beta \ge \lambda$, \textit{then} $G(x, m) \bigcap V(s_{m+1}, \beta) = \varnothing$.
