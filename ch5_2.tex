@@ -296,13 +296,13 @@ For any space $X$, the following are equivalent:
  (i) $\Rightarrow$ (ii). Suppose $X$ is normal and $\mathscr{U}=\{U_\alpha: \alpha\in\Delta\}$ is a  $C^*\omega^2$-cover of $X$. 
  Let $\mathscr{F} = \bigcup_{m,n < \omega} \mathscr{F}_{m,n}$ 
  be a refinement of $\mathscr{U}$,
-where each $\mathscr{F}_{m,n,\alpha} = \{F_{m,n,\alpha}: \alpha\in\Delta\}$ 
+where each $\mathscr{F}_{m,n} = \{F_{m,n,\alpha}: \alpha\in\Delta\}$ 
 such that $F_{m,n,\alpha}\subset U_\alpha$, and each $F_{m,n,\alpha}$  and
 $\bigcup \mathscr{F}_{m,n}$ are  closed subsets of 
 $X\setminus\bigcup\{\bigcup\mathscr{F}_{p,q}: (p, q) < (m, n)\}$.
 
 \textbf{Claim}. \textit{For each $m,n$ there exists a functionally open family 
-$\mathcal{V}_{m,n,\alpha} = \{V_{m,n,\alpha}: \alpha\in\Delta\}$ such that}:
+$\mathscr{V}_{m,n} = \{V_{m,n,\alpha}: \alpha\in\Delta\}$ such that}:
 
 (1) $\overline{V}_{m,n,\alpha} \subset U_\alpha$ \textit{ for each } $\alpha\in\Delta$,
 
@@ -316,7 +316,9 @@ Let $m,n < \omega$ and assume that the families $\mathscr{V}_{p,q}
 = \{V_{p,q,\alpha}: \alpha\in\Delta\}$ have 
 been constructed such that the Conditions (1)–(3) are satisfied for all $(p,q) < (m,n)$. 
 Then
-$$\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{(p,q) < (m,n)} (\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \mathscr{F}_{p,q}) \subset \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{(p,q)\le(m,n)} (\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \mathscr{V}_{p,q}).$$
+$$\raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{(p,q) < (m,n)} (\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} 
+\mathscr{F}_{p,q}) \subset \raisebox{-2pt}{\scalebox{1.5}{$\cup$}}_{(p,q) < (m,n)} 
+(\raisebox{-2pt}{\scalebox{1.5}{$\cup$}} \mathscr{V}_{p,q}).$$
 Let $L = \bigcup_{(p,q)<(m,n)} (\bigcup \mathscr{V}_{p,q})$
 Then $\mathscr{F}_{m,n}|_{(X\setminus L)}$ is a closed family in $X$. 
 For each $\alpha\in\Delta$, there exists a functionally open set $H_{m,n,\alpha}$ such that
@@ -354,7 +356,7 @@ For any space $X$, the following are equivalent:
 \textup{(i)} $X$ is normal.
 
 \textup{(ii)}  \textup{([Price and Smith 1989]\textsuperscript{\cite{PriceSmith}})}
-Every open cover which has a $B(\mathcal{C}, \omega^2)$-refinement has a closed shrink.
+Every open cover which has a $B(\mathcal{C}, \omega^2)$-refinement also has a closed shrink.
 
 \textup{(iii)} \textup{([Lefschetz 1942]\textsuperscript{\cite{Lefschetz}})} 
 Every point-finite open cover of $X$ has an open shrink.
